@@ -23,3 +23,10 @@
 }
 
 \def\mark[body]{\<html:mark>{\body}}
+
+\def\img[url]{
+  \<html:img>[src]{\url}{}
+}
+\def\imgasset[file]{
+  \img{\route-asset{assets/images/\file}}
+}

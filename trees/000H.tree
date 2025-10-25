@@ -1,0 +1,5 @@
+\date{2025-10-25T04:49:48Z}
+\title{CIS 194, Introduction to Haskell}
+\author{brentyorgey}
+
+\p{This is a half-credit introduction to Haskell I taught as a grad student at [[upenn]], which has become a well-known introduction to the language, especially the [Spring 2013 version](https://www.cis.upenn.edu/~cis1940/spring13/).  The source material can be [found on GitHub](https://github.com/byorgey/haskell-course).}
