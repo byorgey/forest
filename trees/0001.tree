@@ -4,4 +4,4 @@
 
 \import{base-macros}
 
-\p{This site is a "forest" created using [Forester](https://www.forester-notes.org/index/). Click on headings to collapse or expand sections, or click on the numeric ID next to a section heading to open the section in a new page.  Type \tt{Ctrl+K} to search the graph.}
+\p{This site is a "forest" created using [Forester](https://www.forester-notes.org/index/). Click on headings to collapse or expand sections, or click on the alphanumeric ID next to a section heading to open the section in a new page.  Type \tt{Ctrl+K} to search the graph.}
