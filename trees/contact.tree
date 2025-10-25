@@ -1,0 +1,11 @@
+\title{Contact information}
+
+\import{base-macros}
+
+\table{
+  \tr{\td{\strong{Office}} \td{MC Reynolds 310; \mark{[make an appointment](https://byorgey.youcanbook.me)}}}
+  \tr{\td{\strong{Phone}} \td{+1 501 450 1377}}
+  \tr{\td{\strong{Email}} \td{last name at \tt{hendrix.edu}}}
+  \tr{\td{\strong{Github}} \td{[byorgey](https://github.com/byorgey/)}}
+  \tr{\td{\strong{Mastodon}} \td{[https://mathstodon.xyz/@byorgey](https://mathstodon.xyz/@byorgey)}}
+}

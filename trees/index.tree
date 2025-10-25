@@ -1,0 +1,17 @@
+\title{Brent Yorgey}
+\author{brentyorgey}
+\meta{author}{false}
+
+\put\transclude/numbered{false}
+
+\transclude{contact}
+\transclude{0001}    % About this site
+\transclude{0005}    % Misc info
+
+\put\transclude/numbered{true}
+\put\transclude/expanded{false}
+
+\transclude{0007}    % News and announcements
+\transclude{0002}    % Teaching
+\transclude{000C}    % Projects
+\transclude{000D}    % Publications

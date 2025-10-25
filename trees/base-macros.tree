@@ -1,0 +1,25 @@
+\title{Basic macros}
+
+\xmlns:html{http://www.w3.org/1999/xhtml}
+
+\def\tt[body]{
+  \<html:kbd>{\body}
+}
+
+\def\table[body]{
+  \<html:table>{\body}
+}
+\def\tr[body]{
+  \<html:tr>{\body}
+}
+\def\td[body]{
+  \<html:td>{\body}
+}
+\def\th[body]{
+  \<html:th>{\body}
+}
+\def\hr{
+  \<html:hr>{}
+}
+
+\def\mark[body]{\<html:mark>{\body}}

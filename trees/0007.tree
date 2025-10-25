@@ -1,0 +1,8 @@
+\date{2025-10-25T00:37:35Z}
+\title{News and announcements}
+
+\put\transclude/heading{false}  % XXX why doesn't this seem to have any effect?
+
+\query\datalog{
+  ?X -: {\rel/has-tag ?X '{news}}
+}

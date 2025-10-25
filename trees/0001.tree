@@ -1,0 +1,7 @@
+\date{2025-10-24T23:02:25Z}
+\title{About this site}
+\author{brentyorgey}
+
+\import{base-macros}
+
+\p{This site is a "forest" created using [Forester](https://www.forester-notes.org/index/). Click on headings to collapse or expand sections, or click on the numeric ID next to a section heading to open the section in a new page.  Type \tt{Ctrl+K} to search the graph.}

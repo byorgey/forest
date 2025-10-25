@@ -1,0 +1,10 @@
+\date{2025-10-24T23:19:59Z}
+\title{Teaching}
+
+\p{I currently teach computer science and mathematics at [[hendrixcollege]].}
+
+\transclude{0003}
+
+\put\transclude/expanded{false}
+\transclude{0004}
+

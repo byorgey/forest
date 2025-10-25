@@ -1,0 +1,9 @@
+\date{2025-10-24T23:29:35Z}
+\title{Links}
+
+\import{base-macros}
+
+\p{You can read my [biography](0006), or what I'm [up to right now](now).}
+
+\p{\mark{Want to ask me for a letter of reference}? [Read this guide first](http://ozark.hendrix.edu/~yorgey/pub/reference-guide.pdf).}
+  % TODO: convert letter of reference guide to Forester.
