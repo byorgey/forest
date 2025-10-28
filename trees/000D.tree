@@ -24,11 +24,6 @@
  }
 }
 
-% TODO: keep adding presentations from CV
-% Random testing—and beyond! with combinatorial species. @ KU
-% Executable Mathematics: a Whirlwind Introduction to Haskell.
-% xmonad @ FringeDC
-
 \subtree{
  \title{Presentations}
  \query\datalog{
