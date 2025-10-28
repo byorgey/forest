@@ -2,7 +2,4 @@
 \title{Haskell Symposium keynote}
 \tag{news}
 
-\p{I gave a keynote presentation at the Haskell Symposium on “The Joy of Building (Functional) Languages”.}
-
-% TODO link to Haskell Sympoisum page
-% TODO link to keynote presentation page
+\p{I gave a keynote presentation at the Haskell Symposium on [[joy-functional-haskell]].}

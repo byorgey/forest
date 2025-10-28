@@ -30,3 +30,8 @@
 \def\imgasset[file]{
   \img{\route-asset{assets/images/\file}}
 }
+
+\def\rel/my-references{brentyorgey.query.my-references}
+\execute\datalog{
+ \rel/my-references ?X -: {\rel/has-author ?X @{brentyorgey}} {\rel/is-reference ?X}
+}

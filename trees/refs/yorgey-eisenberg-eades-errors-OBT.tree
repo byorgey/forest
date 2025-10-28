@@ -1,0 +1,20 @@
+\title{Explaining Type Errors}
+\date{2018-01-13}
+\taxon{Reference}
+\tag{presentation}
+
+\author{brentyorgey}
+\author{richardeisenberg}
+\author{harleyeades}
+\meta{venue}{[[OBT-2018]]}
+\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/explaining-errors.pdf}
+\meta{slides}{http://ozark.hendrix.edu/~yorgey/pub/explaining-errors-slides.pdf}
+
+\p{Every beginning student of programming—that is, every student with the ill fortune of having a language with a static type system foisted upon them by a well-intentioned yet sadistic instructor—is well-acquainted with the Dreaded Type Error Message. Why do type error messages have to be so terrifying? Can’t we do a better job explaining type errors to programmers?}
+
+\p{We propose two interrelated theses:
+\ul{
+  \li{We ought to move away from static error “messages” and towards interactive error explanations.}
+  \li{We ought to consider the problem of generating error explanations in a more systematic, disciplined, and formal way. Explaining errors to users shouldn’t just be relegated to the status of an “engineering issue”, but ought to have all the tools of programming language theory and practice applied to it.}
+}
+}

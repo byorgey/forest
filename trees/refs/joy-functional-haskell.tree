@@ -1,0 +1,14 @@
+\title{The Joy of Building (Functional) Languages (invited keynote)}
+\date{2024-09-06}
+\taxon{Reference}
+\tag{presentation}
+\tag{invited}
+\tag{keynote}
+
+\author{brentyorgey}
+\meta{venue}{[[haskell-2024]]}
+\meta{slides}{https://ozark.hendrix.edu/~yorgey/pub/HS24-keynote.pdf}
+\meta{repo}{https://github.com/byorgey/HS24-keynote}
+\meta{video}{https://www.youtube.com/watch?v=C8PcRqIToCM}
+
+\p{For almost as long as I can remember, all my best projects—the ones that I’m proudest of, the ones that have been the most fruitful and brought me the most joy—have all centered around building some kind of language. Perhaps I am just weird, but I think there is something uniquely joyful about not just expressing oneself, but creating a whole new means of expression for oneself and others. I will take you on a tour of some of my most interesting and joyful language-building projects (some of which you have probably heard of, some of which you definitely haven’t), and then we will build a language together!}

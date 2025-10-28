@@ -1,4 +1,16 @@
 \date{2025-10-25T02:10:05Z}
 \title{Competitive programming}
 
-% TODO populate
+\import{base-macros}
+
+\p{I enjoy recreational competitive programming, especially in [[Haskell]].}
+
+\subtree{
+ \title{Competitive Programming Presentations}
+ \query\datalog{
+  ?X -: {\rel/my-references ?X} {\rel/has-tag ?X '{presentation}} {\rel/has-tag ?X '{comprog}}
+ }
+}
+
+
+% TODO populate competitive programming page

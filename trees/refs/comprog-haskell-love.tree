@@ -1,0 +1,17 @@
+\title{Competitive Programming in Haskell}
+\date{2021-09-10}
+\taxon{Reference}
+\tag{presentation}
+\tag{comprog}
+\tag{haskell}
+
+\author{brentyorgey}
+\meta{venue}{Haskell Love}
+\meta{video}{https://www.youtube.com/watch?v=pyHdHZyyYGg}
+\meta{repo}{https://github.com/byorgey/HaskellLove21}
+
+\p{Competitive programming is an exciting mind sport where competitors race to solve difficult programming tasks as quickly as possible, either individually or as part of a team. It requires sharp problem-solving skills, broad knowledge of algorithms and data structures, and (often) developing a good library of reusable code components ahead of time. Most serious competitive programmers use C++, but this is an arena where Haskell can shine: Haskell's strong type system helps prevent stupid mistakes made in the heat of the moment, and its capability for abstraction allows us to develop versatile libraries and solve problems using a minimum of boilerplate. In this talk, I will livecode a solution to a representative challenge, showing off techniques and libraries along the way.}
+
+\p{I will also highlight some areas needing work. In some cases, in order to fit within the time limit imposed by the creators of a problem, it is necessary to write code that runs within a small constant multiple of the time taken by a C++ solution. This is possible but difficult; the name of the game is to create libraries of algorithms and data structures that are highly optimized internally but present a flexible and idiomatic interface suitable for use in a contest.}
+
+\p{I hope that Haskellers of all skill levels will be able to take away something new, and that some will be convinced to take up a new hobby, or contribute some code!}
