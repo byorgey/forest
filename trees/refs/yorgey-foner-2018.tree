@@ -1,0 +1,37 @@
+\title{What's the Difference? A Functional Pearl on Subtracting Bijections}
+\date{2018-07-30}
+\taxon{Reference}
+
+\author{brentyorgey}
+\author{kennyfoner}
+\tag{accepted}
+\tag{refereed}
+\meta{venue}{[[icfp-2018]]}
+\meta{doi}{10.1145/3236796}
+\meta{bibtex}\verb<<<|
+@article{yorgey-foner-2018,
+  author = {Yorgey, Brent A. and Foner, Kenneth},
+  title = {What's the Difference? A Functional Pearl on Subtracting Bijections},
+  journal = {Proc. ACM Program. Lang.},
+  issue_date = {September 2018},
+  volume = {2},
+  number = {ICFP},
+  month = jul,
+  year = {2018},
+  issn = {2475-1421},
+  pages = {101:1--101:21},
+  articleno = {101},
+  numpages = {21},
+  url = {http://doi.acm.org/10.1145/3236796},
+  doi = {10.1145/3236796},
+  acmid = {3236796},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {bijection, difference},
+}<<<
+\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/GCBP-author-version.pdf}
+\meta{repo}{https://github.com/kwf/GCBP}
+\meta{slides}{http://ozark.hendrix.edu/~yorgey/pub/GCBP-ICFP-18-slides.pdf}
+\meta{video}{https://www.youtube.com/watch?v=hq9gAe-pmzM}
+
+\p{It is a straightforward exercise to write a program to "add" two bijections—resulting in a bijection between two sum types, which runs the first bijection on elements from the left summand and the second bijection on the right. It is much less obvious how to "subtract" one bijection from another. This problem has been studied in the context of combinatorics, with several computational principles known for producing the "difference" of two bijections. We consider the problem from a computational and algebraic perspective, showing how to construct such bijections at a high level, avoiding pointwise reasoning or being forced to construct the forward and backward directions separately—without sacrificing performance.}

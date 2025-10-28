@@ -1,4 +1,37 @@
-\date{2025-10-25T01:21:07Z}
 \title{Publications}
+\author{brentyorgey}
 
-% TODO: populate using datalog query
+\def\rel/my-references{brentyorgey.query.my-references}
+\execute\datalog{
+ \rel/my-references ?X -: {\rel/has-author ?X @{brentyorgey}} {\rel/is-reference ?X}
+}
+
+\subtree{
+ \title{Published papers}
+ \query\datalog{
+  ?X -: {\rel/my-references ?X} {\rel/has-tag ?X '{refereed}}
+ }
+}
+
+\subtree{
+ \title{Dissertation}
+ \query\datalog{
+  ?X -: {\rel/my-references ?X} {\rel/has-tag ?X '{dissertation}}
+ }
+}
+
+\subtree{
+ \title{Books}
+ \query\datalog{
+  ?X -: {\rel/my-references ?X} {\rel/has-tag ?X '{book}}
+ }
+}
+
+% TODO: keep adding presentations from CV
+
+\subtree{
+ \title{Presentations}
+ \query\datalog{
+  ?X -: {\rel/my-references ?X} {\rel/has-tag ?X '{presentation}}
+ }
+}

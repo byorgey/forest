@@ -1,0 +1,12 @@
+\title{Idiomatic Inference for DSLs}
+\date{2025-01-30}
+\taxon{Reference}
+\tag{presentation}
+\tag{invited}
+
+\author{brentyorgey}
+\meta{venue}{[[psu]] PLV seminar}
+\meta{slides}{https://ozark.hendrix.edu/~yorgey/pub/PLV-idiomatic-inference.pdf}
+\meta{repo}{https://github.com/byorgey/infer-applicative}
+
+\p{McBride and Paterson's \em{idioms}, or \em{applicative functors}, are a well-known abstraction defining function application in some ambient effectful context.  It would often be useful, especially in the context of designing domain-specific languages, to \em{infer} such "idiomatic'' application, allowing the programmer to use plain function application syntax—but only when doing so is unambiguous.  I will present work in progress characterizing the conditions necessary for this to be possible.}

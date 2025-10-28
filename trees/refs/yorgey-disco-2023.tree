@@ -1,0 +1,29 @@
+\title{Disco: A Functional Programming Language for Discrete Mathematics}
+\date{2023-08-14}
+\taxon{Reference}
+
+\author{brentyorgey}
+\tag{accepted}
+\tag{refereed}
+\meta{venue}{[[tfpie-2023]]}
+\meta{doi}{10.4204/EPTCS.382.4}
+\meta{bibtex}\verb<<<|
+@Inproceedings{yorgey-disco-2023,
+  author    = {Yorgey, Brent A.},
+  year      = {2023},
+  title     = {Disco: A Functional Programming Language for Discrete Mathematics},
+  editor    = {Machkasova, Elena},
+  booktitle = {{\rm Proceedings Twelfth International Workshop on}
+               Trends in Functional Programming in Education,
+               {\rm Boston, Massachusetts, USA, 12th January 2023}},
+  series    = {Electronic Proceedings in Theoretical Computer Science},
+  volume    = {382},
+  publisher = {Open Publishing Association},
+  pages     = {64-81},
+  doi       = {10.4204/EPTCS.382.4},
+}<<<
+\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/disco-tfpie23.pdf}
+\meta{repo}{https://github.com/disco-lang/disco}
+\meta{slides}{http://ozark.hendrix.edu/~yorgey/pub/disco-tfpie23-talk.pdf}
+
+\p{[[000N]] is a pure, strict, statically typed functional programming language designed to be used in the setting of a discrete mathematics course. The goals of the language are to introduce students to functional programming concepts early, and to enhance their learning of mathematics by providing a computational platform for them to play with. It features mathematically-inspired notation, property-based testing, equirecursive algebraic types, subtyping, built-in list, bag, and finite set types, a REPL, and student-focused documentation. Disco is implemented in Haskell, with source code available on GitHub, and interactive web-based REPL available through replit.}

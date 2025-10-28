@@ -1,0 +1,31 @@
+\title{Monoids: Theme and Variations (Functional Pearl)}
+\date{2012-09-13}
+\taxon{Reference}
+
+\author{brentyorgey}
+\tag{accepted}
+\tag{refereed}
+\meta{venue}{[[haskell-2012]]}
+\meta{doi}{10.1145/2430532.2364520}
+\meta{bibtex}\verb<<<|
+@inproceedings{10.1145/2364506.2364520,
+  author = {Yorgey, Brent A.},
+  title = {Monoids: Theme and Variations (Functional Pearl)},
+  year = {2012},
+  isbn = {978-1-4503-1574-6},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/2364506.2364520},
+  doi = {10.1145/2364506.2364520},
+  booktitle = {Proceedings of the 2012 Haskell Symposium},
+  pages = {105--116},
+  numpages = {12},
+  keywords = {monoid action, monoid, homomorphism, edsl},
+  location = {Copenhagen, Denmark},
+  series = {Haskell '12}
+}<<<
+\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/monoid-pearl.pdf}
+\meta{slides}{http://ozark.hendrix.edu/~yorgey/pub/12-09-13-monoid-pearl-HS.pdf}
+\meta{video}{http://www.youtube.com/watch?v=X-8NCkD2vOw}
+
+\p{The monoid is a humble algebraic structure, at first glance even downright boring. However, there's much more to monoids than meets the eye. Using examples taken from the diagrams vector graphics framework as a case study, I demonstrate the power and beauty of monoids for library design. The paper begins with an extremely simple model of diagrams and proceeds through a series of incremental variations, all related somehow to the central theme of monoids. Along the way, I illustrate the power of compositional semantics; why you should also pay attention to the monoid's even humbler cousin, the semigroup; monoid homomorphisms; and monoid actions.}

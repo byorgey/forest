@@ -1,0 +1,45 @@
+\title{How to Twist Pointers without Breaking Them}
+\date{2016-09-08}
+\taxon{Reference}
+
+\author{satvikchauhan}
+\author{piyushkurur}
+\author{brentyorgey}
+\tag{accepted}
+\tag{refereed}
+\meta{venue}{[[haskell-2016]]}
+\meta{doi}{10.1145/2976002.2976004}
+\meta{bibtex}\verb<<<|
+@inproceedings{chauhan-kurur-yorgey-2016,
+ author = {Chauhan, Satvik and Kurur, Piyush P. and Yorgey, Brent A.},
+ title = {How to Twist Pointers Without Breaking Them},
+ booktitle = {Proceedings of the 9th International Symposium on Haskell},
+ series = {Haskell 2016},
+ year = {2016},
+ isbn = {978-1-4503-4434-0},
+ location = {Nara, Japan},
+ pages = {51--61},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/2976002.2976004},
+ doi = {10.1145/2976002.2976004},
+ acmid = {2976004},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {applicative functor, monoid, monoid action, pointer, semi-direct product},
+}<<<
+\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/twisted.pdf}
+
+\p{Using the theory of monoids and monoid actions, we give a unified
+framework that handles three common pointer manipulation tasks,
+namely, data serialisation, deserialisation, and memory allocation.
+Our main theoretical contribution is the formulation of the notion
+of a \em{twisted functor}, a generalisation of the semi-direct product
+construction for monoids. We show that semi-direct products and
+twisted functors are particularly well suited as an abstraction for
+many pointer manipulation tasks.}
+
+\p{We describe the implementation of these abstractions in the
+context of a cryptographic library for Haskell. Twisted functors
+allow us to abstract all pointer arithmetic and size calculations into a
+few lines of code, significantly reducing the opportunities for buffer
+overflows.}

@@ -1,0 +1,3 @@
+\import{conf-name-macros}
+
+\def\farm[year]{\conf-name{FARM '\year}{International Workshop on Functional Art, Music, Modelling and Design}}

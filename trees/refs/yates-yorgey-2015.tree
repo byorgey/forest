@@ -1,0 +1,32 @@
+\title{Diagrams: A Functional EDSL for Vector Graphics}
+\date{2015-08-30}
+\taxon{Reference}
+
+\author{ryanyates}
+\author{brentyorgey}
+\tag{presentation}
+
+\meta{venue}{[[farm-2015]]}
+\meta{doi}{10.1145/2808083.2808085}
+\meta{bibtex}\verb<<<|
+@inproceedings{yates-yorgey-2015,
+  author = {Yates, Ryan and Yorgey, Brent A.},
+  title = {Diagrams: a functional EDSL for vector graphics},
+  year = {2015},
+  isbn = {9781450338066},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/2808083.2808085},
+  doi = {10.1145/2808083.2808085},
+  abstract = {},
+  booktitle = {Proceedings of the 3rd ACM SIGPLAN International Workshop on Functional Art, Music, Modelling and Design},
+  pages = {4–5},
+  numpages = {2},
+  keywords = {EDSL, Haskell, diagrams, vector},
+  location = {Vancouver, BC, Canada},
+  series = {FARM 2015}
+}<<<
+\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/diagrams-FARM.pdf}
+\meta{video}{https://www.youtube.com/watch?v=oAz8AEf7WDA}
+
+\p{Diagrams is a domain-specific language for creating vector graphics. We will give a short diagrams tutorial/demo, particularly highlighting the power of a functional, embedded domain-specific language.}

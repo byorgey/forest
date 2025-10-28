@@ -1,0 +1,10 @@
+\title{Haskell for Competitive Programming}
+\date{2025-06-09}
+\taxon{Reference}
+\tag{presentation}
+
+\author{brentyorgey}
+\meta{venue}{[[zurihac-2025]]}
+\meta{video}{https://www.youtube.com/watch?v=Bp_mQ62c_74}
+
+\p{Over the past ten years, I have solved over 1700 competitive programming problems in Haskell, just for fun (as well as a few that were not fun). I will give a brief introduction to competitive programming and show off some examples demonstrating the unique benefits of Haskell in this context. We will then have a miniature programming contest, open to all—only Haskell allowed!}

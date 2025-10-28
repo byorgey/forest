@@ -1,0 +1,33 @@
+\import{base-macros}
+
+\title{Species and Functors and Types, Oh My! (Functional Pearl)}
+\date{2010-09-30}
+\taxon{Reference}
+
+\author{brentyorgey}
+\tag{accepted}
+\tag{refereed}
+\meta{venue}{[[haskell-2010]]}
+\meta{doi}{10.1145/1863523.186354}
+\meta{bibtex}\verb<<<|
+@inproceedings{yorgey-2010-species,
+  author = {Yorgey, Brent A.},
+  title = {Species and functors and types, oh my!},
+  booktitle = {Proceedings of the third ACM Haskell symposium on Haskell},
+  series = {Haskell '10},
+  year = {2010},
+  isbn = {978-1-4503-0252-4},
+  location = {Baltimore, Maryland, USA},
+  pages = {147--158},
+  numpages = {12},
+  url = {http://doi.acm.org/10.1145/1863523.1863542},
+  doi = {http://doi.acm.org/10.1145/1863523.1863542},
+  acmid = {1863542},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {algebraic data types, combinatorial species},
+}<<<
+\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/species-pearl.pdf}
+\meta{video}{http://vimeo.com/16753644}
+
+\p{The theory of \em{combinatorial species}, although invented as a purely mathematical formalism to unify much of combinatorics, can also serve as a powerful and expressive language for talking about data types. With potential applications to automatic test generation, generic programming, and language design, the theory deserves to be much better known in the functional programming community. This paper aims to teach the basic theory of combinatorial species using motivation and examples from the world of functional programming. It also introduces the \tt{species} library, available on Hackage, which is used to illustrate the concepts introduced and can serve as a platform for continued study and research.}

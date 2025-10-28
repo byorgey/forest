@@ -1,0 +1,3 @@
+\import{conf-name-macros}
+
+\def\haskell[year]{\conf-name{Haskell '\year}{Haskell Symposium}}

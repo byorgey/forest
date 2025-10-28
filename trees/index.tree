@@ -2,6 +2,10 @@
 \author{brentyorgey}
 \meta{author}{false}
 
+\import{base-macros}
+
+\<html:img>[src]{\route-asset{assets/images/brent.jpg}}[style]{float:right}
+
 \put\transclude/numbered{false}
 
 \transclude{contact}

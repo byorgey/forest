@@ -1,0 +1,35 @@
+\title{Giving Haskell a Promotion}
+\date{2012-01-28}
+\taxon{Reference}
+
+\author{brentyorgey}
+\author{stephanieweirich}
+\author{juliencretin}
+\author{spj}
+\author{dimitriosvytiniotis}
+\author{josemagalhaes}
+\tag{accepted}
+\tag{refereed}
+\meta{venue}{[[tldi-2012]]}
+\meta{doi}{10.1145/2103786.2103795}
+\meta{bibtex}\verb<<<|
+@inproceedings{Yorgey:2012:GHP:2103786.2103795,
+  author = {Yorgey, Brent A. and Weirich, Stephanie and Cretin, Julien and Peyton Jones, Simon and Vytiniotis, Dimitrios and Magalh\~{a}es, Jos{\'e} Pedro},
+  title = {Giving Haskell a Promotion},
+  booktitle = {Proceedings of the 8th ACM SIGPLAN Workshop on Types in Language Design and Implementation},
+  series = {TLDI '12},
+  year = {2012},
+  isbn = {978-1-4503-1120-5},
+  location = {Philadelphia, Pennsylvania, USA},
+  pages = {53--66},
+  numpages = {14},
+  url = {http://doi.acm.org/10.1145/2103786.2103795},
+  doi = {10.1145/2103786.2103795},
+  acmid = {2103795},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {haskell, kinds, polymorphism, promotion},
+}<<<
+\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/promotion.pdf}
+
+\p{Static type systems strive to be richly expressive while still being simple enough for programmers to use. We describe an experiment that enriches Haskell's kind system with two features promoted from its type system: data types and polymorphism. The new system has a very good power-to-weight ratio: it offers a significant improvement in expressiveness, but, by re-using concepts that programmers are already familiar with, the system is easy to understand and implement.}

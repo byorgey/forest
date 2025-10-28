@@ -1,0 +1,25 @@
+\title{Polynomial Functors Constrained by Regular Expressions}
+\date{2015-01-01}
+\taxon{Reference}
+
+\author{danpiponi}
+\author{brentyorgey}
+\tag{accepted}
+\tag{refereed}
+\meta{venue}{[[mpc-2015]]}
+\meta{doi}{10.1007/978-3-319-19797-5_6}
+\meta{bibtex}\verb<<<|
+@inproceedings{piponi-yorgey-2015,
+  title={Polynomial functors constrained by regular expressions},
+  author={Piponi, Dan and Yorgey, Brent A.},
+  booktitle={International Conference on Mathematics of Program Construction},
+  pages={113--136},
+  year={2015},
+  organization={Springer}
+}<<<
+\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/type-matrices.pdf}
+\meta{slides}{http://ozark.hendrix.edu/~yorgey/pub/type-matrices-mpc-15.pdf}
+
+\p{We show that every regular language, via some DFA which accepts it, gives rise to a homomorphism from the semiring of polynomial functors to the semiring of #{n \times n} matrices over polynomial functors. Given some polynomial functor and a regular language, this homomorphism can be used to automatically derive a functor whose values have the same shape as those of the original functor, but whose sequences of leaf types correspond to strings in the language.}
+
+\p{The primary interest of this result lies in the fact that certain regular languages correspond to previously studied derivative-like operations on polynomial functors, which have proven useful in program construction. For example, the regular language #{a^* h a^*} yields the \em{derivative} of a polynomial functor, and #{b^* h a^*} its \em{dissection}. Using our framework, we are able to unify and lend new perspective on this previous work. For example, it turns out that dissection of polynomial functors corresponds to taking \em{divided differences} of real or complex functions, and, guided by this parallel, we show how to generalize binary dissection to #{n}-ary dissection.}

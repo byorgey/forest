@@ -1,0 +1,39 @@
+\title{Binders Unbound}
+\date{2011-09-19}
+\taxon{Reference}
+
+\author{stephanieweirich}
+\author{brentyorgey}
+\author{timsheard}
+\tag{accepted}
+\tag{refereed}
+\meta{venue}{[[icfp-2011]]}
+\meta{doi}{10.1145/2034773.2034818}
+\meta{bibtex}\verb<<<|
+@inproceedings{weirich-yorgey-sheard-2011-unbound,
+  author = {Weirich, Stephanie and Yorgey, Brent A. and Sheard, Tim},
+  title = {Binders Unbound},
+  booktitle = {Proceedings of the 16th ACM SIGPLAN International Conference on Functional Programming},
+  series = {ICFP '11},
+  year = {2011},
+  isbn = {978-1-4503-0865-6},
+  location = {Tokyo, Japan},
+  pages = {333--345},
+  numpages = {13},
+  url = {http://doi.acm.org/10.1145/2034773.2034818},
+  doi = {10.1145/2034773.2034818},
+  acmid = {2034818},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {generic programming, haskell, name binding, patterns},
+}<<<
+\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/unbound.pdf}
+\meta{video}{https://dl.acm.org/doi/suppl/10.1145/2034574.2034818/suppl_file/_talk6.mp4}
+
+\p{Implementors of compilers, program refactorers, theorem provers, proof checkers, and other systems that manipulate syntax know that dealing with name binding is difficult to do well. Operations such as α-equivalence and capture-avoiding substitution seem simple, yet subtle bugs often go undetected. Furthermore, their implementations are tedious, requiring "boilerplate" code that must be updated whenever the object language definition changes.}
+
+\p{Many researchers have therefore sought to specify binding syntax declaratively, so that tools can correctly handle the details behind the scenes. This idea has been the inspiration for many new systems (such as Beluga, Delphin, FreshML, FreshOCaml, Cαml, FreshLib, and Ott) but there is still room for improvement in expressivity, simplicity and convenience.}
+
+\p{In this paper, we present a new domain-specific language, Unbound, for specifying binding structure. Our language is particularly expressive - it supports multiple atom types, pattern binders, type annotations, recursive binders, and nested binding (necessary for telescopes, a feature found in dependently-typed languages). However, our specification language is also simple, consisting of just five basic combinators. We provide a formal semantics for this language derived from a locally nameless representation and prove that it satisfies a number of desirable properties.}
+
+\p{We also present an implementation of our binding specification language as a GHC Haskell library implementing an embedded domain specific language (EDSL). By using Haskell type constructors to represent binding combinators, we implement the EDSL succinctly using datatype-generic programming. Our implementation supports a number of features necessary for practical programming, including flexibility in the treatment of user-defined types, best-effort name preservation (for error messages), and integration with Haskell's monad transformer library.}

@@ -2,7 +2,4 @@
 \title{New Disco paper published}
 \tag{news}
 
-\p{My paper, Disco: A Functional Programming Language for Discrete Mathematics, has been published in the proceedings of TFPIE23.}
-
-% TODO: make page for Disco paper, + page for Disco project itself.
-% TODO: make page for TFPIE?
+\p{My paper, [[yorgey-disco-2023]], has been published in the proceedings of [[tfpie-2023]].}
