@@ -18,4 +18,6 @@
 \transclude{0007}    % News and announcements
 \transclude{0002}    % Teaching
 \transclude{000C}    % Projects
+\transclude{000R}    % Blog
+\transclude{000F}    % Competitive programming
 \transclude{000D}    % Publications
