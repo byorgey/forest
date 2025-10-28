@@ -1,3 +1,5 @@
+\import{base-macros}
+
 \title{The Joy of Building (Functional) Languages (invited keynote)}
 \date{2024-09-06}
 \taxon{Reference}
@@ -7,7 +9,7 @@
 
 \author{brentyorgey}
 \meta{venue}{[[haskell-2024]]}
-\meta{slides}{https://ozark.hendrix.edu/~yorgey/pub/HS24-keynote.pdf}
+\meta{slides}{\pub{HS24-keynote.pdf}}
 \meta{repo}{https://github.com/byorgey/HS24-keynote}
 \meta{video}{https://www.youtube.com/watch?v=C8PcRqIToCM}
 

@@ -1,3 +1,4 @@
 \import{conf-name-macros}
 
 \def\haskell[year]{\conf-name{Haskell '\year}{Haskell Symposium}}
+\def\HIW[year]{\conf-name{HIW '\year}{Haskell Implementors' Workshop}}

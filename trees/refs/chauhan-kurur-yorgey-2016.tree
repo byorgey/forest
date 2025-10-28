@@ -1,3 +1,5 @@
+\import{base-macros}
+
 \title{How to Twist Pointers without Breaking Them}
 \date{2016-09-08}
 \taxon{Reference}
@@ -27,7 +29,7 @@
  address = {New York, NY, USA},
  keywords = {applicative functor, monoid, monoid action, pointer, semi-direct product},
 }<<<
-\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/twisted.pdf}
+\meta{pdf}{\pub{twisted.pdf}}
 
 \p{Using the theory of monoids and monoid actions, we give a unified
 framework that handles three common pointer manipulation tasks,

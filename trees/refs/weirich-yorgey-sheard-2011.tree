@@ -1,3 +1,5 @@
+\import{base-macros}
+
 \title{Binders Unbound}
 \date{2011-09-19}
 \taxon{Reference}
@@ -27,7 +29,7 @@
   address = {New York, NY, USA},
   keywords = {generic programming, haskell, name binding, patterns},
 }<<<
-\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/unbound.pdf}
+\meta{pdf}{\pub{unbound.pdf}}
 \meta{video}{https://dl.acm.org/doi/suppl/10.1145/2034574.2034818/suppl_file/_talk6.mp4}
 
 \p{Implementors of compilers, program refactorers, theorem provers, proof checkers, and other systems that manipulate syntax know that dealing with name binding is difficult to do well. Operations such as α-equivalence and capture-avoiding substitution seem simple, yet subtle bugs often go undetected. Furthermore, their implementations are tedious, requiring "boilerplate" code that must be updated whenever the object language definition changes.}

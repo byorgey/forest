@@ -35,3 +35,7 @@
 \execute\datalog{
  \rel/my-references ?X -: {\rel/has-author ?X @{brentyorgey}} {\rel/is-reference ?X}
 }
+
+\def\home[sub]{http://ozark.hendrix.edu/~yorgey/\sub}
+\def\pub[sub]{\home{pub/\sub}}
+\def\blog[sub]{https://byorgey.github.io/blog/\sub}

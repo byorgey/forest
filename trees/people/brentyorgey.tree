@@ -1,6 +1,8 @@
+\import{base-macros}
+
 \title{Brent A. Yorgey}
 \taxon{Person}
-\meta{external}{https://ozark.hendrix.edu/~yorgey/}
+\meta{external}{\home{}}
 \meta{institution}{[[hendrixcollege]]}
 \meta{orcid}{0009-0005-0135-6134}
 \meta{position}{Associate Professor}

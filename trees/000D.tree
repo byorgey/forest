@@ -25,13 +25,6 @@
 }
 
 % TODO: keep adding presentations from CV
-% Derivatives of Data Types, via Regular Expressions. @ Wesleyan
-% Building Domain-Specific Languages and Tools. (job talk)
-% Diagrams: Declarative Vector Graphics in Haskell. @ NY
-% Trees and Things (with Semirings!).
-% Functional Active Animation. @ FARM
-% Embedded, functional, compositional drawing. @ Williams
-% Typed type-level programming with GHC. @ HIW
 % Random testing—and beyond! with combinatorial species. @ KU
 % Executable Mathematics: a Whirlwind Introduction to Haskell.
 % xmonad @ FringeDC

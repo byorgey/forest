@@ -1,3 +1,5 @@
+\import{base-macros}
+
 \title{Polynomial Functors Constrained by Regular Expressions}
 \date{2015-01-01}
 \taxon{Reference}
@@ -17,8 +19,8 @@
   year={2015},
   organization={Springer}
 }<<<
-\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/type-matrices.pdf}
-\meta{slides}{http://ozark.hendrix.edu/~yorgey/pub/type-matrices-mpc-15.pdf}
+\meta{pdf}{\pub{type-matrices.pdf}}
+\meta{slides}{\pub{type-matrices-mpc-15.pdf}}
 
 \p{We show that every regular language, via some DFA which accepts it, gives rise to a homomorphism from the semiring of polynomial functors to the semiring of #{n \times n} matrices over polynomial functors. Given some polynomial functor and a regular language, this homomorphism can be used to automatically derive a functor whose values have the same shape as those of the original functor, but whose sequences of leaf types correspond to strings in the language.}
 

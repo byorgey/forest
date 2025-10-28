@@ -27,7 +27,7 @@
   address = {New York, NY, USA},
   keywords = {algebraic data types, combinatorial species},
 }<<<
-\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/species-pearl.pdf}
+\meta{pdf}{\pub{species-pearl.pdf}}
 \meta{video}{http://vimeo.com/16753644}
 
 \p{The theory of \em{combinatorial species}, although invented as a purely mathematical formalism to unify much of combinatorics, can also serve as a powerful and expressive language for talking about data types. With potential applications to automatic test generation, generic programming, and language design, the theory deserves to be much better known in the functional programming community. This paper aims to teach the basic theory of combinatorial species using motivation and examples from the world of functional programming. It also introduces the \tt{species} library, available on Hackage, which is used to illustrate the concepts introduced and can serve as a platform for continued study and research.}

@@ -1,3 +1,5 @@
+\import{base-macros}
+
 \title{You Could Have Invented Fenwick Trees (Functional Pearl)}
 \date{2025-01-17}
 \taxon{Reference}
@@ -6,6 +8,7 @@
 \tag{accepted}
 \tag{refereed}
 \meta{venue}{[[jfp]]}
+\meta{venue}{[[icfp-2025]]}
 \meta{doi}{10.1017/S0956796824000169}
 \meta{bibtex}\verb<<<|
 @article{yorgey-2025,
@@ -17,7 +20,10 @@
   year = {2025},
   pages = {e3}
 }<<<
-\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/Fenwick-ext.pdf}
+\meta{pdf}{\pub{Fenwick-ext.pdf}}
 \meta{repo}{https://github.com/byorgey/fenwick}
+\meta{slides}{\pub{fenwick-ICFP.pdf}}
 
 \p{\em{Fenwick trees}, also known as \em{binary indexed trees}, are a clever solution to the problem of maintaining a sequence of values while allowing both updates and range queries in sublinear time. Their implementation is concise and efficient—but also somewhat baffling, consisting largely of nonobvious bitwise operations on indices. We begin with \em{segment trees}, a much more straightforward, easy-to-verify, purely functional solution to the problem, and use equational reasoning to explain the implementation of Fenwick trees as an optimized variant, making use of a Haskell EDSL for operations on infinite two's complement binary numbers.}
+
+\p{See also this [blog post summary](\blog{posts/2025/01/23/Fenwick.html}).}

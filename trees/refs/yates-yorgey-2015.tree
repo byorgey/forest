@@ -1,3 +1,5 @@
+\import{base-macros}
+
 \title{Diagrams: A Functional EDSL for Vector Graphics}
 \date{2015-08-30}
 \taxon{Reference}
@@ -26,7 +28,7 @@
   location = {Vancouver, BC, Canada},
   series = {FARM 2015}
 }<<<
-\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/diagrams-FARM.pdf}
+\meta{pdf}{\pub{diagrams-FARM.pdf}}
 \meta{video}{https://www.youtube.com/watch?v=oAz8AEf7WDA}
 
 \p{Diagrams is a domain-specific language for creating vector graphics. We will give a short diagrams tutorial/demo, particularly highlighting the power of a functional, embedded domain-specific language.}

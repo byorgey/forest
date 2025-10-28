@@ -1,3 +1,5 @@
+\import{base-macros}
+
 \date{2025-10-25T05:08:24Z}
 \title{Other previously taught courses}
 
@@ -10,5 +12,5 @@
   \li{Honors Precalculus ('05-'06)}
 }
 
-\li{[Correspondence course in precalculus](http://ozark.hendrix.edu/~yorgey/precalc/) with homeschool students ('08-'09)}
+\li{[Correspondence course in precalculus](\home{precalc/}) with homeschool students ('08-'09)}
 }

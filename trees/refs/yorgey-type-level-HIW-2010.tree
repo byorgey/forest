@@ -1,0 +1,12 @@
+\import{base-macros}
+
+\title{Typed type-level programming with GHC}
+\date{2010-10-01}
+\taxon{Reference}
+\tag{presentation}
+\tag{haskell}
+
+\author{brentyorgey}
+\meta{venue}{[[HIW-2010]]}
+\meta{video}{http://www.vimeo.com/15480577}
+\meta{slides}{\pub{typetype-HIW-20101001.pdf}}

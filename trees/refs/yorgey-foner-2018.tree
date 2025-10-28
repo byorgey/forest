@@ -1,3 +1,5 @@
+\import{base-macros}
+
 \title{What's the Difference? A Functional Pearl on Subtracting Bijections}
 \date{2018-07-30}
 \taxon{Reference}
@@ -29,9 +31,9 @@
   address = {New York, NY, USA},
   keywords = {bijection, difference},
 }<<<
-\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/GCBP-author-version.pdf}
+\meta{pdf}{\pub{GCBP-author-version.pdf}}
 \meta{repo}{https://github.com/kwf/GCBP}
-\meta{slides}{http://ozark.hendrix.edu/~yorgey/pub/GCBP-ICFP-18-slides.pdf}
+\meta{slides}{\pub{GCBP-ICFP-18-slides.pdf}}
 \meta{video}{https://www.youtube.com/watch?v=hq9gAe-pmzM}
 
 \p{It is a straightforward exercise to write a program to "add" two bijections—resulting in a bijection between two sum types, which runs the first bijection on elements from the left summand and the second bijection on the right. It is much less obvious how to "subtract" one bijection from another. This problem has been studied in the context of combinatorics, with several computational principles known for producing the "difference" of two bijections. We consider the problem from a computational and algebraic perspective, showing how to construct such bijections at a high level, avoiding pointwise reasoning or being forced to construct the forward and backward directions separately—without sacrificing performance.}

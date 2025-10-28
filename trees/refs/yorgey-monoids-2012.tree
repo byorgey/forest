@@ -1,3 +1,5 @@
+\import{base-macros}
+
 \title{Monoids: Theme and Variations (Functional Pearl)}
 \date{2012-09-13}
 \taxon{Reference}
@@ -24,8 +26,8 @@
   location = {Copenhagen, Denmark},
   series = {Haskell '12}
 }<<<
-\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/monoid-pearl.pdf}
-\meta{slides}{http://ozark.hendrix.edu/~yorgey/pub/12-09-13-monoid-pearl-HS.pdf}
+\meta{pdf}{\pub{monoid-pearl.pdf}}
+\meta{slides}{\pub{12-09-13-monoid-pearl-HS.pdf}}
 \meta{video}{http://www.youtube.com/watch?v=X-8NCkD2vOw}
 
 \p{The monoid is a humble algebraic structure, at first glance even downright boring. However, there's much more to monoids than meets the eye. Using examples taken from the diagrams vector graphics framework as a case study, I demonstrate the power and beauty of monoids for library design. The paper begins with an extremely simple model of diagrams and proceeds through a series of incremental variations, all related somehow to the central theme of monoids. Along the way, I illustrate the power of compositional semantics; why you should also pay attention to the monoid's even humbler cousin, the semigroup; monoid homomorphisms; and monoid actions.}

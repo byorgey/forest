@@ -1,3 +1,5 @@
+\import{base-macros}
+
 \title{Explaining Type Errors}
 \date{2018-01-13}
 \taxon{Reference}
@@ -7,8 +9,8 @@
 \author{richardeisenberg}
 \author{harleyeades}
 \meta{venue}{[[OBT-2018]]}
-\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/explaining-errors.pdf}
-\meta{slides}{http://ozark.hendrix.edu/~yorgey/pub/explaining-errors-slides.pdf}
+\meta{pdf}{\pub{explaining-errors.pdf}}
+\meta{slides}{\pub{explaining-errors-slides.pdf}}
 
 \p{Every beginning student of programming—that is, every student with the ill fortune of having a language with a static type system foisted upon them by a well-intentioned yet sadistic instructor—is well-acquainted with the Dreaded Type Error Message. Why do type error messages have to be so terrifying? Can’t we do a better job explaining type errors to programmers?}
 

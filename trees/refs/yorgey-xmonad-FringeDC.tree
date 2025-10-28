@@ -1,0 +1,11 @@
+\import{base-macros}
+
+\title{xmonad: a Haskell Success Story}
+\date{2008-03-22}
+\taxon{Reference}
+\tag{presentation}
+\tag{haskell}
+
+\author{brentyorgey}
+\meta{venue}{FringeDC}
+\meta{slides}{\pub{xmonad.pdf}}

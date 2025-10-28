@@ -1,3 +1,5 @@
+\import{base-macros}
+
 \title{Giving Haskell a Promotion}
 \date{2012-01-28}
 \taxon{Reference}
@@ -30,6 +32,6 @@
   address = {New York, NY, USA},
   keywords = {haskell, kinds, polymorphism, promotion},
 }<<<
-\meta{pdf}{http://ozark.hendrix.edu/~yorgey/pub/promotion.pdf}
+\meta{pdf}{\pub{promotion.pdf}}
 
 \p{Static type systems strive to be richly expressive while still being simple enough for programmers to use. We describe an experiment that enriches Haskell's kind system with two features promoted from its type system: data types and polymorphism. The new system has a very good power-to-weight ratio: it offers a significant improvement in expressiveness, but, by re-using concepts that programmers are already familiar with, the system is easy to understand and implement.}

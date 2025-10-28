@@ -1,0 +1,16 @@
+\import{base-macros}
+
+\title{\tt{Diagrams}: Declarative Vector Graphics in Haskell}
+\date{2013-11-20}
+\taxon{Reference}
+\tag{presentation}
+\tag{haskell}
+\tag{invited}
+
+\author{brentyorgey}
+\meta{venue}{New York Haskell Users' Group}
+\meta{video}{https://vimeo.com/84104226}
+\meta{video}{https://vimeo.com/84249042}
+\meta{slides}{\pub{13-11-25-nyhaskell-diagrams.pdf}}
+
+\p{Over the past ten years, I have solved over 1700 competitive programming problems in Haskell, just for fun (as well as a few that were not fun). I will give a brief introduction to competitive programming and show off some examples demonstrating the unique benefits of Haskell in this context. We will then have a miniature programming contest, open to all—only Haskell allowed!}
