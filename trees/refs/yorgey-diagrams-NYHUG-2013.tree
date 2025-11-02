@@ -4,8 +4,9 @@
 \date{2013-11-20}
 \taxon{Reference}
 \tag{presentation}
-\tag{haskell}
 \tag{invited}
+\tag{haskell}
+\tag{diagrams}
 
 \author{brentyorgey}
 \meta{venue}{New York Haskell Users' Group}

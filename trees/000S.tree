@@ -1,0 +1,16 @@
+\import{base-macros}
+
+\date{2025-10-28T23:18:57Z}
+\title{Diagrams}
+
+\tag{haskell}
+\tag{edsl}
+
+\p{[Diagrams](https://diagrams.github.io/) is an embedded domain-specific language in [[Haskell]] for creating vector graphics, which I and several other contributors developed starting in 2008.  Development has more or less stopped at this point, but I still keep it updated to compile with the latest versions of GHC and its dependencies.}
+
+\subtree{
+  \title{Diagrams-related talks and papers}
+  \query\datalog{
+    ?X -: {\rel/my-references ?X} {\rel/has-tag ?X '{diagrams}}
+  }
+}

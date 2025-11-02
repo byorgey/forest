@@ -1,4 +1,11 @@
 \date{2025-10-26T01:46:06Z}
 \title{Applicative inference}
 
-\p{While working on a mini-DSL as part of the [[000O]] project, I got an intuitive sense that  the types of DSLs involving an applicative functor can be fully inferred from programs that just use regular applicative notation, whereas for monads this would be ambiguous. I have been working, intermittently, on a [research project](https://github.com/byorgey/infer-applicative) to formalize and prove this idea.}
+\p{While working on a mini-DSL as part of the [[000O]] project, I got an intuitive sense that  the types of DSLs involving an applicative functor can be fully inferred from (suitably restricted) programs that just use regular applicative notation, whereas for monads this would be ambiguous. I have been working, intermittently, on a [research project](https://github.com/byorgey/infer-applicative) to formalize and prove this idea.}
+
+\subtree{
+  \title{Related talks and papers}
+  \query\datalog{
+    ?X -: {\rel/my-references ?X} {\rel/has-tag ?X '{applicative-inference}}
+  }
+}
