@@ -1,7 +1,8 @@
 \export{base-macros}
 
-\def\caps{#{\mathbf{C}}}
-\def\ents{#{\mathbf{E}}}
+\def\capset{#{\mathbf{C}}}
+\def\entset{#{\mathbf{E}}}
+\def\caps{#{\mathsf{caps}}}
 
 \def\sf[it]{#{\mathsf{\it}}}
 \def\Void{\sf{Void}}

@@ -5,8 +5,10 @@
 
 \import{swarm-macros}
 
-\p{We assume a globally fixed set of \em{capabilities} \caps.  A capability represents the ability of a robot to do a particular thing: for example, to add, to move, or to make use of recursive functions.}
+\p{We assume a globally fixed set of \em{capabilities} \capset.  A capability represents the ability of a robot to do a particular thing: for example, to add, to move, or to make use of recursive functions.}
 
-\p{We also assume a globally fixed set of \em{entities} \ents.  Entities represent types of objects in the game, and can be either naturally occurring (such as trees and rocks) or manufactured (such as branch predictors).}
+\p{We also assume a globally fixed set of \em{entities} \entset.  Entities represent types of objects in the game, and can be either naturally occurring (such as trees and rocks) or manufactured (such as branch predictors).}
 
 \p{Some entities \em{provide} one or more capabilities; such entities are known as \em{devices}.  For example, a \tt{branch predictor} entity provides the \tt{conditional} capability, which allows robots to evaluate conditional expressions.  In order to confer capabilities, a device must be \em{equipped}, that is, moved from a robot's general inventory to a special set of installed devices.}
+
+\p{We use #{\caps : \entset \to 2^\capset} to denote the function which maps a device to its set of provided capabilities.  Also, in a standard abuse of notation, if #{S \subseteq E} is a set of deivces, we write #{\mathsf{caps}(S)} to denote the image of #{S} under \caps, that is, ##{\caps(S) = \bigcup \{\caps(s) \mid s \in S\}}.}

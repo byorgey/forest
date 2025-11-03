@@ -3,6 +3,8 @@
 \tag{swarm}
 \tag{note}
 
+\import{swarm-macros}
+
 \p{A capability context #{\Delta} is a triple #{(C,D,I)} where
   \ul{
     \li{#{C} is a set of [capabilities](000X), representing capabilities a robot should have,}
@@ -10,3 +12,8 @@
     \li{#{I} is a multiset of entities, that is, a function #{\mathbf{E} \to \mathbb{N} \cup \{\infty\}}, representing entities that should be present in a robot's inventory.}
   }
 }
+
+\p{A robot with equipped device set #{Q} and inventory #{V} \em{satisfies} the capability context #{\Delta = (C,D,I)} if #{C \subseteq \caps(Q)}, #{D \subseteq Q}, and #{I \subseteq V}. In other words, a robot satisfies #{\Delta = (C,D,I)} if its equipped devices provide at least the capabilities #{C}, it has all the devices #{D} equipped, and its inventory contains at least #{I}.}
+
+% XXX write about motivation for all three components.  capability set: use commands which require capabilities.  device set: `require` directive (e.g. boat).  inventory: `stock` directive, as well as `build` command.  \p{It is not \em{a priori} obvious why a capability context has both a capability set #{C} and device set #{D}, since both will ultimately be fulfilled by a robot's installed devices.  The reason is that these requirements arise }
+
