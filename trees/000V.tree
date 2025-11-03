@@ -1,0 +1,13 @@
+\date{2025-11-03T00:05:19Z}
+\title{Swarm typing judgment}
+\tag{swarm}
+\tag{note}
+
+\p{The basic form of the typing judgment is
+
+##{\Gamma; \Delta \vdash t : \tau}
+
+where #{\Gamma} is a type context, #{\Delta} is a [capability context](000W), #{t} is a term, and #{\tau} is a [type](000Y).  This should intuitively be read as saying that #{t} has type #{\tau} in context #{\Gamma}, and can be evaluated given [capabilities](000X) #{\Delta}.
+}
+
+\p{Note that the judgment only says something about the capabilities required to \em{evaluate} #{t}.  Further use of the resulting value may require additional capabilities: for example, evaluating the application of #{t} to an argument, if it is a function; or executing #{t}, if it is a command. As a rule, the capabilities needed for such uses beyond evaluation will be recorded in the type #{\tau}.}

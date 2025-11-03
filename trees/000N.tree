@@ -1,4 +1,12 @@
-\date{2025-10-26T01:45:22Z}
+\import{base-macros}
+
 \title{Disco}
 
 \p{[Disco](https://github.com/disco-lang/disco) is a functional teaching language for discrete mathematics, implemented in Haskell.}
+
+\subtree{
+  \title{Related talks and papers}
+  \query\datalog{
+    ?X -: {\rel/my-references ?X} {\rel/has-tag ?X '{disco}}
+  }
+}

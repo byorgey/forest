@@ -1,0 +1,18 @@
+\date{2025-11-03T02:17:08Z}
+\title{Swarm types}
+\tag{swarm}
+\tag{note}
+
+\import{swarm-macros}
+
+\p{(Monomorphic) Swarm types #{\tau} consist of:}
+
+\ul{
+  \li{Base types such as \Void, \Unit, \Int, \Text, \Bool.  See the [Swarm source code for a complete list](https://github.com/swarm-game/swarm/blob/47bf44251471814a2510c0dceeaf7dfe347bdd1d/src/swarm-lang/Swarm/Language/Types.hs#L182-L205), but the precise list does not matter much for this discussion.}
+  \li{Sum, product, and record types, which are standard.}
+  \li{Command types.  The type \Cmd{\Delta}{\tau} represents a command which can be executed in [capability context](000X) #{\Delta} and results in a value of type #{\tau}.}
+  \li{Delay types. The type \Delay{\Delta}{\tau} represents a delayed expression which, when forced, can be evaluated in capability context #{\Delta}, resulting in a value of type #{\tau}.}
+  \li{Function types. The type \Fun{\sigma}{\Delta}{\tau} represents a function which, when applied to an argument of type #{\sigma} in capability context #{\Delta}, produces a result of type #{\tau}.}
+}
+
+\p{Swarm types can also be (equi-)recursive.}

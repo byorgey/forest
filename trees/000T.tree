@@ -1,0 +1,16 @@
+\date{2025-11-02T23:52:21Z}
+\title{Motivation}
+
+\p{Currently, [Swarm](000O) has a relatively standard Hindley-Milner type system, with an extra \em{requirements analysis} bolted on top.  The goal of the requirements analysis is to decide what capabilities (and hence what devices) are required to execute some code, and to facilitate automatically installing necessary devices on newly built robots.}
+
+\p{However, the bolted-on requirements analysis is fundamentally broken, and has led to a number of bugs. For example, see the following issues:
+\ul{
+  \li{[Umbrella issue](https://github.com/swarm-game/swarm/issues/231)}
+  \li{[Wrong requirements for `let`-bound variables](https://github.com/swarm-game/swarm/issues/1466)}
+  \li{[Wrong requirements context to `build`](https://github.com/swarm-game/swarm/issues/1916)}
+  \li{[Using recursive functions doesn't require proper capabilities](https://github.com/swarm-game/swarm/issues/2627)}
+  \li{[Making `dictionary` devices more meaningful](https://github.com/swarm-game/swarm/issues/2151)}
+}
+}
+
+\p{Fundamentally, the problem is that a proper requirements analysis must be done statically, and can't be separated from type analysis (\em{e.g.} to be able to deal properly with requirements of higher-order functions).}

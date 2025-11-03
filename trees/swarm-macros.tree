@@ -1,0 +1,15 @@
+\export{base-macros}
+
+\def\caps{#{\mathbf{C}}}
+\def\ents{#{\mathbf{E}}}
+
+\def\sf[it]{#{\mathsf{\it}}}
+\def\Void{\sf{Void}}
+\def\Unit{\sf{Unit}}
+\def\Int{\sf{Int}}
+\def\Text{\sf{Text}}
+\def\Bool{\sf{Bool}}
+
+\def\Cmd[cap][res]{#{\sf{Cmd}^{\cap}\;\res}}
+\def\Delay[cap][res]{#{\sf{Delay}^{\cap}\;\res}}
+\def\Fun[src][cap][tgt]{#{\src \xrightarrow{\cap} \tgt}}

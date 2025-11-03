@@ -1,0 +1,12 @@
+\date{2025-11-03T01:59:14Z}
+\title{Capabilities, entities, and devices}
+\tag{swarm}
+\tag{note}
+
+\import{swarm-macros}
+
+\p{We assume a globally fixed set of \em{capabilities} \caps.  A capability represents the ability of a robot to do a particular thing: for example, to add, to move, or to make use of recursive functions.}
+
+\p{We also assume a globally fixed set of \em{entities} \ents.  Entities represent types of objects in the game, and can be either naturally occurring (such as trees and rocks) or manufactured (such as branch predictors).}
+
+\p{Some entities \em{provide} one or more capabilities; such entities are known as \em{devices}.  For example, a \tt{branch predictor} entity provides the \tt{conditional} capability, which allows robots to evaluate conditional expressions.  In order to confer capabilities, a device must be \em{equipped}, that is, moved from a robot's general inventory to a special set of installed devices.}

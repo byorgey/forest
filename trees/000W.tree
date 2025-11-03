@@ -1,0 +1,12 @@
+\date{2025-11-03T01:48:28Z}
+\title{Swarm capability contexts}
+\tag{swarm}
+\tag{note}
+
+\p{A capability context #{\Delta} is a triple #{(C,D,I)} where
+  \ul{
+    \li{#{C} is a set of [capabilities](000X), representing capabilities a robot should have,}
+    \li{#{D} is a set of [entities](000X), representing [devices](000X) that should be equipped,}
+    \li{#{I} is a multiset of entities, that is, a function #{\mathbf{E} \to \mathbb{N} \cup \{\infty\}}, representing entities that should be present in a robot's inventory.}
+  }
+}
