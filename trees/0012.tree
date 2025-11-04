@@ -8,6 +8,8 @@
 #{\entset \to \Ninf} assigning a [nonnegative (possibly infinite)](0013)
 multiplicity to each entity.}
 
-\p{If #{I} and #{J} are inventories, we write #{I \subseteq J} to mean that #{I(e) \leq J(e)} for every #{e \in \entset}, that is, #{J} contains at least as many copies of each entity #{e} as #{I} does.}
+\p{We define the union of inventories, #{I \cup J}, as the inventory \lam{e}{I(e) + J(e)}, the componentwise sum of inventories #{I} and #{J}.  Inventories form a monoid under union, with the empty inventory as the identity element.}
 
-\p{We also write #{I \cup J} to denote the inventory \lam{e}{I(e) + J(e)}, the componentwise sum of inventories #{I} and #{J}.}
+\p{If #{I} and #{J} are inventories, we write #{I \subseteq J} to mean that #{I(e) \leq J(e)} for every #{e \in \entset}, that is, #{J} contains at least as many copies of each entity #{e} as #{I} does.  Equivalently, #{I \subseteq J} if there exists an inventory #{K} such that #{I \cup K = J}.}
+
+\p{If #{k \in \Ninf} and #{I} is an inventory, we define #{k \cdot I} as the inventory #{\lam{e}{k \times I(e)}}; that is, intuitively, #{k \cdot I} consists of the union of #{k} copies of #{I}.  The inventory monoid together with this action by #{\Ninf} forms a [left semimodule](https://en.wikipedia.org/wiki/Semimodule).}
