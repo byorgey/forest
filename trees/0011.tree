@@ -3,12 +3,12 @@
 
 \import{swarm-macros}
 
-\p{It's worth discussing the motivation for each of these components.}
+\p{It's worth discussing the motivation for each of the components of a [capability context](000Z).}
 
 \ul{
-  \li{The capability set #{C} is used to record capabilities needed to execute certain commands, use certain language constructs, and so on.}
-  \li{\p{The device set #{D} is used to record specific devices required by a \tt{require} directive.  For example, the \tt{boat} device confers the capability to traverse water, and does not correspond to a specific command or language construct, so the programmer needs a way to require it specifically.  Also, since multiple devices may provide a given capability, the programmer may have reasons for requiring a specific device rather than letting the system choose.}
-  \p{One might still wonder why we need both #{C} and #{D}; wouldn't it be simpler to just have a set of required devices #{D}? However, since the relationship between devices and capabilities can be many-to-many, we cannot reliably pick a concrete device for a required capability in a nicely compositional way.  We prefer to wait until the last possible minute to pick a concrete set of devices to provides a given set of capabilities.}
+  \li{The capability set #{C} is used to record [capabilities](000X) needed to execute certain commands, use certain language constructs, and so on.}
+  \li{\p{The device set #{D} is used to record specific [devices](000X) required by a \tt{require} directive.  For example, the \tt{boat} device confers the capability to traverse water, and does not correspond to a specific command or language construct, so the programmer needs a way to require it specifically.  Also, since multiple devices may provide a given capability, the programmer may have reasons for requiring a specific device rather than letting the system choose.}
+  \p{One might still wonder why we need both #{C} and #{D}; wouldn't it be simpler to just have a set of required devices #{D}? However, since the relationship between devices and capabilities can be many-to-many, we cannot reliably pick a concrete device for a required capability in a nicely compositional way.  We prefer to wait until the last possible minute to pick a concrete set of devices to provide a given set of capabilities.}
   }
-  \li{The inventory multiset #{I} has several purposes.  One is simply to record inventory required by a \tt{stock} directive.  For example, \tt{stock 10 "rock"} requires a robot to have 10 rocks in its inventory.  More importantly, however, the \tt{build} command turns device requirements into inventory requirements.  That is, if a robot must have device #{d} equipped in order to execute program \tt{P}, then in order to execute \tt{build{P}}, a robot must have device #{d} in its inventory (so that it can equip the device on the newly constructed robot).}
+  \li{The [inventory](0012) #{I} has several purposes.  One is simply to record inventory required by a \tt{stock} directive.  For example, \tt{stock 10 "rock"} requires a robot to have 10 rocks in its inventory.  More importantly, however, the \tt{build} command (which constructs a robot to execute a given program) turns device requirements into inventory requirements.  That is, if executing program \tt{P} requires having device #{d} equipped, then executing \tt{build {P}} will require possessing #{d} in the inventory (in order to equip the device on the newly constructed robot).}
 }

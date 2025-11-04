@@ -1,0 +1,13 @@
+\date{2025-11-04T02:39:42Z}
+\title{Inventories}
+\taxon{Definition}
+
+\import{swarm-macros}
+
+\p{An \em{inventory} is a multiset of entities, that is, a function
+#{\entset \to \Ninf} assigning a [nonnegative (possibly infinite)](0013)
+multiplicity to each entity.}
+
+\p{If #{I} and #{J} are inventories, we write #{I \subseteq J} to mean that #{I(e) \leq J(e)} for every #{e \in \entset}, that is, #{J} contains at least as many copies of each entity #{e} as #{I} does.}
+
+\p{We also write #{I \cup J} to denote the inventory \lam{e}{I(e) + J(e)}, the componentwise sum of inventories #{I} and #{J}.}

@@ -4,6 +4,8 @@
 \def\entset{#{\mathbf{E}}}
 \def\caps{#{\mathsf{caps}}}
 
+\def\Ninf{#{\mathbb{N}_\infty}}
+
 \def\sf[it]{#{\mathsf{\it}}}
 \def\Void{\sf{Void}}
 \def\Unit{\sf{Unit}}

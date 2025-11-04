@@ -39,3 +39,6 @@
 \def\home[sub]{http://ozark.hendrix.edu/~yorgey/\sub}
 \def\pub[sub]{\home{pub/\sub}}
 \def\blog[sub]{https://byorgey.github.io/blog/\sub}
+
+\def\N{#{\mathbb{N}}}
+\def\lam[x][body]{#{\lambda \x.\; \body}}

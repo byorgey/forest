@@ -1,0 +1,8 @@
+\date{2025-11-04T02:49:23Z}
+\title{Extended natural numbers}
+\taxon{Definition}
+
+\import{swarm-macros}
+
+\p{We write #{\Ninf = \N \cup \{\infty\}} to denote the natural numbers adjoined with a
+special positive infinity value, satisfying #{n + \infty = \infty} and #{n \leq \infty} for all #{n \in \Ninf}.}
