@@ -9,6 +9,6 @@
 
 \p{We also assume a globally fixed set of \em{entities} \entset.  Entities represent types of objects in the game, and can be either naturally occurring (such as trees and rocks) or manufactured (such as branch predictors).}
 
-\p{Some entities \em{provide} one or more capabilities; such entities are known as \em{devices}.  For example, a \tt{branch predictor} device provides the \tt{conditional} capability, which allows robots to evaluate conditional expressions.  In order to confer capabilities, a device must be \em{equipped}, that is, moved from a robot's general inventory to a special set of installed devices.}
+\p{Some entities \em{provide} one or more capabilities; such entities are known as \em{devices}.  For example, a \tt{branch predictor} device provides the \tt{conditional} capability, which allows robots to evaluate conditional expressions.}
 
 \p{We also assume a fixed function #{\caps : \entset \to \mathcal{P}(\capset)} which maps each entity to the set (possibly empty) of capabilities it provides.  In a standard abuse of notation, if #{D \subseteq \entset} is a set of entities, we write #{\mathsf{caps}(D)} to denote the image of #{D} under \caps, that is, ##{\caps(D) = \bigcup_{d \in D} \caps(d).}}

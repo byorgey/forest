@@ -4,7 +4,7 @@
 
 \import{swarm-macros}
 
-\p{We write #{\Ninf = \N \cup \{\infty\}} to denote the natural numbers adjoined with a
+\p{We write #{\Ninf = \N \cup \{\infty\}} to denote the natural numbers extended with a
 special positive infinity value.}
 
 \ul{

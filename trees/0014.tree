@@ -1,0 +1,14 @@
+\date{2025-11-04T18:48:26Z}
+\title{Robots}
+
+\import{swarm-macros}
+
+\p{Each robot has:
+
+\ul{
+  \li{an [inventory](0012), containing a number of [entities](000X), and}
+  \li{a set of equipped [devices](000X).}
+}
+
+In order to confer capabilities, a device must be \em{equipped}, that is, moved from the robot's general inventory to the special set of equipped devices. Entities can be moved between the inventory and equipped set via the \tt{equip} and \tt{unequip} commands.
+}
