@@ -16,3 +16,5 @@
 }
 
 \p{Fundamentally, the problem is that a proper requirements analysis must be done statically (requirements analysis for programs passed to the \tt{build} command are currently done \em{dynamically}, at runtime, leading to a number of bugs), and can't be separated from type analysis (\em{e.g.} to be able to deal properly with requirements of higher-order functions).}
+
+\p{The goal of this work is to design a unified type-and-requirements system that handles things properly, using the lessons learned over the past few years of struggling with the current implementation.}
