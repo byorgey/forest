@@ -5,9 +5,9 @@
 
 \import{swarm-macros}
 
-\p{We assume a globally fixed set of \em{capabilities} \capset.  A capability represents the ability of a robot to do a particular thing: for example, to add, to move, or to make use of recursive functions.}
+\p{We assume a globally fixed set of \em{entities} \entset.  Entities represent types of objects in the game, and can be either naturally occurring (such as trees and rocks) or manufactured (such as branch predictors).}
 
-\p{We also assume a globally fixed set of \em{entities} \entset.  Entities represent types of objects in the game, and can be either naturally occurring (such as trees and rocks) or manufactured (such as branch predictors).}
+\p{We also assume a globally fixed set of \em{capabilities} \capset.  A capability represents the ability of a robot to do a particular thing: for example, to add, to move, or to make use of recursive functions.  For each built-in command #c there is a capability \Exc{c} which represents the capability to execute command #c, but there are other capabilities as well.}
 
 \p{Some entities \em{provide} one or more capabilities; such entities are known as \em{devices}.  For example, a \tt{branch predictor} device provides the \tt{conditional} capability, which allows robots to evaluate conditional expressions.}
 

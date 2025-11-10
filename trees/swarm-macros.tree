@@ -1,18 +1,39 @@
 \export{base-macros}
 
-\def\capset{#{\mathbf{C}}}
-\def\entset{#{\mathbf{E}}}
-\def\caps{#{\mathsf{caps}}}
-
-\def\Ninf{#{\mathbb{N}_\infty}}
-
 \def\sf[it]{#{\mathsf{\it}}}
+\def\bf[it]{#{\mathbf{\it}}}
+\def\bb[it]{#{\mathbb{\it}}}
+
+\def\capset{\bf{C}}
+\def\entset{\bf{E}}
+\def\caps{\sf{caps}}
+
+\def\Ninf{#{\bb{N}_\infty}}
+
 \def\Void{\sf{Void}}
 \def\Unit{\sf{Unit}}
 \def\Int{\sf{Int}}
 \def\Text{\sf{Text}}
 \def\Bool{\sf{Bool}}
+\def\Dir{\sf{Dir}}
 
 \def\Cmd[cap][res]{#{\sf{Cmd}^{\cap}\;\res}}
 \def\Delay[cap][res]{#{\sf{Delay}^{\cap}\;\res}}
 \def\Fun[src][cap][tgt]{#{\src \xrightarrow{\cap} \tgt}}
+\def\Exc[c]{#{\sf{Exc}(\c)}}
+\def\sequence[c1][c2]{#{\c1;\; \c2}}
+
+\def\swtygen[ctx][rctx][t][rel][ty]{#{\ctx \vdash \t \rel \ty \;[\rctx]}}
+\def\swty[ctx][rctx][t][ty]{\swtygen{\ctx}{\rctx}{\t}{:}{\ty}}
+\def\swinfer[ctx][t][ty][rctx]{\swtygen{\ctx}{\rctx}{\t}{\triangleright}{\ty}}
+\def\swcheck[ctx][t][ty][rctx]{\swtygen{\ctx}{\rctx}{\t}{\triangleleft}{\ty}}
+
+\def\bind{#{\leftarrow}}
+
+\def\rules[~body]{
+  \scope{
+    \figure{
+      \tex{\usepackage{mathpartir}\usepackage{amssymb}\usepackage{mathtools}}{$\body{}$}
+    }
+  }
+}

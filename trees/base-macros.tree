@@ -2,9 +2,7 @@
 
 \xmlns:html{http://www.w3.org/1999/xhtml}
 
-\def\tt[body]{
-  \<html:kbd>{\body}
-}
+\def\tt[body]{\code{body}}
 
 \def\table[body]{
   \<html:table>{\body}
@@ -42,3 +40,5 @@
 
 \def\N{#{\mathbb{N}}}
 \def\lam[x][body]{#{\lambda \x.\; \body}}
+\def\lamt[x][ty][body]{#{\lambda \x : \ty.\; \body}}
+\def\app[x][y]{#{\x\; \y}}

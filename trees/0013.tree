@@ -13,4 +13,4 @@ special positive infinity value.}
   \li{Multiplication is standard on #{\N}, with #{0 \times \infty = \infty \times 0 = 0} and #{n \times \infty = \infty \times n = \infty} for #{n > 0}.}
 }
 
-\p{Under these definitions, #{(\Ninf, +, 0, \times, 1)} forms an ordered semiring.}
+\p{Under these definitions, #{(\Ninf, +, 0, \times, 1)} forms a ([naturally ordered](https://en.wikipedia.org/wiki/Monus)) commutative [semiring](https://en.wikipedia.org/wiki/Semiring).}
