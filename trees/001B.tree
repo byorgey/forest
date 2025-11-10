@@ -1,0 +1,22 @@
+\date{2025-11-10T03:54:06Z}
+\title{Typing rules for delay}
+
+\import{swarm-macros}
+
+\p{The rules for delay types are straightforward:
+
+\rules{
+  \inferrule
+    {\swinfer{\Gamma}{t}{\tau}{\Delta}}
+    {\swinfer{\Gamma}{\app{\sf{delay}}{t}}{\Delay{\Delta}{\tau}}{\varnothing}}
+}
+
+\rules{
+  \inferrule
+    {\swinfer{\Gamma}{t}{\Delay{\Delta_1}{\tau}}{\Delta_2}}
+    {\swinfer{\Gamma}{\app{\sf{force}}{t}}{\tau}{\Delta_1 \cup \Delta_2}}
+}
+
+If we wrap a term in a delay, then any capabilities needed to evaluate it are put off until such time as its evaluation is forced.
+
+}
