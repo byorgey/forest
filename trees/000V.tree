@@ -5,13 +5,11 @@
 
 \import{swarm-macros}
 
-\p{We present the typing rules in a bidirectional style.  There are two basic typing judgments.  The first is
+\p{The basic typing judgment for the Swarm language has the form
 
-##{\swinfer{\Gamma}{t}{\tau}{\Delta}}
+##{\swty{\Gamma}{t}{\tau}{\Delta}}
 
-where #{\Gamma} is a type context, #{\Delta} is a [capability context](000W), #{t} is a term, and #{\tau} is a [type](000Y).  This should intuitively be read as saying that #{t} can be inferred as having type #{\tau} in context #{\Gamma}, and can be evaluated given [capabilities](000X) #{\Delta}.  In this judgment #{\Gamma} and #{t} are considered inputs, and #{\tau} and #{\Delta} are considered outputs.
+where #{\Gamma} is a type context, #{\Delta} is a [capability context](000W), #{t} is a term, and #{\tau} is a [type](000Y).  This should intuitively be read as saying that #{t} can has type #{\tau} in context #{\Gamma}, and can be evaluated given [capabilities](000X) #{\Delta}.  In this judgment #{\Gamma} and #{t} are considered inputs, #{\Delta} are considered an output, and #{\tau} can be either an input or an output depending on whether we are in checking or inference mode.  In practice, the typing rules are implemented in an explicitly bidirectional style, but are presented here as undirected rules for simplicity.
 }
 
-\p{Dually, ##{\swcheck{\Gamma}{t}{\tau}{\Delta}} means that #{t} can be \em{checked} to have type #{\tau} in context #{\Gamma}, and requires capabilities #{\Delta} to be evaluated.  Here, #{\Gamma}, #{t}, and #{\tau} are considered inputs, and #{\Delta} is still considered an output.}
-
-\p{Note that the judgments only say something about the capabilities required to \em{evaluate} #{t}.  Further use of the resulting value may require additional capabilities: for example, evaluating the application of #{t} to an argument, if it is a function; or executing #{t}, if it is a command. As a rule, the capabilities needed for such uses beyond evaluation will be recorded in the type #{\tau}.}
+\p{Note that the judgment only says something about the capabilities required to \em{evaluate} #{t}.  Further use of the resulting value may require additional capabilities: for example, evaluating the application of #{t} to an argument, if it is a function; or executing #{t}, if it is a command. As a rule, the capabilities needed for such uses beyond evaluation will be recorded in the type #{\tau}.}

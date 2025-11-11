@@ -7,23 +7,23 @@
 
 \rules{
   \inferrule
-    {\swinfer{\Gamma, x : \tau_1}{e}{\tau_2}{\Delta}}
-    {\swinfer{\Gamma}{\lamt{x}{\tau_1}{e}}{\Fun{\tau_1}{\Delta}{\tau_2}}{\varnothing}}
+    {\swty{\Gamma, x : \tau_1}{e}{\tau_2}{\Delta}}
+    {\swty{\Gamma}{\lamt{x}{\tau_1}{e}}{\Fun{\tau_1}{\Delta}{\tau_2}}{\sf{Lambda}}}
 }
 
-Notice how the requirements for evaluating the body show up over the arrow in the result type; we do not evaluate under lambdas, but defer evaluation of the body until evaluating an application to an argument.
+Notice how the requirements for evaluating the body show up over the arrow in the result type, but are not needed to evaluate the lambda itself. We do not evaluate under lambdas, but defer evaluation of the body until evaluating an application to an argument.  However, evaluating a lambda does require the special \sf{Lambda} capability.
 }
 
 \p{Here is the typing rule for function application:
 
 \rules{
   \inferrule
-    {\swinfer{\Gamma}{f}{\Fun{\tau_1}{\Delta_1}{\tau_2}}{\Delta_2} \\
-     \swcheck{\Gamma}{e}{\tau_1}{\Delta_3}
+    {\swty{\Gamma}{f}{\Fun{\tau_1}{\Delta_1}{\tau_2}}{\Delta_2} \\
+     \swty{\Gamma}{e}{\tau_1}{\Delta_3}
     }
-    {\swinfer{\Gamma}{\app{f}{e}}{\tau_2}{\Delta_1 \cup \Delta_2 \cup \Delta_3}}
+    {\swty{\Gamma}{\app{f}{e}}{\tau_2}{\Delta_1 \cup \Delta_2 \cup \Delta_3 \cup \sf{Apply}}}
 }
 
-Here, we infer the type of the function #{f} and check that the argument #{e} has the right type.  The capability context needed to evaluate the application #{\app{f}{e}} is the union of all the capabilities needed to evaluate #{f}, to evaluate #{e}, and to evaluate the body of the function represented by #{f}.
+The capability context needed to evaluate the application #{\app{f}{e}} is the union of all the capabilities needed to evaluate #{f}, to evaluate #{e}, and to evaluate the body of the function represented by #{f}, along with the special \sf{Apply} capability.
 
 }

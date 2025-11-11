@@ -3,27 +3,27 @@
 
 \import{swarm-macros}
 
-\p{The rule for bind (\em{aka} sequencing) in the \sf{Cmd} monad is as follows:
+\p{The basic rule for bind (\em{aka} sequencing) in the \sf{Cmd} monad is as follows:
 
 \rules{
   \inferrule
-    {\swinfer{\Gamma}{c_1}{\Cmd{\Phi_1}{\tau_1}}{\Delta_1} \\
-     \swinfer{\Gamma, x : \tau_1}{c_2}{\Cmd{\Phi_2}{\tau_2}}{\Delta_2}
+    {\swty{\Gamma}{c_1}{\Cmd{\Phi_1}{\tau_1}}{\Delta_1} \\
+     \swty{\Gamma}{c_2}{\Cmd{\Phi_2}{\tau_2}}{\Delta_2}
     }
-    {\swinfer{\Gamma}{\sequence{x \bind c_1}{c_2}}{\Cmd{\Phi_1 \cup \Phi_2}{\tau_2}}{\Delta_1 \cup \Delta_2}}
+    {\swty{\Gamma}{\sequence{c_1}{c_2}}{\Cmd{\Phi_1 \cup \Phi_2}{\tau_2}}{\Delta_1 \cup \Delta_2}}
 }
 
-This says that if #{c_1} is a command requring capabilities #{\Delta_1} to evaluate and #{\Phi_1} to execute, and which produces a value of type #{\tau_1}, and #{c_2} is a command (which may mention the #{x} bound to the result of #{c_1}) requiring capabilities #{\Delta_2} to evaluate and #{\Phi_2} to execute, producing a value of type #{\tau_2}, then \sequence{x \bind c_1}{c_2} is a command requring capabilities #{\Delta_1 \cup \Delta_2} to evaluate, #{\Phi_1 \cup \Phi_2} to execute, and producing a #{\tau_2}.
+This says that if #{c_1} is a command requring capabilities #{\Delta_1} to evaluate and #{\Phi_1} to execute, and which produces a value of type #{\tau_1}, and #{c_2} is a command requiring capabilities #{\Delta_2} to evaluate and #{\Phi_2} to execute, producing a value of type #{\tau_2}, then \sequence{c_1}{c_2} is a command requring capabilities #{\Delta_1 \cup \Delta_2} to evaluate, #{\Phi_1 \cup \Phi_2} to execute, and producing a #{\tau_2}.
 }
 
-\p{Note that this rule corresponds to a particular evaluation strategy, namely, evaluating #{c_1} and #{c_2} eagerly at the time \sequence{x \bind c_1}{c_2} is evaluated. If we instead wanted to wait to evaluate #{c_1} and #{c_2} at execution time, then we would need a rule like
+\p{Note that this rule corresponds to a particular evaluation strategy, namely, evaluating #{c_1} and #{c_2} eagerly at the time \sequence{c_1}{c_2} is evaluated. If we instead wanted to wait to evaluate #{c_1} and #{c_2} at execution time, then we would need a rule like
 
 \rules{
   \inferrule
-    {\swinfer{\Gamma}{c_1}{\Cmd{\Phi_1}{\tau_1}}{\Delta_1} \\
-     \swinfer{\Gamma, x : \tau_1}{c_2}{\Cmd{\Phi_2}{\tau_2}}{\Delta_2}
+    {\swty{\Gamma}{c_1}{\Cmd{\Phi_1}{\tau_1}}{\Delta_1} \\
+     \swty{\Gamma}{c_2}{\Cmd{\Phi_2}{\tau_2}}{\Delta_2}
     }
-    {\swinfer{\Gamma}{\sequence{x \bind c_1}{c_2}}{\Cmd{\Delta_1 \cup \Delta_2 \cup \Phi_1 \cup \Phi_2}{\tau_2}}{\varnothing}}
+    {\swty{\Gamma}{\sequence{c_1}{c_2}}{\Cmd{\Delta_1 \cup \Delta_2 \cup \Phi_1 \cup \Phi_2}{\tau_2}}{\varnothing}}
 }
 
 To see the difference, consider this example code:
@@ -35,6 +35,13 @@ def example = f 3; g north end
 <<<
 When are \code{f 3} and \code{g north} evaluated?  Under the first rule above, they must be evaluated eagerly, when the definition of \code{example} is evaluated.  Under the second rule above, they would be re-evaluated every time \code{example} is executed.}
 
-\p{
-XXX what about the fact that #{x} is free in #{c_2}?  Evaluation of open terms? Need different rules for when #{x} is bound and when it isn't?
+\p{However, we can also bind the result of #{c_1} in #{c_2}, in which case we can no longer evaluate #{c_2} eagerly (unless we wanted to implement partial evaluation of open terms).  The rule for \sequence{x \bind c_1}{c_2} is therefore:
+}
+
+\rules{
+  \inferrule
+    {\swty{\Gamma}{c_1}{\Cmd{\Phi_1}{\tau_1}}{\Delta_1} \\
+     \swty{\Gamma, x : \tau_1}{c_2}{\Cmd{\Phi_2}{\tau_2}}{\Delta_2}
+    }
+    {\swty{\Gamma}{\sequence{x \bind c_1}{c_2}}{\Cmd{\Phi_1 \cup \Phi_2 \cup \Delta_2}{\tau_2}}{\Delta_1}}
 }

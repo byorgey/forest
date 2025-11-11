@@ -6,7 +6,7 @@
 \p{Many built-in commands have simple typing rules like the following:
 
   \rules{
-    \swinfer{\Gamma}{\sf{move}}{\Cmd{\Exc{\sf{move}}}{\Unit}}{\varnothing}
+    \swty{\Gamma}{\sf{move}}{\Cmd{\Exc{\sf{move}}}{\Unit}}{\varnothing}
   }
 
   This says simply that \sf{move} is a command, and that executing it requires the corresponding capability. (Recall that writing a bare capability like #{\Exc{\sf{move}}} where a capability context is expected [stands for the context with a singleton capability set and empty device set and inventory](000Z).)  The #{\varnothing} indicates that no capabilities are required to \em{evaluate} \sf{move}; it is already a value so no evaluation is required.
@@ -15,7 +15,7 @@
 \p{Some built-in commands take arguments, but they typically have a similar typing rule, with no capabilities on the arrows.  For example, no special capabilities are required to \em{evaluate} the application \app{\sf{turn}}{\sf{left}}.
 
 \rules{
-  \swinfer{\Gamma}{\sf{turn}}{\Fun{\Dir}{}{\Cmd{\Exc{\sf{turn}}}{\Unit}}}{\varnothing}
+  \swty{\Gamma}{\sf{turn}}{\Fun{\Dir}{}{\Cmd{\Exc{\sf{turn}}}{\Unit}}}{\varnothing}
 }
 
 }

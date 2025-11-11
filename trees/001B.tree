@@ -7,14 +7,14 @@
 
 \rules{
   \inferrule
-    {\swinfer{\Gamma}{t}{\tau}{\Delta}}
-    {\swinfer{\Gamma}{\app{\sf{delay}}{t}}{\Delay{\Delta}{\tau}}{\varnothing}}
+    {\swty{\Gamma}{t}{\tau}{\Delta}}
+    {\swty{\Gamma}{\app{\sf{delay}}{t}}{\Delay{\Delta}{\tau}}{\varnothing}}
 }
 
 \rules{
   \inferrule
-    {\swinfer{\Gamma}{t}{\Delay{\Delta_1}{\tau}}{\Delta_2}}
-    {\swinfer{\Gamma}{\app{\sf{force}}{t}}{\tau}{\Delta_1 \cup \Delta_2}}
+    {\swty{\Gamma}{t}{\Delay{\Delta_1}{\tau}}{\Delta_2}}
+    {\swty{\Gamma}{\app{\sf{force}}{t}}{\tau}{\Delta_1 \cup \Delta_2}}
 }
 
 If we wrap a term in a delay, then any capabilities needed to evaluate it are put off until such time as its evaluation is forced.
