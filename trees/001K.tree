@@ -1,0 +1,7 @@
+\date{2025-11-13T18:36:11Z}
+\title{Requirement context notation}
+\taxon{Definition}
+
+\import{swarm-macros}
+
+\p{We write \bf{0} for the empty [requirement context](000Z) #{(\varnothing, \varnothing, \lam{e}{0})}.  Also, for convenience, we sometimes use a bare set of capabilities #{\Delta} to denote the requirement context #{(\Delta, \varnothing, \lam{e}{0})}, or a bare capability #{c} to denote #{(\{c\}, \varnothing, \lam{e}{0})}; and likewise for bare entity sets or inventories.}

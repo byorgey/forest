@@ -1,8 +1,7 @@
 \date{2025-11-05T20:34:15Z}
-\title{Operations on capability contexts}
+\title{Requirement context union}
 
 \import{swarm-macros}
 
-\p{We define the union of capability contexts componentwise, that is, ##{\Delta_1 \cup \Delta_2 = (C_1, D_1, I_1) \cup (C_2, D_2, I_2) = (C_1 \cup C_2, D_1 \cup D_2, I_1 \cup I_2),} where the first two unions are set union, and the last is [multiset union](0012).}
+\p{We define the union of [requirement contexts](000Z) componentwise, that is, ##{\Phi_1 \cup \Phi_2 = (\Delta_1, D_1, I_1) \cup (\Delta_2, D_2, I_2) = (\Delta_1 \cup \Delta_2, D_1 \cup D_2, I_1 \cup I_2),} where the first two unions are set union, and the last is [multiset union](0012).}
 
-\p{For #{k \in \Ninf} we can also define #{k \cdot \Delta = k \cdot (C,D,I) = (k \cdot C, k \cdot D, k \cdot I)}, where for any set #{S} we have #{0 \cdot S = \varnothing} and #{k \cdot S = S} for #{k > 0}.  Again, the idea is that #{k \cdot \Delta} represents the union of #{k} copies of #{\Delta}.}

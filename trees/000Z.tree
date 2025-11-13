@@ -1,15 +1,19 @@
 \date{2025-11-03T15:55:01Z}
-\title{Capability contexts}
+\title{Requirement contexts}
 \taxon{Definition}
 
 \import{swarm-macros}
 
-\p{A \em{capability context} #{\Delta} is a triple #{(C,D,I)} where
+\p{A \em{requirement context} #{\Phi} is a triple #{(\Delta,D,I)} where
   \ul{
-    \li{#{C \subseteq \capset} is a set of [capabilities](000X), representing capabilities a robot should have,}
-    \li{#{D \subseteq \entset} is a set of [entities](000X), representing [devices](000X) that should be equipped,}
+    \li{#{\Delta \subseteq \capset} is a set of [capabilities](001D), representing capabilities a robot should have,}
+    \li{#{D \subseteq \entset} is a set of [entities](001C), representing [devices](001E) that should be equipped,}
     \li{#{I} is an [inventory](0012), representing entities that a robot should possess.}
   }
 }
 
-\p{We write \bf{0} for the empty capability context #{(\varnothing, \varnothing, \lam{e}{0})}.  Also, for convenience, we sometimes use a bare set of capabilities #{C} to denote the capability context #{(C, \varnothing, \lam{e}{0})}, or a bare capability #{c} to denote #{(\{c\}, \varnothing, \lam{e}{0})}; and likewise for bare entity sets or inventories.}
+\transclude{001K}
+\transclude{0010}
+\transclude{0011}
+\transclude{0016}
+\transclude{001L}

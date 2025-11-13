@@ -1,0 +1,7 @@
+\date{2025-11-13T17:47:09Z}
+\title{Entities}
+\taxon{Definition}
+
+\import{swarm-macros}
+
+\p{We assume a globally fixed set of \em{entities} \entset.  Entities represent types of objects in the game, and can be either naturally occurring (such as trees and rocks) or manufactured (such as branch predictors).}

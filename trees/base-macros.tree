@@ -34,6 +34,10 @@
  \rel/my-references ?X -: {\rel/has-author ?X @{brentyorgey}} {\rel/is-reference ?X}
 }
 
+\def\etc{\em{etc.}}
+\def\eg{\em{e.g.}}
+\def\ie{\em{i.e.}}
+
 \def\home[sub]{http://ozark.hendrix.edu/~yorgey/\sub}
 \def\pub[sub]{\home{pub/\sub}}
 \def\blog[sub]{https://byorgey.github.io/blog/\sub}
@@ -42,3 +46,4 @@
 \def\lam[x][body]{#{\lambda \x.\; \body}}
 \def\lamt[x][ty][body]{#{\lambda \x : \ty.\; \body}}
 \def\app[x][y]{#{\x\; \y}}
+\def\powerset[s]{#{\mathcal{P}(\s)}}

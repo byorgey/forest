@@ -1,0 +1,7 @@
+\date{2025-11-13T18:27:37Z}
+\title{Inventory union}
+\taxon{Definition}
+
+\import{swarm-macros}
+
+\p{We define the union of [inventories](0012), #{I \cup J}, as the inventory \lam{e}{I(e) + J(e)}, the componentwise sum of inventories #{I} and #{J}.  Inventories form a monoid under union, with the empty inventory as the identity element.}

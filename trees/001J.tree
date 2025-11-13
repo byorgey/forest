@@ -1,0 +1,7 @@
+\date{2025-11-13T18:29:54Z}
+\title{Inventory replication}
+\taxon{Definition}
+
+\import{swarm-macros}
+
+\p{If #{k \in \Ninf} and #{I} is an [inventory](0012), we define #{k \cdot I} as the inventory #{\lam{e}{k \times I(e)}}; that is, intuitively, #{k \cdot I} consists of the union of #{k} copies of #{I}.  The [inventory monoid](001H) together with this action by #{\Ninf} forms a [left semimodule](https://en.wikipedia.org/wiki/Semimodule).}

@@ -1,0 +1,7 @@
+\date{2025-11-13T17:50:28Z}
+\title{Devices}
+\taxon{Definition}
+
+\import{swarm-macros}
+
+\p{Some [entities](001C) \em{provide} one or more [capabilities](001D); such entities are known as \em{devices}.  For example, a \tt{branch predictor} device provides the \tt{conditional} capability, which allows robots to evaluate conditional expressions.}

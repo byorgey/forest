@@ -1,0 +1,7 @@
+\date{2025-11-13T18:43:34Z}
+\title{Requirement context replication}
+\taxon{Definition}
+
+\import{swarm-macros}
+
+\p{For #{k \in \Ninf} we can also define #{k \cdot \Phi = k \cdot (\Delta,D,I) = (k \cdot \Delta, k \cdot D, k \cdot I)}, where #{k \cdot I} is [inventory replication](001J), and for any set #{S} we define #{0 \cdot S = \varnothing} and #{k \cdot S = S} for #{k > 0}.  Again, the idea is that #{k \cdot \Phi} represents the union of #{k} copies of #{\Phi}.}

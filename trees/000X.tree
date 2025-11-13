@@ -5,10 +5,8 @@
 
 \import{swarm-macros}
 
-\p{We assume a globally fixed set of \em{entities} \entset.  Entities represent types of objects in the game, and can be either naturally occurring (such as trees and rocks) or manufactured (such as branch predictors).}
-
-\p{We also assume a globally fixed set of \em{capabilities} \capset.  A capability represents the ability of a robot to do a particular thing: for example, to add, to move, or to make use of recursive functions.  For each built-in command #c there is a capability \Exc{c} which represents the capability to execute command #c, but there are other capabilities as well.}
-
-\p{Some entities \em{provide} one or more capabilities; such entities are known as \em{devices}.  For example, a \tt{branch predictor} device provides the \tt{conditional} capability, which allows robots to evaluate conditional expressions.}
-
-\p{We also assume a fixed function #{\caps : \entset \to \mathcal{P}(\capset)} which maps each entity to the set (possibly empty) of capabilities it provides.  In a standard abuse of notation, if #{D \subseteq \entset} is a set of entities, we write #{\mathsf{caps}(D)} to denote the image of #{D} under \caps, that is, ##{\caps(D) = \bigcup_{d \in D} \caps(d).}}
+\transclude{001C}
+\transclude{001D}
+\transclude{001E}
+\transclude{001F}
+\transclude{001G}

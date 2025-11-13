@@ -1,0 +1,6 @@
+\date{2025-11-13T17:52:02Z}
+\title{Devices #{\to} capabilities}
+
+\import{swarm-macros}
+
+\p{We assume a fixed function #{\caps : \entset \to \powerset{\capset}} which maps each [entity](001C) to the set (possibly empty) of [capabilities](001D) it [provides](001E).  In a standard abuse of notation, if #{D \subseteq \entset} is a set of entities, we write #{\mathsf{caps}(D)} to denote the image of #{D} under \caps, that is, ##{\caps(D) = \bigcup_{d \in D} \caps(d).}}

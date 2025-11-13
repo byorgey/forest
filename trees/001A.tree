@@ -24,6 +24,6 @@ Notice how the requirements for evaluating the body show up over the arrow in th
     {\swty{\Gamma}{\app{f}{e}}{\tau_2}{\Delta_1 \cup \Delta_2 \cup \Delta_3 \cup \sf{Apply}}}
 }
 
-The capability context needed to evaluate the application #{\app{f}{e}} is the union of all the capabilities needed to evaluate #{f}, to evaluate #{e}, and to evaluate the body of the function represented by #{f}, along with the special \sf{Apply} capability.
+The capabilities needed to evaluate the application #{\app{f}{e}} are the union of all the capabilities needed to evaluate #{f}, to evaluate #{e}, and to evaluate the body of the function represented by #{f}, along with the special \sf{Apply} capability.
 
 }

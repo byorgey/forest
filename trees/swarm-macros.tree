@@ -7,6 +7,7 @@
 \def\capset{\bf{C}}
 \def\entset{\bf{E}}
 \def\caps{\sf{caps}}
+\def\devs{\sf{provision}}
 
 \def\Ninf{#{\bb{N}_\infty}}
 
