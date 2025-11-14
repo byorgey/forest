@@ -24,6 +24,8 @@
 \def\Exc[c]{#{\sf{Exc}(\c)}}
 \def\sequence[c1][c2]{#{\c1;\; \c2}}
 
+\def\swtop[ctx][t][ty]{#{\ctx \vdash \t : \ty}}
+
 \def\swtygen[ctx][rctx][t][rel][ty]{#{\ctx \vdash \t \rel \ty \;[\rctx]}}
 \def\swty[ctx][t][ty][rctx]{\swtygen{\ctx}{\rctx}{\t}{:}{\ty}}
 \def\swinfer[ctx][t][ty][rctx]{\swtygen{\ctx}{\rctx}{\t}{\triangleright}{\ty}}

@@ -1,15 +1,14 @@
 \date{2025-11-03T00:05:19Z}
-\title{Swarm typing judgment}
+\title{Swarm typing judgments}
 \tag{swarm}
 \tag{note}
 
 \import{swarm-macros}
 
-\p{The basic typing judgment for the Swarm language has the form
+\p{Swarm has two basic typing judgments: a [top-level judgment](001M) that assigns capability-annotated [polytypes](001N), and a basic judgment that assigngs [monotypes](000Y) to terms and collects the [capabilities](001D) needed to evaluate them.}
 
-##{\swty{\Gamma}{t}{\tau}{\Delta}}
-
-where #{\Gamma} is a type context associating variables with types, #{t} is a term, #{\tau} is a [type](000Y), and #{\Delta} is a set of [capabilities](001D).  This should intuitively be read as saying that #{t} can has type #{\tau} in context #{\Gamma}, and can be evaluated given [capabilities](001D) #{\Delta}.  In this judgment #{\Gamma} and #{t} are considered inputs, #{\Delta} is considered an output, and #{\tau} can be either an input or an output depending on whether we are in checking or inference mode.  In practice, the typing rules are implemented in an explicitly bidirectional style, but are presented here as undirected rules for simplicity.
-}
-
-\p{Note that the judgment only says something about the capabilities required to \em{evaluate} #{t}.  Further use of the resulting value may require additional capabilities: for example, evaluating the application of #{t} to an argument, if it is a function; or executing #{t}, if it is a command. As a rule, the capabilities needed for such uses beyond evaluation are recorded in the type #{\tau}.}
+\transclude{001M}
+\transclude{001O}
+\transclude{001Q}
+\transclude{001R}
+\transclude{001P}

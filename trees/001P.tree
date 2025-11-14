@@ -1,0 +1,18 @@
+\date{2025-11-14T19:56:38Z}
+\title{Generalization and instantiation}
+
+\import{swarm-macros}
+
+\p{XXX add other variables and describe}
+
+\rules{
+  \inferrule
+    {\swtop{\Gamma}{t}{\forall \alpha. \Delta \Rightarrow \tau}}
+    {\swty{\Gamma}{t}{\tau [xxx]}{\Delta}}
+}
+
+\rules{
+  \inferrule
+    {\swty{\Gamma}{t}{\tau}{\Delta} \\ \freshfor{\alpha}{\Gamma}}
+    {\swtop{\Gamma}{t}{\forall \alpha. \Delta \Rightarrow \tau}}
+}

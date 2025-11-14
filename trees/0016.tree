@@ -3,5 +3,5 @@
 
 \import{swarm-macros}
 
-\p{We define the union of [requirement contexts](000Z) componentwise, that is, ##{\Phi_1 \cup \Phi_2 = (\Delta_1, D_1, I_1) \cup (\Delta_2, D_2, I_2) = (\Delta_1 \cup \Delta_2, D_1 \cup D_2, I_1 \cup I_2),} where the first two unions are set union, and the last is [multiset union](0012).}
+\p{We define the union of [requirement contexts](000Z) componentwise, that is, ##{\Phi_1 \cup \Phi_2 = (\Delta_1, D_1, I_1) \cup (\Delta_2, D_2, I_2) = (\Delta_1 \cup \Delta_2, D_1 \cup D_2, I_1 \cup I_2),} where the first two unions are set union, and the last is [inventory (multiset) union](001H).}
 

@@ -1,0 +1,12 @@
+\date{2025-11-14T19:50:10Z}
+\title{Monomorphic typing judgment}
+\taxon{Definition}
+
+\import{swarm-macros}
+
+\p{The basic typing judgment for the Swarm language has the form
+
+##{\swty{\Gamma}{t}{\tau}{\Delta}}
+
+where #{\Gamma} is a type context, #{t} is a term, #{\tau} is a [monotype](000Y), and #{\Delta} is a set of [capabilities](001D).  This should intuitively be read as saying that #{t} can has type #{\tau} in context #{\Gamma}, and can be evaluated given [capabilities](001D) #{\Delta}.  In this judgment #{\Gamma} and #{t} are considered inputs, #{\Delta} is considered an output, and #{\tau} can be either an input or an output depending on whether we are in checking or inference mode.  In practice, the typing rules are implemented in an explicitly bidirectional style, but are presented here as undirected rules for simplicity.
+}

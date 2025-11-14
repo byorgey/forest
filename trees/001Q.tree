@@ -1,0 +1,4 @@
+\date{2025-11-14T20:04:22Z}
+\taxon{Remark}
+
+\p{Note that the [basic typing judgment](001O) only says something about the [capabilities](001D) required to \em{evaluate} #{t}.  Further use of the resulting value may require additional capabilities: for example, evaluating the application of #{t} to an argument, if it is a function; or executing #{t}, if it is a command. As a rule, the capabilities needed for such uses beyond evaluation are recorded in the type #{\tau}.}

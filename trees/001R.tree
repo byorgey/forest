@@ -1,0 +1,6 @@
+\date{2025-11-14T20:07:27Z}
+\taxon{Remark}
+
+\import{swarm-macros}
+
+\p{At the level of the [basic typing judgment](001O), the [capability](001D) set #{\Delta} is not part of the [monotype](000Y) #{\tau}, but rather part of the judgment.  The reason is that we want to maintain the invariant that polytypes only record a single, top-level capability set, and other capability sets are recorded at appropriate points within the type (\eg as annotations on function arrows) rather than being sprinkled on every single subterm of the type.}

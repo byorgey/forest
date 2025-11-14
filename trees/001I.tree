@@ -4,4 +4,4 @@
 
 \import{swarm-macros}
 
-\p{If #{I} and #{J} are [inventories](0012), we write #{I \subseteq J} to mean that #{I(e) \leq J(e)} for every #{e \in \entset}, that is, #{J} contains at least as many copies of each entity #{e} as #{I} does.  Equivalently, #{I \subseteq J} if there exists an inventory #{K} such that #{I \cup K = J}.}
+\p{If #{I} and #{J} are [inventories](0012), we write #{I \subseteq J} to mean that #{I(e) \leq J(e)} for every #{e \in \entset}, that is, #{J} contains at least as many copies of each entity #{e} as #{I} does.  Equivalently, #{I \subseteq J} iff there exists an inventory #{K} such that #{I \cup K = J}.}

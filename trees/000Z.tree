@@ -6,9 +6,9 @@
 
 \p{A \em{requirement context} #{\Phi} is a triple #{(\Delta,D,I)} where
   \ul{
-    \li{#{\Delta \subseteq \capset} is a set of [capabilities](001D), representing capabilities a robot should have,}
+    \li{#{\Delta \subseteq \capset} is a set of [capabilities](001D), representing capabilities a [robot](0014) should have,}
     \li{#{D \subseteq \entset} is a set of [entities](001C), representing [devices](001E) that should be equipped,}
-    \li{#{I} is an [inventory](0012), representing entities that a robot should possess.}
+    \li{#{I} is an [inventory](0012), representing entities that a [robot](0014) should possess.}
   }
 }
 

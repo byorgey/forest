@@ -1,11 +1,11 @@
 \date{2025-11-03T02:17:08Z}
-\title{Swarm types}
+\title{Swarm monotypes}
 \tag{swarm}
 \tag{note}
 
 \import{swarm-macros}
 
-\p{(Monomorphic) Swarm types #{\tau} consist of:}
+\p{Swarm monotypes #{\tau} consist of:}
 
 \ul{
   \li{Base types such as \Void, \Unit, \Int, \Text, \Bool.  See the [Swarm source code for a complete list](https://github.com/swarm-game/swarm/blob/47bf44251471814a2510c0dceeaf7dfe347bdd1d/src/swarm-lang/Swarm/Language/Types.hs#L182-L205), but the precise list does not matter much for this discussion.}

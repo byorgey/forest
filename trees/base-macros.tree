@@ -47,3 +47,5 @@
 \def\lamt[x][ty][body]{#{\lambda \x : \ty.\; \body}}
 \def\app[x][y]{#{\x\; \y}}
 \def\powerset[s]{#{\mathcal{P}(\s)}}
+
+\def\freshfor[x][y]{\x\;\#\;\y}

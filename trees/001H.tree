@@ -4,4 +4,4 @@
 
 \import{swarm-macros}
 
-\p{We define the union of [inventories](0012), #{I \cup J}, as the inventory \lam{e}{I(e) + J(e)}, the componentwise sum of inventories #{I} and #{J}.  Inventories form a monoid under union, with the empty inventory as the identity element.}
+\p{We define the union of [inventories](0012), #{I \cup J}, as the inventory \lam{e}{I(e) + J(e)}, the componentwise sum of inventories #{I} and #{J}.  Inventories form a monoid under union, with the empty inventory #{\lam{e}{0}} as the identity element.}
