@@ -2,7 +2,7 @@
 
 \title{Disco}
 
-\p{[Disco](https://github.com/disco-lang/disco) is a functional teaching language for discrete mathematics, implemented in Haskell.}
+\p{[Disco](https://github.com/disco-lang/disco) is a functional teaching language for discrete mathematics, implemented in Haskell.  Currently I'm working with [[heinrichapfelmus]] on building a basic web UI so students can use Disco in their browser.}
 
 \subtree{
   \title{Related talks and papers}
