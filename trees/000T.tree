@@ -3,7 +3,7 @@
 
 \import{swarm-macros}
 
-\p{Currently, [Swarm](000O) has a relatively standard Hindley-Milner type system, with an extra \em{requirements analysis} bolted on top.  The goal of the requirements analysis is to decide what [capabilities](000X) (and hence what [devices](000X)) are required to execute some code, and to facilitate automatically installing necessary devices on newly built robots.}
+\p{Currently, [Swarm](000O) has a relatively standard Hindley-Milner type system, with an extra \em{requirements analysis} bolted on top.  The goal of the requirements analysis is to decide what [capabilities](001D) (and hence what [devices](001E)) are required to execute some code, and to facilitate automatically installing necessary devices on newly built robots.}
 
 \p{However, the bolted-on requirements analysis is fundamentally broken, and has led to a number of bugs. For example, see the following issues:
 \ul{

@@ -1,4 +1,12 @@
 \date{2025-11-14T19:40:53Z}
-\title{Polymorphic, capability-annotated types}
+\title{Swarm polytypes}
 
-\p{XXX write me}
+\import{swarm-macros}
+
+\p{Most generally, a Swarm polytype is of the form
+
+##{\swpoly{\overline{\alpha}; \overline{\delta}}{\Delta}{\tau}}
+
+where #{\overline{\alpha}} is a sequence of type variables, #{\overline{\delta}} is a sequence of [capability](001D) set variables, #{\Delta} is a [capability set expression](001Y), and #{\tau} is a monotype.
+
+}

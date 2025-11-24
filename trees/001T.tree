@@ -1,0 +1,10 @@
+\date{2025-11-18T00:12:30Z}
+\title{Pure fragment of the Swarm language}
+
+\p{First, we go through the various types and constructs in the pure fragment of the language.  Expressions in the pure fragment can be evaluated and have no side effects, in contrast to the [command monad](001U), which embeds effectful, sequenced imperative programs.}
+
+\p{For each type or family of types, we explain typing rules for introduced and elimination forms, as well as related built-in constants.}
+
+\transclude{001V}
+\transclude{001W}
+\transclude{001X}

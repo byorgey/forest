@@ -1,0 +1,14 @@
+\import{swarm-macros}
+
+\date{2025-11-18T17:46:07Z}
+\title{\sf{Bool}}
+
+\p{The \Bool type is standard, with values \true and \false; no special capabilities are needed to use Boolean values themselves.}
+
+\p{However, the eliminator for \Bool values is a built-in function \sf{if} with type
+
+##{\sf{if} : \swpoly{\alpha; \delta}{\Exc{\sf{if}} \cup \delta}{\Bool \to \Delay{\delta}{\alpha} \to \Delay{\delta}{\alpha} \to \alpha}}
+
+This says that XXX explain
+
+}

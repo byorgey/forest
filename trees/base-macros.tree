@@ -47,5 +47,7 @@
 \def\lamt[x][ty][body]{#{\lambda \x : \ty.\; \body}}
 \def\app[x][y]{#{\x\; \y}}
 \def\powerset[s]{#{\mathcal{P}(\s)}}
+\def\all[x][body]{#{\forall \x.\; \body}}
+\def\ex[x][body]{#{\exists \x.\; \body}}
 
 \def\freshfor[x][y]{\x\;\#\;\y}

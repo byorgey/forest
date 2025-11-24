@@ -17,6 +17,8 @@
 \def\Text{\sf{Text}}
 \def\Bool{\sf{Bool}}
 \def\Dir{\sf{Dir}}
+\def\true{\sf{true}}
+\def\false{\sf{false}}
 
 \def\Cmd[cap][res]{#{\sf{Cmd}^{\cap}\;\res}}
 \def\Delay[cap][res]{#{\sf{Delay}^{\cap}\;\res}}
@@ -30,6 +32,8 @@
 \def\swty[ctx][t][ty][rctx]{\swtygen{\ctx}{\rctx}{\t}{:}{\ty}}
 \def\swinfer[ctx][t][ty][rctx]{\swtygen{\ctx}{\rctx}{\t}{\triangleright}{\ty}}
 \def\swcheck[ctx][t][ty][rctx]{\swtygen{\ctx}{\rctx}{\t}{\triangleleft}{\ty}}
+
+\def\swpoly[tyvars][caps][ty]{#{\all{\tyvars}{\caps \Rightarrow \ty}}}
 
 \def\bind{#{\leftarrow}}
 

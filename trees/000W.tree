@@ -5,6 +5,8 @@
 
 \import{swarm-macros}
 
+\p{In order to be able to properly express typing rules for the [command monad](001U), we first need to develop some additional machinery.}
+
 \transclude{0013}
 \transclude{0012}
 \transclude{000Z}
