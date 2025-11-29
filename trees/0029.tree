@@ -1,0 +1,6 @@
+\title{Blackboard bold}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Note this fancy style of writing capital letters with a double line in the middle is called \em{blackboard bold}, and is the standard way mathematicians write #{\N} and other similar types we will meet soon. However, you [do not have to use fancy symbols](https://disco-lang.readthedocs.io/en/latest/reference/symbols.html) when writing Disco code. For example, #{\N} can instead be written \tt{N}.}

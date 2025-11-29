@@ -1,0 +1,5 @@
+\date{2025-11-28T23:24:53Z}
+\title{Everything has a type}
+\tag{discrete}
+
+\p{Everything in [Disco](000N) has a \em{type} which tells us what kind of value it is (or will be).  Types tell us how we are allowed to put things together in ways that make sense.  For example, it makes sense to add two numbers, but it does not make sense to add a number and a list. In that way, types, and the ways they are allowed to match up, are kind of like "grammar rules" for writing down programs—or mathematics.  In fact, most mathematicians think about types informally in their head all the time.  One of the main reasons we will be using a language with a so-called \em{strong type system}—where everything has a type, and all the types must match up properly—is to give you practice with this important way of thinking, in a way that gives you immediate feedback.}

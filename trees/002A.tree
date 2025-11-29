@@ -1,0 +1,10 @@
+\title{Asking Disco for types}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We can ask Disco what type something has with the \tt{:type} command. For example, if we ask for the type of a number like \tt{3}, Disco tells us it has type #{\N} (which stands for the [[002D]]):
+\pre\verb<<<|
+Disco> :type 3
+3 : ℕ<<<
+}

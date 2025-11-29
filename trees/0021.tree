@@ -1,0 +1,12 @@
+\date{2025-11-24T21:06:15Z}
+\title{Discrete Mathematics Spring 2026 lecture notes}
+\author{brentyorgey}
+
+\p{These are my lecture notes for [[0020]] for the Spring 2026 semester.}
+
+\transclude{0023}
+
+\put\transclude/expanded{false}
+\transclude{0026}
+\transclude{0024}
+\transclude{002C}

@@ -1,0 +1,10 @@
+\date{2025-11-28T23:00:56Z}
+\title{Types in [Disco](000N) and mathematics}
+
+\import{discrete-macros}
+
+\put\transclude/numbered{false}
+
+\transclude{002B}
+\transclude{002A}
+\transclude{0029}

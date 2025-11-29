@@ -1,0 +1,9 @@
+\date{2025-11-24T21:18:54Z}
+\title{Discrete Mathematics material in need of polishing}
+
+\put\transclude/expanded{false}
+
+\query\datalog{
+  ?X -: {\rel/has-tag ?X '{discrete}} {\rel/has-tag ?X '{draft}}
+}
+
