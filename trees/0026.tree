@@ -1,6 +1,8 @@
 \date{2025-11-28T23:05:20Z}
 \title{Introduction to [[0020]]}
 
+\put\transclude/numbered{false}
+
 \transclude{0022}
 \transclude{0025}
 \transclude{0027}
