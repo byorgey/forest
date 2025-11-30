@@ -1,0 +1,21 @@
+\date{2025-11-29T18:33:43Z}
+\title{Integers in Disco}
+
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{
+Disco knows about integers in addition to natural numbers:
+\pre\verb<<<|
+Disco> :type -2
+-2 : ℤ
+Disco> :type 3 - 5
+3 - 5 : ℤ
+Disco> :type 5 - 1
+5 - 1 : ℤ<<<
+The last example might be surprising: we know that #{5 - 1 = 4}, which is actually a natural number, so why does disco say #{\Z} instead of #{\N}?  The answer is very simple: because we used subtraction.  Disco does not actually simplify/evaluate things to figure out what type they are.  In fact, the whole point is to be able to tell what kind of value we will get—to make sure everything matches up properly—\em{before} actually trying to evaluate an expression.}
+
+\p{Similarly, #{\N} is not closed under division, and Disco has other
+types to handle that, just like it has #{\Z} to handle subtraction, but
+we'll talk about them later (in the meantime you might enjoy playing around to see if you can figure it out for yourself).}

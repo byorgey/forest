@@ -1,0 +1,29 @@
+\date{2025-11-29T19:09:08Z}
+\title{Example: factorial}
+
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{As another example, let's implement factorial (although it is already
+built in).  Recall that #{n! = n \cdot (n-1) \cdot (n-2) \cdot \dots
+\cdot 1}.  Another way to write this is ##{n! = n \cdot (n-1)!} If
+we add a "base case" #{0! = 1}, this becomes a perfectly viable way
+to \em{define} factorial.  We could transcribe it into [[0027]] as follows:
+\pre\verb<<<|
+fac : N -> N
+fac(0) = 1
+fac(n) = n * fac (n-1)
+<<<
+Unfortunately, this is a type error. The reason is that since the
+input to \tt{fac} is supposed to be a natural number, that means
+#{n-1} must be a natural number, but it cannot be since it [uses
+subtraction](002I). We can use the \tt{.-} operator instead, which works
+on [natural numbers](002D) (you will explore what this operator does on a
+homework assignment).
+\pre\verb<<<|
+fac : N -> N
+fac(0) = 1
+fac(n) = n * fac (n .- 1)
+<<<
+}

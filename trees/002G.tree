@@ -1,0 +1,15 @@
+\date{2025-11-29T18:13:44Z}
+\title{Is zero a natural number?}
+\taxon{Remark}
+
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Note that mathematicians disagree on whether #{0} counts as a [natural number](002D).  However, among computer scientists, having #{0} count as a natural number is fairly universal.  The important point, which we will [explore in more depth later](002E), is that the collection of non-negative counting numbers ##{0, 1, 2, 3, \dots} has much better mathematical properties than the collection ##{1, 2, 3, \dots} without zero, so it is much more elegant to take the former collection as "fundamental" and define the latter in terms of it (\eg "nonzero natural numbers").  But what we \em{call} these collections doesn't matter in an ultimate sense.}
+
+\p{In any case, Disco agrees that zero is a natural number, as we can check:
+\pre\verb<<<|
+Disco> :type 0
+0 : ℕ<<<
+}

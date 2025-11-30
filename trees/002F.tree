@@ -1,0 +1,20 @@
+\date{2025-11-29T18:12:16Z}
+\title{Closure}
+\taxon{Definition}
+\tag{discrete}
+
+\p{A collection of numbers (or other items) is \em{closed} under a
+certain operation if doing that operation on two of the numbers always
+gives another such number.  For example, the [natural numbers](002D) are
+closed under addition (that is, adding any two natural numbers gives
+another natural number) and under multiplication (multipltying any two
+natural numbers gives another natural number).
+\pre\verb<<<|
+Disco> :type 3 + 5
+3 + 5 : ℕ
+Disco> :type 3 * 5
+3 * 5 : ℕ<<<
+However, the natural numbers are \em{not} closed under
+subtraction, because subtracting two natural numbers might not always
+result in another natural number.  For example, #{2 - 5} is not a natural
+number.}

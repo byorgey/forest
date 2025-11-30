@@ -1,0 +1,27 @@
+\date{2025-11-29T18:59:16Z}
+\title{Defining functions in Disco}
+
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We can define our own functions in [[0027]].  First, we give the name of
+the function and its [type](002B), which will be something like
+\tt{A -> B} where \tt{A} is the type of the function's inputs,
+and \tt{B} is the type of the outputs.  Then we define what output
+the function should give for each input.
+\pre\verb<<<|
+double : N -> N
+double(n) = 2n<<<
+If we write the above definition of \tt{double} in a
+\tt{.disco} file, we can load it at the Disco prompt using the
+\tt{:load} command, then try it on some inputs:
+\pre\verb<<<|
+Disco> :load double.disco
+Loading double.disco...
+Loaded.
+Disco> double(2)
+4
+Disco> double(7)
+14<<<
+}

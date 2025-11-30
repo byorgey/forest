@@ -1,0 +1,12 @@
+\date{2025-11-29T19:02:10Z}
+\title{Functions and tests in Disco}
+
+\tag{discrete}
+
+\import{discrete-macros}
+
+\put\transclude/numbered{false}
+
+\transclude{002J}
+\transclude{002L}
+\transclude{002M}

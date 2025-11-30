@@ -1,0 +1,46 @@
+\date{2025-11-29T19:03:52Z}
+\title{Tests in Disco}
+
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We can also attach \em{tests} to our [functions](002J) in [[0027]].  Each test goes on a line by itself beginning with \tt{!!!}.
+\pre\verb<<<|
+!!! double(0) == 0
+!!! double(2) == 4
+!!! double(7) == 14
+!!! forall n : N. double(n) >= 0
+double : N -> N
+double(n) = 2n
+<<<
+Tests can either be simple true or false tests, or they can have a
+\tt{forall} to say that something should be true for every value
+of a certain type.  When we \tt{:load} this file, Disco will run
+the tests and report whether they succeed.
+\pre\verb<<<|
+Disco> :load double.disco
+Loading double.disco...
+Running tests...
+  double: OK
+Loaded.
+<<<
+If we try changing the \tt{double(n) >= 0} test to
+\tt{double(n) > 0}, we can see that the test fails:
+\pre\verb<<<|
+Disco> :load double.disco
+Loading double.disco...
+Running tests...
+  double:
+  - Certainly false: ∀n. double(n) > 0
+    Found counterexample:
+      n = 0
+    - Left side:  0
+    - Right side: 0
+Loaded.
+<<<
+However, another way to express a correct test would be as follows:
+\pre\verb<<<|
+!!! forall n : N. (n == 0) or double(n) > 0
+<<<
+}

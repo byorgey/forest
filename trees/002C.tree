@@ -3,4 +3,12 @@
 \tag{discrete}
 \tag{draft}
 
+\put\transclude/numbered{false}
+
+\p{XXX link to Disco documentation}
+
 \transclude{002D}
+\transclude{002G}
+\transclude{002F}
+\transclude{002H}
+\transclude{002I}

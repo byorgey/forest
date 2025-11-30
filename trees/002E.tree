@@ -1,6 +1,5 @@
 \date{2025-11-29T03:40:33Z}
 \title{Don't be afraid of zero}
 \tag{discrete}
-\tag{draft}
 
-\p{aka "including zero makes everything more elegant"}
+\p{In this class we will encounter many situations where we have to decide what some notion means for \em{zero}. For example, are empty sets allowed? What does a "forall" mean if the domain is empty?  What is #{0^0}?  In each case, embracing zero—even if it is somewhat unintuitive—makes our definitions more elegant, without the need for caveats or special cases.}

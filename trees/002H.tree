@@ -1,0 +1,9 @@
+\date{2025-11-29T18:21:12Z}
+\title{Integers}
+\taxon{Definition}
+
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Since the [natural numbers](002D) are not [closed](002F) under subtraction, if we want to be able to do subtraction we must include all negative numbers along with positive.  This bigger set of numbers #{\dots, -3, -2, -1, 0, 1, 2, 3, \dots} is called the \em{integers}.  We write #{\Z} (or \tt{Z}, or \tt{Int}, or \tt{Integer}) to denote the [type](002B) of integers (using the letter Z to stand for the integers is mathematically standard, and comes from the German word for "numbers", \em{Zahlen}).}
