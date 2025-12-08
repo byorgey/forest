@@ -23,6 +23,7 @@
 \meta{pdf}{\pub{Fenwick-ext.pdf}}
 \meta{repo}{https://github.com/byorgey/fenwick}
 \meta{slides}{\pub{fenwick-ICFP.pdf}}
+\meta{video}{https://youtu.be/jG2u1z_9_fg}
 
 \p{\em{Fenwick trees}, also known as \em{binary indexed trees}, are a clever solution to the problem of maintaining a sequence of values while allowing both updates and range queries in sublinear time. Their implementation is concise and efficient—but also somewhat baffling, consisting largely of nonobvious bitwise operations on indices. We begin with \em{segment trees}, a much more straightforward, easy-to-verify, purely functional solution to the problem, and use equational reasoning to explain the implementation of Fenwick trees as an optimized variant, making use of a Haskell EDSL for operations on infinite two's complement binary numbers.}
 
