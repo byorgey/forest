@@ -1,11 +1,11 @@
 \date{2025-11-29T03:29:17Z}
 \title{Natural numbers, integers, and closure}
 \tag{discrete}
-\tag{draft}
 
 \put\transclude/numbered{false}
 
-\p{XXX link to Disco documentation}
+\p{You can [read more about these topics in the Gentle Introduction to
+Disco here](https://disco-lang.readthedocs.io/en/latest/introduction/types.html).}
 
 \transclude{002D}
 \transclude{002G}

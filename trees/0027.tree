@@ -1,6 +1,22 @@
 \date{2025-11-28T23:08:13Z}
 \title{Disco}
 \tag{discrete}
-\tag{draft}
 
-\p{Throughout the semester, we will be using a programming language called [[000N]]. Disco has been developed over the last ten years by me and a number of students, including XXX.}
+\p{Throughout the semester, we will be using a programming language
+called [[000N]], which I have been developing over the last ten years.
+A number of students have worked on Disco as well, including:}
+
+\ul{
+  \li{Callahan Hirrel}
+  \li{Bosco Ndemeye}
+  \li{Sanjit Kalapatapu}
+  \li{Jacob Hines}
+  \li{Eric Pinter}
+  \li{Daniel Burnett}
+  \li{Katherine Reid}
+  \li{Ted Bjurlin}
+  \li{Colin Phillips}
+  \li{Jacob Collier-Tenison}
+}
+
+\p{Perhaps someday your name could be on this list as well!}
