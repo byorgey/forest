@@ -1,0 +1,33 @@
+\title{Motivation}
+\date{2025-12-14T02:35:59Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Consider the following two problems:}
+
+\ol{
+  \li{30 people each buy a ticket to see the heffalump. The owner pays $12 for food and ends up with $33 in profit. How much does one ticket cost?}
+  \li{In what circumstances does the following loop \em{stop}?
+\pre\verb<<<|
+while (tickets < 30 or (!heffalumps.isEmpty() and not(count > 5))):
+  ...<<<
+  }
+}
+
+\p{How would you solve these?  Different students give different
+answers, but if you are like many, you would solve the first one by
+writing down an algebraic equation and solving it, and the second one
+by talking about it and thinking hard.  The first problem definitely
+seems easier.}
+
+\p{It turns out that people used to solve algebra problems like the
+first using natural language and thinking really hard.  Formal
+notation is a superpower! Our goal is to allow you to solve the second
+problem using a formal language too.}
+
+\p{XXX Another motivation: how do we rigorously \em{prove} a
+mathematical statement?  How do we know what details we need to
+include, and what counts as a correct argument?  Language of
+propositional logic can help with this too!}

@@ -1,0 +1,9 @@
+\title{Proposition}
+\author{brentyorgey}
+\date{2025-12-14T23:53:33Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{A \em{proposition} is a declarative statement that can be true or false.}

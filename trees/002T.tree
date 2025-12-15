@@ -1,0 +1,10 @@
+\author{brentyorgey}
+\date{2025-12-15T00:07:49Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{This is not really a formal definition, but just an intuitive idea
+of what propositions should be.  Later, we will define more formal
+ways to create propositions.}

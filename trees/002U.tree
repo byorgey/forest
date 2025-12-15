@@ -1,0 +1,9 @@
+\title{Propositional variables}
+\author{brentyorgey}
+\date{2025-12-15T00:16:01Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We will tend to use the letters #{p, q, r, s} or #{P, Q, R, S} to
+stand for arbitrary propositions.}

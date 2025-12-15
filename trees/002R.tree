@@ -1,0 +1,10 @@
+\title{Introduction to Propositional Logic}
+\author{brentyorgey}
+\date{2025-12-15T00:01:13Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\transclude{002N}
+\transclude{002O}

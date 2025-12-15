@@ -1,0 +1,22 @@
+\author{brentyorgey}
+\date{2025-12-14T23:55:32Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Some example [propositions](002P):}
+
+\ul{
+  \li{\em{Washington, D.C. is the capital city of the United States.}}
+  \li{\em{9 is evenly divisible by 3.}}
+  \li{\em{Toronto is the capital of Canada.}}
+  \li{\em{#{9 > 3}}}
+  \li{\em{Every even natural number greater than 2 can be written
+  as the sum of two prime numbers.}}
+}
+
+\p{The first two propositions are true.  The next two are false.  The
+last one is a famous proposition called the Goldbach Conjecture; we do
+not know if it is true or false.  However, all of these are valid
+propositions.}

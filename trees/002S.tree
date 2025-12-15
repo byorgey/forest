@@ -1,0 +1,20 @@
+\author{brentyorgey}
+\date{2025-12-15T00:04:54Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Some examples of things which are \em{not} [propositions](002P):}
+
+\ul{
+  \li{#{3 + 7}}
+  \li{\em{Please hold this.}}
+  \li{\em{Is the moon made of cheese?}}
+}
+
+\p{The first is an \em{expression} with a numeric value, not a
+declarative true or false statement.  The second is a command, and the
+third is a question.  The question could be \em{answered} by a
+proposition (\eg "The moon is made of cheese."), but it is not itself
+a proposition.}
