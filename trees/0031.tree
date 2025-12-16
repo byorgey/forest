@@ -1,0 +1,20 @@
+\title{Truth table for conjunction}
+\author{brentyorgey}
+\date{2025-12-16T02:09:20Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Let's make a truth table.  Notice that the truth table for #{\neg P}
+needed two rows, one for \True and one for \False.  The truth table
+for #{P \land Q} will need \em{four} rows, one for each possible
+combination of truth values for #{P} and #{Q}.
+##{\begin{array}{ccc}
+    P & Q & P \land Q \\ \hline
+    \True & \True & \True \\
+    \True & \False & \False \\
+    \False & \True & \False \\
+    \False & \False & \False \\
+  \end{array}}
+}

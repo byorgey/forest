@@ -1,0 +1,16 @@
+\title{Propositional connectives}
+\date{2025-12-16T01:47:51Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Now we will see how to put propositions together to build up more
+complex propositions.}
+
+\transclude{002W}
+\transclude{002Y}
+\transclude{002X}
+\transclude{002Z}
+\transclude{0030}
+\transclude{0031}

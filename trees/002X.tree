@@ -1,0 +1,15 @@
+\import{discrete-macros}
+
+\title{Disco \tt{:table} command}
+\author{brentyorgey}
+\date{2025-12-16T01:56:22Z}
+\tag{discrete}
+\taxon{Remark}
+
+\p{We can also get [Disco](0027) to show us the truth table for
+negation, using the \tt{:table} command:
+\pre\verb<<<|
+Disco> :table not
+F T
+T F<<<
+}

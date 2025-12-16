@@ -51,3 +51,6 @@
 \def\ex[x][body]{#{\exists \x.\; \body}}
 
 \def\freshfor[x][y]{\x\;\#\;\y}
+
+\def\True{#{\sf{T}}}
+\def\False{#{\sf{F}}}

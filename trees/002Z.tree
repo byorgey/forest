@@ -1,0 +1,11 @@
+\title{Conjunction}
+\author{brentyorgey}
+\date{2025-12-16T02:03:22Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{The \term{conjunction} of propositions #{P} and #{Q} is written #{P
+\land Q}, and pronounced "#{P} and #{Q}".  It is true when both #{P}
+and #{Q} are true, and false otherwise.}

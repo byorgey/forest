@@ -1,0 +1,12 @@
+\title{Truth table for negation}
+\author{brentyorgey}
+\date{2025-12-16T02:02:14Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{We can summarize this information with a \em{truth table} showing
+the truth value of #{\neg P} for each possible value of #{P}:
+##{\begin{array}{cc}P & \neg P \\ \hline \True & \False \\ \False & \True \end{array}}
+}

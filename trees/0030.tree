@@ -1,0 +1,10 @@
+\author{brentyorgey}
+\date{2025-12-16T02:06:51Z}
+\tag{discrete}
+\tag{draft}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{One way you can remember the symbol #{\land} is by noticing
+that it looks a bit like a capital letter A (for "And") without the crossbar.}
