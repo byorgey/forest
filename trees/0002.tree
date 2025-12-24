@@ -4,7 +4,6 @@
 \p{I teach computer science and mathematics at [[hendrixcollege]].}
 
 \transclude{0003}
-\transclude{001Z}
 
 \put\transclude/expanded{false}
 \transclude{0004}
