@@ -1,7 +1,10 @@
 \date{2025-10-24T23:23:50Z}
-\title{Current courses (Fall 2025)}
+\title{Current courses (Spring 2026)}
+
+\p{At the moment I'm relaxing with family and working on other
+projects, but in the near future I will start preparing for my spring courses:}
 
 \ul{
-  \li{[CSCI 150, Foundations of Computer Science](https://hendrix-cs.github.io/csci150/)}
-  \li{[CSCI 382, Algorithms](https://hendrix-cs.github.io/csci382/)}
+  \li{[[0020]]}
+  \li{[CSCI 365, Functional Programming](https://hendrix-cs.github.io/csci365/)}
 }
