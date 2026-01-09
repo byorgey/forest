@@ -1,0 +1,6 @@
+\title{Compositionality law as homomorphism}
+\author{brentyorgey}
+\date{2026-01-09T15:15:26Z}
+\taxon{Remark}
+
+\p{Note that the type #{\mathrm{End}(X) = X \to X} of endomorphisms on a set #{X} is itself a [semigroup](0033) under composition.  If we curry the type of a semigroup action, #{(\cdot) : S \to (X \to X)}, we see that another way to think of an action is that it associates to each #{s \in S} an endomorphism #{(s \cdot) : X \to X}.  The [compositionality law for an action](0035) requires precisely that #{(\cdot)} is a semigroup homomorphism #{S \to \mathrm{End}(X)}.}

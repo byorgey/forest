@@ -1,0 +1,34 @@
+\title{Semidirect products are distributive actions}
+\author{brentyorgey}
+\date{2026-01-09T15:32:02Z}
+\taxon{Theorem}
+
+\import{base-macros}
+
+\p{Let #{S} and #{A} be [semigroups](0033), together with an operator #{(\cdot) : A \times S \to S}.  Then the [semidirect product](0037) #{S \rtimes A}, defined with respect to #{(\cdot)}, is a semigroup if and only if #{(\cdot)} is a [distributive](0038) [action](0035) of #{A} on #{S}.}
+
+\subtree{
+  \taxon{Proof}
+  \p{First, we show that if #{(\cdot)} is a distributive action, then #{S \rtimes A} is a semigroup; in particular, assuming that #{(\cdot)} satisfies the compositionality and distributivity laws, we must show that the semidirect product operation is associative.}
+  ##{
+  \begin{aligned}
+  ((s_1, a_1) \diamond (s_2, a_2)) \diamond (s_3,a_3)
+  &=
+  (s_1(a_1 \cdot s_2), a_1a_2) \diamond (s_3,a_3) \\
+  &=
+  (s_1(a_1 \cdot s_2)((a_1a_2) \cdot s_3), a_1a_2a_3) \\
+  &=
+  (s_1(a_1 \cdot s_2)(a_1 \cdot (a_2 \cdot s_3)), a_1a_2a_3) \\
+  &=
+  (s_1(a_1 \cdot (s_2(a_2 \cdot s_3))), a_1a_2a_3) \\
+  &=
+  (s_1, a_1) \diamond (s_2(a_2 \cdot s_3), a_2a_3) \\
+  &=
+  (s_1, a_1) \diamond ((s_2, a_2) \diamond (s_3, a_3))
+  \end{aligned}
+  }
+  \p{Note that we made implicit use of the associativity of the underlying semigroup operations on #{S} and #{A}, written with juxtaposition.  The first two steps above just expand out the definition of the semidirect product operation; the third step relies on compositionality, and the fourth on distributivity.}
+
+  \p{Next, we show that if #{S \rtimes A} is a semigroup, then #{(\cdot)} is a distributive action.  XXX this is false, requires identity elements!}
+}
+

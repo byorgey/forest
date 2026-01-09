@@ -1,0 +1,5 @@
+\author{brentyorgey}
+\date{2026-01-09T15:08:41Z}
+\taxon{Notation}
+
+\p{We will typically omit the #{\diamond} symbol for the operation of a [semigroup](0033) and simply write #{xy} instead of #{x \diamond y}.}

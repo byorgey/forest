@@ -1,0 +1,11 @@
+\title{Semigroup action}
+\author{brentyorgey}
+\date{2026-01-09T15:11:50Z}
+\taxon{Definition}
+
+\p{An \em{action} of a [semigroup](0033) #{S} on a set #{X} is given by an
+operator ##{(\cdot) : S \times X \to X} satisfying the
+\em{compositionality} law ##{(st) \cdot x = s \cdot (t \cdot x)} for
+all #{s,t \in S} and #{x \in X}.}
+
+\transclude{0036}

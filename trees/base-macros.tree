@@ -54,3 +54,33 @@
 
 \def\True{#{\sf{T}}}
 \def\False{#{\sf{F}}}
+
+\def\proof[body]{
+ \scope{
+   \put\transclude/toc{false}
+   \subtree{
+     \taxon{Proof}
+     \body
+   }
+ }
+}
+
+% \def\sproof-preamble{
+% \startverb
+% \newenvironment{sproof}{%
+%     \begin{tabbing}
+%     \phantom{$\equiv$} \= \qquad\qquad\qquad\qquad\qquad \= \kill
+% }{
+%     \end{tabbing}
+% }
+% \newcommand{\stmt}[1]{\> \ensuremath{#1} \\}
+% \newcommand{\lstmt}[1]{\> \ensuremath{#1} }
+% \newcommand{\reason}[2]{\ensuremath{#1} \>\> \{ \quad #2 \quad \} \\}
+% \stopverb
+% }
+
+% \def\sproof[~body]{
+%   \scope{
+%     \figure{\tex{\sproof-preamble}{\body{}}}
+%   }
+% }

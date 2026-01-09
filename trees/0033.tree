@@ -1,0 +1,8 @@
+\title{Semigroup}
+\author{brentyorgey}
+\date{2026-01-09T15:04:30Z}
+\taxon{Definition}
+
+\p{A \em{semigroup} is a set #{S} together with a binary operation #{(\diamond) : S \times S \to S}, satisfying the \em{associativity} law: ##{(x \diamond y) \diamond z = x \diamond (y \diamond z)} for all #{x, y, z \in S}.}
+
+\transclude{0034}

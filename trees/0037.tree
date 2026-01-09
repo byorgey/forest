@@ -1,0 +1,6 @@
+\title{Semidirect product}
+\author{brentyorgey}
+\date{2026-01-09T15:24:33Z}
+\taxon{Definition}
+
+\p{Let #{S} and #{A} be [semigroups](0033), with #{A} [acting](0035) [distributively](0038) on #{S}. Then the \em{semidirect product} #{S \rtimes A} is the set #{S \times A} together with the binary operation ##{(s_1, a_1) \diamond (s_2, a_2) = (s_1(a_1 \cdot s_2), a_1a_2).}}
