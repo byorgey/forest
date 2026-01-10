@@ -2,14 +2,21 @@
 \title{Notes on actions and semidirect products}
 \author{brentyorgey}
 
-\transclude{0033}
+\transclude{0033}  % semigroup
 
 % \p{Notation: #{(+)} for operator as function, #{(x+)} etc. for partial application}
 
-\transclude{0035}
-\transclude{0038}
+\transclude{0035}  % semigroup action
+\transclude{0038}  % distributive action
 
-\transclude{0037}
+\p{We can now extend the development to [monoids](003A).}
+
+\transclude{003A}  % monoid
+\transclude{003B}  % monoid action
+\transclude{003C}
+
+\transclude{0037}  % semidirect product
+
 \transclude{0039}
 
 \p{Group actions, semidirect product, normal subgroups}

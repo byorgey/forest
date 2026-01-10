@@ -1,0 +1,6 @@
+\title{Monoids}
+\author{brentyorgey}
+\date{2026-01-09T23:54:27Z}
+\taxon{Definition}
+
+\p{A \em{monoid} is a [semigroup](0033) #{(S,\diamond)} which also has an \em{identity element}, that is, a distinguished #{e \in S} such that #{e \diamond s = s \diamond e = s} for all #{s \in S}.}

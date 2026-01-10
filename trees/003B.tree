@@ -1,0 +1,6 @@
+\title{Monoid actions}
+\author{brentyorgey}
+\date{2026-01-09T23:56:31Z}
+\taxon{Definition}
+
+\p{A \em{monoid action} of a monoid #{S} on a set #{X} is a [semigroup action](0035) of #{S} on #{X} which additionally satisfies the \em{identity law} ##{e \cdot x = x} for all #{x \in S}.  That is, again, #{(\cdot)} must be a monoid homomorphism #{S \to \mathrm{End}(X)}: it must send the identity element #{e \in S} to the identity function on #{X}.}

@@ -1,0 +1,6 @@
+\title{Distributive monoid actions}
+\author{brentyorgey}
+\date{2026-01-10T00:02:58Z}
+\taxon{Definition}
+
+\p{In order for a [monoid action](003B) of #{S} on #{A} to be [distributive](0038), we additionally require it to satisfy the \em{annihilation law} ##{a \cdot e = e} for all #{a \in A}; if #{a \cdot -} is to be a monoid homomorphism then it must preserve the identity element.}

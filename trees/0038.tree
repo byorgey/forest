@@ -3,4 +3,4 @@
 \date{2026-01-09T15:28:44Z}
 \taxon{Definition}
 
-\p{Let #{A} be a [semigroup](0033) [acting on](0035) #{S}, where #{S} is \em{also} a semigroup.  Then we say the action of #{A} on #{S} is \em{distributive} if it satisfies the distributivity law ##{a \cdot (s \diamond t) = (a \cdot s) \diamond (a \cdot t)} for all #{a \in A} and #{s,t \in S}.}
+\p{Let #{A} be a [semigroup](0033) [acting on](0035) #{S}, where #{S} is \em{also} a semigroup.  Then we say the action of #{A} on #{S} is \em{distributive} if it satisfies the distributivity law ##{a \cdot (s \diamond t) = (a \cdot s) \diamond (a \cdot t)} for all #{a \in A} and #{s,t \in S}.  In other words, we require \em{each} #{(a \cdot -) : S \to S} to be a semigroup homomorphism.}
