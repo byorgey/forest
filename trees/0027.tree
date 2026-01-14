@@ -1,25 +1,27 @@
 \date{2025-11-28T23:08:13Z}
 \title{Disco}
 \tag{discrete}
-\tag{draft}
 
 \p{Throughout the semester, we will be using a programming language
 called [[000N]], which I have been developing over the last ten years.
 A number of students have worked on Disco as well, including:}
 
 \ul{
-  \li{Callahan Hirrel}
-  \li{Bosco Ndemeye}
-  \li{Sanjit Kalapatapu}
-  \li{Jacob Hines}
-  \li{Eric Pinter}
-  \li{Daniel Burnett}
-  \li{Katherine Reid}
-  \li{Ted Bjurlin}
-  \li{Colin Phillips}
-  \li{Jacob Collier-Tenison}
+  \li{[[callahan-hirrel]] '19}
+  \li{[[bosco-ndemeye]] '18}
+  \li{[[sanjit-kalapatapu]]}
+  \li{[[jacob-hines]] '19}
+  \li{[[eric-pinter]] '21}
+  \li{[[daniel-burnett]] '23}
+  \li{[[katherine-reid]] '25}
+  \li{[[ted-bjurlin]] '25}
+  \li{[[colin-phillips]] '26}
+  \li{[[jacob-collier-tenison]] '26}
 }
 
 \p{Perhaps someday your name could be on this list as well!}
 
-\p{XXX link to documentation etc...}
+\ul{
+  \li{[Disco Live (use Disco in your browser)](https://disco-lang.github.io/disco-live/)}
+  \li{[GitHub repository](https://github.com/disco-lang/disco)}
+}
