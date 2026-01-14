@@ -1,8 +1,7 @@
 \date{2026-01-21}
 \title{What is \em{Discrete Mathematics}?}
-\tag{draft}
 \tag{discrete}
 
 \import{discrete-macros}
 
-\p{Throughout your elementary, middle school, and high school years, XXX (1) math is linear (2) focused on reaching Calculus.  All about the \em{continuous}, \ie things that change smoothly. Both are false!  Math is not a linear chain of ideas, but rather an interconnected web.  And there are whole areas of math that fall, not under continuous, but \em{discrete} or algebraic.  Things that don't vary smoothly: jump from one to the next; collections of distinct things.  Broadly speaking, this is the kind of mathematics that is needed for computing: computers do not deal with continuous values but with discrete ones and zeros.}
+\p{You have taken a lot of math classes throughout your elementary, middle school, and high school years.  Unless you've been exposed to math from other sources, you may have developed the ideas that math is (1) linear, that is, a sequence of topics each more advanced than the last; and (2) focused on reaching Calculus, the mathematics of things that are \em{continuous}, \ie things that change smoothly. But both are false!  Math is not a linear chain of ideas, but rather an interconnected web.  And there are whole areas of math that study not continuous, but \em{discrete} (or algebraic) things, \ie things that don't vary smoothly.  Things that jump from one to the next, collections of distinct items, and so on.  Broadly speaking, this is exactly the kind of mathematics that is needed for computing: computers do not deal with continuous values, but with \em{discrete} ones and zeros.  This course will serve as an introduction to all the cool math you missed in high school; the kind of math that gets used every day in computing.}
