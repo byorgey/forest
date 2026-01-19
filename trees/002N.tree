@@ -1,7 +1,6 @@
 \title{Motivation}
 \date{2025-12-14T02:35:59Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
@@ -27,7 +26,9 @@ first using natural language and thinking really hard.  Formal
 notation is a superpower! Our goal is to allow you to solve the second
 problem using a formal language too.}
 
-\p{XXX Another motivation: how do we rigorously \em{prove} a
-mathematical statement?  How do we know what details we need to
-include, and what counts as a correct argument?  Language of
-propositional logic can help with this too!}
+\p{As another motivation for our study: how do we rigorously
+\em{prove} a mathematical statement, \em{i.e.} how can we completely
+convince ourselves and others of its truth? How do we know what
+details we need to include, and what counts as a correct argument?  As
+we will see, the language of propositional logic can help with this,
+too!}

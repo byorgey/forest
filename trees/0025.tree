@@ -1,9 +1,8 @@
 \date{2025-11-28T23:05:06Z}
 \title{Themes}
 \tag{discrete}
-\tag{draft}
 
-\p{Kind of a grab bag of topics: each topic could be an entire course in and of itself.  But there will be several themes running throughout:
+\p{In one sense, this course is something of a grab bag of topics: we will cover introductions to logic and proof, set theory, relations and functions, induction, number theory, and a bit of combinatorics.  Each topic could be an entire course in and of itself.  But there will be several themes running throughout the semester that will unify our study:
 
 \ul{
   \li{[Types](002B)}

@@ -1,6 +1,14 @@
 \date{2025-11-28T23:11:17Z}
 \title{MATH 240 syllabus}
 \tag{discrete}
-\tag{draft}
 
-\p{The syllabus for [[0020]] can [be found here](https://hendrix-cs.github.io/math240/). Some important highlights: XXX}
+\p{The syllabus for [[0020]] can [be found here](https://hendrix-cs.github.io/math240/). Some important highlights:
+
+\ul{
+  \li{Your [final grade in the course](https://hendrix-cs.github.io/math240/#grades) is determined by the number of [learning goals](https://hendrix-cs.github.io/math240/#SBG) completed, and the number of [engagement points](https://hendrix-cs.github.io/math240/#engagement) earned.}
+  \li{Learning goals can be completed by completing problems on weekly in-class quizzes.}
+  \li{Engagement points are earned by \em{e.g.} attending class, completing homework assignments, and attending office hours.}
+  \li{Homework is graded only for completion/effort on a credit/no credit basis.}
+}
+
+}
