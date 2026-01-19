@@ -1,12 +1,10 @@
 \date{2025-10-24T23:23:50Z}
 \title{Current courses (Spring 2026)}
 
-\p{This spring, I will be teaching two courses and one lab section:}
+\p{This spring, I am teaching two courses and one lab section:}
 
 \ul{
   \li{[[0020]]}
   \li{[CSCI 365, Functional Programming](https://hendrix-cs.github.io/csci365/)}
   \li{I will also be facilitating one lab section for [CSCI 150, Foundations of Computer Science](https://hendrix-cs.github.io/csci150/).}
 }
-
-\p{This week I will start preparing in earnest to teach them.}

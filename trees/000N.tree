@@ -6,8 +6,7 @@
 teaching language for [discrete mathematics](0020), implemented in
 Haskell.  [[heinrichapfelmus]] recently built a [basic web
 UI](https://disco-lang.github.io/disco-live/) for students to be able
-to use Disco in their browser, and I'm working on tweaking it and
-getting it ready for students to use in the spring semester.}
+to use Disco in their browser, and I'm using it to teach [[0020]] this semester.}
 
 \subtree{
   \title{Related talks and papers}

@@ -2,4 +2,4 @@
 \title{Swarm}
 
 \p{In the fall of 2021 I started developing a game called [Swarm](http://github.com/swarm-game/swarm) and built a small open-source community around its development.  So far we have made a
-few [official alpha releases](https://github.com/swarm-game/swarm/releases/tag/0.8.0.0), and development continues to hum along.  Now that the most recent release (0.8) is out the door, I am working hard on adding an [import feature](https://github.com/swarm-game/swarm/pull/2540) to the language—it's getting close to being merged. I've also been writing up some notes about a planned [redesign of the type system](000U).}
+few [official alpha releases](https://github.com/swarm-game/swarm/releases/tag/0.8.0.0), and development continues to hum along.  I have been working hard on adding an [import feature](https://github.com/swarm-game/swarm/pull/2540) to the language—it's getting close to being merged. I've also been writing up some notes about a planned [redesign of the type system](000U).}
