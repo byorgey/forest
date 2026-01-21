@@ -1,0 +1,11 @@
+\title{Notation for conjunction vs disjunction}
+\date{2026-01-21T14:48:22Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{The symbols #{\land} and #{\lor} are easy to mix up.  Just remember that
+#{\land} looks like a capital "A" for "And", #{\lor} looks like a
+capital "V" for "Vote" (a vote is when you choose between
+options).}

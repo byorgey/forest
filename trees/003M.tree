@@ -1,0 +1,21 @@
+\title{Disjunction in English}
+\date{2026-01-21T14:55:58Z}
+\tag{discrete}
+\tag{draft}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Unlike the word "and", whose English meaning corresponds pretty exactly with its meaning in logic, we use the English word "or" in at least two logically distinct ways.  Consider the following English sentences:
+\ul{
+  \li{The prerequisite for Algorithms is MATH 240 \em{or} permission of the instructor.}
+  \li{Each entree is served with your choice of soup \em{or} a salad.}
+}}
+
+\p{In the first example, it's OK for both things to be
+true: it is fine if you pass MATH 240 and also (for some reason) get the instructor's permission to take Algorithms. This is called \em{inclusive} or, and corresponds to disjunction (#{\lor}).}
+
+\p{In the other example, you can choose soup, or a salad, \em{but not both} (you would be charged extra, at the very least).  This is called \em{exclusive} or, sometimes written #{P \oplus Q}.  It is true when \em{exactly one} of #{P}, #{Q} is true, and false otherwise. (Put
+another way, it is true when #{P} and #{Q} are different, and false when
+they are the same.)  Exclusive or is very important in computer
+science, but rarely comes up in mathematical logic.}

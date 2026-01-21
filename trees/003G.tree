@@ -1,0 +1,23 @@
+\title{}
+\date{2026-01-21T14:38:46Z}
+\tag{discrete}
+\tag{draft}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{[[002Z]] works just like we expect in natural language. Consider:
+   "It is not raining today and I had eggs for breakfast."}
+
+\p{This is true if both parts are true.  If it's raining, the
+   statement is false.  If I ate something other than eggs, it's
+   false.  Of course it's definitely false when it's raining and I ate
+   something other than eggs.}
+
+\p{If we let #{r} = "It is raining today" and #{e} = "I
+   had eggs for breakfast", then we can translate this sentence
+   into propositional logic as ##{\neg r \land e.} Note that
+   negation has "higher precedence" than conjunction (it has
+   "stickier glue") so this is unambiguous.  It does \em{not} mean
+   #{\neg(r \land e)}, which would be different.  If in doubt, just use
+   parentheses: #{(\neg r) \land e}.}

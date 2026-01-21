@@ -1,0 +1,11 @@
+\title{Negation (NOT)}
+\date{2026-01-21T14:34:01Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{The first and simplest connective we will consider is negation, which flips a proposition from true to false and vice versa.}
+
+\transclude{002W}
+\transclude{002Y}
+\transclude{002X}

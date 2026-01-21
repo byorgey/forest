@@ -1,0 +1,20 @@
+\title{Duality of conjunction and disjunction}
+\author{brentyorgey}
+\date{2026-01-21T14:51:22Z}
+\tag{discrete}
+\tag{draft}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{There's a good reason the symbols for [conjunction](002Z) and [disjunction](003F) are upside down versions of each
+other: they are "opposite" (the mathy word is "dual") in the
+sense that if we consider an opposite world where everything false
+becomes true and vice versa, then #{\land} becomes #{\lor} and vice
+versa.  Consider the following alternative definition of disjunction:
+
+\transclude{003L}
+
+Comparing to [the definition of conjunction](002Z), we can see that
+they are identical but with all the \True's and \False's switched.}
+

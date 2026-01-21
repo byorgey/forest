@@ -1,0 +1,9 @@
+\title{Disjunction}
+\date{2026-01-21T14:43:15Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{The \em{disjunction} of #{P} and #{Q} is written #{P \lor Q}, and pronounced "#{P} or
+  #{Q}". It is true when at least one of #{P} and #{Q} are true, and false when both are false.}

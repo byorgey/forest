@@ -5,7 +5,7 @@
 
 \import{discrete-macros}
 
-\p{We can summarize this information with a \em{truth table} showing
+\p{We can summarize the [definition of negation](002W) with a \em{truth table} showing
 the truth value of #{\neg P} for each possible value of #{P}:
 ##{\begin{array}{cc}P & \neg P \\ \hline \True & \False \\ \False & \True \end{array}}
 }

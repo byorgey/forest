@@ -1,0 +1,14 @@
+\title{Disjunction (OR)}
+\date{2026-01-21T14:37:52Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{We next consider disjunction, commonly known as \em{OR}.}
+
+\transclude{003H}
+\transclude{003I}
+\transclude{003J}
+\transclude{003K}
+\transclude{003M}

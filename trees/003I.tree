@@ -1,0 +1,17 @@
+\title{Truth table for disjunction}
+\author{brentyorgey}
+\date{2026-01-21T14:47:10Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{We can make a truth table for disjunction as follows:
+##{\begin{array}{ccc}
+    P & Q & P \lor Q \\ \hline
+    \True & \True & \True \\
+    \True & \False & \True \\
+    \False & \True & \True \\
+    \False & \False & \False \\
+  \end{array}}
+}

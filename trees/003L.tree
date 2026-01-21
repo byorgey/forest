@@ -1,0 +1,9 @@
+\title{Disjunction (alternative)}
+\date{2026-01-21T14:53:09Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{The \term{disjunction} of propositions #{P} and #{Q} is false when both #{P}
+and #{Q} are false, and true otherwise.}
