@@ -4,4 +4,4 @@
 
 \import{swarm-macros}
 
-\p{We also assume a globally fixed set of \em{capabilities} \capset.  A capability represents the ability of a [robot](0014) to do a particular thing: for example, to add, to move, make use of recursive functions, \etc  For each built-in command #c there is a capability \Exc{c} which represents the capability to execute command #c, but there are other capabilities as well.}
+\p{We also assume a globally fixed set of \em{capabilities} \capset.  A capability represents the ability of a [robot](0014) to do a particular thing: for example, to add, to move, make use of recursive functions, \etc  For each built-in command #{c} there is a capability \Exc{c} which represents the capability to use command #{c}, but there are other capabilities as well.}
