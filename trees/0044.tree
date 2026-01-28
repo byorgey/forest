@@ -1,0 +1,7 @@
+\date{2026-01-28T21:19:54Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Show that #{P \to Q \equiv \neg Q \to \neg P}.}

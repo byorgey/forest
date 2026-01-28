@@ -1,3 +1,5 @@
 \export{base-macros}
 
+\def\implies{\rightarrow}
+\def\iff{\leftrightarrow}
 \def\term[body]{\em{\body}}

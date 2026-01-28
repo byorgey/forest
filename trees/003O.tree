@@ -1,0 +1,34 @@
+\title{Booleans in Disco}
+\date{2026-01-28T20:26:09Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{In [[0027]], the type \tt{Bool} has two values, \tt{T} and \tt{F} (which can also be written \tt{True} and \tt{False}, or \tt{true} and \tt{false}):
+\pre\verb<<<|
+Disco> :type T
+T : Bool
+Disco> :type F
+F : Bool
+Disco> true
+T
+Disco> False
+F<<<
+}
+
+\p{One way we can create \tt{Bool} values in Disco is using \em{comparison operators}:
+\pre\verb<<<|
+Disco> 3 < 9
+T
+Disco> 3 > 9
+F
+Disco> 6 <= 7
+T
+Disco> 6 >= 7
+F
+Disco> 5 == 5
+T
+Disco> 6 /= 5
+T<<<
+}

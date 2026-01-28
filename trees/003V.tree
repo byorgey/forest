@@ -1,0 +1,17 @@
+\title{Implication in English}
+\date{2026-01-28T21:04:44Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{There are \em{lots} of ways to express conditionals in English besides just "if P then Q".  For example:
+\ul{
+  \li{if P, Q}
+  \li{P implies Q}
+  \li{Q if P}
+  \li{P only if Q}
+  \li{Q whenever P}
+}
+and others. If you're not sure, make a truth table!}
+
+\p{Again, you need not memorize this list, but it's good to be aware of these.}

@@ -1,0 +1,16 @@
+\title{}
+\date{2026-01-21T22:15:51Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Let #{r} = "It is raining today", #{e} = "I had
+    eggs for breakfast", and #{c} = "I had cereal for
+    breakfast."  Consider the sentence "Either it is raining, or I
+  ate cereal and not eggs for breakfast."  We can translate this
+  sentence into propositional logic as follows:
+  ##{r \lor (c \land \neg e)}
+  Note that it's not necessarily clear which kind of or to use here; it doesn't matter too
+  much.  Also, the parenthesis may technically not be required, but it's probably
+  best to include them.}

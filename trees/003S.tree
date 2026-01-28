@@ -1,0 +1,10 @@
+\title{Implication}
+\date{2026-01-28T20:50:47Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{Let #{P} and #{Q} be propositions.  The \em{conditional} or
+  \em{implication} "if #{P}, then #{Q}" is written #{P \to Q}.  It
+  is true if #{Q} is true whenever #{P} is true.}

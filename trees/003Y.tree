@@ -1,0 +1,8 @@
+\title{Biconditional}
+\date{2026-01-28T21:12:12Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{Let #{P} and #{Q} be propositions.  The \em{biconditional} #{P \iff Q} (pronounced "#{P} if and only if #{Q}") is true when #{P} and #{Q} have the same truth value, and false otherwise.}

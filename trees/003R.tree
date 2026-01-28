@@ -1,0 +1,17 @@
+\title{Implication (IF-THEN)}
+\date{2026-01-28T20:48:59Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{The last major connective we will consider is \em{implication}, which may be less familiar but is no less important.}
+
+\transclude{003S}
+\transclude{003T}
+\transclude{003U}
+\transclude{003V}
+\transclude{003W}
+\transclude{003X}
+\transclude{003Y}
+\transclude{003Z}

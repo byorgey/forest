@@ -1,0 +1,15 @@
+\title{Disjunction in Disco}
+\date{2026-01-28T20:38:32Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{In Disco, disjunction can be written \code{\verb<<<|\/<<<}, or \tt{or}, or \tt{||}:
+\pre\verb<<<|
+Disco> T or F
+T
+Disco> (1 < 5) || (6 <= 6)
+T
+Disco> false \/ (99 == 990)
+F<<<
+}

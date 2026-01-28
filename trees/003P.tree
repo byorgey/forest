@@ -1,0 +1,25 @@
+\title{Conjunction in Disco}
+\date{2026-01-28T20:38:32Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{In Disco, conjunction can be written \code{\verb<<<|/\<<<}, or \tt{and}, or \tt{&&}:
+\pre\verb<<<|
+Disco> T and F
+F
+Disco> (1 < 5) && (6 <= 6)
+T
+Disco> true /\ (99 == 990)
+F<<<
+}
+
+\p{As before, we can also get Disco to [show us a truth table](002X):
+\pre\verb<<<|
+Disco> :table /\
+F  F  F
+F  T  F
+T  F  F
+T  T  T<<<
+The rows are in a different order than the table shown previously, but the order of the rows doesn't really matter.
+}

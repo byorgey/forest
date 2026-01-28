@@ -1,0 +1,51 @@
+\title{Truth table for implication}
+\date{2026-01-28T20:57:19Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Let's figure out what the truth table for [implication](003S) should be. I like to think of
+it this way: if someone makes you a promise of the form "if ... then ...", in what scenarios have they lied to you?}
+
+\p{Consider the propositions
+\ul{
+  \li{#{P} = "You fulfill all the requirements for an A."}
+  \li{#{Q} = "You get an A."}
+}
+In the syllabus I have in fact promised that the proposition #{P \to Q}
+is true. Let's consider every possible scenario; in which scenario(s)
+should you be mad at me for lying to you?
+\ul{
+\li{You complete all the requirements and get an A.  This is great;
+  I have kept my promise.}
+\li{You complete all the requirements but don't get an A.  Obviously
+  in this scenario I lied and you should be super mad at me, and
+  probably complain to my department chair or the Provost.}
+\li{Let's next consider the scenario where you don't complete the
+  requirements for an A, and don't get an A.  You might be mad at
+  yourself but you certainly can't be mad at me.  I still made a true
+  statement.}
+\li{The last case is the one that sometimes trips people up: what if
+  you don't complete the requirements, but you get an A anyway?  You
+  obviously won't be upset in this scenario (though other students
+  might!), but \em{did I lie}?  Actually, I didn't.  I only said
+  what would happen if you DO complete the requirements.  I am free to
+  do whatever I want (including giving you an A anyway) if you
+  don't. (In fact, I occasionally do this in special circumstances!)}
+}
+}
+
+\p{So overall we have the following truth table:
+##{\begin{array}{ccc}
+    P & Q & P \to Q \\ \hline
+    \True & \True & \True \\
+    \True & \False & \False \\
+    \False & \True & \True \\
+    \False & \False & \True \\
+\end{array}}
+}
+
+\p{In other words, the only scenario in which an implication #{P \to Q} is
+false is when #{P} is true but #{Q} is false. It is true in all other
+cases. "If the premise is false, anything goes!"}
+

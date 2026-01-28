@@ -1,0 +1,8 @@
+\title{Logical equivalence}
+\date{2026-01-28T21:17:59Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{Two propositions that always have the same truth value are \em{logically equivalent}, written #{P \equiv Q}.  Alternatively, #{P \equiv Q} when #{P \iff Q} is a [tautology](0041).}

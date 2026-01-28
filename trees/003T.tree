@@ -1,0 +1,10 @@
+\title{Terminology for the parts of an implication}
+\date{2026-01-28T20:55:04Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{In an [implication](003S) #{P \to Q}, the left-hand proposition #{P} is called the \em{premise} or \em{hypothesis}. #{Q} is called the \em{conclusion}.}
+
+\p{You do not need to memorize these terms, but you should be familiar with them.}

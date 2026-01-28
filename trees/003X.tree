@@ -1,0 +1,10 @@
+\title{Relationship of an implication to its variants}
+\date{2026-01-28T21:09:27Z}
+\tag{discrete}
+\taxon{Theorem}
+
+\import{discrete-macros}
+
+\p{An implication and its contrapositive always have the same
+  truth value.  On the other hand, an implication does \em{not}
+  always have the same truth value as its inverse or converse.}

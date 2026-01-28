@@ -1,7 +1,6 @@
 \title{Propositional connectives}
 \date{2025-12-16T01:47:51Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
@@ -11,3 +10,5 @@ complex propositions.}
 \transclude{003D}
 \transclude{003E}
 \transclude{003F}
+\transclude{003N}
+\transclude{003R}

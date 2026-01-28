@@ -1,0 +1,29 @@
+\date{2026-01-28T21:19:54Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Show that #{P \to Q \equiv \neg P \lor Q}.}
+
+\p{One way we could do this is by making a truth table:
+##{
+  \begin{array}{ccccc}
+      P & Q & P \to Q & \neg P & \neg P \lor Q \\ \hline
+      \True & \True & \True & \False & \True \\
+      \True & \False & \False & \False & \False \\
+      \False & \True & \True & \True & \True \\
+      \False & \False & \True & \True & \True \\
+  \end{array}
+}
+  Notice that the columns for #{P \implies Q} and #{\neg P \lor Q} are
+  exactly the same, which means that these two propositions always
+  have the same truth value.  Hence they are logically equivalent.}
+
+\p{We could also use Disco to check this automatically, like so:
+\pre\verb<<<|
+Disco> :test forall p: Bool, q:Bool. (p -> q) == (not p \/ q)
+  - Certainly true: ∀p, q. (p -> q) == (not p \/ q)
+    No counterexamples exist; all possible values were checked.
+<<<
+}

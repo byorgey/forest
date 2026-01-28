@@ -1,0 +1,15 @@
+\title{Related conditionals}
+\date{2026-01-28T21:07:11Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{Given an implication #{P \to Q}, we have:
+\ul{
+  \li{the \term{converse} is #{Q \to P}}
+  \li{the \term{inverse} is #{\neg P \to \neg Q}}
+  \li{the \term{contrapositive} is #{\neg Q \to \neg P}
+    (the contrapositive is the \em{inverse of the converse} or vice versa)}
+  }
+}

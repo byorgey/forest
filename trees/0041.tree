@@ -1,0 +1,8 @@
+\title{Tautologies and contradictions}
+\date{2026-01-28T21:16:01Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{A [proposition](002O) that is always true, no matter the values of the propositional variables it contains, is a \em{tautology}.  One that is always false is a \em{contradiction}.}
