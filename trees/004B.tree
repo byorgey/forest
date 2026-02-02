@@ -1,0 +1,21 @@
+\author{brentyorgey}
+\date{2026-01-31T19:26:55Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Prove #{(p \implies q) \land (p \implies r) \equiv p \implies (q
+  \land r)}.}
+
+##{
+  \begin{sproof}
+    \stmt{(p \implies q) \land (p \implies r)}
+    \reason{\equiv}{Implication}
+    \stmt{(\neg p \lor q) \land (\neg p \lor r)}
+    \reason{\equiv}{Factor out $\neg p$ (distributivity, backwards)}
+    \stmt{\neg p \lor (q \land r)}
+    \reason{\equiv}{Implication}
+    \stmt{p \implies (q \land r)}
+  \end{sproof}
+}

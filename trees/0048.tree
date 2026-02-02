@@ -1,0 +1,10 @@
+\author{brentyorgey}
+\date{2026-01-31T19:20:07Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Idempotence, "opposite world distributivity", and the De Morgan
+    laws are the surprising ones that don't have a nice counterpart in
+    terms of multiplication and addition.}

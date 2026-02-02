@@ -1,0 +1,28 @@
+\title{Propositional logic laws}
+\author{brentyorgey}
+\date{2026-01-31T19:16:25Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+##{
+\begin{array}{l|c|c}
+\text{Name} & \text{equivalence} & \text{``opposite world'' equivalence} \\ \hline
+    \text{Identity} & p \land \True \equiv p & p \lor \False \equiv p \\
+    \text{Annihilation} & p \land \False \equiv \False & p \lor \True \equiv \True
+    \\
+    \text{Idempotence} & p \land p \equiv p & p \lor p \equiv p \\
+    \text{Commutativity} & p \land q \equiv q \land p & p \lor q \equiv q
+                                                   \lor p \\
+    \text{Associativity} & (p \land q) \land r \equiv p \land (q \land r)
+                                        & (p \lor q) \lor r \equiv p \lor (q \lor r) \\
+    \text{Distributivity} & p \land (q \lor r) \equiv (p \land q) \lor (p
+                     \land r) & p \lor (q \land r) \equiv (p \lor q) \land (p
+                                 \lor r) \\
+    \text{De Morgan} & \neg (p \land q) \equiv \neg p \lor \neg q
+                                        & \neg (p \lor q) \equiv \neg p \land \neg q \\
+    \text{Contradiction/Tautology} & p \land \neg p \equiv \False & p \lor
+                                                               \neg p
+                                                               \equiv \True
+\end{array}
+}

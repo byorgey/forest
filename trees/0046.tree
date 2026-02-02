@@ -1,0 +1,23 @@
+\title{Mnemonic principles for propositional logic laws}
+\date{2026-01-31T19:09:46Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{There are two important organizing/mnemonic principles:
+\ol{
+\li{Most equivalences have an "opposite world" version where we
+  switch #{\land / \lor} and #{\True / \False}.}
+\li{We can get some intuition by thinking in terms of multiplication
+  and addition:
+  \ul{
+  \li{#{\True} is kind of like 1}
+  \li{#{\False} is kind of like 0}
+  \li{#{\neg} is kind of like subtracting from 1}
+  \li{#{\land} is kind of like #{\times}}
+  \li{#{\lor} is kind of like #{+}, but with a maximum result of #{1}}
+  }
+  This analogy is not perfect, but it works as a mnemonic to help
+  us remember some of the equivalences.
+}}
+}

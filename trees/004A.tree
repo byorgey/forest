@@ -1,0 +1,10 @@
+\date{2026-01-31T19:24:20Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Note that associativity means we are justified in writing things
+like ##{p \land q \land r \land s \land t \land \dots} with no
+parentheses, since where we put parentheses doesn't matter.  (But if
+we mix #{\land} and #{\lor} we definitely need parentheses!!)}

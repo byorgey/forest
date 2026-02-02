@@ -1,0 +1,19 @@
+\title{Algebraic laws for propositional logic}
+\date{2026-01-31T19:04:59Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{In algebra, you learned a number of equational laws that allow you to manipulate algebraic expressions.  For example, the distributive law tells us that #{x \cdot (y + z) = x \cdot y + x \cdot z}.  Once you have internalized these laws, you can manipulate symbolic algebraic expressions without having to think hard about what they mean.  There are algebraic laws that allow us to work similarly with propositional logic: (XXX formal notation is a superpower!)}
+
+\transclude{0046}
+\transclude{0047}
+\transclude{0048}
+\transclude{004A}
+\transclude{0049}
+\p{You should convince yourself of all these, using either a truth table
+or thinking about a logical argument.}
+\p{From now on, we don't have to use truth tables anymore, we can prove
+any equivalence we want using these core equivalences.  Here are a
+couple examples.}
+\transclude{004B}

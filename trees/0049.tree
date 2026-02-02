@@ -1,0 +1,16 @@
+\title{Sporadic laws}
+\author{brentyorgey}
+\date{2026-01-31T19:20:34Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Then there are three special equivalences which don't have opposite
+world versions:
+
+\ul{
+    \li{Double negation elimination: #{\neg (\neg p) \equiv p}}
+    \li{Implication: #{p \implies q \equiv \neg p \lor q}}
+    \li{Iff: #{p \iff q \equiv (p \implies q) \land (q \implies p)}}
+}
+}
