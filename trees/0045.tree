@@ -4,7 +4,7 @@
 
 \import{discrete-macros}
 
-\p{In algebra, you learned a number of equational laws that allow you to manipulate algebraic expressions.  For example, the distributive law tells us that #{x \cdot (y + z) = x \cdot y + x \cdot z}.  Once you have internalized these laws, you can manipulate symbolic algebraic expressions without having to think hard about what they mean.  There are algebraic laws that allow us to work similarly with propositional logic: (XXX formal notation is a superpower!)}
+\p{In algebra, you learned a number of equational laws that allow you to manipulate algebraic expressions.  For example, the distributive law tells us that #{x \cdot (y + z) = x \cdot y + x \cdot z}.  Once you have internalized these laws, you can manipulate symbolic algebraic expressions without having to think hard about what they mean.  There are algebraic laws that allow us to work similarly with propositional logic: [[004C]]!}
 
 \transclude{0046}
 \transclude{0047}
@@ -17,3 +17,4 @@ or thinking about a logical argument.}
 any equivalence we want using these core equivalences.  Here are a
 couple examples.}
 \transclude{004B}
+\transclude{004D}

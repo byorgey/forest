@@ -1,0 +1,7 @@
+\title{Formal notation is a superpower}
+\date{2026-02-02T18:06:47Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{A theme that runs throughout this class is that the use of formal, algebraic notation is like a superpower: it greatly increases the amount of complexity we can reliably handle!}
