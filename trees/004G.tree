@@ -1,0 +1,14 @@
+\title{Universal quantifier (#{\forall})}
+\date{2026-02-03T22:22:36Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{The first quantifier we will learn about is the \em{universal} quantifier, which lets us encode the idea behind English words like "all", "every", and "each", that is, \em{universal} statements that are supposed to be true for every member of some domain.}
+
+\transclude{004H}
+\transclude{004I}
+\transclude{004J}
+\transclude{004K}
+\transclude{004N}

@@ -1,0 +1,17 @@
+\title{#{\forall} with an empty domain}
+\date{2026-02-04T14:25:37Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Consider this example: suppose #{H} is the domain of "Hendrix students who are over 11 feet tall".  Is the following proposition true or false? ##{\all{h}{H} h \text{ plays varsity pickleball}}  The strange thing here, of course, is that the domain #{H} is \em{empty}.  What should it mean to say that "every" element of a domain has some property, when the domain is in fact empty?
+}
+
+\p{Although we don't even have a varsity pickleball team, the perhaps surprising answer is that this is \em{true}, and in fact any #{\forall} with an empty domain should be true.  On one level, you can just take my word for it: this is the standard, commonly accepted definition within mathematics.  But there are also good reasons for defining it this way: things work out more elegantly and consistently this way.  Here are a couple ways to think about it:
+\ul{
+  \li{In order for the proposition #{\all{x}{D} P(x)} to be false, there should be a \em{counterexample}, that is, a specific value of #{x} in the domain #{D} for which #{P(x)} is false.  If the domain #{D} is empty, then clearly no counterexamples can exist.}
+  \li{Recall that we can think of #{\forall} like a big #{\land}: ##{\all{x}{D} P(x) \equiv P(x_1) \land P(x_2) \land P(x_3) \land \dots} So what do we get when we take the #{\land} of zero things?  The answer is that we should get the \em{identity element} for #{\land}—which is \True; just like the sum of zero things is zero (the identity element for addition), the product of zero things is one (the identity element for multiplication), and so on.}
+}
+}
+
+\p{This is our first example of the theme [[002E]]!  For example, we could \em{require} any #{\forall} to have a non-empty domain, and say that it is undefined when the domain has size zero.  But this is unnecessary: there is a perfectly elegant way to define it.}

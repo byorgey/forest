@@ -1,0 +1,12 @@
+\title{Existential quantifier (#{\exists})}
+\date{2026-02-04T14:46:11Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Next, we consider the \em{existential} quantifier, which lets us encode \em{existential} statements using words like "some" or "exists".  An existential statement is more specific than a universal statement: rather than saying that a proposition is true for \em{every} member of some domain, it just says that it is true for \em{some} members.}
+
+\transclude{004L}
+\transclude{004M}
+\transclude{004P}

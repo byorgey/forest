@@ -1,0 +1,11 @@
+\title{#{\exists} with an empty domain}
+\date{2026-02-04T14:56:32Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Is the following proposition true or false? ##{\ext{h}{H} h \text{ plays on the varsity pickleball team}}
+The proposition is clearly false.  Even something like ##{\ext{h}{H} h \text{ has taken MATH 240}} is false: there are certainly Hendrix students who have taken MATH 240, but none in the domain #{H}!  And in general, #{\ext{x}{D} P(x)} is always false when the domain #{D} is empty.}
+
+\p{This is more intuitive than #{\forall} with an empty domain, but we can justify it in similar ways.  For example, if #{\exists} corresponds to a big #{\lor}, an #{\exists} with an empty domain corresponds to the question: what do we get when we take the #{\lor} of zero things?  The identity element for #{\lor}, of course, namely \False.}

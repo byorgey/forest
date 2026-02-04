@@ -1,0 +1,9 @@
+\title{Existential quantifier}
+\date{2026-02-03T22:37:04Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{If #{P(x)} is a predicate and #{D} any domain, then ##{\exists
+    x:D\st P(x)} (“there exists an #{x} in #{D} such that #{P(x)}”) is a proposition which is true iff there is at least one #{x} in D such that #{P(x)} holds.}

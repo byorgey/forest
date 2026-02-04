@@ -1,0 +1,12 @@
+\title{Predicates and Quantifiers}
+\date{2026-02-03T22:16:30Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{By this point we’ve caught up with the ancient Greeks. However, it turns out that propositional logic isn’t expressive enough to talk about everything we want to reason about mathematically. In particular we can’t make general sorts of statements involving words like “all” or “some”. These are called \em{quantifiers} since they allow us to "quantify" (in a very limited way) how many things a certain proposition is true for.  We've seen that we are able to write tests with \code{forall} in Disco; we will now see more formally what this means.}
+
+\transclude{004F}
+\transclude{004G}
+\transclude{004O}

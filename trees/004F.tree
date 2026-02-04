@@ -1,0 +1,26 @@
+\title{Predicates}
+\date{2026-02-03T22:17:44Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Before we can formally define quantifiers, we must come to terms with \em{parameterized} propositions, which will allow us to talk about more than one thing.  For example, consider the statement ##{x + 2 = 5.} By itself, this is \em{not} a proposition because we can’t say whether it is true or false; it depends on #{x}.}
+\p{\pre\verb<<<|
+Disco> :test x + 2 == 5
+Error: there is nothing named x.
+https://disco-lang.readthedocs.io/en/latest/reference/unbound.html<<<
+}
+\p{However, it’s \em{almost} a proposition: it’s “waiting for” a value of #{x} to be filled in, at which point it will be a proposition. We can make this explicit by defining #{P(x)} to be the statement “#{x + 2 = 5}”; then #{P(x)} is a \em{predicate}, that is, a function that takes #{x} as input and outputs a proposition.}
+\p{\pre\verb<<<|
+P : N -> Bool
+P(x) = x + 2 == 5<<<
+}
+\ul{
+  \li{#{P(2)} represents the proposition #{2 + 2 = 5} (which happens to be false).}
+  \li{#{P(3)} represents the proposition #{3 + 2 = 5} (which happens to be true).}
+}
+\p{We can also make multi-argument predicates, just like we can have functions of multiple variables. For example, let #{T(x,y)} mean “#{x} is less than the square of #{y}”.}
+\p{\pre\verb<<<|
+T : N * N -> Bool
+T(x,y) = x < y^2<<<
+}

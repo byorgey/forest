@@ -1,0 +1,9 @@
+\date{2026-02-03T22:27:47Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{You also often see the notation #{\forall x \in D. P(x)}.}
+
+\p{#{D} is called the \em{domain of discourse}. Sometimes mathematicians omit writing it as part of the notation, and simply require that it be mentioned off to the side somehwere what the domain of discourse is, but this is silly and dangerous: specifying the domain of discourse is not optional (it can determine whether the proposition is true or false), so we should force ourselves to put it in the notation. Otherwise, the notation is ambiguous.}

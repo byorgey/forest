@@ -1,0 +1,9 @@
+\title{Universal quantifier}
+\date{2026-02-03T22:23:56Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{If #{P(x)} is a predicate and #{D} is some “domain” (\em{i.e.} set of values, \em{i.e.} [type](002B)) then ##{\forall x: D \st P(x)} (pronounced “for all #{x} in #{D}, #{P(x)}”) is a proposition which is true iff #{P(x)} is true for every #{x} in the domain #{D}.}
+

@@ -1,0 +1,8 @@
+\date{2026-02-03T22:35:48Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{We should think of #{\forall} as being like a big “and”. That is, ##{\forall x:D\st P(x) \equiv P(x_1) \land P(x_2) \land P(x_3) \land
+    \dots} where #{x_1}, #{x_2}, #{x_3}, ... are all the elements of the domain #{D}. But writing out such giant lists of propositions would be tedious; the domain could even be infinite, as in the last example! But even though this is not literally true it will help us think about what properties #{\forall} should have.}

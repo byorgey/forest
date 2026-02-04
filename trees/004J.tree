@@ -1,0 +1,36 @@
+\date{2026-02-03T22:29:14Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\ul{
+  \li{#{\all{n}{\N} P(n)}: assuming #{P} is defined as above, this is a false proposition: it is not the case that #{n + 2 = 5} for \em{every} natural number #{n}.}
+  \li{#{\all{n}{\N} n \geq 0}: this is a true proposition.  Every natural number is greater than or equal to zero.}
+  \li{#{\all{x}{\Z} x \geq 0}: this is false.  For example, #{-2} is less than zero.}
+  \li{#{\all{x}{\Z} x^2 \geq 0}: this is true.}
+}
+
+\p{We can explore the same examples with Disco:}
+
+\p{\pre\verb<<<|
+Disco> :test forall n:N. P(n)
+  - Certainly false: ∀n. P(n)
+    Counterexample:
+      n = 0
+Disco> :test forall n:N. n >= 0
+  - Possibly true: ∀n. n >= 0
+    Checked 100 possibilities without finding a counterexample.
+Disco> :test forall x:Z. x >= 0
+  - Certainly false: ∀x. x >= 0
+    Found counterexample:
+      x = -1
+    - Left side:  -1
+    - Right side: 0
+Disco> :test forall x:Z. x^2 >= 0
+  - Possibly true: ∀x. x ^ 2 >= 0
+    Checked 100 possibilities without finding a counterexample.
+Disco> :test forall b:Bool. (b /\ b) == b
+  - Certainly true: ∀b. (b /\ b) == b
+    No counterexamples exist.<<<
+}
