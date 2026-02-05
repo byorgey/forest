@@ -1,0 +1,8 @@
+\date{2026-02-05T15:23:40Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{\all{n}{\N} \ext{z}{\Z} n < z}}
+\p{This is true. For any natural number #{n} we pick, we can always find an integer which is larger, for example, #{n+1}. Notice that for each #{n}, we are allowed to choose a different #{z}.}

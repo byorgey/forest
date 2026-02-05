@@ -1,0 +1,9 @@
+\date{2026-02-05T15:25:16Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{\ext{n}{\N} \all{z}{\Z} n < z}}
+\p{This is false. There is no natural number which is less than all integers.}
+

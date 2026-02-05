@@ -1,0 +1,13 @@
+\title{Translating English sentences into propositional logic with quantifiers}
+\date{2026-02-05T14:43:29Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Let's look at some examples of expressing natural language statements in formal propositional logic.}
+\transclude{004S}
+\transclude{004T}
+\transclude{004U}
+\transclude{004V}
+\transclude{004W}
+\transclude{004X}

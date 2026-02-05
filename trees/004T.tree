@@ -1,0 +1,8 @@
+\date{2026-02-05T14:49:36Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{“The square of any integer is nonnegative.” ##{\forall x:\Z. x^2 \geq 0} (This is also true.)}
+

@@ -1,0 +1,9 @@
+\date{2026-02-05T15:24:53Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{\all{z}{\Z} \ext{n}{\N} n < z}}
+\p{This is false. For example, when #{z = -1}, there is no natural number which is less than #{z}.}
+

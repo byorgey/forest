@@ -1,0 +1,14 @@
+\title{Quantifier restriction}
+\date{2026-02-05T15:13:04Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{How would we encode the (false) proposition “every even integer is equal to 2”? We could write ##{\all{x}{\Even} x = 2.} Or, if we wanted to use a more primitive quantifier, we could equivalently write ##{\all{x}{\Z} \Even(x) \to (x = 2)} In general, suppose #{D} is some domain and #{S} is a subset of #{D}, and let #{S(x)} be a predicate meaning “#{x} is a member of #{S}”. Then ##{\all{x}{S} P(x) \equiv \all{x}{D} S(x) \to P(x).}}
+\p{Likewise, if #{D} is some domain and #{S} is a subset, then ##{\ext{x}{S}
+  P(x) \equiv \ext{x}{D} S(x) \land P(x).}}
+\p{As a final example, let’s encode the statement “Every even integer greater than 2 can be written as the sum of two primes” in formal propositional logic. Assume we have a predicate #{\mathrm{Prime}(n)} meaning “#{n} is prime” (we will see how to define this later).}
+\p{##{\all{n}{\N} (\Even(n) \land n > 2) \to (\ext{p}{\N}
+  (\mathrm{Prime}(p) \land (\ext{q}{\N} \mathrm{Prime}(q) \land n = p + q)))}}
+

@@ -1,0 +1,9 @@
+\date{2026-02-05T15:24:22Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{\all{z}{\Z} \ext{n}{\N} z < n}}
+\p{This is also true. We cannot always pick #{z+1} since it might not be a natural number. But, for example, we could pick #{0} when #{z} is negative and #{z+1} when #{z} is nonnegative.}
+

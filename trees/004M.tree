@@ -8,8 +8,8 @@
   \li{#{\ext{n}{\N} P(n)}: This is a true proposition, since, for example, #{P(2)} is true.}
   \li{#{\ext{x}{\Z} x^2 = 16}: This is a true proposition.  Both #{4} and #{-4} are integers which satisfy #{x^2 = 16}.}
   \li{#{\ext{x}{\Z} x^2 = 17}: This is a false proposition.  There is no integer whose square is #{17}.}
-  \li{#{\all{x}{\N} \ext{y}{\N} T(x,y)}: This is true: for every natural number #{x}, there is some other natural number #{y} such that #{x < y^2}.}
-  \li{#{\all{y}{\N} \ext{x}{\N} T(x,y)}: This is false, since when #{y = 0}, there is no natural number #{x} such that #{T(x,y)}, that is, #{x < 0^2}.}
+  \li{#{\all{x}{\N} \ext{y}{\N} J(x,y)}: This is true: for every natural number #{x}, there is some other natural number #{y} such that #{x < y^2}.}
+  \li{#{\all{y}{\N} \ext{x}{\N} J(x,y)}: This is false, since when #{y = 0}, there is no natural number #{x} such that #{J(x,y)}, that is, #{x < 0^2}.}
 }
 
 \p{\pre\verb<<<|
@@ -26,11 +26,11 @@ Disco> :test exists x:Z. x^2 == 16
       x = 4
     - Left side:  16
     - Right side: 16
-Disco> :test forall x:N. exists y:N. T(x,y)
-  - Possibly true: ∀x. ∃y. T(x, y)
+Disco> :test forall x:N. exists y:N. J(x,y)
+  - Possibly true: ∀x. ∃y. J(x, y)
     Checked 100 possibilities without finding a counterexample.
-Disco> :test forall y:N. exists x:N. T(x,y)
-  - Possibly false: ∀y. ∃x. T(x, y)
+Disco> :test forall y:N. exists x:N. J(x,y)
+  - Possibly false: ∀y. ∃x. J(x, y)
     No example was found; checked 100 possibilities.
     Counterexample:
       y = 0<<<

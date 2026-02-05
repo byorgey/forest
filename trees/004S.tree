@@ -1,0 +1,7 @@
+\date{2026-02-05T14:44:24Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{“Every natural number is less than or equal to its own square.” ##{\forall n:\N. n \leq n^2}  (This is a true proposition.)}

@@ -1,0 +1,7 @@
+\date{2026-02-05T14:55:13Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{“If #{n} is even, then #{n + 2} is even.” ##{\all{n}{\Z} \Even(n) \to \Even(n+2)} Note that bare variables in mathematical statements like this tend to hide an implicit #{\forall}!}

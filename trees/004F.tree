@@ -19,8 +19,8 @@ P(x) = x + 2 == 5<<<
   \li{#{P(2)} represents the proposition #{2 + 2 = 5} (which happens to be false).}
   \li{#{P(3)} represents the proposition #{3 + 2 = 5} (which happens to be true).}
 }
-\p{We can also make multi-argument predicates, just like we can have functions of multiple variables. For example, let #{T(x,y)} mean “#{x} is less than the square of #{y}”.}
+\p{We can also make multi-argument predicates, just like we can have functions of multiple variables. For example, let #{J(x,y)} mean “#{x} is less than the square of #{y}”.}
 \p{\pre\verb<<<|
-T : N * N -> Bool
-T(x,y) = x < y^2<<<
+J : N * N -> Bool
+J(x,y) = x < y^2<<<
 }

@@ -1,0 +1,16 @@
+\title{Example propositions with nested quantifiers}
+\date{2026-02-05T15:10:26Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Decide whether each proposition is true or false.}
+
+\transclude{0052}
+\transclude{0053}
+\transclude{0054}
+\transclude{0055}
+\transclude{0056}
+
+

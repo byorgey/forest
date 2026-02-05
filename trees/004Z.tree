@@ -1,0 +1,20 @@
+\date{2026-02-05T15:01:39Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{What is the negation of #{\all{a}{\N} \ext{b}{\N} (a = 0) \lor (a + b =
+  0)}?}
+
+##{
+  \begin{align*}
+  & \neg( \all{a}{\N} \ext{b}{\N} (a = 0) \lor (a + b = 0)) \\
+  & \equiv \quad\quad\quad \{ \text{de Morgan} \} \\
+  & \ext{a}{\N} \neg (\ext{b}{\N} (a = 0) \lor (a + b = 0)) \\
+  & \equiv \quad\quad\quad \{ \text{de Morgan} \} \\
+  & \ext{a}{\N} \all{b}{\N} \neg ((a = 0) \lor (a + b = 0)) \\
+  & \equiv \quad\quad\quad \{ \text{de Morgan} \} \\
+  & \ext{a}{\N} \all{b}{\N} (a \neq 0) \land (a + b \neq 0)
+  \end{align*}
+}

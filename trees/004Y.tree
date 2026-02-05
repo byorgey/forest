@@ -1,0 +1,17 @@
+\title{De Morgan laws for quantifiers}
+\date{2026-02-05T14:57:15Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{The quantifiers #{\forall} and #{\exists} have de Morgan-like equivalences: ##{\begin{align*}
+  \neg(\forall x:D\st P(x)) &\equiv \exists x:D\st \neg P(x) \\
+  \neg(\exists x:D\st P(x)) &\equiv \forall x:D\st \neg P(x)
+\end{align*}}
+Intuitively, if #{P(x)} is not true for \em{all} #{x}, then it must be false for at least one; likewise, if it is not the case that there is some #{x} for which #{P(x)} is true, then #{P(x)} is false for all #{x}.
+}
+\p{Alternatively, if we remember that #{\forall} is like a big AND and #{\exists} is like a big OR, then we can see these as actual instances of the de Morgan laws for #{\land} and #{\lor}.}
+
+\transclude{004Z}
+

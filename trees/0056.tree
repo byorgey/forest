@@ -1,0 +1,9 @@
+\date{2026-02-05T15:25:39Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{\ext{z}{\Z} \all{n}{\N} z < n}}
+\p{This is true: for example, we could pick #{z = -1} again, which is less than all natural numbers.}
+

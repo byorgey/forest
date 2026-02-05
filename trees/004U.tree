@@ -1,0 +1,8 @@
+\date{2026-02-05T14:50:02Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+
+\p{“#{1369} is a perfect square.” ##{\exists n:\N. n^2 = 1369} This also happens to be true. Note that this is much nicer than trying to write something like ##{\mathrm{IsInteger}(\sqrt{n}).} #{\sqrt{-}} is complicated, and we don’t know how to define #{\mathrm{IsInteger}}.}

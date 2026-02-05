@@ -1,0 +1,7 @@
+\date{2026-02-05T14:51:20Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{“#{n} is even.” ##{\Even(n) = (\ext{k}{\Z} 2k = n).}}

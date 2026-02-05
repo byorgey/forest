@@ -1,0 +1,8 @@
+\date{2026-02-05T14:40:45Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Dually to #{\forall}, we can think of #{\exists} as being like a big “or”. That is, ##{\ext{x}{D} P(x) \equiv P(x_1) \lor P(x_2) \lor P(x_3) \lor
+    \dots} where #{x_1}, #{x_2}, #{x_3}, ... are all the elements of the domain #{D}.}
