@@ -1,0 +1,12 @@
+\title{#{\neg P}}
+\date{2026-02-09T11:59:53Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Note that #{\neg P \equiv P \implies \False}.}
+
+\p{Hence, to prove a proposition of the form #{\neg P}, prove #{P \implies \False}.}
+
+\p{If you know #{\neg P}, then you know #{P \implies \False}.}

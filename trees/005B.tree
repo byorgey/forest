@@ -1,0 +1,12 @@
+\title{#{P \lor Q}}
+\date{2026-02-09T12:03:15Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{To prove a proposition of the form #{P \lor Q}:
+\ul{\li{Prove #{P}, OR} \li{Prove #{Q}}}
+}
+
+\p{If you know #{P \lor Q}, and you want to prove #{R}, prove #{(P \implies R)}, and prove #{(Q \implies R)}.  This is known as a "proof by cases".  No matter which of #{P} or #{Q} is true, #{R} follows.}

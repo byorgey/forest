@@ -1,0 +1,16 @@
+\title{#{P \land Q}}
+\date{2026-02-09T11:54:50Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{To prove a proposition of the form #{P \land Q}:
+\ol{
+  \li{Prove #{P}}
+  \li{Prove #{Q}}
+}
+}
+
+\p{If you know a proposition of the form #{P \land Q}, then you know #{P}, and you know #{Q}.}
+

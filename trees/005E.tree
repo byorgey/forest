@@ -1,0 +1,10 @@
+\import{discrete-macros}
+
+\title{#{P \iff Q}}
+\date{2026-02-09T12:18:07Z}
+\tag{discrete}
+\tag{draft}
+
+\p{To prove a proposition of the form #{P \iff Q}, prove #{(P \implies Q) \land (Q \implies P)}.}
+
+\p{If you know #{P \iff Q}, then you know #{P \implies Q}, and you know #{Q \implies P}.}

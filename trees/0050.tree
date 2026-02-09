@@ -1,7 +1,6 @@
 \title{Example propositions with nested quantifiers}
 \date{2026-02-05T15:10:26Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
@@ -12,5 +11,3 @@
 \transclude{0054}
 \transclude{0055}
 \transclude{0056}
-
-

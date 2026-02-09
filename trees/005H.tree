@@ -1,0 +1,11 @@
+\import{discrete-macros}
+
+\title{\False}
+\date{2026-02-09T14:04:58Z}
+\tag{discrete}
+
+\p{There is no way to prove \False.}
+
+\transclude{005I}
+
+\p{If you know \False, then you know \em{anything you want}.  (This principle is sometimes called \em{ex falso quodlibet}, or just \em{ex falso} for short.  This is Latin for "from false, whatever you want".)}

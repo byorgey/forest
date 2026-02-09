@@ -1,0 +1,22 @@
+\date{2026-02-09T12:30:11Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Prove #{P \implies (Q \lor R)}.}
+
+\subtree{\p{
+  \taxon{Proof}
+  We must prove $P \to (Q \lor R)$.  So suppose $P$ is true; we will
+  show $(Q \lor R)$.
+  \subtree{\p{
+    To show $(Q \lor R)$, we will in fact show that $Q$ holds.
+    \subtree{\p{
+      \em{Proof of $Q$, using $P$}
+    }}
+    Since we showed $Q$, therefore $Q \lor R$.
+  }}
+  Since we showed $Q \lor R$ under the supposition $P$, therefore $P
+  \to (Q \lor R)$.
+}}

@@ -1,0 +1,8 @@
+\date{2026-02-09T14:11:54Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Sometimes people reuse the variable from the #{\forall}, but in any
+case there can't already be another variable with the same name!}

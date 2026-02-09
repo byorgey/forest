@@ -1,0 +1,8 @@
+\author{brentyorgey}
+\date{2026-02-09T14:05:26Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Note that it may be possible to prove \False \em{given some extra assumptions}.  This is just saying there is no way to prove it "from scratch".}

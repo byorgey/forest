@@ -1,0 +1,10 @@
+\import{discrete-macros}
+
+\title{#{P \implies Q}}
+\date{2026-02-09T11:57:45Z}
+\tag{discrete}
+\tag{draft}
+
+\p{To prove a proposition of the form #{P \implies Q}, temporarily \em{suppose} you know #{P}, and prove #{Q}.}
+
+\p{If you know #{P \implies Q}, and you know #{P}, then you know #{Q}.}

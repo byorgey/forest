@@ -1,0 +1,10 @@
+\import{discrete-macros}
+
+\title{#{\ext{x}{D}P(x)}}
+\date{2026-02-09T12:10:42Z}
+\tag{discrete}
+\tag{draft}
+
+\p{To prove a proposition of the form #{\ext{x}{D} P(x)}, give a specific example #{d} of an element in the domain #{D}, and prove #{P(d)}.}
+
+\p{If you know #{\ext{x}{D} P(x)}, then you know #{P(d)}, where #{d} is a arbitrary element of the domain #{D} (with a newly made up variable name).}
