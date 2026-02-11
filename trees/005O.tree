@@ -1,0 +1,25 @@
+\title{Odd squares, again}
+\date{2026-02-11T14:20:53Z}
+\tag{discrete}
+\tag{draft}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Prove: #{\all{n}{\Z} \Odd(n) \iff \Odd(n^2).}}
+
+\subtree{\p{
+  \taxon{Proof}
+  \put\transclude/numbered{false}
+  Let #{k} be an arbitrary integer; we will prove #{\Odd(k) \iff \Odd(k^2)}.  To prove this biconditional, we will prove both directions.
+
+  \subtree{\p{
+    #{\Odd(k) \to \Odd(k^2)}.  We [already proved this above](005L).
+  }}
+
+  \subtree{\p{
+    #{\Odd(k^2) \to \Odd(k)}.
+
+    Try; fail; use contrapositive (+ assumption for now that #{\neg \Odd \equiv \Even})
+  }}
+}}

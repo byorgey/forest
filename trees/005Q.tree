@@ -1,0 +1,12 @@
+\title{Rational number}
+\date{2026-02-11T14:35:23Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{A \em{rational} number is a number that is a ratio of two integers.
+That is, formally, ##{\Rational(r) \equiv \ext{p}{\Z} \ext{q}{\Z} r =
+\frac{p}{q}.}}
+
+\p{A number is \em{irrational} if it is not rational, that is, ##{\Irrational(x) \equiv \neg \Rational(x).}}

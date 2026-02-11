@@ -1,0 +1,22 @@
+\title{Other connectives and logical equivalence}
+\date{2026-02-11T14:18:49Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{What about #{\neg P} and #{P \iff Q}?  They are
+logically equivalent to other, more primitive things:
+\ul{
+  \li{#{\neg P \equiv P \to \False}}
+  \li{#{P \iff Q \equiv (P \to Q) \land (Q \to P)}}
+}
+That is, to prove #{\neg P}, we can suppose #{P} is true and prove \False; and to prove #{P \iff Q}, we proceed by proving both #{P \to Q} and #{Q \to P}.
+}
+
+\p{In general, if you are trying to prove #{P} and #{P \equiv Q}, it is always OK to prove #{Q} instead of #{P}.  Sometimes it is easier to prove a proposition in one form rather than another, even when the two are logically equivalent.  For example:
+\ul{
+  \li{When proving #{P \to Q}, sometimes we can prove the contrapositive #{\neg Q \to \neg P} instead.}
+  \li{When proving a negation of a complex proposition, it often makes sense to first simplify it using de Morgan laws.  For example, to prove #{\neg (P \lor Q)}, it can make sense to prove #{\neg P \land \neg Q} instead.}
+}
+}

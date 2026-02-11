@@ -1,0 +1,16 @@
+\title{Irrationality of #{\sqrt{2}}}
+\date{2026-02-11T14:34:41Z}
+\tag{discrete}
+\tag{draft}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\transclude{005Q}
+
+\p{Prove that #{\sqrt{2}} is irrational.}
+
+\subtree{\p{
+  \taxon{Proof}
+  Fill in.
+}}

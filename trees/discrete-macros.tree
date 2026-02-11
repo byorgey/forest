@@ -10,3 +10,5 @@
 
 \def\Even{\mathrm{Even}}
 \def\Odd{\mathrm{Odd}}
+\def\Rational{\mathrm{Rational}}
+\def\Irrational{\mathrm{Irrational}}
