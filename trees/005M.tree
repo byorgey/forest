@@ -1,0 +1,8 @@
+\title{Odd integers}
+\date{2026-02-11T12:13:42Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{An integer #{n} is \em{odd} if there is some integer #{k} such that #{n = 2k + 1}.  That is, ##{\Odd(n) \equiv \ext{k}{\Z} n = 2k + 1.}}

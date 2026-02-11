@@ -4,19 +4,23 @@
 
 \import{discrete-macros}
 
-\p{Prove #{P \implies (Q \lor R)}.}
+\p{Write an outline for a proof of #{P \implies (Q \land R)}.}
 
 \subtree{\p{
   \taxon{Proof}
-  We must prove $P \to (Q \lor R)$.  So suppose $P$ is true; we will
-  show $(Q \lor R)$.
+  We must prove #{P \implies (Q \land R)}.  So suppose #{P} is true; we will
+  show #{(Q \land R)}.
   \subtree{\p{
-    To show $(Q \lor R)$, we will in fact show that $Q$ holds.
+    To show #{(Q \land R)}, we will show both separately.
+    \put\transclude/numbered{false}
     \subtree{\p{
-      \em{Proof of $Q$, using $P$}
+      \em{Proof of #{Q}, using #{P}}
     }}
-    Since we showed $Q$, therefore $Q \lor R$.
+    \subtree{\p{
+      \em{Proof of #{R}, using #{P}}
+    }}
+    Since we showed #{Q}, and #{R}, therefore #{Q \land R}.
   }}
-  Since we showed $Q \lor R$ under the supposition $P$, therefore $P
-  \to (Q \lor R)$.
+  Since we showed #{Q \land R} under the supposition #{P}, therefore #{P
+  \to (Q \land R)}.
 }}
