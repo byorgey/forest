@@ -6,24 +6,20 @@
 
 \p{Simplify: #{\neg (p \implies \neg(\neg q \lor (r \land q)))}.}
 
-##{
-  \begin{align*}
-    &\neg (p \implies \neg(\neg q \lor (r \land q))) \\
-    &\equiv\quad\quad\quad\{ \text{distributivity} \} \\
-    &\neg (p \implies \neg((\neg q \lor r) \land (\neg q \lor q))) \\
-    &\equiv\quad\quad\quad\{ \text{excluded middle} \} \\
-    &\neg (p \implies \neg((\neg q \lor r) \land \True)) \\
-    &\equiv\quad\quad\quad\{ \text{identity} \} \\
-    &\neg (p \implies \neg(\neg q \lor r)) \\
-    &\equiv\quad\quad\quad\{ \text{de Morgan} \} \\
-    &\neg (p \implies (\neg\neg q \land \neg r)) \\
-    &\equiv\quad\quad\quad\{ \text{double negation} \} \\
-    &\neg (p \implies (q \land \neg r)) \\
-    &\equiv\quad\quad\quad\{ \text{implication} \} \\
-    &\neg (\neg p \lor (q \land \neg r)) \\
-    &\equiv\quad\quad\quad\{ \text{de Morgan, double negation} \} \\
-    &p \land \neg (q \land \neg r) \\
-    &\equiv\quad\quad\quad\{ \text{de Morgan, double negation} \} \\
-    &p \land (\neg q \lor r) \\
-  \end{align*}
-}
+\stmt{\neg (p \implies \neg(\neg q \lor (r \land q)))}
+\reason{\equiv}{distributivity}
+\stmt{\neg (p \implies \neg((\neg q \lor r) \land (\neg q \lor q)))}
+\reason{\equiv}{excluded middle}
+\stmt{\neg (p \implies \neg((\neg q \lor r) \land \True))}
+\reason{\equiv}{identity}
+\stmt{\neg (p \implies \neg(\neg q \lor r))}
+\reason{\equiv}{de Morgan}
+\stmt{\neg (p \implies (\neg\neg q \land \neg r))}
+\reason{\equiv}{double negation}
+\stmt{\neg (p \implies (q \land \neg r))}
+\reason{\equiv}{implication}
+\stmt{\neg (\neg p \lor (q \land \neg r))}
+\reason{\equiv}{de Morgan, double negation}
+\stmt{p \land \neg (q \land \neg r)}
+\reason{\equiv}{de Morgan, double negation}
+\stmt{p \land (\neg q \lor r)}

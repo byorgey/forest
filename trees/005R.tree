@@ -1,0 +1,12 @@
+\title{Structured proof playground / test}
+\date{2026-02-12T20:13:31Z}
+
+\import{base-macros}
+
+\proof{
+\stmt{a + b}
+\reason{=}{associativity}
+\stmt{a + c}
+\reason{\leq}{Theorem 3}
+\stmt{a + c + d}
+}

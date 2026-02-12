@@ -1,0 +1,12 @@
+\title{Structure proof macros}
+
+\xmlns:html{http://www.w3.org/1999/xhtml}
+
+
+\def\stmt[body]{
+  \<html:div>[style]{margin-left: 30px}{#{\body}}
+}
+
+\def\reason[rel][explain]{
+  #{\rel \quad\quad\quad} { \explain }
+}
