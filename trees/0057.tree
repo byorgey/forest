@@ -1,15 +1,12 @@
 \title{Proofs}
 \date{2026-02-09T11:35:39Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
-% \p{XXX why do we care?}
-
 \p{We can formally establish the truth of a proposition by way of a \em{proof}.  Proofs can be written in a more or less formal \em{style}, but the underlying structure is always the same.  We will consider each connective of propositional logic, and see for each (1) how to \em{prove} it, and (2) how to \em{use} it if you know it.  (How to prove and use a given connective are also known as \em{introduction} and \em{elimination} rules, respectively.)}
 
-\p{On one level, you need to memorize these; but on another level they should make a lot of intuitive sense, so memorizing them is not difficult.}
+\p{You need to memorize these; but they should make some intuitive sense, so memorizing them is not difficult.}
 
 \p{Once you understand how to prove and use each connective, writing a proof for a mathematical statement looks something like this:
   \ol{
@@ -23,7 +20,7 @@ serious: step 2 is mechanical, and gets us a lot of the way there;
 step 3 is the step that requires some creativity/insight.
 }
 
-% XXX make subsections "to prove" and "to use" under each one???
+\transclude{005T}
 
 \transclude{005G}
 \transclude{005H}

@@ -1,7 +1,6 @@
 \title{Irrationality of #{\sqrt{2}}}
 \date{2026-02-11T14:34:41Z}
 \tag{discrete}
-\tag{draft}
 \taxon{Example}
 
 \import{discrete-macros}
@@ -11,5 +10,33 @@
 \p{Prove that #{\sqrt{2}} is irrational.}
 
 \proof{
-  Fill in.
+  We are asked to prove #{\Irrational(\sqrt{2})}, that is, #{\neg \Rational(\sqrt{2})}, which is equivalent to #{\Rational(\sqrt{2}) \implies \False}.  So suppose #{\Rational(\sqrt{2})}; we will prove \False.
+  \subproof{
+    \p{Since we know #{\Rational(\sqrt{2})}, by definition that means there exist some integers #{p} and #{q} such that #{\sqrt{2} = \frac{p}{q}}.  We may further assume that #{p} and #{q} have no common factors, that is, #{p/q} is reduced to lowest terms (if it were not, we could just cancel common factors until none are left, which would not affect equality with #{\sqrt 2}). We can reason as follows:}
+    \sproof{
+    \stmt{\sqrt{2} = p/q}
+    \reason{\implies}{Multiply both sides by #{q}}
+    \stmt{q \sqrt{2} = p}
+    \reason{\implies}{Square both sides}
+    \stmt{2q^2 = p^2}
+    \reason{\implies}{Definition}
+    \stmt{\Even(p^2)}
+    \reason{\implies}{Contrapositive of [previous example](005L)}
+    \stmt{\Even(p)}
+    }
+
+    \p{Since #{p} is even, there must be an integer #{r} such that #{p = 2r}. Continuing,}
+
+    \sproof{
+    \stmt{2q^2 = p^2}
+    \reason{\implies}{Substitute #{p = 2r}}
+    \stmt{2q^2 = (2r)^2}
+    \reason{\implies}{Expand}
+    \stmt{2q^2 = 4r^2}
+    \reason{\implies}{Divide both sides by #{2}}
+    \stmt{q^2 = 2r^2}
+    }
+
+    \p{But this implies—using identical reasoning as for #{p}—that #{q} is even as well. Hence #{p} and #{q} are both even and have a factor of #{2} in common. But we started out by assuming that #{p} and #{q} share no common factors!  Thus we have a contradiction, that is, we have proved \False: at this point we know that #{p} and #{q} both \em{do} and \em{do not} have a common factor, and #{P \land \neg P \equiv \False}.}
+  }
 }

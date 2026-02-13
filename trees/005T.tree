@@ -1,0 +1,13 @@
+\title{Why proofs?}
+\date{2026-02-13T11:38:05Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Incidentally, why do we care about writing proofs?  There are several reasons:
+  \ul{
+    \li{Writing formal arguments to establish the truth of propositions is part of a great human intellectual tradition going back thousands of years to ancient India, China, and Greece.  Learning about this tradition is an important part of becoming a well-educated world citizen!}
+    \li{Knowing how to reason formally is important both for discovering for ourselves what is true and communicating it to others.  For example, suppose you write a function that is supposed to accomplish a task but are not sure whether it works correctly.  You can try formally \em{proving} that it does: this can either convince you and others that it does, or reveal why it does not.}
+    \li{Formal verification is now used in many industries (for example, Intel formally verifies many parts of their CPUs).  Learning how to write proofs is the basis for understanding how formal verification technologies work.}
+  }
+}

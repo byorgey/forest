@@ -1,7 +1,6 @@
 \title{Odd squares, again}
 \date{2026-02-11T14:20:53Z}
 \tag{discrete}
-\tag{draft}
 \taxon{Example}
 
 \import{discrete-macros}
@@ -16,8 +15,26 @@
   }
 
   \subproof{
-    #{\Odd(k^2) \to \Odd(k)}.
+  #{\Odd(k^2) \to \Odd(k)}.
 
-    Try; fail; use contrapositive (+ assumption for now that #{\neg \Odd \equiv \Even})
+    \p{Suppose #{\Odd(k^2)}, that is, suppose there is an integer #{j} such that #{k^2 = 2j+1}.  Then we must show #{\Odd(k)}, that is, we must pick an integer #{p} such that #{k = 2p + 1}.
+    \subproof{
+      Here is where, starting from our assumption that #{k^2 = 2j+1}, we should pick an integer #{p} so that #{k = 2p+1}.  But we are kind of stuck: knowing something about #{k^2} does not really help us conclude anything about #{k}.  
+    }
+    }
+  }
+}
+
+\p{Let's try again.  Instead of directly proving #{\Odd(k^2) \implies \Odd(k)}, let's prove its [contrapositive](003W), which [we know is logically equivalent](003X).  The contrapositive is #{\neg \Odd(k) \implies \neg \Odd(k^2)}, but we will assume the following theorem for now:
+
+\transclude{005S}
+
+(Check: do you see why #{\neg \Odd(n)} and #{\Even(n)} are not literally the same?  We will be able to formally prove this later in the semester.)}
+
+\proof{
+  #{\Odd(k^2) \implies \Odd(k)}.  We will instead prove the contrapositive, that is, #{\neg \Odd(k) \implies \neg \Odd(k^2)}, which is equivalent to #{\Even(k) \implies \Even(k^2)}.  So suppose #{\Even(k)}, then we must show #{\Even(k^2)}.
+
+  \subproof{
+    Since we know #{\Even(k)}, [by definition](004V) that means there exists some integer #{j} such that #{k = 2j}.  To show #{\Even(k^2)}, we must pick an integer #{p} such that #{k^2 = 2p}.  But since #{k = 2j}, then #{k^2 = (2j)^2 = 4j^2 = 2(2j^2)}, so we can pick #{p = 2j^2}.
   }
 }

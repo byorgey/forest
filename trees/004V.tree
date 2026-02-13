@@ -4,4 +4,4 @@
 
 \import{discrete-macros}
 
-\p{“#{n} is even.” ##{\Even(n) = (\ext{k}{\Z} 2k = n).}}
+\p{“#{n} is even.” ##{\Even(n) \equiv (\ext{k}{\Z} 2k = n).}}

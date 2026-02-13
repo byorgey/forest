@@ -3,7 +3,6 @@
 \title{#{\all{x}{D} P(x)}}
 \date{2026-02-09T12:07:26Z}
 \tag{discrete}
-\tag{draft}
 
 \p{To prove a proposition of the form #{\all{x}{D} P(x)}, suppose #{d} is an \em{arbitrary} element of #{D}, and prove #{P(d)}.  By \em{arbitrary}, we mean that we assume nothing about #{d} except that it is an element of the domain #{D}.  Note that you must make up a new (unused) variable name for #{d}!}
 

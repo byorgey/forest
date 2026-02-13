@@ -1,0 +1,7 @@
+\date{2026-02-13T11:06:18Z}
+\tag{discrete}
+\taxon{Theorem}
+
+\import{discrete-macros}
+
+\p{For any integer #{n}, #{\neg \Odd(n) \iff \Even(n)}.}
