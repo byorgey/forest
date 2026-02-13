@@ -8,18 +8,16 @@
 
 \p{Prove: #{\all{n}{\Z} \Odd(n) \iff \Odd(n^2).}}
 
-\subtree{\p{
-  \taxon{Proof}
-  \put\transclude/numbered{false}
+\proof{
   Let #{k} be an arbitrary integer; we will prove #{\Odd(k) \iff \Odd(k^2)}.  To prove this biconditional, we will prove both directions.
 
-  \subtree{\p{
+  \subproof{
     #{\Odd(k) \to \Odd(k^2)}.  We [already proved this above](005L).
-  }}
+  }
 
-  \subtree{\p{
+  \subproof{
     #{\Odd(k^2) \to \Odd(k)}.
 
     Try; fail; use contrapositive (+ assumption for now that #{\neg \Odd \equiv \Even})
-  }}
-}}
+  }
+}

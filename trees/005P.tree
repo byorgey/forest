@@ -10,7 +10,6 @@
 
 \p{Prove that #{\sqrt{2}} is irrational.}
 
-\subtree{\p{
-  \taxon{Proof}
+\proof{
   Fill in.
-}}
+}

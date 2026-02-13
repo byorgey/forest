@@ -16,30 +16,28 @@
 \p{So let’s prove #{\all{n}{\Z} \Odd(n) \implies \Odd(n^2)}. We start by introducing an arbitrary integer #{n}; then we have to prove #{\Odd(n)
 \implies \Odd(n^2)}. This is an implication, so we prove it by supposing that #{\Odd(n)} is true, and then proving in that case #{\Odd(n^2)} is true as well. We can expand the definition of #{\Odd} to figure out what our assumption #{\Odd(n)} means and what we have to show for #{\Odd(n^2)}. The whole thing goes like this:}
 
-\subtree{\p{
-  \taxon{Proof}
+\proof{
   To show #{\all{n}{\Z} \Odd(n) \implies \Odd(n^2)}, Let #{k} be an arbitrary integer; then we must show that #{\Odd(k) \implies \Odd(k^2)}.
 
-  \subtree{\p{
+  \subproof{
     To show #{\Odd(k) \implies \Odd(k^2)}, suppose #{\Odd(k)} is true; we must show that #{\Odd(k^2)} is true, that is, we must show there is an integer #{p} such that #{k^2 = 2p + 1}.
 
-    \subtree{\p{
+    \subproof{
       We know #{\Odd(k)}, which means we know there is an integer #{j} such that #{k = 2j+1}.
       Starting with #{k^2}, we can compute as follows:
       ##{k^2 = (2j+1)^2 = 4j^2 + 4j + 1 = 2(2j^2+2j) + 1,}
       so we can pick #{p = 2j^2 + 2j}, which is an integer since #{j} is an integer, and integers are closed under addition and multiplication.
-    }}
+    }
     Since we showed #{\Odd(k^2)} under the assumption #{\Odd(k)}, therefore #{\Odd(k) \implies \Odd(k^2)}.
-  }}
+  }
   Therefore, since #{k} was arbitrary, #{\Odd(n) \implies \Odd(n^2)} for all integers #{n}.
-}}
+}
 
 \p{The above proof has a lot of detail to help us keep track of what is going on. A more experienced mathematician might write something more like this:}
 
-\subtree{\p{
-  \taxon{Proof}
+\proof{
   Let #{n} be an odd integer, and suppose #{n = 2k+1}. Then #{n^2 =
   (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1}, so #{n^2} is odd as well.
-}}
+}
 
 \p{But you are welcome and encouraged to include a lot of detail about what you are doing especially as you are starting out.}

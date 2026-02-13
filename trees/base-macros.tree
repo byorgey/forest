@@ -56,13 +56,19 @@
 \def\False{#{\sf{F}}}
 
 \def\proof[body]{
- \scope{
-   \put\transclude/toc{false}
-   \subtree{
-     \taxon{Proof}
-     \body
-   }
- }
+  \scope{
+    \put\transclude/toc{false}
+    \subtree{
+      \taxon{Proof}
+      \body
+    }
+  }
 }
 
+\def\subproof[body]{
+  \subtree{
+    \taxon{Subproof}
+    \body
+  }
+}
 \export{sproof}

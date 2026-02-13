@@ -6,21 +6,20 @@
 
 \p{Prove that #{(2n + 1 > 6) \to (n > 2)}.}
 
-\subtree{\p{
-  \taxon{Proof}
-  \p{To prove #{(2n + 1 > 6) \to (n > 2)}, suppose #{(2n + 1 > 6)}, then we must show #{(n > 2)}.}
-  \subtree{\p{
+\proof{
+  To prove #{(2n + 1 > 6) \to (n > 2)}, suppose #{(2n + 1 > 6)}, then we must show #{(n > 2)}.
+  \subproof{
     Starting from #{(2n + 1 > 6)} we can reason as follows:
-    ##{\begin{align*}
-      & 2n+1 > 6 \\
-      & \to \quad\quad\quad \{\text{subtract 1 from both sides}\} \\
-      & 2n > 5 \\
-      & \to \quad\quad\quad \{\text{divide both sides by 2}\} \\
-      & n > 5/2 \\
-      & \to \quad\quad\quad \{5/2 > 2 \text{, and } > \text{ is transitive}\} \\
-      & n > 2
-    \end{align*}}
-  }}
-\p{Therefore, since we have shown that #{n > 2} must be true under the assumption that #{2n + 1 > 6}, therefore #{(2n+1 > 6) \to (n > 2)}.}
 
-}}
+    \p{
+    \stmt{2n+1 > 6}
+    \reason{\to}{subtract 1 from both sides}
+    \stmt{2n > 5}
+    \reason{\to}{divide both sides by 2}
+    \stmt{n > 5/2}
+    \reason{\to}{#{5/2 > 2}, and #{>} is transitive}
+    \stmt{n > 2}
+    }
+  }
+  Since we have shown that #{n > 2} must be true under the assumption that #{2n + 1 > 6}, therefore #{(2n+1 > 6) \to (n > 2)}.
+}
