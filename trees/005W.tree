@@ -1,0 +1,39 @@
+\date{2026-02-14T17:06:18Z}
+\title{Forester setup for Discrete Math lecture notes}
+\author{brentyorgey}
+
+\import{discrete-macros}
+\import{base-macros}
+
+\p{I spent a bunch of time this week writing [Discrete Math lecture notes](0021) in Forester, and tweaking my Forester setup to make the process more efficient and the results prettier.
+
+\ul{
+  \li{I used [Pandoc](https://pandoc.org/) to write a [janky script](XXX) that takes my existing LaTeX lecture notes and makes a first pass at converting them into Forester syntax.  There's still lots more features I could add, and it's nowhere near being a complete, general-purpose pandoc writer (I'm not sure it will ever be), but it already saves me time.}
+
+  \li{After [asking for advice on the forester-discuss mailing list](https://lists.sr.ht/~jonsterling/forester-discuss/<CAH0njdutB1dVSn4gMRHKFyZhgSzVcrr5KmpCj_3PDoRCqSk_Uw@mail.gmail.com>) and getting a helpful response, I created some [simple Forester macros](https://github.com/byorgey/forest/blob/main/trees/sproof.tree) for typesetting calculational proofs, like so:
+
+    \p{
+      \stmt{2n - 1 > 7}
+      \reason{\iff}{add #{1} to both sides}
+      \stmt{2n > 8}
+      \reason{\iff}{divide both sides by #{2}}
+      \stmt{n > 4}
+    }
+  }
+
+  \li{When teaching my Discrete Math students to write proofs, I emphasize the way the proofs should be structured, \em{i.e.} nested.  I have not yet gone so far as teaching them via a proof assistant like Lean or Agda—I'm not sure I ever will—but I get as close as possible while still writing proofs on paper.  I spent a bit of time tweaking some CSS to be able to easily typeset things like this:
+
+  \proof{
+    Let #{k} be an arbitrary natural number; then we must show #{\Odd(k) \to \Odd(k^2)}.
+    \subproof{
+      Suppose #{\Odd(k)}, that is, there exists an integer #{j} such that #{k = 2j+1}.  Then we must show that #{k^2} is also odd.
+      \subproof{
+        Proof
+      }
+    }
+  }
+
+  This works by creating a new taxon called "Subproof" and [using CSS to hide the header and draw the bar on the side](XXX).  I'm not sure if there's a better way to accomplish this, but it works pretty well for now.
+  }
+}
+}

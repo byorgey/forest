@@ -1,0 +1,7 @@
+\date{2026-02-14T17:36:00Z}
+\title{Classical vs constructive logic in Discrete Math}
+\author{brentyorgey}
+
+\p{Aside from such technical fiddling, I've also spent a good deal of time rethinking my approach to teaching logic and proofs in my [Discrete Math course](0020).  XXX Emily Riehl notes, mjd comment about constructive logic.  Got me to radically rethink the way I have been teaching Discrete Math.}
+
+\p{Of course I love constructive logic; but I have come to the conclusion that, in my context at least, I think there are still good reasons for teaching classical logic (and teaching it \em{first}).  So I didn't end up making the radical changes I thought I might; but it was still a very useful exercise, as I did end up reorganizing things in some significant ways.  At some point I will write up a more detailed explanation of how I have decided to teach the course, and why.}

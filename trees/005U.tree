@@ -1,0 +1,14 @@
+\title{Weeknotes}
+\parent{index}
+\author{brentyorgey}
+\date{2026-02-13T17:50:25Z}
+
+\syndicate-current-tree-as-atom-feed
+
+\put\transclude/numbered{false}
+\put\transclude/metadata{true}
+\put\transclude/expanded{false}
+
+\p{This page has an [atom feed](/~yorgey/forest/005U/atom.xml).}
+
+\transclude{2026-W06}
