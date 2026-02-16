@@ -1,6 +1,8 @@
 \date{2025-10-25T00:37:35Z}
 \title{News and announcements}
 
+\put\transclude/expanded{true}
+
 \query\datalog{
   ?X -: {\rel/has-tag ?X '{news}}
 }
