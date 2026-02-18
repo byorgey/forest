@@ -1,0 +1,8 @@
+\title{Element-of relation}
+\date{2026-02-16T20:52:59Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{The notation #{x \in S} is a proposition that means “#{x} is an element of set #{S}”; #{x \notin S} is an abbreviation for #{\neg(x \in S)}.}

@@ -1,0 +1,8 @@
+\date{2026-02-16T21:07:45Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+##{\{x \mid x \in \Z, \Odd(x), 0 \leq x < 100 \}}
+\p{We can stack multiple conditions; for a given #{x}, \em{all} the conditions must be true for it to be considered.  This is the set of all odd integers between 0 and 100.}

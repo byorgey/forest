@@ -1,0 +1,7 @@
+\date{2026-02-18T12:29:37Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{\{53\}} is a set with one element.}

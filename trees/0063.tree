@@ -1,0 +1,8 @@
+\title{Set variables}
+\date{2026-02-16T20:52:00Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{We typically use capital letter variables to stand for sets, like #{A}, #{B}, #{C}, #{S}, #{T}, ... and lowercase letters to stand for elements of sets.}

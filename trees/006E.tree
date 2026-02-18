@@ -1,0 +1,7 @@
+\date{2026-02-18T12:22:40Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{We can have sets with things other than numbers, such as #{\{\text{cow}, \text{horse}, \text{dog}\}}.}

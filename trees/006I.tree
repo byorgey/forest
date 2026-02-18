@@ -1,0 +1,9 @@
+\date{2026-02-18T12:35:14Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+##{\{(x,y) \mid x \in \Z, y \in \Z, x + y = 6\}}
+
+\p{This is the (infinite) set of \em{all possible} ordered pairs of integers which sum to #{6}.  That is, #{\{(2,4), (3,3), (-10, 16), \dots\}}.}

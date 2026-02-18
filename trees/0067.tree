@@ -1,0 +1,7 @@
+\date{2026-02-16T21:03:13Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{#{S = \{1,2,3, \dots, 100\}}.}

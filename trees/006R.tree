@@ -1,0 +1,16 @@
+\title{Is the empty set a subset?}
+\date{2026-02-18T13:07:49Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Recall the definition of the \em{empty set}:}
+
+\transclude{006G}
+
+\p{Question: is #{\varnothing \subseteq \N}?}
+
+\p{Answer: yes! By definition, this means #{\all{a}{\varnothing} a \in \N}, so it really comes down to what we do with a #{\forall} whose domain is empty; but as we [discussed previously](004N), such a #{\forall} should be considered true.}
+
+\p{In fact, the empty set is a subset of \em{every} set, even itself.}

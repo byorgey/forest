@@ -1,0 +1,12 @@
+\title{Introduction to set theory}
+\date{2026-02-16T20:48:36Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+% \p{XXX generic intro to set theory: practical significance, also historic significance.  One of first serious efforts at putting mathematics on formal foundation.  What most mathematicians think of as foundation today, kind of like assembly language.  (Type theory is probably a better foundation...)}
+
+\transclude{0062}
+\transclude{0063}
+\transclude{0064}

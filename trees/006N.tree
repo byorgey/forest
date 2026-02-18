@@ -1,0 +1,12 @@
+\title{Equality of sets}
+\date{2026-02-18T12:55:47Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Now that we have defined subset, we can define what it means for two sets to be equal.}
+
+\transclude{006O}
+\transclude{006P}
+\transclude{006Q}

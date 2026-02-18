@@ -1,0 +1,12 @@
+\title{Is a set a subset of itself?}
+\date{2026-02-18T12:52:55Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+\p{According to the definition, given a set #{A}, is #{A \subseteq A}? That is, is a set a subset of itself?}
+\p{Intuitively, given the way we typically use the word “subset” in English, we might expect the answer to be “no”. However, given the definition above, #{A \subseteq A} is true, since every element of #{A} is an element of #{A}.}
+\p{(Note there is a notion of being a \em{strict subset}: #{A \subset
+  B}, “#{A} is a strict subset of #{B}”, means that #{A \subseteq B} but #{A \neq B}; however, we will not use it.)}
+\p{Why do we define subset this way? It would actually make things more complicated, with more weird special cases, if we disallowed a set from being a subset of itself.}

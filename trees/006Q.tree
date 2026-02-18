@@ -1,0 +1,27 @@
+\date{2026-02-18T12:59:07Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Let #{A = \{ 2x+3 \mid x \in \Z \}} and #{B = \{ x \mid x \in \Z,
+  \Odd(x) \}}. Prove that #{A = B}.}
+
+\proof{
+  By definition, #{A = B} if #{A \subseteq B} and #{B \subseteq A}. We will prove each separately.
+  \subproof{
+
+    We will first show #{A \subseteq B}. By definition, this means #{\all{y}{A} y \in B}. So let #{a \in A} be an arbitrary element of #{A}. We must show #{a \in B} as well.
+    \subproof{
+      By definition of #{A}, if #{a \in A} there must exist some #{x \in \Z} such that #{a = 2x+3}. We can rewrite this as #{a = 2(x+1) + 1}, thus showing that #{a} is odd, and hence #{a \in B}.
+    }
+  }
+  \subproof{
+    Next we must show #{B \subseteq A}, which means #{\all{y}{B} y \in A}.  So let #{b \in B} be an arbitrary element of #{B}, and we will show #{b \in A}.
+    \subproof{
+      By definition of #{B}, since #{b \in B} we must have #{b \in \Z} and #{\Odd(b)}, that is, #{b = 2k+1} for some #{k \in \Z}.
+
+      But #{b = 2k+1 = 2k - 2 + 3 = 2(k-1) + 3}.  Since #{k} is an integer, so is #{k-1}; hence #{b \in A} by definition, since it is three more than twice an integer.
+    }
+  }
+}

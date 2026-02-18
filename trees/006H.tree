@@ -1,0 +1,7 @@
+\date{2026-02-18T12:31:07Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{The definition of sets technically allows for sets with a mix of different kinds of elements, like #{\{2, \True, \text{cow}, \text{``hello''}\}}, but we will never do this; our sets will always be collections of elements of the same type.}

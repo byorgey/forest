@@ -1,0 +1,14 @@
+\title{Literal set notation}
+\date{2026-02-16T21:04:01Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We can write a (finite) set by listing its elements, separated by commans, within curly braces.}
+\transclude{0066}
+\p{We can also sometimes abbreviate using an ellipsis (three dots), which generally means "fill in the obvious pattern".  One must be careful, however, since what counts as "obvious" depends a lot on context and audience.  When in doubt, and in very formal situations, it's best to avoid the use of ellipsis; but it can be convenient in an informal setting.}
+\transclude{0067}
+\transclude{006E}
+\transclude{006F}
+\transclude{006G}
+\transclude{006H}

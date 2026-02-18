@@ -1,0 +1,8 @@
+\title{Empty set}
+\date{2026-02-18T12:30:17Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{The \em{empty set}, written #{\varnothing} or #{\{\}}, is the set with no elements.}

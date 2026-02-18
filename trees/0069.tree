@@ -1,0 +1,13 @@
+\title{Set builder notation}
+\date{2026-02-16T21:04:54Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We can also use \em{set builder} (or \em{set comprehension}) notation, whose basic form is ##{\{ \text{expression} \mid \text{variable definition}, \text{conditions} \}}}
+\p{This means that for each value of the variable(s) defined on the right side of the vertical bar which satisfy all the conditions, the set will contain the value of the expression on the left side of the vertical bar.}
+
+\transclude{006B}
+\transclude{006C}
+\transclude{006D}
+\transclude{006I}

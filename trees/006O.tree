@@ -1,0 +1,8 @@
+\title{Set equality}
+\date{2026-02-18T12:56:02Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{Two sets are equal if each is a subset of the other; that is, ##{(A = B) \equiv (A \subseteq B) \land (B \subseteq A).}}

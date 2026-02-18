@@ -1,0 +1,11 @@
+\date{2026-02-16T21:06:04Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Example}
+##{\{x \mid x \text{ is a positive integer less than 5} \}}
+\p{This is another way of writing the set #{\{1,2,3,4\}}.}
+
+\p{(I don't like this example anymore: too informal.)}

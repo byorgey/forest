@@ -1,0 +1,8 @@
+\title{Subset}
+\date{2026-02-18T12:49:44Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{#{A} is a \em{subset} of #{B}, written #{A \subseteq B}, iff every element of #{A} is also an element of #{B}. That is, formally: ##{A \subseteq B \equiv \all{a}{A} a \in B.}}

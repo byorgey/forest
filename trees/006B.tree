@@ -1,0 +1,9 @@
+\date{2026-02-16T21:07:02Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Example}
+##{\{x \mid x \in \Z^+, x < 5 \}}
+\p{This is the set of all positive integers which are less than #{5}, that is, the set #{\{1,2,3,4\}}.}

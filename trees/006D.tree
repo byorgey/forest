@@ -1,0 +1,10 @@
+\date{2026-02-16T21:09:19Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Example}
+##{\{2x + 5 \mid x \in \N, 0 \leq x \leq 10 \}}
+\p{The expression to the left of the vertical bar does not have to be just a variable; it can be any expression.  For each value of #{x} that satisfies the conditions on the right side, we put that value of #{x} into the expression to compute a value that will be in the set.}
+\p{In this example, when #{x = 0}, we get #{2x+5 = 2 \cdot 0 + 5 = 5}; when #{x = 1}, we get #{2x+5 = 7}, and so on.  All told, this defines the set #{\{5, 7, 9, \dots, 25\}}.}

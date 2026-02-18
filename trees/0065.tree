@@ -1,0 +1,11 @@
+\title{Writing sets}
+\date{2026-02-16T20:55:09Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{There are two basic ways to write down a [set](0062).}
+
+\transclude{0068}
+\transclude{0069}

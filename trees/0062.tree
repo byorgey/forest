@@ -1,0 +1,8 @@
+\title{Set}
+\date{2026-02-16T20:51:22Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{A \em{set} is an unordered, finite or infinite collection of objects, called \em{elements} or \em{members} of the set. Sets cannot contain a given element more than once, and the order of elements in a set does not matter. Put another way, the only thing that matters about a given element is whether it is in the set or not.}
