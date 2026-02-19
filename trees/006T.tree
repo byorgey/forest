@@ -5,3 +5,8 @@
 
 \import{discrete-macros}
 
+\p{Syntax for sets in Disco.  Only *finite* sets. Order doesn't matter.  ellipsis notation.}
+\p{Types of sets in Disco.  All elements have to be same type.  Try including negatives, fractions, etc.  But can't have number + Boolean.}
+\p{Types vs sets.  Types = sets with nice properties.}
+\p{Set comprehension notation.  Examples.}
+\p{subset operator, elem operator.}
