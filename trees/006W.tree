@@ -1,0 +1,8 @@
+\title{Set comprehensions in Disco}
+\date{2026-02-19T20:51:30Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Disco also supports set comprehensions, \em{i.e.} set builder notation.  For example:}

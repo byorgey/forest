@@ -1,7 +1,6 @@
 \title{Set literals in Disco}
 \date{2026-02-19T19:27:48Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
@@ -25,9 +24,11 @@ Disco> {1, ......., 5}
 {1, 2, 3, 4, 5}
 Disco> {1, 3, 5 ... 15}
 {1, 3, 5, 7, 9, 11, 13, 15}
-Disco> {8, 7 ... 3}
+Disco> {8 ... 3}
 {3, 4, 5, 6, 7, 8}
+Disco> {5, 10, 15, ... 40}
+{5, 10, 15, 20, 25, 30, 35, 40}
 Disco> {1, 4, 9, ... 36}
 {1, 4, 9, 16, 25, 36}<<<
 
-\p{The last few examples show that XXX}
+\p{The last few examples show that Disco can follow basic patterns when using ellipses.  For example, \code{{1, 3, 5 ...}} will generate odd numbers, \code{{8 ... 3}} counts down instead of up, and \code{{5, 10, ...}} counts by fives.  In the last example, we can even generate square numbers!  See [the Disco language reference documentation](https://disco-lang.readthedocs.io/en/latest/reference/ellipsis.html) if you are interested to understand exactly what Disco is doing here: basically it is fitting a polynomial to the given points.}
