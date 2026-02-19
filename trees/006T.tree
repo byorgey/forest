@@ -5,7 +5,10 @@
 
 \import{discrete-macros}
 
-\p{Syntax for sets in Disco.  Only *finite* sets. Order doesn't matter.  ellipsis notation.}
+\p{[[000N]] has [built-in support for sets](https://disco-lang.readthedocs.io/en/latest/reference/set.html)—though, for reasons we will explore, only \em{finite} sets.}
+
+\transclude{006U}
+
 \p{Types of sets in Disco.  All elements have to be same type.  Try including negatives, fractions, etc.  But can't have number + Boolean.}
 \p{Types vs sets.  Types = sets with nice properties.}
 \p{Set comprehension notation.  Examples.}

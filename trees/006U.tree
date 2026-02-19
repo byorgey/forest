@@ -1,0 +1,10 @@
+\title{Syntax for sets in Disco}
+\date{2026-02-19T19:27:02Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Disco gives us a few different ways to write sets.}
+
+\transclude{006V}
