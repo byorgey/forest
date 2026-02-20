@@ -1,15 +1,12 @@
 \title{Finite sets in Disco}
 \date{2026-02-18T14:13:10Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
 \p{[[000N]] has [built-in support for sets](https://disco-lang.readthedocs.io/en/latest/reference/set.html)—though, for reasons we will explore, only \em{finite} sets.}
 
 \transclude{006U}
-
-\p{Types of sets in Disco.  All elements have to be same type.  Try including negatives, fractions, etc.  But can't have number + Boolean.}
-\p{Types vs sets.  Types = sets with nice properties.}
-\p{Set comprehension notation.  Examples.}
-\p{subset operator, elem operator.}
+\transclude{006X}
+\transclude{006Y}
+\transclude{006Z}

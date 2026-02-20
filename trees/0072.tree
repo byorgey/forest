@@ -1,0 +1,13 @@
+\title{Cardinality}
+\date{2026-02-20T12:51:35Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{The \em{cardinality} of a \em{finite} set is the number of distinct elements it contains, \em{i.e.} a natural number. The cardinality of a set #{A} is written #{|A|}.}
+
+\transclude{0073}
+
+\p{Notice that we can’t (yet!) say anything about the cardinality of an \em{infinite} set!}
+

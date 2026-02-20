@@ -1,0 +1,14 @@
+\title{Types vs sets}
+\date{2026-02-19T22:58:58Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+% XXX include symbol marking this as advanced/optional material
+
+\p{There is something quite subtle going on with the distinction between [sets](0062) and [types](002B).  In math, #{\N} and #{\{1,2,3\}} are both \em{sets}, but in Disco, #{\N} is a \em{type} and #{\{1,2,3\}} is a set.  In a math context, it makes sense to say #{\{1,2,3\} \subseteq \N}, but in Disco this is a syntax error!}
+
+\p{Part of the difference is explained by the fact that Disco only supports \em{finite} sets.  If infinite sets were allowed, Disco's implementation of sets would have to be much more complicated, and it would in general be difficult to know whether a given expression involving sets will run forever or not.}
+
+\p{Another part of the difference lies in the distinction between type theory and set theory.  Disco does not take sets as primitive, but starts with a collection of primitive \em{types}, corresponding to collections of objects with particularly nice closure properties—such as the natural numbers, which we know are closed under addition and multiplication.  Finite sets are then something we can carve out of these existing primitive collections.}
+

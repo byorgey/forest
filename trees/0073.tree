@@ -1,0 +1,11 @@
+\date{2026-02-20T12:52:42Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\ul{
+  \li{#{|\{1,3,5\}| = 3}.}
+  \li{#{|\{2, 4, \dots, 100\}| = 50}.}
+  \li{#{|\varnothing| = 0}.}
+}
