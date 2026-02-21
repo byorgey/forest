@@ -1,0 +1,5 @@
+\title{Swarm hacking}
+\author{brentyorgey}
+\date{2026-02-21T22:07:57Z}
+
+\p{I spent a while finishing up [this pull request](https://github.com/swarm-game/swarm/pull/2688) for [[000O]].  Right now, Swarm feels like it's kind of in this big slog/plateau where we've added all the "easy" features, and now in order to reach the ultimate vision there are a bunch of really hard, big projects/refactorings/redesigns that need to happen.  Stuff that's not sexy and that players will never notice.  Fortunately, although I certainly enjoy adding exciting features, I also really enjoy the \em{craft} of writing and refactoring code, of thinking hard about problems and coming up with elegant schemes for solving them.  I don't get to do a whole lot of that otherwise, so I'm really glad to have this somewhat-frivolous-but-surprisingly-professionally-fruitful project to work on.}

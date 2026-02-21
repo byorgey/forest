@@ -1,0 +1,9 @@
+\author{brentyorgey}
+\date{2026-02-21T22:04:45Z}
+\title{The Farmer Was Replaced}
+
+  \p{I started playing [The Farmer Was Replaced](https://store.steampowered.com/app/2060160/The_Farmer_Was_Replaced/)—someone recommended it because of its similarities to Swarm.  There definitely are some similarities: in both games, you program robots to move around in a grid world collecting resources to unlock new programming language features.  (There are also some big differences, of course, such as the fact that Swarm has a much cooler programming language.)}
+
+  \p{The game feels like it is trying to be a fun way for people to learn programming.  But having taught literally hundreds of beginners how to program, I can tell you unequivocally that no one is going to be learning how to program from this game if they don't already have some other prior programming experience.  Still, it's a pretty fun game, and very polished; the implementation of the in-game Python-esque language is very impressive.}
+
+  \p{I haven't finished the game yet, still need to solve some mazes and implement a better snake-playing robot...}
