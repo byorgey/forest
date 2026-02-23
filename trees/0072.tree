@@ -1,7 +1,6 @@
 \title{Cardinality}
 \date{2026-02-20T12:51:35Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
@@ -11,3 +10,4 @@
 
 \p{Notice that we can’t (yet!) say anything about the cardinality of an \em{infinite} set!}
 
+\transclude{0076}

@@ -1,0 +1,7 @@
+\date{2026-02-23T12:08:50Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{#{\ps{\varnothing} = \{ \varnothing \}}, since the only subset of the empty set is itself.}

@@ -1,0 +1,41 @@
+\title{Listing all elements of a power set}
+\date{2026-02-23T12:11:36Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{How do we know if we’ve listed all possible subsets? Notice that to make a particular subset, we get to independently choose whether each element will be in the subset or not. So we can associate a Boolean variable to each element of the set, and list all possible combinations of #{\True} and #{\False}, just like we would when making a truth table:}
+
+##{
+   \begin{array}{cccc}
+     \text{1?} & \text{2?} & \text{3?} & \text{subset} \\ \hline
+     \True & \True & \True & \{1,2,3\} \\
+    \True & \True & \False & \{1,2\} \\
+    \True & \False & \True & \{1,3\} \\
+    \True & \False & \False & \{1\} \\
+    \False & \True & \True & \{2,3\} \\
+    \False & \True & \False & \{2\} \\
+    \False & \False & \True & \{3\} \\
+    \False & \False & \False & \varnothing \\
+  \end{array}
+}
+
+\p{Or we could just dispense with the booleans and make a table where we either list or don’t list each element in all possible combinations:}
+
+##{
+  \begin{array}{rcccl}
+         & \text{1?} & \text{2?} & \text{3?} & \\ \hline
+    \{ & 1  & 2  & 3  & \} \\
+    \{ & 1  & 2  &    & \} \\
+    \{ & 1  &    & 3  & \} \\
+    \{ & 1  &    &    & \} \\
+    \{ &    & 2  & 3  & \} \\
+    \{ &    & 2  &    & \} \\
+    \{ &    &    & 3  & \} \\
+    \{ &    &    &    & \} \\
+  \end{array}
+}
+
+\p{This line of reasoning shows us that in general, if #{A} is a \em{finite} set and #{|A| = n}, then #{|\ps{A}| = 2^n}. Note this even works when #{A} is empty: we have #{\ps{\varnothing} = \{\varnothing\}} (since the empty set is the only subset of itself), and #{2^0 = 1}.}
+
+\p{Notice how this is all pointing to the fact that we should allow both #{A \subseteq A} and #{\varnothing \subseteq A}. The entire set and the empty set both show up naturally when enumerating every possible combination of true/false values, and we get an elegant formula, #{2^n}, for the number of subsets including the entire set and the empty set. If we were to disallow these from being subsets, we would end up with a less elegant formula like #{2^n - 2} for the number of subsets, and would have to use the word “except” when describing how to generate all possible subsets. We would essentially be fighting against the universe. The entire set and the empty set \em{want} to be subsets.}

@@ -12,3 +12,5 @@
 \def\Odd{\mathrm{Odd}}
 \def\Rational{\mathrm{Rational}}
 \def\Irrational{\mathrm{Irrational}}
+
+\def\ps[body]{#{\mathcal{P}(\body)}}

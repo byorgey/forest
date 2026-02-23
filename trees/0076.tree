@@ -1,0 +1,15 @@
+\title{Cardinality in Disco}
+\date{2026-02-23T11:48:33Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{In Disco, we can also use vertical bars to ask for the [cardinality](0072) of a set:}
+
+\pre\verb<<<|
+Disco> |{1,2,3}|
+3
+Disco> |{1, 3, ... 100}|
+50
+Disco> |{}|
+0<<<

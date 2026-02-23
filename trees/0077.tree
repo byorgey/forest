@@ -1,0 +1,12 @@
+\title{Cartesian product}
+\date{2026-02-23T11:54:17Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\transclude{0078}
+\transclude{0079}
+
+\p{From this we can also see that for finite sets, the cardinality of a Cartesian product is the product of the cardinalities: ##{|A \times B| = |A| \times |B|.}}
+
+\transclude{007A}

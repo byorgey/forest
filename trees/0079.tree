@@ -1,0 +1,20 @@
+\date{2026-02-23T11:57:05Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Let #{A = \{1, 2, 3\}} and #{B = \{ \triangle, \square \}}. Then ##{A
+    \times B = \{(1,\triangle), (1,\square), (2,\triangle),
+    (2,\square), (3,\triangle), (3,\square)\}.} We can think of this in terms of filling out a 2D grid where the rows are labeled with elements from #{A} and the columns with elements from #{B}:}
+
+##{
+\begin{array}{ccc}
+  & \triangle & \square \\
+1 & (1,\triangle) & (1, \square) \\
+2 & (2,\triangle) & (2, \square) \\
+3 & (3,\triangle) & (3, \square) \\
+\end{array}
+}
+
+\p{Each cell in the grid corresponds to one possible combination of an element from #{A} with an element from #{B}.}

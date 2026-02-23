@@ -1,0 +1,11 @@
+\title{Cartesian product in Disco}
+\date{2026-02-23T12:03:38Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We can use the \code{><} operator in Disco for Cartesian product:}
+
+\pre\verb<<<|
+Disco> {1,2,3} >< {T, F}
+{(1, F), (1, T), (2, F), (2, T), (3, F), (3, T)}<<<

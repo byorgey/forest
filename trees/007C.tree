@@ -1,0 +1,8 @@
+\date{2026-02-23T12:08:20Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\title{Power set}
+\taxon{Definition}
+\p{The of a set #{A}, written #{\ps{A}}, is the set of all possible subsets of #{A}.}

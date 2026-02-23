@@ -1,0 +1,8 @@
+\title{Cartesian product}
+\date{2026-02-23T11:55:00Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{If #{A} and #{B} are sets, the \em{(Cartesian) product} of #{A} and #{B}, written #{A \times B}, is the set of all possible ordered pairs of elements from #{A} and #{B}. That is, ##{A \times B = \{ (a, b) \mid a \in A, b \in B \}.}}
