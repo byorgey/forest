@@ -1,6 +1,7 @@
 \title{Cartesian product}
 \date{2026-02-23T11:54:17Z}
 \tag{discrete}
+\tag{draft}
 
 \import{discrete-macros}
 
@@ -10,3 +11,5 @@
 \p{From this we can also see that for finite sets, the cardinality of a Cartesian product is the product of the cardinalities: ##{|A \times B| = |A| \times |B|.}}
 
 \transclude{007A}
+
+% XXX Cartesian product of types!

@@ -1,6 +1,7 @@
 \title{Power sets in Disco}
 \date{2026-02-23T12:16:25Z}
 \tag{discrete}
+\tag{draft}
 
 \import{discrete-macros}
 
@@ -15,3 +16,5 @@ Disco> power({2..5})
 {{}, {2}, {2, 3}, {2, 3, 4}, {2, 3, 4, 5}, {2, 3, 5}, {2, 4}, {2, 4, 5}, {2, 5}, {3}, {3, 4}, {3, 4, 5}, {3, 5}, {4}, {4, 5}, {5}}
 Disco> { |power({1..n})| | n in {1 .. 8} }
 {2, 4, 8, 16, 32, 64, 128, 256}<<<
+
+% XXX Type of power set (on Set(N))

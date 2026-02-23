@@ -5,4 +5,4 @@
 
 \title{Power set}
 \taxon{Definition}
-\p{The of a set #{A}, written #{\ps{A}}, is the set of all possible subsets of #{A}.}
+\p{The \em{power set} of a set #{A}, written #{\ps{A}}, is the set of all possible subsets of #{A}.}
