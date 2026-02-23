@@ -1,0 +1,79 @@
+\title{Discrete Math learning goals}
+\date{2026-02-23T20:17:52Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{For each [learning goal](https://hendrix-cs.github.io/math240/#learning-goals-1) we have covered below, you will find links to relevant sections of the lecture notes.}
+
+\subtree{
+  \title{Propositional Logic + Proofs}
+    \ul{
+      \li{L1: I can make truth tables for propositional logic expressions involving TRUE, FALSE, AND, OR, NOT, IMPLIES, IFF, and variables.
+      \ul{
+        \li{[[002Y]]}
+        \li{[[0031]]}
+        \li{[Example truth table](0043)}
+      }
+      }
+        \li{L2: [I can use algebraic laws to rewrite and simplify, or prove the equivalence of, formulas of propositional logic.](0045)}
+      \li{L3: I can evaluate the truth or falsity of propositions with quantifiers.
+      \ul{
+        \li{[[004G]]}
+        \li{[[004O]]}
+        \li{[[0050]]}
+      }
+      }
+        \li{L4: [I can use De Morgan laws to simplify negations of propositions with quantifiers, AND, and OR](004Y).}
+        \li{L5: [I can formalize English statements as propositional logic formulas, making appropriate use of logical connectives and nested quantifiers](004R).}
+        \li{L6: [I can express quantified statements in equivalent ways with different domains](0051).}
+        \li{P1: [I can write an appropriate proof outline for a given propositional logic formula](0057).}
+}
+}
+
+\subtree{
+  \title{Set Theory}
+  \ul{
+    \li{S1: [I can state the definitions, and determine membership, of standard sets such as N, Z, Q, and R](006J).}
+    \li{S2: I can evaluate and construct sets using union, intersection, difference, and complement of sets, and sets defined via set builder notation.
+      \ul{
+        \li{[[0068]]}
+        \li{[[0069]]}
+      }
+    }
+    \li{S3: I can list all the elements in a power set, Cartesian product, or disjoint union of sets, or count them without listing them all.
+    \ul{
+      \li{[[0072]]}
+      \li{[[0077]]}
+      \li{[[007B]]}
+    }
+    }
+    \li{P2: I can reproduce proofs about sets, set operations, and the subset relation.
+      \ul{
+        \li{[[006Q]]}
+      }
+    }
+  }
+}
+
+%     Module 3: Relations + Functions
+%         F1: I can determine whether a relation is reflexive, transitive, symmetric, or an equivalence, and give examples of relations with these properties.
+%         F2: I can describe the equivalence classes of a given equivalence relation.
+%         F3: I can draw pictures to model the behavior of a given function, and determine whether a given function is 1-1 and/or onto.
+%         P3: I can reproduce proofs about 1-1, onto, and bijective functions.
+%     Module 4: Recursion + Induction
+%         R1: I can compute the terms of a sequence defined via a recurrence, and implement a recurrence as a recursive Disco function.
+%         R2: I can evaluate sums involving arithmetic and geometric series.
+%         P4: I can write the outline of a proof by (weak) induction or strong induction.
+%         P5: I can reproduce proofs by induction.
+%     Module 5: Number Theory
+%         N1: I can determine whether one integer is divisible by another, or whether a natural number up to 100 is prime.
+%         N2: I can calculate quotients and remainders according to the Division Algorithm.
+%         N3: I can compute the greatest common divisor of two natural numbers using the Euclidean Algorithm.
+%         N4: I can compute Bézout coefficients and modular inverses using the Extended Euclidean Algorithm.
+%         N5: I can solve modular equivalences in one variable involving addition, subtraction, and multiplication by a constant.
+%     Module 6: Combinatorics
+%         C1: I can use the product, addition, and subtraction rules to count things.
+%         C2: I can use the division rule and binomial coefficients to count things.
+

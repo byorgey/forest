@@ -4,6 +4,8 @@
 
 \p{These are my lecture notes for [[0020]] for the Spring 2026 semester.}
 
+\p{See here for a [hyperlinked list of learning goals](007H).}
+
 \put\transclude/expanded{false}
 \transclude{0026}
 \transclude{0024}
