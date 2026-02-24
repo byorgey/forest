@@ -1,0 +1,11 @@
+\title{Set difference}
+\date{2026-02-24T19:15:11Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{The \em{difference} of two sets #{A} and #{B}, written #{A - B} or #{A \difference B}, consists of the elements in #{A} but not #{B}: ##{A - B = \{ x \mid x \in A \land x
+  \notin B \}.}}
+
+

@@ -1,0 +1,8 @@
+\date{2026-02-24T19:11:41Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\title{Union}
+\taxon{Definition}
+\p{The \em{union} of sets #{A} and #{B} is the set of elements which are in either: ##{A \cup B = \{ x \mid x \in A \lor x \in B \}.}}

@@ -1,0 +1,9 @@
+
+\date{2026-02-24T19:19:41Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\title{Set complement}
+\taxon{Definition}
+\p{Given a universal set #{U}, the of a set #{A} is all the elements of #{U} which are not in #{A}: ##{\overline{A} = U - A = \{ x \mid x \in U \land x \notin A \}.}}

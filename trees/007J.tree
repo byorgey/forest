@@ -1,0 +1,9 @@
+\title{Intersection}
+\date{2026-02-24T19:03:17Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+
+\p{The \em{intersection} of sets #{A} and #{B} is the set of elements common to both: ##{A \cap B = \{ x \mid x \in A \land x \in B \}.}}

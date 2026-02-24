@@ -1,0 +1,12 @@
+\title{Algebraic laws for set operations}
+\date{2026-02-24T19:20:34Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+\p{Set [union](007L), [intersection](007I), and [complement](007R) follow laws which are exactly analogous to the [algebraic laws for #{\lor}, #{\land}, and #{\neg}](0045). For example, #{\cup} and #{\cap} are associative, commutative, and idempotent, and have #{\varnothing} and the universal set #{U} as their identity and/or annihilator; #{\cap} distributes over #{\cup} and vice versa, that is, ##{A \cap (B \cup
+    C) = (A \cap B) \cup (A \cap C);} there are also analogues of De Morgan’s laws, for example, ##{\overline{A \cup B} = \overline{A} \cap \overline{B}.} These follow from the fact that each set operation is defined in terms of a corresponding logical operation.}
+
+

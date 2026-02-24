@@ -1,0 +1,10 @@
+\title{Cardinality of union}
+\date{2026-02-24T19:12:38Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{What can we say about the cardinality of #{A \cup B}? First, we can give it some lower and upper bounds: ##{\max(|A|, |B|) \leq |A \cup B|
+  \leq |A| + |B|.} But we can also say something exact: ##{|A \cup
+  B| = |A| + |B| - |A \cap B|.} If we add the cardinality of #{A} and #{B}, any elements common to both are counted twice, so we have to subtract them in order to find the cardinality of their union (which has no duplicates). This is (a simple special case of) the \em{principle of inclusion-exclusion}, or "PIE".}

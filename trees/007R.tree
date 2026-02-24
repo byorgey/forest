@@ -1,0 +1,10 @@
+\title{Complement}
+\date{2026-02-24T19:18:19Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Finally, we want to define the \em{complement} of a set as the set of things which are \em{not} in the set. However, we have to be careful: this is a bit nonsensical on its own. For example, if #{A = \{1,2,3\}}, what elements are in its complement? Surely the number #{4} is, but what about my sister? Or Beethoven? Or the small brown rock I picked up and threw into a pond last Tuesday? We have to restrict ourselves to some \em{universal} set, a “universe of discourse” that contains all the potential elements we are considering; in a given context, all the sets we work with will be subsets of the universal set. (If we are working with \em{typed} sets, where the elements are all taken from a particular type, then the type itself serves as the universal set.)}
+\transclude{007S}
+

@@ -1,7 +1,6 @@
 \title{Power sets in Disco}
 \date{2026-02-23T12:16:25Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
@@ -17,4 +16,10 @@ Disco> power({2..5})
 Disco> { |power({1..n})| | n in {1 .. 8} }
 {2, 4, 8, 16, 32, 64, 128, 256}<<<
 
-% XXX Type of power set (on Set(N))
+\p{When given a set of type \code{Set(T)}, the \code{power} function produces a result of type \code{Set(Set(T))}; that is, given a set of \code{T}, it produces a set of sets of \code{T}.}
+
+\pre\verb<<<|
+Disco> :type {1,2,3}
+{1, 2, 3} : Set(ℕ)
+Disco> :type power({1,2,3})
+power({1, 2, 3}) : Set(Set(ℕ))<<<

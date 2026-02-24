@@ -14,3 +14,5 @@
 \def\Irrational{\mathrm{Irrational}}
 
 \def\ps[body]{#{\mathcal{P}(\body)}}
+
+\def\difference{\mathbin{\backslash}}
