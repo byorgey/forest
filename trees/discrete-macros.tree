@@ -16,3 +16,6 @@
 \def\ps[body]{#{\mathcal{P}(\body)}}
 
 \def\difference{\mathbin{\backslash}}
+\def\union{\cup}
+\def\intersect{\cap}
+\def\intersection{\cap}

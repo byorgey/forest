@@ -7,21 +7,21 @@
 
 \taxon{Theorem}
 
-\p{For all sets #{S}, #{T}, and #{U}, ##{S \cap (T \cup U) = (S \cap T) \cup (S \cap U).}}
+\p{For all sets #{A}, #{B}, and #{C}, ##{A \cap (B \cup C) = (A \cap B) \cup (A \cap C).}}
 
 \proof{
-  Let #{S}, #{T}, and #{U} be arbitrary sets.  Then we will show that #{x \in S \cap (T \cup U) \equiv x \in (S \cap T) \cup (S \cap U)} for arbitrary #{x}.
+  Let #{A}, #{B}, and #{C} be arbitrary sets.  Then we will show that #{x \in A \cap (B \cup C) \equiv x \in (A \cap B) \cup (A \cap C)} for arbitrary #{x}.
 
-\stmt{x \in S \cap (T \cup U)}
+\stmt{x \in A \cap (B \cup C)}
 \reason{\equiv}{definition of intersection}
-\stmt{x \in S \land x \in T \cup U}
+\stmt{x \in A \land x \in B \cup C}
 \reason{\equiv}{definition of union}
-\stmt{x \in S \land (x \in T \lor x \in U)}
+\stmt{x \in A \land (x \in B \lor x \in C)}
 \reason{\equiv}{distributivity of #{\land} over #{\lor}}
-\stmt{(x \in S \land x \in T) \lor (x \in S \land x \in U)}
+\stmt{(x \in A \land x \in B) \lor (x \in A \land x \in C)}
 \reason{\equiv}{definition of intersection}
-\stmt{(x \in S \cap T) \lor (x \in S \cap U)}
+\stmt{(x \in A \cap B) \lor (x \in A \cap C)}
 \reason{\equiv}{definition of union}
-\stmt{x \in (S \cap T) \cup (S \cap U)}
+\stmt{x \in (A \cap B) \cup (A \cap C)}
 
 }

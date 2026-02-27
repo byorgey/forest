@@ -1,0 +1,21 @@
+\title{Union is idempotent}
+\date{2026-02-27T16:08:55Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+
+\p{Set union is idempotent, that is, #{A \union A = A} for all sets #{A}.}
+
+\proof{
+  Let #{A} be an arbitrary set.  We will show #{A \union A = A} by showing both #{A \union A \subseteq A} and #{A \subseteq A \union A}.
+  \subproof{
+    [#{A \union A \subseteq A}].  Let #{x \in A \union A}; we must show #{x \in A}.
+    By definition, #{x \in A \union A} means #{(x \in A) \lor (x \in A)}.  But this is equivalent to #{x \in A} since #{\lor} is idempotent.
+  }
+  \subproof{
+    [#{A \subseteq A \union A}].  Let #{x \in A}.  Then #{x \in A \lor x \in A} since #{\lor} is idempotent, which means #{x \in A \union A}.
+  }
+}
