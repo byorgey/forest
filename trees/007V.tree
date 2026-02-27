@@ -1,0 +1,16 @@
+\title{Motivation}
+\date{2026-02-25T14:57:20Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{The way [we introduced propositions](002R) was based on the idea of propositions as \em{Booleans}: each proposition is either true or false, and propositional connectives such as #{\land}, #{\implies}, and so on were introduced via [truth tables](002Y), that is, whether they result in a true or false proposition when given various Boolean values as input.}
+
+% XXX add section introducing truth tables in general
+
+\p{This is fine when we are dealing with Boolean conditions in programs or digital logic circuits.  But in a larger sense it is unsatisfactory: in many cases, we don't just want to know whether something is true or false, we want to know \em{why} it is true.  Partly, wanting to understand why things are true just seems like part of human nature; but understanding why can have practical benefits as well, for example, when writing programs to actually calculate things.}
+
+\p{As an example, consider XXX}
+
+% XXX talk about focus on proof/evidence instead of truth/falsity (new section)?

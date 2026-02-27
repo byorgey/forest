@@ -1,11 +1,8 @@
 \date{2026-02-24T19:13:15Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
 \title{Union and intersection notation}
 \taxon{Remark}
 \p{The notation for intersection and union is not an accident. Notice that #{\cap} is defined in terms of #{\land} and #{\cup} is defined in terms of #{\lor}; intersection is kind of like “AND for sets” and union is “OR for sets”. (Also #{\cup} looks like a “U” for “union”.)}
-
-

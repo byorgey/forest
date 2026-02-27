@@ -1,0 +1,13 @@
+\title{Constructive logic}
+\date{2026-02-25T14:58:04Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{In fact, the way the [rules for proof](0057) were presented is (mostly) constructive logic!  Rather than defining each connective by a truth table, we can actually \em{define} each connective by its introduction and elimination rules, \ie by how to prove them, and how to use them if we already know them.}
+
+% XXX briefly go over each connective.
+% XXX then talk about algebraic laws, give examples of how we can validate them using intro/elim rules instead of truth tables
+% XXX then talk about which algebraic laws are classical-only, intuitively explain why
+\transclude{0081}

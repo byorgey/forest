@@ -1,0 +1,10 @@
+\title{Union in Disco}
+\date{2026-02-26T18:53:16Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We can compute the union of finite sets in Disco with the \code{union} operator (also written \code{∪}):}
+\pre\verb<<<|
+Disco> {1,2,3} union {2,4,6}
+{1, 2, 3, 4, 6}<<<

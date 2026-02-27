@@ -1,0 +1,10 @@
+\title{Example proofs with sets}
+\date{2026-02-26T20:55:17Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\transclude{0083}
+\transclude{0084}
+\transclude{0085}

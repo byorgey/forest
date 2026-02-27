@@ -1,0 +1,27 @@
+\title{Distributivity of intersection over union}
+\date{2026-02-27T11:43:20Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+
+\p{For all sets #{S}, #{T}, and #{U}, ##{S \cap (T \cup U) = (S \cap T) \cup (S \cap U).}}
+
+\proof{
+  Let #{S}, #{T}, and #{U} be arbitrary sets.  Then we will show that #{x \in S \cap (T \cup U) \equiv x \in (S \cap T) \cup (S \cap U)} for arbitrary #{x}.
+
+\stmt{x \in S \cap (T \cup U)}
+\reason{\equiv}{definition of intersection}
+\stmt{x \in S \land x \in T \cup U}
+\reason{\equiv}{definition of union}
+\stmt{x \in S \land (x \in T \lor x \in U)}
+\reason{\equiv}{distributivity of #{\land} over #{\lor}}
+\stmt{(x \in S \land x \in T) \lor (x \in S \land x \in U)}
+\reason{\equiv}{definition of intersection}
+\stmt{(x \in S \cap T) \lor (x \in S \cap U)}
+\reason{\equiv}{definition of union}
+\stmt{x \in (S \cap T) \cup (S \cap U)}
+
+}

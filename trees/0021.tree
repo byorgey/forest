@@ -6,6 +6,8 @@
 
 \p{See here for a [hyperlinked list of learning goals](007H).}
 
+\transclude{advanced}
+
 \put\transclude/expanded{false}
 \transclude{0026}
 \transclude{0024}
@@ -15,4 +17,5 @@
 \transclude{0045}
 \transclude{004E}
 \transclude{0057}
+% \transclude{007U}
 \transclude{0060}

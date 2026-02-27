@@ -1,0 +1,15 @@
+\title{Cartesian product of types}
+\date{2026-02-26T18:45:00Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{In Disco, we can take the [Cartesian product](0078) of [types](002B) as well.  For example, if we take the Cartesian product of a set of natural numbers and a set of Booleans, the type of the resulting elements is \code{ℕ × Bool}:}
+
+\pre\verb<<<|
+Disco> {1,2,3} >< {T,F}
+{(1, F), (1, T), (2, F), (2, T), (3, F), (3, T)}
+Disco> :type {1,2,3} >< {T,F}
+{1, 2, 3} >< {T, F} : Set(ℕ × Bool)<<<
+
+\p{In this example, \code{ℕ × Bool} is the type of the elements, which look like pairs such as \code{(1, F)}.  In general, the type \code{A × B} (also written \code{A >< B} or \code{A * B}) has values that look like ordered pairs \code{(a,b)}.}

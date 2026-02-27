@@ -1,0 +1,11 @@
+\title{Set difference in Disco}
+\date{2026-02-26T19:07:58Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Note that set difference in Disco \em{must} be written with the \verb<<<|\<<< operator.  The subtraction symbol cannot be used, since it would introduce too much ambiguity with subtraction on numbers.}
+
+\pre\verb<<<|
+Disco> {3,4,5} \ {1,2,3}
+{4, 5}<<<

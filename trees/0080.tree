@@ -1,0 +1,10 @@
+\title{Intersection in Disco}
+\date{2026-02-26T19:10:26Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We can compute the intersection of finite sets in Disco with the \code{intersect} operator (also written \code{∩}):}
+\pre\verb<<<|
+Disco> {1,2,3} intersect {2,4,6}
+{2}<<<

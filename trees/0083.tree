@@ -1,0 +1,50 @@
+\title{De Morgan for union}
+\date{2026-02-27T11:24:49Z}
+\tag{discrete}
+\tag{draft}
+\taxon{Theorem}
+
+\import{discrete-macros}
+
+\p{For all sets #{S} and #{T}, ##{\overline{S \cup T} = \overline{S} \cap \overline{T}.}}
+
+\proof{
+  Let #{S} and #{T} be arbitrary sets inside some universal set #{U}. We must show that #{\overline{S \cup T} = \overline{S} \cap \overline{T}}, that is, #{\overline{S \cup T} \subseteq \overline{S} \cap \overline{T}} and #{\overline{S} \cap \overline{T} \subseteq \overline{S \cup T}}.
+\subproof{
+  #{\overline{S \cup T} \subseteq \overline{S} \cap \overline{T}}.  Let #{x \in \overline{S \cup T}}; we must show #{x \in \overline{S} \cap \overline{T}}.  We can calculate as follows:
+  \subproof{
+    \stmt{x \in \overline{S \cup T}}
+    \reason{\equiv}{definition of [complement](007S)}
+    \stmt{\neg (x \in S \cup T)}
+    \reason{\equiv}{definition of [union](007M)}
+    \stmt{\neg (x \in S \lor x \in T)}
+    \reason{\equiv}{[de Morgan](0047)}
+    \stmt{\neg (x \in S) \land \neg (x \in T)}
+    \reason{\equiv}{complement}
+    \stmt{x \in \overline{S} \land x \in \overline{T}}
+    \reason{\equiv}{definition of [intersection](007I)}
+    \stmt{x \in \overline{S} \cap \overline{T}}
+  }
+}
+\subproof{
+  #{\overline{S} \cap \overline{T} \subseteq \overline{S \cup T}}.  Let #{x \in \overline{S} \cap \overline{T}}; we must show #{x \in \overline{S \cup T}}.  The proof is exactly the reverse of the calculation above.
+}
+}
+
+\p{Note that #{(\all{x}{U} x \in S \iff x \in T) \iff (S = T)}.  So we could alternatively phrase the above proof like this:}
+
+\proof{
+  Let #{S} and #{T} be arbitrary sets.  We must show that #{\overline{S \cup T} = \overline{S} \cap \overline{T}}.  So let #{x} be arbitrary; we will show #{x \in \overline{S \cup T} \equiv x \in \overline{S} \cap \overline{T}}.
+
+  \stmt{x \in \overline{S \cup T}}
+  \reason{\equiv}{Definition of complement}
+  \stmt{\neg (x \in S \cup T)}
+  \reason{\equiv}{Definition of union}
+  \stmt{\neg (x \in S \lor x \in T)}
+  \reason{\equiv}{de Morgan}
+  \stmt{\neg (x \in S) \land \neg (x \in T)}
+  \reason{\equiv}{definition of complement}
+  \stmt{x \in \overline{S} \land x \in \overline{T}}
+  \reason{\equiv}{definition of union}
+  \stmt{x \in \overline{S} \cup \overline{T}}
+}

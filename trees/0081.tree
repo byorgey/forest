@@ -1,0 +1,12 @@
+\title{Classical algebraic laws }
+\date{2026-02-26T19:51:57Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Some of the algebraic laws we learned are only valid in classical logic, and not in constructive logic.  For example:}
+\ul{
+  \li{The law of \em{excluded middle}, which says that #{P \lor \neg P \equiv \True}.  The problem is that XXX}
+  \li{The \em{double negation} law, #{\neg \neg P \equiv P}}
+  \li{One direction of de Morgan}
+}
