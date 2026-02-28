@@ -1,0 +1,19 @@
+\title{Example relations which are antisymmetric}
+\date{2026-02-28T22:54:44Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Let's consider which of our [example relations](008E) are antisymmetric.}
+
+\ul{
+  \li{#{R_1} (#{\leq}) is clearly antisymmetric: if #{a \leq b} and #{b \leq a} then we definitely have #{a = b}.}
+  \li{#{R_{10}} (subset) is similarly antisymmetric.}
+  \li{#{R_6} (divisibility) is also antisymmetric on the natural numbers: the only way to have both #{a} divisible by #{b} and #{b} divisible by #{a} is if #{a = b}; we will be able to prove this later in the semester.}
+  \li{#{R_3} (equality) is antisymmetric, though for a boring reason.}
+  \li{It may require a bit more headscratching to see, but #{R_2} and #{R_4} are also antisymmetric. For example, take #{R_2} (#{>}). For this to be antisymmetric, we must have ##{\forall a,b \in \N.\, (a >
+b) \land (b > a) \implies a = b.} Is this true? In fact, it is, since it is impossible for #{(a > b) \land (b > a)} to ever be true, and an implication is always trivially true when its premise is false.}
+  \li{Note finally that #{R_8} is \em{not} antisymmetric: if #{P
+  \to Q} and #{Q \to P} then they are logically equivalent, but it does not mean they are exactly the same.}
+}
+

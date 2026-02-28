@@ -1,0 +1,15 @@
+\title{Relations on other sets}
+\date{2026-02-28T22:36:48Z}
+\tag{discrete}
+
+\import{discrete-macros}
+\taxon{Example}
+
+\p{And a few more example relations over other sets:}
+\ul{\li{\p{#{R_8 = \{(P,Q) \mid P, Q \text{ propositions }, P \to Q\}}}
+}
+\li{\p{#{R_9 = \{(P,Q) \mid P, Q \text{ propositions }, P \iff Q\}}}
+}
+\li{\p{#{R_{10} = \{(S,T) \mid S \subseteq T\}}}
+}
+}

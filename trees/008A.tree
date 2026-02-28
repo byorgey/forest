@@ -1,0 +1,22 @@
+\title{Relations}
+\author{brentyorgey}
+\date{2026-02-28T22:28:17Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\transclude{008B}
+\transclude{008C}
+
+\p{Most relations we care about are actually from a set to itself.}
+
+\transclude{008D}
+\transclude{008E}
+
+\p{Many relations we care about have one or more nice properties.}
+
+\transclude{008I}
+\transclude{008J}
+\transclude{008M}
+\transclude{008P}

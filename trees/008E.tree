@@ -1,0 +1,34 @@
+\title{Example relations}
+\date{2026-02-28T22:34:32Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+
+\p{Here are some example relations on #{\N}:}
+\ul{\li{\p{#{R_1 = \{(a,b) \mid a \leq b\}}}
+}
+\li{\p{#{R_2 = \{(a,b) \mid a > b\}}}
+}
+\li{\p{#{R_3 = \{(a,b) \mid a = b\}}}
+}
+\li{\p{#{R_4 = \{(a,b) \mid a = b + 1\}}}
+}
+\li{\p{#{R_5 = \{(a,b) \mid a + b \leq 10\}}}
+}
+\li{\p{#{R_6 = \{(a,b) \mid a \text{ divides } b\}}}
+}
+\li{\p{#{R_7 = \{(a,b) \mid a, b \text{ end with the same digit in
+    base 10} \}}}
+}
+}
+
+\p{And a few more example relations over other sets:}
+\ul{\li{\p{#{R_8 = \{(P,Q) \mid P, Q \text{ propositions }, P \to Q\}}}
+}
+\li{\p{#{R_9 = \{(P,Q) \mid P, Q \text{ propositions }, P \iff Q\}}}
+}
+\li{\p{#{R_{10} = \{(S,T) \mid S \subseteq T\}}}
+}
+}

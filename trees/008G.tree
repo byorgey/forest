@@ -1,0 +1,8 @@
+\title{Reflexive relation}
+\date{2026-02-28T22:38:33Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{A relation #{R} on a set #{A} is \em{reflexive} if ##{\forall a \in A.\, a\;R\;a,} that is, every element is related to itself.}

@@ -1,0 +1,8 @@
+\title{Relation on a set}
+\date{2026-02-28T22:33:58Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{A \em{relation on a set #{A}} is a relation from #{A} to #{A} (that is, a subset of #{A \times A}).}

@@ -1,0 +1,11 @@
+\title{Example relations which are reflexive}
+\date{2026-02-28T22:40:07Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Of our [example relations](008E), the #{\leq} (#{R_1}), equality (#{R_3}), divisibility (#{R_6}), last digit (#{R_7}), implication (#{R_8}), biconditional (#{R_9}) and subset (#{R_{10}}) relations are reflexive, whereas the others are not. Note that there exist natural numbers which are related to themselves under #{R_5}; for example, #{2\;R_5\;2} since #{2 + 2 \leq 10}. However, it is not the case that \em{every} natural number is related to itself under #{R_5} (for example, #{7 + 7
+\nleq 10}), so #{R_5} is not reflexive.}
+
+

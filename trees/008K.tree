@@ -1,0 +1,8 @@
+\title{Symmetric relation}
+\date{2026-02-28T22:51:58Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{A relation #{R} on a set #{A} is \em{symmetric} if ##{\forall a,b \in A.\, a\;R\;b \implies b\;R\;a,} that is, whenever #{a} and #{b} are related, then #{b} and #{a} are also related.}

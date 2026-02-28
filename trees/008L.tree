@@ -1,0 +1,7 @@
+\title{Example relations which are symmetric}
+\date{2026-02-28T22:52:30Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{The only symmetric relations among [our examples](008E) are #{R_3} (equality), #{R_5}, #{R_7}, and #{R_9}.}
