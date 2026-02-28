@@ -1,0 +1,25 @@
+\title{Material set theory, universal sets, and pedagogy}
+\author{brentyorgey}
+\date{2026-02-28T21:50:01Z}
+
+\import{discrete-macros}
+
+\p{In my [Discrete Mathematics course](0020) I am currently teaching (traditional, material) set theory.  I've recently noticed several instances where we really "want" to have a universe of discourse, \ie a global set #{U} of which which other sets under consideration are subsets.}
+\ul{
+  \li{Of course the notion of \em{set complement} doesn't make sense without a universe of discourse; complement with respect to what?}
+  \li{I typically introduce set equality by defining #{A = B} to mean #{(A \subseteq B) \land (B \subseteq A)}.  But sometimes we would really like to treat set equality extensionally, \ie ##{(A = B) \iff (\forall x. x \in A \iff x \in B).}  But what is the #{\forall} quantifying over?  For this to make sense, we must posit that we are quantifying over some kind of universe.}
+  \li{As for the subset relation itself, I typically define #{A \subseteq B} as #{\forall x \in A. x \in B}, but perhaps it is nicer to define it as ##{\forall x \in U. (x \in A) \to (x \in B).}  If we define it that way, the extensional and subset-both-ways definitions of set equality are simply related by the fact that #{\forall} distributes over #{\land}:
+  \stmt{\forall x: U. (x \in A) \iff (x \in B)}
+  \reason{\equiv}{Definition of #{\iff}}
+  \stmt{\forall x: U. ((x \in A) \implies (x \in B)) \land ((x \in B) \implies (x \in A))}
+  \reason{\equiv}{#{\forall} distributes over #{\land}}
+  \stmt{(\forall x: U. (x \in A) \implies (x \in B)) \land (\forall x: U. (x \in B) \implies (x \in A))}
+  \reason{\equiv}{Definition of #{\subseteq}}
+  \stmt{(A \subseteq B) \land (B \subseteq A)}
+  }
+}
+
+\p{But saying "there always has to be a universal set #{U}" is kind of equivalent to saying that we want our sets to be \em{typed}: you can't just have "a set", you have to
+say what universe the elements are going to be chosen from, \ie the type of the elements.}
+
+\p{What I would \em{really} like to do is start with some basic type theory, then later introduce sets as #{\mathrm{Set}(T) \equiv T \to 2}, and build up from there.  But that would be a big change.  It's too late for this semester, but maybe next year...}

@@ -5,22 +5,5 @@
 
 \put\transclude/numbered{false}
 
-\p{Not a whole lot to report this week—I'm deep in the weeds of the semester and }
-
-% XXX teaching set theory.
-% Realized several things that feel like there really "wants" to be a universe of discourse, i.e. global set which other sets under consideration are subsets of.
-%   - Complement of course doesn't make sense without this
-%   - I introduced set equality by defining A = B by (A \subseteq B) \land (B \subseteq A).  But I realized this morning that
-%     sometimes we would really like to treat set equality extensionally: i.e. (A = B) \iff (\forall x. x \in A \iff x \in B).  But what are we quantifying over?  Universal set.
-%   - Subset itself: defined (A \subseteq B) as (\forall x \in A. x \in B) but maybe nicer to define it as (\forall x \in U. (x \in A) \to (x \in B)).  If we define it that way,
-%     the extensional and subset-both-ways definitions of set equality are simply related by the fact that forall distributes over and:
-%     (\forall x: U. (x \in A) \iff (x \in B)) == (\forall x: U. ((x \in A) \implies (x \in B)) \land ((x \in B) \implies (x \in A))) \equiv ((\forall x: U. (x \in A) \implies (x \in B)) \land (\forall x: U. (x \in B) \implies (x \in A))) \equiv (A \subseteq B) \land (B \subseteq A)
-%
-% But saying "there always has to be a universal set U" is kind of equivalent to saying that we want our sets to be _typed_: you can't just have "a set", you have to
-% say what universe the elements are going to be chosen from, i.e. the type of the elements.
-%
-% What I would really like to do is (1) start with type theory, then later (2) introduce sets as #{Set(T) = T \to 2}, intrinsically typed, and build up set theory on that.
-% Maybe I will do that someday...
-
-% XXX re-reading The Goblin Emperor for the third time.  Not the kind of thing I usually read, I usually can't stand a lot of politics (for example, I found KSR's Mars trilogy tiresome at times).  But there is something so wholesome and inspiring about a character who has a lot of power but works very hard to Do The Right Thing in the midst of a system rife with corruption and greed.
-% Also reading the series.  Accidentally read the third before the second, no wonder I didn't understand the references.
+\transclude{0087}
+\transclude{0088}
