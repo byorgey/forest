@@ -12,6 +12,7 @@
 \def\Odd{\mathrm{Odd}}
 \def\Rational{\mathrm{Rational}}
 \def\Irrational{\mathrm{Irrational}}
+\def\Prime{\mathrm{Prime}}
 
 \def\ps[body]{#{\mathcal{P}(\body)}}
 

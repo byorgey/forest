@@ -1,0 +1,10 @@
+\title{Truth vs provability}
+\date{2026-03-02T18:18:34Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{The key is to switch our perspective: rather than focusing on whether propositions are \em{true}, we want to know whether they are \em{provable}, \ie whether it is possible to provide specific (computational) \em{evidence} which establishes that they must be true.  We are not content to know that something \em{has to be} true, but require direct evidence.
+
+XXX metaphor: evidence for someone being in class = a picture of them, or instructor saw them with own eyes and recorded their presence in gradebook.  Unacceptable: someone saw them enter the classroom and then saw them come out later.  i.e. we don't accept circumstantial evidence!}

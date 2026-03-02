@@ -1,0 +1,23 @@
+\title{Example constructive and non-constructive proofs}
+\date{2026-03-02T17:44:54Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{As an example, consider the proposition "for every prime number, there is a larger number which is not prime".  We might encode this in formal propositional logic as ##{\all{p}{\N} \Prime(p) \to (\ext{n}{\N} (n > p) \land (\neg \Prime(n))).}  This proposition is true; here are two different ways we might prove it.}
+
+\proof{
+  Let #{p} be an arbitrary prime; we must show #{\ext{n}{\N} (n > p) \land (\neg \Prime(n))}, which we will do by proving the logically equivalent proposition ##{\neg \neg (\ext{n}{\N} (n > p) \land (\neg \Prime(n))),} which is in turn equivalent to ##{\neg (\all{n}{\N} (n > p) \to \Prime(n)).}  So suppose #{\all{n}{\N} (n > p) \to \Prime(n)}; we will prove #{\False}.
+  \subproof{
+    XXX
+  }
+}
+
+\p{This proof (besides being unnecessarily complicated) is unsatisfying in exactly the way [discussed previously](007V): it establishes that there \em{must exist} a number bigger than #{p} which is not prime, but it doesn't really tell us how to find one!  Here is a different proof:}
+
+\proof{
+  Let #{p} be an arbitrary prime, and consider the number #{2p}.  Clearly #{2p > p}, and also #{2p} is not prime, since it is divisible by #{2}.
+}
+
+\p{This proof directly tells us how to calculate, XXX}
