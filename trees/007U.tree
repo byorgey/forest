@@ -6,4 +6,5 @@
 \import{discrete-macros}
 
 \transclude{007V}
+% XXX talk about focus on proof/evidence instead of truth/falsity (new section)?
 \transclude{007W}

@@ -17,7 +17,7 @@
 }
 \li{\p{#{R_5 = \{(a,b) \mid a + b \leq 10\}}}
 }
-\li{\p{#{R_6 = \{(a,b) \mid a \text{ divides } b\}}}
+\li{\p{#{R_6 = \{(a,b) \mid a \text{ evenly divides } b\}}}
 }
 \li{\p{#{R_7 = \{(a,b) \mid a, b \text{ end with the same digit in
     base 10} \}}}

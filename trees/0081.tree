@@ -6,7 +6,7 @@
 
 \p{Some of the algebraic laws we learned are only valid in classical logic, and not in constructive logic.  For example:}
 \ul{
-  \li{The law of \em{excluded middle}, which says that #{P \lor \neg P \equiv \True}.  The problem is that XXX}
-  \li{The \em{double negation} law, #{\neg \neg P \equiv P}}
-  \li{One direction of de Morgan}
+  \li{The law of \em{excluded middle}, which says that #{P \lor \neg P \equiv \True}.  The problem is that a proof of #{P \lor Q} is supposed to tell us \em{which} one of #{P} or #{Q} is provable, along with a proof.  But excluded middle would allow us to simply assume we know #{P \lor \neg P}, without being able to actually tell us which of #{P} or #{\neg P} is true.}
+  \li{The \em{double negation} law, #{\neg \neg P \equiv P}.  The problem with this one is that a proof of #{\neg \neg P} is much less informative than a proof of #{P}: a proof of #{\neg \neg P} doesn't really tell us \em{why} #{P} is true, only why it \em{can't not} be true.}
+  \li{One particular direction of a de Morgan law, namely, #{\neg(P \land Q) \to \neg P \lor \neg Q}. XXX}
 }
