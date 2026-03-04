@@ -4,4 +4,4 @@
 
 \import{discrete-macros}
 
-\p{The only relations among [our examples](008E) which are \em{not} transitive are #{R_4} and #{R_5}. All the rest are transitive. We use the transitivity of these relations all the time! For example, transitivity of #{=} is what allows us to prove #{X = Y} by showing a chain of equalities #{X = X_1 = X_2 = \dots = Y}.}
+\p{The only [relations](008D) among [our examples](008E) which are \em{not} [transitive](008Q) are #{R_4} and #{R_5}. All the rest are transitive. We use the transitivity of these relations all the time! For example, transitivity of #{=} is what allows us to prove #{X = Y} by showing a chain of equalities #{X = X_1 = X_2 = \dots = Y}.}

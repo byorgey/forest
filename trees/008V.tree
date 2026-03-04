@@ -1,0 +1,8 @@
+\title{Infinitude of non-squares}
+\date{2026-03-03T20:07:36Z}
+\tag{discrete}
+\taxon{Theorem}
+
+\import{discrete-macros}
+
+##{\all{n}{\N} \ext{m}{\N} (m > n) \land (\neg \Square(m))}

@@ -1,0 +1,9 @@
+\title{Equivalence relation}
+\date{2026-03-04T02:18:19Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{An \em{equivalence relation} (sometimes just an \em{equivalence}) on a set #{A} is a [reflexive](008I), [symmetric](008J), [transitive](008P) [relation](008D).}
+

@@ -1,0 +1,38 @@
+\title{Equivalence classes are disjoint}
+\date{2026-03-04T03:05:37Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{Let #{\sim} be an [equivalence relation](008Z) on a set #{A}. For any #{a, b \in
+  A}, the following three propositions are logically equivalent:}
+
+\ol{
+  \li{#{a \sim b}}
+  \li{#{[a] = [b]}}
+  \li{#{[a] \cap [b] \neq \varnothing}}
+}
+
+
+\proof{
+  We will prove the chain of implications #{1 \implies 2 \implies 3 \implies 1}, which (by transitivity of implication!) is enough to show they are all logically equivalent.  Notice how the three properties of an [equivalence relation](008Z) ([reflexivity](008I), [symmetry](008J), and [transitivity](008P)) all come into play.
+
+  \subproof{
+    #{(1 \implies 2)}. Suppose #{a \sim b}. We wish to show that #{[a] = [b]}, which we can do by showing that both #{[a] \subseteq [b]} and #{[b] \subseteq [a]}.
+
+    \subproof{
+      Let’s show that #{[a] \subseteq [b]}. Let #{x \in [a]} be an arbitrary element; we will show that #{x \in [b]} also. Since #{x \in [a]}, by definition #{a \sim x}. We assumed that #{a \sim b}; by symmetry this means #{b \sim a} as well. Then, by transitivity, #{b \sim x}; so, by definition, #{x \in [b]}.
+    }
+    \subproof{
+      The argument that #{[b] \subseteq [a]} is exactly parallel to the above argument.
+    }
+  }
+  \subproof{
+    #{(2 \implies 3)}. If #{[a] = [b]}, then #{[a] \cap [b] = [a] \cap [a] = [a]} (by idempotence of #{\cap}). This cannot be the empty set: since #{a \sim a} by reflexivity, we always have #{a \in [a]}, so an equivalence class #{[a]} is never empty.
+  }
+  \subproof{
+    #{(3 \implies 1)}. Suppose #{[a] \cap [b] \neq \varnothing}, which means it has at least one element, call it #{x \in [a] \cap [b]}. This means #{x \in [a]} and #{x \in [b]}, so by definition of equivalence classes we have #{a \sim x} and #{b \sim x}. By symmetry and transitivity, we conclude that #{a \sim b}.
+   }
+}

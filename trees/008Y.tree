@@ -1,0 +1,16 @@
+\title{Equivalence relations}
+\date{2026-03-04T02:15:25Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{A very important class of [relations](008D) is \em{equivalence relations}, which in some suitable sense act like “a more general sort of equality”. We have used several of them this semester already!}
+
+\transclude{008Z}
+
+\p{I don’t know of a good way to explain why these particular properties are the “right” ones to capture “equality-like” things. But hopefully as we see some examples you will be convinced.}
+
+\transclude{0094}
+
+\transclude{0098}

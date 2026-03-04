@@ -1,0 +1,8 @@
+\title{Equality}
+\date{2026-03-04T02:24:10Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Of course, equality itself is an [equivalence relation](008Z). We can check that it is indeed [reflexive](008I), [symmetric](008J), and [transitive](008P).}

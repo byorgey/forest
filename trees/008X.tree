@@ -1,0 +1,30 @@
+\title{No consecutive squares}
+\date{2026-03-03T20:11:14Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{If any natural number #{n \geq 1} is a perfect square, then #{n+1} is not.  That is, ##{\all{n}{\N} (n \geq 1) \to (\Square(n) \to \neg\Square(n+1)).}}
+
+\proof{
+  Let #{n} be an arbitrary natural number, and suppose #{n \geq 1} and suppose that #{n} is a square; we must show that #{n+1} is not a square.
+  \subproof{
+    To this end, we will prove #{\Square(n+1) \to \False}. Suppose #{n+1} \em{is} a square; we will derive a contradiction.
+    \subproof{
+    \p{Since we have supposed that #{n} and #{n+1} are both squares, by definition there are natural numbers #{j} and #{k} such that #{n = j^2} and #{n+1 = k^2}.  Note that #{k > j} (since #{k^2 > j^2}) and also #{j \geq 1} (since #{n \geq 1}).}
+
+    \p{#{(n+1) - n = 1}, but also}
+    \stmt{(n+1) - n}
+    \reason{=}{substitute}
+    \stmt{k^2 - j^2}
+    \reason{=}{algebra}
+    \stmt{(k+j)(k-j)}
+    \reason{\geq}{#{k-j \geq 1} since #{k > j}}
+    \stmt{k+j}
+    \reason{\geq}{#{k > j \geq 1}}
+    \stmt{2}
+
+    \p{Hence we have proved #{n+1-n = 1} and also #{n+1-n \geq 2}, which is absurd.}
+    }
+  }
+}

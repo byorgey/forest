@@ -6,7 +6,7 @@
 
 \taxon{Example}
 
-\p{Here are some example relations on #{\N}:}
+\p{Here are some example [relations on](008D) #{\N}:}
 \ul{\li{\p{#{R_1 = \{(a,b) \mid a \leq b\}}}
 }
 \li{\p{#{R_2 = \{(a,b) \mid a > b\}}}

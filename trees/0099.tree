@@ -1,0 +1,11 @@
+\title{Words by length}
+\date{2026-03-04T03:00:35Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Under the [equivalence relation #{L}](0091) (words are related if they have the same length), the [equivalence class](0097) of “dog” is the set of all three-letter English words: ##{[\text{dog}] = \{ \text{dog}, \text{cow},
+    \text{hat}, \text{eat}, \dots \}.} This is a finite (but large) set.}
+

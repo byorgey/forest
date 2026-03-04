@@ -5,10 +5,20 @@
 
 \import{discrete-macros}
 
-\p{As an example, consider the proposition "for every prime number, there is a larger number which is not prime".  We might encode this in formal propositional logic as ##{\all{p}{\N} \Prime(p) \to (\ext{n}{\N} (n > p) \land (\neg \Prime(n))).}  This proposition is true; here are two different ways we might prove it.}
+\p{As an example, consider the proposition "for every natural number, there is a larger number which is not a square".  We might encode this in formal propositional logic as follows:
+
+\transclude{008V}
+
+where as usual we define #{\Square(m)} by
+
+\transclude{008W}
+
+This proposition is true, and we will see two different ways we might prove it.  In either case, we will first need the following lemma.}
+
+\transclude{008X}
 
 \proof{
-  Let #{p} be an arbitrary prime; we must show #{\ext{n}{\N} (n > p) \land (\neg \Prime(n))}, which we will do by proving the logically equivalent proposition ##{\neg \neg (\ext{n}{\N} (n > p) \land (\neg \Prime(n))),} which is in turn equivalent to ##{\neg (\all{n}{\N} (n > p) \to \Prime(n)).}  So suppose #{\all{n}{\N} (n > p) \to \Prime(n)}; we will prove #{\False}.
+  Let #{n} be an arbitrary natural number; we must show #{\ext{m}{\N} (m > n) \land (\neg \Square(n))}, which we will do by proving the logically equivalent proposition ##{\neg \neg (\ext{n}{\N} (n > p) \land (\neg \Prime(n))),} which is in turn equivalent to ##{\neg (\all{n}{\N} (n > p) \to \Prime(n))} (see [[0047]] and [[0049]] for a refresher if you're not sure why these are equivalent).  So [suppose](005N) #{\all{n}{\N} (n > p) \to \Prime(n)}; we will prove #{\False}.
   \subproof{
     XXX
   }
@@ -21,3 +31,4 @@
 }
 
 \p{This proof directly tells us how to calculate, XXX}
+

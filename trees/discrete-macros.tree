@@ -13,6 +13,7 @@
 \def\Rational{\mathrm{Rational}}
 \def\Irrational{\mathrm{Irrational}}
 \def\Prime{\mathrm{Prime}}
+\def\Square{\mathrm{Square}}
 
 \def\ps[body]{#{\mathcal{P}(\body)}}
 

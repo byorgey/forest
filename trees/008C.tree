@@ -5,6 +5,6 @@
 
 \taxon{Example}
 
-\p{Let #{S} be set of students at Hendrix, and #{C} the set of courses offered next year. Let #{R} be the relation ##{\{ (s,c) \mid \text{$s$ is preregistered for $c$} \}.} We might visualize this relation by drawing dots for students on the left, and courses on the right, with a line connecting students to courses they are preregistered for.}
+\p{Let #{S} be set of students at Hendrix, and #{C} the set of courses offered next year. Let #{R} be the [relation](008B) ##{\{ (s,c) \mid \text{$s$ is preregistered for $c$} \}.} We might visualize this relation by drawing dots for students on the left, and courses on the right, with a line connecting students to courses they are preregistered for.}
 
 

@@ -1,0 +1,8 @@
+\title{If and only if}
+\date{2026-03-04T02:55:32Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{If and only if, \em{aka} [biconditional](003Y) (#{\iff}), is an [equivalence relation](008Z) on propositions.}

@@ -1,0 +1,8 @@
+\title{Divisibility}
+\date{2026-03-04T02:56:32Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{What about the [divisibility relation](008E) #{R_6}? It is reflexive and transitive; however, it is not [symmetric](008J), so it is not an [equivalence relation](008Z).}

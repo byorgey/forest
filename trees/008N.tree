@@ -5,5 +5,5 @@
 \import{discrete-macros}
 
 \taxon{Definition}
-\p{A relation #{R} on a set #{A} is \em{antisymmetric} if ##{\forall
-    a,b \in A.\, (a\;R\;b) \land (b\;R\;a) \implies a = b,} that is, the only way we can possibly have both #{a\;R\;b} and #{b\;R\;a} is when #{a} and #{b} are actually the same. In other words, whenever #{a} and #{b} are different, at most one of #{a\;R\;b} or #{b\;R\;a} can hold. Intuitively, this says that the relation #{R} is as far from being symmetric as possible: there’s not even a single pair of values that exhibits symmetry.}
+\p{A [relation](008D) #{R} on a set #{A} is \em{antisymmetric} if ##{\forall
+    a,b \in A.\, (a\;R\;b) \land (b\;R\;a) \implies a = b,} that is, the only way we can possibly have both #{a\;R\;b} and #{b\;R\;a} is when #{a} and #{b} are actually the same. In other words, whenever #{a} and #{b} are different, at most one of #{a\;R\;b} or #{b\;R\;a} can hold. Intuitively, this says that the relation #{R} is as far from being [symmetric](008J) as possible: there’s not even a single pair of values that exhibits symmetry.}

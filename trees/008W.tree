@@ -1,0 +1,8 @@
+\title{Perfect squares}
+\date{2026-03-03T20:09:23Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+##{\Square(m) \equiv \ext{j}{\N} m = j^2}

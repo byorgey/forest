@@ -5,7 +5,7 @@
 \import{discrete-macros}
 
 \taxon{Definition}
-\p{Let #{A} and #{B} be sets. A \em{relation} from #{A} to #{B} is a subset of the [Cartesian product](0077) #{A \times B}.}
+\p{Let #{A} and #{B} be sets. A \em{relation} from #{A} to #{B} is a [subset](006K) of the [Cartesian product](0077) #{A \times B}.}
 \p{We write #{a\; R \; b} to denote #{(a,b) \in R} (“#{a} is related to #{b} by #{R}”).}
 
 

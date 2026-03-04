@@ -5,5 +5,5 @@
 \import{discrete-macros}
 
 \taxon{Definition}
-\p{A relation #{R} on a set #{A} is \em{transitive} if ##{\forall a,b,c
+\p{A [relation](008D) #{R} on a set #{A} is \em{transitive} if ##{\forall a,b,c
     \in A.\, (a\;R\;b) \land (b\;R\;c) \implies (a\;R\;c).}}

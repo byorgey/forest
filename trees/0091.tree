@@ -1,0 +1,17 @@
+\title{Words by length}
+\date{2026-03-04T02:24:55Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Consider the relation #{L} on the set of all English words, where two words are related if and only if they have the same number of letters. This is an [equivalence relation](008Z):}
+\ul{\li{\p{Reflexive? Check, each word has the same number of letters as itself.}
+}
+\li{\p{Symmetric? Check, if #{a} has the same number of letters as #{b}, then #{b} has the same number of letters as #{a}.}
+}
+\li{\p{Transitive? Check, if #{a} has the same number of letters as #{b}, and #{b} has the same number of letters as #{c}, then #{a} has the same number of letters as #{c}.}
+}
+}
+
+

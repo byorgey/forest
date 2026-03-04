@@ -5,4 +5,4 @@
 \import{discrete-macros}
 
 \taxon{Definition}
-\p{A \em{relation on a set #{A}} is a relation from #{A} to #{A} (that is, a subset of #{A \times A}).}
+\p{A \em{relation on a set #{A}} is a [relation](008B) from #{A} to #{A} (that is, a subset of #{A \times A}).}

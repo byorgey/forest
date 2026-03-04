@@ -1,0 +1,8 @@
+\title{Last digit in base 10}
+\date{2026-03-04T02:54:20Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{What about the example from last time where two numbers were related when they had the same last digit in base #{10}? This is an [equivalence relation](008Z) too. Reflexivity, symmetry, and transitivity follow straightforwardly from the definition. Later in the semester, we will explore a more general version of this relation.}
