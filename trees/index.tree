@@ -17,7 +17,6 @@
 \put\transclude/expanded{false}
 
 \transclude{0007}    % News and announcements
-\transclude{005U}    % Weeknotes
 \transclude{0002}    % Teaching
 \transclude{000C}    % Projects
 \transclude{000R}    % Blog
