@@ -1,0 +1,11 @@
+\title{Lists up to reordering}
+\date{2026-03-07T23:54:15Z}
+\tag{discrete}
+\tag{draft}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{As another example, consider the relation on lists of elements, where two lists are related if they have exactly the same elements, but possibly in a different order.  For example, \code{[1,2,3,1]} is related to \code{[3,1,1,2]}, but not to \code{[3,2,1]}.}
+
+\p{Many equivalence relations that arise naturally in mathematics and computer science are like this: we start out with a bunch of things that are all different, but there is some aspect of them we don't care about. We want to consider things "the same" if the only difference bewteen them has to do with the part we don't care about.}

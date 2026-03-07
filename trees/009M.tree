@@ -1,0 +1,8 @@
+\title{Case-insensitive equality}
+\date{2026-03-07T23:50:58Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{We can define a relation on strings where two strings are related if they have the same characters in the same order, except that letters may differ in whether they are upper- or lowercase.  For example, \code{Straw!} would be related to \code{sTRaW!} but not to \code{strawberry}, nor to \code{warts}.}
