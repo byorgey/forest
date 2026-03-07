@@ -1,0 +1,16 @@
+\title{Non-constructive proof of infinite nonsquares}
+\date{2026-03-07T19:13:15Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{First, let's see how we might prove [there are infinitely many non-squares](008V) in a way that is logical, but doesn't explicitly tell us \em{why} it has to be true.}
+
+\proof{
+  Let #{n} be an arbitrary natural number; we must show #{\ext{m}{\N} (m > n) \land (\neg \Square(n))}, which we will do by proving the logically equivalent proposition ##{\neg \neg (\ext{m}{\N} (m > n) \land (\neg \Square(n))),} which is in turn equivalent to ##{\neg (\all{m}{\N} (m > n) \to \Square(n))} (see [[0047]] and [[0049]] for a refresher if you're not sure why these are equivalent).  So [suppose](005N) #{\all{m}{\N} (m > n) \to \Square(n)}; we will prove #{\False}.
+  \subproof{
+    Consider #{n+1} and #{n+2}.  Since they are both greater than #{n}, and we supposed all natural numbers greater than #{n} are square, they must both be square.  However, according to [the lemma](008X), if #{n+1} is square then #{n+2} is not a square.  So #{n+2} both is and is not square, which is a contradiction.
+  }
+}
+
+\p{This proof (besides being unnecessarily complicated) is unsatisfying in exactly the way [discussed previously](007V): it establishes that there \em{must exist} a number bigger than #{n} which is not square, but it doesn't really tell us how to find one. In fact, it tells us that either #{n+1} or #{n+2} must be a non-square, but it doesn't tell us which!}

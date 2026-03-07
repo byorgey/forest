@@ -1,0 +1,14 @@
+\title{Constructuve proof of infinite nonsquares}
+\date{2026-03-07T19:22:24Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Here is a different proof:}
+
+\proof{
+  Let #{n} be an arbitrary natural number, and consider the number #{(n+1)^2 + 1}.  Clearly #{(n+1)^2 + 1 > n}.  Since #{(n+1)^2} is a square greater than zero, [the lemma](008X) tells us that #{(n+1)^2 + 1} is not a square.
+}
+
+\p{Unlike the previous proof, this proof directly tells us how to calculate, for any #{n}, a bigger number which is not a square.}
+

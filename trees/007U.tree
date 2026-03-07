@@ -6,6 +6,7 @@
 \import{discrete-macros}
 
 \transclude{007V}
-\transclude{008T}
 \transclude{008U}
+\transclude{008T}
+% XXX example with sqrt{2}, lg(9)?  Do that one first, and the above example as another?
 \transclude{007W}

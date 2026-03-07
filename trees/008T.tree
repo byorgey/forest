@@ -5,7 +5,7 @@
 
 \import{discrete-macros}
 
-\p{As an example, consider the proposition "for every natural number, there is a larger number which is not a square".  We might encode this in formal propositional logic as follows:
+\p{So what kind of proofs do we want, and what kind do we want to reject?  As an example, consider the proposition "for every natural number, there is a larger number which is not a square".  Intuitively, this proposition shows that there are infinitely many non-squares: no matter where we are on the number line, we can always find a non-square farther along.  We might encode this in formal propositional logic as follows:
 
 \transclude{008V}
 
@@ -17,18 +17,5 @@ This proposition is true, and we will see two different ways we might prove it. 
 
 \transclude{008X}
 
-\proof{
-  Let #{n} be an arbitrary natural number; we must show #{\ext{m}{\N} (m > n) \land (\neg \Square(n))}, which we will do by proving the logically equivalent proposition ##{\neg \neg (\ext{n}{\N} (n > p) \land (\neg \Prime(n))),} which is in turn equivalent to ##{\neg (\all{n}{\N} (n > p) \to \Prime(n))} (see [[0047]] and [[0049]] for a refresher if you're not sure why these are equivalent).  So [suppose](005N) #{\all{n}{\N} (n > p) \to \Prime(n)}; we will prove #{\False}.
-  \subproof{
-    XXX
-  }
-}
-
-\p{This proof (besides being unnecessarily complicated) is unsatisfying in exactly the way [discussed previously](007V): it establishes that there \em{must exist} a number bigger than #{p} which is not prime, but it doesn't really tell us how to find one!  Here is a different proof:}
-
-\proof{
-  Let #{p} be an arbitrary prime, and consider the number #{2p}.  Clearly #{2p > p}, and also #{2p} is not prime, since it is divisible by #{2}.
-}
-
-\p{This proof directly tells us how to calculate, XXX}
-
+\transclude{009J}
+\transclude{009K}
