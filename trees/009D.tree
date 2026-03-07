@@ -1,0 +1,8 @@
+\title{Irrational number}
+\date{2026-03-06T14:07:11Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{A number is \em{irrational} if it is not [rational](005Q), that is, ##{\Irrational(x) \equiv \neg \Rational(x).}}

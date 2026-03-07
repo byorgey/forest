@@ -1,0 +1,22 @@
+\date{2026-03-06T14:14:20Z}
+\tag{discrete}
+\taxon{Theorem}
+
+\import{discrete-macros}
+
+\title{#{\sim_{\Q}} is an equivalence}
+
+\proof{
+\ul{
+  \li{[[008I]]: #{(a,b) \simQ (a,b)} for any #{(a,b) \in \Z \times (\Z - \{0\})}, since #{ab = ab}.}
+  \li{[[008J]]: If #{(a,b) \simQ (c,d)}, then by definition #{ad = cb}.  Hence #{cb = ad}, which means #{(c,d) \simQ (a,b)} also.}
+  \li{[[008P]]: Suppose #{(a,b) \simQ (c,d)}, and #{(c,d) \simQ (e,f)}.  Then by definition #{ad = cb} and #{cf = ed}, and we know #{b \neq 0}, #{d \neq 0}, and #{f \neq 0}.  We wish to show #{(a,b) \simQ (e,f)}, that is, #{af = eb}.  We have two cases to consider: either #{c = 0} or #{c \neq 0}.
+  \subproof{
+    If #{c = 0}, then #{ad = cb = 0}, and the fact that #{d \neq 0} means we must have #{a = 0}.  Likewise, #{cf = ed} implies #{e = 0}.  Hence, #{af = eb = 0} as desired.
+  }
+  \subproof{
+    If #{c \neq 0}, multiplying equals by equals yields #{adcf = cbed}; we can cancel #{cd} from both sides (since #{c \neq 0} and #{d \neq 0}) to yield #{af = eb}.
+  }
+  }
+}
+}

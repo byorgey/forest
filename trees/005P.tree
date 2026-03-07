@@ -6,6 +6,8 @@
 \import{discrete-macros}
 
 \transclude{005Q}
+\transclude{009E}
+\transclude{009D}
 
 \p{Prove that #{\sqrt{2}} is irrational.}
 

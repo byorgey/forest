@@ -12,7 +12,7 @@
   \li{#{\Z = \{\dots, -2, -1, 0, 1, 2, \dots\}}, the integers}
   \li{#{\Z^+ = \{1, 2, \dots\}}, the positive integers}
   \li{#{\Q = \{ p/q \mid p \in \Z, q \in \Z, q \neq 0 \}}, the rational numbers
-   \p{Actually, the definition of the rational numbers is a bit more subtle than this; the above definition does not take into account the fact that, say, #{1/2 = 2/4}.  We will see how to deal with this when we learn about equivalence relations in a couple weeks.}
+   \p{Actually, the definition of the rational numbers is a bit more subtle than this; the above definition does not take into account the fact that, say, #{1/2 = 2/4}.  We will see how to deal with this when we learn about [equivalence relations](008Y) in a couple weeks.}
   }
   \li{\R, the real numbers}
   \li{\C, the complex numbers}

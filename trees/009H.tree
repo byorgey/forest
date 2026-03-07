@@ -1,0 +1,9 @@
+\date{2026-03-06T14:32:25Z}
+\tag{discrete}
+
+\import{discrete-macros}
+\title{Equivalence classes of \simQ}
+
+\p{What do the [equivalence classes](0098) of \simQ look like? Well, to pick an example, #{(1,2) \simQ (2,4)} since #{1 \cdot 4 = 2 \cdot 2}.  Or again, #{(1,2) \simQ (3,6)} since #{1 \cdot 6 = 3 \cdot 2}.  In general, if we start with the equation #{ad = cb} and divide both sides by #{b} and #{d}, we get ##{\frac{a}{b} = \frac{c}{d}} That is, #{(a,b) \simQ (c,d)} exactly when #{\frac{a}{b} = \frac{c}{d}} as fractions!  So, intuitively, each equivalence class is the set of all the different pairs of numerators and denominators that correspond to a single rational number.}
+
+\p{Using this insight we can finally give a completely sound, formal definition of the rational numbers:}

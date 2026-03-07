@@ -1,0 +1,17 @@
+\title{The rational numbers as equivalence classes}
+\date{2026-03-06T14:01:29Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Why do we care about [equivalence relations](008Z) so much?  It turns out that they show up all over mathematics and computer science.  Here is just one example.  Recall that we defined the set of \em{rational numbers} #{\Q} like so:}
+
+\transclude{005Q}
+
+\p{However, [we noted](009E) that this definition is not really complete, since it does not take into account the fact that, say, #{1/2 = 2/4}, or #{6/10 = 9/15}.  Now we finally have the tools to see the real definition.}
+
+\transclude{009F}
+\transclude{009G}
+\transclude{009H}
+\transclude{009I}

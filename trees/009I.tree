@@ -1,0 +1,8 @@
+\title{Rational number}
+\date{2026-03-06T14:36:40Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{A \em{rational number} is an [equivalence class](0098) of [the \simQ relation](009F) on #{\Z \times (\Z - \{0\})}.}

@@ -1,0 +1,7 @@
+\date{2026-03-06T14:08:19Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Actually, the definition of the [rational numbers](005Q) is a bit more subtle than this; the above definition does not take into account the fact that, say, #{1/2 = 2/4}.  We will see how to deal with this when we learn about [equivalence relations](008Y).}

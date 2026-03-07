@@ -7,6 +7,8 @@
 \p{We can also use \em{set builder} (or \em{set comprehension}) notation, whose basic form is ##{\{ \text{expression} \mid \text{variable definition}, \text{conditions} \}}}
 \p{This means that for each value of the variable(s) defined on the right side of the vertical bar which satisfy all the conditions, the set will contain the value of the expression on the left side of the vertical bar.}
 
+\p{Note that the \em{expression} on the \em{left} of the #{\mid} must evaluate to the value of the set; the \em{conditions} on the \em{right} of the #{\mid} must be [propositions](002O).}
+
 \transclude{006B}
 \transclude{006C}
 \transclude{006D}
