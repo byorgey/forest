@@ -1,0 +1,9 @@
+\title{Range of a function}
+\date{2026-03-09T11:28:01Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{The \em{range} of a function #{f : A \to B} is the set ##{\{ b \in
+    B \mid \exists a \in A \st f(a) = b \},} that is, the subset of #{B} consisting of all those #{b}’s which are actually the image of (at least one) #{a \in A}.}

@@ -1,0 +1,11 @@
+\date{2026-03-09T11:39:42Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Let #{\Shp = \{ \diamond, \triangle, \square \}}. Now define a function #{g : \Shp \to \N} by ##{\begin{align*}
+    g(\diamond) &= 6 \\
+    g(\triangle) &= 6 \\
+    g(\square) &= 32.
+\end{align*}} This is a valid function since every element of #{\Shp} is assigned to exactly one element of #{\N}. The domain of #{g} is #{\Shp}, the codomain is #{\N}, and the range of #{g} is the set #{\{6,32\}}.}

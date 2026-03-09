@@ -1,0 +1,31 @@
+\title{Defining functions in Disco}
+\date{2026-03-09T11:52:40Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{We have [previously seen how to define functions in Disco](http://ozark.hendrix.edu/~yorgey/forest/002K/index.xml). Here are a few more examples.}
+
+\pre\verb<<<|
+g : Bool -> N
+g(T) = 5
+g(F) = 17
+
+h : N -> N
+h(n) = 2n
+
+l : N -> Bool
+l(3n) = False
+l(3n + 1) = True
+l(3n + 2) = True
+
+j : N -> N
+j(3n) = 2n+5
+j(3n+1) = n^2
+j(3n+2) = 17
+<<<
+
+\p{And we can still use the \code{:table} command to get Disco to show a table of example input-output values for a function.}
+
+% XXX fix Disco to show when numeric functions are partial, + include that here.

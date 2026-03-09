@@ -1,0 +1,14 @@
+\title{Visualizing functions}
+\date{2026-03-09T11:25:28Z}
+\tag{discrete}
+\tag{draft}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{We can visualize functions by drawing arrows going from dots in one
+set to dots in another set.  Each dot on the left-hand side must have
+exactly one arrow coming out of it.}
+
+\p{Note that, according to the definition, it is valid for a function
+to have an empty domain.}

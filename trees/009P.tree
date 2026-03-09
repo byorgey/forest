@@ -1,0 +1,11 @@
+\title{Function}
+\date{2026-03-09T11:23:23Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{Let #{A} and #{B} be sets. (Note: some books say \em{nonempty} sets, but there’s no particular reason to make this restriction!) A \em{function} #{f} from #{A} to #{B}, written #{f : A \to B}, is a relation from #{A} to #{B} such that every #{a \in A} is related to exactly one #{b \in B}.}
+\p{#{A} is called the \em{domain} of #{f} and #{B} is the \em{codomain}. We write #{f(a) = b} to denote the unique element #{b \in B} that is assigned to #{a}.}
+
+

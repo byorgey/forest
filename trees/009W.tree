@@ -1,0 +1,13 @@
+\date{2026-03-09T11:40:06Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Let #{\ell : \N \to \Shp} be the function which sends all multiples of #{3} to #{\diamond}, all numbers which are one more than a multiple of #{3} to #{\triangle}, and all which are two more than a multiple of #{3} to #{\square}. That is, ##{\begin{align*}
+    \ell(3n) &= \diamond \\
+    \ell(3n+1) &= \triangle \\
+    \ell(3n+2) &= \square
+\end{align*}} This is a valid function since every natural number falls into exactly one of these three cases.}
+
+
