@@ -1,0 +1,10 @@
+\title{Onto / surjective}
+\date{2026-03-10T10:54:50Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{A function #{f : A \to B} is \em{onto} (\em{surjective}, a \em{surjection}) if “every element of #{B} is covered”, that is, ##{\forall b \in B \st \exists a \in A \st f(a) = b.} Put another way, #{f} is onto if the [range](009R) of #{f} is the same as the [codomain](009P).}
+
+

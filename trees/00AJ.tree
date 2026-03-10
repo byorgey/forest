@@ -1,0 +1,16 @@
+\date{2026-03-10T11:26:28Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Let #{f : \Z \to \Z} be defined by #{f(x) = x+1}. Is #{f} invertible?
+
+\ul{
+  \li{Check: is it one-to-one? Yes; for any #{x, y \in \Z}, if #{x+1 = y+1} then #{x = y}.}
+  \li{Onto? Yes, for any #{y \in \Z}, #{y-1 \in \Z} and #{f(y-1) = y}.}
+}
+
+Hence #{f} is invertible, and in fact, #{f^{-1}(x) = x-1}.}
+
+

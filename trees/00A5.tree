@@ -1,0 +1,10 @@
+\date{2026-03-10T10:45:33Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{h} [is injective](00A2), which we can prove as follows.}
+\proof{
+  Let #{m, n \in \N} be arbitrary natural numbers. Then we wish to prove that #{h(m) = h(n) \implies m = n}. So suppose #{h(m) = h(n)}, that is, #{2m = 2n}. Then dividing both sides by #{2} yields #{m = n}, as desired.
+}

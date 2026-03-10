@@ -1,0 +1,16 @@
+\title{Onto (surjective) functions}
+\date{2026-03-10T10:54:09Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\transclude{00A9}
+\transclude{00AA}
+\transclude{00AB}
+
+\p{Which of our [example functions](009T) #{g}, #{h}, and #{\ell} are [surjective](00A9)? For those that are not, could we make another function with the same domain and codomain which is surjective?}
+
+\transclude{00AC}
+\transclude{00AD}
+\transclude{00AE}

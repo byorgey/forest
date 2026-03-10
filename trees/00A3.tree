@@ -1,0 +1,23 @@
+\title{Proving that a function is not injective}
+\date{2026-03-10T10:38:57Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{To prove that a function is \em{not} [one-to-one / injective](00A1), we need to prove the negation:}
+
+\stmt{\neg (\forall a_1, a_2 \in A \st a_1 \neq a_2 \implies
+  f(a_1) \neq f(a_2))}
+\reason{\equiv}{De Morgan}
+\stmt{\exists a_1, a_2 \in A \st \neg (a_1 \neq a_2 \implies f(a_1)
+  \neq f(a_2))}
+\reason{\equiv}{Implication}
+\stmt{\exists a_1, a_2 \in A \st \neg (a_1 = a_2 \lor f(a_1)
+  \neq f(a_2))}
+\reason{\equiv}{De Morgan}
+\stmt{\exists a_1, a_2 \in A \st a_1 \neq a_2 \land f(a_1)
+ = f(a_2)}
+
+\p{That is, we pick #{a_1} and #{a_2} which are not equal, and show that #{f(a_1) = f(a_2)}.}
+

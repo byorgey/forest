@@ -1,0 +1,8 @@
+\title{Proving that a function is surjective}
+\date{2026-03-10T10:58:18Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{If we want to prove that a function is [onto / surjective](00A9), we let #{b} be an arbitrary element of the codomain, and show how to find a specific element #{a} of the domain such that #{f(a) = b}.}

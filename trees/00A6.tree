@@ -1,0 +1,8 @@
+\date{2026-03-10T10:47:15Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{\ell} is very much not injective (for example, every single multiple of #{3} maps to #{\diamond}). Moreover, there is no way to make an injective function with the same domain and codomain.}
+

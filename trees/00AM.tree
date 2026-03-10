@@ -1,0 +1,7 @@
+\date{2026-03-10T11:29:43Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{What about #{f : \Q \to \Q} defined by #{f(x) = 3x+2}? This looks similar to the previous example, but it is a different function! In fact this #{f} is both one-to-one and onto; #{f^{-1}(s) = \frac{s-2}{3}}.}

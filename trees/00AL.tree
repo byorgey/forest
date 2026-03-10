@@ -1,0 +1,9 @@
+\date{2026-03-10T11:28:40Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Is #{f : \Z \to \Z} defined by #{f(x) = 3x+2} invertible? No, although it is indeed one-to-one, it is not onto.  For example, there is no #{x \in \Z} such that #{f(x) = 6}; the output of #{f} will never be a multiple of #{3}.}
+
+

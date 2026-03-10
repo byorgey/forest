@@ -1,0 +1,15 @@
+\title{Motivation}
+\date{2026-03-10T10:31:15Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{What do we need to be true in order to be able to turn a function around into a valid function that goes the opposite direction?}
+
+\p{If we take any old function and reverse the direction of all the arrows, the result might not be a valid function. There are two potential problems:}
+\ol{
+  \li{Different elements of the domain can map to the same element of the codomain. If we reverse the arrows, that element of the codomain will have multiple arrows coming out of it, which is not allowed.}
+\li{Some elements of the codomain might be left out. If we turn the arrows around, these will not be assigned to anything.}
+}
+\p{We can define some special types of functions that don’t have these problems.}
+

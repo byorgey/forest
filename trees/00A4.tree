@@ -1,0 +1,10 @@
+\date{2026-03-10T10:44:11Z}
+\tag{discrete}
+\tag{draft}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{g} is not [not injective](00A3), since #{\diamond \neq \square} but #{g(\diamond) =
+g(\square) = 6}. We could easily make a different function with the same domain and codomain which is injective. For example, the function which is the same as #{g} on #{\triangle} and #{\square} but sends #{\diamond} to #{349}.}
+

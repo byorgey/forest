@@ -1,0 +1,8 @@
+\title{Proving that a function is injective}
+\date{2026-03-10T10:37:25Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{If we want to prove that a function is [one-to-one / injective](00A1), we typically use the first formulation: for arbitrary #{a_1, a_2 \in A}, we must prove #{f(a_1) = f(a_2) \implies a_1 = a_2}, which we can do by supposing #{f(a_1) = f(a_2)} and proving that #{a_1 = a_2}.}

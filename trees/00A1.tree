@@ -1,0 +1,11 @@
+\title{One-to-one / injective}
+\date{2026-03-10T10:33:56Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{A function #{f : A \to B} is \em{one-to-one} (\em{injective}, an \em{injection}) iff no two different elements of the domain map to the same element of the codomain. That is, ##{\forall a_1, a_2 \in A \st a_1 \neq a_2 \implies f(a_1) \neq f(a_2),}
+ or equivalently, taking the contrapositive,
+##{\forall a_1, a_2 \in A \st f(a_1) = f(a_2) \implies a_1 = a_2.}
+}

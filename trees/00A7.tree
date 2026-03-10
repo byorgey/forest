@@ -1,0 +1,8 @@
+\title{Checking injectivity with Disco}
+\date{2026-03-10T10:51:32Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Use Disco to check injectivity of #{g}, #{h}, #{\ell}, #{j}.  Also show checking injectivity of a function that is "mostly" injective.}

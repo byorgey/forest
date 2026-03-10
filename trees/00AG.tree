@@ -1,0 +1,9 @@
+\title{Invertible / bijective}
+\date{2026-03-10T11:22:38Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{A function #{f : A \to B} which is both [one-to-one](00A0) and [onto](00A8) (injective and surjective) is called \em{invertible} (\em{bijective}, a \em{bijection}). We write #{f^{-1} : B \to A} for the \em{inverse} of #{f}, that is, the function defined by #{f^{-1}(b) = a} if and only if #{f(a) = b}.}
+

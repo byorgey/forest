@@ -1,0 +1,9 @@
+\date{2026-03-10T11:27:46Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Is #{f : \N \to \N} defined by #{f(n) = \lfloor n/2 \rfloor} invertible? No, it is not one-to-one, since, for example, #{f(3) = f(2)}.}
+
+

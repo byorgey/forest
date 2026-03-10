@@ -1,0 +1,16 @@
+\title{One-to-one (injective) functions}
+\date{2026-03-10T10:33:26Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\transclude{00A1}
+\transclude{00A2}
+\transclude{00A3}
+
+\p{Which of our [example functions](009T) #{g}, #{h}, and #{\ell} are [injective](00A1)? For those that are not, could we make another function with the same domain and codomain which is injective?}
+
+\transclude{00A4}
+\transclude{00A5}
+\transclude{00A6}
+\transclude{00A7}

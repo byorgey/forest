@@ -1,0 +1,8 @@
+\date{2026-03-10T11:17:07Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{h} is not onto either. The range of #{h} is only the even natural numbers; all the odd natural numbers are not covered. However, we could make an onto function from #{\N} to #{\N}, for example, the function #{f(n) = n}.}
+

@@ -1,0 +1,8 @@
+\date{2026-03-10T11:17:38Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{\ell} is onto: every shape is the output of the function for some (actually, many) inputs.}
+

@@ -1,0 +1,8 @@
+\date{2026-03-10T11:02:20Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{#{g} is not onto. There are many, many elements of the domain (that is, natural numbers) which are not the output of #{g} for any input. There is no function with the same domain and codomain we could make that would be onto—the domain is too small to cover everything in the codomain!}
+
