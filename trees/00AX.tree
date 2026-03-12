@@ -1,0 +1,14 @@
+\title{Even integers are countable}
+\date{2026-03-12T14:04:12Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{The set #{2\N} of all even natural numbers is countably infinite, since #{f(n) = 2n} is a bijection between #{\N} and #{2\N}: ##{\begin{array}{cccccc}
+      \N: & 0 & 1 & 2 & 3 & \dots \\
+         & \updownarrow& \updownarrow& \updownarrow& \updownarrow \\
+      2\N: & 0 & 2 & 4 & 6 & \dots
+    \end{array}}}
+
+

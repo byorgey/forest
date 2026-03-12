@@ -1,0 +1,15 @@
+\title{Shapes are countable}
+\date{2026-03-12T14:02:55Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{The set of shapes #{\{\triangle, \square, \diamond\}} is countable since we can make a bijection to the set #{\{0,1,2\}}: ##{\begin{array}{ccc}
+      \triangle & \square & \diamond \\
+      \updownarrow & \updownarrow & \updownarrow \\
+      0 & 1 & 2
+\end{array}}
+}
+
+

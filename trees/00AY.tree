@@ -1,0 +1,19 @@
+\title{The integers are countable}
+\date{2026-03-12T14:05:31Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Is the set of integers #{\Z} countable? At first glance it might seem like it’s not, since it is infinite in \em{two} directions and #{\N} is only infinite in \em{one} direction. And indeed, if we try to list all the elements of #{\Z} in a naive way, it fails: “First list #{0}, then all the positive integers, then all the negative integers” is not a valid list, since it would take infinitely long to list all the positive integers and we would never get around to any of the negative integers.}
+\p{But #{\Z} \em{is} countable, which we can show by reordering the elements in a clever way, for example: ##{\begin{array}{ccccccccc}
+      \N: & 0 & 1 & 2 & 3 & 4 & 5 & 6 & \dots \\
+          & \updownarrow& \updownarrow& \updownarrow& \updownarrow
+                          & \updownarrow & \updownarrow& \updownarrow & \\
+      \Z: & 0 & 1 & -1 & 2 & -2 & 3 & -3 & \dots
+    \end{array}} This will eventually get to any integer we want after some finite amount of time, whether positive or negative. We could figure out an explicit formula for a bijection following this pattern, something like ##{f(n) =
+    \begin{cases}
+      -(n/2) & \text{if $n$ is even} \\ (n+1)/2 & \text{if $n$ is odd}
+    \end{cases}} but we don’t necessarily need to; just demonstrating the pattern and arguing why it will reach every integer is enough.}
+
+

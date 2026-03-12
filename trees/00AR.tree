@@ -1,0 +1,9 @@
+\title{Matching set cardinalities}
+\date{2026-03-12T13:50:08Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{Let #{A}, #{B} be sets. If there exists a [bijection](00AF) #{f : A \to B} then we say #{A} and #{B} have the same cardinality, and write #{|A| = |B|}.}
+\p{If there is an injection #{f : A \to B} then we say #{|A| \leq |B|}.}

@@ -1,0 +1,14 @@
+\title{Motivation: infinite cardinality is weird}
+\date{2026-03-12T13:47:09Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Previously we considered the function #{f : \N \to \N}, #{f(n) = 2n}; it is not onto. However, if we define #{2\N} as the set of all even natural numbers, then #{f : \N \to 2\N} defined in the same way is indeed a bijection. This is a bit strange though, because #{2\N
+\subseteq \N}, yet there can be a bijection between them, their elements can be matched up.}
+
+\p{Infinity really messes with our intuition. With finite sets, if #{A
+\subseteq B} and they are not equal, then #{|A| < |B|} and their elements can’t be matched up. But infinite sets don’t work that way. In fact, we have been using the notation #{|A|} for the cardinality of sets, but we don’t even know what that should mean for infinite sets.}
+
+\p{However, \em{matching things up} is even more fundamental than counting. It’s probably how people started counting in the first place. Let’s see if this can guide us to some ideas about the cardinality of infinite sets.}
+

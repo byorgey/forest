@@ -1,0 +1,19 @@
+\title{Motivation: matching vs counting}
+\date{2026-03-12T13:40:28Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{You are in a large room with thousands of people.  Each person is
+wearing either a red shirt or a blue shirt.  You want to know whether
+there are more people wearing red shirts, more with blue shirts, or an
+equal number.  You have only five minutes and a microphone.  What
+should you do?}
+
+\p{There are many outside-the-box answers to this riddle, but one idea that works well is to tell everyone to pair up: if you have a blue shirt, look for someone with a red shirt, and vice versa.  Once you have paired up with an opposite-color shirt, sit down.  Pretty soon it should be clear whether the people still standing up have blue shirts or red shirts.}
+
+\p{Another similar puzzle is the following: you have a bunch of sheep and want to make sure you still have all of your sheep at the end of the day. However, your language has no words for numbers.  What should you do?}
+
+\p{One idea is to use a bunch of pebbles.  As your sheep leave to pasture at the start of the day, place one pebble in a pile for each sheep.  When the sheep return, move one pebble from the pile to a different pile for each sheep.}
+
+\p{These examples illustrate that in some sense, \em{matching things up} is more fundamental than counting.}

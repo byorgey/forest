@@ -1,0 +1,24 @@
+\title{#{\N \times \N} is countable}
+\date{2026-03-12T14:07:49Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Is #{\N \times \N} countable?}
+\p{The elements of #{\N \times \N} are ordered pairs of two natural numbers, for example, #{(3,5)}. We can imagine them in a 2D grid: ##{\begin{array}{cccc}
+      \vdots &  &   & ⋰ \\
+      (2,0) & (2,1) & (2,2) & \\
+      (1,0) & (1,1) & (1,2) & \\
+      (0,0) & (0,1) & (0,2) & \dots
+    \end{array}}}
+\p{At first it seems like the answer should be no. Each row of the 2D grid is the same size as a complete copy of #{\N}; and we have infinitely many rows! How could infinitely many copies of #{\N} be the same size as #{\N}?}
+\p{And indeed, if we try listing the elements by row or column it definitely doesn’t work. “First, list all the elements in row #{0}; then, list all the elements in row #{1}; then row #{2}; and so on”—we will spend an infinitely long time just listing elements of the form #{(0,n)} and never even get around to pairs starting with anything other than #{0}.}
+\p{However, surprisingly, #{\N \times \N} \em{is} countable! Again, we can show this by listing the pairs in a clever order that guarantees we will reach any specific pair in a finite amount of time. The key idea is to list them by \em{diagonals}, that is, we list the pairs #{(x,y)} in order of the sum #{x+y}. First we list all the pairs with sum #{0} (there’s only one, #{(0,0)}), then all the pairs with sum #{1} (there are two of them, #{(1,0)} and #{(0,1)}), then the pairs with sum #{2}, and so on. We end up with a list that looks like this: ##{\begin{array}{ccccccccc}
+      \N: & 0 & 1 & 2 & 3 & 4 & 5 & 6 & \dots \\
+          & \updownarrow& \updownarrow& \updownarrow& \updownarrow
+                          & \updownarrow & \updownarrow& \updownarrow & \\
+      \N \times \N: & (0,0) & (1,0) & (0,1) & (2,0) & (1,1) & (0,2) & (3,0) & \dots
+    \end{array}}}
+
+

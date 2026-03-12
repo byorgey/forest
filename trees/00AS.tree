@@ -1,0 +1,7 @@
+\date{2026-03-12T13:51:01Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Note that this definition makes sense for finite sets and the intuition we already have for what the cardinality of a finite set is. If there is a bijection between two finite sets, then they definitely have the same (natural number) size; if there is an injection from #{A} to #{B}, then #{B} definitely has to be at least as big as #{A}.}

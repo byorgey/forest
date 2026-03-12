@@ -1,0 +1,8 @@
+\title{Countable and countably infinite sets}
+\date{2026-03-12T13:52:35Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{A set #{A} is \em{countable} if it [has the same cardinality as](00AR) (\ie can be put into [bijection](00AF) with) a subset of #{\N}. Note that #{\N} is a subset of itself: in particular, we say #{A} is \em{countably infinite} if #{|A| = |\N|}.}

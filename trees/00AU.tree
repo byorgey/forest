@@ -1,0 +1,16 @@
+\title{Finite sets are countable}
+\date{2026-03-12T13:56:02Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Clearly every finite set is [countable](00AT), since we can match up the elements of a finite set with, say, some finite prefix of the natural numbers #{\{0, 1, 2, 3, \dots, n\}}.}
+
+##{\begin{array}{ccccccc}
+  A: & a_0 & a_1 & a_2 & a_3 & \dots & a_n \\
+    & \updownarrow& \updownarrow& \updownarrow& \updownarrow& \updownarrow& \updownarrow \\
+  \N: & 0 & 1 & 2 & 3 & \dots & n
+\end{array}}
+
+\transclude{00AW}

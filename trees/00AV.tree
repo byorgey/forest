@@ -1,0 +1,23 @@
+\title{Countably infinite sets}
+\date{2026-03-12T13:58:26Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{For [countably infinite sets](00AT), the situation looks the same, but there is no endpoint:} ##{\begin{array}{cccccc}
+  A: & a_0 & a_1 & a_2 & a_3 & \dots \\
+    & \updownarrow& \updownarrow& \updownarrow& \updownarrow& \updownarrow \\
+  \N: & 0 & 1 & 2 & 3 & \dots
+\end{array}}
+\p{We can think of this scenario in several equivalent ways:
+\ul{
+  \li{\p{#{A} is countable if it has a bijection to (a subset of) #{\N}. (definition)}}
+  \li{\p{#{A} is countable if its elements can be put in a list. (We can always number the elements of a list #{0, 1, 2, \dots}.)}}
+  \li{\p{#{A} is countable if we can write (or imagine) a program that prints the elements of #{A} one after another, in such a way that any given element of #{A} will eventually be printed after some finite amount of time (if we are willing to wait long enough).}}
+}
+}
+
+\transclude{00AX}
+\transclude{00AY}
+\transclude{00AZ}
