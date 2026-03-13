@@ -1,0 +1,8 @@
+\date{2026-03-13T20:53:50Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Consider the recurrence ##{a_n = 2a_{n-1} - a_{n-2}.} In general, there are many sequences that satisfy this recurrence. For example, let’s pick #{a_0 = 3} and #{a_1 = 13} and see what we get: ##{3, 13, 23, 33, 43, 53, \dots} We could conjecture that #{a_n = 10n + 3} is a closed form for this sequence, and prove it by substituting it for #{a_n} in the recurrence to see if it checks out.}
+

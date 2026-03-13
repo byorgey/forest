@@ -1,0 +1,9 @@
+\date{2026-03-13T20:43:10Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+\p{You sometimes see the notation #{\{a_n\}} to refer to a sequence, but it’s terrible notation (because it looks like a set, but isn’t) and I won’t use it, even though it is (somewhat) standard.}
+
+

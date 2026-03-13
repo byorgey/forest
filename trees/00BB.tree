@@ -1,0 +1,8 @@
+\title{Recurrence}
+\date{2026-03-13T20:47:09Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{A \em{recurrence} for a [sequence](00B1) is a rule expressing #{a_n} using one or more previous terms of the sequence.}

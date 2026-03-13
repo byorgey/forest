@@ -1,0 +1,15 @@
+\title{Recurrences}
+\date{2026-03-13T20:46:23Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{When we define a sequence via a formula for #{a_n} in terms of #{n}, we say it is in \em{closed form}. Another way to define a sequence is via a \em{recurrence}.}
+
+\transclude{00BB}
+\transclude{00BD}
+\transclude{00BC}
+\transclude{00BE}
+\transclude{00BF}
+\transclude{00BG}

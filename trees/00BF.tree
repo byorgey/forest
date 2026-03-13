@@ -1,0 +1,9 @@
+\date{2026-03-13T20:53:33Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{#{a_n = n \cdot a_{n-1}}, #{a_0 = 1}. These are the factorial numbers, #{a_n = n!}.}
+
+

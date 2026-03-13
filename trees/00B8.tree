@@ -1,0 +1,12 @@
+\title{Arithmetic sequence}
+\date{2026-03-13T20:44:46Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Consider the sequence ##{2, 5, 8, 11, 14, 17, \dots} Evidently each term in the sequence is three more than the previous term. This sequence can also be described by #{a_n = 2 + 3n}, starting at #{a_0}.}
+
+\p{This type of sequence, in which there is a common difference between consecutive terms, is known as an \em{arithmetic} sequence.}
+
+

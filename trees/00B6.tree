@@ -1,0 +1,9 @@
+\date{2026-03-13T20:44:02Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{The sequence defined by #{a_n = 5} begins ##{5, 5, 5, 5, 5, \dots}}
+
+

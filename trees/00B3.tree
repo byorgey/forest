@@ -1,0 +1,8 @@
+\date{2026-03-13T20:42:01Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{In other words, a [sequence](00B2) can also be thought of as a list where each element has a number: ##{a_0, a_1, a_2, a_3, \dots} The subset of #{\N} serves as a set of \em{indices}; we often use #{\N} itself, or sometimes #{\Z^+ = \{1, 2, 3, \dots\}}, or a finite set like #{\{0, 1, 2, \dots, n-1\}}.}
+

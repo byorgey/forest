@@ -1,0 +1,11 @@
+\date{2026-03-13T20:47:35Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{What sequences are described by the recurrence ##{a_n = 3a_{n-1}?} The \em{solutions} to this recurrence are all geometric sequences with a common ratio of #{3}. For example, one such sequence would be ##{1, 3, 9, 27, 81, \dots} Of course, another is the example #{2, 6, 18, \dots} that we saw previously.}
+
+\p{If we specify a value for #{a_0}, say, #{a_0 = 2}, then the sequence is determined completely: from #{a_0} we can compute a value for #{a_1}; then from #{a_1} we can compute #{a_2}, and so on.}
+
+

@@ -1,0 +1,8 @@
+\title{Sequence}
+\date{2026-03-13T20:41:42Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{A \em{sequence} is a function from #{\N} (or a subset of #{\N}) to a set #{A}. We use subscript notation like #{a_n}, #{b_n} to denote the image of #{n}, the #{n}th term of the sequence.}

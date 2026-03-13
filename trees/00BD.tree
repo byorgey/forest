@@ -1,0 +1,7 @@
+\date{2026-03-13T20:48:54Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{You will sometimes hear the term \em{recurrence relation} used in place of \em{recurrence}.  This phrase is confusing, since a "recurrence relation" is not a [relation](0089) (it just \em{relates} terms of a sequence to previous terms).  I will try to consistently use the term \em{recurrence}.}

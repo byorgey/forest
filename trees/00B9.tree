@@ -1,0 +1,10 @@
+\title{Geometric sequence}
+\date{2026-03-13T20:45:26Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Consider the sequence ##{2, 6, 18, 54, 162, \dots} In this case, #{a_n = 2 \cdot 3^n} for #{n \geq 0}. This type of sequence, with a common ratio between consecutive terms, is known as a \em{geometric} sequence.}
+
+
