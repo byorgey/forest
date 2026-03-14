@@ -9,17 +9,15 @@
 \transclude{advanced}
 
 \put\transclude/expanded{false}
-\transclude{0026}
-\transclude{0024}
-\transclude{002C}
-\transclude{002K}
-\transclude{002R}
-\transclude{0045}
-\transclude{004E}
-\transclude{0057}
+\transclude{0026}   % Intro
+\transclude{0024}   % Types
+\transclude{002C}   % Natural numbers, integers, and closure
+\transclude{002K}   % Functions + tests in Disco
+\transclude{00BH}   % Propositional logic
+\transclude{0057}   % Proofs
 % \transclude{007U}
-\transclude{0060}
-\transclude{0089}
-\transclude{009O}
-\transclude{00AN}
-\transclude{00B0}
+\transclude{0060}   % Set theory
+\transclude{0089}   % Relations
+\transclude{009O}   % Functions
+\transclude{00AN}   % Countable + uncountable sets
+\transclude{00B0}   % Sequences, recurrences, and sums

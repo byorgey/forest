@@ -1,0 +1,13 @@
+\title{Fibonacci numbers}
+\date{2026-03-14T14:08:33Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+##{0, 1, 1, 2, 3, 5, 8, 13, 21, 34, \dots}
+
+\p{These are the famous \em{Fibonacci numbers}, described by the recurrence ##{\begin{align*}
+    F_0 &= 0 \\
+    F_1 &= 1 \\
+    F_n &= F_{n-1} + F_{n-2}.
+\end{align*}} There is a closed form for #{F_n} although we probably won’t derive it in this class. In fact, ##{F_n = \frac 1 {\sqrt 5} \left( \varphi^n - \hat\varphi^n \right)} where #{\varphi} and #{\hat\varphi} are respectively the positive and negative solutions of #{x^2 - x - 1 = 0}, that is, #{(1 \pm \sqrt 5)/2}. If you’re interested in learning where this comes from, just ask!}

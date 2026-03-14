@@ -1,0 +1,12 @@
+\title{Some example sequences}
+\date{2026-03-14T14:02:58Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Can you describe the following sequences either with a closed form or
+a recurrence?}
+
+\transclude{00BJ}
+\transclude{00BK}
+\transclude{00BL}

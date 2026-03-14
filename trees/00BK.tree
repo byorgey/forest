@@ -1,0 +1,18 @@
+\title{Triangular numbers}
+\date{2026-03-14T14:04:46Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+##{0, 1, 3, 6, 10, 15, 21, \dots}
+
+\p{These are the \em{triangular numbers}, because #{a_n} is the number of dots in an equilateral triangle with #{n} dots on a side.}
+
+\p{Notice how the gap between successive terms increases by #{1} every time. This satisfies the recurrence
+
+##{\begin{align*}
+    \triangle_0 &= 0 \\
+    \triangle_n &= \triangle_{n-1} + n
+\end{align*}}
+
+There is also a closed form for #{\triangle_n} which we’ll derive shortly.}

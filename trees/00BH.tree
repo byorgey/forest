@@ -1,0 +1,9 @@
+\title{Propositional logic}
+\date{2026-03-14T13:57:22Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\transclude{002R}   % Intro to propositional logic
+\transclude{0045}   % Algebraic laws for prop logic
+\transclude{004E}   % Predicates and quantifiers
