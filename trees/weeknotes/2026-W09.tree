@@ -5,44 +5,5 @@
 
 \put\transclude/numbered{false}
 
-\subtree{
-  \title{Swarm module export}
-  \p{Earlier this week I was hacking on [Swarm](https://github.com/swarm-game/swarm), adding an \code{export} construct that allows you to re-export either individual names or entire modules from a given module.  I thought this was going to be easy, but I couldn't figure out how to make it work.  I finally realized that I had been Doing It Wrong™: after typechecking, I was doing a second pass over the type-annotated syntax tree for a module to collect up the names and types of things that should be exported.  But with \code{export} in the mix, there was no longer enough information to figure this out just by looking at the syntax (even when fully type-annotated).  The correct (and obvious in retrospect) thing to do is to instead collect up exported names and their types \em{during} typechecking.}
-}
-
-\subtree{
-  \title{Theorems with both constructive and non-constructive proofs}
-  \p{I've been working on writing up some advanced, optional notes for my Discrete Mathematics students (mostly second-year undergraduates) on classical vs constructive logic, and I wanted a good example of a theorem with both non-constructive and constructive proofs.}
-
-  \p{A typical example of a non-constructive proof is of the infinitude of primes: for any natural number #{n}, we consider the number #{n! + 1}: either it is prime, or it is divisible by one which must be larger than #{n}, since #{n! + 1} is clearly not divisible by anything #{\leq n}.  This is supposedly nonconstructive since it uses LEM to conclude that #{n!+1} is either prime or not, but this is totally unsatisfactory to me.  Since primality is decidable, this instance of LEM is actually constructively provable, and the whole proof immediately becomes an algorithm for computing a prime larger than any #{n}.}
-
-  \p{(Another typical "example" is the so-called proof by contradiction that #{\sqrt{2}} is irrational; but of course, it is not a proof by contradiction at all.)}
-
-  \p{I [asked for examples on Mastodon](https://mathstodon.xyz/@byorgey/116161000975437554), which led to a very interesting discussion.}
-
-  \ul{
-    \li{[Henrý Ólson suggested](https://mathstodon.xyz/@nemo@camp.crates.im/116161539623110695) the theorem "there exist irrational #{a} and #{b} such that #{a^b} is rational".
-    \ul{
-      \li{The nonconstructive proof uses LEM: #{\sqrt{2}^{\sqrt{2}}} is either rational or not; if so, it satisfies the theorem, and if not, #{(\sqrt{2}^{\sqrt{2}})^{\sqrt{2}} = 2} does.}
-      \li{Constructively, we can show that #{\lg 9} is irrational and that #{(\sqrt 2)^{\lg 9} = 3}.}
-    }
-    This is covered by Andrej Bauer in XXX, but I had forgotten it.  It's a pretty good example to show to undergraduates, since the proof with LEM is very clearly nonconstructive, and the whole thing (including proofs of irrationality for #{\sqrt{2}} and #{\lg 9}) requires only some basic number theory.
-    }
-
-    \li{I came up with the theorem "For every natural #{n}, there exists #{m > n} which is not square".
-    \ul{
-      \li{Both the nonconstructive and constructive proofs depend on the (constructively proved) lemma that if #{m} is square then #{m+1} is not.}
-      \li{The nonconstructive proof proceeds by contradiction: suppose every #{m > n} is square.  Then in particular #{n+1} and #{n+2} are square, but the lemma immediately yields a contradiction.}
-      \li{The constructive proof considers #{(n+1)^2+1}, which is immediately seen to be non-square by the lemma.}
-    }
-    Jim Kingdon [protested](https://mathstodon.xyz/@soaproot@sfba.social/116163371993733542), not unreasonably, that the nonconstructive proof has a similar problem as the proof of infinitude of primes. Since the property of being square is decidable, one can turn the nonconstructive proof into a constructive one fairly easily: just decide whether #{n+1} is a square; if not, we have our non-square, and if so, the lemma tells us #{n+2} must be non-square.  This is true, but I still like this example a bit better than the infinitude of primes: that one directly uses an instance of LEM which is constructively provable, whereas this one uses a proof by contradiction.
-    }
-
-    \li{Jim Kingdon [also gave another example](https://mathstodon.xyz/@soaproot@sfba.social/116163239275063779), [Bézout's identity](https://en.wikipedia.org/wiki/Bézout's_identity).  This seems like a nice example, and one that is accessible to undergraduates, but I'm still confused about it!
-    \ul{
-      \li{The constructive proof is via the [Extended Euclidean Algorithm](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm).}
-      \li{The typical non-constructive proof considers the set ##{\{ax + by \mid a, b \in \Z, ax + by > 0\}} and notes that it must have a smallest element by the well-ordering property, then proceeds to prove that this smallest positive element is in fact the GCD of #{a} and #{b}.  Intuitively, this seems clearly non-constructive, since it does not actually help you compute the smallest element of the set.  But I am still a bit confused about where exactly a classical axiom ends up getting used.  The version of the well-ordering principle which says that \em{every} set has a well-order implies the Axiom of Choice; but we surely don't need such a big hammer here.  We are simply using the version that applies to subsets of natural numbers, which is constructively provable (in fact, it is logically equivalent to induction).  The answer seems to be that the [constructive well-ordering principle for the natural numbers requires membership of the set to be decidable](https://unimath.github.io/agda-unimath/elementary-number-theory.well-ordering-principle-natural-numbers.html), and deciding whether there exist integers #{a} and #{b} such that #{ax + by = n} for a particular #{n} is nontrivial.  If you just throw LEM at it, you get the nonconstructive proof.  Or if you work harder, you can actually decide this via the Extended Euclidean Algorithm.}
-    }
-    }
-  }
-}
+\transclude{00BN}
+\transclude{00BM}

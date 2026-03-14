@@ -1,0 +1,4 @@
+\author{brentyorgey}
+\date{2026-03-14T21:35:27Z}
+\title{Swarm module export}
+\p{Earlier this week I was hacking on [Swarm](https://github.com/swarm-game/swarm), adding an \code{export} construct that allows you to re-export either individual names or entire modules from a given module.  I thought this was going to be easy, but I couldn't figure out how to make it work.  I finally realized that I had been Doing It Wrong™: after typechecking, I was doing a second pass over the type-annotated syntax tree for a module to collect up the names and types of things that should be exported.  But with \code{export} in the mix, there was no longer enough information to figure this out just by looking at the syntax (even when fully type-annotated).  The correct (and obvious in retrospect) thing to do is to instead collect up exported names and their types \em{during} typechecking.}

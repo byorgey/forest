@@ -1,0 +1,54 @@
+\title{Weeknotes for 13 March 2026 (week 10)}
+\author{brentyorgey}
+\date{2026-03-10}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{AI vegetarian}
+  \p{I've been thinking for a while about publishing an official statement regarding my stance on LLMs (and other generative AI systems), but it always felt too daunting to express what I wanted to express.  But I recently found several things other people had written that captured my position pretty well, so I [finally published a statement](009L).  I still want to write something for my students in particular, but I'm still thinking about that.}
+}
+
+\subtree{
+  \title{Blog post series on constructive logic}
+
+  \p{Following last week's discussion on [[00BM]], I realized that there is something of a gap in the pedagogical materials available on constructive logic, and the difference between classical and constructive logic. There are many hand-wavy, intuitive explanations of constructive vs non-constructive proofs in, say, slide decks used for teaching undergraduate Discrete Math courses.  There is also lots of advanced material, such as Andrej Bauer's paper [Five Stages of Accepting Constructive Mathematics](https://math.andrej.com/2016/10/10/five-stages-of-accepting-constructive-mathematics/), the [HoTT book](https://homotopytypetheory.org/book/), and others.  However, there does not seem to be much intermediate-level material.  So I plan to write a series of blog posts aimed at people who are familiar with typed functional programming, and perhaps have even heard of the Curry-Howard correspondence, and perhaps have even played with a theorem prover such as Agda or Lean, but who don't know the actual formal details of classical vs constructive logic.}
+
+  \p{Earlier this week I started drafting some ideas on paper; I hope this week or next to find some time to start writing it up more formally.}
+}
+
+\subtree{
+  \title{Disco: exhaustiveness checking for arithmetic patterns}
+  \p{A couple summers ago, my student [[colin-phillips]] implemented exhaustiveness checking for [[000N]], following [Lower your guards: a compositional pattern-match coverage checker](https://al.radbox.org/doi/10.1145/3408989) by Graf, Peyton Jones, and Scott.  So it can now do things like
+\pre\verb<<<|
+Disco> f : Unit + (Bool * Nat) -> Int
+Disco> f(right(False, n)) = 3
+Warning: the function f is undefined for some inputs. For example:
+f(left(■)) = ...
+f(right(true, 0)) = ...
+f(right(true, 1)) = ...<<<
+  However, Disco also has \em{arithmetic patterns}, like
+\pre\verb<<<|
+f : N -> N
+f(2n) = n + 1
+f(2n+1) = 3<<<
+but doing coverage checking for these is tricky in general. Quick, for what values (if any) is the below (partial) function undefined?
+\pre\verb<<<|
+f : N -> N
+f(3n) = 0
+f(1+5n) = 1
+f(2n+2) = 2
+f(n+12) = 3<<<
+My student [[katherine-reid]] was working on a library for solving this problem, via the theory of [semilinear sets](https://en.wikipedia.org/wiki/Generalized_arithmetic_progression#Semilinear_sets), but we never quite finished incorporating it into the Disco coverage checker.  Since I'm using Disco to teach again this semester, I've started working on this again.  This week, I mostly just spent some time understanding the existing code and writing down a list of the reamining tasks.  I'm optimistic I can get it polished up and merged before the end of the semester.
+  }
+
+\p{(\em{Answer: the function is undefined for #{5} and #{7}.})}
+}
+
+\subtree{
+  \title{Swarm export and arrays}
+
+  \p{Finally, over in [[000O]] land, I've continued polishing up [[00BN]].  I've also started working on adding an [immutable array type](https://github.com/swarm-game/swarm/issues/98) to the language—not difficult, but enjoyable.}
+}
+
