@@ -83,8 +83,17 @@
   }
 }
 
-%     Module 4: Recursion + Induction
-%         R1: I can compute the terms of a sequence defined via a recurrence, and implement a recurrence as a recursive Disco function.
+\subtree{
+  \title{Recursion + Induction}
+  \ul{
+    \li{R1: I can compute the terms of a sequence defined via a recurrence, and implement a recurrence as a recursive Disco function.}
+    \ul{
+      \li{[[00B1]]}
+      \li{[[00BA]]}
+    }
+  }
+}
+
 %         R2: I can evaluate sums involving arithmetic and geometric series.
 %         P4: I can write the outline of a proof by (weak) induction or strong induction.
 %         P5: I can reproduce proofs by induction.
