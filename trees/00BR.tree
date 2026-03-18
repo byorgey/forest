@@ -1,0 +1,18 @@
+\title{Fibonacci numbers}
+\date{2026-03-18T13:31:14Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\pre\verb<<<|
+fib : N -> N
+fib(0) = 0
+fib(1) = 1
+fib(n) = fib(n .- 1) + fib(n .- 2)
+<<<
+
+\pre\verb<<<|
+Disco> each(fib, [0..20])
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765]
+<<<

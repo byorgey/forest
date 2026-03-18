@@ -1,0 +1,14 @@
+\date{2026-03-18T13:54:25Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\title{Triangular numbers}
+\p{What is the #{n}th triangular number, ##{\triangle_n = \sum_{j = 1}^n j
+  ?}}
+\p{We can use a cute trick to compute it. First, write out the sum twice, but reversed the second time. Then add the two equations. ##{\begin{array}{ccccccccccc}
+    \triangle_n & = & 1 & + & 2 & + & \dots & + & (n-1) & + & n \\
+    +\triangle_n & = & n & + & (n-1) & + & \dots & + & 2 & + & 1 \\ \hline
+    2\triangle_n & = & (n+1) & + & (n+1) & + & \dots & + & (n+1) & + & (n+1)
+  \end{array}} We get #{n} copies of #{n+1}, so #{2\triangle_n = n(n+1)}, and hence ##{\triangle_n = \frac{n(n+1)}{2}.}}
+

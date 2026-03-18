@@ -1,0 +1,15 @@
+\title{Recurrences in Disco}
+\date{2026-03-18T13:16:57Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Since a [sequence](00B1) is formally defined as a function, we can easily define sequences in Disco.}
+
+\transclude{00BP}
+
+\p{We can also define sequences via [recurrence](00BA), simply by defining a Disco function that calls itself.}
+
+\transclude{00BQ}
+\transclude{00BR}

@@ -4,6 +4,8 @@
 
 \import{discrete-macros}
 
+\p{Informally, a \em{sequence} is just a list of things (typically numbers).  For example, ##{2, 5, 8, 11, 14, \dots.} Formally, we can define a sequence as follows.}
+
 \transclude{00B2}
 \transclude{00B3}
 \transclude{00B4}

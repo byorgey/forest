@@ -1,0 +1,8 @@
+\date{2026-03-18T13:51:51Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\title{Sum of a constant}
+\p{First, notice that ##{\sum_{a \leq n \leq b} 1 = 1 + 1 + 1 + \dots + 1 = b-a+1.} Why #{b-a+1} and not #{b-a}, you ask? This is the “fence post problem”: if we number the posts of a fence, how many fence posts are there between post #{a} and post #{b}? If there is one post every meter, then the \em{distance} from post #{a} to post #{b} is certainly #{b-a} meters. But if we try to match up a post to each meter-long section of fence, we find that we have one post left over. For example, if we match up each meter-long section of fence with the post on its left, then the post at the very end is not matched with any section. Hence, the \em{number of posts} from #{a} to #{b} is one more than the number of sections.}
+

@@ -1,0 +1,8 @@
+\date{2026-03-18T13:49:04Z}
+\tag{discrete}
+\taxon{Notation}
+
+\import{discrete-macros}
+
+\p{I actually prefer the notation ##{\sum_{i \leq n \leq j}
+  a_n} because we get to reuse familiar notation and we can apply a lot of our intuition and knowledge about dealing with inequalities to successfully manipulating sums.}

@@ -1,0 +1,20 @@
+\date{2026-03-18T13:55:22Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\title{Sum of an arithmetic sequence}
+\taxon{Example}
+\p{We can now compute the result of [our previous example](00BW).}
+\p{Compute ##{\sum_{0 \leq n \leq 49} (2n+1).} We can now compute as follows:}
+    \stmt{\displaystyle \sum_{0\leq n \leq 49} (2n+1)}
+    \reason{=}{[sum of a sum](00C0)}
+    \stmt{\displaystyle \left(\sum_{0 \leq n \leq 49} 2n\right) + \left(\sum_{0 \leq n \leq 49} 1\right)}
+    \reason{=}{[factor out constant](00BZ) #{2}, [sum of a constant](00BY)}
+    \stmt{\displaystyle 2 \left(\sum_{0 \leq n \leq 49} n\right) + (49 - 0 +
+      1)}
+    \reason{=}{[triangular number formula](00C1)}
+    \stmt{\displaystyle 2\frac{49(49 + 1)}{2} + 50}
+    \reason{=}{arithmetic}
+    \stmt{2500.}
+

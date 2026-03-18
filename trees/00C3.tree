@@ -1,0 +1,15 @@
+\title{Another arithmetic sequence}
+\date{2026-03-18T13:59:53Z}
+\tag{discrete}
+\tag{draft}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Evaluate: ##{\sum_{5 \leq n \leq 22} 3n.}}
+
+\stmt{\displaystyle \sum_{5 \leq n \leq 22} 3n}
+\reason{=}{factor out a constant}
+\stmt{\displaystyle 3 \left( \sum_{5 \leq n \leq 22} n \right)}
+\reason{=}{foo}
+\stmt{\displaystyle 3 \left( \left( \sum_{1 \leq n \leq 22} n \right) - \left( \sum_{1 \leq n \leq 4} n \right) \right)}

@@ -1,0 +1,9 @@
+\title{Motivation}
+\date{2026-03-18T13:36:21Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{In many cases, one of the things we want to do with a [sequence](00B1) is \em{add} the terms of the sequence.}
+

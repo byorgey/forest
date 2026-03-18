@@ -1,0 +1,10 @@
+\date{2026-03-18T13:52:54Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\title{Factoring out constants}
+\p{##{\sum_n ka_n = k \sum_n a_n} This works as long as #{k} is a constant \em{with respect to #{n}}, that is, #{k} does not contain or depend on #{n} at all. #{k} does not have to be a number; it could be anything at all that does not depend on #{n}. This rule is telling us that if we are adding up a bunch of terms, and every term is #{k} times something, we can factor out all the #{k}’s and simply multiply once by #{k} at the end. If we write out what the #{\Sigma}-notation means, this should become clear: ##{ka_0 +
+  ka_1 + ka_2 + \dots = k(a_0 + a_1 + a_2 + \dots)}}
+\p{Notice, the fact that #{k} does not depend on #{n} is what guarantees that all the #{k}’s will all be \em{the same}, unlike the #{a_n}’s which may all be different.}
+

@@ -5,7 +5,7 @@
 
 \import{discrete-macros}
 
-\p{When we define a sequence via a formula for #{a_n} in terms of #{n}, we say it is in \em{closed form}. Another way to define a sequence is via a \em{recurrence}.}
+\p{When we define a [sequence](00B1) via a formula for #{a_n} in terms of #{n}, we say it is in \em{closed form}. Another way to define a sequence is via a \em{recurrence}.}
 
 \transclude{00BB}
 \transclude{00BD}

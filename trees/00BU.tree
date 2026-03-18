@@ -1,0 +1,9 @@
+\title{#{\Sigma} notation}
+\date{2026-03-18T13:47:23Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{We use the notation ##{\sum_{n=i}^j a_n} to denote the sum of the sequence ##{a_i + a_{i+1} + a_{i+2} + \dots + a_j.} That is, we add up each #{a_n} with #{n} taking on the values #{i}, #{i+1}, and so on up to #{j}. #{n} is the , #{i} is the and #{j} is the . #{\Sigma} is a capital Greek letter Sigma, and stands for #{\Sigma}um.}
+

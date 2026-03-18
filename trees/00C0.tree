@@ -1,0 +1,11 @@
+\date{2026-03-18T13:53:43Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\title{Summing a sum}
+\p{##{\sum_n (a_n + b_n) = \left(\sum_n a_n\right) + \left(\sum_n
+    b_n\right)} This follows because addition is commutative and associative. Written out, the above law is really just saying: ##{(a_0 + b_0) + (a_1 + b_1)
+  + (a_2 + b_2) + \dots = (a_0 + a_1 + a_2 + \dots) + (b_0 + b_1 + b_2
+  + \dots)} \em{i.e.} we are just putting the #{a_n}’s and #{b_n}’s in a different order.}
+

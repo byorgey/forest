@@ -1,0 +1,11 @@
+\date{2026-03-18T13:50:02Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Write #{1+3+5+7+ \dots + 99} using #{\Sigma}-notation.}
+\p{If we call the first term #{a_0}, this is a sum of terms with closed form #{a_n = 2n+1}, and the last term is #{a_{49}}, so we have ##{\sum_{0 \leq n \leq 49} (2n+1).}}
+
+\p{Now, how could we actually evaluate this sum?  Let's develop some
+general techniques and then [come back to attack it later](00C2).}

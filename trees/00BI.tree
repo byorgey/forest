@@ -4,8 +4,8 @@
 
 \import{discrete-macros}
 
-\p{Can you describe the following sequences either with a closed form or
-a recurrence?}
+\p{Can you describe the following [sequences](00B1) either with a closed form or
+a [recurrence](00BA)?}
 
 \transclude{00BJ}
 \transclude{00BK}
