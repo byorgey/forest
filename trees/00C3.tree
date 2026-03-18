@@ -11,5 +11,9 @@
 \stmt{\displaystyle \sum_{5 \leq n \leq 22} 3n}
 \reason{=}{factor out a constant}
 \stmt{\displaystyle 3 \left( \sum_{5 \leq n \leq 22} n \right)}
-\reason{=}{foo}
+\reason{=}{sum from #{5} to #{22} is the same as #{1} to #{22} minus #{1} to #{4}}
 \stmt{\displaystyle 3 \left( \left( \sum_{1 \leq n \leq 22} n \right) - \left( \sum_{1 \leq n \leq 4} n \right) \right)}
+\reason{=}{triangular number formula, twice}
+\stmt{\displaystyle 3 \left( \frac{22 \cdot 23}{2} - \frac{4 \cdot 5}{2} \right)}
+\reason{=}{arithmetic}
+\stmt{729}
