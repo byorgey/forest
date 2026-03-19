@@ -1,0 +1,8 @@
+\title{Powers of two}
+\date{2026-03-19T19:23:16Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Consider the sum ##{1 + 2 + 2^2 + 2^3 + \dots + 2^n.} This is a geometric series with #{r = 2}.  Hence the sum is ##{\frac{2^{n+1} - 1}{2 - 1} = 2^{n+1} - 1.}}

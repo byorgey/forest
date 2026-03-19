@@ -1,0 +1,16 @@
+\date{2026-03-19T19:22:48Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\title{Sum of a geometric sequence}
+\p{What about a geometric sequence such as #{a_n = r^n}, that is, ##{1 + r
+  + r^2 + r^3 + \dots + r^n?} We can use a similar kind of trick as the one we used to find a closed form for triangular numbers. This time, we multiply by #{r} and then subtract: ##{\begin{array}{ccccccccccccc}
+    S & = & 1 & + & r & + & r^2 & + & \dots & + & r^n && \\
+    rS & = &  &   & r & + & r^2 & + & \dots & + & r^n & + & r^{n+1} \\
+    \hline
+    S - rS & = & 1 & & & & & & & & & - & r^{n+1}
+  \end{array}} Solving for #{S} yields ##{S = \frac{1 - r^{n+1}}{1-r} =
+  \frac{r^{n+1} - 1}{r - 1}.}}
+
+

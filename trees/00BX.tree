@@ -5,9 +5,11 @@
 
 \import{discrete-macros}
 
-\transclude{00BY}
-\transclude{00BZ}
-\transclude{00C0}
-\transclude{00C1}
-\transclude{00C2}
-\transclude{00C3}
+\transclude{00BY}   % Sum of a constant
+\transclude{00BZ}   % Factoring constants
+\transclude{00C0}   % Summing a sum
+\transclude{00C1}   % Triangular numbers
+\transclude{00C2}   % Example: summing an arithmetic sequence
+\transclude{00C3}   % Example: another arithmetic sequence
+\transclude{00C4}   % Geometric series
+\transclude{00C5}   % Example: powers of 2

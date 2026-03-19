@@ -1,0 +1,23 @@
+\date{2026-03-19T19:30:04Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{As another example, consider the recurrence ##{\begin{align*}
+    p_0 &= 0 \\
+    p_n &= 2p_{n-1} + 1
+\end{align*}}
+We have [seen this recurrence before](00BE), and found a closed form just by looking at terms of the sequence and noticing a pattern.  But we can derive the closed form more directly by unfolding:
+##{\begin{align*}
+    p_n &= 2p_{n-1} + 1 \\
+    &= 2(2p_{n-2} + 1) + 1 \\
+    &= 2^2 p_{n-2} + 2 + 1 \\
+    &= 2^2 (2p_{n-3} + 1) + 2 + 1 \\
+    &= 2^3 p_{n-3} + 2^2 + 2 + 1 \\
+    &= \dots \\
+    &= 2^k p_{n-k} + 2^{k-1} + 2^{k-2} + \dots + 2 + 1 \\
+    &= 2^k p_{n-k} + 2^k - 1
+\end{align*}} The last step follows because #{2^{k-1} + 2^{k-2} + \dots + 1} is the [sum of a geometric sequence](00C5) with ratio #{r = 2}. When #{k = n}, this becomes ##{p_n = 2^n p_{n-n} + 2^n - 1 = 2^n - 1} since #{p_0 = 0}.}
+
+

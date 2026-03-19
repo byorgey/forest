@@ -5,8 +5,8 @@
 
 \import{discrete-macros}
 
-\transclude{00BT}
-\transclude{00BU}
-\transclude{00BV}
-\transclude{00BW}
-\transclude{00BX}
+\transclude{00BT}  % Motivation
+\transclude{00BU}  % Sigma notation
+\transclude{00BV}  % Alternative Sigma notation
+\transclude{00BW}  % Example
+\transclude{00BX}  % Algebraic rules for sums

@@ -1,0 +1,13 @@
+\title{Solving recurrences}
+\date{2026-03-19T19:27:30Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{In many situations, it is easy to write down a recurrence relation, but what we really want is a closed form. How can we figure out a closed form for a given recurrence? There are many techniques, but the simplest is to “unfold” the recurrence and look for a pattern.}
+
+\transclude{00C7}
+\transclude{00C8}
+\transclude{00C9}
+

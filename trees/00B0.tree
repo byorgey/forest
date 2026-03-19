@@ -9,4 +9,5 @@
 \transclude{00BA}  % Recurrences
 \transclude{00BI}  % Examples
 \transclude{00BO}  % Recurrences in Disco
-\transclude{00BS}
+\transclude{00BS}  % Summation
+\transclude{00C6}  % Solving recurrences

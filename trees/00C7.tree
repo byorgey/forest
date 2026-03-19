@@ -1,0 +1,19 @@
+\title{Odd numbers, again}
+\date{2026-03-19T19:28:37Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Let’s start by looking at a recurrence for the odd numbers: ##{\begin{align*}
+  g_0 &= 1 \\
+  g_n &= g_{n-1} + 2 & (n \geq 1)
+\end{align*}}}
+\p{We can start with #{g_n} and keep unfolding it via the recurrence. For example, after unfolding to #{g_{n-1} + 2}, the recurrence tells us that #{g_{n-1} = g_{n-2} + 2}, so we can unfold again, and so on:}
+\p{##{\begin{align*}
+  g_n &= g_{n-1} + 2 \\
+  &= (g_{n-2} + 2) + 2 \\
+  &= ((g_{n-3} + 2) + 2) + 2 \\
+  &= \dots
+\end{align*}}}
+\p{We see a pattern: #{g_{n-k}} is going to be followed by adding #{k} copies of #{2}. So in general, we have ##{g_n = g_{n-k} + 2k.} Since we know the value of #{g_0}, substituting #{k = n} is helpful: ##{g_n = g_{n-n} + 2n = g_0 + 2n = 1 + 2n.} So we have derived the closed form #{g_n = 2n + 1} which is what we knew it should be.}
