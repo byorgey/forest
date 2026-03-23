@@ -1,0 +1,8 @@
+\title{Weeknotes for 20 March 2026 (week 11)}
+\author{brentyorgey}
+\date{2026-03-20}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\p{Really didn't have time to do much of anything this week besides grading, course prep, meeting with students in office hours, and administrative tasks as the chair of my department.  The only interesting things I did were to work a bit more on [immutable arrays in Swarm](https://github.com/swarm-game/swarm/issues/98), and record an interview for the [Haskell Interlude](https://haskell.foundation/podcast/) with [[sam-frohlich]] and [[farhad-mehta]], which was fun.}
