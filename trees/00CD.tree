@@ -1,0 +1,8 @@
+\date{2026-03-26T17:14:27Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Note that this involves a #{\forall} inside an #{\land} inside a #{\to}! Students often find this confusing. Rely on your skill in [manipulating formal propositional logic](002R)!}
+

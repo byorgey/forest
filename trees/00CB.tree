@@ -1,0 +1,19 @@
+\title{Introduction}
+\date{2026-03-26T17:10:27Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{When discussing propositional logic, we talked about [proof rules for different types of statements](0057). When proving a forall statement of the form #{\all{x}{D}{P(x)}}, the proof strategy we discussed was to let #{d} be an arbitrary element of #{D} and prove #{P(d)}. However, for certain domains #{D} there is another way to prove forall statements: induction. In particular, today we will discuss how to prove something for all natural numbers.}
+
+\p{Suppose we have a proposition #{P(n)} and we want to prove that #{P(n)} holds for all #{n \in \N}. That is, we want to prove all the propositions in the list: ##{P(0) \quad P(1) \quad P(2) \quad P(3) \quad P(4) \quad
+  P(5) \quad \dots} We cannot literally prove each one separately, because there are infinitely many. One way we can think about proving them is to arrange them in a chain, like this: ##{P(0) \to
+  P(1) \to P(2) \to P(3) \to P(4) \to P(5) \to \dots} The idea is to start by proving #{P(0)} (the “base case”) and then “prove the arrows” by proving that each proposition implies the next in the chain—that is, for every #{k \geq 0}, #{P(k)} always implies #{P(k+1)} (this is the “inductive step”). We can prove the inductive step by supposing #{k} to be an arbitrary natural number, supposing #{P(k)} is true (this is called the “induction hypothesis”, abbreviated IH), and proving that #{P(k+1)} must therefore be true as well.}
+
+\p{Another way to think of this is as an infinite chain of dominos:}
+\ul{
+  \li{\p{Proving the base case corresponds to knocking over the first domino;}}
+  \li{\p{The induction step corresponds to showing that each domino, if it falls down, will knock over the next domino in the line.}}
+}
+

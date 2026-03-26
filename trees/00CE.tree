@@ -1,0 +1,36 @@
+\title{Sum of first #{n} natural numbers}
+\date{2026-03-26T17:18:11Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{The other day we explored two different proofs of a formula for the #{n}th [triangular number](00BK),
+##{1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2},} one [algebraic proof](00C1) and one visual/geometric proof.  Both are convincing, but rely on our ability as humans to recognize and generalize patterns; in particular, they both requires us to see intuitively that the same pattern would work for any #{n}.  Let's now see how to use induction to give a more formal proof.}
+
+\proof{
+  Let #{P(n)} be the proposition ##{P(n) \equiv \left(\sum_{1 \leq j \leq n} j = \frac{n(n+1)}{2}\right).} We want to prove #{\all{n}{\N}{P(n)}}. By the principle of induction, we will be able to conclude this if we are able to prove ##{P(0) \land (\all{k}{\N}{P(k) \to P(k+1)}).} Since this is an #{\land}, we must prove each.
+\subproof{
+  First we will prove the \em{base case} #{P(0)}, that is, ##{\sum_{1 \leq j \leq 0} j = \frac{0(0+1)}{2}.} In fact both sides are equal to #{0} since the left is an empty sum.
+
+\p{(If you're not completely comfortable with this "empty sum" business, note that we could instead prove this for only #{n \geq 1}, by starting with #{P(1)} as our base case.  You are welcome to check the #{P(1)} case yourself.)}
+}
+\subproof{
+  Now we must prove the \em{induction case} #{\all{k}{\N}{P(k) \implies P(k+1)}}.  So let #{k} be an arbitrary natural number; we will prove #{P(k) \implies P(k+1)}.
+  \subproof{
+    To prove #{P(k) \implies P(k+1)}, suppose #{P(k)} is true, that is, suppose ##{\sum_{1 \leq j \leq k} j = \frac{k(k+1)}{2}.} (This is our \em{induction hypothesis}.) Then we must show #{P(k+1)}.
+    \subproof{
+      \stmt{\displaystyle \sum_{1 \leq j \leq k+1} j}
+      \reason{=}{Sigma notation, split out #{k+1} separately}
+      \stmt{\displaystyle \left(\sum_{1 \leq j \leq k} j\right) + (k+1)}
+      \reason{=}{Induction hypothesis}
+      \stmt{\displaystyle \frac{k(k+1)}{2} + (k+1)}
+      \reason{=}{Algebra}
+      \stmt{\displaystyle \frac{k(k+1) + 2(k+1)}{2}}
+      \reason{=}{Algebra}
+      \stmt{\displaystyle \frac{(k+1)(k+2)}{2}}
+    }
+  }
+}
+Since we showed both #{P(0)} and that #{P(k)} implies #{P(k+1)} for all #{k} (that is, #{\all{k}{\N}{P(k) \implies P(k+1)}}), by the principle of induction, #{P(n)} holds for all natural numbers #{n}.
+}

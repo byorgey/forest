@@ -21,3 +21,4 @@
 \transclude{009O}   % Functions
 \transclude{00AN}   % Countable + uncountable sets
 \transclude{00B0}   % Sequences, recurrences, and sums
+\transclude{00CA}   % Induction

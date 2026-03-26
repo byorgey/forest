@@ -15,4 +15,4 @@
     \triangle_n &= \triangle_{n-1} + n
 \end{align*}}
 
-There is also a closed form for #{\triangle_n} which we’ll derive shortly.}
+There is also a closed form for #{\triangle_n} which we’ll [derive shortly](00C1).}

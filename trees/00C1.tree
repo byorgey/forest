@@ -4,7 +4,7 @@
 \import{discrete-macros}
 
 \title{Triangular numbers}
-\p{What is the #{n}th triangular number, ##{\triangle_n = \sum_{j = 1}^n j
+\p{What is the #{n}th [triangular number](00BK), ##{\triangle_n = \sum_{j = 1}^n j
   ?}}
 \p{We can use a cute trick to compute it. First, write out the sum twice, but reversed the second time. Then add the two equations. ##{\begin{array}{ccccccccccc}
     \triangle_n & = & 1 & + & 2 & + & \dots & + & (n-1) & + & n \\
