@@ -1,0 +1,61 @@
+\title{Weeknotes for 27 March 2026 (week 12)}
+\author{brentyorgey}
+\date{2026-03-27}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\p{Weeknotes, Spring Break edition! (For non-US readers: Spring Break is (typically) one week off from classes, approximately in the middle of the spring semester.)  This has been a relaxing and productive week with no classes to teach.}
+
+\subtree{
+  \title{Immutable arrays in Swarm}
+
+  \subtree{
+    \title{Challenge scenarios requring arrays}
+  \p{Continuing my work on [immutable arrays in Swarm](https://github.com/swarm-game/swarm/issues/98), this week I was playing around with creating some challenge scenarios that require the use of arrays. This is actually somewhat tricky, since you can always simulate arrays with functions—it's just less efficient.  So the general idea is to construct scenarios with a time limit, where you need the efficiency of an array to be able to get a solution that is fast enough. But even this is tricky!}
+
+  \p{My first attempt just involved a row of randomly generated capital letters that you are supposed to sort alphabetically.  I thought you could read them all into an array and pick them up at the same time, sort the array, then lay them out in sorted order.  However, I realized that you can just pick them all up, then iterate through the capital letters one at a time in order, and place any that you happen to have of each.}
+
+  \p{I constructed another scenario that I thought would work: there is a "key" row of randomly permuted capital letters, and another row of randomly generated capital letters.  You must sort the second row, but in the order specified by the permutation in the first row.  However, I realized there's a clever way to accomplish this in #{O(n)} time without using an array: (1) pick up all the items to be sorted; (2) scan through the key permutation, going one recursive call deeper with each item, so the recursion stack ends up storing the entire sequence; (3) unwind the recursion stack while walking along the destination row in reverse; for each item of the permutation, place all the copies of it you have in your inventory.}
+
+  \p{Having written this, I think I should go back to my original idea, but use randomly generated strings instead of individual capital letters.  That way, the range of possible values is huge, so there's no way to simply iterate through them in order and place any that you happen to have.  (Currently, there's no way to iterate through items in your inventory...)}
+  }
+
+  \subtree{
+    \title{Minimal API for immutable arrays}
+  \p{It's also been interesting to think about a good minimal API for immutable arrays.  Elimination forms are easy: we just need \code{index : Array a -> Int -> a} and \code{size : Array a -> Int}.  But what about introduction forms? At this point I've implemented \code{unfold : b -> (b -> Unit + (a * b)) -> Array a} (as well as an effectful variant), but I'm starting to think that's not good enough: it assumes that you can generate the array elements in order, all at once.  Instead, I think we really want something like:
+\pre\verb<<<|
+accum : a -> (a -> a -> a) -> b -> (b -> Unit + (Int * a * b)) -> Array a<<<
+  which unfolds (index, value) pairs starting from a seed value, starting with the default value and using the combining function for multiple values at the same index.  In Haskell you would write this as \code{Monoid a => [(Int, a)] -> Array a} but Swarm has no type classes and we don't want arrays to depend on lists, so we encode the monoid constraint via the first two arguments, and encode the list via an unfold.
+  }
+
+    \p{Is there a simpler way to do this?}
+    }
+}
+
+\subtree{
+  \title{Applicative inference}
+
+  \p{I had a nice meeting with [[andrey-mokhov]] to see if we might collaborate on my [[000P]] research project.  Not sure yet where it will go, but neither of us is under any particular pressure to publish, so I'm content to just let it play out at whatever pace makes sense.}
+}
+
+\subtree{
+  \title{Exhaustiveness checking for arithmetic patterns in Disco}
+  \p{I continued working on [this project from a couple weeks ago](00CG).  I made some progress with typechecking and desugaring of arithmetic patterns.  All that's left is to actually plug them into the exhaustiveness checker itself, and make it call out to the semilinear set solver appropriately... but after staring at it for a while, I realized I have no idea how the exhaustiveness checker works!  I suspect some refactoring will be needed, since there doesn't seem to be an obvious place to just stick in some extra code for arithmetic patterns.  Thankfully, the student who wrote it is still around; I hope we can meet about it soon and figure it out together.}
+}
+
+\subtree{
+  \title{Kattis}
+  \p{I had fun this week solving a few [Kattis](https://open.kattis.com/) problems in Haskell.  One particularly interesting problem was [Metro Lines](https://open.kattis.com/problems/metrolines): there is a line of stops numbered #{0} to #{N}, and we are given a bunch (up to #{2 \times 10^5}) of subway lines, each of which has a cost #{c} and visits all the stops between #{l} and #{r} inclusive.  You can get on and off of any line anywhere you want; it costs #{c \cdot |x-y|} to ride from #{x} to #{y}, where #{c} is the cost of the line.  We're supposed to print out the cheapest fare to get from station #{0} to each station from #{1} through #{N}.}
+
+  \p{Try solving it yourself, or click to expand my solution sketch below!}
+
+  \put\transclude/expanded{false}
+  \subtree{
+    \title{Solution sketch for [Metro Lines](https://open.kattis.com/problems/metrolines) (spoiler)}
+    \author{brentyorgey}
+    \date{2026-03-28T00:37:04Z}
+
+    \p{The solution is to sort all the line endpoints, then scan through from left to right, keeping track of a set of active lines, sorted by cost (I just used a \code{Set} of #{(\mathit{cost}, \mathit{line ID})} pairs).  For each segment #{(k,k+1)}, we then know the cost #{c} of the cheapest line which operates on that segment. The key insight is that since we can get on and off whenever we want, we can independently choose the cheapest line for each one-unit segment; since the cost is linear in the length of the ride, we can just independently add up the cost #{c} of each one-unit segment to get the total cost.}
+  }
+}

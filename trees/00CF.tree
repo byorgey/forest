@@ -1,0 +1,5 @@
+\title{Solution sketch for [Metro Lines](https://open.kattis.com/problems/metrolines)}
+\author{brentyorgey}
+\date{2026-03-28T00:37:04Z}
+
+\p{The solution is to sort all the line endpoints, then scan through from left to right, keeping track of a set of active lines, sorted by cost (I just used a \code{Set} of #{(\mathit{cost}, \mathit{line ID})} pairs).  For each segment #{(k,k+1)}, we then know the cost #{c} of the cheapest line which operates on that segment. The key insight is that since we can get on and off whenever we want, we can independently choose the cheapest line for each one-unit segment; since the cost is linear in the length of the ride, we can just independently add up the cost #{c} of each one-unit segment to get the total cost.}

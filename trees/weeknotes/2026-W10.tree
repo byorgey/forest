@@ -1,6 +1,6 @@
 \title{Weeknotes for 13 March 2026 (week 10)}
 \author{brentyorgey}
-\date{2026-03-10}
+\date{2026-03-13}
 \tag{weeknote}
 
 \put\transclude/numbered{false}
@@ -18,33 +18,7 @@
   \p{Earlier this week I started drafting some ideas on paper; I hope this week or next to find some time to start writing it up more formally.}
 }
 
-\subtree{
-  \title{Disco: exhaustiveness checking for arithmetic patterns}
-  \p{A couple summers ago, my student [[colin-phillips]] implemented exhaustiveness checking for [[000N]], following [Lower your guards: a compositional pattern-match coverage checker](https://al.radbox.org/doi/10.1145/3408989) by Graf, Peyton Jones, and Scott.  So it can now do things like
-\pre\verb<<<|
-Disco> f : Unit + (Bool * Nat) -> Int
-Disco> f(right(False, n)) = 3
-Warning: the function f is undefined for some inputs. For example:
-f(left(■)) = ...
-f(right(true, 0)) = ...
-f(right(true, 1)) = ...<<<
-  However, Disco also has \em{arithmetic patterns}, like
-\pre\verb<<<|
-f : N -> N
-f(2n) = n + 1
-f(2n+1) = 3<<<
-but doing coverage checking for these is tricky in general. Quick, for what values (if any) is the below (partial) function undefined?
-\pre\verb<<<|
-f : N -> N
-f(3n) = 0
-f(1+5n) = 1
-f(2n+2) = 2
-f(n+12) = 3<<<
-My student [[katherine-reid]] was working on a library for solving this problem, via the theory of [semilinear sets](https://en.wikipedia.org/wiki/Generalized_arithmetic_progression#Semilinear_sets), but we never quite finished incorporating it into the Disco coverage checker.  Since I'm using Disco to teach again this semester, I've started working on this again.  This week, I mostly just spent some time understanding the existing code and writing down a list of the reamining tasks.  I'm optimistic I can get it polished up and merged before the end of the semester.
-  }
-
-\p{(\em{Answer: the function is undefined for #{5} and #{7}.})}
-}
+\transclude{00CG}
 
 \subtree{
   \title{Swarm export and arrays}
