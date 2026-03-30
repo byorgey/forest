@@ -1,0 +1,27 @@
+\import{discrete-macros}
+
+\title{Draft blog post: the empty set, the void type, zero, false, monoids}
+\author{brentyorgey}
+\date{2026-03-28T20:20:06Z}
+
+\p{Does False imply True?  What is a function out of an empty set?  What does a #{\forall} mean when the domain is empty?}
+
+\p{These are the kinds of questions that routinely trip people up, and there is a constellation of similar questions.  What these questions have in common XXX  Although answers to these questions seem unintuitive, each has an answer XXX elegant, consistent.}
+
+\p{Audience: XXX}
+
+\p{We'll begin with the simplest, most intuitive, and build up to more complex XXX.  Along the way, we'll highlight connections each question has to other questions and to other areas of mathematics and computation.}
+
+\ul{
+  \li{What is \code{or []}?}
+  \li{What is \code{any p []}?}
+  \li{What is #{\ex{x}{D}{P(x)}} when the domain #{D} is empty?}
+  \li{What is \code{and []}?}
+  \li{What is \code{all p []}?}
+  \li{What is #{\all{x}{D}{P(x)}} when the domain #{D} is empty?}
+  \li{What are \code{sum []} and \code{product []}?}
+  \li{Is #{\varnothing \subseteq A}, that is, is the empty set a subset of any other set?}
+  \li{What is a function from an empty domain, #{\varnothing \to B}?}
+  \li{Does #{\False \implies \True}?  Does #{\False \implies \False}?}
+  \li{What is #{0^0}?}
+}
