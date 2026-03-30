@@ -95,11 +95,19 @@
     \ul{
       \li{[[00BS]]}
     }
+    \li{P4: I can write the outline of a proof by (weak) induction.}
+    \ul{
+      \li{[[00CB]]}
+      \li{[[00CC]]}
+    }
+    \li{P5: I can reproduce proofs by induction.}
+    \ul{
+      \li{[[00CE]]}
+      \li{[[00CJ]]}
+    }
   }
 }
 
-%         P4: I can write the outline of a proof by (weak) induction or strong induction.
-%         P5: I can reproduce proofs by induction.
 %     Module 5: Number Theory
 %         N1: I can determine whether one integer is divisible by another, or whether a natural number up to 100 is prime.
 %         N2: I can calculate quotients and remainders according to the Division Algorithm.

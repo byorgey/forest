@@ -18,7 +18,7 @@
 \subproof{
   Now we must prove the \em{induction case} #{\all{k}{\N}{P(k) \implies P(k+1)}}.  So let #{k} be an arbitrary natural number; we will prove #{P(k) \implies P(k+1)}.
   \subproof{
-    To prove #{P(k) \implies P(k+1)}, suppose #{P(k)} is true, that is, suppose ##{\sum_{1 \leq j \leq k} j = \frac{k(k+1)}{2}.} (This is our \em{induction hypothesis}.) Then we must show #{P(k+1)}.
+    To prove #{P(k) \implies P(k+1)}, suppose #{P(k)} is true, that is, suppose ##{\sum_{1 \leq j \leq k} j = \frac{k(k+1)}{2}.} (This is our \em{induction hypothesis}.) Then we must show #{P(k+1)}, that is, ##{\sum_{1 \leq j \leq k+1} j = \frac{(k+1)(k+2)}{2}.}
     \subproof{
       \stmt{\displaystyle \sum_{1 \leq j \leq k+1} j}
       \reason{=}{Sigma notation, split out #{k+1} separately}
@@ -33,4 +33,21 @@
   }
 }
 Since we showed both #{P(0)} and that #{P(k)} implies #{P(k+1)} for all #{k} (that is, #{\all{k}{\N}{P(k) \implies P(k+1)}}), by the principle of induction, #{P(n)} holds for all natural numbers #{n}.
+}
+
+\p{And here is the same proof again, but much more compressed/concisely:}
+
+\proof{
+  By induction on #{n}.
+  \subproof{
+    Base case: when #{n = 0}, we have ##{\sum_{1 \leq j \leq 0} j = 0 = \frac{0(0+1)}{2}.}
+  }
+  \subproof{
+    Now let #{k} be arbitrary, and suppose that ##{1 + 2 + \dots + k = \frac{k(k+1)}{2}.} Then we have
+    \stmt{1 + 2 + \dots + k + (k+1)}
+    \reason{=}{induction hypothesis}
+    \stmt{\displaystyle \frac{k(k+1)}{2} + (k+1)}
+    \reason{=}{algebra}
+    \stmt{\displaystyle \frac{(k+1)(k+2)}{2}.}
+  }
 }

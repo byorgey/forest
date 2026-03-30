@@ -1,0 +1,33 @@
+\date{2026-03-30T13:28:26Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\title{Growth of #{2^n} and #{n!}}
+
+\p{As a second example, consider the predicate #{P(n)} defined as #{2^n < n!}. If we try to prove this for all #{n \in \N}, we quickly discover that it isn’t: #{P(0)} is not true (#{2^0 = 1} which is not less than #{0! = 1}); neither is #{P(1)} (#{2^1} is not less than #{1!}), nor #{P(2)}, nor #{P(3)}. However, all is not lost: #{P(4)} is true (#{2^4 = 16 < 4! = 24}), and we suspect that #{P(n)} is true from then on, that is, for all #{n \geq 4}. We can still use induction to prove this; we just need to use a different base case.  Formally, as stated, the [principle of induction](00CC) does not allow this; but it still works in the same way to prove that something is true for all natural numbers #{n \geq 4} instead of #{n \geq 0}.  If we wanted to be completely formal, we could define #{Q(n) = P(n+4)} and then prove #{Q(n)} for all #{n \geq 0}, which amounts to the same thing.}
+
+\transclude{00CK}
+\proof{
+By induction on #{n}.
+\subproof{
+  In the base case, #{2^4 < 4!} is true.
+}
+\subproof{
+  Now let #{k} be an arbitrary natural number such that #{k \geq 4}. Suppose #{P(k)} is true, that is, ##{2^k < k!.}
+We wish to show that #{2^{k+1} < (k+1)!} as well.
+
+\stmt{2^{k+1}}
+\reason{=}{algebra}
+\stmt{2 \cdot 2^k}
+\reason{<}{induction hypothesis}
+\stmt{2 \cdot k!}
+\reason{<}{#{2 < k+1} since #{k \geq 4}}
+\stmt{(k+1) \cdot k!}
+\reason{=}{definition of factorial}
+\stmt{(k+1)!}
+
+Thus, by transitivity of #{<}, we have #{2^{k+1} < (k+1)!}, which is what we wished to show.
+}
+}

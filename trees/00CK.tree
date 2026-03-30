@@ -1,0 +1,8 @@
+\date{2026-03-30T13:31:24Z}
+\tag{discrete}
+\taxon{Theorem}
+
+\import{discrete-macros}
+
+\p{#{2^n < n!} for all natural numbers #{n \geq 4}.}
+

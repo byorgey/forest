@@ -5,7 +5,8 @@
 
 \import{discrete-macros}
 
-\transclude{00CB}
-\transclude{00CC}
+\transclude{00CB}  % Introduction
+\transclude{00CC}  % Principle of induction
 \transclude{00CD}
-\transclude{00CE}
+\transclude{00CE}  % Ex: nth triangular number
+\transclude{00CJ}  % Ex: growth of powers of 2 vs factorial
