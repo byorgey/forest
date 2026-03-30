@@ -1,6 +1,8 @@
 \import{discrete-macros}
 
-\title{Draft blog post: the empty set, the void type, zero, false, monoids}
+\def\OR{#{\bigvee}}
+
+\title{Draft blog post: the empty set, the void type, false, monoids}
 \author{brentyorgey}
 \date{2026-03-28T20:20:06Z}
 
@@ -8,7 +10,7 @@
 
 \p{These are the kinds of questions that routinely trip people up, and there is a constellation of similar questions.  What these questions have in common XXX  Although answers to these questions seem unintuitive, each has an answer XXX elegant, consistent.}
 
-\p{Audience: XXX}
+\p{Audience: XXX  Use Haskell notation but hopefully still makes sense even if you don't know Haskell.}
 
 \p{We'll begin with the simplest, most intuitive, and build up to more complex XXX.  Along the way, we'll highlight connections each question has to other questions and to other areas of mathematics and computation.}
 
@@ -24,4 +26,85 @@
   \li{What is a function from an empty domain, #{\varnothing \to B}?}
   \li{Does #{\False \implies \True}?  Does #{\False \implies \False}?}
   \li{What is #{0^0}?}
+}
+
+\subtree{
+  \title{OR of an empty list}
+  \p{The binary logical OR operator on Boolean values, denoted #{\lor}, has a familiar truth table:
+
+  ##{\begin{array}{ccc}
+    p & q & p \lor q \\ \hline
+    \True & \True & \True \\
+    \True & \False & \True \\
+    \False & \True & \True \\
+    \False & \False & \False \\
+    \end{array}
+  }
+
+  That is, #{p \lor q} is true as long as at least one of its arguments is.}
+
+  \p{Once we can use #{\lor} to combine two Booleans, we can also combine more than two by iterating it: for example, we can find the logical OR of three Booleans with #{\OR_3(p,q,r) = p \lor (q \lor r)}, four with #{\OR_4(p,q,r,s) = p \lor (q \lor (r \lor s))}, and so on.  The natural endpoint of this progression is an operator that can take \em{any number} of Booleans, that is, a \em{list}, and combine them all with #{\lor}: ##{\OR [p_0, p_1, p_2, \dots, p_n] = p_0 \lor p_1 \lor p_2 \lor \dots \lor p_n.}}
+
+  \p{XXX list notation: #{[x,y,z]}; use #{\varepsilon} for empty list; #{p \oplus q} is concatenation}
+
+  \p{But will this really work for \em{any number} of Booleans?  Clearly it works when #{n \geq 2}; and when #{n = 1} it seems sensible to have #{\OR [p] = p}.  But what about #{n = 0}?  What should be the logical OR of an empty list?}
+
+  \p{In one sense, we are free to define it however we like, or even to say that it is undefined.  But there is one answer which makes everything work out most elegantly, and that answer is #{\False}.  I will give four different reasons for understanding why this should be so.}
+
+  \subtree{
+    \title{Intuition}
+    \p{Intuitively, on a list of length #{n \geq 2}, the \OR operator answers the question: "is at least one element of this list #{\True}?"  From this point of view, it is intuitive that #{\bigvee \varepsilon = \False}: the answer to the question "is at least one element of the empty list #{\True}?" is clearly no, since the empty list has no elements at all, much less any #{\True} ones.}
+  }
+
+  \subtree{
+    \title{\OR as a homomorphism}
+
+    \p{Suppose we have two lists of Booleans, #{ps} and #{qs}, and take their logical ORs.  If we then combine those results using #{\lor} again, what will we get?  ##{\OR ps \lor \OR qs = ?} Since #{\lor} is associative, we expect that this should be the same as first concatenating #{ps} and #{qs}, and then taking the \OR of the whole thing: ##{\OR ps \lor \OR qs = \OR (ps \oplus qs)} This looks like a really nice algebraic law that allows us to distribute \OR over #{\oplus}.  Ideally, it should hold for \em{all} lists #{ps} and #{qs}, including empty lists.  But look what happens when we substitute #{\varepsilon} for #{ps}: ##{\OR \varepsilon \lor \OR qs = \OR(\varepsilon \oplus qs) = \OR qs.} Since #{\OR qs} could be anything, this tells us that  #{\OR \varepsilon} must be an \em{identity element} for #{\lor}, that is, some #{e} such that #{e \lor x = x} for all #{x}.  (If we substitute #{\varepsilon} for #{qs} instead of #{ps} we likewise discover that we must have #{x \lor e = x} as well.) The only such identity element for #{\lor} is #{\False}.}
+
+    \p{XXX something about monoid homomorphism?}
+  }
+
+  \subtree{
+    \title{\OR as a recursive procedure}
+
+    \p{Let's try implementing \OR as a recursive procedure.  (I will use Haskell notation, but hopefully the idea is clear even if you don't know Haskell.)  The induction step is clear enough: when given a list of Booleans starting with \code{p} and continuing with \code{qs}, we should use #{\lor} to combine \code{p} with the OR of \code{qs}:
+
+\pre\verb<<<|
+or (p:qs) = p ∨ or qs<<<
+
+    But what should our base case be?  We could bottom out at two-element lists, like so:
+
+\pre\verb<<<|
+or [p,q] = p ∨ q<<<
+
+With this base case, our definition obviously does what we want on lists of length two or more, but it is not defined on lists of length zero or one. We could instead use a base case of singleton lists:
+
+\pre\verb<<<|
+or [p] = p<<<
+
+We can check that the definition still works if we use this as our base case instead of the previous one.  For example, \code{or [p,q,r] = p ∨ or [q,r] = p ∨ (q ∨ or r) = p ∨ (q ∨ r)}.
+}
+
+\p{But what about lists of length zero? Can we get a working definition with just a single base case for empty lists?  In fact, we can!  \code{or [] = True} does not work, since as soon as we reached the base case it would "poison" the entire result, making it \code{True} no matter what elements were in the list.  In other words, if we wanted \code{or [] = True} we would need three base cases, like this:
+
+\pre\verb<<<|
+or (p:qs) = p ∨ or qs
+or [p] = p
+or [] = True<<<
+
+But if we use \code{or [] = False}, we only need one base case:
+
+\pre\verb<<<|
+or (p:qs) = p ∨ or qs
+or [] = False<<<
+
+We can check that this still works: \code{or [p,q,r] = p ∨ or [q,r] = p ∨ (q ∨ or [r]) = p ∨ (q ∨ (r ∨ or [])) = p ∨ (q ∨ (r ∨ False))}.  This does not quite look like the desired result #{p \lor (q \lor r)}, but since #{r \lor \False = r}, it is equivalent.
+}
+}
+
+\subtree{
+  \title{\OR as a fold}
+
+  \p{aka \em{fold}, aka catamorphism.  Mention \code{foldMap} in Haskell.}
+}
 }
