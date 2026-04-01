@@ -1,0 +1,26 @@
+\title{Fibonacci number growth (real proof)}
+\date{2026-04-01T00:53:58Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\proof{
+  By [strong induction](00CM) on #{n}.
+  \subproof{
+    The base case for #{n=0} is as before, but we need a second base case now: #{F_1 = 1 \leq 2^{1-1} = 1}.
+  }
+  \subproof{
+    Now let #{k \geq 1} (not #{0}!) be an arbitrary positive integer and suppose as our induction hypothesis that #{F_j \leq 2^{j-1}} for every #{j} from #{0} up to #{k}. We must show that #{F_{k+1} \leq 2^k}, which we do as follows:
+
+    \stmt{F_{k+1}}
+    \reason{=}{definition of Fibonacci numbers (valid since #{k \geq 1})}
+    \stmt{F_{k} + F_{k-1}}
+    \reason{\leq}{induction hypothesis, twice}
+    \stmt{2^{k-1} + 2^{k-2}}
+    \reason{<}{#{2^{k-2} < 2^{k-1}}}
+    \stmt{2^{k-1} + 2^{k-1}}
+    \reason{=}{algebra}
+    \stmt{2^k}
+  }
+}
+

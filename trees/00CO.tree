@@ -1,0 +1,10 @@
+\title{Strong vs weak induction}
+\date{2026-04-01T00:39:18Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Note that despite their names, “strong” induction is not really any “stronger” than normal (“weak”) induction. In fact, they are logically equivalent, in the sense that either one can be used to prove the other. This is unsurprising in the case of strong induction implying weak induction: if you get to use strong induction, when you have your induction hypotheses that says #{P(0) \land \dots \land P(k)}, you may always choose to ignore everything except #{P(k)}. What is perhaps more surprising is the fact that [weak induction implies strong induction](00CP).}
+
+\p{In the end, then, we can just say “induction” and in some sense it does not really matter whether we are using weak or strong induction. However, it is often helpful to signal to our readers what kind of argument they can expect to see.}

@@ -1,0 +1,18 @@
+\date{2026-04-01T00:43:16Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\title{Growth of Fibonacci numbers}
+\p{Recall the definition of the [Fibonacci numbers](00BL): ##{\begin{align*}
+  F_0 &= 0 \\
+  F_1 &= 1 \\
+  F_n &= F_{n-1} + F_{n-2} \qquad \text{when $n \geq 2$}
+\end{align*}} The first few Fibonacci numbers are thus ##{0, 1, 1, 2, 3, 5, 8, 13,
+  21, 34, 55, \dots} The Fibonacci numbers grow very quickly (for example, the #{100}th Fibonacci number is already #{354224848179261915075}). How quickly do they grow? Here’s one result that starts to answer this question:}
+
+\transclude{00CR}
+\p{So, although the Fibonacci numbers seem to grow very quickly, they do not grow quite as fast as powers of two.  Again, let's try weak induction and see what goes wrong.}
+\transclude{00CS}
+\transclude{00CT}

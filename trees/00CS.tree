@@ -1,0 +1,22 @@
+\title{Fibonacci number growth (failed proof attempt)}
+\date{2026-04-01T00:47:44Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\proof{
+  Attempted proof by (weak) induction on #{n}.
+  \subproof{
+    In the base case, #{F_0 = 0} which is indeed less than or equal to #{2^{0-1} = 1/2}.
+  }
+  \subproof{
+    For the induction step, let #{k \geq 0} be an arbitrary natural number, and suppose #{F_k \leq 2^{k-1}}; we must show that #{F_{k+1} \leq 2^k}. To this end,
+    \stmt{F_{k+1}}
+    \reason{=}{definition of Fibonacci numbers#{^{*}}}
+    \stmt{F_{k} + F_{k-1}}
+    \reason{\leq}{induction hypothesis}
+    \stmt{2^{k-1} + F_{k-1}}
+  }
+
+\p{Here is where we get stuck: the induction hypothesis let us conclude something about #{F_k} but it says nothing about #{F_{k-1}}. And actually, it is worse than that: one of the steps above was actually incorrect! The step marked with an asterisk was not allowed: we wrote #{F_{k+1}} as the sum of two previous Fibonacci numbers, but if #{k=0} there is no such thing! There is only one Fibonacci number before #{F_1}. Since the induction step needs \em{two} previous cases, we need to use strong induction, and we also need to start with two base cases so the first induction step has something to get started with.}
+}

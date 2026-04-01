@@ -1,0 +1,12 @@
+\title{[★](advanced) More general form of strong induction}
+\date{2026-04-01T00:31:39Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{We can actually get rid of the separate #{P(0)} case by writing the principle of strong induction this way:
+##{(\all{k}{\N} [\all{j}{\N}{(j < k) \implies P(j)}] \implies P(k)) \implies (\all{n}{\N}{P(n)})}
+In other words, this says that we must always be able to show #{P(k)} when assuming #{P(j)} is true for all smaller #{j < k}.
+Notice that when #{k = 0}, the condition #{\all{j}{\N}{(j < k) \to P(j)}} is vacuously true: there are no #{j < 0}. Hence #{P(0)} is required to be true without getting to use any induction hypothesis at all.  This also deals with cases where we need several base cases to "get off the ground": for example, we are required to be able to prove #{P(0) \implies P(1)}; but if knowing #{P(0)} does not help, then tough luck, we just have to prove #{P(1)} on its own—essentially another base case.
+}

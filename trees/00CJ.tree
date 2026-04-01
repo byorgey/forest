@@ -21,7 +21,7 @@ We wish to show that #{2^{k+1} < (k+1)!} as well.
 \stmt{2^{k+1}}
 \reason{=}{algebra}
 \stmt{2 \cdot 2^k}
-\reason{<}{induction hypothesis}
+\reason{<}{induction hypothesis; if #{a < b} then #{2a < 2b}}
 \stmt{2 \cdot k!}
 \reason{<}{#{2 < k+1} since #{k \geq 4}}
 \stmt{(k+1) \cdot k!}

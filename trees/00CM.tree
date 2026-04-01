@@ -1,0 +1,32 @@
+\title{Strong induction}
+\date{2026-04-01T00:22:19Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Sometimes it’s difficult—or even impossible—to directly prove #{P(k+1)} from the assumption of #{P(k)}. For example, what if we can’t prove #{P(4)} from #{P(3)}, but we can prove it from #{P(2)}? Is that OK? What if we can only prove #{P(3)} by assuming \em{both} #{P(0)} and #{P(1)}? Is that OK?}
+
+\p{In general, yes, these are OK: as long as we can prove each proposition from assuming only \em{previous} propositions, we will eventually be able to prove any of them. This leads to the principle of \em{strong} induction. Instead of assuming only #{P(k)} as our induction hypothesis and then proving #{P(k+1)}, like this: ##{P(k)
+  \implies P(k+1)} we will instaed assume \em{all} the previous propositions and use them to prove #{P(k+1)}, like this: ##{\big(P(0) \land P(1) \land P(2) \land \dots \land P(k) \big)
+  \implies P(k+1).} Written out, a first take on the principle of strong induction thus looks like this: ##{P(0) \land (\forall k \in \N \st \big(P(0) \land P(1) \land \dots \land
+  P(k)\big) \implies P(k+1)) \implies (\forall n \in \N \st P(n)).} Alternatively, we could write it without the #{\dots} like this: ##{P(0) \land (\forall k \in \N \st [\all{j}{\N}(j \leq k) \implies P(j)]
+  \implies P(k+1)) \implies (\forall n \in \N. P(n)).}}
+\p{We can also make this a bit more general, in two ways:}
+\ol{\li{\p{Just like in the [example proving #{2^n < n!}](00CJ), the base case need not actually be #{0}.}
+}
+\li{\p{Sometimes the inductive step might need a certain number of previous cases to “get off the ground”. In this case we need more base cases to start.}
+}
+}
+
+\put\transclude/expanded{false}
+\transclude{00CN}
+
+\put\transclude/expanded{true}
+\transclude{00CO}
+
+\put\transclude/expanded{false}
+\transclude{00CP}
+
+\put\transclude/expanded{true}
+\transclude{00CQ}
