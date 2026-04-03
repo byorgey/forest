@@ -1,0 +1,23 @@
+\title{Sum of Fibonacci numbers}
+\date{2026-04-03T11:11:34Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Prove: ##{\all{n}{\N}{\sum_{0 \leq j \leq n} F_j = F_{n+2} - 1},} that is, the sum of the first #{n} [Fibonacci numbers](00BL) is #{F_{n+2} - 1}.}
+
+\proof{
+  By induction on #{n}.  Let #{P(n)} be the proposition "#{\sum_{0 \leq j \leq n} F_j = F_{n+2} - 1}".
+  \subproof{
+    For the base case, we must prove #{P(0)}, that is, #{\sum_{0 \leq j \leq 0} F_j = F_2 - 1}.  The left side is just #{F_0 = 0}; the right side is #{F_2 - 1 = 1 - 1 = 0}.
+  }
+  \subproof{
+    For the induction step, we must prove #{\all{k}{\N}{P(k) \implies P(k+1)}}.  So let #{k} be an arbitrary natural number, and suppose #{P(k)} is true, that is, the sum of the first #{k} Fibonacci numbers is #{F_{k+2} - 1}.  Then we must show #{P(k+1)}, that is, the sum of the first #{k+1} Fibonacci numbers is #{F_{k+3} - 1}.  To this end, the sum of the first #{k+1} Fibonacci numbers is
+  \stmt{F_0 + F_1 + \dots + F_k + F_{k+1}}
+  \reason{=}{induction hypothesis}
+  \stmt{(F_{k+2} - 1) + F_{k+1}}
+  \reason{=}{Fibonacci number definition}
+  \stmt{F_{k+3} - 1.}
+  }
+}

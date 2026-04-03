@@ -1,0 +1,36 @@
+\title{Every third Fibonacci number is even}
+\date{2026-04-03T11:47:22Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Prove that #{F_{3n}} is always even.}
+
+\proof{
+  Let #{P(n)} be the proposition ##{\Even(F_{3n}).}  We will prove that #{P(n)} holds for all natural numbers by induction.
+
+  \subproof{
+    When #{n = 0}, #{F_0 = 0} which is indeed even.
+  }
+  \subproof{
+    Let #{k} be an arbitrary natural number, and suppose #{F_{3k}} is even, that is, #{F_{3k} = 2m} for some natural number #{m}.  Then we must show that #{F_{3(k+1)}} is also even.
+    \stmt{F_{3(k+1)}}
+    \reason{=}{algebra}
+    \stmt{F_{3k+3}}
+    \reason{=}{Fibonacci definition}
+    \stmt{F_{3k+2} + F_{3k+1}}
+    \reason{=}{Fibonacci definition}
+    \stmt{(F_{3k+1} + F_{3k}) + F_{3k+1}}
+    \reason{=}{algebra}
+    \stmt{2F_{3k+1} + F_{3k}}
+    \reason{=}{induction hypothesis}
+    \stmt{2F_{3k+1} + 2m}
+    \reason{=}{algebra}
+    \stmt{2(F_{3k+1} + m)}
+
+    So, since we have shown that #{F_{3(k+1)}} is equal to two times a natural number, it is indeed even.
+  }
+}
+
+\transclude{00D0}

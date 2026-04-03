@@ -5,7 +5,7 @@
 
 \import{discrete-macros}
 
-\p{We have [previously seen how to define functions in Disco](http://ozark.hendrix.edu/~yorgey/forest/002K/index.xml). Here are a few more examples.}
+\p{We have [previously seen how to define functions in Disco](002K). Here are a few more examples.}
 
 \pre\verb<<<|
 g : Bool -> N

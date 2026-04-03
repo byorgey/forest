@@ -11,3 +11,4 @@
 \transclude{00CE}  % Ex: nth triangular number
 \transclude{00CJ}  % Ex: growth of powers of 2 vs factorial
 \transclude{00CM}  % Strong induction
+\transclude{00CU}

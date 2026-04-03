@@ -1,0 +1,11 @@
+\title{More induction examples}
+\date{2026-04-02T18:10:22Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\transclude{00CV}     % closed form for a recurrence
+\transclude{00CW}     % sum of Fibonacci
+\transclude{00CX}     % Binary expansions
+\transclude{00CZ}     % F_3k is even

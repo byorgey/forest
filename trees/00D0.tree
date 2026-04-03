@@ -1,0 +1,7 @@
+\date{2026-04-03T11:57:27Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{It turns out that the converse is also true: if #{F_n} is even, then #{n} must be a multiple of three.  Showing this is left as a challenge for the reader! (\em{Hint}: prove the contrapositive; if #{n} is not a multiple of three then it must be of the form #{3k+1} or #{3k+2} for some natural number #{k}.)}

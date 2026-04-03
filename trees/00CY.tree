@@ -1,0 +1,7 @@
+\date{2026-04-03T11:36:11Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{In fact, more is true: the binary expansion for each #{n} is \em{unique} in the sense that there is exactly one binary expansion that works for each #{n}.  In other words, if ##{n = 2^a + 2^b + 2^c + \dots = 2^x + 2^y + 2^z + \dots,} then #{\{a, b, c, \dots\} = \{x, y, z, \dots\}}.  (Put yet another way: the function that maps each finite set of natural number exponents #{\{a,b,c, \dots\}} to the sum #{2^a + 2^b + 2^c + \dots} is injective!)}

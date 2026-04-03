@@ -1,0 +1,24 @@
+\title{Computing binary expansions}
+\date{2026-04-03T13:14:49Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{In fact, the induction proof above can be thought of as a \em{recursive algorithm} for computing the binary expansion of a given natural number, and we can implement that algorithm as a Disco function!}
+
+\pre{\startverb
+!!! binary(1) == {0}
+!!! binary(2) == {1}
+!!! binary(3) == {0,1}
+!!! binary(5) == {0,2}
+!!! binary(63) == {0 .. 5}
+!!! forall n:N. fromBinary(binary(n)) == n
+!!! forall es:Set(N). binary(fromBinary(es)) == es
+binary : N -> Set(N)
+binary(0) = {}
+binary(2k) = {e+1 | e in binary(k)}
+binary(2k+1) = {0} union {e+1 | e in binary(k)}
+
+fromBinary : Set(N) -> N
+fromBinary(es) = reduce(~+~, 0, {2^e | e in es})
+\stopverb}

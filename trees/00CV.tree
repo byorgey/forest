@@ -1,0 +1,29 @@
+\title{Proving a closed form for a recurrence}
+\date{2026-04-02T18:10:33Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Let #{a_0 = 0}, #{a_n = 2a_{n-1} + 1}. Prove that #{a_n = 2^n - 1} for all #{n \geq 0}.}
+
+\proof{
+  Let #{P(n)} be the proposition “#{a_n = 2^n - 1}”. We will show #{\all{n}{\N}{P(n)}} by induction.
+
+  \subproof{
+    #{P(0)} says “#{a_0 = 2^0 - 1}”, which is true since both sides are equal to #{0}.
+  }
+  \subproof{
+    In the induction step, we must show #{\all{k}{\N}{P(k) \to P(k+1)}}. So let #{k} be an arbitrary natural number, and suppose #{P(k)} is true, that is, #{a_k = 2^k - 1}. We must show #{P(k+1)}, that is, #{a_{k+1} = 2^{k+1} - 1}.
+
+    \stmt{a_{k+1}}
+    \reason{=}{definition}
+    \stmt{2a_k + 1}
+    \reason{=}{assumption (induction hypothesis)}
+    \stmt{2(2^k - 1) + 1}
+    \reason{=}{algebra}
+    \stmt{2^{k+1} - 2 + 1}
+    \reason{=}{algebra}
+    \stmt{2^{k+1} - 1}
+  }
+}

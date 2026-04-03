@@ -1,0 +1,33 @@
+\title{Binary expansions}
+\date{2026-04-03T11:22:06Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Prove: every natural number can be written as the sum of distinct powers of two.  That is, every natural number #{n} can be written in the form ##{n = 2^a + 2^b + 2^c + \dots} where #{a, b, c, \dots} are all different natural numbers.  This is called the \em{binary expansion} of #{n}, and—as you probably know—is how natural numbers are represented in a modern computer.}
+
+(Just for fun, if we wanted to be completely formal about it, we could write the proposition like this:
+##{\all{n}{\N}{\ext{E}{\powerset{\N}}{n = \sum_{e \in E} 2^e}}}
+but we need not use quite so formal notation.)
+
+\proof{
+  We will show #{\all{n}{\N}{B(n)}} by strong induction, where #{B(n)} is the proposition that "#{n} can be written as a sum of distinct powers of two".
+
+  \subproof{
+    For the base case, we must show that #{0} can be written as a sum of distinct powers of two.  Indeed it can, in the trivial sense that we can use an \em{empty} sum of powers of two.
+  }
+
+  \subproof{
+    Now let #{k} be an arbitrary natural number, and suppose that #{B(j)} is true for all #{j \leq k}—that is, \em{every number} #{\leq k} can be written as a sum of distinct powers of two.  Then we must show this is true for #{k+1} as well.  #{k+1} must be either even or odd.
+    \subproof{
+      If #{k+1} is even, then #{(k+1)/2} is a natural number less than #{k+1}. Hence by the induction hypothesis, it may be written as a sum of distinct powers of two, say ##{(k+1)/2 = 2^a + 2^b + 2^c + \dots}  Multiplying both sides by two shows that #{k+1} can also be so written: ##{k+1 = 2^{a+1} + 2^{b+1} + 2^{c+1} + \dots}
+    }
+    \subproof{
+      If #{k+1} is odd, then #{k/2} is a natural number less than #{k+1}.  Again, by our induction hypothesis this means we can write it as a sum of distinct powers of two, ##{k/2 = 2^a + 2^b + 2^c + \dots}  Multiplying both sides by two yields ##{k = 2^{a+1} + 2^{b+1} + 2^{c+1} + \dots} Now we can add one to both sides: ##{k+1 = 2^0 + 2^{a+1} + 2^{b+1} + 2^{c+1} + \dots}  This still shows that #{k+1} can be written as a sum of \em{distinct} powers of two, since #{a,b,c,\dots} are all different and #{0} is not equal to #{a+1}, #{b+1}, or any natural number plus one.
+    }
+  }
+}
+
+\transclude{00CY}
+\transclude{00D1}
