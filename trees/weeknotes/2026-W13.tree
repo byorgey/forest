@@ -41,7 +41,7 @@
   \title{Teaching induction}
   \p{I had a lot of fun this week teaching my [Discrete Math](0020) students about [induction principles for natural numbers](00CA).}
   \p{On Wednesday I went over a strong induction principle.  When I teach them, I usually state it like
-   ##{P(0) \land (\forall k. (\forall j \leq k. P(j)) \to P(k)) \to \forall n. P(n)}
+   ##{P(0) \land (\forall k. (\forall j \leq k. P(j)) \to P(k+1)) \to \forall n. P(n)}
   I find a formulation without an explicit base case more elegant, but I don't think I am brave enough to teach it this way:
   ##{(\forall k. (\forall j < k. P(j)) \to P(k)) \to \forall n. P(n)}
   I think they would be completely confused by the apparent lack of a base case.  Of course, the base case is still there, in the sense that you have to at the very least prove #{P(0)} with no assumptions, since #{\forall j < 0. P(j)} is trivial.  But you would essentially have to almost always start by doing a case split on whether #{n} is 0 anyway, so I feel like I might as well present it in a form with #{P(0)} already split out separately.  But I would be interested to hear about how others teach this.  Of course, in some sense it doesn't matter since the two principles are logically equivalent, but I think it matters in a pedagogical sense.}
