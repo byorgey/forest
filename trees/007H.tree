@@ -110,8 +110,13 @@
   }
 }
 
-%     Module 5: Number Theory
-%         N1: I can determine whether one integer is divisible by another, or whether a natural number up to 100 is prime.
+\subtree{
+  \title{Number Theory}
+  \ul{
+    \li{N1: I can determine [whether one integer is divisible by another](00D5), or whether a natural number up to 100 is prime.}
+  }
+}
+
 %         N2: I can calculate quotients and remainders according to the Division Algorithm.
 %         N3: I can compute the greatest common divisor of two natural numbers using the Euclidean Algorithm.
 %         N4: I can compute Bézout coefficients and modular inverses using the Extended Euclidean Algorithm.

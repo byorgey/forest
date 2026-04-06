@@ -1,0 +1,8 @@
+\title{The Division Algorithm}
+\date{2026-04-06T13:53:20Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{Let #{a, d \in \Z} and #{d \in \Z^+}. Then there exist \em{unique} integers #{q} and #{r} such that #{0 \leq r < d} and #{a = dq + r}.}

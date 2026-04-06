@@ -1,0 +1,11 @@
+\title{Terminology for the Division Algorithm}
+\date{2026-04-06T13:54:02Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{In this definition, #{q} is called the \em{quotient} and #{r} the \em{remainder}. We write ##{\begin{align*}
+  q &= a \div d \\
+  r &= a \mod d
+\end{align*}} The #{\div} operator is written \code{/} in Java and C/C++, and \code{//} in Python and Disco; the #{\mod} operator is written \code{\startverb%\stopverb} in many programming languages, and \code{mod} in Disco.}
+

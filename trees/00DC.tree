@@ -1,0 +1,11 @@
+\title{The Division Algorithm}
+\date{2026-04-06T13:51:08Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Intuitively, if #{a \mid b} it means that some number of copies of #{a} fit precisely into #{b} with nothing left over; conversely, if #{a \nmid b}, then there is a small amount left over.  We can make this idea more precise.}
+
+\transclude{00DD}
+\transclude{00DE}

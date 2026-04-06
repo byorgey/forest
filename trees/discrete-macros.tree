@@ -24,3 +24,6 @@
 
 \def\simQ{#{\sim_{\Q}}}
 \def\Shp{#{\mathrm{Shp}}}
+
+\def\div{#{\mathbin{\mathbf{div}}}}
+\def\mod{#{\mathbin{\mathbf{mod}}}}

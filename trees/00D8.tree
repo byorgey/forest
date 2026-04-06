@@ -1,0 +1,19 @@
+\title{Divisibility examples}
+\date{2026-04-06T13:40:19Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\ul{
+  \li{#{3 \mid 6} (pick #{k = 2}).}
+  \li{#{5 \nmid 16}, since there is no #{k \in \Z} we can pick such that #{5k = 16}. (Of course #{k = 16/5} works but that’s not an integer.)}
+  \li{#{5 \mid -15} (pick #{k = -3}).}
+  \li{#{4 \mid 4} (pick #{k = 1}).}
+  \li{#{4 \mid 8} (pick #{k = 2}).}
+  \li{#{8 \nmid 4}. Note this illustrates the very important point that #{\mid} is not symmetric—in general #{a \mid b} and #{b \mid a} are \em{not} the same. (In fact, the only case in which #{a \mid b} and #{b \mid a} is when #{a = \pm b}.)}
+  \li{#{0 \nmid 3} since there is no #{k \in \Z} for which #{0k = 3}.}
+  \li{#{3 \mid 0} since we can pick #{k = 0}.}
+  \li{#{0 \mid 0} since we can pick, \em{e.g.} #{k = 671} to make #{0k = 0} (of course, any #{k \in \Z} will do).}
+}
+

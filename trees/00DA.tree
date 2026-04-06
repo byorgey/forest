@@ -1,0 +1,21 @@
+\title{Divisibility properties}
+\date{2026-04-06T13:43:58Z}
+\tag{discrete}
+\taxon{Theorem}
+
+\import{discrete-macros}
+
+\p{For all #{a, b, c \in \Z},
+\ol{
+  \li{#{a \mid a} (the divisibility relation is reflexive).}
+  \li{if #{a \mid b} and #{b \mid c}, then #{a \mid c} (divisibility is transitive).}
+  \li{if #{a \mid b} and #{a \mid c}, then #{a \mid (b + c)}.}
+  \li{if #{a \mid b}, then #{a \mid bc}.}
+}
+}
+
+\proof{
+  Let's prove (3). (The others will be left as exercises for you.)
+  Let #{a,b,c \in \Z} and suppose #{a \mid b} and #{a \mid c}. Then by definition there exist #{j, k \in \Z} such that #{ja = b} and #{ka = c}. Then ##{b+c = ja + ka = (j+k)a.} Thus we have showed how we can write the sum #{b+c} as an integer times #{a}, so by definition #{a \mid (b+c)}.
+}
+

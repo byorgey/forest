@@ -1,0 +1,8 @@
+\title{Terminology and notation for divisibility}
+\date{2026-04-06T13:34:56Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{When #{a} divides #{b}, we also say #{a} is a \em{divisor} or \em{factor} of #{b}, and that #{b} is a \em{multiple} of #{a}. We write #{a \nmid b} as an abbreviation for #{\neg (a \mid b)}.}

@@ -1,0 +1,16 @@
+\title{Divisibility}
+\date{2026-04-06T13:33:28Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{With that in mind, recall the notion of one number being a “multiple” of another, or (equivalently) one number “evenly dividing” another number. We’ll begin by making this notion precise.}
+
+\transclude{00D6}
+\transclude{00D7}
+\transclude{00D8}
+% XXX include pictures?
+\transclude{00D9}
+\transclude{00DA}
+\transclude{00DB}

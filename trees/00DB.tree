@@ -1,0 +1,8 @@
+\title{Divisibility vs #{\leq}}
+\date{2026-04-06T13:48:04Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+\p{By definition we have ##{(a \mid b) \iff (\exists k \in \Z \st k \cdot a = b).} But consider that we can characterize #{\leq} similarly: ##{(a \leq b) \iff (\exists k \in \N \st k + a = b).} (There is a slight discrepancy because of the need to use #{\N} in the characterization of #{\leq} rather than #{\Z}, but if we forget about negative numbers the discrepancy goes away.) That is, #{\leq} is to addition as #{\mid} is to multiplication. The two relations actually share many important properties in common (both are reflexive and transitive, and antisymmetric when restricted to the natural numbers).}

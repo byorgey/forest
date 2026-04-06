@@ -1,0 +1,7 @@
+\title{Introduction}
+\date{2026-04-06T13:30:28Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We’re going to embark on a study of basic number theory, which can be thought of as the study of the sets #{\N} and #{\Z}. These sets may seem straightforward—and they are, if all you care about is addition. But as soon as we throw multiplication into the mix, things get very interesting indeed. Number theory—and in particular the interaction between addition and multiplication on the integers—is the basis for, \em{e.g.} all of modern cryptography, as well as one of the most famous open problems in mathematics, the Riemann hypothesis. Questions about prime numbers, factoring, and solving equations over the integers have fascinated humans for thousands of years.}
