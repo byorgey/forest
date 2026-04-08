@@ -1,0 +1,9 @@
+\date{2026-04-08T13:55:23Z}
+\tag{discrete}
+\tag{draft}
+
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{This in turn allows us to conclude that #{\neg \Even(n) \iff \Odd(n)} and vice versa.}

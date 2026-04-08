@@ -1,0 +1,9 @@
+\date{2026-04-08T13:53:02Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\proof{
+  Let #{n} be an arbitrary integer.  By the [Division Algorithm](00DD), there exist integers #{q} and #{r} such that #{n = 2q + r}, where #{0 \leq r < 2}.  Then either #{r = 0}, in which case #{n = 2q} is even by definition, or #{r = 1}, in which case #{n = 2q + 1} is odd by definition.
+}

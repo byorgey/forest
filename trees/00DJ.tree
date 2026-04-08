@@ -1,0 +1,7 @@
+\date{2026-04-07T14:32:06Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{What is the result of dividing #{-24} by #{11}? If we think purely in terms of “how many copies of #{11} will fit” we might think the quotient is #{-2}, but that does not make the remainder come out right! In fact, #{-24 = 11 \cdot (-3) + 9}, so the quotient is #{-3} with a remainder of #{9}.}

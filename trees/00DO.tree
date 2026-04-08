@@ -1,0 +1,8 @@
+\title{Every integer is even or odd}
+\date{2026-04-08T13:52:02Z}
+\tag{discrete}
+\taxon{Theorem}
+
+\import{discrete-macros}
+
+\p{Every integer is either even or odd.  That is, ##{\all{n}{\Z}{\Even(n) \lor \Odd(n)}.}}

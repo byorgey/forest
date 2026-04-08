@@ -7,5 +7,10 @@
 
 \p{Intuitively, if #{a \mid b} it means that some number of copies of #{a} fit precisely into #{b} with nothing left over; conversely, if #{a \nmid b}, then there is a small amount left over.  We can make this idea more precise.}
 
-\transclude{00DD}
-\transclude{00DE}
+\transclude{00DD}   % Division Alg
+\transclude{00DE}   % div, mod
+\transclude{00DF}   % Examples
+\transclude{00DK}   % Generalization to #{d < 0}
+\transclude{00DL}   % Proof
+\transclude{00DM}   % Why it is called "Division Algorithm"
+\transclude{00DN}   % Even/Odd

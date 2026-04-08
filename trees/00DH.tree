@@ -1,0 +1,9 @@
+\date{2026-04-07T14:30:41Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{What about when #{55} divided by #{11}? In this case #{q = 5}, #{r = 0}.}
+
+

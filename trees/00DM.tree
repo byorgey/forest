@@ -1,0 +1,9 @@
+\date{2026-04-08T13:48:21Z}
+\tag{discrete}
+\tag{draft}
+
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{This is commonly called the "Division Algorithm"—even though, technically, it is a theorem and not an algorithm—because the proof does actually correspond to an algorithm we could use to compute the quotient and remainder.  However, this algorithm is incredibly inefficient!}

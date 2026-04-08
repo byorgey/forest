@@ -1,0 +1,7 @@
+\date{2026-04-08T13:44:44Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{We can easily generalize the Division Algorithm to work when #{d < 0}: if #{a = qd + r} then #{a = (-q)(-d) + r}.  In other words, to divide by #{-d} we can just divide by #{d} and then negate the resulting quotient #{q}.}

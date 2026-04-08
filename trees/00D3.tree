@@ -5,6 +5,6 @@
 
 \import{discrete-macros}
 
-\transclude{00D4}
-\transclude{00D5}
-\transclude{00DC}
+\transclude{00D4}   % Intro
+\transclude{00D5}   % Divisibility
+\transclude{00DC}   % Division algorithm

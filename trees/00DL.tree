@@ -1,0 +1,8 @@
+\title{Proof of Division Algorithm}
+\date{2026-04-08T13:46:53Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Informally, this is true because we can start with #{q = 0} and #{r = a}; then, as long as #{r \geq d} we can add one to #{q} and subtract #{d} from #{r} (and similarly if #{r < 0}).}

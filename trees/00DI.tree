@@ -1,0 +1,8 @@
+\date{2026-04-07T14:31:23Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{What is #{7 \mod 11}? This situation is sometimes confusing for students just learning about the \code{\startverb%\stopverb} operator in a programming language, but applying the definition, we seek (#{q} and) #{r} such that #{0 \leq r < 11} and #{11 = 7q + r}. The only values that fit the bill are #{q = 0} and #{r = 7}. In other words, if we try to divide #{7} by #{11}, we find that #{0} copies of #{11} fit into #{7}, and we are left with the same #{7} we started with.}
+

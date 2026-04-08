@@ -1,0 +1,14 @@
+\date{2026-04-07T14:30:25Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{What is the quotient and remainder when #{101} is divided by #{11}?}
+\p{According to the division algorithm, there exist #{q} and #{r} such that #{101 = 11q + r} and #{0 \leq r < 11}. We find that #{101 = 11 \cdot 9 + 2}, so #{q = 9} and #{r = 2}. We could also express this as
+##{\begin{align*}
+      101 \div 11 &= 9 \\
+      101 \mod 11 &= 2
+\end{align*}}}
+
+
