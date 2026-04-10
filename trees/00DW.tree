@@ -1,0 +1,19 @@
+\import{discrete-macros}
+
+\title{Modular equivalence #{\iff} offset by a multiple of #{m}}
+\date{2026-04-10T13:27:23Z}
+\tag{discrete}
+\tag{draft}
+
+\taxon{Theorem}
+\p{Let #{a, b \in \Z} and #{m \in \Z^+}. Then #{a \equiv_m b} if and only if there exists #{k \in \Z} such that #{a = b + km}.}
+
+\proof{
+  \stmt{a \equiv_m b}
+  \reason{\iff}{Definition of #{\equiv_m} relation}
+  \stmt{m \mid (a - b)}
+  \reason{\iff}{Definition of divides relation}
+  \stmt{\ext{k}{\Z}{km = a - b}}
+  \reason{\iff}{algebra}
+  \stmt{\ext{k}{\Z}{a = b + km}}
+}

@@ -1,0 +1,13 @@
+\title{Operations on modular equivalences}
+\date{2026-04-10T13:54:09Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+\p{Note that when we have an \em{equality} #{a = b}, we can do whatever we want to it: as long as we do the same thing to both sides they will remain equal. With #{\equiv_m}, however, this only works for certain operations! The things we do to an equivalence have to “play nice” with the operation of taking remainders modulo #{m}.}
+\p{From the proof above, we can see the special way addition and multiplication interact with remainders. For example, if we tried to do a similar proof for division, we would get stuck: there is no reason to believe that #{(b + jm)/(c + km)} would be of the form #{\frac{b}{c} + lm} for some integer #{l}.}
+
+
+
+

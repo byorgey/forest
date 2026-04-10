@@ -1,0 +1,8 @@
+\title{Modular equivalence}
+\date{2026-04-10T13:17:30Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{If #{a, b \in \Z} and #{m \in \Z^+}, then \em{#{a} is equivalent (or congruent) to #{b} modulo #{m}}, written ##{a \equiv_m b,} if and only if ##{m \mid (a - b).}}

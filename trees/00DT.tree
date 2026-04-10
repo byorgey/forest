@@ -1,0 +1,11 @@
+\title{Intuition: wrapping up the number line}
+\date{2026-04-10T13:14:48Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Consider the number line below where we’ve marked all the multiples of #{m}. If #{a} and #{b} are “at the same place in the cycle” that means they have the same offset from some multiple of #{m}; it also means, intuitively, that their difference is a multiple of #{m}. Since we want to treat every multiple of #{m} as being the same and only care about the remainder or offset between multiples of #{m}, we can think of “curling up” the number line onto itself into an infinite spiral, so that all the multiples of #{m} line up. Then we want to consider all the numbers lined up along any radial line as being “the same”.}
+
+\<html:img>[src]{\route-asset{assets/images/Zn-spiral.jpg}}
+
+\p{These ideas motivate the definition below.}

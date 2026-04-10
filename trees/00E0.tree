@@ -1,0 +1,11 @@
+\title{#{\equiv_m} is symmetric}
+\date{2026-04-10T13:45:57Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{#{\equiv_m} is [symmetric](008J) for all #{m \in \Z^+}.}
+
+% XXX write proof

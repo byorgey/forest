@@ -1,14 +1,13 @@
 \title{Induction}
 \date{2026-03-26T17:09:37Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
 \transclude{00CB}  % Introduction
 \transclude{00CC}  % Principle of induction
-\transclude{00CD}
+\transclude{00CD}  % Remark: confusing! Use prop logic skill!
 \transclude{00CE}  % Ex: nth triangular number
 \transclude{00CJ}  % Ex: growth of powers of 2 vs factorial
 \transclude{00CM}  % Strong induction
-\transclude{00CU}
+\transclude{00CU}  % More induction examples

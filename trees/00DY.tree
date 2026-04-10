@@ -1,0 +1,21 @@
+\import{discrete-macros}
+
+\title{Modular equivalence #{\iff} same mod}
+\date{2026-04-10T13:32:38Z}
+\tag{discrete}
+\tag{draft}
+
+\taxon{Theorem}
+\p{For all #{a, b \in \Z} and #{m \in \Z^+}, ##{(a \equiv_m b) \iff (a \mod m = b \mod m).}}
+
+\proof{
+\p{This is an “if and only if”, so we have to prove both directions.}
+\subproof{#{(\implies)} Suppose #{a \equiv_m b}. Then, by [the previous theorem](00DW), #{a = b + km} for some integer #{k}. By the [Division Algorithm](00DC), we can write #{a = q_1m + r_1} and #{b = q_2m +
+  r_2} with #{0 \leq r_1, r_2 < m}; we wish to show that #{r_1 = r_2}. Substituting for #{a} and #{b} in the equation #{a = b + km} yields ##{q_1m + r_1 = q_2m + r_2 +
+    km.} Rearranging, ##{r_1 - r_2 = (q_2 - q_1 - k)m,} which means that #{(r_1 - r_2)} is divisible by #{m}. However, we know that #{0 \leq r_1, r_2 < m}, and so #{-m < r_1 - r_2 < m}. In order for #{r_1 - r_2} to be a multiple of #{m}, the only possibility is that #{r_1 - r_2 = 0}, meaning that #{r_1 = r_2}.
+}
+\subproof{
+  #{(\leftarrow)} Suppose #{a \mod m = b \mod m}. If we write #{a = q_1m + r_1} and #{b = q_2m + r_2} by the [Division Algorithm](00DC), the assumption that #{a \mod m = b \mod m} means #{r_1 = r_2}. If we subtract #{a} and #{b}, the #{r}’s cancel and we get ##{a - b = (q_1 m + r) - (q_2 m + r) = (q_1 - q_2)m.} Thus #{m \mid (a - b)} and therefore, by definition, #{a \equiv_m b}.
+}
+
+}

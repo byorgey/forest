@@ -1,0 +1,7 @@
+\title{Motivation}
+\date{2026-04-10T13:13:47Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{In many situations, we care \em{only} about the remainder when some number(s) are divided by a particular divisor; for example, when modelling things that repeat cyclically, \ie “loop around” (times on a clock; storing items cyclically in an array; orbital periods; \etc). In such cases we might not care exactly how many times something has looped, but only where it currently is in the cycle. This notion is also important when studying divisibility itself: the remainder in some sense measures “how far away” a particular number is from being divisible by the divisor, and keeping track of this for various numbers is often important.}

@@ -7,3 +7,5 @@
 \import{discrete-macros}
 
 \p{This in turn allows us to conclude that #{\neg \Even(n) \iff \Odd(n)} and vice versa.}
+
+% XXX elaborate

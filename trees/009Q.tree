@@ -10,5 +10,7 @@
 set to dots in another set.  Each dot on the left-hand side must have
 exactly one arrow coming out of it.}
 
+% XXX include an actual drawing?
+
 \p{Note that, according to the definition, it is valid for a function
 to have an empty domain.}

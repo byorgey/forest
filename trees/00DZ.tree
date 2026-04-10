@@ -1,0 +1,12 @@
+\title{#{\equiv_m} is reflexive}
+\date{2026-04-10T13:42:58Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{For all #{m \in \Z^+}, equivalence modulo #{m} (#{\equiv_m}) is [reflexive](008I).}
+
+\proof{
+  Let #{a \in \Z} be arbitrary.  Then #{a \equiv_m a} since #{m \mid (a - a)} (since #{m \cdot 0 = 0}).
+}

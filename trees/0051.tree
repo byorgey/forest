@@ -12,3 +12,4 @@
 \p{##{\all{n}{\N} (\Even(n) \land n > 2) \to (\ext{p}{\N}
   (\mathrm{Prime}(p) \land (\ext{q}{\N} \mathrm{Prime}(q) \land n = p + q)))}}
 
+% XXX expand this with more examples etc.!

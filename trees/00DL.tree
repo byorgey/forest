@@ -5,4 +5,19 @@
 
 \import{discrete-macros}
 
-\p{Informally, this is true because we can start with #{q = 0} and #{r = a}; then, as long as #{r \geq d} we can add one to #{q} and subtract #{d} from #{r} (and similarly if #{r < 0}).}
+\p{Informally, the [Division Algorithm](00DD) is true because we can start with #{q = 0} and #{r = a}; then, as long as #{r \geq d} we can add one to #{q} and subtract #{d} from #{r} (and similarly if #{r < 0}).}
+
+\proof{
+  Formally, let's first show that if #{a, d \in \N} and #{d \neq 0}, then there exist #{q, r} such that #{a = qd + r} and #{0 \leq r < d}.  The proof is by strong induction on #{a}.
+  \subproof{
+    First, if #{0 \leq a < d}, then #{q = 0} and #{r = a} works: clearly #{qd + r = 0d + a = a}, and #{0 \leq r < d} since this is true for #{a}.
+  }
+  \subproof{
+
+    Otherwise, suppose #{a \geq d}, and suppose that the Division Algorithm works for every natural number less than #{a}.  Consider in particular #{a - d}, which is less than #{a} but still #{\geq 0}.  Then we know that there must exist #{q, r} such that #{a - d = qd + r} and #{0 \leq r < d}.  But then #{a = (q+1)d + r}.
+  }
+
+\p{Next, if #{a < 0}, the above proof tells us there must exist #{q} and #{r} such that #{-a = qd + r} with #{0 \leq r < d}.  If #{r = 0}, then #{a = (-q)d + r}.  Otherwise, #{a = -(q+1) d + (d - r)} XXX}
+
+\p{Finally, we will show that #{q} and #{r} are unique.  Suppose #{a = q_1 d + r_1 = q_2 d + r_2} with #{0 \leq r_1 < d} and #{0 \leq r_2 < d}.  XXX}
+}

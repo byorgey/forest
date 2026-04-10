@@ -9,3 +9,4 @@
   r &= a \mod d
 \end{align*}} The #{\div} operator is written \code{/} in Java and C/C++, and \code{//} in Python and Disco; the #{\mod} operator is written \code{\startverb%\stopverb} in many programming languages, and \code{mod} in Disco.}
 
+\p{Note, however, that the #{\div} and #{\mod} operators in Java, C/C++, and Rust do not work in the same way as specified above.  In particular, in those languages, the result of #{a \mod d} is negative when #{a} is negative, rather than always returning a result in the range #{0 \leq r < d}.  Languages such as Python, Disco, and Haskell implement #{\mod} correctly.}

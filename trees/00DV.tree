@@ -1,0 +1,9 @@
+\title{Notation for modular equivalence}
+\date{2026-04-10T13:18:49Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+\p{People typically use the notation ##{a \equiv b \pmod m} instead of #{a \equiv_m b}. But this notation is so bad that we will not use it. This #{\pmod m} is not the same thing as the #{\mod} operator we introduced earlier. It is not doing anything to #{b}. This is just the way that we indicate that #{a} and #{b} are equivalent “in the #{\pmod m} world”, that is, if we only care about the remainder after dividing by #{m}.  It is also difficult to read when we want to write down a long sequence of equivalences, since the #{m} only comes at the very end: #{a \equiv b \equiv c \equiv d \equiv e \equiv f \pmod{m}}.}
+\p{I prefer #{\equiv_m} because it makes it more clear that we are talking about a specific [relation](0089).}

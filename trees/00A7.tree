@@ -6,3 +6,5 @@
 \import{discrete-macros}
 
 \p{Use Disco to check injectivity of #{g}, #{h}, #{\ell}, #{j}.  Also show checking injectivity of a function that is "mostly" injective.}
+
+% XXX finish me!

@@ -1,0 +1,19 @@
+\date{2026-04-10T13:51:04Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+
+\p{For any #{a,b,c,d \in \Z} and #{m \in \Z^+}, if #{a \equiv_m b} and #{c
+\equiv_m d}, then
+
+\ol{
+  \li{#{a + c \equiv_m b + d}, and}
+  \li{#{a - c \equiv_m b - d}, and}
+  \li{#{ac \equiv_m bd}.}
+}
+(that is, #{\equiv_m} is a \em{congruence} with respect to addition, subtraction, and multiplication).}
+
+% XXX proof

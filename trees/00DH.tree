@@ -4,6 +4,6 @@
 
 \import{discrete-macros}
 
-\p{What about when #{55} divided by #{11}? In this case #{q = 5}, #{r = 0}.}
+\p{What about when #{55} is divided by #{11}? In this case we have #{55 \div 11 = 5} and #{55 \mod 11 = 0}.}
 
 

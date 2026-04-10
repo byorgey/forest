@@ -1,0 +1,28 @@
+\title{Modular Equivalence}
+\date{2026-04-10T12:32:12Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\transclude{00DS}   % Motivation
+\transclude{00DT}   % Intuition
+\transclude{00DU}   % Definition
+\transclude{00DV}   % Remark on notation
+
+\p{Let’s continue studying equivalence modulo #{m}, that is, #{\equiv_m}. First, let’s prove a couple theorems giving us alternative ways to characterize it.}
+
+\transclude{00DW}   % Modeq <-> offset by km
+\transclude{00DY}   % Modeq <-> mod m equal
+
+\p{Now let’s verify that #{\equiv_m} is in fact an [equivalence relation](008Y).}
+
+\transclude{00DZ}   % reflexive
+\transclude{00E0}   % symmetric
+\transclude{00E1}   % transitive
+
+\p{But there's more: besides being an equivalence relation, #{\equiv_m} interacts nicely with addition, subtraction, and multiplication.}
+
+\transclude{00E2}   % congruence
+\transclude{00E3}   % remark: operations on both sides of an equivalence
+% XXX example showing that it is NOT a congruence with respect to division!!
