@@ -3,7 +3,6 @@
 \title{Modular equivalence #{\iff} offset by a multiple of #{m}}
 \date{2026-04-10T13:27:23Z}
 \tag{discrete}
-\tag{draft}
 
 \taxon{Theorem}
 \p{Let #{a, b \in \Z} and #{m \in \Z^+}. Then #{a \equiv_m b} if and only if there exists #{k \in \Z} such that #{a = b + km}.}

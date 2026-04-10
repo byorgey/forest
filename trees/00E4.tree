@@ -1,0 +1,21 @@
+\title{Equivalence classes and canonical representatives}
+\date{2026-04-10T15:57:59Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+\p{The [previous theorem](00DY) was a bit more work to prove, but it is an extremely useful characterization of modular equivalence.}
+
+\p{In general, suppose we have an equivalence relation #{\sim} on a set #{A}, and a function #{c : A \to B} such that #{a \sim b} if and only if #{c(a) = c(b)}. We say that the function #{c} computes a \em{canonical representative} for each [equivalence class](0098) of #{\sim}. From a computational point of view, this is fantastic: given any two elements #{a,b \in A}, we can easily check whether they are equivalent, simply by computing #{c(a)} and #{c(b)} and checking whether the resulting representatives are equal.}
+
+\p{Many of the equivalence relations we have studied can be characterized in this way.
+\ul{
+  \li{For example, the relation on [words by length](0091) (where two English words are related if they have the same number of letters) is of course characterized by the #{\mathit{length}} function.}
+  \li{[[009M]] can be characterized by the function that returns the all-lowercase version of a string (or, alternatively, all-uppercase): two strings are equivalent iff their all-lowercase versions are equal.  Of course, this is exactly how case-insensitive comparison is usually implemented.}
+  \li{The [equivalence that relates lists with the same elements but different orders](009N) can be characterized by sorting: two lists are equivalent iff their sorted versions are equal.}
+  \li{Finally, the [previous theorem](00DY) shows that #{\equiv_m} is likewise characterized by canonical representatives for each equivalence class: given some #{a \in Z}, the canonical representative for #{a} is #{a \mod m}, and the theorem indeed says that two numbers #{a} and #{b} are equivalent modulo #{m} iff #{a \mod m = b \mod m}.   For example, one of the equivalence classes of #{\equiv_4} is ##{\{\dotsm -7, -3, 1, 5, 9, 13, \dots\},} and #{1} is the canonical representative of this equivalence class: any two numbers in this equivalence class result in #{1} when we compute their remainder modulo 4.  For example, #{-3 \mod 4 = 1}, #{5 \mod 4 = 1}, #{9 \mod 4 = 1}, and so on.}
+}
+}
+
+\p{Note, however, that not all equivalence relations can be characterized in this way!  For example, #{\iff} is an equivalence relation on propositions, but there is no function #{f} we can use to compute whether #{P \iff Q} just by checking whether #{f(P) = f(Q)}; in general it can be difficult to figure out whether #{P \iff Q}.}

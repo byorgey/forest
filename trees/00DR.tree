@@ -14,13 +14,10 @@
 
 \transclude{00DW}   % Modeq <-> offset by km
 \transclude{00DY}   % Modeq <-> mod m equal
+\transclude{00E4}   % Remarks on canonical representatives
 
 \p{Now let’s verify that #{\equiv_m} is in fact an [equivalence relation](008Y).}
-
-% XXX prove these in terms of mod m characterization!
-\transclude{00DZ}   % reflexive
-\transclude{00E0}   % symmetric
-\transclude{00E1}   % transitive
+\transclude{00E5}
 
 \p{But there's more: besides being an equivalence relation, #{\equiv_m} interacts nicely with addition, subtraction, and multiplication.}
 

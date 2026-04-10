@@ -3,7 +3,6 @@
 \title{Modular equivalence #{\iff} same mod}
 \date{2026-04-10T13:32:38Z}
 \tag{discrete}
-\tag{draft}
 
 \taxon{Theorem}
 \p{For all #{a, b \in \Z} and #{m \in \Z^+}, ##{(a \equiv_m b) \iff (a \mod m = b \mod m).}}
