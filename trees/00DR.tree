@@ -17,6 +17,7 @@
 
 \p{Now let’s verify that #{\equiv_m} is in fact an [equivalence relation](008Y).}
 
+% XXX prove these in terms of mod m characterization!
 \transclude{00DZ}   % reflexive
 \transclude{00E0}   % symmetric
 \transclude{00E1}   % transitive
