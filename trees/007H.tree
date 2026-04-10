@@ -114,10 +114,10 @@
   \title{Number Theory}
   \ul{
     \li{N1: I can determine [whether one integer is divisible by another](00D5), or whether a natural number up to 100 is prime.}
+    \li{N2: I can calculate [quotients and remainders according to the Division Algorithm](00DC).}
   }
 }
 
-%         N2: I can calculate quotients and remainders according to the Division Algorithm.
 %         N3: I can compute the greatest common divisor of two natural numbers using the Euclidean Algorithm.
 %         N4: I can compute Bézout coefficients and modular inverses using the Extended Euclidean Algorithm.
 %         N5: I can solve modular equivalences in one variable involving addition, subtraction, and multiplication by a constant.
