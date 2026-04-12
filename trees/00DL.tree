@@ -1,7 +1,6 @@
 \title{Proof of Division Algorithm}
 \date{2026-04-08T13:46:53Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
@@ -17,7 +16,7 @@
     Otherwise, suppose #{a \geq d}, and suppose that the Division Algorithm works for every natural number less than #{a}.  Consider in particular #{a - d}, which is less than #{a} but still #{\geq 0}.  Then we know that there must exist #{q, r} such that #{a - d = qd + r} and #{0 \leq r < d}.  But then #{a = (q+1)d + r}.
   }
 
-\p{Next, if #{a < 0}, the above proof tells us there must exist #{q} and #{r} such that #{-a = qd + r} with #{0 \leq r < d}.  If #{r = 0}, then #{a = (-q)d + r}.  Otherwise, #{a = -(q+1) d + (d - r)} XXX}
+\p{Now, if #{a < 0}, the above proof tells us there must exist #{q} and #{r} such that #{-a = qd + r} with #{0 \leq r < d}.  If #{r = 0}, then #{a = (-q)d + r}.  Otherwise, #{a = -(q+1) d + (d - r)}; the remainder #{d - r} is in the right range, since if #{0 < r < d} then #{0 < d - r < d}.}
 
-\p{Finally, we will show that #{q} and #{r} are unique.  Suppose #{a = q_1 d + r_1 = q_2 d + r_2} with #{0 \leq r_1 < d} and #{0 \leq r_2 < d}.  XXX}
+\p{Finally, we will show that #{q} and #{r} are unique.  Suppose there are two sets of #{q} and #{r} that satisfy the theorem, that is, #{a = q_1 d + r_1 = q_2 d + r_2} with #{0 \leq r_1 < d} and #{0 \leq r_2 < d}.  We will show that they must in fact be equal.  Rearranging, we have #{r_1 - r_2 = (q_2 - q_1)d}, so #{r_1 - r_2} is a multiple of #{d}. Since #{0 \leq r_1, r_2 < d}, we must have #{-d < r_1 - r_2 < d}.  The only multiple of #{d} in this range is #{0}, so in fact #{r_1 - r_2 = 0} and thus #{r_1 = r_2}.  This, in turn, means #{q_1 d = q_2 d} and hence #{q_1 = q_2}.}
 }

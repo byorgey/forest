@@ -6,7 +6,7 @@
 
 \taxon{Remark}
 \p{Note that when we have an \em{equality} #{a = b}, we can do whatever we want to it: as long as we do the same thing to both sides they will remain equal. With #{\equiv_m}, however, this only works for certain operations! The things we do to an equivalence have to “play nice” with the operation of taking remainders modulo #{m}.}
-\p{From the proof above, we can see the special way addition and multiplication interact with remainders. For example, if we tried to do a similar proof for division, we would get stuck: there is no reason to believe that #{(b + jm)/(c + km)} would be of the form #{\frac{b}{c} + lm} for some integer #{l}.}
+\p{The [previous theorem](00E2) shows that we can add, subtract, or multiply both sides of a modular equivalence by the same thing.  However, it turns out that we \em{cannot} divide—at least, not in a naïve way!  For example, notice that ##{2 \equiv_4 6,} but if we try dividing both sides by 2, we get ##{1 \equiv_4 3,} which is false!}
 
 
 

@@ -14,7 +14,7 @@
     km.} Rearranging, ##{r_1 - r_2 = (q_2 - q_1 - k)m,} which means that #{(r_1 - r_2)} is divisible by #{m}. However, we know that #{0 \leq r_1, r_2 < m}, and so #{-m < r_1 - r_2 < m}. In order for #{r_1 - r_2} to be a multiple of #{m}, the only possibility is that #{r_1 - r_2 = 0}, meaning that #{r_1 = r_2}.
 }
 \subproof{
-  #{(\leftarrow)} Suppose #{a \mod m = b \mod m}. If we write #{a = q_1m + r_1} and #{b = q_2m + r_2} by the [Division Algorithm](00DC), the assumption that #{a \mod m = b \mod m} means #{r_1 = r_2}. If we subtract #{a} and #{b}, the #{r}’s cancel and we get ##{a - b = (q_1 m + r) - (q_2 m + r) = (q_1 - q_2)m.} Thus #{m \mid (a - b)} and therefore, by definition, #{a \equiv_m b}.
+  #{(\leftarrow)} Suppose #{a \mod m = b \mod m = r}, and write #{a = q_1m + r} and #{b = q_2m + r} by the [Division Algorithm](00DC). If we subtract #{a} and #{b}, the #{r}’s cancel and we get ##{a - b = (q_1 m + r) - (q_2 m + r) = (q_1 - q_2)m.} Thus #{m \mid (a - b)} and therefore, [by definition](00DU), #{a \equiv_m b}.
 }
 
 }

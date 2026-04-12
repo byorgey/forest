@@ -1,12 +1,10 @@
 \title{Even and odd}
 \date{2026-04-08T13:50:14Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
-\p{Note that we can finally use the [Division Algorithm](00DD) to tidy up our notions of even and odd. We defined Even as XXX and Odd as XXX.  Intuitively, we know that if a number is not even, then it has to be odd, and vice versa, but we haven't proved that until now.}
+\p{Note that we can finally use the [Division Algorithm](00DD) to tidy up our notions of even and odd. We [defined being even](004V) as #{\Even(n) \equiv \ext{k}{\Z}{n = 2k}} and [we defined being odd](004W) as #{\Odd(n) \equiv \ext{k}{\Z}{n = 2k+1}}.  Intuitively, we know that if a number is not even, then it has to be odd, and vice versa, but we haven't proved that until now.}
 
 \transclude{00DO}   % Theorem: even \/ odd
-\transclude{00DP}   % Proof
 \transclude{00DQ}   % not Even <-> Odd etc

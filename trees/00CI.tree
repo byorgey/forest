@@ -2,13 +2,13 @@
 
 \def\OR{#{\bigvee}}
 
-\title{Draft blog post: the empty set, the void type, false, monoids}
+\title{Draft blog post: Dr. How I Learned to Stop Worrying and Love Zero}
 \author{brentyorgey}
 \date{2026-03-28T20:20:06Z}
 
 \p{Does False imply True?  What is a function out of an empty set?  What does a #{\forall} mean when the domain is empty?}
 
-\p{These are the kinds of questions that routinely trip people up, and there is a constellation of similar questions.  What these questions have in common XXX  Although answers to these questions seem unintuitive, each has an answer XXX elegant, consistent.}
+\p{These questions, and many similar ones, routinely trip up the students that I teach.  What they all have in common is emptiness, nothingness, \em{zero}: a concept which has been confusing humans for millenia.  Although answers to these questions can seem unintuitive, each actually has an elegant, consistent answer!}
 
 \p{Audience: XXX  Use Haskell notation but hopefully still makes sense even if you don't know Haskell.}
 

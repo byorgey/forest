@@ -9,7 +9,7 @@
 \p{#{\equiv_m} is an [equivalence relation](008Y) for any #{m \in \Z^+}, that is, it is [reflexive](008I), [symmetric](008J), and [transitive](008P).}
 
 \proof{
-  In fact, any relation which can be [characterized by canonical representatives](00E4) is automatically an equivalence relation, since it inherits the relevant properties from the equality relation.  For suppose #{a \sim b} iff #{f(a) = f(b)}.
+  In fact, any relation which can be [characterized by canonical representatives](00E4) (that is, any relation which is the \em{kernel} of some function) is automatically an equivalence relation, since it inherits the relevant properties from the equality relation.  To see this, let #{\sim} be an arbitrary relation on a set #{A} such that #{(a \sim b) \iff (f(a) = f(b))}.
   \ul{
     \li{Since equality is reflexive, #{f(a) = f(a)} for any #{a \in A} and thus #{a \sim a}.}
     \li{If #{a \sim b}, then #{f(a) = f(b)}; since equality is symmetric this means #{f(b) = f(a)} and thus #{b \sim a}.}

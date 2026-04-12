@@ -1,0 +1,31 @@
+\import{discrete-macros}
+
+\title{Weeknotes for 10 April 2026 (week 14)}
+\author{brentyorgey}
+\date{2026-04-12}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\p{Not much to report this week... came down with a nasty cold Monday night and have spent the rest of the week doing not much beyond the bare minimum.}
+
+\subtree{
+  \title{Equivalence relations which are the kernel of a (nice) function}
+
+  \p{I did continue to teach my classes (while masked up) and had a
+  nice epiphany while [teaching about modular equivalence](00DR): I used to
+  present separate detailed proofs showing that the modular
+  equivalence relation is reflexive, symmetric, and transitive... but
+  I realized that we can first prove the alternative characterization
+  #{(a \equiv_m b) \iff (a \mod m = b \mod m)}, and then it
+  automatically inherits all the properties of an equivalence relation
+  from equality!  Any time we have a relation #{R} such that #{(x \mathbin{R} y)
+  \iff (f(x) = f(y))} for some function #{f}, the relation #{R} is
+  automatically an equivalence, and if the equality is decidable we also get
+  a nice way to decide our relation.  This situation comes up
+  all the time in computing (convert strings to lowercase in order to
+  decide case-insensitive equality; sort lists in order to compare up
+  to permutation; and so on).}
+
+  \p{I [posted about this on Mastodon, which led to a nice discussion](https://mathstodon.xyz/@byorgey/116388560162882132). It turns out that given a function #{f : A \to B}, the equivalence relation on #{A} induced by #{f} (putting each fiber in its own equivalence class) is called the \em{kernel} of #{f}.  Previously, I only knew that term in the sense of the set of elements sent to zero by a group or ring homomorphism, but I guess it's related: in the case of a group or ring homomorphism, there's enough structure to allow us to recover the entire kernel relation on the domain from just the set of elements related to zero, so we might as well use the same term "kernel" for both.}
+}

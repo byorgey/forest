@@ -4,4 +4,4 @@
 
 \import{discrete-macros}
 
-\p{“#{n} is odd.” ##{\Odd(n) = (\ext{k}{\Z} 2k + 1 = n).} Or we could define it as #{\neg \Even(n)}. (It is actually slightly nontrivial to prove formally that #{\Odd(n) \equiv \neg \Even(n)}—we won’t be able to prove it until we go over the Division Algorithm later in the semester!)}
+\p{“#{n} is odd.” ##{\Odd(n) = (\ext{k}{\Z} 2k + 1 = n).} Or we could define it as #{\neg \Even(n)}. (It is actually slightly nontrivial to prove formally that #{\Odd(n) \equiv \neg \Even(n)}—we won’t [be able to prove it until we go over the Division Algorithm](00DN) later in the semester!)}

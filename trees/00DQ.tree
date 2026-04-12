@@ -1,11 +1,25 @@
+\title{Not even is odd}
 \date{2026-04-08T13:55:23Z}
 \tag{discrete}
-\tag{draft}
 
-\taxon{Remark}
+\taxon{Theorem}
 
 \import{discrete-macros}
 
-\p{This in turn allows us to conclude that #{\neg \Even(n) \iff \Odd(n)} and vice versa.}
+\p{This in turn allows us to conclude that #{\all{n}{\Z}{\neg \Even(n) \iff \Odd(n)}}.}
 
-% XXX elaborate
+\proof{
+  Let #{n} be an arbitrary integer.  By [the previous theorem](00DO), we know #{n} is either even or odd.  We will show both directions of the if and only if.
+  \subproof{
+    Suppose #{\neg \Even(n)}; we must show #{\Odd(n)}. But since we know #{n} is either even or odd, and it is not even, it must in fact be odd.
+  }
+  \subproof{
+    Now suppose #{n} is odd; we must show it is not even.
+    \subproof{
+      To prove #{\neg \Even(n)}, which is equivalent to #{\Even(n) \implies \False}, suppose #{n} is even; then we must derive \False, that is, a contradiction.
+      \subproof{
+        At this point we know both that #{n} is odd, so we must have #{n = 2k + 1} for some integer #{k}, and also that #{n} is even, so #{n = 2j} for some integer #{j}.  From #{2k+1 = 2j}, we can rearrange to obtain ##{1 = 2(j-k),} but this is impossible: #{1} cannot be equal to #{2} times an integer.
+      }
+    }
+  }
+}

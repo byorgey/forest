@@ -12,7 +12,7 @@
   \reason{\iff}{Definition of #{\equiv_m} relation}
   \stmt{m \mid (a - b)}
   \reason{\iff}{Definition of divides relation}
-  \stmt{\ext{k}{\Z}{km = a - b}}
+  \stmt{\ext{k}{#{\Z}}{km = a - b}}
   \reason{\iff}{algebra}
-  \stmt{\ext{k}{\Z}{a = b + km}}
+  \stmt{\ext{k}{#{\Z}}{a = b + km}}
 }
