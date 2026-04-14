@@ -1,0 +1,8 @@
+\title{Trivial divisors}
+\date{2026-04-14T21:53:18Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{Notice that for any natural number #{n} we always have #{1 \mid n} (since #{1 \times n = n}) and #{n \mid n} (since #{n \times 1 = n}).  #{1} and #{n} are called \em{trivial divisors} of #{n}.}

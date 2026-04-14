@@ -4,4 +4,13 @@
 \import{discrete-macros}
 
 \taxon{Example}
-\p{#{2}, #{3}, #{5}, and #{7} are prime: we can easily check (by trying all possibilities) that the only divisors of each number are #{1} and the number itself.}
+\p{#{2}, #{3}, #{5}, and #{7} are prime, which we can easily check by trying all possibilities:
+\ul{
+  \li{#{2} is prime because there aren't even any numbers between #{1} and #{2} which could be divisors.}
+  \li{#{3} is prime because #{2 \nmid 3}.}
+  \li{#{4} is not prime, because #{2 \mid 4}.}
+  \li{#{5} is prime, because #{2 \nmid 5}, #{3 \nmid 5}, and #{4 \nmid 5}.}
+  \li{#{6} is not prime, because #{2 \mid 6} (and #{3 \mid 6}).}
+  \li{#{7} is prime, because #{2 \nmid 7}, #{3 \nmid 7}, #{4 \nmid 7}, #{5 \nmid 7}, and #{6 \nmid 7}.}
+}
+}

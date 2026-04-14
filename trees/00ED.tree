@@ -5,4 +5,4 @@
 \import{discrete-macros}
 
 \taxon{Definition}
-\p{An integer #{p > 1} is \em{prime} iff the only [divisors](00D5) of #{p} are #{1} and #{p}. That is, ##{\Prime(p) \equiv (p > 1) \land (\all{d}{\N}{(d \mid p) \implies (d = 1 \lor d = p)}).}}
+\p{An integer #{p > 1} is \em{prime} iff it has no nontrivial divisors.  That is, ##{\Prime(p) \equiv (p > 1) \land (\all{d}{\N}{(1 < d < p) \to d \nmid p}).}}
