@@ -17,10 +17,9 @@
 (that is, #{\equiv_m} is a \em{congruence} with respect to addition, subtraction, and multiplication).}
 
 \proof{
-Let #{a,b,c,d} be arbitrary integers, and suppose #{a \equiv_m b} and #{c \equiv_m d}.
+Let #{a,b,c,d} be arbitrary integers, and suppose #{a \equiv_m b} and #{c \equiv_m d}. By [a previous theorem](00DW) we can write #{a = b + jm} and #{c = d + km}.
 \ol{
-  \li{By [a previous theorem](00DW) we can write #{a = b + jm} and #{c =
-    d + km}. Then ##{a + c = (b + jm) + (c + km) = (b + c) +
+  \li{Considering #{a+c}, we have ##{a + c = (b + jm) + (c + km) = (b + c) +
       (j+k)m,} and thus by the same theorem in reverse, #{a + c
       \equiv_m b + d}.}
   \li{The proof for subtraction is very similar: ##{a - c = (b + jm) - (c + km) = (b - c) + (j-k)m,} so #{a - c \equiv_m b - d}.}

@@ -1,0 +1,7 @@
+\title{The largest known prime}
+\date{2026-04-13T21:47:49Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{So [there is no largest prime](00EL); but the currently (as of April 13, 2026) largest \em{known} prime—that is, the largest number we can specifically point to and say for certain it is prime—is ##{2^{136,279,841} - 1.} This number has #{41,024,320} decimal digits (pop quiz: how many [binary digits](00CX) does it have?), and was found by the [Great Internet Mersenne Prime Search](https://www.mersenne.org/primes/?press=M136279841). If it were printed in a book, with, say, #{100} digits per line and #{50} lines of digits per page, it would require around #{8204} pages—probably a 20-volume set of books taking up a whole shelf!}

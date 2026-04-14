@@ -23,4 +23,4 @@
 
 \transclude{00E2}   % congruence
 \transclude{00E3}   % remark: operations on both sides of an equivalence
-% XXX example showing that it is NOT a congruence with respect to division!!
+\transclude{00E6}   % Solving modular equivalences: examples

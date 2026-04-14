@@ -7,4 +7,5 @@
 \transclude{00D4}   % Intro
 \transclude{00D5}   % Divisibility
 \transclude{00DC}   % Division algorithm
-\transclude{00DR}
+\transclude{00DR}   % Modular equivalence
+\transclude{00EC}   % Primes

@@ -1,0 +1,12 @@
+\date{2026-04-13T21:28:16Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+\p{It’s worth spelling out how to write this in formal predicate logic: ##{\forall n \in \Z^+ \st \mathrm{Composite}(n) \implies \exists p
+    \in \Z^+ \st \mathrm{Prime}(p) \land (p \mid n) \land p \leq \sqrt
+    n.} The phrase “it has a prime divisor #{\leq \sqrt n}” actually expands into an #{\exists} with a conjunction of three propositions! Each of “prime”, “divisor”, and “#{\leq \sqrt
+  n}” corresponds to a separate property of the number that is claimed to exist.}
+
+

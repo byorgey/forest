@@ -1,0 +1,12 @@
+\title{Composite}
+\date{2026-04-13T21:00:38Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+
+\p{Integers #{> 1} that are not prime are called \em{composite}.}
+
+\p{That is, a composite number #{n} is one which has at least one divisor #{d \mid n} which is neither #{1} nor #{n}, that is, a divisor #{1 < d < n}.  Note that if #{d \mid n}, then by definition #{dk = n} for some integer #{k}, which means #{k} is also a divisor of #{n}; divisors come in pairs (except for the special case when #{n = d^2}).}
+

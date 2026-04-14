@@ -1,0 +1,26 @@
+\title{Primes}
+\date{2026-04-13T20:06:53Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{You're probably familiar with prime numbers and prime factorization from elementary school. Let's study these concepts formally, using the framework that we've built so far.}
+
+\transclude{00ED}  % Prime
+\transclude{00EF}  % Example primes
+\transclude{00EH}  % Composite
+\transclude{00EE}  % 0 and 1
+
+\p{We can now state one of the most fundamental results in number theory, which several ancient civilizations discovered independently, and you probably learned in elementary school.}
+
+\transclude{00EG}  % FTA
+\transclude{00EI}  % Composites have divisor <= sqrt
+\transclude{00EK}  % Sieve of Eratosthenes
+
+\p{Here is another classic piece of mathematics from ancient Greece:}
+
+\transclude{00EL}  % Infinitude of primes
+\transclude{00EM}  % Biggest known prime
+
+%% XXX divisibility tests

@@ -1,0 +1,9 @@
+\date{2026-04-13T20:34:32Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+\p{Notice that according to the definition, #{0} and #{1} are neither prime nor composite! They are special because they are the multiplicative annihilator and identity, respectively.}
+
+

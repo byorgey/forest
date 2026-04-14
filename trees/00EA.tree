@@ -1,0 +1,8 @@
+\date{2026-04-13T02:07:19Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+
+\p{Solve for #{x}: ##{x + 22 \equiv_{19} 20x + 3} Subtracting #{x + 3} from both sides yields ##{19 \equiv_{19} 19x.} But since #{19 \equiv_{19} 0}, this reduces to ##{0 \equiv_{19} 0,} which is always true for any value of #{x}. Hence every integer is a solution for #{x}.}

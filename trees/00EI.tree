@@ -1,0 +1,13 @@
+\title{Composites have a divisor #{\leq \sqrt{n}}}
+\date{2026-04-13T21:27:45Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{If #{n} is [composite](00EH), it has a [prime](00ED) [divisor](00D5) #{d \leq \sqrt n}.}
+
+\transclude{00EJ}
+\proof{
+  Suppose #{n} is composite. That means there exist #{1 < a, b < n} such that #{n = ab}. If both #{a > \sqrt n} and #{b > \sqrt n}, then their product would be #{ab > n}, which is a contradiction—hence either #{a \leq \sqrt n} or #{b \leq \sqrt n}. Suppose #{a \leq \sqrt n} (the proof is essentially the same if #{b \leq \sqrt n}). We are \em{almost} done but not quite—#{a} is a divisor of #{n}, and #{a \leq \sqrt n}, \em{but} we don’t necessarily know that it is prime! However, by the [Fundamental Theorem of Arithmetic](00EG), there is some prime #{p} which divides #{a}, and by transitivity of divisibility, #{p \mid n}, and also #{p \leq a \leq \sqrt n}.
+}

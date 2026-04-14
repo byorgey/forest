@@ -1,0 +1,9 @@
+\date{2026-04-13T01:58:40Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Solve for #{x}: ##{101x + 52 \equiv_{10} 68}}
+
+\p{We can first subtract #{52} from both sides, yielding ##{101x \equiv_{10} 16 \equiv_{10} 6.} It might look like we are stuck at this point: we are not allowed to divide both sides by #{101}. However, notice that #{101 \equiv_{10} 1}, and so #{101x \equiv_{10} x} (since #{\equiv_{10}} is a congruence with respect to multiplication). Hence, we have ##{x \equiv_{10} 6.}}

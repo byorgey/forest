@@ -1,0 +1,29 @@
+\title{Fundamental Theorem of Arithmetic}
+\date{2026-04-13T20:39:59Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{Every positive integer #{n \geq 1} is equal to a product of zero or more primes, known as its \em{prime factorization}. The product is unique up to reordering; say, if the primes are listed in order from smallest to largest.}
+
+\p{There are two things to prove: first, that it is always \em{possible} to write any positive integer as a product of primes, and second, that the product is always unique.  At this point, we will only prove that the product exists.}
+
+\proof{
+  We will prove via strong induction that every positive integer #{n \geq 1} is equal to a product of primes.
+  \subproof{
+    #{n = 1} can be written as an empty product, \ie a product of \em{zero} primes.
+  }
+  \subproof{
+    Now let #{k \geq 1} be aribitrary, and suppose that every number #{\leq k} is equal to a product of primes.  We must show this for #{k+1} as well.  Since #{k+1 \geq 2}, it is either prime or composite.
+    \subproof{
+      If #{k+1} is prime, then we are done: it is equal to a "product" of just one prime (itself).
+    }
+    \subproof{
+      Otherwise, #{k+1} is composite, which means there must be positive integers #{1 < a, b < k+1} such that #{k+1 = ab}.  Since #{a \leq k} and #{b \leq k}, by the induction hypothesis we know that they are both equal to a product of primes.  Hence so is #{k+1 = ab}: the product of two products of primes is itself a product of primes.
+    }
+  }
+}
+
+% XXX advanced: proof that prime factorization is unique

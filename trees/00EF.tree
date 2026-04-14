@@ -1,0 +1,7 @@
+\date{2026-04-13T20:38:01Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{#{2}, #{3}, #{5}, and #{7} are prime: we can easily check (by trying all possibilities) that the only divisors of each number are #{1} and the number itself.}

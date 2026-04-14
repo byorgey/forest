@@ -1,0 +1,8 @@
+\date{2026-04-13T02:08:03Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Solve for #{x}: ##{x + 22 \equiv_{19} 20x - 7} This is similar to the previous example, but we end up with ##{10
+  \equiv_{19} 0,} which is impossible. Hence in this example there are no solutions for #{x}.}

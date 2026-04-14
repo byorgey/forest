@@ -1,0 +1,19 @@
+\date{2026-04-13T01:47:34Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+
+\p{Solve for #{x}: ##{x + 7 \equiv_3 12.}
+Normally, if we were solving the \em{equation} #{x + 7 = 12}, we would solve for #{x} by subtracting 7 from both sides.  Can we do that here?  Yes, we can, because #{\equiv_3} is an [equivalence relation](00E5) and a [congruence with respect to subtraction](00E2).  Specifically, because it is reflexive, we know that #{7 \equiv_3 7}; then, from #{x + 7 \equiv_3 12} and #{7 \equiv_3 7}, we can conclude that ##{x + 7 - 7 \equiv_3 12 - 7.}  Simplifying yields
+##{x \equiv_3 5.} This is a valid solution for #{x}; since #{5 \equiv_3 2} (and #{\equiv_3} is transitive) we can also simplify this to ##{x \equiv_3 2,} which is a bit simpler; to mirror the Division Algorithm, we sometimes prefer our solutions to be specifically of the form #{x \equiv_m k} where #{0 \leq k < m}.}
+
+\p{Note that #{x \equiv_3 2} is really a way of expressing infinitely many valid solutions for #{x}: it means that ##{x \in \{\dots, -4, -1, 2, 5, 8, 11, \dots\}.} We can check our solution by picking one or more values for #{x}, substituting into the original equivalence, and checking that it is satisfied.  For example, if #{x = 2} then the original equivalence says #{2 + 7 \equiv_3 12}, which is true since both sides are a multiple of 3.}
+
+\p{We do not usually need to be this pedantic when solving modular
+equivalences. It would be acceptable, for example, to just write the following:
+“Starting from #{x + 7 \equiv_3 12}, we can subtract #{7} from both
+sides, yielding #{x \equiv_3 5 \equiv_3 2}.”}
+
+

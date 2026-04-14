@@ -1,0 +1,22 @@
+\date{2026-04-13T02:00:52Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Solve for #{x}: ##{3x + 19 \equiv_7 2(x - 73)} We can solve this as follows:
+    \stmt{3x + 19 \equiv_7 2(x - 73)}
+    \reason{\to}{distribute}
+    \stmt{3x + 19 \equiv_7 2x - 146}
+    \reason{\to}{reduce #{19} and #{-146} modulo #{7}}
+    \stmt{3x + 5 \equiv_7 2x - 6}
+    \reason{\to}{subtract #{5} from both sides}
+    \stmt{3x \equiv_7 2x - 11}
+    \reason{\to}{subtract #{2x} from both sides}
+    \stmt{x \equiv_7 - 11}
+    \reason{\to}{#{-11 \equiv_7 3}}
+    \stmt{x \equiv_7 3}
+}
+
+\p{It is worth taking a moment to spell out the reasons we are allowed to, say, replace #{3x + 19} with #{3x + 5} above. Since #{3x \equiv_7 3x} and #{19 \equiv_7 5}, we can [add these](00E2) to conclude #{3x + 19 \equiv_7 3x + 7}.  In fact, given any expression made up of only addition, subtraction, and multiplication, we can replace any part of the expression with something else equivalent.  For example, ##{3x + y(1 + 19(x - 2)) \equiv_7 3x + y(1 + 5(x - 2)).}}
