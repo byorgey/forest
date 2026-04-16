@@ -1,0 +1,31 @@
+\title{The divisibility lattice}
+\date{2026-04-16T22:04:51Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We are used to thinking of the natural numbers like this:}
+
+\imgasset{number-line.png}
+
+\p{They are arranged along a number line, in order according to the #{\leq} relation. Here we’ve drawn an arrow from each number to the next. Notice that because #{\leq} is transitive, there is a path following the arrows from one number to another iff the first is less than or equal to the second. We’ve seen before that #{\leq} is intimately related to addition, so we can think of this chain of arrows as a picture of the additive structure of #{\N}.}
+
+\p{The divisibility relation #{a \mid b}, on the other hand, gives us a way to think about the \em{multiplicative} structure of the natural numbers. Let’s draw a similar kind of diagram of the natural numbers where #{a} and #{b} are connected by an arrow whenever #{a \mid b}. (However, ff #{a \mid b \mid c} then we won’t bother drawing an arrow #{a \to c}: since divisibility is transitive, we can just follow the path #{a \to b \to c} to see that #{a \mid c}. However, abstractly the arrow is still “there”, we just won’t draw it.)}
+
+\imgasset{divisibility-lattice.jpg}
+
+\p{Obviously this is just a tiny part of the entire (infinite) diagram. Here are a few observations:}
+\ul{\li{\p{This diagram is obviously much more complicated than the diagram for #{\leq}! This is, in some sense, the reason why studying the multiplicative structure of #{\N} is much more interesting than studying the additive structure.}
+}
+\li{\p{All the primes are at the bottom, right above #{1}. Composite numbers come in “layers” above that depending on how many prime divisors they have.}
+}
+\li{\p{The \em{greatest common divisor} of two numbers #{a} and #{b} is the highest number in the diagram from which we can travel up to both #{a} and #{b}. For example, we can see that the GCD of #{60} and #{18} is #{6}, since from #{6} there is a path along arrows upwards to both #{60} and #{18}, and there is no higher node with this property.}
+}
+\li{\p{Likewise, the \em{least common multiple} of #{a} and #{b} is the lowest number we can reach from both #{a} and #{b}. In this example, the LCM of #{60} and #{18} is #{180}.}
+}
+\li{\p{Where should #{0} go in this diagram? In fact, it has to go at the “top”, since every number divides #{0}, hence there is an arrow from every natural number up to #{0}.}
+}
+\li{\p{Generally speaking, numbers get bigger as we go up the diagram; but it is not true that higher numbers are always greater than lower ones. For example, #{35} would go in the second layer from the bottom, but #{35 < 30} which is in the third layer. And this is dramatically false in the case of #{0}, which is less than all other natural numbers, but is at the \em{top} of our divisibility diagram.}
+}
+}
+

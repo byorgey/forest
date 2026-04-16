@@ -22,7 +22,7 @@ must have a prime divisor less than or equal to #{10}, but we have
 already crossed out all multiples of primes less than #{10}. So all
 the remaining numbers must be prime and we can simply circle them.
 
-\<html:img>[src]{\route-asset{assets/images/sieve10.png}}
+\imgasset{sieve10.png}
 }
 
 

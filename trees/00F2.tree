@@ -1,0 +1,23 @@
+\title{Computing GCD via the Euclidean algorithm}
+\date{2026-04-16T22:42:06Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{[Computing the GCD via factoring](00F0) is not very practical for larger numbers, because factoring takes a long time. It turns out there is a much better way that is actually used in practice. To see why it works, we’ll first need a few lemmas and theorems about #{\gcd}.}
+
+\transclude{00F3}   % GCD comm.
+\transclude{00F4}   % GCD-lincomb
+
+\p{We won't prove this theorem in class, but you can expand the proof below if you want to see it.}
+\put\transclude/expanded{false}
+\transclude{00F5}
+\put\transclude/expanded{true}
+
+\transclude{00F8}   % GCD/mod
+
+\p{Notice that by the division algorithm, #{r = a \mod b} is guaranteed to be strictly smaller than #{b}. So if we replace #{\gcd(a,b)} by #{\gcd(b, a \mod b)} then the second input to #{\gcd} is getting smaller. This leads to:}
+
+\transclude{00F9}   % Euclidean Alg.
+\transclude{00FA}   % Example (60,18)
+\transclude{00FB}   % Example 2: (7169, 7811)

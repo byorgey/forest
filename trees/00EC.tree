@@ -15,6 +15,9 @@
 
 \p{We can now state one of the most fundamental results in number theory, which several ancient civilizations discovered independently, and you probably learned in elementary school.}
 
+% XXX 1 is the building block of natural numbers with addition.  Primes are building blocks of numbers with multiplication.
+
+
 \transclude{00EG}  % FTA
 \transclude{00EI}  % Composites have divisor <= sqrt
 \transclude{00EK}  % Sieve of Eratosthenes

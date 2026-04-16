@@ -1,0 +1,11 @@
+\title{GCD and LCM}
+\date{2026-04-16T22:13:26Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\transclude{00EW}    % Definition & discussion of GCD
+\transclude{00EX}    % Remark: what "greatest" means
+\transclude{00EY}    % Examples
+\transclude{00EZ}    % Definition of LCM

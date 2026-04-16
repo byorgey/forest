@@ -1,0 +1,11 @@
+\title{Testing for divisibility by 2 and 5}
+\date{2026-04-16T22:00:50Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+
+\p{This also shows why for #{2} and #{5} we can just look at the last digit: since #{2} and #{5} are both divisors of #{10}, we have #{10
+\equiv_2 0} and #{10 \equiv_5 0}. So replacing #{10} with #{0} in the expansion for #{n} tells us that #{n \equiv_2 d_0} and #{n \equiv_5 d_0}.}
+

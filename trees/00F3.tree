@@ -1,0 +1,12 @@
+\title{GCD is commutative}
+\date{2026-04-16T22:42:58Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Lemma}
+\p{#{\gcd(a,b) = \gcd(b,a)}.}
+
+\proof{
+  Look at the definition of #{\gcd} and note that #{\land} is commutative.
+}

@@ -1,0 +1,25 @@
+\title{GCD reduction via mod}
+\date{2026-04-16T23:01:22Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{For all #{a,b \in \N}, we have #{\gcd(a,b) = \gcd(b, a \mod b)}.}
+
+\proof{
+  \p{By the [division algorithm](00DC) write #{a = bq + r}. Then}
+
+  \stmt{\gcd(a,b)}
+  \reason{=}{Division algorithm, substitute for #{a}}
+  \stmt{\gcd(bq+r, b)}
+  \reason{=}{[[00F4]]}
+  \stmt{\gcd(bq+r-bq, b)}
+  \reason{=}{algebra}
+  \stmt{\gcd(r, b)}
+  \reason{=}{[[00F3]]}
+  \stmt{\gcd(b,r)}
+  \reason{=}{Definition of \mod}
+  \stmt{\gcd(b, a \mod b)}
+}
+

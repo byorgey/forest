@@ -1,0 +1,8 @@
+\title{Antisymmetry}
+\date{2026-04-16T22:51:09Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+\p{This property is called \em{antisymmetry}. Notice #{\leq} has this property too: if #{a \leq b} and #{b \leq a}, then #{a = b}.}

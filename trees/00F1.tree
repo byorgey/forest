@@ -1,0 +1,14 @@
+\title{LCM-GCD}
+\date{2026-04-16T22:18:51Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{For every #{a, b \in \N}, ##{\gcd(a,b) \cdot \lcm(a,b) = ab.}}
+
+\proof{
+  Follows from the fact that #{\min(x,y) + \max(x,y) = x + y}.
+}
+
+

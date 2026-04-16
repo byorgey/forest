@@ -1,0 +1,10 @@
+\date{2026-04-16T22:14:50Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Remark}
+\p{Note that this definition doesn’t say anything about #{\leq}! The word \em{greatest} in the phrase \em{greatest common divisor} should really be taken to mean \em{highest in the divisibility diagram}, not “greater than” in the usual #{\geq} sense.}
+
+
+

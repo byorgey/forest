@@ -1,0 +1,9 @@
+\title{GCD arguments can be added to each other}
+\date{2026-04-16T22:44:04Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{For all #{a,b \in \N} and #{k \in \Z}, ##{\gcd(a,b) =
+    \gcd(a+kb, b).}}

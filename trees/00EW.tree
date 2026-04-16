@@ -1,0 +1,12 @@
+\title{GCD}
+\date{2026-04-16T22:13:51Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{Let #{a, b \in \N}. Then the \em{greatest common divisor} of #{a} and #{b}, written #{\gcd(a,b)}, is the unique natural number such that for all #{d \in \N}, ##{(d \mid \gcd(a,b)) \iff (d \mid a \land d \mid
+    b).}}
+
+\p{In the left-to-right direction, this says that anything which divides #{\gcd(a,b)} must be a common divisor of #{a} and #{b}. Because divisibility is transitive, this will clearly be the case when #{\gcd(a,b)} is a divisor of both #{a} and #{b}. And in fact, picking #{d = \gcd(a,b)} shows that this must be the case. In the right-to-left direction, this says that any common divisor of #{a} and #{b} must divide their GCD. This is what makes it the “greatest” common divisor: there can’t be any common divisor #{d} which is “above” the GCD.}
+

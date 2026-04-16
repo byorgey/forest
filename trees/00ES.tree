@@ -1,0 +1,20 @@
+\title{Testing for divisibility by 7}
+\date{2026-04-16T22:02:09Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{What about #{7}? Let #{n} be a positive integer and write #{n = 10m +
+d_0}. For example, if #{n = 7451} we have #{m = 745} and #{d_0 = 1}. We reason as follows:}
+
+\stmt{10m + d_0 \equiv_7 0}
+\reason{\iff}{Multiply both sides by #{-2} (see note!)}
+\stmt{-20m - 2d_0 \equiv_7 0}
+\reason{\iff}{#{-20 \equiv_7 1}}
+\stmt{m - 2d_0 \equiv_7 0}
+
+\p{Thus, #{n} is divisible by #{7} if and only if #{m - 2d_0} is. That is, we take the last digit of #{n}, double it, and subtract from the number formed by the rest of the digits. For example, doing this process on #{7451} yields #{745 - 2\cdot 1 = 743}; doing it again yields #{74 - 2
+\cdot 3 = 68}, and #{68} is not divisible by #{7} (it is #{7\cdot 10 -
+2}). On the other hand, #{7441} yields #{742}, which yields #{70}, which is divisible by #{7}, and indeed, #{163 \cdot 7 = 7441}.}
+\p{Note, there is actually a key piece missing from our proof above: although we proved that we can always multiply both sides of a modular equivalence by the same number (#{-2} in this case), we don’t yet know that we can \em{divide} both sides by the same number, which we need for that step to be an \em{if and only if}. In fact, sometimes we can’t! But it turns out this step is allowed since #{2} and #{7} share no common factors. We will prove this later in the week.}
+

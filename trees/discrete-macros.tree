@@ -27,3 +27,5 @@
 
 \def\div{#{\mathbin{\mathbf{div}}}}
 \def\mod{#{\mathbin{\mathbf{mod}}}}
+
+\def\lcm{#{\mathrm{lcm}}}

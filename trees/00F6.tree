@@ -1,0 +1,16 @@
+\title{Divisibility is antisymmetric}
+\date{2026-04-16T22:50:26Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Lemma}
+\p{For all #{a,b \in \N}, if #{a \mid b} and #{b \mid a}, then #{a = b}.}
+
+\transclude{00F7}
+
+\proof{
+If #{a \mid b} then there is some #{k \in \Z} such that #{ka = b}. Likewise, if #{b \mid a} then #{jb = a}. Substituting, we find that #{a = jb = jka}, and hence #{jk = 1}. Since #{j, k \in \Z} the only possibilities are #{j = k = 1} or #{j = k = -1}; since #{a} and #{b} are both natural numbers they can’t be negative, so in fact #{j = k = 1} and #{a = b}.
+}
+
+

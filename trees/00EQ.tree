@@ -1,0 +1,16 @@
+\title{Testing for divisibility by 3}
+\date{2026-04-16T21:57:39Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{A number is divisible by #{3} iff the sum of its digits in base #{10} is also divisible by #{3}.}
+
+\p{Note this process can be iterated: for example, #{7431} is divisible by #{3} if and only if #{7 + 4 + 3 + 1 = 15} is; and #{15} in turn is divisible by #{3} if and only if #{1 + 5 = 6} is.}
+
+\proof{
+Let #{n} be any positive integer. First, write #{n} in terms of its base-10 expansion: ##{n = 10^k d_k + 10^{k-1}d_{k-1} + \dots + 10d_1
+    + d_0} Note first that #{10 \equiv_3 1}, since #{10 = 3 \cdot 3 + 1}. Since we have proved that equivalence modulo #{m} is compatible with addition and multiplication, we can replace every #{10} in the above expansion by #{1}, and get something that is equivalent modulo #{3}: ##{n = 10^k d_k + 10^{k-1}d_{k-1} + \dots + 10d_1 + d_0
+    \equiv_3 d_k + d_{k-1} + \dots + d_1 + d_0} Thus, we have shown that #{n} is equivalent modulo #{3} to the sum of its base-10 digits.
+}

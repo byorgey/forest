@@ -1,0 +1,18 @@
+\title{GCD examples}
+\date{2026-04-16T22:15:42Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{##{\begin{align*}
+    \gcd(6,10) &= 2 \\
+    \gcd(2,3) &= 1 \\
+    \gcd(2,4) &= 2 \\
+    \gcd(3,3) &= 3 \\
+    \gcd(0,7) &= 7 \\
+    \gcd(0,0) &= 0
+\end{align*}} If we took the word “greatest” in GCD to refer to the #{\leq} relation, then we would have to say #{\gcd(0,0)} is undefined; every natural number is a common divisor of #{0} and #{0}, and there is no greatest natural number. However, if “greatest” means “highest in the divisibility diagram” then clearly the answer should be #{0}. And indeed, we can easily check that #{0} satisfies the definition: for every #{d \in \N}, ##{(d \mid 0) \iff (d \mid 0 \land d \mid
+    0)} is trivially true.}
+
+

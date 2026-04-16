@@ -1,0 +1,12 @@
+\title{LCM}
+\date{2026-04-16T22:16:42Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{The \em{least common multiple} of #{a, b \in \N}, written #{\lcm(a,b)}, is the unique natural number such that for all #{m \in \N}, ##{(\lcm(a,b) \mid m)
+    \iff (a \mid m \land b \mid m).}}
+
+\p{We won’t talk much more about #{\lcm}—it has very similar properties to #{\gcd} but with everything flipped.}
+

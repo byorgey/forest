@@ -1,0 +1,13 @@
+\title{Euclidean Algorithm}
+\date{2026-04-16T23:05:36Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Definition}
+\p{Let #{a,b \in \N}. To find #{\gcd(a,b)}, repeatedly apply these rules: ##{\begin{align*}
+    \gcd(a,0) &= a \\
+    \gcd(a,b) &= \gcd(b, a \mod b)
+\end{align*}} That is, just keep repeating the second case until reaching the first case. This is guaranteed to stop in a finite amount of time since the second input to #{\gcd} gets smaller with each step; it must hit zero eventually.}
+
+

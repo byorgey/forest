@@ -1,0 +1,18 @@
+\date{2026-04-16T23:07:08Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{##{\begin{align*}
+    &\phantom{=} \gcd(7169, 7811) \\
+    &= \gcd(7811, 7169) \\
+    &= \gcd(7169, 642) \\
+    &= \gcd(642, 107) \\
+    &= \gcd(107, 0) \\
+    &= 107
+\end{align*}}}
+\p{We can confirm that #{107} is indeed a common divisor of #{7169 = 107
+  \times 67} and #{7811 = 107 \times 73}. Since #{67} and #{73} are both prime there is obviously no bigger common divisor.}
+
+

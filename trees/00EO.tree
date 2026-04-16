@@ -1,0 +1,10 @@
+\title{Divisibility tests}
+\date{2026-04-16T21:56:19Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\transclude{00EP}   % Example: 7431 is not prime, since digit sum is threeven
+\transclude{00EQ}   % Div by 3
+\transclude{00ER}   % Div by 2, 5
+\transclude{00ES}   % Div by 7

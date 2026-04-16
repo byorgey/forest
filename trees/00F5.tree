@@ -1,0 +1,25 @@
+\title{[★](advanced) Bonus proof}
+\date{2026-04-16T22:47:55Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We first need a lemma about the [divisibility relation](00D5):}
+
+\transclude{00F6}
+
+\p{Now we can prove the theorem we want about #{\gcd}.}
+
+\transclude{00F4}
+
+\proof{
+  Using the [antisymmetry of divides](00F6), we will show #{\gcd(a,b) = \gcd(a+kb,b)} by showing each divides the other.
+  \subproof{
+    #{\gcd(a,b) \mid a} and #{\gcd(a,b) \mid b} by definition. Using a [theorem we proved previously](00DA), we can therefore conclude that #{\gcd(a,b) \mid (a + kb)}. Hence, since #{\gcd(a,b) \mid (a + kb)} and #{\gcd(a,b) \mid b}, by definition of #{\gcd(a+kb,b)} we conclude that #{\gcd(a,b) \mid \gcd(a+kb, b)}.
+  }
+  \subproof{
+    By definition, #{\gcd(a+kb, b) \mid (a + kb)} and #{\gcd(a+kb, b) \mid b}. Hence by the same theorem as in the other case, it also divides a combination of them, #{\gcd(a+kb,b) \mid (a + kb + (-k)b) = a}. Since it divides both #{a} and #{b}, by definition of #{\gcd(a,b)} we have #{\gcd(a+kb, b) \mid \gcd(a,b)}.
+  }
+
+  \p{Since each divides the other, we conclude that #{\gcd(a,b) = \gcd(a+kb,b)}.}
+}

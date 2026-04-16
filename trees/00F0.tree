@@ -1,0 +1,17 @@
+\title{Computing GCD and LCM via factoring}
+\date{2026-04-16T22:18:17Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{One way to compute the GCD of #{a} and #{b} (and the way you’re probably familiar with from grade school) is to factor both, and pick the biggest power of each prime that divides both. For example, ##{\gcd(18,60) = \gcd(2^1 \cdot 3^2 \cdot 5^0, 2^2 \cdot 3^1 \cdot 5^1)
+  = 2^1 \cdot 3^1 \cdot 5^0 = 6.} In general, consider writing a natural number #{n} as an infinite product of all the primes raised to powers (if #{n} does not have a certain prime #{p} as a divisor, we just set #{p}’s exponent to #{0}): ##{a = 2^{a_2} 3^{a_3} 5^{a_5} 7^{a_7}
+  \dots} Then in general, ##{\gcd(a,b) = \gcd(2^{a_2} 3^{a_3} 5^{a_5}
+  \dots , 2^{b_2} 3^{b_3} 5^{b_5} \dots) = 2^{\min(a_2,b_2)}
+  3^{\min(a_3,b_3)} 5^{\min(a_5,b_5)} \dots} That is, we take the minimum power of each prime. This works even when some of the powers are #{0}. The proof is not too hard and left as an exercise.}
+\p{Likewise, the LCM can be found by taking the max of each prime power: ##{\lcm(a,b) = \lcm(2^{a_2} 3^{a_3} 5^{a_5}
+  \dots , 2^{b_2} 3^{b_3} 5^{b_5} \dots) = 2^{\max(a_2,b_2)}
+  3^{\max(a_3,b_3)} 5^{\max(a_5,b_5)} \dots} Incidentally, this shows us that:}
+
+\transclude{00F1}
+

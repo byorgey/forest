@@ -9,3 +9,5 @@
 \transclude{00DC}   % Division algorithm
 \transclude{00DR}   % Modular equivalence
 \transclude{00EC}   % Primes
+\transclude{00EO}   % Divisibility tests
+\transclude{00ET}   % GCD + Euclidean Alg

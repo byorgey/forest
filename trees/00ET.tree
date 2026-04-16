@@ -1,0 +1,11 @@
+\title{GCD and the Euclidean Algorithm}
+\date{2026-04-16T22:04:24Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\transclude{00EU}    % Divisibility lattice
+\transclude{00EV}    % GCD/LCM
+\transclude{00F0}    % GCD/LCM via factoring
+\transclude{00F2}    % Euclidean Alg

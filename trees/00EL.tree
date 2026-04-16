@@ -9,5 +9,5 @@
 \p{There are infinitely many primes.}
 
 \proof{
-Pick any prime #{p}, and let #{Q} be one more than the product of all the primes up to #{p}, that is, ##{Q = (2 \cdot 3 \cdot 5 \cdots p) + 1.} By the [[00EG]], #{Q} must be divisible by at least one prime, call it #{q}.  However, notice that #{Q} cannot be divisible by any of the primes up to #{p}, since #{Q \equiv_r 1} for each prime #{r \leq p}.  Therefore, #{q} must be a prime larger than #{p}.  But #{p} was arbitrary: since for any prime #{p} we can always find a larger one, there must be infinitely many primes.  (\em{Question to ponder: is the #{Q} in this proof always a prime itself?})
+Pick any prime #{p}, and let #{Q} be one more than the product of all the primes up to #{p}, that is, ##{Q = (2 \cdot 3 \cdot 5 \cdots p) + 1.} By the [[00EG]], #{Q} must be divisible by at least one prime, call it #{q}.  However, notice that #{Q} cannot be divisible by any of the primes up to #{p}, since #{Q \equiv_2 1}, #{Q \equiv_3 1}, #{Q \equiv_5 1}, and so on for for each prime up to #{p}.  Therefore, #{q} must be a prime larger than #{p}.  But #{p} was arbitrary: since for any prime #{p} we can always find a larger one, there must be infinitely many primes.  (\em{Question to ponder: is the #{Q} in this proof always a prime itself?})
 }
