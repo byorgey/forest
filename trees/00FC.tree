@@ -1,0 +1,10 @@
+\title{GCD}
+\date{2026-04-17T11:24:44Z}
+\tag{discrete}
+\taxon{Warmup}
+
+\import{discrete-macros}
+
+\p{What is the greatest common divisor (greatest common factor) of #{60} and #{18}? Of #{7169} and #{7811}?}
+
+

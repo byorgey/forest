@@ -5,6 +5,7 @@
 
 \import{discrete-macros}
 
+\transclude{00FC}    % Warmup
 \transclude{00EU}    % Divisibility lattice
 \transclude{00EV}    % GCD/LCM
 \transclude{00F0}    % GCD/LCM via factoring
