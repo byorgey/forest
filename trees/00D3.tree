@@ -11,3 +11,4 @@
 \transclude{00EC}   % Primes
 \transclude{00EO}   % Divisibility tests
 \transclude{00ET}   % GCD + Euclidean Alg
+\transclude{00FE}

@@ -1,0 +1,7 @@
+\date{2026-04-21T21:12:54Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{This theorem can actually be stated as an “if and only if”. Can you prove the other direction? \em{i.e.} if #{ab \equiv_m 1}, then #{\gcd(a,m) = 1}.}

@@ -1,0 +1,14 @@
+\title{Modular inverse}
+\date{2026-04-21T21:11:51Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{Let #{a \in \Z} and #{m \in \Z^+}. If #{\gcd(a,m) = 1}, then there exists some #{b \in \Z} such that #{ab \equiv_m 1}. We say that #{b} is the \em{modular inverse} of #{a} modulo #{m}.}
+
+\proof{
+  By [Bézout’s Theorem](00FG) there exist integers #{s} and #{t} such that #{sa + tm = 1}. Since #{tm \equiv_m 0}, in fact ##{1 \equiv_m sa + tm \equiv_m sa.} So #{s} itself is the modular inverse of #{a}.
+}
+
+\transclude{00FL}

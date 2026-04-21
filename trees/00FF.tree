@@ -1,0 +1,12 @@
+\title{Motivating example: frog hops and jumps}
+\date{2026-04-21T19:59:53Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{A mathematical frog starts at zero on the number line. He can jump 30 units in either direction, or hop 18 units in either direction. Which positions on the number line can he reach? Can he reach 12? 6? 3? 1? 8? 42252? 42254?}
+
+\p{The frog can reach 12 by jumping right then hopping left. He can reach 6 by hopping right twice then jumping left. He can’t reach 3 or 1, since jumps and hops are both even and 3 is odd. 8 is even, but he can’t reach that either since in fact both 12 and 30 are multiples of 6, but 8 is not. We can check that #{4+2+2+5+2 = 15} is divisible by #{3}, hence #{42252} is divisible by 6, so we conjecture he can reach that, but not 42254.}
+
+\p{In fact, it turns out that the frog can reach position #{n} if and only if #{6 \mid n}. What’s special about 6?}
+

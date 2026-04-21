@@ -1,0 +1,10 @@
+\title{Bézout's Theorem and the Extended Euclidean Algorithm}
+\date{2026-04-21T19:58:16Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\transclude{00FF}   % Jumps and hops
+\transclude{00FG}   % Bezout's theorem
+\transclude{00FH}   % Extended Euclidean Algorithm
+\transclude{00FJ}   % Modular inverses and solving equivalences

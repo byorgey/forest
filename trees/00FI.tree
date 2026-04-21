@@ -1,0 +1,18 @@
+\date{2026-04-21T21:08:03Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Let’s do one more example. This time, let’s make a fourth column where we record the quotient #{q}. That is, at each step we look at the two last values in the third column and divide the upper value by the lower; we record the result #{q} in the fourth column next to the lower value; then we subtract #{q} times the bottom row from the one above it to generate the next row. This time let’s take #{a = 39} and #{b = 16}.}
+##{\begin{array}{ccc}
+  s & t & 39s + 16t & q \\ \hline
+  1 & 0 & 39 & \\
+  0 & 1 & 16 & 2 \\
+  1 & -2 & 7 & 2 \\
+  -2 & 5 & 2 & 3 \\
+  7 & -17 & 1 & 2 \\
+  && 0 &
+\end{array}}
+\p{So we have found that #{\gcd(39,16) = 1}, and that #{39 \cdot 7 + 16 \cdot (-17) = 1} (check this!). In other words, if there is a frog that can jump #{39} units or hop #{16} units, it could reach #{1} starting from the origin by jumping #{7} times to the right and #{17} times to the left.}
+

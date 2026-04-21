@@ -1,0 +1,9 @@
+\date{2026-04-21T21:13:31Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Solve for #{x}: ##{3x \equiv_7 5.}}
+\p{Since #{\gcd(3,7) = 1}, we can multiply both sides by the modular inverse of #{3}, which will “cancel” the #{3} from the left. Using the extended Euclidean algorithm (or just trying a few values), we find that the inverse of #{3} is #{(-2) \equiv_7 5}. (We can verify that #{3 \cdot 5 = 15 \equiv_7 1}.) Multiplying both sides of the equation by #{5}, we get ##{x \equiv_7 25 \equiv_7 4.}}
+\p{So the solution is #{x \equiv_7 4}, that is, any value of #{x} which is four more than a multiple of #{7} will be a solution. We can check this: #{3 \cdot 4 = 12 \equiv_7 5}, as desired.}

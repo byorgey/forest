@@ -1,0 +1,29 @@
+\title{Bézout's Theorem}
+\date{2026-04-21T20:01:31Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{Let #{a, b \in \N}. Then there exist #{s, t \in \Z} such that ##{sa +
+    tb = \gcd(a,b).}}
+
+\p{This is like saying we can reach #{\gcd(a,b)} by some combination of jumps and hops.}
+
+\proof{
+  Let #{S = \{ja + kb \mid j,k \in \Z \}} be the set of all of #{a} and #{b}. Note that #{S} must have some \em{smallest positive} element, call it #{d}. (This is
+    not automatically true for any set—for example, the set of real
+    numbers #{\R} has no smallest positive element.  But it is true for
+    sets of integers in particular; this is known as the
+    \emph{well-ordering principle}.)
+
+  \subproof{
+  We first show that #{d \mid a}. By the [Division Algorithm](00DC) we can write #{a = dq + r} for some #{q, r} such that #{0 \leq r < d}. Since #{d \in S} it must be equal to #{sa + tb} for some #{s,t \in \Z}. Then ##{r = a - dq = a - (sa + tb)q = a - sqa - tqb = (1-sq)a + (-tq)b,} which is also a linear combination of #{a} and #{b}. Hence #{r \in S} as well. But #{r < d} and #{d} is the smallest positive element of #{S}; hence #{r} cannot be positive and we must have #{r = 0}. Thus #{a = dq + r = dq + 0}, so #{d \mid a}. A similar argument shows #{d \mid b} as well.
+  }
+  \subproof{
+    Finally, for any #{c}, if #{c \mid a} and #{c \mid b}, then [by a previous theorem](00DA) #{c} also divides #{d} since #{d} is a linear combination of #{a} and #{b}.
+  }
+
+\p{We have shown that #{d} divides both #{a} and #{b}, and that conversely any common divisor of #{a} and #{b} must also divide #{d}; hence, [by definition](00EW), #{d = \gcd(a,b)}.}
+}
+
