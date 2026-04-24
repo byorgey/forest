@@ -1,0 +1,11 @@
+\date{2026-04-24T13:57:12Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+
+\p{This is a \em{non}-example. Suppose we have the same scenario as the previous problem, \em{except} that when you choose oatmeal, you are limited to having only strawberries or blueberries.}
+\p{In this case the product rule does \em{not} apply (at least not directly) since the choices are no longer independent.}
+
+

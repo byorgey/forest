@@ -1,6 +1,9 @@
 \title{Computing GCD via the Euclidean algorithm}
 \date{2026-04-16T22:42:06Z}
 \tag{discrete}
+\tag{draft}
+
+% XXX revise this presentation.  Start with gcd(a,b) = gcd(a-b, b), baby version of Euclidean Alg, include proof.  Then iterate to get version with mod.
 
 \import{discrete-macros}
 

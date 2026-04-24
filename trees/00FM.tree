@@ -4,6 +4,6 @@
 \import{discrete-macros}
 
 \taxon{Example}
-\p{Solve for #{x}: ##{3x \equiv_7 5.}}
-\p{Since #{\gcd(3,7) = 1}, we can multiply both sides by the modular inverse of #{3}, which will “cancel” the #{3} from the left. Using the extended Euclidean algorithm (or just trying a few values), we find that the inverse of #{3} is #{(-2) \equiv_7 5}. (We can verify that #{3 \cdot 5 = 15 \equiv_7 1}.) Multiplying both sides of the equation by #{5}, we get ##{x \equiv_7 25 \equiv_7 4.}}
-\p{So the solution is #{x \equiv_7 4}, that is, any value of #{x} which is four more than a multiple of #{7} will be a solution. We can check this: #{3 \cdot 4 = 12 \equiv_7 5}, as desired.}
+\p{Solve for #{x}: ##{3x \equiv_7 5.}  We can't divide both sides by 3.  But the point of dividing by 3 is that #{3/3 = 1}, so dividing by 3 "cancels" the #{3} on the left.  But what if we could cancel the 3 by \em{multiplying} both sides by something?  In particular, could we find some number #{s} such that #{3s \equiv_7 1}?}
+\p{There are only a few possible values to try, since \em{e.g.} multiplying by #{9} or #{16} would be the same as multiplying by #{2}; we only need to try the values from #{0} to #{6} (and actually, it would be pointless to try #{0} or #{1}).  It turns out that #{5} works: #{3 \cdot 5 = 15 \equiv_7 1}.  So if we multiply both sides of the equivalence by #{5}, we get ##{15x \equiv_7 25,} or, reducing modulo 7, ##{x \equiv_7 4.}}
+\p{When will this work in general?  And how can we find #{s} besides just trying different values?}

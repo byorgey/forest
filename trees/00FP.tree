@@ -1,0 +1,8 @@
+\title{Combinatorics}
+\date{2026-04-24T13:40:46Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\transclude{00FQ}   % Intro
+\transclude{00FR}   % Product rule

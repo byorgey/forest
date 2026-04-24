@@ -5,11 +5,13 @@
 
 \import{discrete-macros}
 
-\p{Bézout’s Theorem is rarely useful in and of itself; but it’s an important building block in several other things we care about more directly. The biggest is the following fact:}
+\transclude{00FM}
+
+\p{It turns out that [Bézout’s Theorem](00FG) can answer these questions!}
 
 \transclude{00FK}
 
 \p{Of course, this proof shows that not only do modular inverses exist, but we can compute them easily using the [extended Euclidean algorithm](00FH)!}
 
-\transclude{00FM}
 \transclude{00FN}
+\transclude{00FO}

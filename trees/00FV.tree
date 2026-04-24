@@ -1,0 +1,10 @@
+\date{2026-04-24T13:56:48Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{There are three kinds of cereal and seven kinds of fruit. For breakfast, you must choose one cereal and one fruit. How many breakfast choices do you have?}
+\p{The product rule clearly applies here: the answer is #{3 \times 7 = 21} choices.}
+
+

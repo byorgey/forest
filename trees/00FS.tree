@@ -1,0 +1,8 @@
+\title{The Product Rule}
+\date{2026-04-24T13:43:45Z}
+\tag{discrete}
+\taxon{Principle}
+
+\import{discrete-macros}
+
+\p{Suppose choosing an item can be decomposed into two \em{independent} choices, with #{c_1} ways to make the first choice, and #{c_2} ways to make the second choice. Then the total number of ways to choose overall is the product #{c_1 \times c_2}.}

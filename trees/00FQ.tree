@@ -1,0 +1,9 @@
+\title{Introduction to combinatorics}
+\date{2026-04-24T13:41:23Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Combinatorics is the area of mathematics about \em{counting}, that is, determining the sizes of sets. This sounds like it would be trivial or uninteresting, but it turns out to be deep and fascinating, with many connections to other areas of mathematics.}
+\p{You may have memorized a few combinatorics formulas in high school (permutations, combinations, …) but we are going to learn some basic underlying principles—if you understand the principles involved, you can easily re-derive the formulas as needed.}
+

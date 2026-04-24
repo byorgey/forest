@@ -1,0 +1,8 @@
+\title{Independence}
+\date{2026-04-24T13:53:42Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{Here, \em{independent} means that you have the same set of options for both choices no matter what you pick. In other words, choosing a certain option for one of the choices cannot affect which options are available for the other choice.}

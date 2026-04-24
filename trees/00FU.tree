@@ -1,0 +1,13 @@
+\date{2026-04-24T13:54:52Z}
+\tag{discrete}
+\taxon{Remark}
+
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{We can visualize the situation by drawing a rectangular grid, where each row corresponds to one option for the first choice, and each column corresponds to an option for the second choice. Then each grid square corresponds to a unique combination of choices. The fact that the choices are \em{independent} corresponds to the fact that the picture is perfectly rectangular.}
+
+% XXX picture
+
+\p{This really boils down to the fact, which we saw before when learning about sets, that ##{|A \times B| = |A| \times |B|.}}   % XXX link

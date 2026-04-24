@@ -1,0 +1,12 @@
+\date{2026-04-24T13:57:44Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{How many #{3}-letter strings are there using the letters A–Z? Examples of such strings include AAA, HDX, CAR, and so on.}
+\p{The number of two-letter strings is #{26 \times 26} since there are two independent choices: which letter to choose as the first letter, and which to choose as the second. Then the number of 3-letter strings is the number of ways to pick a two-letter string, times the number of ways to pick a third letter, for a total of #{(26 \times
+  26) \times 26 = 26^3 = 17576}.}
+\p{Similarly, there are #{26^4} four-letter strings, #{26^5} five-letter strings, and in general there are #{26^k} #{k}-letter strings. This reasoning shows that we can generalize the product rule to a product of #{n} choices instead of just two. If we have #{n} independent choices to make, we just multiply all of them to compute the total number of choices.}
+
+

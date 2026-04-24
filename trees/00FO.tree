@@ -1,0 +1,21 @@
+\date{2026-04-24T11:18:38Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Solve for #{x}: ##{523x \equiv_{17405} 77.}  We need to cancel the #{523}, so we can run the Extended Euclidean Algorithm on #{523} and #{17405}, both to make sure that the GCD is #{1}, and if so, to find the inverse of #{523}.}
+##{\begin{array}{ccc}
+  s & t & 523s + 17405t & q \\ \hline
+  0 & 1 & 17405 & \\
+  1 & 0 & 523 & 33 \\
+  -33 & 1 & 146 & 3 \\
+  100 & -3 & 85 & 1 \\
+  -133 & 4 & 61 & 1 \\
+  233 & -7 & 24 & 2 \\
+  -599 & 18 & 13 & 1 \\
+  832 & -25 & 11 & 1 \\
+  -1431 & 43 & 2 & 5 \\
+  7987 & -240 & 1 &  \\
+\end{array}}
+\p{Sure enough, the GCD is #{1}, and #{7987} is the inverse of #{523} modulo #{17405} (it's the value of #{s} we want, since that is the one being multiplied by #{523}).  Therefore, multiplying both sides of the equivalence by #{7987} will cancel the #{523} and allow us to solve for #{x}: ##{x \equiv_{17405} 77 \cdot 7987 = 614999 \equiv_{17405} 5824.}}

@@ -23,3 +23,4 @@
 \transclude{00B0}   % Sequences, recurrences, and sums
 \transclude{00CA}   % Induction
 \transclude{00D3}   % Number theory
+\transclude{00FP}   % Combinatorics
