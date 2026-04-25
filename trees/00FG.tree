@@ -15,7 +15,7 @@
     not automatically true for any set—for example, the set of real
     numbers #{\R} has no smallest positive element.  But it is true for
     sets of integers in particular; this is known as the
-    \emph{well-ordering principle}.)
+    \em{well-ordering principle}.)
 
   \subproof{
   We first show that #{d \mid a}. By the [Division Algorithm](00DC) we can write #{a = dq + r} for some #{q, r} such that #{0 \leq r < d}. Since #{d \in S} it must be equal to #{sa + tb} for some #{s,t \in \Z}. Then ##{r = a - dq = a - (sa + tb)q = a - sqa - tqb = (1-sq)a + (-tq)b,} which is also a linear combination of #{a} and #{b}. Hence #{r \in S} as well. But #{r < d} and #{d} is the smallest positive element of #{S}; hence #{r} cannot be positive and we must have #{r = 0}. Thus #{a = dq + r = dq + 0}, so #{d \mid a}. A similar argument shows #{d \mid b} as well.

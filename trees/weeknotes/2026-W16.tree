@@ -1,0 +1,12 @@
+\import{discrete-macros}
+
+\title{Weeknotes for 24 April 2026 (week 16)}
+\author{brentyorgey}
+\date{2026-04-25}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\p{Not much of interest to report this week—a lot of my time has been spent on various administrative responsibilities, as both the chair of my department and the chair of the Committee on Academic Integrity. Next week is the last week of classes, so over the next few weeks I should start to have more time to work on interesting projects.}
+
+\p{I did complete my [[00FY]], and I'd like to turn it into a blog post.  I fancy there might be an audience of people who know the basics of Agda but would benefit from seeing a slightly larger development with lots of careful explanation.}

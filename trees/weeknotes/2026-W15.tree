@@ -7,13 +7,4 @@
 
 \put\transclude/numbered{false}
 
-\subtree{
-  \title{Agda proof of the Fundamental Theorem of Algebra}
-
-  \p{On Monday, I was idly brainstorming potential final projects for my [Functional Programming](https://hendrix-cs.github.io/csci365/) students.  Having just [taught my Discrete Math students the Fundamental Theorem of Algebra](00EG), I wondered whether formalizing it in Agda could make a nice project.  (I mean formalizing it \em{from scratch}: of course, the FTA must already in the Agda standard library.)  Then I... kind of fell down the rabbit hole.  Several hours and 560 lines of Agda later, I'm very close: all I have left is to [prove that the result of the division algorithm is unique](00DL) (which is actually kinda tricky).  Well... actually, I've only formalized half of the FTA so far, namely, the part that says any number can be factored into a product of primes.  I haven't yet attempted to formalize the claim that the resulting factorization is unique up to permutation.  We'll see if I decide to add that.}
-
-  \p{In any case, this has been a fun and pleasant exercise, requiring a bunch of facts about addition, multiplication, and inequality; well-founded induction; encoding loops from a start value up to an end value; and various other things.  I've been doing everything completely from scratch/memory, without peeking at any Agda stdlib code. Once I finish it I might clean it up and turn it into a blog post.}
-
-  \p{Formalizing the proof has led me to rethink a few of the wys I present things in Discrete Math.  For example, I had been defining a number #{p} to be prime if "all divisors of #{p} are trivial", that is, formally, ##{\Prime(p) \equiv \all{d}{\N}{(d \mid p) \to (d = 1 \lor d = p)}.}  But now I actually think it is better to define it as "#{p} has no nontrivial divisors", that is, ##{\Prime(p) \equiv \all{d}{(1 < d < n) \to (d \nmid p)}.}  Since primality is decidable, these are constructively equivalent, but... I like the second definition better now, for reasons I can't quite put my finger on.
-  }
-}
+\transclude{00FY}
