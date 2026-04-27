@@ -1,0 +1,13 @@
+\title{Counting subsets}
+\date{2026-04-27T13:25:59Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{How many subsets are there of an #{n}-element set?}
+\p{In other words, what is the [cardinality](0072) of a [power set](007B)?  We [already know the answer](007F) to this question, but let's see how the product rule applies. When choosing a subset, for each of the #{n} elements we have two choices: whether to include it in the subset or not. All these choices are independent, because each element is allowed to be in the subset or not, regardless of which other elements are or are not members of the subset. Hence, by the product rule, the total number of choices is #{2 \times 2 \times
+  \dots \times 2 = 2^n}.}
+\p{If we identify each subset with a bit string of length #{n} indicating which elements are in the subset and which are out, we can see a connection to the [previous example](00FX): there are #{2^n} bit strings of length #{n}, since we can independently choose each bit to be either #{0} or #{1}.}
+
+

@@ -1,0 +1,14 @@
+\title{Counting soup schedules}
+\date{2026-04-27T13:47:23Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Suppose we have #{10} cans of soup (all different) and we want to eat them all, one per day over the next #{10} days. In how many ways could we do this? Note this is equivalent to asking how many ways we could order the cans of soup; imagine we first put them in a particular order and then each day just eat the next can in the line.}
+\p{We might at first think the answer is #{10^{10}}, since there are #{10} days and #{10} choices of soup on each day. However, the choices are not independent: once I choose a particular can of soup I can’t choose it again on a subsequent day. (#{10^{10}} is the answer to the related problem of how many soup-eating schedules we can make, if each day we go to the store to buy some soup, and the store carries 10 different kinds. Assuming the store has enough stock, the choices are now independent, since getting a particular soup on one day does not prevent us from picking the same soup again another day.)}
+\p{However, we can conceive of this problem in terms of independent choices if we change our point of view a little bit. On the first day, I have #{10} choices. On the second day, I can no longer choose the soup I ate on the first day, but I can freely choose any soup I want out of the #{9} that are left. On the third day, I can choose any of the #{8} that remain, and so on. In total, then, I have ##{10
+    \cdot 9 \cdot 8 \cdot \dots \cdot 1 = 10! = 3628800} ways to do this.}
+\p{More generally, there are #{n(n-1)(n-2) \cdots 1 = n!} ways to put #{n} things in a particular order, that is, there are #{n!} \em{permutations} of #{n} things.}
+
+

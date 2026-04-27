@@ -1,0 +1,12 @@
+\title{Counting functions}
+\date{2026-04-27T13:49:41Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{Given finite sets #{A} and #{B}, how many functions #{f : A \to B} are there?}
+\p{Consider how we might go about choosing a particular function #{f : A \to B}. A function from #{A} to #{B} must specify a particular element of #{B} for each element of #{A}. So for the first element #{a_1 \in A}, we can choose any element #{b \in B} to which #{f} should send #{a_1}. Likewise, for #{a_2 \in A}, we can independently choose any element of #{B} to which #{f} should send #{a_2}, and so on for every element of #{A}. (These choices are all independent because for any old function, we don’t care if it sends multiple #{a_i} to the same #{b}, or misses some #{b}’s, or whatever.) So for each element of #{a}, we get to make an independent choice of size #{|B|}; hence, by the product rule, the total number of ways we could choose a function is ##{\underbrace{|B| \times |B| \times \dots
+      \times |B|}_{|A|} = |B|^{|A|}.}}
+
+\p{Bonus: can you count the number of [one-to-one](00A0) functions #{f : A \to B}? (Counting [onto](00A8) functions is much harder!)}

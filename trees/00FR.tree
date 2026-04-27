@@ -16,3 +16,8 @@
 \transclude{00FV}  % Example: breakfast
 \transclude{00FW}  % Non-example: breakfast
 \transclude{00FX}  % Example: strings
+\transclude{00FZ}  % Example: power set
+
+\transclude{00G0}  % Example: soup
+\transclude{00G1}  % Example: truncated soup
+\transclude{00G2}  % Example: functions

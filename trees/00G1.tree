@@ -1,0 +1,16 @@
+\title{Counting truncated soup schedules}
+\date{2026-04-27T13:49:02Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{What if I have #{10} different cans of soup, as in the previous scenario, but now I only want to eat soup for the next four days?}
+\p{As before, I have #{10} choices on the first day, #{9} choices on the second day, and so on, for a total of ##{10 \cdot 9 \cdot 8 \cdot 7
+    = 5040} ways. Note this can also be written as ##{10 \cdot 9
+    \cdot 8 \cdot 7 = \frac{10 \cdot 9
+    \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}{6
+    \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = \frac{10!}{6!}.} In general, if I have #{n} things and want to pick out #{k} of them in a particular order, I have ##{n \cdot (n-1) \cdot \dots \cdot (n-k+1) =
+  \frac{n!}{(n-k)!}} ways to do it.}
+
+

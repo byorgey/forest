@@ -129,7 +129,7 @@
 \subtree{
   \title{Combinatorics}
   \ul{
-    \li{C1: I can use the product, addition, and subtraction rules to count things.}
+    \li{C1: I can use the [product](00FR), addition, and subtraction rules to count things.}
     \li{C2: I can use the division rule and binomial coefficients to count things.}
   }
 }
