@@ -1,9 +1,12 @@
 \title{Principle of inclusion-exclusion}
 \date{2026-04-29T11:11:34Z}
 \tag{discrete}
+\tag{draft}
 \taxon{Remark}
 
 \import{discrete-macros}
 
 \p{What if we have \em{three} (or more) overlapping sets of choices? It is actually possible to come up with a general formula for this situation, known as the \em{Principle of Inclusion-Exclusion}.}
 
+% XXX include actual formula for $n = 3$
+% XXX mark this as advanced?

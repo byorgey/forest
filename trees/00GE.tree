@@ -1,0 +1,8 @@
+\title{The Division Rule}
+\date{2026-04-29T16:36:21Z}
+\tag{discrete}
+\taxon{Principle}
+
+\import{discrete-macros}
+
+\p{Suppose we have #{n} total choices, but we really want to think of some of them as being equivalent. If the choices always come in groups of exactly #{k} choices which are all equivalent (\em{i.e.} each [equivalence class](0098) is of size exactly #{k}), then the number of “really different” choices (the number of equivalence classes) is #{n/k}.}

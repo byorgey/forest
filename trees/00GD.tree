@@ -1,0 +1,15 @@
+\title{The division rule and binomial coefficients}
+\date{2026-04-29T16:34:41Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\transclude{00GF}    % Soup example
+\transclude{00GE}    % Division Rule
+\transclude{00GG}    % Circular seating arrangements
+\transclude{00GI}    % Bracelets
+\transclude{00GH}    % Binomial coefficients
+\transclude{00GJ}    % Bit strings with 3 ones
+\transclude{00GK}    % Bit strings with at least 3 ones
+\transclude{00GL}

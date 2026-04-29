@@ -1,0 +1,12 @@
+\title{Counting soup schedules, again}
+\date{2026-04-29T16:38:01Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Recall the problem with soup, where we have a bunch of different kinds of soup and are trying to count the number of different schedules we could make for ourselves. For example, if we have 10 different kinds of soup and want to eat soup for 4 days, there are #{10 \cdot 9 \cdot 8 \cdot 7} different soup schedules we can make.}
+
+\p{Now consider a slightly different question: in how many ways can we choose \em{which four} soups to eat, if we don’t care about the order? In this case #{10 \cdot 9 \cdot 8 \cdot 7} is clearly too big, since there are many different schedules which have the same four soups in different orders.}
+
+\p{In fact, for any set of four soups, we know there will always be exactly #{4! = 24} schedules containing those four soups in some order.  So #{10 \cdot 9 \cdot 8 \cdot 7} is too big by exactly a factor of 24.  Hence the number of different sets of four soups we can choose is ##{\frac{10 \cdot 9 \cdot 8 \cdot 7}{24} = 210.}}

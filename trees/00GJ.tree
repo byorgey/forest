@@ -1,0 +1,10 @@
+\title{Counting bit strings with exactly 3 ones}
+\date{2026-04-29T16:54:33Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{How many #{8}-bit binary strings are there with exactly three #{1}’s and five #{0}’s?}
+\p{This is equivalent to picking three out of the eight bit positions to set to #{1}, so it is #{\binom{8}{3} = \frac{8!}{3! 5!} = \frac{8 \cdot 7 \cdot 6}{3 \cdot 2 \cdot 1} = 56}.}
+\p{Alternatively, we could pick five out of the eight bit positions to set to #{0}: #{\binom{8}{5} = \frac{8!}{5! 3!} = 56} as well.}

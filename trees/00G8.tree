@@ -4,7 +4,7 @@
 
 \import{discrete-macros}
 
-\p{The next principle to consider, I like to call the \em{subtraction rule}, though as we will see, a more general version of this principle usually goes by another name.}
+\p{The next principle to consider, I like to call the \em{subtraction rule}.  In a sense, though, it is just a more sophisticated version of the addition rule.}
 
 \transclude{00G9}   % Subtraction rule
 \transclude{00GA}   % Lunches

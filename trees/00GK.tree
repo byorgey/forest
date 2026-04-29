@@ -1,0 +1,10 @@
+\title{Counting bit strings with at least 3 ones}
+\date{2026-04-29T16:55:26Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{How many #{8}-bit binary strings have \em{at least 3} bits set to #{1}?}
+\p{It is easiest to compute this by subtracting the strings we don’t want to count from the total: ##{2^8 - \binom 8 2 - \binom 8 1 - \binom 8 0 = 256 - 28 - 8 - 1 = 219.}}
+\p{Alternatively, we could just add up all the possibilities: ##{\binom{8}{3} + \binom{8}{4} + \binom{8}{5} + \binom{8}{6} + \binom{8}{7} + \binom{8}{8} = 56 + 70 + 56 + 28 + 8 + 1 = 219.}}

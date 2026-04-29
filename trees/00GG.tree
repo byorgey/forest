@@ -1,0 +1,12 @@
+\title{Counting seating arrangements}
+\date{2026-04-29T16:44:02Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{How many ways are there to seat 5 people around a table, if we only care about who is sitting to the left and right of who, and not about the specific seats they are in?}
+
+\p{One way to answer this question is by first considering that there are #{5!} ways to assign each person to a specific seat. However, given a specific assignment of each person to a seat, if we have everyone stand up and move one seat to the right, we get a different seat assignment, but as a seating arrangement it should be considered the same, since we only care who is sitting next to who. In fact, for every specific seating arrangement there are four other arrangements which are equivalent, for a total of five equivalent arrangements (corresponding to the five possible rotations around the table). Thus, by the division rule, there are #{5! / 5 = 24} different seating arrangements.}
+
+\p{Note we can also see this by first insisting that person #{A} must always sit in a specific chair; since specific chairs don’t matter, they might as well. Then we have four choices for who to seat the right of person #{A}, then three choices for who to seat to the right of them, and so on, for a total of #{4!} choices.}
