@@ -1,0 +1,11 @@
+\title{The Addition Rule}
+\date{2026-04-28T23:44:00Z}
+\tag{discrete}
+\taxon{Principle}
+
+\import{discrete-macros}
+
+\p{Suppose choosing something means \em{either} making one choice in #{c_1} ways \em{or} making another choice in #{c_2} ways, and the choices do not overlap at all. Then the total number of choices is #{c_1 + c_2}.}
+\p{In other words, when #{A} and #{B} are disjoint, ##{|A \cup B| = |A| +
+    |B|.}}
+

@@ -1,0 +1,31 @@
+\title{Counting binary trees}
+\date{2026-04-29T10:40:01Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\p{Counting the number of binary trees with a certain number of branch nodes provides a great example putting together many things we have seen so far (the product and sum rules, and recursively defined sets and functions).}
+
+\p{Here are all the binary trees with zero, one, two, and three branch nodes:}
+
+% XXX picture!
+
+\p{We can see that there are five different binary trees with three branch nodes. How many will there be with four branch nodes? We are quickly approaching the limit of what we will be able to count while being confident that we have not missed any.}
+
+\p{Consider the set of five trees with three branch nodes shown above. Of course, every tree has one branch node at its root; then we have two more branch nodes that we have to put somewhere. We can break the trees into three subsets, depending on how many branch nodes we put to the left and right of the root:}
+
+% XXX picture!
+
+\p{The trees on the left have two branch nodes on the left side of the root and none on the right; the tree in the middle has one branch node on either side; and the trees on the right have none on the left and two on the right. It’s clear that these are the only possibilities, and every tree has to fall into exactly one of these categories. If we put two branch nodes on the left, we have two ways to do it (since there are two different trees with two branch nodes), and only one way to put zero on the right (there is only one tree with zero branch nodes). Similarly, we have one way to make a tree with one branch node to either side, and two ways to put two on the right. In general, we can compute the number of ways we have to make a tree with #{j} nodes on the left and #{k} nodes on the right using the product rule: since the left and right trees can be chosen independently, it is just the number of trees with #{j} branch nodes times the number of trees with #{k} branch nodes.}
+
+\p{Put together, this tells us that if #{T(n)} represents the number of binary trees with #{n} branch nodes, then ##{T(3) = T(2)T(0) + T(1)T(1) + T(0)T(2).} And sure enough, #{T(0) = T(1) = 1} and #{T(2) = 2}, so this equals ##{2 \cdot 1 + 1 \cdot 1 + 1 \cdot 2 = 5,} as it should.}
+
+\p{Using the same pattern we can compute the number of binary trees with four branch nodes: ##{T(4) = T(3) T(0) + T(2) T(1) + T(1) T(2) + T(0) T(3) = 5 + 2 + 2 + 5 = 14.}}
+
+% XXX picture!
+
+\p{In general, we can define #{T(n)} recursively as ##{\begin{align*}
+  T(0) &= 1  \\
+  T(n) &= \sum_{k=0}^{n-1} T(n-k-1)T(k)
+\end{align*}} The resulting sequence of numbers, known as the \em{Catalan numbers}, is extremely famous: ##{1, 1, 2, 5, 14, 42, 132, 429, 1430, \dots}}

@@ -1,0 +1,12 @@
+\title{Counting lunches}
+\date{2026-04-28T23:45:37Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{You want to order a single item for lunch. Restaurant A has #{13} things on its menu, and Restaurant B has #{24} on its menu. How many different choices do you have for lunch, if the two restuarants have completely different menus?}
+\p{Assuming the restaurant menus do not overlap at all, the answer is simply #{13 + 24 = 37}.}
+\p{(What if the menus do overlap? We will come back to this question.)}
+
+

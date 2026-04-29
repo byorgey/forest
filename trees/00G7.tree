@@ -1,0 +1,12 @@
+\title{Counting soup schedules of varying length}
+\date{2026-04-29T10:58:52Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{If we have ten different soups, and want to make a schedule of which to eat for \em{at most} four days, how many ways can we do it?}
+
+\p{In this case we can simply note that we can \em{either} choose to eat soup for one day, \em{or} for two days, or three, or four.  These choices do not overlap, since schedules with different numbers of days are obviously different.  Hence, the total is ##{10 + 10 \cdot 9 + 10 \cdot 9 \cdot 8 + 10 \cdot 9 \cdot 8 \cdot 7.}}
+
+\p{There is another way we could think about this.  On the first day, we have ten choices of what soup to pick.  For the remaining three days, we can \em{either} choose to stop eating soup (in exactly one way), \em{or} we can choose from among the nine remaining soups, then decide on a schedule for the last two days; and so on.  So the total is ##{10 \cdot (1 + 9 \cdot (1 + 8 \cdot (1 + 7))).}}

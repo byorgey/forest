@@ -1,0 +1,12 @@
+\title{The subtraction rule}
+\date{2026-04-29T11:07:45Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{The next principle to consider, I like to call the \em{subtraction rule}, though as we will see, a more general version of this principle usually goes by another name.}
+
+\transclude{00G9}   % Subtraction rule
+\transclude{00GA}   % Lunches
+\transclude{00GB}   % Bit strings
+\transclude{00GC}   % PIE

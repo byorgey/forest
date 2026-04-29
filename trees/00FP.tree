@@ -6,3 +6,5 @@
 
 \transclude{00FQ}   % Intro
 \transclude{00FR}   % Product rule
+\transclude{00G3}   % Addition rule
+\transclude{00G8}   % Subtraction rule

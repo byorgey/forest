@@ -1,0 +1,18 @@
+\title{Counting bit strings}
+\date{2026-04-29T11:10:52Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{How many strings of #{8} bits either start with a 1 or end with 00?}
+\ul{\li{\p{There are #{2^7} strings of 8 bits that start with a 1: the first bit is fixed, and we can independently choose each remaining bit to be 0 or 1.}
+}
+\li{\p{Similarly, there are #{2^6} strings of 8 bits that end with 00.}
+}
+\li{\p{We cannot simply add these numbers, because of overlap: there are some strings of bits that both start with 1 and end with 00. In fact there are #{2^5} such strings, since three bits are fixed and we can freely choose the other 5. Thus, the total number of bit strings that start with 1 or end with 00 is ##{2^7 +
+      2^6 - 2^5 = 160.}}
+}
+}
+
+

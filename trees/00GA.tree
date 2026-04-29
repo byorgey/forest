@@ -1,0 +1,9 @@
+\title{Counting lunches, again}
+\date{2026-04-29T11:10:22Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\taxon{Example}
+\p{You again want to order a single item for lunch; restaurant A has #{13} things on its menu, and Restaurant B has #{24} on its menu. However, there are #{9} items which the two restaurants have in common. How many items can you order for your lunch?}
+\p{Adding #{13 + 24} gives the total number of items on both menus, but it has counted the shared items twice. Subtracting the number of shared items gives the correct total: #{13 + 24 - 9 = 28}.}
