@@ -1,0 +1,45 @@
+\import{discrete-macros}
+
+\title{Weeknotes for 1 May 2026 (week 17)}
+\author{brentyorgey}
+\date{2026-05-03}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Wrapping up the semester}
+
+  \p{Friday, May 1 was the last day of classes for the semester.  There is still plenty of work to do over the next two weeks (final exams / final project presentations, grading, dealing with cases of academic misconduct, \em{etc.}) but the pace will be much more relaxed. I'm looking forward to slowly ramping up some summer projects.}
+}
+
+\subtree{
+  \title{Thoughts on Forester for lecture notes}
+  \p{Using Forester to write up [lecture notes for my Discrete Mathematics course](0021) has been a resounding success. Writing them in this medium forced me to think much more carefully about how things are organized and presented, which in many cases led me to make substantive changes for the better, despite having taught this course many times before.  I think the students also found it helpful to have the notes available in an easily searchable and hyperlinked format.  One of the things I want to do over the next few weeks is to go through the notes to clean some things up, add more hyperlinks, and add some extended/optional material in cases where I didn't have time during the semester, possibly put together a simple preprocessor that will allow me to embed [[000S]] code—but overall I think the notes are in really great shape.  I definitely plan to do something similar for other courses in the future.  Next up will be my [Algorithms](https://hendrix-cs.github.io/csci382/) course in the fall, I think.}
+}
+
+\subtree{
+  \title{"To my students"}
+
+  \p{On Monday, I published a piece I had been working on for a while, unimaginatively titled [[00FD]]. This year in particular, it felt increasingly disingenuous to say nothing about the current political and technological climate—but I am not good at speaking extemporaneously about such weighty topics, so I decided to write something instead. When it was finished, I emailed a link to my students, and posted a link on Mastodon.  I was not expecting the magnitude of the response.}
+
+  \p{I heard from many current students who were appreciative, and had interesting conversations with several of them.  My piece apparently got posted to a much wider student community via social media.  My Mastodon post got much more traction than my posts usually do (though 120 boosts hardly counts as "going viral").  It was also posted to Hacker News, and I made the mistake of reading some of the comments. I heard from a few random strangers for whom the piece resonated particularly strongly. I also heard from someone who was my student when I taught high school math 20 years ago.}
+
+  \p{With the exception of the Hacker News comments, overall the experience was very positive and encouraging.}
+}
+
+
+\subtree{
+  \title{Mutable and immutable arrays and CESK machines}
+
+  \p{I have continued working on immutable arrays in Swarm, but have been stymied by the complexity of implementing a [fully general introduction form](00GM) via a CESK machine. Trying to implement it from scratch was breaking my brain, so I tried implementing it in pure Haskell, then doing a manual CPS transformation followed by manual defunctionalization, to try to more mechanically derive the required CESK implementation, but even that was breaking my brain.}
+
+  \p{I finally realized this morning that perhaps I have been thinking about this all wrong.  I started out implementing only \em{immutable} arrays because I thought it would be \em{simpler}—and I figured I would introduce mutable arrays later.  But the need for such complicated introduction forms could be circumvented entirely with mutable arrays. That is, I think I will stick with a simple yet impoverished introduction form for immutable arrays for now (\code{unfoldArray : b -> (b -> (Unit + a*b)) -> Array a}), and then later introduce mutable arrays along with a copying \code{freezeArray : MArray a -> Array a}.  Although thinking about general introduction forms for immutable arrays has been interesting, I think this will be a lot simpler and more robust.}
+}
+
+\subtree{
+  \title{Piano corner}
+  \p{I've continued working on the Chopin 1st concerto.  I'm close to being able to play the entire first movement—only the coda still needs significant work.  Over the summer I want to continue working on the concerto while also being more systematic about practicing other things in my repertoire and possibly learning some other, shorter, new pieces as well.}
+
+  \p{Through an unlikely series of events, it looks like I may have an opportunity to acquire a free (!!) 2002 [Yamaha C7 grand piano](https://www.alamomusic.com/blogs/whats-new/the-studio-standard-yamaha-c7-grand-piano-review-and-demo) for my church.  This is one of the absolute best pianos on the market, and typically costs something like $20k-30k used; a brand-new Yamaha C7X, the successor model, costs about $90k. Getting one for free still seems too good to be true, but I am warily optimistic.  I will certainly write about it (with pictures) if it does indeed come together!  In that case I will almost certainly be spending more time at my church just to play it... I love my Yamaha T118 upright, but it can't compare with a 7'6" Yamaha grand.}
+}

@@ -1,0 +1,24 @@
+\author{brentyorgey}
+\date{2026-05-03T20:11:13Z}
+\title{Introduction forms for immutable arrays}
+
+  \p{After mentioning it in last week's weeknotes, I [got some great feedback](https://mathstodon.xyz/@monoidmusician@tech.lgbt/116309751306965503) from [Verity](https://mathstodon.xyz/@monoidmusician@tech.lgbt) on an introduction form for immutable arrays.  (Again, the biggest constraint here is that we don't want to use lists: Swarm \em{does} have lists, but not built-in in a primitive way.  Using lists requires you to first unlock algebraic data types as well as recursive types, and you should be able to unlock and use arrays independently.)}
+
+\p{After a bit of back and forth, the current best idea is
+\pre{\startverb
+(Int -> a) -> b -> (b -> Unit + Int * (a -> (a * b))) -> Array a
+\stopverb}
+  \ul{
+    \li{The first argument specifies the starting value at any index.}
+    \li{The second argument is a seed value for the unfold.}
+    \li{I like to think of the third argument as a protocol for communication between the array constructor and the user, specifying the process for a sort of imperative unfold.
+      \ul{
+        \li{The array constructor begins by announcing the current seed value of type \code{b}.}
+        \li{The user gets to choose whether to stop, or to continue by specifying an index.}
+        \li{The array constructor provides the value of type \code{a} currently at that index.}
+        \li{The user then gets to provide a new value of type \code{a}, and a new seed.}
+      }
+    }
+  }
+  This is trickier to implement than what I had before (\em{e.g.} it requires several new types of CESK machine continuation frames instead of just one, and in practice, we want to wait until we see which indices are requested before deciding on the final size of the array and filling in any missing values), but ultimately should be fine.  I need to finish up the implementation and play around with it: implement some other simpler introduction forms in terms of it, and try using it for things that were inefficient before.
+  }
