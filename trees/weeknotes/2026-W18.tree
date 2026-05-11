@@ -1,0 +1,33 @@
+\import{discrete-macros}
+
+\title{Weeknotes for 8 May 2026 (week 18)}
+\author{brentyorgey}
+\date{2026-05-10}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Still wrapping up the semester...}
+
+  \p{Last week I wrote "There is still plenty of work to do... but the pace will be much more relaxed."  I always forget that this is completely false.  Last week was \em{not} more relaxed, it was a zoo.  I can only assume this coming week will be the same (in particular, my department is trying to hire a 1-year visitor at the last minute, and I am the chair of the department and hence the chair of the hiring committee); but there is light at the end of the tunnel.}
+}
+
+\subtree{
+  \title{Pride goeth before the fall}
+
+  \p{In last week's piano corner, I said "Through an unlikely series of events, it looks like I may have an opportunity to acquire a free... piano".  I am extremely ashamed to have to write this, but it turns out to have been a scam. (The "piano" was free, but of course the shipping was not...)  Fortunately, I did not end up giving the scammers any money—but only very narrowly.  I actually got as far as attempting to send them money via Venmo, but Venmo stopped the payment because it suspected a scam. This, coupled with a friend's skepticism, finally got me to dig more deeply and uncover incontrovertible proof that the whole thing was a scam all along.}
+
+  \p{This has been a very humbling and sobering experience.  I like to think of myself as sophisticated, educated, intelligent—just as, I assume, many of us do—and therefore immune to scams or misinformation.  But that seems to have actually made it worse.  I wanted so badly for it to be true that I used my sophisticated, educated intelligence to spin all sorts of justifications for why it was not actually a scam despite the (many!) red flags.}
+
+  \p{In the end, I am really thankful that I only lost some pride, not money, and I hope that this experience will help me be more careful and less trusting of my own judgment in the future.}
+}
+
+\subtree{
+  \title{Deriving an efficient partition conjugation function}
+
+  \p{On Saturday I was solving a [Kattis problem](https://open.kattis.com/problems/keppni) for which I realized that I needed some Haskell code to efficiently compute the \em{conjugate} of an [integer partition](https://en.wikipedia.org/wiki/Integer_partition).  That is, if we think of a partition as a [Ferrers diagram](https://en.wikipedia.org/wiki/Integer_partition#Ferrers_diagram), the conjugate is the partition we get by flipping the diagram along the main diagonal.}
+
+  \p{I managed to write an efficient implementation, and solve the Kattis problem, simply by thinking hard; but it made me wonder whether one could \em{derive} an efficient implementation starting from an obviously-correct yet inefficient specification (via the [Bird-Meertens formalism](https://en.wikipedia.org/wiki/Bird\%E2\%80\%93Meertens_formalism), \em{aka} Squiggol).  I spent a very pleasant Sunday afternoon trying to work this out and [discussing it on Mastodon](https://mathstodon.xyz/@byorgey/116546141253551553).  I think I'm quite close to having a completely formal derivation; I hope to turn it all into a proper blog post next week.}
+}
+
