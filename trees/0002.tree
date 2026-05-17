@@ -5,7 +5,7 @@
 
 \p{Here is a [short letter I wrote to my students](00FD) reflecting on the current state of the world and what I hope for them as they go out into it.}
 
-\transclude{0003}
+% \transclude{0003}  % Current courses
 
 \put\transclude/expanded{false}
 \transclude{0004}
