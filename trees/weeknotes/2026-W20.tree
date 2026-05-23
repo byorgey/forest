@@ -1,0 +1,48 @@
+\import{discrete-macros}
+
+\title{Weeknotes for 22 May 2026 (week 20)}
+\author{brentyorgey}
+\date{2026-05-23}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\p{This week was indeed much better than [last week](2026-W19)!  There was still a good deal of administrative work, but I actually had time to work on some projects.}
+
+\subtree{
+  \title{Deriving an efficient conjugate function for integer partitions}
+
+  \p{I finally had more time to work on [deriving an efficient integer partition conjugation function](00GN).  My optimism of two weeks ago was unfounded—I worked on it a good deal this week but haven't cracked it yet.  But I feel like I have made some good progress, and it's been fun refreshing my memory on stuff from [The Algebra of Programming](https://www.librarything.com/work/195696/t/The-Algebra-of-Programming) and [Algorithm Design with Haskell](https://www.cambridge.org/core/books/algorithm-design-with-haskell/824BE0319E3762CE8BA5B1D91EEA3F52).  If anyone would be interested in collaborating on this, I'd be happy to jump in a video call.}
+}
+
+\subtree{
+  \title{Open-source maintenance}
+  \p{The [diagrams-solve](https://hackage.haskell.org/package/diagrams\%2Dsolve) and [diagrams-lib](https://hackage.haskell.org/package/diagrams\%2Dlib) packages are full of uses of partial functions such as \code{head} and \code{tail}, having been written before [Data.List.NonEmpty](https://hackage-content.haskell.org/package/base-4.22.0.0/docs/Data-List-NonEmpty.html) really existed.  But they generate tons of warnings, and I finally decided to bite the bullet and eliminate the use of partial functions as much as possible.  This has involved some tricky analyses of which lists can be statically known to be nonempty, especially in \em{e.g.} list-heavy code used to compute [operations on Bernstein polynomials](https://hackage-content.haskell.org/package/diagrams-lib-1.5.1/docs/Diagrams-TwoD-Segment-Bernstein.html), but I made some very good progress this week and the conversion is almost complete.}
+}
+
+\subtree{
+  \title{Swarm}
+
+  \subtree{
+    \title{Immutable arrays}
+    \p{I have finally finished my [pull request adding immutable arrays to the language](https://github.com/swarm-game/swarm/pull/2701/)!}
+    \p{In the end I was able to come up with a scenario that requires the use of arrays to solve in a reasonable amount of time, but only needs immutable arrays constructed with an \code{unfold} operation: you first "read" a random permutation from a row of letters laid out on the ground, then iterate the permutation a certain number of times and lay the letters back down in the resulting order.  If anyone can think of an efficient way to solve this without the use of an array, I'd love to hear about it!}
+  }
+
+  \subtree{
+    \title{New contributors, and import bugs}
+    \p{Swarm has had several new contributors pop up this week, which is fun. [[tom-scheper]] found a [bug which is rather obvious in retrospect](https://github.com/swarm-game/swarm/issues/2725)—when encountering a module import, we only check the file itself for changes, but not any of its transitive imports.  But this means that if \code{A} imports \code{B}, and you modify \code{B} then re-import \code{A}, you will not actually pick up the changes to \code{B} unless you touch \code{A} as well.  Fixing this is a bit finicky.  We can't just transitively check all imports every time, since we would end up re-checking the same modules repeatedly.  Instead, I think the right idea is to do two passes when processing some top-level source code: first, transitively check its imports looking for any in the module cache that are outdated, and flag them for a reload.  Then, do a second pass where we actually recursively load and check all the modules that need to be loaded, either because they have not been loaded yet or because they are flagged.  I started working on the fix for this a couple days ago and hope to finish soon.}
+  }
+}
+
+\subtree{
+  \title{Math search}
+
+  \p{As I briefly mentioned in some previous weeknotes, my department is hiring a Visiting Assistant Professor of Mathematics for next year (kind of at the last minute), and we did a bunch of work on our search this week.  We held virtual interviews with several candidates on Wednesday and Thursday afternoons; the committee then met Friday and decided on one to invite for an on-campus interview; the rest of my afternoon consisted of writing a formal request to the provost and setting up phone conversations with some references.  I'm hopeful we can wrap up the search in the next few weeks.}
+}
+
+\subtree{
+  \title{Piano corner}
+
+  \p{This week I pulled out my book of Chopin waltzes and have enjoyed playing through and refreshing them. It turns out there are actually only a few left that I don't know, and they all seem lovely.  I think I might make a side quest for the summer to learn them all; this week I learned No. 13 in D flat major.  Next week I'm going to make an intentional plan for what I want to work on over the summer.}
+}

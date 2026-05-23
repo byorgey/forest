@@ -23,11 +23,4 @@
   \p{In the end, I am really thankful that I only lost some pride, not money, and I hope that this experience will help me be more careful and less trusting of my own judgment in the future.}
 }
 
-\subtree{
-  \title{Deriving an efficient partition conjugation function}
-
-  \p{On Saturday I was solving a [Kattis problem](https://open.kattis.com/problems/keppni) for which I realized that I needed some Haskell code to efficiently compute the \em{conjugate} of an [integer partition](https://en.wikipedia.org/wiki/Integer_partition).  That is, if we think of a partition as a [Ferrers diagram](https://en.wikipedia.org/wiki/Integer_partition#Ferrers_diagram), the conjugate is the partition we get by flipping the diagram along the main diagonal.}
-
-  \p{I managed to write an efficient implementation, and solve the Kattis problem, simply by thinking hard; but it made me wonder whether one could \em{derive} an efficient implementation starting from an obviously-correct yet inefficient specification (via the [Bird-Meertens formalism](https://en.wikipedia.org/wiki/Bird\%E2\%80\%93Meertens_formalism), \em{aka} Squiggol).  I spent a very pleasant Sunday afternoon trying to work this out and [discussing it on Mastodon](https://mathstodon.xyz/@byorgey/116546141253551553).  I think I'm quite close to having a completely formal derivation; I hope to turn it all into a proper blog post next week.}
-}
-
+\transclude{00GN}
