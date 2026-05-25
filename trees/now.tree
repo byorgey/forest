@@ -1,4 +1,4 @@
-\date{2026-05-11}
+\date{2026-05-25}
 \title{Now}
 \author{brentyorgey}
 
@@ -8,7 +8,9 @@
 
 \transclude{000O}  % Swarm
 
-\transclude{000N}  % Disco
+% \transclude{000N}  % Disco
+
+\transclude{00GO}
 
 \transclude{000P}  % Applicative inference
 

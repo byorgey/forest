@@ -1,0 +1,4 @@
+\title{Squiggol}
+\date{2026-05-25T15:57:05Z}
+
+\p{I really love playing with the [Bird-Meertens formalism](https://en.wikipedia.org/wiki/Bird\%E2\%80\%93Meertens_formalism), aka Squiggol, and it's something I hope I get to keep exploring and playing with for the rest of my life.  Currently, I've been thinking about how to [derive an efficient implementation of integer partition conjugation](00GN) from an inefficient specification.}
