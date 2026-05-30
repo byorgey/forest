@@ -1,0 +1,31 @@
+\import{discrete-macros}
+
+\title{Weeknotes for 29 May 2026 (week 21)}
+\author{brentyorgey}
+\date{2026-05-29}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\p{This week I spent a lot of time helping friends move, fixing Swarm bugs, and working on our search for a 1-year visiting professor.  There's never as much time during the summer to work on big projects as I think there will be, or would like there to be!   But I'm excited to be participating in a "Community of Practice" with other faculty around the book \em{Stolen Focus} by Johann Hari.  I'm also excited to take a quiet creative retreat this coming Tuesday-Thursday—I've booked an AirBnB at a place in the country about 20 minutes away for a couple nights!  Expect a full report in next week's weeknotes.}
+
+\subtree{
+  \title{Swarm}
+
+  \subtree{
+    \title{Fixing transitive import bug}
+    \p{I fixed the [import bug](https://github.com/swarm-game/swarm/issues/2725) from last week.  Doing two passes was the right general idea, but I didn't have the details right.  My son actually helped me figure out the right way to do it: first do a DFS through the module cache, evicting everything that is outdated or depends on something outdated.  After that, the actual loading code does not need to change!  Any module which depends on something that has changed will have been evicted from the cache, so we are forced to reload and recheck it.  Simple and robust.}
+  }
+
+  \subtree{
+    \title{Exponential import blowup}
+    \p{[[ondrejweis]] tried testing the import system and, to my simultaneous shame and joy, easily made it completely fall over.  Shame because I worked really hard on that code and thought it was really clean, elegant, and well-thought out.  Joy, because it's wonderful to have someone point out flaws so they can get fixed.}
+    \p{In particular, if you created a linear chain of modules #{A \to B \to C \to D \to \dots} where each imports the next, the amount of time it took to load them from disk was \em{exponential} in the number of modules!  This completely flummoxed me—I was looking for places where a recursive function accidentally called itself twice on the same AST, or something like that.  But once again Ondřej came to the rescue and figured out that it was because of the way we dynamically built up a stack of unresolved effects as we recursed (every level gets its own new, local, \code{Accum} effect to record the imports for each module).  Apparently \code{fused-effects}, the effects library we use, does not deal with this situation well at all (though I still don't understand how it leads to \em{exponential} time complexity)!  In any case, Ondřej fixed it by handling the accumulation effect explicitly.}
+  }
+}
+
+\subtree{
+  \title{Math search}
+
+  \p{This week was a lot of "hurry up and wait" as I waited through the holiday weekend for people to be able to work on scheduling a candidate visit, then waiting to hear back from various people we needed to schedule a meeting with, waiting to hear back from some students we would like them to meet with...  We finally have the in-person interview all scheduled for this Monday!}
+}
