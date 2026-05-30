@@ -5,12 +5,16 @@
 
 % XXX revise this presentation.  Start with gcd(a,b) = gcd(a-b, b), baby version of Euclidean Alg, include proof.  Then iterate to get version with mod.
 
+% https://hendrix.sharepoint.com/sites/Section_32163/_layouts/15/stream.aspx?id=%2Fsites%2FSection%5F32163%2FShared%20Documents%2FGeneral%2FRecordings%2F420%20The%20Euclidean%20Algorithm%2D20260420%5F091143%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb8a244ac%2D72f8%2D4d0a%2D8c8d%2Dfdfe5fffc020
+
 \import{discrete-macros}
 
 \p{[Computing the GCD via factoring](00F0) is not very practical for larger numbers, because factoring takes a long time. It turns out there is a much better way that is actually used in practice. To see why it works, we’ll first need a few lemmas and theorems about #{\gcd}.}
 
+\transclude{00GQ} % GCD sub.
+
 \transclude{00F3}   % GCD comm.
-\transclude{00F4}   % GCD-lincomb
+% \transclude{00F4}   % GCD-lincomb
 
 \p{We won't prove this theorem in class, but you can expand the proof below if you want to see it.}
 \put\transclude/expanded{false}

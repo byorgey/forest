@@ -1,12 +1,13 @@
-\title{Principle of inclusion-exclusion}
+\import{discrete-macros}
+
+\title{\advanced Principle of inclusion-exclusion}
 \date{2026-04-29T11:11:34Z}
 \tag{discrete}
-\tag{draft}
-\taxon{Remark}
 
-\import{discrete-macros}
+\taxon{Remark}
 
 \p{What if we have \em{three} (or more) overlapping sets of choices? It is actually possible to come up with a general formula for this situation, known as the \em{Principle of Inclusion-Exclusion}.}
 
-% XXX include actual formula for $n = 3$
-% XXX mark this as advanced?
+\p{For 3 sets of choices, the formula looks like this: ##{|A \union B \union C| = |A| + |B| + |C| - |A \intersect B| - |A \intersect C| - |B \intersect C| + |A \intersect B \intersect C|} That is, to count the size of the union #{A \union B \union C}, we can add their sizes; but this counts the overlapping regions more than once, so we can subtract each overlap.  However, the overlap between \em{all three} sets got counted three times, then subtracted three times, so we have to finally add it back once.}
+
+\p{In general, the cardinality of an arbitrary union of sets is equal to the sum of all the individual cardinalities, minus the cardinalities of all intersections of exactly two of the sets, plus the cardinalities of all intersections of exactly three sets, minus the intersections of four sets, ... and so on. Proving this is outside the scope of this class, but it's actually not a difficult proof—it requires use of some set operation properties such as associativity of union, distributivity of intersection over union, as well as induction on the number of sets.}

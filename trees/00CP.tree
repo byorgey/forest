@@ -1,8 +1,8 @@
-\title{[★](advanced) Weak induction implies strong induction}
+\import{discrete-macros}
+
+\title{\advanced Weak induction implies strong induction}
 \date{2026-04-01T00:40:33Z}
 \tag{discrete}
-
-\import{discrete-macros}
 
 \p{We can actually use [weak induction](00CC) to prove [strong induction](00CM).  The trick is to define ##{Q(n) \equiv \all{j}{\N}{(j \leq n) \to P(n)},} that is, informally, #{Q(n) \equiv P(0) \land P(1) \land \dots \land P(n)}. Now suppose ##{\all{k}{\N}{[\all{j}{\N}{(j < k) \implies P(j)}] \implies P(k)},} or in other words, ##{\all{k}{\N}{Q(k-1) \implies P(k)}.}  Then we can show #{\all{n}{\N}{Q(n)}} by weak induction: in the base case, #{Q(0) \equiv P(0)} is true.  In the inductive step, #{Q(k) \implies P(k+1)} and hence #{Q(k) \implies (Q(k) \land P(k+1))} which is equivalent to #{Q(k+1)}.
 }

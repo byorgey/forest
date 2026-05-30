@@ -1,10 +1,9 @@
 \title{Counting seating arrangements again}
-\date{2026-04-29T16:48:11Z}
 \tag{discrete}
-\tag{draft}
+\taxon{Example}
 
 \import{discrete-macros}
 
-\p{What if we again want to seat 5 people around a table, but this time we only care who is sitting \em{next to} who, but left vs right doesn't matter?}
+\p{What if we again want to [seat 5 people around a table](00GG), but this time we only care who is sitting \em{next to} who, but left vs right doesn't matter?}
 
-\p{As we know from the previous example, there are 24 ways to seat people if we consider seating arrangements equivalent that are rotations of one another.  Now, for any seating arrangement we also consider it equivalent to its \em{mirror image}.  Each arrangement always has exactly one mirror image, so we just need to divide by 2: the number of different arrangements is #{12}.}
+\p{As we [know from the previous example](00GG), there are 24 ways to seat people if we consider seating arrangements equivalent that are rotations of one another.  Now, for any seating arrangement we also consider it equivalent to its \em{mirror image}.  Each arrangement always has exactly one mirror image, so we just need to divide by 2: the number of different arrangements is #{12}.}

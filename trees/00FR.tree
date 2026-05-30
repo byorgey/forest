@@ -1,13 +1,13 @@
 \date{2026-04-24T13:43:08Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
 \title{The product rule}
 
-\p{The first principle we will consider is the \em{product rule}. Note, instead of just talking about the sizes of sets we will often talk in terms of \em{choosing} elements of a set. The number of elements in a set is the same as the number of ways to choose a different element of the set, so in some sense this makes no difference; but for some reason it is often helpful to think in terms of actively \em{choosing} elements rather than just passively \em{counting} them.}
+\p{The first principle we will consider is the \em{product rule}.}
 
+\transclude{00GP}  % Choosing
 \transclude{00FS}  % Product rule
 \transclude{00FT}  % Independent
 

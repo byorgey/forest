@@ -10,4 +10,4 @@
 
 % XXX picture
 
-\p{This really boils down to the fact, which we saw before when learning about sets, that ##{|A \times B| = |A| \times |B|.}}   % XXX link
+\p{This really boils down to the fact, which we [saw before when learning about sets](0079), that ##{|A \times B| = |A| \times |B|.}}

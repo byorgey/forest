@@ -5,7 +5,7 @@
 
 \import{discrete-macros}
 
-\p{Counting the number of binary trees with a certain number of branch nodes provides a great example putting together many things we have seen so far (the product and sum rules, and recursively defined sets and functions).}
+\p{Counting the number of binary trees with a certain number of branch nodes provides a great example putting together many things we have seen so far (the [product](00FR) and [addition](00G3) rules, and recursively defined sets and functions).}
 
 \p{Here are all the binary trees with zero, one, two, and three branch nodes:}
 
@@ -28,4 +28,4 @@
 \p{In general, we can define #{T(n)} recursively as ##{\begin{align*}
   T(0) &= 1  \\
   T(n) &= \sum_{k=0}^{n-1} T(n-k-1)T(k)
-\end{align*}} The resulting sequence of numbers, known as the \em{Catalan numbers}, is extremely famous: ##{1, 1, 2, 5, 14, 42, 132, 429, 1430, \dots}}
+\end{align*}} The resulting sequence, known as the \em{Catalan numbers}, is [extremely famous](https://en.wikipedia.org/wiki/Catalan_number): ##{1, 1, 2, 5, 14, 42, 132, 429, 1430, \dots}}

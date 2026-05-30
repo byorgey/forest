@@ -1,11 +1,9 @@
 \title{Binomial coefficient properties}
-\date{2026-04-29T16:58:52Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
-\p{Here is a table of the first few binomial coefficients, with #{n} along the left side, and #{k} along the top.}
+\p{Here is a table of the first few [binomial coefficients](00GH), with #{n} along the left side, and #{k} along the top.}
 
 \p{##{\begin{array}{c|cccccc}
     & 0 & 1 & 2 & 3 & 4 & 5 \\ \hline
@@ -22,8 +20,8 @@
 \ul{
   \li{#{\displaystyle \binom{n}{0} = \binom{n}{n} = 1}. We can prove this either by looking at the formula (#{\frac{n!}{0!n!} = 1}) or by thinking about what it means combinatorially: there is exactly one way to choose nothing, or everything, from a set of size #{n}.}
   \li{#{\displaystyle \binom{n}{1} = n}. Again, we can see this from the formula, or by reasoning that if we want to pick exactly one thing out of a set of size #{n}, we have #{n} ways to do it, one for each element.}
-  \li{#{\displaystyle \binom{n}{k} = \binom{n}{n-k}}. In the formula, #{k!} and #{(n-k)!} just switch places; combinatorially, we have the same number of ways to choose #{k} things as we do to choose which #{n-k} things we are \em{not} going to choose. In other words, instead of thinking in terms of “choosing #{k} things” we can think of it in terms of “splitting a set of size #{n} into two subsets of sizes #{k} and #{n-k}”.}
-  \li{#{\displaystyle \binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1}}. This is the rule for constructing Pascal’s Triangle: each entry is the sum of the entry above it and the one above and to the left. I leave it as a challenge for you to prove this either from the formula or by thinking about it combinatorially.}
-  \li{#{\displaystyle \sum_{k=0}^n \binom{n}{k} = 2^n}. These are just two different ways to count all the subsets of a set of size #{n}.}
+  \li{#{\displaystyle \binom{n}{k} = \binom{n}{n-k}} (each row of Pascal's triangle is a palindrome). In the formula, #{k!} and #{(n-k)!} just switch places; combinatorially, we have the same number of ways to choose #{k} things as we do to choose which #{n-k} things we are \em{not} going to choose. In other words, instead of thinking in terms of “choosing #{k} things” we can think of it in terms of “splitting a set of size #{n} into two subsets of sizes #{k} and #{n-k}”.}
+  \li{#{\displaystyle \binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1}} (each entry in Pascal's triangle is the sum of the entry above it and the entry above and to the left). This is the rule for constructing Pascal’s Triangle: each entry is the sum of the entry above it and the one above and to the left. I leave it as a challenge for you to prove this either from the formula or by thinking about it combinatorially.}
+  \li{#{\displaystyle \sum_{k=0}^n \binom{n}{k} = 2^n} (the sum of the #{n}th row of Pascal's triangle is #{2^n}). These are just two different ways to count all the subsets of a set of size #{n}.}
 }
 }

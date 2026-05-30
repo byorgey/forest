@@ -29,3 +29,5 @@
 \def\mod{#{\mathbin{\mathbf{mod}}}}
 
 \def\lcm{#{\mathrm{lcm}}}
+
+\def\advanced{[★](advanced)}

@@ -1,0 +1,11 @@
+\title{GCD arguments can be subtracted from the other}
+\date{2026-05-29T19:42:53Z}
+\tag{discrete}
+\tag{draft}
+
+\import{discrete-macros}
+
+\taxon{Theorem}
+\p{For all #{a,b \in \N}, if #{a \geq b}, then ##{\gcd(a,b) = \gcd(a-b, b).}}
+
+

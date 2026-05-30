@@ -1,0 +1,8 @@
+\title{Counting vs choosing}
+\date{2026-05-25T20:47:47Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{Note, instead of just talking about the sizes of sets we will often talk in terms of \em{choosing} elements of a set. The number of elements in a set is the same as the \em{number of ways to choose} an element of the set, so in some sense this makes no difference; but for some reason it is often helpful to think in terms of actively \em{choosing} elements rather than just passively \em{counting} them.}

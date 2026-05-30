@@ -5,7 +5,7 @@
 
 \import{discrete-macros}
 
-\p{Recall the problem with soup, where we have a bunch of different kinds of soup and are trying to count the number of different schedules we could make for ourselves. For example, if we have 10 different kinds of soup and want to eat soup for 4 days, there are #{10 \cdot 9 \cdot 8 \cdot 7} different soup schedules we can make.}
+\p{Recall the [problem with soup](00G0), where we have a bunch of different kinds of soup and are trying to count the number of different schedules we could make for ourselves. For example, if we have 10 different kinds of soup and want to eat soup for 4 days, there are #{10 \cdot 9 \cdot 8 \cdot 7} different soup schedules we can make.}
 
 \p{Now consider a slightly different question: in how many ways can we choose \em{which four} soups to eat, if we don’t care about the order? In this case #{10 \cdot 9 \cdot 8 \cdot 7} is clearly too big, since there are many different schedules which have the same four soups in different orders.}
 
