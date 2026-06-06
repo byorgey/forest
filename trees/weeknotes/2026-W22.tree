@@ -1,0 +1,77 @@
+\import{discrete-macros}
+
+\title{Weeknotes for 5 June 2026 (week 22)}
+\author{brentyorgey}
+\date{2026-06-06}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\p{This week has \em{finally} felt like the start of summer!}
+
+\subtree{
+  \title{Concluding the Visiting Assistant Professor search!}
+
+  \p{On Monday of this week, we brought a candidate for an on-campus interview for our 1-year visiting position in mathematics.  We made them an offer on Wednesday, and by Friday they had officially accepted!  I'm looking forward to have a new colleague joining us for next year, and also very glad that the search is over—being the chair of a search committee was a lot of work!}
+  \p{Even though it's official and thus presumably public information, out of an abundance of caution I won't yet mention who it is; I'll probably mention them at some point in the future.}
+}
+
+\subtree{
+  \title{Personal creative retreat}
+
+  \p{From Tuesday evening to Thursday morning of this week, I took a
+  personal creative retreat. I stayed at an AirBnB out in the country
+  about 20 minutes away from my house, in a one-room bungalow located
+  on the grounds of a ranch/event/wedding venue.  It was spacious and
+  quiet, with plenty of natural light but a lot of big old shade
+  trees, so it stayed cool without having to run the A/C unit.  Pretty
+  much perfect for working and thinking deeply, and the timing could
+  not have been more perfect—right after finally wrapping up our search.}
+
+  \imgasset{creative-retreat.jpg}
+
+  \p{Over the course of my 36-hour stay I got plenty of sleep, ate
+some good food, read part of Martha Wells' \em{Queen Demon}, and also
+did about 11 hours worth of focused, deep work, on three main projects.}
+
+  \subtree{
+    \title{Embedding diagrams in Forester}
+
+    \p{I would really like to be able to use [[000S]] from within
+  Forester, so I spent a bit of time working on a
+    \code{diagrams-forester} preprocessor tool.  The idea is that it will look for special sentinel blocks that look like
+    \pre\verb+++|
+    \diagram{w}{h}{\verb<<<|
+      ...
+    <<<}
+    +++
+    Then it would run the diagrams code in the \code{...}, and replace the entire \code{diagram} block with an image link.  \code{diagram} would also be defined to produce some kind of dummy placeholder, so the code would be valid Forester code both before and after the preprocessor runs.
+    }
+    \p{I don't want to spend a lot of time on this, but it's definitely worth spending a few hours on this summer, so I wanted to get it off the ground.  So far it can identify and parse the \code{diagram} blocks; I still need to hook it up to the [\code{diagrams-builder} package](https://hackage.haskell.org/package/diagrams-builder) and deal with things like input and output directories and so on.}
+  }
+  \subtree{
+    \title{Fixing Swarm code metrics to work with imports}
+
+    \p{When you complete a [[000O]] scenario, in addition to recording your time (both wall-clock and in-game time), it can also record the \em{size} of your code, both in terms of the number of characters and the size of the AST, and it records your best (smallest) scores.  This makes it easy to play code golf (competing with yourself, or with others).}
+
+    \p{However, when I added \code{import} to the language, I completely forgot about this mechanism, and a user recently reported that the game was not counting imports toward the code size, making it possible to game the system by shoving all your code into an import.  Whoops!}
+
+    \p{Fixing this was conceptually straightforward, but nontrivial from an engineering point of view.  First, I decided that I didn't want to do a DFS through the import graph every time we want to measure code size—we already do a DFS through the import graph when loading modules in the first place, so why not just cache some relevant information at that point?  So, I added a field to each module record to store a cached set of *all* its transitive dependencies.  Making sure that field was filled in properly involved a number of interesting bugs that I won't go into—including an infuiriating one where a test got the correct result, and then later got an incorrect result when rerunning the exact same test! (it had to do with, you guessed it, caching)—but I [finally got everything working](https://github.com/swarm-game/swarm/pull/2738) with an elegant framework for easily adding more code metrics in the future.}
+  }
+
+  \subtree{
+    \title{Blog post on proof of Fundamental Theorem of Arithmetic in Agda}
+
+    \p{A couple months ago I reported that I had, just for fun, completed a completely-from-scratch proof of the Fundamental Theorem of Arithmetic in Agda, and I've decided to turn it into a blog post/tutorial.  It's not an Agda tutorial—I'm assuming the reader already knows the basics of Agda and the Curry-Howard correspondence—but I'm not assuming much beyond that.  There's lots of introductory material out there, but I feel like it might be helpful to have a fully explained medium-size proof, for people who have learned the basics and played around with proof assistants, but would find it helpful to see a more fully worked example.  Along with the blog post I plan to publish a version with holes, so someone wanting to learn could try to fill in the holes while reading along with the explanations.}
+
+    \p{I spent a bunch of time (about 5 hours) working on the writeup.  A lot of fun stuff in there, including well-founded induction. I would say it's about... 2/3 finished.  At 11K words so far, it is not going to be short!}
+  }
+}
+
+\subtree{
+  \title{Piano corner}
+
+  \p{For some reason this week I dug out my old copies of [Hanon](https://en.wikipedia.org/wiki/The_Virtuoso_Pianist_in_60_Exercises) and Czerny's "School of Velocity".  Kinda boring but a good way to spend 10 minutes warming up.}
+
+  \p{I've continued working through all of Chopin's waltzes—I've played many of them before, but they're somewhat rusty, so I'm systematically going through and polishing them up.  So far I'm up to number 4.}
+}
