@@ -5,7 +5,7 @@
 
 \import{swarm-macros}
 
-\p{Swarm has two basic typing judgments: a [top-level judgment](001M) that assigns capability-annotated [polytypes](001N), and a basic judgment that assigngs [monotypes](000Y) to terms and collects the [capabilities](001D) needed to evaluate them.}
+\p{Swarm has two basic typing judgments: a [top-level judgment](001M) that assigns capability-annotated [polytypes](001N), and a basic judgment that assigns [monotypes](000Y) to terms and collects the [capabilities](001D) needed to evaluate them.}
 
 \transclude{001M}
 \transclude{001O}

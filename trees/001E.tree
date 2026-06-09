@@ -4,4 +4,4 @@
 
 \import{swarm-macros}
 
-\p{Some [entities](001C) \em{provide} one or more [capabilities](001D); such entities are known as \em{devices}.  For example, a \tt{branch predictor} device provides the #{\Exc{\mathsf{if}}} capability, which allows [robots](0014) to evaluate conditional expressions.}
+\p{Some [entities](001C) \em{provide} one or more [capabilities](001D) when they are [equipped](0014); such entities are known as \em{devices}.  For example, a \tt{branch predictor} device provides the #{\Exc{\mathsf{if}}} capability, which allows [robots](0014) to evaluate conditional expressions.}

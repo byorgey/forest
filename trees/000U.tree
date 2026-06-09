@@ -7,14 +7,14 @@
 public on purpose since it forces me to think things through more
 carefully.  [Comments](contact) welcome!}
 
-\transclude{000T}
-\transclude{000X}
-\transclude{0014}
-\transclude{001N}
-\transclude{000V}
-\transclude{001T}
-\transclude{000W}
-\transclude{001U}
+\transclude{000T}    % Motivation
+\transclude{000X}    % Capabilities, entities, devices
+\transclude{0014}    % Robots
+\transclude{001N}    % Polytypes
+\transclude{000V}    % Typing judgments
+\transclude{001T}    % Pure fragment
+\transclude{000W}    % Inventories + requirement contexts
+\transclude{001U}    % Command monad
 \subtree{
   \title{Stuff that needs to be moved/reorganized}
   \transclude{000Y}

@@ -12,6 +12,7 @@
   \li{[Wrong requirements context to `build`](https://github.com/swarm-game/swarm/issues/1916)}
   \li{[Using recursive functions doesn't require proper capabilities](https://github.com/swarm-game/swarm/issues/2627)}
   \li{[Making `dictionary` devices more meaningful](https://github.com/swarm-game/swarm/issues/2151)}
+  \li{[Automatic equipment requirement checks don't work when using functions from a nested import](https://github.com/swarm-game/swarm/issues/2726)}
 }
 }
 
