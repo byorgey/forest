@@ -4,4 +4,4 @@
 
 \import{swarm-macros}
 
-\p{The top-level typing judgment is of the form ##{\swtop{\Gamma}{t}{\sigma}} which simply says that term #{t} has [polytype](001N) #{\sigma} in context #{\Gamma}. Here #{\Gamma} is a type context associating variables with types. The polytype #{\sigma} quantifies over type and capability variables, and contains a set of capbilities needed to evaluate the term #{t}.  In principle we could separate out the set of capability variables and make it part of the top-level judgment as opposed to part of polytypes, but XXX}
+\p{The top-level typing judgment is of the form ##{\swtop{\Gamma}{t}{\sigma}} which simply says that term #{t} has [polytype](001N) #{\sigma} in context #{\Gamma}. Here #{\Gamma} is a type context associating variables with their types. The polytype #{\sigma} quantifies over type and capability variables, and contains a set of capbilities needed to evaluate the term #{t}.}

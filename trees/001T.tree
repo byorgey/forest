@@ -1,10 +1,13 @@
 \date{2025-11-18T00:12:30Z}
 \title{Pure fragment of the Swarm language}
 
-\p{First, we go through the various types and constructs in the pure fragment of the language.  Expressions in the pure fragment can be evaluated and have no side effects, in contrast to the [command monad](001U), which embeds effectful, sequenced imperative programs.}
+\p{First, we go through the various types and constructs in the pure fragment of the language.  Expressions in the pure fragment can be evaluated and have no side effects, in contrast to the [command monad](001U), which embeds effectful, sequenced imperative programs.  Note that evaluating an expression can result in an exception being thrown or nontermination, which one might consider \em{effects}; but both of these result, semantically, in a value of #{\bot}.  Evaluating an expression cannot have \em{side effects} in the sense of computing a value successfully while also causing extra effects.}
 
 \p{For each type or family of types, we explain typing rules for introduced and elimination forms, as well as related built-in constants.}
 
-\transclude{001V}
-\transclude{001W}
+\transclude{00GR}  % undefined
+\transclude{001V}  % Void, Unit
+\transclude{00GS}  % Delay
+\transclude{00GU}  % Functions
+\transclude{001W}  % Bool
 \transclude{001X}

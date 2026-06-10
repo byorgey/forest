@@ -1,14 +1,17 @@
+\import{swarm-macros}
+
 \date{2025-11-20T16:44:03Z}
 \title{Capability set expressions}
 
-\p{
-
-XXX
+\p{Since types can be capability-polymorphic, it's not enough to just
+keep track of literal capability sets; we need to keep track of variables that can stand for unknown capability sets, which can in turn combine with other capability sets.  A capability set expression can be:
 
 \ul{
-  \li{Variables}
-  \li{Literal capability sets}
-  \li{Union}
+  \li{the empty capability set #{\varnothing},}
+  \li{a capability set variable #{\delta},}
+  \li{a singleton literal capability set, such as #{\{\Exc{\sf{if}}\}}, or}
+  \li{the union of two capability set expressions, #{\Delta_1 \cup \Delta_2},}
 }
 
+but quotiented by the assumption that #{\varnothing} is the identity for #{\cup}, and #{\cup} is associative, commutative and idempotent.  For example, #{(\varnothing \cup \delta) \cup (\{\sf{Lambda}\} \cup \delta) = \delta \cup \{\sf{Lambda}\}}.  We also write set literals like #{\{\Exc{\sf{if}}, \sf{Lambda}\}} as an abbreviation for #{\{\Exc{\sf{if}}\} \cup \{\sf{Lambda}\}}.
 }

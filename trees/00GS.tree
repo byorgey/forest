@@ -1,0 +1,27 @@
+\import{swarm-macros}
+
+\title{\sf{Delay}}
+\date{2026-06-10T20:37:24Z}
+
+\p{If #{\tau} is a type, then #{\Delay{\Delta}{\tau}} is a type representing \em{delayed} expressions of type #{\tau}.  The annotation #{\Delta} represents the capabilities needed to force evaluation of the contained expression.}
+
+\p{The delay type comes with two built-in constants, \delay and \force, representing introduction and elimination forms, with typing rules as follows:
+
+\rules{
+  \inferrule
+    {\swty{\Gamma}{t}{\tau}{\Delta}}
+    {\swty{\Gamma}{\app{\sf{delay}}{t}}{\Delay{\Delta}{\tau}}{\varnothing}}
+}
+
+\rules{
+  \inferrule
+    {\swty{\Gamma}{t}{\Delay{\Delta_1}{\tau}}{\Delta_2}}
+    {\swty{\Gamma}{\app{\sf{force}}{t}}{\tau}{\Delta_1 \cup \Delta_2}}
+}
+
+The idea is that if we wrap a term in a delay, then any capabilities needed to evaluate it are put off until such time as its evaluation is forced.
+}
+
+\p{XXX Can \delay and \force be constants, with polytypes?  Or do they really need to be special syntactic forms with typing rules?}
+
+\transclude{00GT}

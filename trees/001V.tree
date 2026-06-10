@@ -4,3 +4,5 @@
 \title{\sf{Void} and \sf{Unit}}
 
 \p{Swarm has a built-in \sf{Void} type with zero inhabitants, and a \sf{Unit} type with one inhabitant (written \sf{()}). Their associated typing rules are standard, and no special capabilities are needed to use them.}
+
+\p{Note that there is no built-in eliminator for \sf{Void}; it is easy to implement one using [undefined](00GR), as in ##{\sf{absurd} : \all{\alpha}{\Void \to \alpha} = \lam{x}{\undef}.}}

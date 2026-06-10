@@ -1,0 +1,6 @@
+\import{swarm-macros}
+
+\title{Undefined}
+\date{2026-06-09T21:54:23Z}
+
+\p{There is a built-in constant \undef, with type \all{\alpha}{\alpha}.  Semantically, it corresponds to #{\bot}; operationally, trying to evaluate \sf{undefined} causes an exception to be thrown.}

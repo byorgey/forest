@@ -5,10 +5,10 @@
 
 \p{The \Bool type is standard, with values \true and \false; no special capabilities are needed to use Boolean values themselves.}
 
-\p{However, the eliminator for \Bool values is a built-in function \sf{if} with type
+\p{The eliminator for \Bool values is a built-in function \sf{if} with type
 
-##{\sf{if} : \swpoly{\alpha; \delta}{\Exc{\sf{if}} \cup \delta}{\Bool \to \Delay{\delta}{\alpha} \to \Delay{\delta}{\alpha} \to \alpha}}
+##{\sf{if} : \swpoly{\alpha}{\{\Exc{\sf{if}}\}}{\Bool \to \Delay{\delta_1}{\alpha} \to \Fun{\Delay{\delta_2}{\alpha}}{\delta_1 \cup \delta_2}{\alpha}}}
 
-This says that XXX explain
+This says that \sf{if} takes a boolean value and two delayed expressions of the same type #{\alpha}, and produces a value of type #{\alpha}.  It also tells us that evaluating the constant \sf{if} itself requires capability \Exc{\sf{if}}, and that evaluating its full application to a boolean and two delayed expressions requires capabilities #{\delta_1 \cup \delta_2}—whatever capabilities are required to evaluate the two branches.  Of course, only one of #{\delta_1} or #{\delta_2} will actually be needed, but since we can't know which until runtime, we must conservatively require their union.}
 
-}
+\p{XXX should it just be #{\delta} everywhere, or #{\delta_1 \cup \delta_2} etc.?  Are we thinking of the capability annotation on the final arrow as being synthesized from the annotations on the two delay expressions, or are we thinking of it as an external constraint being imposed?}

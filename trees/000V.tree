@@ -5,10 +5,10 @@
 
 \import{swarm-macros}
 
-\p{Swarm has two basic typing judgments: a [top-level judgment](001M) that assigns capability-annotated [polytypes](001N), and a basic judgment that assigns [monotypes](000Y) to terms and collects the [capabilities](001D) needed to evaluate them.}
+\p{Swarm has two basic typing judgments: a [top-level judgment](001M) that assigns capability-annotated [polytypes](001N), and a [basic judgment](001O) that assigns [monotypes](000Y) to terms and collects the [capabilities](001D) needed to evaluate them.}
 
-\transclude{001M}
-\transclude{001O}
-\transclude{001Q}
-\transclude{001R}
-\transclude{001P}
+\transclude{001M}    % top-level typing judgment
+\transclude{001O}    % basic judgment
+\transclude{001Q}    % Remark: basic judgment re: *evaluation* vs execution.
+\transclude{001R}    % Remark: capability set part of judgment vs part of type
+\transclude{001P}    % Gen/inst

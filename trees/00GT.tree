@@ -1,0 +1,5 @@
+\date{2026-06-10T20:46:11Z}
+\import{swarm-macros}
+\taxon{Remark}
+
+\p{Note that in surface syntax for Swarm, the [delay type](00GS) and introduction form are both written with curly braces; we choose not to use that syntax in this formal development since it could be easily confused with syntax for capability sets.}

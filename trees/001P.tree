@@ -3,7 +3,7 @@
 
 \import{swarm-macros}
 
-\p{XXX add other variables and describe}
+\p{XXX add capability set variables and describe.  Where can the different kinds of variables occur?  (Hence, where do we need to apply substitutions?)}
 
 \rules{
   \inferrule

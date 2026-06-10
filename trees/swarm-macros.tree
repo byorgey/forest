@@ -19,6 +19,9 @@
 \def\Dir{\sf{Dir}}
 \def\true{\sf{true}}
 \def\false{\sf{false}}
+\def\undef{\sf{undefined}}
+\def\delay{\sf{delay}}
+\def\force{\sf{force}}
 
 \def\Cmd[cap][res]{#{\sf{Cmd}^{\cap}\;\res}}
 \def\Delay[cap][res]{#{\sf{Delay}^{\cap}\;\res}}
