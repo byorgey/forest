@@ -1,0 +1,5 @@
+\title{Algebraic types}
+\date{2026-06-11T21:31:02Z}
+\import{swarm-macros}
+
+\p{Swarm also has sum types #{\tau_1 + \tau_2}, product types #{\tau_1 \times \tau_2}, and record types #{[x_1: \tau_1, \dots, x_k: \tau_k]}, all of which are standard.  Capability sets get threaded through the standard typing rules in fairly predictable ways.}

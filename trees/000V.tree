@@ -11,4 +11,5 @@
 \transclude{001O}    % basic judgment
 \transclude{001Q}    % Remark: basic judgment re: *evaluation* vs execution.
 \transclude{001R}    % Remark: capability set part of judgment vs part of type
+\transclude{00GV}    % Subtyping (capability weakening)
 \transclude{001P}    % Gen/inst

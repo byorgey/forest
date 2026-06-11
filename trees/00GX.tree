@@ -1,0 +1,5 @@
+\title{Equirecursive types}
+\date{2026-06-11T21:33:02Z}
+\import{swarm-macros}
+
+\p{The type #{\mu X.\; \tau[X]} represents the recursive type which is the least solution to #{\mu X.\; \tau[X] = \tau[\mu X.\; \tau[X]]}.  }

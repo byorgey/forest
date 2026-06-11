@@ -1,4 +1,6 @@
 \import{swarm-macros}
 
 \date{2025-11-18T17:48:11Z}
-\title{\sf{Int}}
+\title{Other base types: \Int, \Text, \Dir, \Key}
+
+\p{Swarm has various other base types such as \Int, \Text, \Dir, and \Key.  All of these have various types of literals as well as built-in functions for manipulating them.  As just one example, the addition operator is a built-in constant with the type ##{\{\Exc{+}\} \Rightarrow \Int \to \Int \to \Int.}  The details of all the other introduction forms and operators, though important, are largely straightforward and not central to the story here.}

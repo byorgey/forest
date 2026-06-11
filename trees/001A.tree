@@ -18,12 +18,12 @@ Notice how the requirements for evaluating the body show up over the arrow in th
 
 \rules{
   \inferrule
-    {\swty{\Gamma}{f}{\Fun{\tau_1}{\Delta_1}{\tau_2}}{\Delta_2} \\
-     \swty{\Gamma}{e}{\tau_1}{\Delta_3}
+    {\swty{\Gamma}{f}{\Fun{\tau_1}{\Delta_3}{\tau_2}}{\Delta_1} \\
+     \swty{\Gamma}{e}{\tau_1}{\Delta_2}
     }
-    {\swty{\Gamma}{\app{f}{e}}{\tau_2}{\Delta_1 \cup \Delta_2 \cup \Delta_3 \cup \sf{Apply}}}
+    {\swty{\Gamma}{\app{f}{e}}{\tau_2}{\Delta_1 \cup \Delta_2 \cup \Delta_3 }}
 }
 
-The capabilities needed to evaluate the application #{\app{f}{e}} are the union of all the capabilities needed to evaluate #{f}, to evaluate #{e}, and to evaluate the body of the function represented by #{f}, along with the special \sf{Apply} capability.
+The capabilities needed to evaluate the application #{\app{f}{e}} are the union of all the capabilities needed to evaluate #{f}, to evaluate #{e}, and to evaluate the body of the function represented by #{f}.
 
 }

@@ -17,6 +17,7 @@
 \def\Text{\sf{Text}}
 \def\Bool{\sf{Bool}}
 \def\Dir{\sf{Dir}}
+\def\Key{\sf{Key}}
 \def\true{\sf{true}}
 \def\false{\sf{false}}
 \def\undef{\sf{undefined}}

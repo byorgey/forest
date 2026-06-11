@@ -1,0 +1,15 @@
+\title{Subtyping}
+\date{2026-06-11T21:14:46Z}
+\import{swarm-macros}
+
+\p{We have a mild form of subtyping, in that we can always weaken a judgment by adding more capabilities:
+
+\rules{
+  \inferrule
+    {\swty{\Gamma}{t}{\tau}{\Delta} \\ \Delta \subseteq \Delta'}
+    {\swty{\Gamma}{t}{\tau}{\Delta'}}
+}
+
+So the judgment \swty{\Gamma}{t}{\tau}{\Delta} does not claim that the capabilities #{\Delta} are \em{necessary} (though in practice, of course, we often want to try to compute a minimal #{\Delta} that will work).  It merely claims that #{\Delta} are \em{sufficient}: any robot with all the capabilities in #{\Delta} is guaranteed to be able to evaluate #{t}.
+
+}

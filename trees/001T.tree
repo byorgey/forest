@@ -10,4 +10,6 @@
 \transclude{00GS}  % Delay
 \transclude{00GU}  % Functions
 \transclude{001W}  % Bool
-\transclude{001X}
+\transclude{001X}  % Other base types
+\transclude{00GW}  % Algebraic types
+\transclude{00GX}

@@ -8,10 +8,5 @@
 \p{Swarm monotypes #{\tau} consist of:}
 
 \ul{
-  \li{Base types such as \Void, \Unit, \Int, \Text, \Bool.  See the [Swarm source code for a complete list](https://github.com/swarm-game/swarm/blob/47bf44251471814a2510c0dceeaf7dfe347bdd1d/src/swarm-lang/Swarm/Language/Types.hs#L182-L205), but the precise list does not matter much for this discussion.}
-  \li{Sum types #{\tau_1 + \tau_2}, product types #{\tau_1 \times \tau_2}, and record types #{[x_1: \tau_1, \dots, x_k: \tau_k]}, all of which are standard.}
   \li{Command types.  The type \Cmd{\Phi}{\tau} represents commands which can be executed in [requirement context](000X) #{\Phi} and result in a value of type #{\tau}.}
-  \li{Delay types. The type \Delay{\Delta}{\tau} represents delayed expressions which, when forced, can be evaluated using the set of capabilities #{\Delta}, resulting in a value of type #{\tau}.}
-  \li{Function types. The type \Fun{\tau_1}{\Delta}{\tau_2} represents functions which, when applied to an argument of type #{\tau_1}, produce a result of type #{\tau_2} using capabilities #{\Delta}.  We use \Fun{\tau_1}{}{\tau_2} as an abbreviation for \Fun{\tau_1}{\varnothing}{\tau_2}, a function which requires no capabilities to apply.}
-  \li{Equirecursive types.  The type #{\mu X.\; \tau[X]} represents the type which is the least solution to #{\mu X.\; \tau[X] = \tau[\mu X.\; \tau[X]]}.}
 }
