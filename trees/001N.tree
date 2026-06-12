@@ -11,3 +11,5 @@ where #{\overline{\alpha}} is a sequence of type variables, #{\overline{\delta}}
 }
 
 \p{Note that in the case that there are no capability set variables #{\delta}, we often omit them from the syntax, writing simply \swpoly{\overline{\alpha}}{\Delta}{\tau} as an abbreviation for \swpoly{\overline{\alpha}; \varnothing}{\Delta}{\tau}.  Moreover, we also omit writing #{\Delta \Rightarrow} in the case when #{\Delta} is #{\varnothing}, and omit writing #{\forall} when there are no variables being quantified over.}
+
+\p{XXX need variables for capsets, devsets, inventory?}
