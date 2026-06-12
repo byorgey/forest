@@ -1,0 +1,30 @@
+\import{discrete-macros}
+
+\title{Weeknotes for 12 June 2026 (week 23)}
+\author{brentyorgey}
+\date{2026-06-12}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Agda FTA blog post XXX}
+
+  \p{Worked more on this blog post/tutorial.  I'm very close to completing a first pass through the entire proof, cleaning up, reorganizing, writing prose to explain XXX.  Next week I'll make a second pass through editing and polishing; then I'll go through and create a version with holes XXX.  Hopefully publish in the next week or two.}
+}
+
+\subtree{
+  \title{Swarm type + requirements system}
+
+  \p{XXX Interesting thing about [Swarm](XXX) is the core mechanic where you have to obtain + craft devices that allow you to unlock programming language features.  So when a robot runs some code, we have to be sure it is able to run it.  Could use dynamic checks, but this is very annoying and error prone.  In particular, when you build a robot to run a program, don't want to have to manually install all the devices needed!  So there is a em{requirements analysis} which figures out what capabilities a program requires and which devices could provide those capabilities; when building a robot, those devices are automatically installed (or else the build fails if you do not possess the necessary devices).  However, this requirements analysis is an ad-hoc step bolted on after typechecking. At the time I wrote it, I didn't really understand what I was dealing with.}
+
+  \p{Over the years, however, this ad-hoc bolted-on requirements analysis has led to all sorts of bugs.  I've come to realize that requirements for a program should really be \em{part of its type}, with requirements analysis integrated into the type system.  Similar to existing work on type-and-effect style systems with capabilities instead of effects.  Twist is distinction between XXX inventory/equipped.}
+
+  \p{XXX I've spent some time this week working on [writeup](000U).  Interesting part: to do inference, we end up needing to solve equations over free commutative monoids (both idempotent and non-idempotent).  (XXX not quite: $N_\infty[X]$ instead of $N[X]$) Pretty sure this is undecidable (?), but I think it's possible to come up with something sound.}
+}
+
+\subtree{
+  \title{Piano corner}
+
+  \p{I have [Chopin's waltzes](https://en.wikipedia.org/wiki/Waltzes_(Chopin)) polished up through number 7.  Number 4 in F major is one I've never played before, but it's a lot of fun; most of my time this week has been spent learning it.  Number 8 is another one I've never played, so next week I will be learning that one.}
+}
