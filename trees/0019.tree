@@ -1,5 +1,5 @@
 \date{2025-11-09T21:56:57Z}
-\title{Typing rule for bind}
+\title{Bind}
 
 \import{swarm-macros}
 
@@ -36,7 +36,6 @@ def example = f 3; g north end
 When are \code{f 3} and \code{g north} evaluated?  Under the first rule above, they must be evaluated eagerly, when the definition of \code{example} is evaluated.  Under the second rule above, they would be re-evaluated every time \code{example} is executed.}
 
 \p{However, we can also bind the result of #{c_1} in #{c_2}, in which case we can no longer evaluate #{c_2} eagerly (unless we wanted to implement partial evaluation of open terms).  The rule for \sequence{x \bind c_1}{c_2} is therefore:
-}
 
 \rules{
   \inferrule
@@ -44,4 +43,8 @@ When are \code{f 3} and \code{g north} evaluated?  Under the first rule above, t
      \swty{\Gamma, x : \tau_1}{c_2}{\Cmd{\Phi_2}{\tau_2}}{\Delta_2}
     }
     {\swty{\Gamma}{\sequence{x \bind c_1}{c_2}}{\Cmd{\Phi_1 \cup \Phi_2 \cup \Delta_2}{\tau_2}}{\Delta_1}}
+}
+
+It seems perhaps a bit inconsistent that in #{\sequence{c_1}{c_2}}, both subcommands will be evaluated eagerly, whereas in #{\sequence{x \bind c_1}{c_2}} only #{c_1} will be evaluated.  Therefore, for the sake of consistency, we might prefer to simply leave all commands in a sequence unevaluated until execution time, even though it results in redundant re-evaluation of expressions.  These notes themselves do not take a position on this issue, but simply point out how the choice of evaluation strategy and typing rules is intertwined.
+
 }

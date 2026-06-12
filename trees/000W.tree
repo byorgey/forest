@@ -7,6 +7,8 @@
 
 \p{In order to be able to properly express typing rules for the [command monad](001U), we first need to develop some additional machinery.}
 
+\p{XXX note inventories are kind of like the free commutative monoid over entities, but with possibility of infinite cardinality.  Like a free "star-commutative monoid".  Star commutative monoid = commutative monoid with an additional operation #{a^*} satisfying the axiom #{a^* = aa^*}?}
+
 \transclude{0013}
 \transclude{0012}
 \transclude{000Z}

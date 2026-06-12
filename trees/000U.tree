@@ -10,14 +10,9 @@ carefully.  [Comments](contact) welcome!}
 \transclude{000T}    % Motivation
 \transclude{000X}    % Capabilities, entities, devices
 \transclude{0014}    % Robots
+\transclude{001Y}    % Set + bag expressions
 \transclude{001N}    % Polytypes
 \transclude{000V}    % Typing judgments
 \transclude{001T}    % Pure fragment
 \transclude{000W}    % Inventories + requirement contexts
 \transclude{001U}    % Command monad
-\subtree{
-  \title{Stuff that needs to be moved/reorganized}
-  \transclude{000Y}
-  \transclude{0017}
-  \transclude{0015}
-}

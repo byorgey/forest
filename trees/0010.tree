@@ -5,3 +5,5 @@
 \import{swarm-macros}
 
 \p{A [robot](0014) with equipped device set #{Q} and [inventory](0012) #{V} \em{satisfies} the [requirement context](000Z) #{\Phi = (\Delta,D,I)} if #{\Delta \subseteq \caps(Q)}, #{D \subseteq Q}, and #{I \subseteq V}. In other words, a robot satisfies a requirement context if its equipped devices provide at least the required capabilities, it has all the required devices equipped, and its inventory contains at least the required entity counts.}
+
+\p{XXX need to take expressions into account.}

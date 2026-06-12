@@ -22,6 +22,4 @@
 The idea is that if we wrap a term in a delay, then any capabilities needed to evaluate it are put off until such time as its evaluation is forced.
 }
 
-\p{XXX Can \delay and \force be constants, with polytypes?  Or do they really need to be special syntactic forms with typing rules?}
-
 \transclude{00GT}

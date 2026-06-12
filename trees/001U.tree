@@ -1,2 +1,12 @@
 \date{2025-11-18T00:14:30Z}
 \title{Swarm command monad}
+\import{swarm-macros}
+
+\p{If #{\tau} is a type, \Cmd{\Phi}{\tau} is the type of commands which can be executed in [requirement context](000X) #{\Phi}, might have some effects, and will ultimately result in a value of type #{\tau}.}
+
+\transclude{0018}  % Built-ins
+\transclude{0019}  % Bind
+\transclude{00GZ}  % Require
+\transclude{00H0}  % Stock
+\transclude{00H1}  % Build
+\transclude{00H2}  % Equip/unequip

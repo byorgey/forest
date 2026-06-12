@@ -1,0 +1,34 @@
+\title{Build}
+\date{2026-06-12T21:29:50Z}
+\import{swarm-macros}
+
+\p{When a robot (the "parent") wishes to build another robot, it can execute \build{p} in order to create a robot (the "child") running program #{p}. There are several things to take into consideration here:
+\ul{
+  \li{Of course, the parent robot must have the capability to execute \sf{build}.}
+  \li{The child robot should be the one to evaluate and execute #{p}.}
+  \li{The child robot must have the capabilities needed to evaluate and execute #{p}. Hence, it must have a set of equipped devices which provide the necessary capabilities, and hence the parent robot must take these devices from its inventory and equip them on the child robot at build time.}
+  \li{The program to be run by the child robot may also explicitly require certain devices to be installed, and certain inventory to be present.  The parent robot must also provide these things to the child robot from its inventory at build time.}
+}
+}
+
+\p{These considerations lead us to the following typing rule for \sf{build}:
+\rules{
+\inferrule
+{\swty{\Gamma}{p}{\Delay{\Delta_2}{(\Cmd{(\Delta_3, D, I)}{\tau})}}{\Delta_1}}
+{\swty{\Gamma}{\build{p}}{\Cmd{(\{\Exc{\sf{build}}\},\varnothing,\toinv{\devs(\Delta_2 \cup \Delta_3, D)} \cup I)}{\Actor}}{\Delta_1}}
+}
+Let's walk through the pieces of this rule one by one.
+\ul{
+  \li{First, the premise states that #{p} must be a delayed command.  The reason for requiring the command to be wrapped in a delay is to make clear that any evaluation of the command is to be carried out by the child robot.}
+  \li{The conclusion states that \build{p} is a command, producing a value of type \Actor (a reference to the child robot).  The only capabilities needed by the parent robot to \em{evaluate} \build{p} are #{\Delta_1}, the capabilities needed to evaluate #{p}.}
+  \li{The only capability needed to \em{execute} \build{p} is \Exc{\sf{build}}.}
+  \li{Executing the \sf{build} command does not require any specific devices to be equipped; any device which provides the \Exc{\sf{build}} capability will do.}
+  \li{Executing the \sf{build} command does require inventory.  In particular:
+  \ul{
+    \li{The child robot will require capabilities #{\Delta_2} (to evaluate the delayed command) and #{\Delta_3} (to execute the command); and it specifically must have devices #{D} equipped.  Thus we use the [provisioning oracle](001G) #{\devs(\Delta_2 \cup \Delta_3, D)} to compute a set of devices to install.}
+    \li{We convert this to an inventory, and union it with the inventory #{I} specifically required to execute #{p}.}
+    \li{The result is the inventory required of the parent robot to execute \build{p}, since it will need to be transferred to the child robot.}
+  }
+  }
+}
+}

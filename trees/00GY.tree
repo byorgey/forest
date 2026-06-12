@@ -1,0 +1,22 @@
+\title{Collection expressions}
+
+\date{2026-06-12T16:34:15Z}
+\import{swarm-macros}
+\p{A \em{collection expression} is one of:
+
+\ul{
+  \li{the empty collection #{\varnothing},}
+  \li{a collection variable #{\delta} (in general, different metavariables are used for different types of collections),}
+  \li{a singleton collection, denoted #{\{e\}}, or}
+  \li{the union of two collection expressions, #{\Delta_1 \cup \Delta_2},}
+}
+
+quotiented by the assumption that #{(\cup, \varnothing)} are a monoid;
+\em{i.e.} #{\cup} is associative, and #{\varnothing} is an identity
+for #{\cup}.  Put another way, collection expressions are a free
+commutative monoid over XXX
+
+XXX \em{free extension}!
+
+}
+

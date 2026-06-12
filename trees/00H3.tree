@@ -1,0 +1,6 @@
+\title{Converting sets to inventories}
+\date{2026-06-12T22:28:37Z}
+\import{swarm-macros}
+\taxon{Notation}
+
+\p{If #{E \subseteq \entset} is a set of entities, then we write #{\toinv{E}} to denote the inventory with exactly one copy of every element of #{E}.}
