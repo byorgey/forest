@@ -2,4 +2,4 @@
 \date{2026-06-11T21:33:02Z}
 \import{swarm-macros}
 
-\p{The type #{\mu X.\; \tau[X]} represents the recursive type which is the least solution to #{\mu X.\; \tau[X] = \tau[\mu X.\; \tau[X]]}.  }
+\p{The type #{\recty{X}{\tau[X]}} represents the recursive type which is the least solution to #{\recty{X}{\tau[X]} = \tau[\recty{X}{\tau[X]}]}.  Since recursive types in Swarm are \em{equirecursive}, there are no special introduction or elimination forms; a recursive type is simply equal to its unfolding.  For example, the type of polymorphic lists is given by #{\recty{L}{\Unit + \alpha \times L}}; in order to use a list, one can simply use \case to pattern-match on the sum type.}
