@@ -16,7 +16,7 @@ quotiented by the assumption that #{(\cup, \varnothing)} are a monoid;
 for #{\cup}.  Put another way, collection expressions are a free
 commutative monoid over XXX
 
-XXX \em{free extension}!
+XXX \em{free extension}!  Do we really need all this?
 
 XXX what to do about provisioning oracle etc.?  Come up with some examples of how it ought to work?
 

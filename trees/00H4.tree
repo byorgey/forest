@@ -1,0 +1,6 @@
+\date{2026-06-13T23:40:59Z}
+    \title{Blog post on proof of Fundamental Theorem of Arithmetic in Agda}
+
+    \p{A couple months ago I reported that I had, just for fun, completed a completely-from-scratch proof of the Fundamental Theorem of Arithmetic in Agda, and I've decided to turn it into a blog post/tutorial.  It's not an Agda tutorial—I'm assuming the reader already knows the basics of Agda and the Curry-Howard correspondence—but I'm not assuming much beyond that.  There's lots of introductory material out there, but I feel like it might be helpful to have a fully explained medium-size proof, for people who have learned the basics and played around with proof assistants, but would find it helpful to see a more fully worked example.  Along with the blog post I plan to publish a version with holes, so someone wanting to learn could try to fill in the holes while reading along with the explanations.}
+
+    \p{I spent a bunch of time (about 5 hours) working on the writeup.  A lot of fun stuff in there, including well-founded induction. I would say it's about... 2/3 finished.  At 11K words so far, it is not going to be short!}

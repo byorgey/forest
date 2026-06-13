@@ -9,6 +9,8 @@
 \def\caps{\sf{caps}}
 \def\devs{\sf{provision}}
 
+\def\toinv[E]{#{\lceil\E\rceil}}
+
 \def\Ninf{#{\bb{N}_\infty}}
 
 \def\Void{\sf{Void}}
@@ -18,6 +20,7 @@
 \def\Bool{\sf{Bool}}
 \def\Dir{\sf{Dir}}
 \def\Key{\sf{Key}}
+\def\Actor{\sf{Actor}}
 \def\true{\sf{true}}
 \def\false{\sf{false}}
 \def\undef{\sf{undefined}}
@@ -25,6 +28,7 @@
 \def\force{\sf{force}}
 \def\case{\sf{case}}
 \def\match{\sf{match}}
+\def\build[p]{#{\sf{build}\;p}}
 
 \def\Cmd[cap][res]{#{\sf{Cmd}^{\cap}\;\res}}
 \def\Delay[cap][res]{#{\sf{Delay}^{\cap}\;\res}}

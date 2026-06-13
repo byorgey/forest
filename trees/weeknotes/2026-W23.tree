@@ -8,19 +8,30 @@
 \put\transclude/numbered{false}
 
 \subtree{
-  \title{Agda FTA blog post XXX}
+  \title{Family}
 
-  \p{Worked more on this blog post/tutorial.  I'm very close to completing a first pass through the entire proof, cleaning up, reorganizing, writing prose to explain XXX.  Next week I'll make a second pass through editing and polishing; then I'll go through and create a version with holes XXX.  Hopefully publish in the next week or two.}
+  \p{We enjoyed time with visiting family this week. On Thursday, I hiked up [Pinnacle Mountain](https://en.wikipedia.org/wiki/Pinnacle_Mountain_(Arkansas)) with my sister-in law and 6 of our kids (2 of mine and 4 of hers).  It's a strenuous hike (about 220 meters elevation gain over a 1.8km trail) with a lot of fun scrambling over rocks that pays off with a lovely view at the top.}
+
+  \imgasset{me_with_kids.jpg}
+  \imgasset{climbing.jpg}
+  \imgasset{Nathanael_Merry.jpg}
+  \imgasset{Ruth_view.jpg}
+}
+
+\subtree{
+  \title{Blog post on FTA proof in Agda}
+
+  \p{I worked a bunch more on this [blog post/tutorial I mentioned last week](00H4).  I'm very close to completing a first pass through the entire proof: cleaning up, reorganizing, and writing prose to explain everything.  Next week I'll make a second pass through editing and polishing; then I'll go through and create a version with holes for people to download and play along.  The plan is to have it published in the next week or two.}
 }
 
 \subtree{
   \title{Swarm type + requirements system}
 
-  \p{XXX Interesting thing about [Swarm](XXX) is the core mechanic where you have to obtain + craft devices that allow you to unlock programming language features.  So when a robot runs some code, we have to be sure it is able to run it.  Could use dynamic checks, but this is very annoying and error prone.  In particular, when you build a robot to run a program, don't want to have to manually install all the devices needed!  So there is a em{requirements analysis} which figures out what capabilities a program requires and which devices could provide those capabilities; when building a robot, those devices are automatically installed (or else the build fails if you do not possess the necessary devices).  However, this requirements analysis is an ad-hoc step bolted on after typechecking. At the time I wrote it, I didn't really understand what I was dealing with.}
+  \p{One of the most interesting things about [[000O]] is the core mechanic where you must obtain and craft devices that allow you to unlock programming language features.  So we have to be sure robots are able to run their code.  We can (and do) use dynamic runtime checks, but it would be very annoying and tedious if this were the only safeguard.  When you build a robot to run a program, you don't want to manually install all the required devices (there could be dozens, if you are using many language features); you also don't want robots to get halfway through running their programs only to crash because they are missing some required device.  So there is a \em{requirements analysis} which figures out what capabilities a program requires, and which devices could provide them; when building a robot, those devices are automatically installed (or, if you do not possess the necessary devices, the build fails).  However, this requirements analysis is an ad-hoc step bolted on after typechecking. At the time I wrote it, I didn't really understand what I was doing.}
 
-  \p{Over the years, however, this ad-hoc bolted-on requirements analysis has led to all sorts of bugs.  I've come to realize that requirements for a program should really be \em{part of its type}, with requirements analysis integrated into the type system.  Similar to existing work on type-and-effect style systems with capabilities instead of effects.  Twist is distinction between XXX inventory/equipped.}
+  \p{Over the years, however, this ad-hoc bolted-on requirements analysis has led to [all sorts of bugs](https://github.com/swarm-game/swarm/issues/231).  I've come to realize that the requirements for a program should really be \em{part of its type}, with requirements analysis integrated into the type system, similar to other existing work on type-and-effect style systems.  The twist is the distinction between required \em{capabilities} and required \em{inventory}; the \sf{build} command turns the former into the latter, since in order to execute \sf{build} you must have the correct devices in your inventory in order to equip them on the newly constructed robot.}
 
-  \p{XXX I've spent some time this week working on [writeup](000U).  Interesting part: to do inference, we end up needing to solve equations over free commutative monoids (both idempotent and non-idempotent).  (XXX not quite: $N_\infty[X]$ instead of $N[X]$) Pretty sure this is undecidable (?), but I think it's possible to come up with something sound.}
+  \p{I've spent some time this week working on a formal [writeup](000U) of a system that I think will fit the bill. The interesting part is that we really need requirements polymorphism, which means that instead of just keeping track of sets of requirements, we need to keep track of [expressions involving requirement variables](https://mathstodon.xyz/@byorgey/116738220877346860), and then solve equations over these expressions after generating them during type inference.  I am hopeful that this will work out nicely, but there are always unforeseen wrinkles.}
 }
 
 \subtree{
