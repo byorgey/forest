@@ -5,3 +5,4 @@
 
 \p{We define the union of [requirement contexts](000Z) componentwise, that is, ##{\Phi_1 \cup \Phi_2 = (\Delta_1, D_1, I_1) \cup (\Delta_2, D_2, I_2) = (\Delta_1 \cup \Delta_2, D_1 \cup D_2, I_1 \cup I_2),} where the first two unions are set union, and the last is [inventory (multiset) union](001H).}
 
+\p{Also, as a notational convenience, when #{\Delta_1} is a capability set and #{\Phi_2 = (\Delta_2, D_2, I_2)} is a requirement context, we write #{\Delta_1 \cup \Phi_2} as a shorthand for #{(\Delta_1 \cup \Delta_2, D_2, I_2)}.}

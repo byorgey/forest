@@ -29,12 +29,15 @@
 \def\case{\sf{case}}
 \def\match{\sf{match}}
 \def\build[p]{#{\sf{build}\;p}}
+\def\require[d]{#{\sf{require}\;d}}
+\def\stock[n][e]{#{\sf{stock}\;n\;e}}
 
 \def\Cmd[cap][res]{#{\sf{Cmd}^{\cap}\;\res}}
 \def\Delay[cap][res]{#{\sf{Delay}^{\cap}\;\res}}
 \def\Fun[src][cap][tgt]{#{\src \xrightarrow{\cap} \tgt}}
 \def\Exc[c]{#{\sf{Exc}(\c)}}
 \def\sequence[c1][c2]{#{\c1;\; \c2}}
+\def\esequence[c1][c2]{#{\c1;;\; \c2}}
 
 \def\recty[X][body]{#{\mu \X.\; \body}}
 
@@ -52,7 +55,7 @@
 \def\rules[~body]{
   \scope{
     \figure{
-      \tex{\usepackage{mathpartir}\usepackage{amssymb}\usepackage{mathtools}}{$\body{}$}
+      \tex{\usepackage{mathpartir}\usepackage{amssymb}\usepackage{mathtools}\usepackage{stmaryrd}}{$\body{}$}
     }
   }
 }

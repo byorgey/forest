@@ -1,3 +1,22 @@
 \title{Equip/unequip}
 \date{2026-06-12T21:29:58Z}
 \import{swarm-macros}
+
+\p{
+As [discussed previously](0014), the \sf{equip} and \sf{unequip} commands allow robots to move devices between their inventory and equipped set.  Unlike [\sf{stock}](00H0) and [\sf{require}](00GZ), to allow for necessary flexibility, these commands take an arbitrary expression that evaluates to the name of a device.  So, conservatively, we must use generic typing rules that do not interact with the requirements system at all.
+
+\rules{
+  \inferrule
+  {\swty{\Gamma}{d}{\Text}{\Delta}}
+  {\swty{\Gamma}{\sf{equip}\;d}{\Cmd{\Exc{\sf{equip}}}{\Unit}}{\Delta}}
+}
+
+\rules{
+  \inferrule
+  {\swty{\Gamma}{d}{\Text}{\Delta}}
+  {\swty{\Gamma}{\sf{unequip}\;d}{\Cmd{\Exc{\sf{unequip}}}{\Unit}}{\Delta}}
+}
+
+However, when #{d} is a literal device name, we can do a bit better, with special rules for an \sf{equip} or \sf{unequip} followed by another command: XXX
+
+}

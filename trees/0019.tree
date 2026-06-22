@@ -10,20 +10,20 @@
     {\swty{\Gamma}{c_1}{\Cmd{\Phi_1}{\tau_1}}{\Delta_1} \\
      \swty{\Gamma}{c_2}{\Cmd{\Phi_2}{\tau_2}}{\Delta_2}
     }
-    {\swty{\Gamma}{\sequence{c_1}{c_2}}{\Cmd{\Phi_1 \cup \Phi_2}{\tau_2}}{\Delta_1 \cup \Delta_2}}
+    {\swty{\Gamma}{\sequence{c_1}{c_2}}{\Cmd{\Delta_1 \cup \Delta_2 \cup \Phi_1 \cup \Phi_2}{\tau_2}}{\varnothing}}
 }
 
-This says that if #{c_1} is a command requring capabilities #{\Delta_1} to evaluate and #{\Phi_1} to execute, and which produces a value of type #{\tau_1}, and #{c_2} is a command requiring capabilities #{\Delta_2} to evaluate and #{\Phi_2} to execute, producing a value of type #{\tau_2}, then \sequence{c_1}{c_2} is a command requring capabilities #{\Delta_1 \cup \Delta_2} to evaluate, #{\Phi_1 \cup \Phi_2} to execute, and producing a #{\tau_2}.
+This says that if #{c_1} is a command requring capabilities #{\Delta_1} to evaluate and #{\Phi_1} to execute, and which produces a value of type #{\tau_1}, and #{c_2} is a command requiring capabilities #{\Delta_2} to evaluate and #{\Phi_2} to execute, producing a value of type #{\tau_2}, then \sequence{c_1}{c_2} is a command requring no capabilities to evaluate, #{\Delta_1 \cup \Delta_2 \cup \Phi_1 \cup \Phi_2} to execute, and producing a #{\tau_2}.
 }
 
-\p{Note that this rule corresponds to a particular evaluation strategy, namely, evaluating #{c_1} and #{c_2} eagerly at the time \sequence{c_1}{c_2} is evaluated. If we instead wanted to wait to evaluate #{c_1} and #{c_2} at execution time, then we would need a rule like
+\p{Note that this rule corresponds to a particular evaluation strategy, namely, evaluating #{c_1} and #{c_2} lazily, at the time \sequence{c_1}{c_2} is executed. If we instead wanted to evaluate #{c_1} and #{c_2} eagerly, we would need a different rule:
 
 \rules{
   \inferrule
     {\swty{\Gamma}{c_1}{\Cmd{\Phi_1}{\tau_1}}{\Delta_1} \\
      \swty{\Gamma}{c_2}{\Cmd{\Phi_2}{\tau_2}}{\Delta_2}
     }
-    {\swty{\Gamma}{\sequence{c_1}{c_2}}{\Cmd{\Delta_1 \cup \Delta_2 \cup \Phi_1 \cup \Phi_2}{\tau_2}}{\varnothing}}
+    {\swty{\Gamma}{\sequence{c_1}{c_2}}{\Cmd{\Phi_1 \cup \Phi_2}{\tau_2}}{\Delta_1 \cup \Delta_2}}
 }
 
 To see the difference, consider this example code:
@@ -33,9 +33,18 @@ def g : Dir -> Cmd Unit = ... end
 
 def example = f 3; g north end
 <<<
-When are \code{f 3} and \code{g north} evaluated?  Under the first rule above, they must be evaluated eagerly, when the definition of \code{example} is evaluated.  Under the second rule above, they would be re-evaluated every time \code{example} is executed.}
+When are \code{f 3} and \code{g north} evaluated?  Under the first rule above, they would be re-evaluated every time \code{example} is executed.  Under the second rule, they must be evaluated eagerly, when the definition of \code{example} is evaluated.}
 
-\p{However, we can also bind the result of #{c_1} in #{c_2}, in which case we can no longer evaluate #{c_2} eagerly (unless we wanted to implement partial evaluation of open terms).  The rule for \sequence{x \bind c_1}{c_2} is therefore:
+\p{As another example, consider the standard definition
+\pre\verb<<<|
+def doN : Int -> Cmd a -> Cmd Unit = \n. \c.
+  if (n == 0) {} {c ; doN (n-1) c}
+end
+<<<
+Under a lazy evaluation semantics for sequencing, a call to \code{doN 10 move} expands lazily, expanding one step each time the next \code{move} is executed.  Under an eager semantics, a call to \code{doN 10 move} expands immediately into a fully unrolled sequence of 10 \code{move} instructions.  There are certainly scenarios where we would want this eager unrolling (for efficiency, or in order to pass a fully unrolled program to a child robot that therefore does not need any complex devices to run it), but lazy evaluation is probably the better default, perhaps with a special "eager sequence" operation provided as well.  Consider the example of a \code{forever} function that calls the same command in an infinite loop: under eager evaluation, this would simply go into an infinite loop generating an infinite program without ever executing anything!
+}
+
+\p{However, we can also bind the result of #{c_1} in #{c_2}, in which case we do not even have the option to evaluate #{c_2} eagerly (unless we wanted to implement partial evaluation of open terms).  The rule for \sequence{x \bind c_1}{c_2} is therefore:
 
 \rules{
   \inferrule
@@ -44,7 +53,5 @@ When are \code{f 3} and \code{g north} evaluated?  Under the first rule above, t
     }
     {\swty{\Gamma}{\sequence{x \bind c_1}{c_2}}{\Cmd{\Phi_1 \cup \Phi_2 \cup \Delta_2}{\tau_2}}{\Delta_1}}
 }
-
-It seems perhaps a bit inconsistent that in #{\sequence{c_1}{c_2}}, both subcommands will be evaluated eagerly, whereas in #{\sequence{x \bind c_1}{c_2}} only #{c_1} will be evaluated.  Therefore, for the sake of consistency, we might prefer to simply leave all commands in a sequence unevaluated until execution time, even though it results in redundant re-evaluation of expressions.  These notes themselves do not take a position on this issue, but simply point out how the choice of evaluation strategy and typing rules is intertwined.
 
 }

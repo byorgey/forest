@@ -1,3 +1,12 @@
 \title{Stock}
 \date{2026-06-12T21:29:43Z}
 \import{swarm-macros}
+
+\p{Similarly, there is a special \sf{stock} directive which requires a certain number of a specific entity to be in the inventory, with a similarly straightforward typing rule:
+
+\rules{
+    \swty{\Gamma}{\stock{n}{e}}{\Cmd{(\varnothing,\varnothing,#{\lbag e \mapsto n \rbag})}{\Unit}}{\varnothing}
+}
+
+Similar to \sf{require}, #{n} and #{e} must be a natural number literal and an entity name literal, respectively.
+}

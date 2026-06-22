@@ -10,5 +10,5 @@
   \li{a set of equipped [devices](000X).}
 }
 
-In order to confer capabilities, a device must be \em{equipped}, that is, moved from the robot's general inventory to the special set of equipped devices. Entities can be moved between the inventory and equipped set via the \tt{equip} and \tt{unequip} commands.
+In order to confer capabilities, a device must be \em{equipped}, that is, moved from the robot's general inventory to the special set of equipped devices. Entities can be moved between the inventory and equipped set via the [\sf{equip} and \sf{unequip} commands](00H2).
 }

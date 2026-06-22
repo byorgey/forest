@@ -1,3 +1,12 @@
 \title{Require}
 \date{2026-06-12T21:29:30Z}
 \import{swarm-macros}
+
+\p{There is a special \sf{require} directive which requires a specific device to be equipped.  Given the framework for requirements tracking, the typing rule is straightforward:
+
+\rules{
+    \swty{\Gamma}{\require{d}}{\Cmd{(\varnothing,\{d\},\varnothing)}{\Unit}}{\varnothing}
+}
+
+Note that #{d} must be a \em{literal} device name; otherwise we cannot \em{statically} infer the type of \require{d}.
+}
