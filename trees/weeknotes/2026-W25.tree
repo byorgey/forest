@@ -1,0 +1,34 @@
+\import{swarm-macros}
+
+\title{Weeknotes for 26 June 2026 (week 25)}
+\author{brentyorgey}
+\date{2026-06-27}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Blog post on FTA proof in Agda}
+
+  \p{I finally made a last big push and finished up my [blog post/tutorial on an Agda proof of the Fundamental Theorem of Arithmetic](https://byorgey.github.io/blog/posts/2026/06/26/FTA.lagda.html) (see [here](00H4) for a previous discussion), which ended up being about 13K words (including both prose and code).  Somehow this always happens to me—I set out to write a "short note" about something and then end up with a book, or a 19-part blog post series, or whatever.  I don't think it's a bad thing.  I just ought to know by now what's going to happen at the outset.}
+}
+
+\subtree{
+  \title{Forester hacking}
+
+  \p{I've gotten a bit stuck on my tool for [[00H5]]. The surrounding infrastructure is not hard, but the core mechanic of extracting code to a temporary Haskell file and then calling out to another GHC process to interpret the code, via the [\code{hint} package](https://hackage.haskell.org/package/hint), is very fiddly; I haven't yet been able to get versions/package databases/planets/mystic sigils etc. to line up properly.}
+
+  \p{I've also been idly wondering about embedding music notation within forests via [lilypond](https://lilypond.org/).  I will have to look into how [Liam O'Connor](https://liamoc.net/forest/index/index.xml) includes chant notation in his forest (\em{e.g.} [here](https://liamoc.net/forest/loc-0031/index.xml)).}
+}
+
+\subtree{
+  \title{Hanabi}
+
+  \p{I have continued playing some Hanabi, especially with my 14-year old.  We've played a couple games with strictly no verbal communication. The first time we did terribly, scoring 18/25; the second was much better, 24/25.  In both cases we learned a lot from our mistakes.  I'm looking forward to playing more on vacation and introducing some family members to the game and/or strategies.}
+}
+
+\subtree{
+  \title{Piano corner}
+
+  \p{Worked more on Chopin waltzes; I also practiced several of the movements of John Rutter's [Suite Antique](https://en.wikipedia.org/wiki/Suite_Antique) for flute and piano.  My wife and I played the whole suite together over 20 years ago, when we were dating, but we haven't had many chances to play together since then (first, we didn't have a piano; then, when we did have a piano, we had small kids, which made it hard to find the time to play together).  It was my wife's idea to pull it out, and I'm looking forward to playing with her again!  More generally, I hope we can find more opportunity to play together now that our kids are not quite so little (our youngest is 5, and we're not likely to have any more).  We can start by reviving the Rutter as well as [Poulenc's flute sonata](https://en.wikipedia.org/wiki/Flute_Sonata_(Poulenc)), which we also played together a long time ago. Eventually I'd also love to play the [Prokofiev flute sonata](https://en.wikipedia.org/wiki/Flute_Sonata_(Prokofiev)).}
+}

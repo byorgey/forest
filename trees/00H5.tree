@@ -1,0 +1,16 @@
+\date{2026-06-27T20:19:06Z}
+
+\title{Embedding diagrams in Forester}
+
+\p{I would really like to be able to use [[000S]] from within
+rester, so I spent a bit of time working on a
+\code{diagrams-forester} preprocessor tool.  The idea is that it will look for special sentinel blocks that look like
+\pre\verb+++|
+\diagram{w}{h}{\verb<<<|
+  ...
+<<<}
++++
+Then it would run the diagrams code in the \code{...}, and replace the entire \code{diagram} block with an image link.  \code{diagram} would also be defined to produce some kind of dummy placeholder, so the code would be valid Forester code both before and after the preprocessor runs.
+}
+\p{I don't want to spend a lot of time on this, but it's definitely worth spending a few hours on this summer, so I wanted to get it off the ground.  So far it can identify and parse the \code{diagram} blocks; I still need to hook it up to the [\code{diagrams-builder} package](https://hackage.haskell.org/package/diagrams-builder) and deal with things like input and output directories and so on.}
+
