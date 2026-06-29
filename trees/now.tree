@@ -1,8 +1,10 @@
-\date{2026-06-15}
+\date{2026-06-29}
 \title{Now}
 \author{brentyorgey}
 
 \p{What I am up to right now ([updated weekly](https://www.beeminder.com/byorgey/now)).  Inspired by [Derek Sivers](https://sivers.org/nowff).}
+
+\p{I'll be spending July 1-August 5 on vacation with my family (1 week driving Arkansas to Maine, 3 weeks in Maine, 1 week driving back).}
 
 \transclude{005Z}  % Latest weeknotes
 
@@ -10,8 +12,8 @@
 
 % \transclude{000N}  % Disco
 
-\transclude{00GO}  % Squiggol
+% \transclude{00GO}  % Squiggol
 
-\transclude{000P}  % Applicative inference
+% \transclude{000P}  % Applicative inference
 
 \transclude{000Q}  % Current reading
