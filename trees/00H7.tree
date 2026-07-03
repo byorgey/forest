@@ -1,0 +1,29 @@
+\title{Piano repertoire}
+\author{brentyorgey}
+\date{2026-07-03T19:27:59Z}
+
+\import{base-macros}
+
+\p{I have played classical piano since the age of 4. (I also play church music and some jazz, but classical is my first and deepest love.) These days I don't have as much time to play as I would like, but I still play quite a bit.  This page (still slowly under construction) contains a list of my repertoire.}
+
+\subtree{
+
+  \title{Polished}
+
+  \p{In theory, everything in this list is polished and under my fingers. If you encounter me and there is a piano nearby, feel free to ask me to play any of these pieces!}
+
+  \query\datalog{
+    ?X -: {\rel/has-tag ?X '{repertoire}} {\rel/has-tag ?X '{polished}}
+  }
+}
+
+\subtree{
+
+  \title{Other}
+
+  \p{Pieces that I am learning, or pieces that I used to know but have fallen out of practice.}
+
+  \query\datalog{
+    ?X -: {\rel/has-tag ?X '{repertoire}} {\rel/has-tag ?X '{unpolished}}
+  }
+}
