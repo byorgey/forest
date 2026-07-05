@@ -1,0 +1,40 @@
+\import{swarm-macros}
+
+\title{Weeknotes for 3 July 2026 (week 26)}
+\author{brentyorgey}
+\date{2026-07-05}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Maine road trip 2026, part 1}
+
+  \p{My family makes an annual summer pilgrimage from Conway, Arkansas to [Peru, Maine](https://en.wikipedia.org/wiki/Peru,_Maine), where my family owns a cabin.  Getting there involves a week-long road trip in either direction, with plenty of stops along the way to see sights, friends, and family, with a different route every year—the road trip is not just a means to an end but an integral part of the vacation!}
+
+  \p{This year, we first drove to [Mammoth Cave National Park](https://www.nps.gov/maca/index.htm) in Kentucky.  [Mammoth Cave](https://en.wikipedia.org/wiki/Mammoth_Cave_National_Park) is the longest known cave system in the world, with over 685 km of known passageways.  We took a guided tour of (one tiny part of!) the cave, which was quite impressive.}
+
+  \p{\imgasset{mammoth1.jpg}}
+  \p{\imgasset{mammoth2.jpg}}
+  \p{\imgasset{mammoth3.jpg}}
+
+  \p{Next we drove to [Pittsburgh, Pennsylvania](https://en.wikipedia.org/wiki/Pittsburgh) to stay with friends for a few nights.  Activities included a visit to the [Kamin Science Center](https://kaminsciencecenter.org/) (including, of course, a photo op on the space toilet), dinner with other friends, 4th of July fireworks on the campus of Carnegie Mellon, and attending a Sunday morning service at [City Reformed Presbyterian Church](https://cityreformed.org/).  I also went for a mountain bike ride in [Frick Park](https://pittsburghparks.org/explore-your-parks/regional-parks/frick-park/), which was fun but exhausting.}
+
+  \p{\imgasset{space-toilet.jpg}}
+  \p{\imgasset{fireworks.jpg}}
+
+  \p{Tomorrow we head to [Williamstown, Massachusetts](https://en.wikipedia.org/wiki/Williamstown,_Massachusetts) for the last stop on our journey.}
+}
+
+\subtree{
+  \title{Including diagrams and lilypond snippets in Forester}
+
+  \p{I've been thinking more about how to embed [diagrams](https://diagrams.github.io/) and [lilypond](https://lilypond.org/) output in Forester trees.  Last week I reported feeling stuck on the diagrams preprocessor I was building, but I recently realized I've been overthinking it: rather than call a diagrams interpreter programmatically (which runs into issues with package databases, mismatched GHC versions, \em{etc.}), I should just use it as an external executable.  The other benefit of this approach is that it should work similarly for lilypond, which also works as an external tool that compiles source code to an image, so I hope I can reuse a lot of the same infrastructure in my preprocessing tool.}
+
+}
+
+\subtree{
+  \title{Piano corner}
+
+  \p{Since we've been on our trip, I haven't been able to play the piano, but I did create a [page for my piano repertoire](00H7).  There are only a couple pieces listed so far, but I plan to add new pieces incrementally.}
+}
