@@ -1,5 +1,22 @@
+\import{music-macros}
+
 \title{Waltz No. 8 in A♭ major}
 \tag{repertoire}
 \tag{polished}
 \tag{chopin}
 \author{chopin}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 3/4 \key af \major
+    c''8 g af f ef4~ |
+    8 af c df f4~ |
+  }
+  \new Staff \relative
+  { \clef bass \key af \major
+    af,4\sustainOn << ef' af c >> << ef, af c \sustainOff >> |
+    ef,,4\sustainOn << ef' af c >> << ef, af c \sustainOff >> |
+  }
+>>
+<<<}
