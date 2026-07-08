@@ -2,3 +2,7 @@ output/
 build/
 *~
 _tmp/
+.shake/
+_shake/
+TAGS
+trees/
