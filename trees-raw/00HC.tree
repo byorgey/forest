@@ -1,0 +1,22 @@
+\title{Waltz in F major, Op. 34 No. 3}
+\author{chopin}
+
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff = "RH" \relative c'
+  { \time 3/4 \key f \major \tempo Vivace
+    <c g' c>2. | <c g' c>2. | <c g' c>4. c8 c4 | <c g' c>2.
+  }
+  \new Dynamics {
+    s2.-> \f | s2.-> | s2-> s4-> | s2.->
+  }
+  \new Staff = "LH" \relative
+  { \clef bass \key f \major
+    <c g' bf e>2. | <c g' bf e>2. | <c g' bf e>4 r r | <c g' bf e>2.
+  }
+>>
+<<<}

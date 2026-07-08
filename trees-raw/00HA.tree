@@ -7,13 +7,24 @@
 
 \lilypond{\verb<<<|
 \new PianoStaff <<
-  \new Staff \relative
-  { \time 3/4 \key af \major
-    ef'4
+  \new Staff = "RH" \relative
+  { \time 3/4 \key af \major \tempo Vivace
+    ef'4-> ^\( ef8 ef ef4-> | f8^[ \> ef df \! \change Staff = "LH" bf] \stemUp ef,4 \) |
+    \change Staff = "RH"
+    \stemNeutral
+    r4 <g' df' ef g>-. \< <af df ef af>-. | <a df ef a>-. <bf df ef bf'>-. \! r4
   }
-  \new Staff \relative
+  \new Dynamics {
+    s2. \f | s2. | s4 \sf s2 | s2.
+  }
+  \new Staff = "LH" \relative
   { \clef bass \key af \major
-    r2.
+    r2. | r |
+    ef,4-. <ef' ef'>-. <f ef' f>-. |
+    <fs ef' fs>-. <g ef' g>-. r
+  }
+  \new Dynamics {
+    s2. \sustainOn | s2 s4 \sustainOff | s4 \sustainOn s4 \sustainOff s4
   }
 >>
 <<<}
