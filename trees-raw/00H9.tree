@@ -14,7 +14,7 @@
     bf4-^ d8\( ef << d4 f\) >>
   }
   \new Staff \relative
-  { \clef bass \key af \major
+  { \clef bass \key ef \major
     r2. | r | r | r |
     bf,4 << bf' f' af >> << bf, f' af >>
   }
