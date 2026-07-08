@@ -28,6 +28,11 @@
 \def\imgasset[file]{
   \img{\route-asset{assets/images/\file}}
 }
+\def\imgblock[file]{
+  \p{\img{\route-asset{assets/blocks/\file}}}
+}
+
+\def\lilypond[lily]{\p{Uncompiled lilypond code:} \pre{\lily}}
 
 \def\rel/my-references{brentyorgey.query.my-references}
 \execute\datalog{

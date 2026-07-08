@@ -1,2 +1,0 @@
-\def\lilypond[lily]{\p{Uncompiled lilypond code:} \pre{\lily}}
-

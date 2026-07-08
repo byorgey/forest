@@ -4,5 +4,6 @@ build/
 _tmp/
 .shake/
 _shake/
+_blocks/
 TAGS
 trees/
