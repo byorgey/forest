@@ -2,19 +2,19 @@
 {-# LANGUAGE MultilineStrings #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE ViewPatterns #-}
+{-# LANGUAGE ScopedTypeVariables #-}
 
 import Control.Monad (void)
 import Control.Monad.Writer.Strict
 import Data.Char (isDigit)
 import Data.Hashable
+import Data.List.Split (splitOn)
 import Data.Maybe (listToMaybe)
 import Data.Text (Text)
 import Data.Text qualified as T
 import Data.Text.IO.Utf8 qualified as T
 import Development.Shake
-import Development.Shake.Command
 import Development.Shake.FilePath
-import Development.Shake.Util
 import Text.ParserCombinators.ReadP (
   ReadP,
   many1,
@@ -36,17 +36,21 @@ main = shakeArgs shakeOptions $ do
     let rawTree = replaceDirectory1 out "trees-raw"
     need [rawTree]
     blocks <- liftIO $ extractBlocks rawTree out "_blocks"
-    -- needed ["_blocks" </> block | block <- blocks] -- XXX do we need this?
     need ["assets/blocks" </> block <.> "png" | block <- blocks]
 
   "assets/blocks/*.ly.png" %> \out -> do
     let lilypondSrc = ("_blocks" </>) . dropExtension . takeFileName $ out
         lilypondArgs = words "-dtall-page-formats=png -dno-use-paper-size-for-page"
-    cmd_ "lilypond" lilypondArgs ["-o", dropExtension out] [lilypondSrc]
+    cmd_ ("lilypond" :: String) lilypondArgs ["-o", dropExtension out] [lilypondSrc]
+
+  "assets/blocks/*.dia.png" %> \out -> do
+    let diagramSrc = ("_blocks" </>) . dropExtension . takeFileName $ out
+        [w, h] = splitOn "x" (drop 1 . takeExtension . dropExtension $ diagramSrc)
+    cmd_ ("diagrams-builder-rasterific" :: String) ["-w", w, "-h", h, "-o", out] [diagramSrc]
 
 -- Extract lilypond + diagrams blocks. Produces:
---   - Corresponding .tree file in trees/, with XXX
---   - Each block extracted to an appropriate file XXX HASH.ext
+--   - Corresponding .tree file in trees/, with blocks replaced by images
+--   - Each block extracted to an appropriate file _blocks/HASH.ext
 -- Returns list of extracted block files
 extractBlocks :: FilePath -> FilePath -> FilePath -> IO [FilePath]
 extractBlocks rawTreeFile processedTreeFile blocksDir = do
@@ -80,12 +84,17 @@ lilypondHeader =
   """
 
 processBlock :: FilePath -> Either () DiagramMetadata -> [Text] -> WriterT [FilePath] IO [Text]
-processBlock blockDir (Left ()) ls = do
+processBlock blockDir blockType ls = do
   let content = T.unlines ls
       hx = hashToHexStr $ hash content
-      blockFile = hx <.> "ly"
+      blockFile = case blockType of
+        Left () -> hx <.> "ly"
+        Right (DiagramMetadata w h) -> hx <.> (show w ++ "x" ++ show h) <.> "dia"
       pngFile = blockFile <.> "png"
-  liftIO $ T.writeFile (blockDir </> blockFile) (lilypondHeader <> content)
+      header = case blockType of
+        Left {} -> lilypondHeader
+        _ -> ""
+  liftIO $ T.writeFile (blockDir </> blockFile) (header <> content)
   tell [blockFile]
 
   pure ["\\imgblock{" <> T.pack pngFile <> "}"]
@@ -109,8 +118,8 @@ blockStart :: ReadP a -> Text -> Maybe a
 blockStart p = fmap fst . listToMaybe . readP_to_S p . T.unpack
 
 data DiagramMetadata = DiagramMetadata
-  { width :: Int
-  , height :: Int
+  { _width :: Int
+  , _height :: Int
   }
 
 diagramStart :: ReadP DiagramMetadata

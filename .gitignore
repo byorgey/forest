@@ -7,3 +7,5 @@ _shake/
 _blocks/
 TAGS
 trees/
+.diagrams_cache/
+dist-newstyle/
