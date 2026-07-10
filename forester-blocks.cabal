@@ -16,5 +16,5 @@ common warnings
 executable shake
     import:           warnings
     main-is:          Shake.hs
-    build-depends:    base ^>=4.21.0.0, shake, text, mtl, hashable, split, diagrams-lib, diagrams-builder, diagrams-rasterific
+    build-depends:    base ^>=4.21.0.0, shake, text, mtl, hashable, split, diagrams-lib, diagrams-builder, diagrams-rasterific, diagrams-contrib
     default-language: Haskell2010

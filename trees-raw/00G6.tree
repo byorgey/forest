@@ -9,7 +9,10 @@
 
 \p{Here are all the binary trees with zero, one, two, and three branch nodes:}
 
-% XXX picture!
+\diagram{400}{*}{\verb<<<|
+import BinaryTrees
+dia = frame 0.2 . vsep 1.5 . map (hsep 1 . map (drawBin True) . treesOfSize) $ [0 .. 3]
+<<<}
 
 \p{We can see that there are five different binary trees with three branch nodes. How many will there be with four branch nodes? We are quickly approaching the limit of what we will be able to count while being confident that we have not missed any.}
 

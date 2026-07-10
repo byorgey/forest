@@ -1,10 +1,10 @@
 {-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE MultilineStrings #-}
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE ViewPatterns #-}
 {-# LANGUAGE ScopedTypeVariables #-}
+{-# LANGUAGE ViewPatterns #-}
 
-import Control.Monad (void)
+import Control.Monad (guard, void)
 import Control.Monad.Writer.Strict
 import Data.Char (isDigit)
 import Data.Hashable
@@ -25,6 +25,7 @@ import Text.ParserCombinators.ReadP (
   (+++),
  )
 import Text.Printf (printf)
+import Text.Read (readMaybe)
 
 main :: IO ()
 main = shakeArgs shakeOptions $ do
@@ -46,7 +47,9 @@ main = shakeArgs shakeOptions $ do
   "assets/blocks/*.dia.png" %> \out -> do
     let diagramSrc = ("_blocks" </>) . dropExtension . takeFileName $ out
         [w, h] = splitOn "x" (drop 1 . takeExtension . dropExtension $ diagramSrc)
-    cmd_ ("diagrams-builder-rasterific" :: String) ["-w", w, "-h", h, "-o", out] [diagramSrc]
+        ws = guard (w /= "*") *> ["-w", w]
+        hs = guard (h /= "*") *> ["-h", h]
+    cmd_ ("diagrams-builder-rasterific" :: String) ws hs ["-o", out] [diagramSrc]
 
 -- Extract lilypond + diagrams blocks. Produces:
 --   - Corresponding .tree file in trees/, with blocks replaced by images
@@ -87,9 +90,10 @@ processBlock :: FilePath -> Either () DiagramMetadata -> [Text] -> WriterT [File
 processBlock blockDir blockType ls = do
   let content = T.unlines ls
       hx = hashToHexStr $ hash content
+      showSize = maybe "*" show
       blockFile = case blockType of
         Left () -> hx <.> "ly"
-        Right (DiagramMetadata w h) -> hx <.> (show w ++ "x" ++ show h) <.> "dia"
+        Right (DiagramMetadata w h) -> hx <.> (showSize w ++ "x" ++ showSize h) <.> "dia"
       pngFile = blockFile <.> "png"
       header = case blockType of
         Left {} -> lilypondHeader
@@ -118,15 +122,15 @@ blockStart :: ReadP a -> Text -> Maybe a
 blockStart p = fmap fst . listToMaybe . readP_to_S p . T.unpack
 
 data DiagramMetadata = DiagramMetadata
-  { _width :: Int
-  , _height :: Int
+  { _width :: Maybe Int
+  , _height :: Maybe Int
   }
 
 diagramStart :: ReadP DiagramMetadata
-diagramStart = DiagramMetadata <$> (skipSpaces *> string "\\diagram{" *> int) <*> (string "}{" *> int <* string "}{\\verb<<<|")
+diagramStart = DiagramMetadata <$> (skipSpaces *> string "\\diagram{" *> size) <*> (string "}{" *> size <* string "}{\\verb<<<|")
  where
-  int :: ReadP Int
-  int = read <$> many1 (satisfy isDigit)
+  size :: ReadP (Maybe Int)
+  size = (readMaybe <$> many1 (satisfy isDigit)) +++ (Nothing <$ string "*")
 
 lilypondStart :: ReadP ()
 lilypondStart = void $ skipSpaces *> string "\\lilypond{\\verb<<<|"
