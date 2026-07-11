@@ -1,0 +1,37 @@
+\title{Visualizing divisibility}
+\date{2026-07-11T17:49:11Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We can illustrate the situation as follows:}
+
+\diagram{200}{*}{\verb<<<|
+dia = frame 1 . vsep 2 $
+  [ hsep 3 . map centerY $
+    [ vsep 1 . map center $
+      [ mconcat
+        [ text "b" <> rect 1 0.1 # lw none # fc white
+        , hrule 9
+        ]
+      , hcat (replicate 3 a)
+      ]
+    ]
+
+  , hsep 3 . map centerY $
+    [ vsep 1 . map center $
+      [ mconcat
+        [ text "b" <> rect 1 0.1 # lw none # fc white
+        , hrule 10
+        ]
+      , hcat (replicate 3 a ++ [r])
+      ]
+    ]
+  ]
+  where
+    a = text "a" <> rect 3 1 # fc lightblue
+    r = text "r" <> rect 1 1 # fc lightgreen
+<<<}
+
+\p{In the situation illustrated at the top, #{b} can be covered exactly with three copies of #{a}, so #{a \mid b}. On the other hand, in the bottom illustration, attempting to cover #{b} with copies of #{a} leaves a bit left over; hence #{a \nmid b}. Thinking about pictures like this can help us build the right intuition. However, keep in mind that the formal definition is a bit more general than these pictures, since the formal definition allows #{a} and #{b} to be negative, or zero, which the pictures can’t really show.}
+

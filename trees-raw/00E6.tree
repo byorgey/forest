@@ -1,12 +1,11 @@
 \title{Solving modular equivalences (part I)}
 \date{2026-04-13T01:46:44Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
-\transclude{00E7}
-\transclude{00E8}
-\transclude{00E9}
-\transclude{00EA}
-\transclude{00EB}
+\transclude{00E7}  % Example: x + y =_3 12
+\transclude{00E8}  % Example: 101x + 52 =_10 68
+\transclude{00E9}  % Example: 3x + 19 =_7 2(x - 73)
+\transclude{00EA}  % Example: x + 22 =_19 20x + 3
+\transclude{00EB}  % Example: x + 22 =_19 20x - 7

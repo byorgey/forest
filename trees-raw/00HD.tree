@@ -1,0 +1,9 @@
+\title{Additive and multiplicative building blocks}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{We can now state one of the most fundamental results in number theory, which several ancient civilizations discovered independently, and you probably learned in elementary school.}
+
+\p{It's easy to see that the number #{1} is the "fundamental building block" of the natural numbers under addition: that is, we can create any natural number we want by starting with #{0} and adding #{1} any number of times.  It turns out that under multiplication, the \em{primes} are the building blocks: any natural number besides #{0} can be formed by starting with #{1} and multiplying primes.}

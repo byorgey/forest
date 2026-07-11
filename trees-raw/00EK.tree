@@ -1,11 +1,12 @@
 \title{Sieve of Eratosthenes}
 \date{2026-04-13T21:33:57Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
-\taxon{Example} \p{The \em{sieve of Eratosthenes} is an ancient Greek
+\taxon{Example}
+
+\p{The \em{sieve of Eratosthenes} is an ancient Greek
 method for finding all the primes up to some limit; consider as an
 example finding all the primes up to 100. We start by circling #{2} as
 the first prime, then crossing out all multiples of #{2}. Since the
@@ -20,9 +21,8 @@ multiples. But now we can stop! We have found all the primes up to
 crossed out; by the previous theorem, composite numbers up to #{100}
 must have a prime divisor less than or equal to #{10}, but we have
 already crossed out all multiples of primes less than #{10}. So all
-the remaining numbers must be prime and we can simply circle them.
+the remaining numbers must be prime and we can simply circle them.}
 
 \imgasset{sieve10.png}
-}
 
 

@@ -10,12 +10,12 @@
 
 \p{They are arranged along a number line, in order according to the #{\leq} relation. Here we’ve drawn an arrow from each number to the next. Notice that because #{\leq} is transitive, there is a path following the arrows from one number to another iff the first is less than or equal to the second. We’ve seen before that #{\leq} is intimately related to addition, so we can think of this chain of arrows as a picture of the additive structure of #{\N}.}
 
-\p{The divisibility relation #{a \mid b}, on the other hand, gives us a way to think about the \em{multiplicative} structure of the natural numbers. Let’s draw a similar kind of diagram of the natural numbers where #{a} and #{b} are connected by an arrow whenever #{a \mid b}. (However, if #{a \mid b \mid c} then we won’t bother drawing an arrow #{a \to c}: since divisibility is transitive, we can just follow the path #{a \to b \to c} to see that #{a \mid c}. However, abstractly the arrow is still “there”, we just won’t draw it.)}
+\p{The divisibility relation #{a \mid b}, on the other hand, gives us a way to think about the \em{multiplicative} structure of the natural numbers. Let’s draw a similar kind of diagram of the natural numbers where #{a} and #{b} are connected by an arrow whenever #{a \mid b}. (However, if #{a \mid b \mid c} then we won’t bother drawing an arrow #{a \to c}: since divisibility is transitive, we can just follow the path #{a \to b \to c} to see that #{a \mid c}. Abstractly, the arrow is still “there”, we just won’t draw it.)}
 
 \imgasset{divisibility-lattice.jpg}
 
-\p{Obviously this is just a tiny part of the entire (infinite) diagram. Here are a few observations:}
-\ul{\li{\p{This diagram is obviously much more complicated than the diagram for #{\leq}! This is, in some sense, the reason why studying the multiplicative structure of #{\N} is much more interesting than studying the additive structure.}
+\p{Of course, this is just a tiny part of the entire (infinite) diagram. Here are a few observations:}
+\ul{\li{\p{This diagram is much more complicated than the diagram for #{\leq}! This is, in some sense, the reason why studying the multiplicative structure of #{\N} is much more interesting than studying the additive structure.}
 }
 \li{\p{All the primes are at the bottom, right above #{1}. Composite numbers come in “layers” above that depending on how many prime divisors they have.}
 }

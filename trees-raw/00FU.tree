@@ -2,12 +2,18 @@
 \tag{discrete}
 \taxon{Remark}
 
-\tag{draft}
-
 \import{discrete-macros}
 
 \p{We can visualize the situation by drawing a rectangular grid, where each row corresponds to one option for the first choice, and each column corresponds to an option for the second choice. Then each grid square corresponds to a unique combination of choices. The fact that the choices are \em{independent} corresponds to the fact that the picture is perfectly rectangular.}
 
-% XXX picture
+\diagram{200}{*}{\verb<<<|
+attach v d d2 = cat' v (with & sep .~ norm v) [ d2, d ]
+dia = vcat (replicate 5 (hcat (replicate 4 (square 1))))
+  # centerXY
+  # attach unit_X (text "c1")
+  # attach unitY (text "c2")
+  # fontSizeL 0.5
+  # frame 1
+<<<}
 
 \p{This really boils down to the fact, which we [saw before when learning about sets](0079), that ##{|A \times B| = |A| \times |B|.}}
