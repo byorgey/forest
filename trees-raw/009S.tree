@@ -1,11 +1,10 @@
 \title{Range vs codomain}
 \date{2026-03-09T11:28:30Z}
 \tag{discrete}
-\tag{draft}
 \taxon{Remark}
 
 \import{discrete-macros}
 
 \p{It's quite possible you have never before seen a careful distinction made between the [range](009R) and the [codomain](009P) of a function.  The codomain is the set of \em{potential} outputs, whereas the range is the set of \em{actual} outputs.}
 
-% \p{Why bother making this distinction? XXX}
+\p{Why bother making this distinction?  There are several reasons.  For one thing, it's often useful to be able to talk about the set of \em{potential} outputs and which elements in that set are or are not "covered" by a specific function.  For another thing, the codomain is part of the \em{definition} of a function, but the actual range of a function can be quite complicated to describe, or even impossible to describe fully.  We want to be able to \em{define} functions in a simple way, without getting bogged down in which specific values are or are not in the range.}

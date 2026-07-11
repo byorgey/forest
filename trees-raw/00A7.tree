@@ -1,10 +1,52 @@
 \title{Checking injectivity with Disco}
 \date{2026-03-10T10:51:32Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
-\p{Use Disco to check injectivity of #{g}, #{h}, #{\ell}, #{j}.  Also show checking injectivity of a function that is "mostly" injective.}
+\p{Let's use Disco to check the [injectivity](00A1) of our [example functions from before](009X).}
 
-% XXX finish me!
+\p{Disco can tell us for sure that \code{g} is injective:}
+\pre\verb<<<|
+Disco> :test forall x:Bool, y:Bool. g(x) == g(y) -> x == y
+  - Certainly true: ∀x, y. g(x) == g(y) -> x == y
+    No counterexamples exist; all possible values were checked.
+<<<
+
+\p{With \code{h}, on the other hand, Disco cannot tell for sure, but reports that it tried a bunch of examples without finding a counterexample.  This makes sense: since the domain of \code{h} is the natural numbers, there are infinitely many inputs to try, so Disco cannot try them all.  (Of course, we can [prove that \code{h} is injective](00A5), but Disco is not doing anything that sophisticated.)}
+\pre\verb<<<|
+Disco> :test forall x:N, y:N. h(x) == h(y) -> x == y
+  - Possibly true: ∀x, y. h(x) == h(y) -> x == y
+    Checked 100 possibilities without finding a counterexample.
+<<<
+
+\p{The function \code{l} is not injective, and Disco finds a counterexample immediately:}
+\pre\verb<<<|
+Disco> :test forall x:N, y:N. l(x) == l(y) -> x == y
+  - Certainly false: ∀x, y. l(x) == l(y) -> x == y
+    Found counterexample:
+      x = 0
+      y = 3
+    - Certainly true: l(x) == l(y)
+        - Left side:  F
+        - Right side: F
+    - Certainly false: x == y
+        - Left side:  0
+        - Right side: 3
+<<<
+
+\p{Disco also easily finds a counterexample showing that \code{j} is not injective (try it yourself!).}
+
+\p{As one last example, we can try making a function which is "almost" injective, which fools Disco:}
+
+\pre\verb<<<|
+k : N -> N
+k(193) = 0
+k(n) = 2n
+
+Disco> :test forall x:N, y:N. k(x) == k(y) -> x == y
+  - Possibly true: ∀x, y. k(x) == k(y) -> x == y
+    Checked 100 possibilities without finding a counterexample.
+<<<
+
+\p{We can easily see that #{k} is not injective, since #{k(0) = k(193) = 0}, but Disco happened not to try those particular inputs.  When Disco says that something is "possibly" true or false, we must take it with a grain of salt!}
