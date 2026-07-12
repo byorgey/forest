@@ -1,0 +1,21 @@
+\import{base-macros}
+
+\title{[CW06] Waltz in D♭ major, Op. 64 No. 1 ("Minute Waltz")}
+\tag{repertoire}
+\tag{polished}
+\tag{chopin}
+\author{chopin}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 3/4 \key df \major \tempo "Molto vivace"
+    g'8\( af c bf g af | c bf g af c bf\)
+  }
+  \new Staff \relative
+  { \clef bass \key df \major
+    df4 << af' df f >> << af, df f >> |
+    f, << af df f >> << af, df f >>
+  }
+>>
+<<<}

@@ -1,6 +1,6 @@
 \import{base-macros}
 
-\title{Waltz No. 8 in A♭ major}
+\title{[CW08] Waltz in A♭ major, Op. 64 No. 3}
 \tag{repertoire}
 \tag{polished}
 \tag{chopin}
@@ -9,14 +9,19 @@
 \lilypond{\verb<<<|
 \new PianoStaff <<
   \new Staff \relative
-  { \time 3/4 \key af \major
+  { \time 3/4 \key af \major \tempo Moderato
     c''8 g af f ef4~ |
     8 af c df f4~ |
   }
   \new Staff \relative
   { \clef bass \key af \major
-    af,4\sustainOn << ef' af c >> << ef, af c \sustainOff >> |
-    ef,,4\sustainOn << ef' af c >> << ef, af c \sustainOff >> |
+    af,4 << ef' af c >> << ef, af c >> |
+    ef,,4 << ef' af c >> << ef, af c >> |
+  }
+  \new Dynamics
+  {
+    s4 \sustainOn s4 s4 \sustainOff |
+    s4 \sustainOn s4 s4 \sustainOff
   }
 >>
 <<<}

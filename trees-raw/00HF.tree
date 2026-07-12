@@ -1,0 +1,33 @@
+\import{base-macros}
+
+\title{[CW05] Waltz in A♭ major, Op. 42}
+\tag{repertoire}
+\tag{polished}
+\tag{chopin}
+\author{chopin}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 3/4 \key af \major
+    <<
+    \mergeDifferentlyDottedOn
+    { c''4. df | c bf }
+    \\
+    { c8 \( d, ef df' e, f |
+      c' d, ef bf' c, df \)
+    }
+    >>
+  }
+  \new Staff \relative
+  { \clef bass \key af \major
+    af,4 << ef' af c >> << ef, af c >> |
+    ef,,4 << ef' g >> << ef g >> |
+  }
+  \new Dynamics
+  {
+    s4 \sustainOn s4 s8 s8 \sustainOff |
+    s4 \sustainOn s4 s8 s8 \sustainOff
+  }
+>>
+<<<}
