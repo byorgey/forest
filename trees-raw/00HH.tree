@@ -1,0 +1,29 @@
+\import{base-macros}
+
+\title{[CW07] Waltz in C♯ minor, Op. 64 No. 2}
+\tag{repertoire}
+\tag{polished}
+\tag{chopin}
+\author{chopin}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 3/4 \key cs \minor \tempo "Tempo giusto"
+    \partial 4 gs'4~ \( \> |
+    <gs e'>2. |
+    <fx ds'> \) \!
+  }
+  \new Staff \relative
+  { \clef bass \key cs \minor
+    \partial 4 r4 |
+    cs, <gs'' cs e> <gs cs e> |
+    ds, <ds' as' cs> <ds as' cs>
+  }
+  \new Dynamics
+  { \partial 4 s4 |
+    s4 \sustainOn s4 s4 \sustainOff |
+    s4 \sustainOn s4 s4 \sustainOff
+  }
+>>
+<<<}

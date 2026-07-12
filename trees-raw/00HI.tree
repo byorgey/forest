@@ -1,0 +1,32 @@
+\import{base-macros}
+
+\title{[CW09] Waltz in A♭ major, Op. 69 No. 1}
+\tag{repertoire}
+\tag{polished}
+\tag{chopin}
+\author{chopin}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 3/4 \key af \major \tempo Lento
+    \partial 4 ef''8 \( d |
+    \tuplet 3/2 { df8 ef df } c8 df f ef |
+    df2-- c4 \)
+  }
+  \new Dynamics
+  { \partial 4 s4 \p |
+    s2. |
+    s4 \> s4 s4 \!
+  }
+  \new Staff \relative
+  { \clef bass \key af \major
+    \partial 4 r4 |
+    <<
+      { r4 <af df> <af df> | r <g c> <g c> }
+      \\
+      { f2. | e2. }
+    >>
+  }
+>>
+<<<}

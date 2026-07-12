@@ -1,0 +1,24 @@
+\import{base-macros}
+
+\title{[CW09] Waltz in B minor, Op. 69 No. 2}
+\tag{repertoire}
+\tag{polished}
+\tag{chopin}
+\author{chopin}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 3/4 \key b \minor \tempo Moderato
+    \partial 4 fs''4->~ \( |
+    fs8 \p g fs ds e b |
+    as2 \) fs'4->~
+  }
+  \new Staff \relative
+  { \clef bass \key b \minor
+    \partial 4 r4 |
+    b,4 <fs' b d> <fs b d> |
+    cs <fs cs' e> <fs cs' e>
+  }
+>>
+<<<}
