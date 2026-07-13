@@ -12,7 +12,7 @@
 
 % \transclude{000N}  % Disco
 
-% \transclude{00GO}  % Squiggol
+\transclude{00GO}  % Squiggol
 
 % \transclude{000P}  % Applicative inference
 
