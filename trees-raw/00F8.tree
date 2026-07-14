@@ -5,7 +5,7 @@
 \import{discrete-macros}
 
 \taxon{Theorem}
-\p{For all #{a,b \in \N}, we have #{\gcd(a,b) = \gcd(b, a \mod b)}.}
+\p{For all #{a,b \in \N}, #{\gcd(a,b) = \gcd(a \mod b, b)}.}
 
 \proof{
   \p{By the [division algorithm](00DC) write #{a = bq + r}. Then}
@@ -13,13 +13,11 @@
   \stmt{\gcd(a,b)}
   \reason{=}{Division algorithm, substitute for #{a}}
   \stmt{\gcd(bq+r, b)}
-  \reason{=}{[[00F4]]}
+  \reason{=}{[[00GQ]], applied #{q} times}
   \stmt{\gcd(bq+r-bq, b)}
   \reason{=}{algebra}
   \stmt{\gcd(r, b)}
-  \reason{=}{[[00F3]]}
-  \stmt{\gcd(b,r)}
   \reason{=}{Definition of \mod}
-  \stmt{\gcd(b, a \mod b)}
+  \stmt{\gcd(a \mod b, b)}
 }
 

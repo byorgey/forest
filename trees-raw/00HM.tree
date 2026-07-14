@@ -1,0 +1,17 @@
+\title{Euclidean Algorithm (simple version)}
+\date{2026-07-14T17:49:05Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{We can put these observations about #{\gcd} together to write down a procedure for computing it.  This is one of the oldest recorded algorithms, and is named the \em{Euclidean Algorithm} since it is in Euclid's \em{Elements}, written in about 300 BC.  It was also independently invented in both India and China.  This simple version is essentially equivalent to the version found in the \em{Elements}, although we will also describe a slightly more efficient version later.}
+
+\ul{
+  \li{#{\gcd(a,0) = a}.}
+  \li{If #{a \geq b}, then #{\gcd(a,b) = \gcd(a-b,b)}.}
+  \li{Otherwise, #{\gcd(a,b) = \gcd(b,a)}.}
+}
+
+\p{Each of these steps is justified by one of our previous theorems,
+and #{a} and #{b} keep getting smaller and smaller so #{b} must eventually reach #{0}.}

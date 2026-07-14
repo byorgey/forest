@@ -7,8 +7,8 @@
 
 \p{For all #{a, b, c \in \Z},
 \ol{
-  \li{#{a \mid a} (the divisibility relation is reflexive).}
-  \li{if #{a \mid b} and #{b \mid c}, then #{a \mid c} (divisibility is transitive).}
+  \li{#{a \mid a} (the divisibility relation is [reflexive](008G)).}
+  \li{if #{a \mid b} and #{b \mid c}, then #{a \mid c} (divisibility is [transitive](008Q)).}
   \li{if #{a \mid b} and #{a \mid c}, then #{a \mid (b + c)}.}
   \li{if #{a \mid b}, then #{a \mid bc}.}
 }

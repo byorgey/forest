@@ -1,0 +1,8 @@
+\title{Divisibility and subtraction}
+\date{2026-07-14T14:50:25Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{If #{a \mid b} and #{a \mid c}, does #{a \mid (b - c)}?  Actually, this already follows from the [previous theorem](00DA): Since #{a \mid c}, by property (4) we have #{a \mid c \cdot (-1)}, \ie #{a \mid (-c)}; then by property (3), #{a \mid (b + (-c))}, that is, #{a \mid (b - c)}.}

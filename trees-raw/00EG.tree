@@ -27,3 +27,8 @@
 }
 
 % XXX advanced: proof that prime factorization is unique
+%
+% Lemma: if p | ab then p | a or p | b
+%   Proof: Suppose pk = ab. and suppose p does not divide XXX
+%
+% Let n = p_1 ... p_n = q_1 ... q_m.  p_1 divides q_1 ... q_m hence p_1 | q_i for some i

@@ -6,10 +6,13 @@
 
 \p{With that in mind, recall the notion of one number being a “multiple” of another, or (equivalently) one number “evenly dividing” another number. We’ll begin by making this notion precise.}
 
-\transclude{00D6}
-\transclude{00D7}
-\transclude{00D8}
-\transclude{00HE}
-\transclude{00D9}
-\transclude{00DA}
-\transclude{00DB}
+\transclude{00D6}  % Divisibility relation
+\transclude{00D7}  % Terminology and notation
+\transclude{00D8}  % Divisibility examples
+\transclude{00HE}  % Visualization
+\transclude{00D9}  % Remark re: zero
+\transclude{00DA}  % Divisibility properties
+\transclude{00HL}  % Divisibility and subtraction
+\transclude{00DB}  % Divisibility vs \leq
+\transclude{00F6}  % Divisibility is antisymmetric
+\transclude{00HO}  % Equality via divisibility (Yoneda-like lemma)

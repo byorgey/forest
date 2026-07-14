@@ -8,5 +8,5 @@
 \p{#{\gcd(a,b) = \gcd(b,a)}.}
 
 \proof{
-  Look at the definition of #{\gcd} and note that #{\land} is commutative.
+  Look at the [definition of #{\gcd}](00EW) and note that #{\land} is commutative.
 }

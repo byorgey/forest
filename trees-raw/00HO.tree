@@ -1,0 +1,20 @@
+\title{[★](advanced) Equality characterized by divisibility}
+\date{2026-07-14T18:47:08Z}
+\tag{discrete}
+\taxon{Theorem}
+
+% This is only used for the proof that gcd(a,b) = gcd(a-b,b).
+
+\import{discrete-macros}
+
+\p{Natural numbers are equal if and only if they have all the same divisors.  That is, for any natural numbers #{a} and #{b}, ##{(a = b) \iff (\all{d}{\N} (d \mid a) \iff (d \mid b))}.}
+
+\proof{
+  Let #{a} and #{b} be arbitrary natural numbers.  We must prove both directions of the if and only if.
+  \subproof{
+    Suppose #{a = b}; we must show #{\all{d}{\N} (d \mid a) \iff (d \mid b)}.  If we substitute #{a} for #{b} this becomes #{\all{d}{\N} (d \mid a) \iff (d \mid a)} which is trivially true (#{P \iff P} is always true for any proposition #{P}).
+  }
+  \subproof{
+    Now suppose #{\all{d}{\N} (d \mid a) \iff (d \mid b)}; we must show #{a = b}.  Since [divisibility is reflexive](00DA), #{a \mid a}, and since we know every divisor of #{a} is also a divisor of #{b}, this means #{a \mid b}.  Likewise, #{b \mid a} since #{b \mid b}.  Since [divisibility is antisymmetric](00F6), this means #{a = b}, as desired.
+  }
+}

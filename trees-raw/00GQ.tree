@@ -1,11 +1,23 @@
 \title{GCD arguments can be subtracted from the other}
 \date{2026-05-29T19:42:53Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
 \taxon{Theorem}
 \p{For all #{a,b \in \N}, if #{a \geq b}, then ##{\gcd(a,b) = \gcd(a-b, b).}}
 
+\p{Intuitively, if #{a} and #{b} can be chopped into pieces of a
+common size, then so can their difference.}
 
+\proof{
+  [Two natural numbers are equal if and only if they have the exact same set of divisors](00HO).  So we can prove #{\gcd(a,b) = \gcd(a-b, b)} by proving ##{\all{d}{\N} (d \mid \gcd(a,b)) \iff (d \mid \gcd(a-b,b)).} By [definition of GCD](00EW), this is equivalent to ##{\all{d}{\N} (d \mid a \land d \mid b) \iff (d \mid (a-b) \land d \mid b).}  So let #{d} be arbitrary; we will prove both directions of the if and only if.
+
+  \subproof{
+    First, suppose #{d \mid a} and #{d \mid b}; we must show #{d \mid (a - b)} (and #{d \mid b}, but we have already supposed that).  But this follows from [a previous theorem](00HL).
+  }
+
+  \subproof{
+    Next, suppose #{d \mid (a - b)} and #{d \mid b}; we must show #{d \mid a}.  But similarly, from [a previous theorem](00DA) we can conclude that #{d \mid ((a - b) + b) = a}.
+  }
+}
