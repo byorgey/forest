@@ -1,0 +1,12 @@
+\title{RSA}
+\date{2026-07-17T12:00:15Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{RSA was discovered in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman (the name "RSA" just comes from the initials of their last names). It was actually independently discovered four years earlier, by Clifford Cocks, while he was working for the UK’s GCHQ—basically the equivalent of the NSA—but this wasn’t known until 1997 when it became declassified.}
+
+\transclude{00IH}  % Generating keys
+\transclude{00II}  % Difficult to recover private from public
+\transclude{00IJ}  % Encrypting
+\transclude{00IK}  % Hard to break

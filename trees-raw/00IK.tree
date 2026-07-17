@@ -1,0 +1,8 @@
+\date{2026-07-17T12:33:45Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{It turns out that given only #{C}, #{e}, and #{n}, it is (as far as we know) very difficult to find an #{M} such that #{M^e \equiv_n C}. So no one can read the encrypted message #{C} even if they know the public key #{(e,n)} that was used to encrypt it.}
+

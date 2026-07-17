@@ -1,0 +1,21 @@
+\title{Generating public/private key pairs with RSA}
+\date{2026-07-17T12:04:10Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Here’s how generating a [public/private key pair](00IE) works in RSA:
+\ul{
+  \li{Pick two large (say, #{500}-digit) [primes](00EC) #{p} and #{q}. This can be done efficiently: just pick a random 500-digit number and test it to see if it is prime (which [can be done efficiently](00IF)), if not, pick another one and repeat. For #{500}-digit numbers about one in every #{2300} integers is prime, so you might have to repeat this procedure a few thousand times before finding a prime, but that’s not a big deal. Even if this process were to take a few seconds or even minutes, you only have to do it once when creating a public and private key.}
+
+  \li{Compute #{n = pq}. As [mentioned previously, this can be done very quickly](00IF).}
+
+  \li{Choose some #{e} such that #{1 < e < (p-1)(q-1)} and #{e} shares no common factors with #{(p-1)(q-1)}. For example, we could randomly pick an #{e} and compute the #{\gcd} (which is very efficient using the [[00F9]]) to make sure it is #{1}. If not, pick a different #{e} and repeat. In practice, it can be beneficial to use specific values of #{e} to make encoding more efficient, so one could instead fix the value of #{e} and keep picking #{p} and #{q} until #{\gcd(e, (p-1)(q-1)) = 1}.}
+
+  \li{Find #{d} such that #{de \equiv_{(p-1)(q-1)} 1}, that is, the [modular inverse](00FK) of #{e} modulo #{(p-1)(q-1)}. Since #{e} shares no common factors with #{(p-1)(q-1)}, a modular inverse is guaranteed to exist, and we can find it easily with the [extended Euclidean algorithm](00FH).}
+
+  \li{#{p}, #{q}, and #{d} are the [private key](00IE) and should be kept absolutely secret.}
+
+  \li{#{n} and #{e} are the [public key](00IE) and should be published widely.}
+}
+}

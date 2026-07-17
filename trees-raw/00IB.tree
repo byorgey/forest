@@ -1,7 +1,14 @@
-\title{Public-key cryptography and RSA}
-\date{2026-07-17T11:36:17Z}
-\tag{discrete}
-\tag{draft}
-
 \import{discrete-macros}
 
+\title{\advanced Public-key cryptography and RSA}
+\date{2026-07-17T11:36:17Z}
+\tag{discrete}
+
+\transclude{00IC}    % Warm-up
+\transclude{00ID}    % Symmetric ciphers
+\transclude{00IE}    % Public-key cryptography
+\transclude{00IF}    % Some key facts
+\transclude{00IG}    % RSA
+\transclude{00IL}    % Decrpying
+\transclude{00IM}    % Proof of RSA
+\transclude{00IN}    % Digital signatures

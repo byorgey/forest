@@ -1,0 +1,17 @@
+\title{RSA works}
+\date{2026-07-17T12:35:14Z}
+\tag{discrete}
+\taxon{Theorem}
+
+\import{discrete-macros}
+
+\p{[Encrypting](00IJ) and then [decrypting](00IL) in this way results in recovering the original message, that is, ##{(M^e)^d \equiv_n M.}}
+
+\proof{
+  \p{Since #{de \equiv_{(p-1)(q-1)} 1}, [there exists](00DW) some integer #{k} such that ##{de = 1 + k(p-1)(q-1).} Also, by [[00I8]], if #{p \nmid M}, we have ##{M^{p-1} \equiv_p 1,} so ##{(M^e)^d = M^{1 + k(p-1)(q-1)} = M \cdot (M^{p-1})^{k(q-1)}
+  \equiv_p M \cdot 1^{k(q-1)} = M.} Likewise, by a similar argument, #{(M^e)^d \equiv_q M}.}
+
+  \p{Now, #{M} is obviously a solution to the system of equations ##{\begin{align*}x &\equiv_p M \\ x &\equiv_q M \end{align*}} But since #{p} and #{q} are primes and hence share no common factors, by the [[00I4]] we know that the solution to these equations is unique modulo #{pq = n}. Hence #{(M^e)^d \equiv_n M}.}
+}
+
+

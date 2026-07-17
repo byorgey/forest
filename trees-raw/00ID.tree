@@ -1,0 +1,15 @@
+\title{Symmetric ciphers}
+\date{2026-07-17T11:39:21Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{The code used in the [warm-up](00IC) is a \em{Caesar cipher}—shift every letter by the same amount through the alphabet. It’s not a very secure cipher, but there are (slightly) more secure variants, such as a \em{Vigenère cipher}, where instead of a single shift amount we choose a sequence of shift amounts and cycle through them. Typically one would choose a \em{key word} and use the letters of the key word to determine the shift amounts.}
+
+\p{These are all known as \em{symmetric ciphers}: in order to communicate, sender and receiver must have a \em{shared, secret key}. The secret key must be known by the people communicating (and no one else), and the same key is used for both encrypting and decrypting. This works fine in many situations, but it has some drawbacks:}
+\ul{
+  \li{The two parties must somehow agree on a secret key before they can communicate. In order to keep the key a secret, typically this must be done \em{in person}.}
+  \li{Because of this need to agree on a secret key, it is impossible for people who have never met to communicate securely.}
+}
+
+

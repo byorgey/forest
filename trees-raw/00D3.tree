@@ -1,7 +1,6 @@
 \title{Number Theory}
 \date{2026-04-06T13:29:12Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
@@ -15,5 +14,5 @@
 \transclude{00FE}   % Bézout and Extended Euclidean
 \transclude{00I2}   % CRT
 \transclude{00I7}   % FLT
-\transclude{00IB}
-% XXX Include RSA
+\transclude{00IB}   % RSA
+

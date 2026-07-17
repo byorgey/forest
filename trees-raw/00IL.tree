@@ -1,0 +1,8 @@
+\title{Decrypting messages with RSA}
+\date{2026-07-17T12:34:27Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{To \strong{decrypt} the encrypted message #{C}, the recipient simply does the [same thing](00IJ) but using their private key #{d} as the exponent instead of #{e}! That is, they compute #{C^d \mod n}.}
+

@@ -1,0 +1,8 @@
+\date{2026-07-17T12:15:14Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{As far as we know, of course, it is [very difficult to find #{p} and #{q} by factoring #{n}](00IF). In turn this means it is difficult to find #{d} from #{e}. We can easily compute #{d} from #{e} if we know #{(p-1)(q-1)}, but there’s no way to find #{(p-1)(q-1)} from #{n} without first factoring #{n} to find out what #{p} and #{q} are. This means that no one can figure out #{d}, #{p}, or #{q} (the private key) if they only know #{n} and #{e} (the public key).}
+

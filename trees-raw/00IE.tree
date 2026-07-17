@@ -1,0 +1,34 @@
+\title{Public-key cryptography}
+\date{2026-07-17T11:41:57Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{There is a different idea known as a \em{public-key} cryptosystem which does not have these drawbacks. We’ll start by outlining the general properties of such a system.
+
+\ul{
+  \li{Everyone who wants to communicate picks their own personal pair
+  of keys: a \em{private key} and a \em{public key}.}
+  \li{The private key should be kept absolutely, 100\% secret.}
+  \li{The public key should be published as widely as possible.  You
+  should put your public key on your website, in a public directory of
+  public keys (like a phone book), and so on.}
+  \li{In order to send a message, the sender looks up the public key
+  of the recipient and uses it to encode the message.}
+  \li{The recipient decodes the message using their \em{private} key.}
+}
+}
+
+\p{In order for this to make sense the system should have a few
+properties:
+\ul{
+  \li{A public and private key work together so that messages
+  encrypted using a public key can \em{only} be decrypted using the
+  corresponding private key.}
+  \li{It should be impossible to figure out someone's corresponding
+  private key if you only know their public key.}
+}
+}
+
+\p{It is not at all obvious that such a scheme is even possible!  But it
+\em{is} possible using some clever mathematics.}

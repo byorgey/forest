@@ -1,0 +1,32 @@
+\title{Some key facts}
+\date{2026-07-17T11:45:23Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Here are a few mathematical and computational facts that you'll have to take on faith for now.
+
+\ul{
+  \li{\strong{Multiplying two large integers can be done very
+     quickly.}  By \em{large} we have in mind something like #{500}
+  digits.  This may sound like a lot, but a modern computer can multiply two
+  #{500}-digit numbers in a miniscule fraction of a second.  If you were
+  abducted by a sadistic math nerd, locked in a room, and told you
+  will not be let out until you correctly multiply two #{500}-digit
+  numbers, it would be tedious but you could do it.  You could probably
+  do it in an afternoon if you were focused and determined.
+  }
+
+  \li{
+  On the other hand, \strong{the opposite operation—factoring a large integer into its prime factors—is believed to be very difficult}. Given a #{1000}-digit number #{n}, there are approximately #{8 \times 10^{496}} primes less than  #{\sqrt{n}}. Even if you could test a trillion trillion trillion trillion trillion primes per second to see whether they are a divisor of #{n}, it would still take many lifetimes of the universe to try them all. We do know of better methods than that—but not anywhere near good enough to make it in any way feasible.
+  }
+
+  \li{
+  You might think that this means testing whether a number is prime is difficult too—surely, the only way to test whether a number is prime is to try factoring it? Surprisingly, this is false—\strong{it is possible to quickly test whether a number is prime \em{without} factoring it}! (In fact, most such tests rest fundamentally upon [[00I8]], which tells us that if #{p} is prime and #{p} does not divide #{a}, then #{a^{p-1} \equiv_p 1}—so we can take a number #{n} we want to test and some #{a < n} and compute #{a^{n-1} \mod n}. If we get something other than #{1}, then #{n} is definitely not prime. This isn’t a great test, but more sophisticated tests are based on similar ideas.)
+  }
+
+}
+
+}
+
+\p{These ingredients come together to give us [[00IG]].}

@@ -1,0 +1,25 @@
+\title{Encrypting messages with RSA}
+\date{2026-07-17T12:21:17Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{To \strong{encrypt} a message:
+\ul{
+  \li{Find or look up the public key values #{n} and #{e} for the desired recipient.}
+
+  \li{Turn the message into an integer #{M < n}. It does not matter how, as long as the sender and receiver agree on how this will be done. The method can even be public—knowing how the message is encoded as an integer will not help anyone read it once it is encrypted. In practice, most information that people want to encrypt is already stored on a computer as a sequence of bits, which can readily be interpreted as an integer. If the message is too long to fit into an integer which is less than #{n}, it can simply be broken into multiple parts, and each part encoded separately.}
+
+  \li{Compute #{C = M^e \mod n}. This can be done efficiently due to two key observations:
+  \ul{
+    \li{It is not necessary to first compute #{M^e} (which might be truly enormous) and then reduce modulo #{n} at the end. Because ##{(a\cdot b) \mod n = ((a \mod n) \cdot (b \mod n)) \mod n}, we can keep reducing modulo #{n} along the way, after every multiplication. That way, we never have to deal with numbers bigger than #{n^2}.}
+
+    \li{We don’t have to simply multiply #{M} by itself #{e} times. Instead we can use something called \em{repeated squaring}. For example, if we want to compute #{M^{16}}, we can first compute #{M \cdot M = M^2}; then we can square that to get #{(M^2) \cdot (M^2) = M^4}; squaring that yields #{(M^4) \cdot (M^4) = M^8}; and one final squaring yields #{M^{16}}. If we want an exponent which is not a power of two we can simply throw in some extra multiplications by #{M} (for example, if we want #{M^9} we can get #{M^8} as described above and then multiply by #{M}). In this way we can compute #{M} raised to very large powers with only a few multiplications (it takes about #{2 \log_2 e} multiplications in the worst case for exponent #{e}).}
+
+  }
+  }
+
+  \li{Send #{C}.}
+
+}
+}

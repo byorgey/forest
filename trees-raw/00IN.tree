@@ -1,0 +1,12 @@
+\date{2026-07-17T12:51:29Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\title{Digital signatures}
+
+\p{There is still a problem with this scheme. Under a symmetric cipher, where sender and receiver share a secret key, when the receiver gets a message encrypted using the secret key they can be sure it came from the sender (unless someone has stolen the secret key). However, in a public key system, anyone in the world can encrypt a message to the receiver, so the receiver has no way of knowing who the message is actually from. There is no \em{a priori} reason to trust who the message \em{says} it is from, because anyone can write a message that says “Hi, this is Alice” whether or not they are actually Alice.}
+
+\p{However, this problem can be solved very elegantly by noticing that the operations of encryption and decryption are symmetric, that is, #{(M^e)^d = (M^d)^e}. That is, a private key can actually be used to \em{encrypt} a message, and then the corresponding public key will work to decrypt it. So, suppose #{A} wants to send a secure message to #{B}, and they also want #{B} to be able to verify that the message actually came from them. Instead of directly encrypting the message for #{B}, first #{A} encrypts the message using #{A}’s \em{private} key. This is known as a \em{digital signature}. Then, #{A} takes the resulting signed message and encrypts it using #{B}’s public key as usual. When #{B} receives the encrypted message, they first decrypt it using their private key as usual. The result will not be readable since it has been encrypted using #{A}’s private key. But #{B} can now recover the original message by decrypting using #{A}’s \em{public} key, which will undo the effects of encrypting with #{A}’s private key. #{B} can now be sure the message came from #{A}, because the only way to make a message that can be successfully decrypted using #{A}’s public key would be to use #{A}’s private key; and the only person who can do that (assuming #{A}’s private key is secret) is #{A}.}
+
+
