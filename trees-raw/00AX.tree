@@ -5,7 +5,7 @@
 \import{discrete-macros}
 
 \taxon{Example}
-\p{The set #{2\N} of all even natural numbers is countably infinite, since #{f(n) = 2n} is a bijection between #{\N} and #{2\N}: ##{\begin{array}{cccccc}
+\p{The set #{2\N} of all even natural numbers is [countably infinite](00AT), since #{f(n) = 2n} is a bijection between #{\N} and #{2\N}: ##{\begin{array}{cccccc}
       \N: & 0 & 1 & 2 & 3 & \dots \\
          & \updownarrow& \updownarrow& \updownarrow& \updownarrow \\
       2\N: & 0 & 2 & 4 & 6 & \dots

@@ -1,0 +1,10 @@
+\title{Uncountable sets}
+\date{2026-07-16T15:05:19Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\transclude{00HY}    % Is everything countable?
+\transclude{00HZ}    % Q is countable!
+\transclude{00I0}    % Proving sets uncountable
+\transclude{00I1}    % Our first uncountable sets

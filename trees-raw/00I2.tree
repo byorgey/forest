@@ -1,0 +1,10 @@
+\import{discrete-macros}
+
+\title{\advanced The Chinese Remainder Theorem}
+\date{2026-07-16T21:14:40Z}
+\tag{discrete}
+
+\transclude{00I3}   % Warm-up: grids
+\transclude{00I4}   % CRT
+\transclude{00I5}   % More than 2 equations
+\transclude{00I6}   % Example with 3 equations

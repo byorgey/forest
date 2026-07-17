@@ -13,5 +13,7 @@
 \transclude{00EO}   % Divisibility tests
 \transclude{00ET}   % GCD + Euclidean Alg
 \transclude{00FE}   % Bézout and Extended Euclidean
-
-% XXX Include CRT, FLT, RSA
+\transclude{00I2}   % CRT
+\transclude{00I7}   % FLT
+\transclude{00IB}
+% XXX Include RSA

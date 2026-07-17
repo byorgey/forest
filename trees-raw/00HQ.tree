@@ -1,0 +1,12 @@
+\title{Euclid's Lemma}
+\date{2026-07-16T00:06:57Z}
+\tag{discrete}
+\taxon{Lemma}
+
+\import{discrete-macros}
+
+\p{If #{p} is a prime number and #{p \mid ab} (where #{a} and #{b} are arbitrary natural numbers), then either #{p \mid a} or #{p \mid b}.}
+
+\proof{
+  Let #{p} be an arbitrary prime number, #{a} and #{b} arbitrary natural numbers, and suppose #{p \mid ab}.  If #{p \mid a}, then we are done.  So suppose #{p \nmid a}.  Then we must have #{\gcd(p,a) = 1} (the only divisors of #{p} are #{p} and #{1}, and #{p} does not divide #{a}, so #{1} is the only possible [common divisor](00ET)).  Then by [[00FG]], there must exist #{s} and #{t} such that #{sp + ta = 1}.  Multiplying both sides by #{b} yields ##{spb + tab = b.}  Clearly #{p} divides #{spb}, and also #{p} divides #{tab}, since we supposed #{p \mid ab}.  Therefore, #{p} must also divide their sum, that is, #{b}.
+}

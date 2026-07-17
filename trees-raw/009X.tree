@@ -1,7 +1,6 @@
 \title{Defining functions in Disco}
 \date{2026-03-09T11:52:40Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
@@ -27,5 +26,3 @@ j(3n+2) = 17
 <<<
 
 \p{And we can still use the \code{:table} command to get Disco to show a table of example input-output values for a function.}
-
-% XXX fix Disco to show when numeric functions are partial, + include that here.

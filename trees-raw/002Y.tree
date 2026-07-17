@@ -1,7 +1,6 @@
 \title{Truth table for negation}
 \date{2025-12-16T02:02:14Z}
 \tag{discrete}
-\tag{draft}
 \taxon{Remark}
 
 \import{discrete-macros}
@@ -11,5 +10,5 @@ the truth value of #{\neg P} for each possible value of #{P}:
 ##{\begin{array}{cc}P & \neg P \\ \hline \True & \False \\ \False & \True \end{array}}
 }
 
-% XXX add section introducing truth tables in general
+\p{In general, a \em{truth table} is a table showing the value of some expression for every possible combination of values for some variables.  In this case, there is only one variable, so the table only has two rows—one for #{P = \True} and one for #{P = \False}.}
 

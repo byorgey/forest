@@ -1,0 +1,9 @@
+\title{Fermat's Little Theorem}
+\date{2026-07-16T22:20:37Z}
+\tag{discrete}
+\taxon{Theorem}
+
+\import{discrete-macros}
+
+\p{If #{p} is prime and #{a} is any integer such that #{p \nmid a}, then ##{a^{p-1} \equiv_p 1.}}
+

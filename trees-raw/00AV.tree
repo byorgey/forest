@@ -13,11 +13,12 @@
 \p{We can think of this scenario in several equivalent ways:
 \ul{
   \li{\p{#{A} is countable if it has a bijection to (a subset of) #{\N}. (definition)}}
-  \li{\p{#{A} is countable if its elements can be put in a list. (We can always number the elements of a list #{0, 1, 2, \dots}.)}}
+  \li{\p{#{A} is countable if all its elements can be put in a list. (We can always number the elements of a list #{0, 1, 2, \dots}.)}}
   \li{\p{#{A} is countable if we can write (or imagine) a program that prints the elements of #{A} one after another, in such a way that any given element of #{A} will eventually be printed after some finite amount of time (if we are willing to wait long enough).}}
 }
 }
 
-\transclude{00AX}
-\transclude{00AY}
-\transclude{00AZ}
+\transclude{00AX}    % 2N is countable
+\transclude{00AY}    % Z is countable
+\transclude{00AZ}    % NxN is countable
+\transclude{00HV}

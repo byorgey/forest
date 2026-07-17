@@ -1,12 +1,10 @@
 \title{[★](advanced) Countable and uncountable sets}
 \date{2026-03-12T13:32:02Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
-\transclude{00AO}
-\transclude{00AP}
-\transclude{00AQ}
-
-% XXX include classic diagonal proof that R is not countable
+\transclude{00AO}   % Motivation: matching vs counting
+\transclude{00AP}   % Motivation: infinite cardinality is weird
+\transclude{00AQ}   % Countable sets
+\transclude{00HX}

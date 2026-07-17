@@ -1,0 +1,7 @@
+\date{2026-07-16T02:21:20Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{The way we expand out #{\forall} and #{\exists} is very similar—but different in a crucial way. With [forall](00HR), we introduce an implication, whereas with [exists](00HS), we introduce a conjunction (and).  Hopefully the reasons make sense to you, but you can also just memorize this!}

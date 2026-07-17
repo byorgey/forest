@@ -1,0 +1,8 @@
+\title{Is everything countable?}
+\date{2026-07-16T15:05:37Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{At this point you might wonder if every infinite set is countable. (But if so, why is there a name for it?) In fact, there are some infinite sets that are \em{not} countable!}
+

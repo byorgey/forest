@@ -1,0 +1,10 @@
+\title{The rationals are countable!}
+\date{2026-07-16T15:06:30Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Let’s think about #{\Q}, the set of rational numbers. There are a lot, right? In between any two integers there are infinitely many rational numbers. If you pick two rational numbers that are really close together, there are infinitely many rational numbers between those. No matter how far you zoom in there will always be infinitely many rational numbers in the part of the number line you are looking at! It is like infinitely fuzzy fuzz. Surely there are more rational numbers than there are natural numbers, right?}
+
+\p{Wrong! A rational number is just a pair of integers: a numerator and a denominator. The function #{f : \Q \to \Z \times \Z} that sends the rational number #{p/q} to the pair #{(p,q)} is injective: if two rational numbers are not the same, #{p/q \neq r/s}, then certainly the pairs #{(p,q)} and #{(r,s)} are not the same. So #{|\Q| \leq |\Z \times
+\Z| = |\N|}! If you weren’t weirded out by the fact that #{|\N \times \N| = |\N|} before, you should be now.}

@@ -1,0 +1,17 @@
+\date{2026-07-16T10:48:42Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{As a final example, let’s encode the statement “Every even natural number can be written as the sum of two primes” in formal propositional logic. Assume we have a predicate #{\mathrm{Prime}(n)} meaning “#{n} is prime” (we will [see how to define this later](00ED)).  First, we can write it directly as ##{\all{n}{\Even} \ext{p}{\Prime} \ext{q}{\Prime} n = p + q.} We can now progress from left to right, expanding each quantifier into one that uses a more primitive domain:}
+\p{
+\stmt{\all{n}{\Even} \ext{p}{\Prime} \ext{q}{\Prime} n = p + q}
+\reason{\equiv}{[[00HR]]}
+\stmt{\all{n}{\N} \Even(n) \to (\ext{p}{\Prime} \ext{q}{\Prime} n = p + q)}
+\reason{\equiv}{[[00HS]]}
+\stmt{\all{n}{\N} \Even(n) \to (\ext{p}{\N} \Prime(p) \land (\ext{q}{\Prime} n = p + q))}
+\reason{\equiv}{[[00HS]]}
+\stmt{\all{n}{\N} \Even(n) \to (\ext{p}{\N} \Prime(p) \land (\ext{q}{\N} \Prime(q) \land (n = p + q)))}
+}
+\p{Incidentally, this proposition is definitely false as written, since 0 and 2 cannot be written as a sum of primes.  However, if we add a restriction that #{n > 2}, this is the famous \em{Goldbach conjecture}, which we think is probably true, but no one has been able to prove!}

@@ -1,0 +1,11 @@
+\import{discrete-macros}
+
+\title{\advanced Fermat's Little Theorem}
+\date{2026-07-16T22:20:01Z}
+\tag{discrete}
+
+\p{If you play around a bit with arithmetic modulo #{p}, one natural question you might end up asking is: if I start with some number #{a} and keep multiplying #{a} by itself (reducing modulo #{p} every time), will I ever reach #{1}? If so, how many times do I have to multiply by #{a} before reaching #{1}? If you did this when #{p} is a prime, you would quickly notice that you always seem to reach #{1} eventually, and that the number of iterations needed is always a divisor of #{p-1}. This leads us to:}
+
+\transclude{00I8}   % Theorem statement
+\transclude{00I9}   % Remark
+\transclude{00IA}   % Proof

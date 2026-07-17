@@ -1,0 +1,15 @@
+\title{Proof of Fermat's Little Theorem}
+\date{2026-07-16T22:22:13Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\proof{
+\p{Consider the set ##{S = \{a \mod p, 2a \mod p, 3a \mod p, \dots, (p-1)a \mod p\}.} For example, if #{p = 7} and #{a = 3}, we get the set ##{\{3, 6, 2, 5, 1, 4\}.} Notice how this contains every integer between #{1} and #{6}.}
+
+\p{We can make this precise: we claim that if #{p \nmid a} then #{S} contains every number in #{\{1, \dots, (p-1)\}} exactly once. For suppose there are two multiples of #{a} in #{S} which are equivalent modulo #{p}, that is, ##{ja \equiv_p ka.} Then [by definition](00D6), #{p \mid (ja - ka)} and so #{p \mid (j-k)a}. Since #{p} does not divide #{a} and #{p} is prime, [it must divide](00HQ) #{(j-k)}. But #{j} and #{k} are both greater than #{0} and less than #{p}, so their difference cannot be as small as #{-p} or as big as #{p}. The only way #{j-k} could be divisible by #{p} is if #{j - k = 0}, that is, #{j=k}. This shows that the two “different” multiples of #{a} with the same remainder modulo #{p} actually have to be the same—or, put another way, any two truly different multiples of #{a} must also have different remainders modulo #{p}.}
+
+\p{Now consider taking the product of all the elements of #{S}: ##{a \cdot 2a \cdot 3a \cdot \dots \cdot (p-1)a = a^{p-1}(p-1)!} If we consider this modulo #{p}, we know that every possible remainder from #{1} up to #{(p-1)} occurs exactly once, so ##{a \cdot 2a \cdot 3a \cdot \dots \cdot (p-1)a \equiv_p 1 \cdot 2
+    \cdot 3 \cdot \dots \cdot (p-1).} Putting these together, ##{a^{p-1}(p-1)! \equiv_p (p-1)!.} Since #{(p-1)!} shares no common factors with #{p} (#{p} is prime, and #{(p-1)!} is the product of a bunch of numbers less than #{p}, so #{p} cannot possibly be a divisor of #{(p-1)!}), it has an [inverse](00FK) modulo #{p}, and we are justified in canceling it from both sides of the equation. This leaves us with ##{a^{p-1} \equiv_p 1,} which is what we wanted to show.}
+
+}

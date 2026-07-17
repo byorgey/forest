@@ -1,0 +1,27 @@
+\title{[★](advanced) Uniqueness of prime factorizations}
+\date{2026-07-16T00:02:45Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{The [Fundamental Theorem of Arithmetic](00EG) claims not only that every positive integer can be written as a product of [primes](00ED), but that there is essentially only one way to do it—as long as we do not care about the \em{order} of the prime factors.  That is, we consider #{2 \times 3} and #{3 \times 2} to be the \em{same} factorization of #{6}, since the only difference is the order of the factors.}
+
+\p{First we need a key lemma.}
+
+\transclude{00HQ}
+
+\p{Now we can prove uniqueness of prime factorizations.}
+
+\proof{
+  The proof is by [strong induction](00CM).  Specifically, we show that for every #{n \geq 1}, if #{n} has two prime factorizations, that is, if #{n = p_1 p_2 \cdots p_j = q_1 q_2 \cdots q_k} where all the #{p}'s and #{q}'s are prime, then the two prime factorizations must be the same (but with the primes possibly in a different order).
+
+  \subproof{In the base case, clearly the only way to get #{n = 1} as the product of a list of primes is to use the empty list of primes, which is unique.}
+
+  \subproof{
+    \p{Now let #{n} be arbitrary, and suppose we already know
+    that the prime factorizations for every number less than #{n} are
+    unique; we must show this is true for #{n} as well.  So suppose ##{n = p_1 p_2 \cdots p_j = q_1 q_2 \cdots q_k.}}
+
+    \p{Consider #{p_1}.  Since #{p_1 \mid n}, then #{p_1 \mid q_1 q_2 \cdots q_k}.  By [[00HQ]], either #{p_1 \mid q_1} or #{p_1 \mid q_2 \cdots q_k}.  If #{p_1 \mid q_1} then in fact #{p_1 = q_1}, since #{p_1} and #{q_1} are both prime.  Otherwise, again by [[00HQ]] either #{p_1 \mid q_2} (and hence #{p_1 = q_2}) or #{p_1 \mid q_3 \cdots q_k}, and so on.  In the end, #{p_1} must be equal to one of the #{q}'s.  We can therefore cancel #{p_1} from both sides, resulting in two prime factorizations for the smaller number #{n/p_1}.  By the induction hypothesis, the two prime factorizations must be the same—hence the two prime factorizations for #{n} were the same in the first place.}
+  }
+}

@@ -1,0 +1,7 @@
+\date{2026-07-16T15:02:35Z}
+\tag{discrete}
+\taxon{Challenge}
+
+\import{discrete-macros}
+
+\p{Work out the details of showing that this is valid. For example, we need to know that if #{f : A \to B} is a bijection then we can use it to make a bijection between #{A \times C} and #{B \times C}; we also need to know that chaining two bijections together will give another bijection.}

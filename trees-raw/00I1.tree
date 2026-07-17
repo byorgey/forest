@@ -1,0 +1,28 @@
+\title{Our first uncountable set}
+\date{2026-07-16T15:11:24Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Consider the set #{I} of real numbers between #{0} (inclusive) and #{1} (exclusive). Each such real number can be written as an infinite decimal, ##{0.d_1 d_2 d_3 d_4 \dots} (Note this even works for things with finite decimal expansions because we can stick an infinite number of zeros on the end, like #{1/2 = 0.500000000\dots}. There is also a finicky issue with some real numbers having multiple representations as infinite decimals, for example, #{0.5000000000\dots = 0.4999999999\dots}, but we’re not going to worry about this for now. It’s annoying but not too hard to deal with this.)
+}
+
+\p{Now, suppose we have a list of real numbers. It might start something like this: ##{\begin{align*}
+  r_1 &= 0.d_{11}d_{12}d_{13}d_{14}\dots \\
+  r_2 &= 0.d_{21}d_{22}d_{23}d_{24}\dots \\
+  r_3 &= 0.d_{31}d_{32}d_{33}d_{34}\dots \\
+  r_4 &= 0.d_{41}d_{42}d_{43}d_{44}\dots \\
+      &\vdots
+\end{align*}} Remember that this list represents a function #{\N \to I}. We claim that no matter what this function is, it is not surjective, that is, there is at least one real number in the interval #{I} that gets left out. We’re going to build a real number ##{0.c_1 c_2 c_3 c_4 \dots} by specifying it digit-by-digit.}
+
+
+\ul{\li{\p{For the first digit, #{c_1}, pick any digit which is not equal to #{d_{11}}, the first digit of the first number in the list.}
+}
+\li{\p{For the second digit, #{c_2}, pick any digit which is not equal to #{d_{22}}, the second digit of the second number in the list.}
+}
+\li{\p{…and so on: for digit #{c_i} pick any digit which is not equal to #{d_{ii}}, the #{i}th digit of the #{i}th number in the list.}
+}
+}
+\p{We now claim that the resulting number #{c = 0.c_1c_2c_3c_4\dots} is nowhere on the list! It cannot be equal to #{r_1}, because #{c} and #{r_1} have different first digits. It cannot be equal to #{r_2}, because they differ in their second digits. It cannot be equal to any #{r_i}, because the #{i}th digit of #{c} was chosen in such a way that it is different than the corresponding digit of #{r_i}.}
+
+\p{We assumed nothing about our list of real numbers other than the fact that it was a list; we have therefore shown that \em{any} list of real numbers in the interval #{I} must necessarily be incomplete. Therefore, it is not possible to create a bijection between #{\N} and #{I}, so the set of real numbers in the interval #{I} is uncountable. (Of course, this means the entire set of real numbers #{\R} is uncountable too.)}

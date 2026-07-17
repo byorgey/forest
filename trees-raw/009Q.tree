@@ -1,7 +1,6 @@
 \title{Visualizing functions}
 \date{2026-03-09T11:25:28Z}
 \tag{discrete}
-\tag{draft}
 \taxon{Remark}
 
 \import{discrete-macros}
@@ -10,7 +9,32 @@
 set to dots in another set.  Each dot on the left-hand side must have
 exactly one arrow coming out of it.}
 
-% XXX include an actual drawing?
+\diagram{*}{300}{\verb<<<|
+dotRad :: Double
+dotRad = 0.2
+
+padding = 0.7
+
+setDia :: Int -> Diagram B
+setDia n = mconcat
+  [ roundedRect (2*(dotRad + padding)) (fromIntegral n * (2*dotRad + padding) + padding) (dotRad + padding)
+    # alignT # translateY padding
+  , vsep padding (replicate n elt # zipWith named [0 :: Int ..]) # alignT
+  ]
+
+elt = circle dotRad # fc black
+
+arrowOpts = with & arrowHead .~ dart & headLength .~ local 0.4
+
+dia =
+  ["a" .>> setDia 5, "b" .>> setDia 4]
+  # map centerY
+  # hsep 4
+  # applyAll [connectOutside' arrowOpts (x .> y) (z .> w) |
+      (x,y,z,w) <- ([("a", 0, "b", 1), ("a", 1, "b", 0), ("a",2,"b",1), ("a",3,"b",3), ("a",4,"b",3)] :: [(String, Int, String, Int)])]
+  # frame 0.2
+
+<<<}
 
 \p{Note that, according to the definition, it is valid for a function
 to have an empty domain.}

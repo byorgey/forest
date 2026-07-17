@@ -1,0 +1,9 @@
+\title{Chinese Remainder Theorem with more than two equivalences}
+\date{2026-07-16T21:47:40Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{One way to understand the [[00I4]] is that it gives us a way to replace any two equations #{x \equiv_m a} and #{x \equiv_n b} with a single equation #{x \equiv_{mn} c} (as long as #{m} and #{n} share no common factors). If we have more than two equations, we can simply iterate this process.}
+

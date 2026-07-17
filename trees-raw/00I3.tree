@@ -1,0 +1,26 @@
+\title{Warm-up}
+\date{2026-07-16T21:27:57Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{
+\diagram{200}{*}{\verb<<<|
+import CRT
+dia = crtGrid 4 5 # frame 0.1
+<<<}
+}
+
+\p{What patterns do you notice?  How was the above grid constructed? Can
+you do something similar with other grid sizes?}
+
+\p{Some grid sizes don't work because not all the cells get filled up:}
+
+\p{
+\diagram{200}{*}{\verb<<<|
+import CRT
+dia = crtGrid 4 6 # frame 0.1
+<<<}
+}
+
+\p{Which sizes work and which sizes don't?}

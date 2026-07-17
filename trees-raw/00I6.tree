@@ -1,0 +1,17 @@
+\date{2026-07-16T21:49:11Z}
+\tag{discrete}
+\taxon{Example}
+
+\import{discrete-macros}
+
+\p{Solve the system of equivalences
+  ##{\begin{align*}
+    x &\equiv_5 1 \\
+    x &\equiv_6 2 \\
+    x &\equiv_7 3.
+  \end{align*}}
+}
+
+\p{The first step is to solve the first two equivalences, combining them into a single equivalence.  We can verify that #{5} and #{6} are indeed relatively prime, and #{5(-1) + 6(1) = 1}.  Then according to the [Chinese Remainder Theorem proof](00I4), we can combine the first two equivalences into a single equivalence ##{x \equiv_{5 \cdot 6} 2 \cdot 5 \cdot (-1) + 1 \cdot 6 \cdot 1 = -4 \equiv_{30} 26.}}
+
+\p{At this point we can verify that #{26 \equiv_5 1} and #{26 \equiv_6 2}, as required.  So now we are down to a system of two equations: ##{\begin{align*} x &\equiv_{30} 26 \\ x &\equiv_7 3. \end{align*}}  We can repeat the process to combine this into a single solution.  First, we can use the [extended Euclidean algorithm](00FH) to compute that #{30(-3) + 7(13) = 1}.  The solution for #{x} is thus ##{x \equiv_{30 \cdot 7} 3 \cdot 30 \cdot (-3) + 26 \cdot 7 \cdot 13 = 2096 \equiv_{210} 206.}  Hence the final solution for #{x} is ##{x \equiv_{210} 206,} and we can verify that this satisfies each of the original three equivalences.}

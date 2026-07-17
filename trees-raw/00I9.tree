@@ -1,0 +1,9 @@
+\date{2026-07-16T22:21:45Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{This seems kind of weird and random, but in fact this theorem expresses something really fundamental about the way multiplication works modulo #{p}. As we will see, this theorem forms an important basis for a lot of modern cryptography. It’s also the basis for how tests for primality work. Consider the contrapositive: if #{a^{p-1}
+\not \equiv_p 1}, then #{p} is not prime. So given a number #{p} we can pick some #{a} that shares no common factors with #{p}, and try computing #{a^{p-1} \bmod p}. If we get #{1}, we can’t conclude anything; but if we get any result other than #{1}, we know for sure that #{p} is not prime (though it doesn’t tell us what the factors of #{p} are!). This is not a great test by itself, it turns out, but it is the basis for more sophisticated tests.}
+

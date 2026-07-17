@@ -1,0 +1,10 @@
+\title{Expanding restricted exists}
+\date{2026-07-16T02:13:48Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{We can do something similar with "exists" statements.  For example, how would we encode the proposition "there exists an even integer which is equal to 2"?  Again, one way would be ##{\ext{x}{\Even} x = 2,} but I claim this is equivalent to ##{\ext{x}{\Z}{\Even(x) \land (x = 2)}.}  In the original proposition, we are claiming that an element of the smaller set #{\Even} exists with a certain property.  In the expanded version, we are claiming that an element of #{\Z} exists with a certain property—but in order to re-focus on just the even integers, the property we claim is that the integer is a member of #{\Even} \em{and} is equal to 2.}
+
+\p{In general, suppose #{D} is some domain and #{S} is a subset of #{D}, and let #{S(x)} be a predicate meaning “#{x} is a member of #{S}”. Then ##{\ext{x}{S} P(x) \equiv \ext{x}{D} S(x) \land P(x).}  In other words, we can translate ##{\ext{x}{S} \dots} into ##{\ext{x}{D} S(x) \land \dots.}}
+

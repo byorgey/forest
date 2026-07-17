@@ -1,12 +1,8 @@
 \title{Proving a function is a bijection}
 \date{2026-03-10T11:25:05Z}
 \tag{discrete}
-\tag{draft}
 
 \import{discrete-macros}
 
 \taxon{Remark}
-\p{Normally, to prove a function is a bijection we can show it is both 1-1 and onto. Alternatively, it turns out we can show it has an inverse. Careful though, to prove #{g} is the inverse of #{f} we have to prove \em{both} #{g(f(a)) = a} for all #{a} in the domain of #{f}, \em{and} #{f(g(b)) = b} for all #{b} in the codomain. (\em{Exercise}: prove that if there is a function #{g} such that #{g(f(a)) = a} for all #{a} in the domain of #{f}, then #{f} is injective; likewise, if there is #{g} such that #{f(g(b)) = b} for all #{b} in the codomain, then #{f} is surjective.)}
-
-
-% XXX expand/clarify?
+\p{Normally, to prove a function is a [bijection](00AG), we can show it is both [1-1](00A0) and [onto](00A8). Alternatively, it turns out we can show it has an [inverse](00AG). However, we must be careful: to prove #{g} is the inverse of #{f}, we have to prove \em{both} #{g(f(a)) = a} for all #{a} in the domain of #{f}, \em{and} #{f(g(b)) = b} for all #{b} in the codomain. (\em{Exercise}: prove that if there is a function #{g} such that #{g(f(a)) = a} for all #{a} in the domain of #{f}, then #{f} is injective; likewise, if there is #{g} such that #{f(g(b)) = b} for all #{b} in the codomain, then #{f} is surjective.)}

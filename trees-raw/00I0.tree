@@ -1,0 +1,20 @@
+\title{Proving a set uncountable}
+\date{2026-07-16T15:07:58Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Are there any non-countable sets? How would we prove it if there were? Let’s use our superpower:}
+##{
+\begin{align*}
+  &\phantom{\equiv} \neg \mathrm{Countable}(A) \\
+  &\equiv \neg \exists f:\N \to A \st \mathrm{Bijective}(f) \\
+  &\equiv \neg \exists f:\N \to A \st \mathrm{Injective}(f) \land
+    \mathrm{Surjective}(f) \\
+  &\equiv \forall f:\N \to A \st \neg \mathrm{Injective}(f) \lor
+    \neg \mathrm{Surjective}(f)
+\end{align*}
+}
+
+\p{So to prove that a set #{A} is not countable, we must show that for \em{every} possible function #{f} from #{\N} to #{A}, either #{f} is not injective or it is not surjective. Note that a function from #{\N} to #{A} is the same as an infinite list of values from the set #{A}. So we have to show that every possible infinite list of #{A} either has repeated elements, or leaves some elements out.}
+

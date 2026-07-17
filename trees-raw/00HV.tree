@@ -1,0 +1,13 @@
+\title{#{\N \times \N \times \N} is countable}
+\date{2026-07-16T15:00:38Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{Once we have this idea, we can see that #{\N \times \N \times \N} must also be [countable](00AT): we can either explicitly list them by “diagonal slices” through the corner of the infinite 3D cube; or we can just observe that we can do the #{\N \times \N \to \N} bijection twice to get a bijection ##{(\N \times \N) \times \N \to \N \times \N \to
+\N}.}
+
+\put\transclude/expanded{false}
+\transclude{00HW}
+
+\p{Likewise, #{\N^4}, #{\N^5}, and any finite Cartesian product of #{\N} with itself is also countable.}

@@ -1,0 +1,25 @@
+\title{Chinese Remainder Theorem}
+\date{2026-07-16T21:31:31Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{For all #{a,b \in \Z}, if #{\gcd(m,n) = 1} then the system of equivalences ##{\begin{align*}
+    x &\equiv_m a \\
+    x &\equiv_n b
+\end{align*}} has a unique solution modulo #{mn}.}
+
+\proof{
+  Since #{\gcd(m,n) = 1}, [[00FG]] tells us that there exist integers #{s} and #{t} such that #{sm + tn = 1} (and we can compute them using the [extended Euclidean algorithm](00FH)).  Then we claim that ##{x \equiv_{mn} atn + bsm} is a solution to the system of equivalences for #{x}.  First, to see that #{atn + bsm \equiv_m a}, we reason as follows:
+\stmt{atn + bsm}
+\reason{=}{#{sm + tn = 1}; substitute #{1 - sm} for #{tn}}
+\stmt{a(1 - sm) + bsm}
+\reason{=}{expand}
+\stmt{a - asm + bsm}
+\reason{=}{factor out #{sm}}
+\stmt{a + (b - a)sm}
+\reason{\equiv_m}{#{a} plus a multiple of #{m}}
+\stmt{a}
+
+The proof that #{atn + bsm \equiv_n b} is similar.
+}

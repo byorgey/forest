@@ -1,0 +1,9 @@
+\title{Expanding restricted forall}
+\date{2026-07-16T01:00:03Z}
+\tag{discrete}
+
+\import{discrete-macros}
+
+\p{How would we encode the (false) proposition “every even integer is equal to 2”? The most straightforward way is to write ##{\all{x}{\Even} x = 2.} However, there is a logically equivalent way that uses a more primitive domain: ##{\all{x}{\Z} \Even(x) \to (x = 2).}  Why does this work?  In the case of #{\all{x}{\Even} x = 2}, we are directly making a statement about every element of the set of even numbers.  In the case of #{\all{x}{\Z} \Even(x) \to (x = 2)}, it looks like we are making a broader statement about all integers—but the implication #{\Even(x) \to \dots} restricts it again to only saying something interesting about even numbers.  For odd numbers, we will end up with #{\False \to \dots} which is equivalent to \True.}
+
+\p{More generally, suppose #{D} is some domain and #{S} is a subset of #{D}, and let #{S(x)} be a predicate meaning “#{x} is a member of #{S}”. Then ##{\all{x}{S} P(x) \equiv \all{x}{D} S(x) \to P(x).}  In other words, we can translate ##{\all{x}{S} \dots} into ##{\all{x}{D} S(x) \to \dots.}}
