@@ -15,19 +15,4 @@
   \p{\imgasset{loon.jpg}}
 }
 
-\subtree{
-  \title{Lilypond snippets in Forester}
-
-  \p{I built a simple preprocessor that can extract arbitrary blocks from Forester source and run them through an external tool, replacing the block with an image. I then put the whole thing together into a [Shake](https://hackage.haskell.org/package/shake) [build system for my forest](https://github.com/byorgey/forest/blob/main/Shake.hs).  Now I can include musical snippets, like this:}
-
-\lilypond{\verb<<<|
-  \relative
-  { \time 4/4 \key c \major
-    c'4 c g' g a a g2
-  }
-<<<}
-
-  \p{I've been slowly adding musical snippets to identify the first few bars of pieces in my [piano repertoire](00H7).  For example, check out [[00HA]].}
-
-  \p{Next I'll extend the preprocessor to work with [diagrams](https://diagrams.github.io/) as well.}
-}
+\transclude{00IO}

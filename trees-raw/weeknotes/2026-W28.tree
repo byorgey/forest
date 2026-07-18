@@ -1,0 +1,28 @@
+\import{swarm-macros}
+
+\title{Weeknotes for 17 July 2026 (week 28)}
+\author{brentyorgey}
+\date{2026-07-18}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+
+\subtree{
+  \title{Diagrams in Forester!}
+
+  \p{Shortly after adding the ability to [embed lilypond snippets](00IO) in my forest, I finished adding support for embedded [diagrams](https://diagrams.github.io/) code as well:
+
+\diagram{200}{*}{\verb<<<|
+dia = hcat [circle 1 # fc red, circle 1 # fc green, circle 1 # fc blue] # lw thick # frame 0.3
+<<<}
+  }
+
+  \p{I'm super excited that I finally got this to work.  I've already used it to add some diagrams to my [Discrete math lecture notes](0021), for example, [here](00I3).  If you're curious to see how this works, check out the [Shake file here](https://github.com/byorgey/forest/blob/main/Shake.hs).}
+}
+
+\subtree{
+  \title{Maine}
+
+  \p{Continuing to hang out in Maine.  I've eaten a lot of ice cream, played a \em{lot} of Hanabi, spent part of a day riding again at [Mt. Abram Bike Park](https://www.mtabram.com/) (I only almost died twice), \etc}
+}
