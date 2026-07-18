@@ -1,7 +1,9 @@
+\import{base-macros}
+
 \date{2026-07-10}
 \title{Lilypond snippets in Forester}
 
-\p{I built a simple preprocessor that can extract arbitrary blocks from Forester source and run them through an external tool, replacing the block with an image. I then put the whole thing together into a [Shake](https://hackage.haskell.org/package/shake) [build system for my forest](https://github.com/byorgey/forest/blob/main/Shake.hs).  Now I can include musical snippets, like this:}
+\p{I built a simple preprocessor that can extract arbitrary blocks from Forester source and run them through an external tool, replacing the block with an image. I then put the whole thing together into a [Shake](https://hackage.haskell.org/package/shake) [build system for my forest](https://github.com/byorgey/forest/blob/main/Shake.hs).  Now I can include musical snippets using [lilypond](https://lilypond.org/) syntax, like this:}
 
 \lilypond{\verb<<<|
   \relative

@@ -3,7 +3,7 @@
 \title{Embedding diagrams in Forester}
 
 \p{I would really like to be able to use [[000S]] from within
-rester, so I spent a bit of time working on a
+Forester, so I spent a bit of time working on a
 \code{diagrams-forester} preprocessor tool.  The idea is that it will look for special sentinel blocks that look like
 \pre\verb+++|
 \diagram{w}{h}{\verb<<<|

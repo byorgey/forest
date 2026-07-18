@@ -5,3 +5,4 @@ rm -rf assets/blocks/*
 rm -rf .shake
 rm -rf _shake
 
+mkdir -p trees/source

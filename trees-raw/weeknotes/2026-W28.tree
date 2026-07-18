@@ -7,11 +7,10 @@
 
 \put\transclude/numbered{false}
 
-
 \subtree{
   \title{Diagrams in Forester!}
 
-  \p{Shortly after adding the ability to [embed lilypond snippets](00IO) in my forest, I finished adding support for embedded [diagrams](https://diagrams.github.io/) code as well:
+  \p{Shortly after adding the ability to [embed lilypond snippets](00IO) in my forest, I [finished adding support](00H5) for embedded [diagrams](https://diagrams.github.io/) code as well:
 
 \diagram{200}{*}{\verb<<<|
 dia = hcat [circle 1 # fc red, circle 1 # fc green, circle 1 # fc blue] # lw thick # frame 0.3

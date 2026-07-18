@@ -36,7 +36,7 @@ main = shakeArgs shakeOptions $ do
   "trees//*.tree" %> \out -> do
     let rawTree = replaceDirectory1 out "trees-raw"
     need [rawTree]
-    blocks <- liftIO $ extractBlocks rawTree out "_blocks"
+    blocks <- liftIO $ extractBlocks rawTree out "trees/source" "_blocks"
     need ["assets/blocks" </> block <.> "png" | block <- blocks]
 
   "assets/blocks/*.ly.png" %> \out -> do
@@ -53,12 +53,13 @@ main = shakeArgs shakeOptions $ do
 
 -- Extract lilypond + diagrams blocks. Produces:
 --   - Corresponding .tree file in trees/, with blocks replaced by images
+--   - .tree file with original source in trees/HASH.tree
 --   - Each block extracted to an appropriate file _blocks/HASH.ext
 -- Returns list of extracted block files
-extractBlocks :: FilePath -> FilePath -> FilePath -> IO [FilePath]
-extractBlocks rawTreeFile processedTreeFile blocksDir = do
+extractBlocks :: FilePath -> FilePath -> FilePath -> FilePath -> IO [FilePath]
+extractBlocks rawTreeFile processedTreeFile treesDir blocksDir = do
   tree <- T.readFile rawTreeFile
-  (tree', blockFiles) <- runWriterT $ interpolate (blockStart (eitherP lilypondStart diagramStart)) blockEnd (processBlock blocksDir) tree
+  (tree', blockFiles) <- runWriterT $ interpolate (blockStart (eitherP lilypondStart diagramStart)) blockEnd (processBlock treesDir blocksDir) tree
   T.writeFile processedTreeFile tree'
   pure blockFiles
 
@@ -86,8 +87,8 @@ lilypondHeader =
 
   """
 
-processBlock :: FilePath -> Either () DiagramMetadata -> [Text] -> WriterT [FilePath] IO [Text]
-processBlock blockDir blockType ls = do
+processBlock :: FilePath -> FilePath -> Either () DiagramMetadata -> [Text] -> WriterT [FilePath] IO [Text]
+processBlock srcDir blockDir blockType ls = do
   let content = T.unlines ls
       hx = hashToHexStr $ hash content
       showSize = maybe "*" show
@@ -98,10 +99,22 @@ processBlock blockDir blockType ls = do
       header = case blockType of
         Left {} -> lilypondHeader
         _ -> ""
+
+      srcHeader =
+        """
+        \\taxon{Source}
+        \\p{\\pre\\verb<<<|
+
+        """
+      srcFooter =
+        """
+        <<<}
+        """
   liftIO $ T.writeFile (blockDir </> blockFile) (header <> content)
+  liftIO $ T.writeFile (srcDir </> hx <.> "tree") (srcHeader <> content <> srcFooter)
   tell [blockFile]
 
-  pure ["\\imgblock{" <> T.pack pngFile <> "}"]
+  pure ["\\imgblock{" <> T.pack hx <> "}{" <> T.pack pngFile <> "}"]
 
 -- | Given a recognizer that extracts some information from a starting
 --   line, a predicate recognizing an ending line, and a function for
