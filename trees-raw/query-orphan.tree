@@ -1,0 +1,18 @@
+\def\rel/in-forest{byorgey.query.in-forest}
+\def\rel/orphan{byorgey.query.orphan}
+
+\execute\datalog{
+  \rel/in-forest @{index} -:
+}
+
+\execute\datalog{
+  \rel/in-forest ?X -: {\rel/in-forest ?Y} {\rel/transcludes ?Y ?X}
+}
+
+\execute\datalog{
+  \rel/in-forest ?X -: {\rel/in-forest ?Y} {\rel/links-to ?Y ?X}
+}
+
+% \execute\datalog{
+%   \rel/orphan ?X -: # {\rel/in-forest ?X}
+% }

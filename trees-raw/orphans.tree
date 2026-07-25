@@ -1,0 +1,9 @@
+\import{query-orphan}
+
+\query\datalog{
+  ?X -: {\rel/in-forest ?X}
+}
+
+% \query\datalog{
+%   ?X -: {\rel/orphan ?X}
+% }
