@@ -19,11 +19,22 @@
 
 \subtree{
 
-  \title{Other}
+  \title{Unpolished}
 
   \p{Pieces that I am learning, or pieces that I used to know but have fallen out of practice.}
 
   \query\datalog{
     ?X -: {\rel/has-tag ?X '{repertoire}} {\rel/has-tag ?X '{unpolished}}
+  }
+}
+
+\subtree{
+
+  \title{To Learn}
+
+  \p{Pieces that I would like to learn!}
+
+  \query\datalog{
+    ?X -: {\rel/has-tag ?X '{repertoire}} {\rel/has-tag ?X '{tolearn}}
   }
 }

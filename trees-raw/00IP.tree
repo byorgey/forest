@@ -1,0 +1,24 @@
+\title{Flight of the Bumblebee (arr. Rachmaninoff)}
+\author{rachmaninoff}
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+\tag{rachmaninoff}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 2/4 \key a \minor
+    e'16 ds d cs c f e ds |
+    e ds d cs c cs d ds |
+  }
+  \new Dynamics
+  { s16 \pp
+  }
+  \new Staff \relative
+  { \clef bass \key a \minor
+    <a, e' c'>8 r8 r4 |
+    <a e' c'>8 r8 <d fs a>8 r8
+  }
+>>
+<<<}
