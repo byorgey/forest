@@ -1,0 +1,17 @@
+\title{Islamey}
+\author{balakirev}
+\import{base-macros}
+\tag{repertoire}
+\tag{unpolished}
+
+\lilypond{\verb<<<|
+  \new Staff \relative
+  { \clef bass \time 12/16 \key df \major \tempo "Allegro agitato"
+    <<
+    \new Voice = "first"
+      \relative { \voiceOne s16 bf bf s a bf s gf a s df c s af af s f gf s bf af s8. }
+    \new Voice = "second"
+      \relative { \voiceTwo bf16 \f s s bf s s gf s s bf s s | af s s af s s af s s f8.-> }
+    >>
+  }
+<<<}
