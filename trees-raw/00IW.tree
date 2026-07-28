@@ -1,0 +1,20 @@
+\title{[BI03] Invention in D major}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{unpolished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 3/8 \key d \major
+    \partial 8 d'16 e | fs e\( g fs e d\) | a' g\( fs e fs d\) |
+    a'8 b cs16 \mordent d | cs8 \prall \grace b a cs16 d
+  }
+  \new Staff \relative
+  { \clef bass \key d \major
+    \partial 8 r8 | r r r | r r d16 e |
+    fs e\( g fs e d\) | a' g\( fs e fs d\)
+  }
+>>
+<<<}

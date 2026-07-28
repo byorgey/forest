@@ -1,0 +1,18 @@
+\title{[BI14] Invention in B♭ major}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 4/4 \key bf \major
+    r16 bf'32 c d c bf16 f' d bf' f d f32 ef d ef f16 bf, d f, af
+  }
+  \new Staff \relative
+  { \clef bass \key bf \major
+    bf8 bf, d f bf4 r4
+  }
+>>
+<<<}

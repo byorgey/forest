@@ -1,0 +1,22 @@
+\title{[BI09] Invention in F minor}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 3/4 \key f \minor
+    c''16( bf af g) af8 f df'4~ |
+    df16 c( bf a) bf8 g e'4~ |
+    e16 f( g af) bf8( g16 e) df8( c)
+  }
+  \new Staff \relative
+  { \clef bass \key f \minor
+    f,8 f'~ f16 g( af g f ef df c) |
+    bf8 g'~ g16 af( bf af g f e d) |
+    c( d e f g af bf g f e f e)
+  }
+>>
+<<<}

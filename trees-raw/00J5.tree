@@ -1,0 +1,18 @@
+\title{[BI12] Invention in A major}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{unpolished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 12/8 \key a \major
+    a'4 \mordent a8 a4 \mordent a8 b2. \upmordent
+  }
+  \new Staff \relative
+  { \clef bass \key a \major
+    a16 b cs b a gs fs gs a gs fs e d fs a fs d fs b, d fs d b d
+  }
+>>
+<<<}

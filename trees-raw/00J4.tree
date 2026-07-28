@@ -1,0 +1,20 @@
+\title{[BI11] Invention in G minor}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 4/4 \key g \minor
+    r16 d' e fs g a bf g a g fs e d c' bf a |
+    g f e d c bf' a g d' c bf d c bf a c
+  }
+  \new Staff \relative
+  { \clef bass \key g \minor
+    g,4 r8 g' fs16 g a g fs8 f |
+    e16 f g f e8 ef d g4 \mordent fs8
+  }
+>>
+<<<}

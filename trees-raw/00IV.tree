@@ -1,0 +1,19 @@
+\title{[BI02] Invention in C minor}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 4/4 \key c \minor
+    r8 c''16 b c d ef g, af bf af f f' ef d c |
+    b af' g f ef d c b c d c d d8.\downprall c32 d
+  }
+  \new Staff \relative
+  { \clef bass \key c \minor
+    r1 | r1
+  }
+>>
+<<<}

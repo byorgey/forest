@@ -1,0 +1,24 @@
+\title{[BI10] Invention in G major}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 9/8 \key g \major
+    g'8 b d b g d' b g g' |
+    fs4 \prall d8 a' fs d a' fs d |
+    g d b f' d b f' d b |
+    e c a fs a c e d c
+  }
+  \new Staff \relative
+  { \clef bass \key g \major
+    r2. r4. |
+    d8 fs a fs d a' fs d c' |
+    b4 \prall g8 d' b g d' b g |
+    c e c a c a fs g a
+  }
+>>
+<<<}
