@@ -1,0 +1,20 @@
+\title{[BI17] Sinfonia in C minor}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{unpolished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 12/8 \key c \minor
+    c''8 g ef' ef c g' g4. g, |
+    c8 d ef f g af b, af' g f ef d
+  }
+  \new Staff \relative
+  { \clef bass \key c \minor
+    c4. c' b8 a g f' ef d |
+    ef4 c8 af4 f8 g4 a8 b4 g8
+  }
+>>
+<<<}

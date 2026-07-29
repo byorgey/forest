@@ -1,0 +1,20 @@
+\title{[BI18] Sinfonia in D major}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 4/4 \key d \major
+    r8 fs''16 g a8 c, b e16 fs g8 b, |
+    a d16 e fs8 a, g16 fs' e d cs b' a g
+  }
+  \new Staff \relative
+  { \clef bass \key d \major
+    d'4 r8 fs, g4 r8 e |
+    fs4 r8 d b' g a a,
+  }
+>>
+<<<}
