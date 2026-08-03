@@ -1,0 +1,28 @@
+\title{[BI21] Sinfonia in E major}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{tolearn}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 9/8 \key e \major
+    <<
+    \new Voice \relative
+    { \voiceOne R1*9/8 | b'8 cs ds e fs gs fs gs e |
+      ds4. cs2. | b a4.
+    }
+    \new Voice \relative
+    { \voiceTwo e'8 fs gs a b cs b cs a | gs2. as4. |
+      b2. a4.~ a gs2.
+    }
+    >>
+  }
+  \new Staff \relative
+  { \clef bass \key e \major
+    e'2. ds4. | e cs fs |
+    b,8 cs ds e fs gs fs gs e | ds e fs e fs ds cs ds e
+  }
+>>
+<<<}

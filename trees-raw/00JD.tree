@@ -1,0 +1,19 @@
+\title{[BI30] Sinfonia in B minor}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{unpolished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 9/16 \key b \minor
+    b'16 fs fs g fs fs b fs fs | cs' fs, fs g fs fs cs' fs, fs |
+    d'32 b d fs b fs d fs d b d b fs b fs d fs d
+  }
+  \new Staff \relative
+  { \clef bass \key b \minor
+    b,8. r16 b' cs d cs b | as8.~ as16 b cs b cs as | b8. r r
+  }
+>>
+<<<}
