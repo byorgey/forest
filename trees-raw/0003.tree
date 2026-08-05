@@ -1,12 +1,10 @@
 \date{2025-10-24T23:23:50Z}
-\title{Current courses (Spring 2026)}
+\title{Current courses (Fall 2026)}
 
-\p{This spring, I have been teaching two courses and one lab section:}
+\p{This fall, I will be teaching three courses:}
 
 \ul{
-  \li{[[0020]]}
-  \li{[CSCI 365, Functional Programming](https://hendrix-cs.github.io/csci365/)}
-  \li{I am also facilitating one lab section for [CSCI 150, Foundations of Computer Science](https://hendrix-cs.github.io/csci150/).}
+  \li{LBST 105, First-Year Foundations}
+  \li{CSCI 150, [Foundations of Computer Science](https://hendrix-cs.github.io/csci150/)}
+  \li{CSCI 382, Algorithms}
 }
-
-\p{Classes are finished; just one more week of finals and graduation.}
