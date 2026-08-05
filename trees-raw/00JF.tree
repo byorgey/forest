@@ -1,0 +1,10 @@
+\title{Algorithms Fall 2026 lecture notes}
+\author{brentyorgey}
+
+\p{These are my lecture notes for [[00JE]] for the Fall 2026 semester.}
+
+% \p{See here for a [hyperlinked list of learning goals](007H).}
+
+\transclude{advanced}
+
+\put\transclude/expanded{false}
