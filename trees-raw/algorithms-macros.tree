@@ -1,0 +1,5 @@
+\export{base-macros}
+
+\def\st{.\;}
+\def\all[var][dom]{\forall {\var}: {\dom}\st}
+\def\ext[var][dom]{\exists {\var}: {\dom}\st}

@@ -1,0 +1,40 @@
+\import{swarm-macros}
+
+\title{Weeknotes for 7 August 2026 (week 31)}
+\author{brentyorgey}
+\date{2026-08-08}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Maine}
+
+  \p{We finally returned earlier this week from our annual trek to
+  Maine. We saw a lot of
+  [loons](https://en.wikipedia.org/wiki/Common_loon), including seven
+  at once, which I had never seen before—they tend to be rather
+  solitary—but [apparently this is a
+  thing](https://loonproject.org/2020/09/27/understanding-social-gatherings-the-basics/).}
+
+  \p{While there, in addition to a bunch of reading and swimming, I
+  made an elaborate DnD-style campaign for my 8-year-old, and played a
+  lot more Hanabi.}
+
+  \p{On our way home, we saw The Odyssey (not in IMAX, just a regular
+big theater screen) and enjoyed it. Geeked out with my percussionist
+band nerd son about [Ludwig Göransson](https://en.wikipedia.org/wiki/Ludwig_Göransson)'s use of a [rhythmic Shepard tone](https://www.youtube.com/watch?v=Z-VjDxckkg8).}
+}
+
+\subtree{
+  \title{Swarm}
+
+  \p{My work on Swarm has inched along slowly—still working on Markdown processing in preparation for building an integrated help system.  In other news, however, Patrick Estrada did a bunch of work switching out [fused-effects](https://hackage.haskell.org/package/fused-effects) for [effectful](https://github.com/haskell-effectful/effectful)—leading to some \em{significant} speedups!}
+}
+
+\subtree{
+  \title{Semester prep}
+
+  \p{This past week I've just started working on preparations for the fall semester. (The first few years I taught at Hendrix, I would tell myself that I would work on fall preparations a little bit each week over the summer, in order to spread out the work; then I would spend the whole summer \em{not} working on fall course prep and feeling guilty about it; then at the end of the summer I would do everything at the last minute in an anxiety-fueled and still guilt-ridden panic.  After a few years of this I finally realized that I should just \em{give myself permission} to not work on fall prep over the summer.)}
+  \p{I've started with [Algorithms](00JE).  I've taught this course many times before, so for the most part I won't be making any big changes; but I do plan to [write up my lecture notes in Forester](00JF) this year, just like I [did for Discrete Math last spring](0021).  I've also been making a few changes to the course design in light of what I strongly suspect was too much use of generative AI by students in the course last year.  In particular I plan to add one more in-class exam, and require students to come into office hours some number of times for some kind of formally assessed conversation/quiz/oral exam thing.  I'm still not quite sure of the details.}
+}

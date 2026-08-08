@@ -8,3 +8,5 @@
 \transclude{advanced}
 
 \put\transclude/expanded{false}
+
+\transclude{00JG}   % Intro to POGIL (needs to be finished)

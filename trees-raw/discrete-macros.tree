@@ -1,9 +1,5 @@
 \export{base-macros}
 
-\def\implies{\rightarrow}
-\def\iff{\leftrightarrow}
-\def\term[body]{\em{\body}}
-
 \def\st{.\;}
 \def\all[var][dom]{\forall {\var}: {\dom}\st}
 \def\ext[var][dom]{\exists {\var}: {\dom}\st}
@@ -17,17 +13,5 @@
 
 \def\ps[body]{#{\mathcal{P}(\body)}}
 
-\def\difference{\mathbin{\backslash}}
-\def\union{\cup}
-\def\intersect{\cap}
-\def\intersection{\cap}
-
 \def\simQ{#{\sim_{\Q}}}
 \def\Shp{#{\mathrm{Shp}}}
-
-\def\div{#{\mathbin{\mathbf{div}}}}
-\def\mod{#{\mathbin{\mathbf{mod}}}}
-
-\def\lcm{#{\mathrm{lcm}}}
-
-\def\advanced{[★](advanced)}

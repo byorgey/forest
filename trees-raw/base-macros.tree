@@ -64,6 +64,22 @@
 \def\True{#{\sf{T}}}
 \def\False{#{\sf{F}}}
 
+\def\implies{\rightarrow}
+\def\iff{\leftrightarrow}
+\def\term[body]{\em{\body}}
+
+\def\difference{\mathbin{\backslash}}
+\def\union{\cup}
+\def\intersect{\cap}
+\def\intersection{\cap}
+
+\def\div{#{\mathbin{\mathbf{div}}}}
+\def\mod{#{\mathbin{\mathbf{mod}}}}
+
+\def\lcm{#{\mathrm{lcm}}}
+
+\def\advanced{[★](advanced)}
+
 \def\proof[body]{
   \scope{
     \put\transclude/toc{false}
