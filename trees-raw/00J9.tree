@@ -2,7 +2,7 @@
 \author{bach}
 \import{base-macros}
 \tag{repertoire}
-\tag{unpolished}
+\tag{polished}
 
 \lilypond{\verb<<<|
 \new PianoStaff <<
