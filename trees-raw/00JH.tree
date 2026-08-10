@@ -1,0 +1,23 @@
+\title{[CN01] Nocturne in E♭ major, Op. 9 No. 2}
+\author{chopin}
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 12/8 \key ef \major
+    \partial 8 bf'8 |
+    g'4.~\( g8 f g f4. ef4\) bf8
+  }
+  \new Staff \relative
+  { \clef bass \key ef \major
+    \partial 8 r8 |
+    ef,-. \sustainOn <g' ef'>( <bf ef g>) \sustainOff
+    ef,-. \sustainOn <af d>( <b f' af>) \sustainOff
+    ef,,-. \sustainOn <g' ef'>( <bf ef g>) \sustainOff
+    d,,-. \sustainOn <g' ef'>( <bf ef g>) \sustainOff
+  }
+>>
+<<<}
