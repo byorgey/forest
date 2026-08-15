@@ -1,0 +1,20 @@
+\import{swarm-macros}
+
+\title{Weeknotes for 14 August 2026 (week 32)}
+\author{brentyorgey}
+\date{2026-08-15}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Swarm integrated help system}
+
+  \p{I've started actually putting together the Swarm integrated help system in earnest—the idea is to have a collection of interlinked documents, stored as a bunch of Markdown files, which can be displayed and explored interactively from within the game (and which can also be compiled into a static HTML form).  There's nothing technically challenging about this at all, just a bunch of engineering.  But as the semester ramps up that's exactly what I need—something on which I can make consistent progress in bits of time here and there, without needing big blocks of time to think deeply.}
+}
+
+\subtree{
+  \title{Semester prep}
+
+  \p{This week was full of meetings and workshops (department chairs workshop on Monday; meeting with my colleage about our co-taught course on Wednesday; an all-day workshop on new student advising on Thursday; a workshop on the new first-year course on Friday).  After getting back from vacation a couple weeks ago, my todo list is already extremely long.  I'm looking forward to the semester for the most part, but as usual I wish I could spend my time working deeply on a few things rather than having a million tiny administrative tasks.  I am most definitely looking forward to my next sabbatical in a year or two.}
+}
