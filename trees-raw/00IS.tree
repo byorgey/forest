@@ -3,3 +3,18 @@
 \import{base-macros}
 \tag{repertoire}
 \tag{polished}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 2/4 \key af \major
+    ef'8 c'~ c16 bf af g | f ef8 df16 c8 bf16 af |
+    g( af bf c df ef f g | af8) r r4
+  }
+  \new Staff \relative
+  { \clef bass \key af \major
+    ef8 c'~ c16 bf af g | f ef8 df16 c8 bf16 af |
+    ef4 ef'16 df c bf | af8 <ef' af c> ef, <ef' af c>
+  }
+>>
+<<<}
