@@ -1,0 +1,39 @@
+\import{swarm-macros}
+
+\title{Weeknotes for 21 August 2026 (week 33)}
+\author{brentyorgey}
+\date{2026-08-22}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Swarm}
+
+  \p{This week was the 5-year anniversary of my [first commit to the
+  Swarm repo](https://github.com/swarm-game/swarm/commit/479b10e98685cdc4c7c7f1935b679b6b83819dcf)—back in August of 2021, at the start of my sabbatical.  It's been a wonderful, wild ride.  The project has gone much farther than I could have imagined, and been more professionally fruitful than I would have thought possible!  And a big part of the reason it's remained fun for so long is the cool community of other contributors the project has attracted.}
+
+  \p{There's been a flurry of activity this week from several other contributors, so I've spent a decent bit of time reviewing PRs.  Among other cool things, there have been some fantastic improvements to memory usage and performance.}
+
+  \p{I've also continued working on an integrated help system this week.  It's coming along nicely.  One of the few things still missing is the ability to specify a table of contents for a given page, from which we can automatically display next/previous/up links.  I basically plan to steal the way Sphinx does this with the \tt{toctree} directive.}
+}
+
+\subtree{
+  \title{First-year student advising}
+
+  \p{I spent a substantial amount of time this week meeting with my cohort of 14 first-year student advisees—first as a group, and then individually.  In past years, they have come to campus with blank slates and we would spend the first week frantically building their schedules, resolving conflicts, finding alternate classes when the class they wanted is too full, and so on.  It didn't leave much time for anything besides putting out fires.  Starting last year, we have a new system in place where they meet with someone virtually over the summer to put together an initial course schedule.  By the time they arrive on campus they already have a mostly-solid schedule, and I just have to help fill it out with an extra class or two.  It is much more civilized and leaves plenty of time for chatting and getting to know them and what they are interested in.  Talking to people all day is a lot, but aside from that it was quite enjoyable; they all seem like lovely human beings with a wide variety of interests.}
+}
+
+\subtree{
+  \title{Semester prep}
+
+  \p{The fall semester is almost upon us.  When I haven't been doing advising stuff I have been working hard on preparing for my fall courses.  I'll be co-teaching our introductory programming course with my colleague, and we don't plan to change much about the course, which by this point is a well-oiled machine.  On the other hand, I am making a few more changes to Algorithms this semester.  In order to reduce incentives for LLM use, I'm adding an extra midterm exam and having some required office hour visits.  But the extra exam makes it more awkward to fit in weekly problem sets at reasonable times, which suddenly made me wonder today whether I could do something more flexible, like assigning individual problems every day and having them choose a portfolio of problems to solve. I still need to work out a lot of details.}
+}
+
+\subtree{
+  \title{Hanabi}
+
+  \p{I have continued to enjoy [Hanabi](https://hanabi.github.io/) a lot—playing sometimes with my 14yo and sometimes with strangers on [Hanab Live](https://hanab.live/lobby).  I think I enjoy it for many of the same reasons that I enjoy bridge—it is collaborative rather than competitive (I'm super competitive and it's easy for me to get stressed out about winning and losing), and involves teamwork, communication, and logical deduction.  I'm always happy to teach others, so if you're intrigued and would like to learn how to play, let me know!}
+
+  \p{\imgasset{hanabi.png}}
+}
