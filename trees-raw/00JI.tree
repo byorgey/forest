@@ -1,0 +1,27 @@
+\import{base-macros}
+
+\title{[CW11] Waltz in G♭ major, Op. 70 No. 1}
+\tag{repertoire}
+\tag{tolearn}
+\tag{chopin}
+\author{chopin}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 3/4 \key gf \major \tempo "Molto vivace"
+    \partial 4. gf''8 f ef |         % \grace {gf''16( af}  - makes bass clef misaligned
+    df\([ \trill c] df f af cf\) |
+    \tuplet 3/2 { ef\( f ef } df gf,( bf'4-.) \)
+  }
+  \new Dynamics
+  { \partial 4. s4. | s2. \f
+  }
+  \new Staff \relative
+  { \clef bass \key gf \major
+    \partial 4. r8 r4  |
+    df4-. \sustainOn \clef treble <df' f cf'> <df f cf'> \sustainOff
+    gf,-. \sustainOn <df' gf bf> <df gf bf> \sustainOff
+  }
+>>
+<<<}
