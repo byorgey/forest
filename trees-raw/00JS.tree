@@ -1,0 +1,9 @@
+\title{Big-#{O} is not about time!}
+\date{2026-08-27T16:13:14Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Students coming out of data structures often think that big-#{O} is specifically about measuring \em{how long} algorithms take, but it is not. Big-#{O} is a tool for measuring the \em{rate of growth} of one thing relative to another. We often do use it to measure the rate of growth of the time needed to run an algorithm relative to the size of the input, but we can use it to measure rates of growth of other things as well, such as the amount of memory used relative to the size of the input, the height of a tree relative to the width, and so on.}
+
+\p{So, for example, you should not assume that the questions in [[00JN]] are asking about \em{time} unless they explicitly say so. For example, part (a) is asking \em{how many leaves} there are in a tree with a depth of #{n}, that is, how fast does the number of leaves grow relative to the depth? It is not asking \em{how long} it would take to find those leaves.}

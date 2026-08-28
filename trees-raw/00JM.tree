@@ -1,0 +1,14 @@
+\title{[I1] Recurrence (2 pts)}
+\date{2026-08-26T10:09:06Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Let #{p_n} be defined for all #{n \geq 0} by ##{\begin{align*}
+      p_0 &= 0 \\
+      p_n &= 2p_{n-1} + 1 && (n > 0)
+\end{align*}} State and prove a closed (that is, non-recursive) formula for #{p_n}.}
+
+\p{(If you need a refresher on recursion and induction, there are [a lot of resources posted on the course website](https://hendrix-cs.github.io/csci382/#resources)!)}
+

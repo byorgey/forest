@@ -1,0 +1,22 @@
+\title{[O1] Big-O review (3 pts)}
+\date{2026-08-26T10:12:54Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{For each of the following, answer with the \strong{best} (smallest) upper bound from this list: ##{O(1), O(\log n), O(n), O(n \log n), O(n^2), O(2^n).} Give a \strong{brief justification} for each.}
+\ol{
+  \li{Number of leaves in a depth-#{n} balanced binary tree}
+  \li{Depth of an #{n}-node balanced binary tree}
+  \li{Number of edges in an #{n}-node tree}
+  \li{Time needed to sort a list of #{n} items using merge sort}
+  \li{Number of distinct subsets of a set of #{n} items}
+  \li{Number of bits needed to represent the number #{n} in binary}
+  \li{Time needed to find the closest pair of points among #{n} points in Euclidean space by simply listing all the pairs}
+  \li{Time needed to insert #{n} items into a binary heap}
+  \li{Time needed to find the second largest number in a \em{sorted} list of #{n} distinct numbers}
+  \li{Time needed to find the second largest number in an \em{unsorted} list of #{n} distinct numbers}
+}
+
+\transclude{00JS}

@@ -1,0 +1,11 @@
+\title{[K1] Kattis: Akcija (1pt)}
+\date{2026-08-27T16:03:27Z}
+\tag{algorithms}
+\tag{problem}
+\tag{kattis}
+
+\import{algorithms-macros}
+
+\p{Solve [Akcija](https://open.kattis.com/problems/akcija).}
+
+\transclude{00JP}

@@ -1,0 +1,16 @@
+\title{Brute force algorithms}
+\date{2026-08-26T09:43:32Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{Introduced via another [POGIL activity](https://hendrix-cs.github.io/csci382/pub/brute-force.pdf).  Some key takeaways:
+
+\ul{
+  \li{In this class we will consider solving problems with specified inputs and outputs.}
+  \li{A \em{brute-force} algorithm is one that simply lists all possible outputs for the given inputs and checks which one has the desired properties.}
+  \li{This semester we will consider a lot of clever ways to solve problems faster than brute force.  But that's not always possible.}
+}
+
+}

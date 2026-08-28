@@ -1,0 +1,39 @@
+\title{Tips on solving Kattis problems}
+\date{2026-08-27T16:06:28Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Throughout the semester, I will occasionally assign programming
+challenges from [Open Kattis](https://open.kattis.com/).  These
+problems will help you translate theory into practice by writing
+working implementations of algorithms or concepts we have been
+discussing in class.}
+
+\p{I am very aware that solutions to Kattis problems can easily be
+found online, and LLMs can solve many of them.  I trust you not to
+look at any such solutions.  You only get the benefit of these
+problems by solving them on your own (not to mention that doing
+otherwise would be an academic integrity violation).}
+
+\subtree{\title{Solving} \p{You can implement your solution in any
+  programming language you wish.  Kattis always expects you to submit
+  a program that \em{reads from standard input} and \em{writes to
+  standard output}.  For example, in Python, that means using
+  \tt{input()} to read the input and \tt{print()} to produce output.
+  In Java, you can use \tt{Scanner} and \tt{System.out.println}, and so
+  on.}
+
+  \p{If you'd like additional hints on how to parse the input, how to
+  access standard data structures in your chosen programming language,
+  \em{etc.}, just ask!}
+}
+
+\subtree{\title{Submitting}
+  \p{To submit your solution to a Kattis problem, you must submit \em{both}:
+  \ul{
+    \li{A screenshot showing that Kattis accepted your submission}
+    \li{Your code. Note, do \em{not} submit a screenshot of your code, and do not submit a project folder containing a zillion auto-generated files!  Just submit a single \tt{.py} or \tt{.java} file (for example—you can also use other languages besides Python and Java).}
+  }
+  }
+}

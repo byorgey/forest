@@ -1,0 +1,9 @@
+\title{[RH] Repeated halving (1 pt)}
+\date{2026-08-26T10:01:53Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{How many times do you have to repeatedly halve #{32} in order to reach #{1} (or, put another way, how many times do you have to repeatedly double #{1} in order to reach #{32})? What about #{8192}? Consider the function which given an input #{n}, outputs the number of times #{n} can be repeatedly halved before falling below #{1}. What is the common mathematical name for this function?}
+

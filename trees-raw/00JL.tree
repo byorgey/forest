@@ -1,0 +1,20 @@
+\title{Algorithms problems}
+\date{2026-08-26T10:03:26Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{This page collects the problems available for you to solve on [problem sets](https://hendrix-cs.github.io/csci382/#problemsets).}
+
+\subtree{
+  \title{Intro/review}
+
+  \p{The problems in this section are intended to help you review key ideas from Data Structures and Discrete Math that we will be using a lot in this class.  If you are unsure about anything here, use it as an opportunity to review or ask for help!}
+
+  \transclude{00JK}  % lg
+  \transclude{00JM}  % proving closed form for recurrence
+  \transclude{00JN}  % Big-O review
+  \transclude{00JO}  % Kattis: Akcija
+  \transclude{00JQ}  % Kattis: Backspace
+  \transclude{00JR}  % Kattis: Forests
+}

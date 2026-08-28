@@ -1,7 +1,16 @@
-\title{Introduction to POGIL}
+\title{Introduction to POGIL/CSCI 382}
 \date{2026-08-06T13:08:57Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
+\p{We used [an activity](https://hendrix-cs.github.io/csci382/pub/POGIL-intro.pdf) to introduce [POGIL](https://pogil.org/) and the [syllabus for CSCI 382](https://hendrix-cs.github.io/csci382/).}
+
+\subtree{
+  \title{Exercises}
+  \p{A few exercises to help you review material from Data Structures and Discrete Math:}
+
+  \transclude{00JK}
+  \transclude{00JM}
+  \transclude{00JN}
+}

@@ -9,4 +9,5 @@
 
 \put\transclude/expanded{false}
 
-\transclude{00JG}   % Intro to POGIL (needs to be finished)
+\transclude{00JG}   % Intro to POGIL/CSCI 382
+\transclude{00JJ}   % Brute force
