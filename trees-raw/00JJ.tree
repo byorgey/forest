@@ -5,7 +5,7 @@
 
 \import{algorithms-macros}
 
-\p{Introduced via another [POGIL activity](https://hendrix-cs.github.io/csci382/pub/brute-force.pdf).  Some key takeaways:
+\p{Introduced via a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/brute-force.pdf).  Some key takeaways:
 
 \ul{
   \li{In this class we will consider solving problems with specified inputs and outputs.}
