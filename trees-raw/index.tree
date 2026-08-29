@@ -11,7 +11,6 @@
 \transclude{contact}
 \transclude{0001}    % About this site
 \transclude{0005}    % Misc info
-\transclude{009L}    % LLMs
 
 \put\transclude/numbered{true}
 \put\transclude/expanded{false}
@@ -23,3 +22,8 @@
 \transclude{000F}    % Competitive programming
 \transclude{000D}    % Publications
 \transclude{00CH}    % Drafts
+
+\put\transclude/numbered{false}
+\put\transclude/expanded{true}
+
+\transclude{009L}    % LLMs
