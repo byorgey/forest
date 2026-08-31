@@ -18,3 +18,9 @@
   \transclude{00JQ}  % Kattis: Backspace
   \transclude{00JR}  % Kattis: Forests
 }
+
+\subtree{
+  \title{The Euclidean Algorithm}
+
+  \transclude{00JW}  % factoring vs Euclid
+}

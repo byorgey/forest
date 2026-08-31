@@ -1,0 +1,39 @@
+\title{[GCD1] GCD via factoring vs Euclidean algorithm (2 pts)}
+\date{2026-08-31T13:48:44Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{In class we considered the problem of finding the \em{greatest
+  common divisor} of two positive integers.  We explored two ways to
+  compute the GCD:
+
+\ol{
+  \li{Factor the two numbers into their unique prime
+  factorizations, and find the biggest subset of primes contained in
+  both; this is the factorization of the GCD.}
+  \li{Run the Euclidean Algorithm.}
+}
+
+In this problem, you will consider the difference between these methods.}
+
+\ol{
+
+  \li{Use your brain, a calculator, [Wolfram Alpha](https://www.wolframalpha.com/), and/or some other appropriate computational system to factor #{170520} into its prime factors.}
+  \li{Now factor #{522522}, and use the results to find #{\gcd(170520, 522522)} by Method 1.}
+  \li{Trace the execution of the Euclidean Algorithm on #{(170520, 522522)}. Compare and contrast the two methods of computing the GCD of these two numbers.}
+  \li{Now try to factor the number #{m} shown below, using whatever methods you like (for example, try using Wolfram Alpha). What happens? ##{m = 308903627938612635213051732991863520976852479109400884338832430641564115236537.}
+
+\p{I would be willing to bet some money that you did not succeed in factoring #{m}—though not a large amount, since there do exist algorithms that can factor numbers of this size in a matter of hours or even minutes; but in any case factoring a number with, say, four times as many digits as this would require more like centuries. Factoring is widely believed to be a rather difficult computational problem (the security of your bank account probably depends on it!).}
+  }
+  \li{Now, suppose I tell you that there are in fact three prime numbers #{p}, #{q}, and #{r}, such that ##{\begin{align*}
+    m &= p \cdot q =
+        308903627938612635213051732991863520976852479109400884338832430641564115236537
+    \\
+    n &= p \cdot r = 235051426595377535232357646935740625119338466495681619002059053022377525089111
+\end{align*}} (this is the same number #{m} from part (d)). Find #{p}, #{q}, and #{r}.}
+\li{What does this suggest about the relative efficiency of the two methods for computing the GCD?}
+
+}
+

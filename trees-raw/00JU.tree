@@ -8,3 +8,4 @@
 \p{The first algorithm we will consider is the famous \em{[Euclidean algorithm](00ET)} for finding the [greatest common divisor](00EW) of two integers.  We name it after Euclid, who wrote it down in his classic work on geometry and number theory, \em{The Elements}; however, it has been reinvented in multiple times, places and cultures throughout history.}
 
 \transclude{00JV}   % Review: mod, GCD
+\transclude{00JX}   % Exercises
