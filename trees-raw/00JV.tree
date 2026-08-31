@@ -1,0 +1,11 @@
+\title{Review: mod and GCD}
+\date{2026-08-31T13:40:11Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The material in this section is presented via a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/GCD-analysis.pdf).}
+
+\p{For a refresher on the #{\mod} operator, see [these lecture notes from Discrete Math](00DC).}
+
+\p{For a refresher on GCD, see [these lecture notes](00ET).}
