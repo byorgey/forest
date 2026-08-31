@@ -8,4 +8,4 @@
 \transclude{0003}  % Current courses
 
 \put\transclude/expanded{false}
-\transclude{0004}
+\transclude{0004}  % Previous courses
