@@ -1,0 +1,19 @@
+\title{[GCD2] GCD of consecutive Fibonacci numbers (2 pts)}
+\date{2026-09-01T16:02:01Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Recall the [Fibonacci numbers](00BL), defined by #{F_0 = 0}, #{F_1
+= 1}, and #{F_{n+2} = F_{n+1} + F_n}. That is, the first two Fibonacci
+numbers are #{0, 1}, and then each subsequent Fibonacci number is the
+sum of the previous two, so the first few are #{0, 1, 1, 2, 3, 5, 8,
+13, \dots}}
+
+\ol{
+  \li{Compute #{F_9} and #{F_{10}}, and trace the execution of the [Euclidean Algorithm](00F9) to compute #{\gcd(F_{10}, F_9)}. What happens?}
+  \li{Prove by induction on #{n} that #{\gcd(F_{n+1}, F_n) = 1} for all #{n \geq 0}.}
+  \li{Explain why your proof also shows that the Euclidean Algorithm requires #{n} recursive steps to compute #{\gcd(F_{n+1}, F_n) = 1}.}
+}
+

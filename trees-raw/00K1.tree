@@ -1,0 +1,28 @@
+\title{[GCD4] Fibonacci number size (3 pts)}
+\date{2026-09-01T17:45:20Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{How big are [Fibonacci numbers](00BL)? Let’s find out:
+
+\ol{
+  \li{Solve #{x^2 = x + 1} for #{x} and call the positive solution #{\varphi} (this is often known as the \em{golden ratio}) and the negative solution #{\hat{\varphi}}.}
+  \li{Explain why we know that #{\varphi^2 = \varphi + 1} and #{\hat{\varphi}^2 = \hat{\varphi} + 1}.
+  \hint{Your answer should be one sentence!}
+  }
+  \li{Show that #{\varphi^{k+2} = \varphi^{k+1}
+    + \varphi^k} for all #{k \geq 0} (by starting with #{\varphi^2 =
+    \varphi + 1} and multiplying both sides by #{\varphi^k}). Note that the same is also true with #{\hat{\varphi}} in place of #{\varphi}.}
+  \li{Now prove by induction on #{n} that #{F_n = \frac{1}{\sqrt 5}(\varphi^n -
+  \hat{\varphi}^n)}.
+  \hint{Don’t forget that you need two base cases; you will want to show that #{\varphi - \hat{\varphi} = \sqrt 5}.}
+  }
+  \li{
+    Conclude that #{F_n \approx \varphi^n/\sqrt 5}.
+    \hint{What can you say about #{\hat{\varphi}^n} as #{n} gets large?}
+  }
+}
+
+}

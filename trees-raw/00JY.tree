@@ -1,0 +1,11 @@
+\title{[K4] Kattis: GCD (1 pt)}
+\date{2026-09-01T15:52:05Z}
+\tag{algorithms}
+\tag{problem}
+\tag{kattis}
+
+\import{algorithms-macros}
+
+\p{Solve [GCD](https://open.kattis.com/problems/gcd).  You may not use any built-in GCD function; you must implement the Euclidean Algorithm yourself.}
+
+\p{[[00JP]]}

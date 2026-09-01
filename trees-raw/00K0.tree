@@ -1,0 +1,30 @@
+\title{[GCD3] Worst-case GCD input (3 pts)}
+\date{2026-09-01T17:22:31Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{In fact, more is true: [consecutive Fibonacci numbers](00JZ) #{(F_{n+1},
+F_n)} are in some sense a \em{worst-case} input for the Euclidean
+Algorithm: they are the \em{smallest} numbers for which the Euclidean
+Algorithm needs #{n} steps.}
+
+\p{Let #{S(n)} be the following proposition:}
+
+\p{#{S(n) =} \em{For all natural numbers #{a} and #{b}, if #{a > b} and #{\mathsf{GCDRec}(a,b)} makes #{n} recursive calls, then #{a \geq F_{n+1}} and #{b \geq F_n}.}}
+
+\p{That is, if #{R(a,b,n)} represents the proposition "#{\mathsf{GCDRec}(a,b)} makes #{n} recursive calls", then ##{S(n) = \forall a,b : \mathbb{N}.\; ((a > b) \land R(a,b,n)) \to ((a \geq F_{n+1}) \land (b \geq F_n))}.}
+
+\ol{
+  \li{Prove #{\forall n : \mathbb{N}. S(n)} by induction on #{n}:
+  \ol{
+    \li{What does the base case #{S(0)} say? Prove it.}
+    \li{Let #{k} be an arbitrary natural number, and prove #{S(k) \to S(k+1)} by supposing #{S(k)} to be true and proving #{S(k+1)}. You may want to write out #{S(k)} and #{S(k+1)} in full to help you [keep track of what you know and what you are trying to prove](0057).}
+  }
+  }
+
+  \li{Explain why the previous result shows that if #{a \leq F_{n+1}}
+  then the Euclidean Algorithm requires at most #{n} steps.}
+}
+
