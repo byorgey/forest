@@ -1,0 +1,15 @@
+\title{Proving GCDRec correct}
+\date{2026-09-02T13:42:38Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{We will begin by formally proving the correctness of [the recursive
+Euclidean Algorithm](00K4). But before we can even do that, we have to
+back up a bit: what does it even mean for an algorithm to be
+"correct"?}
+
+\transclude{00K6}  % specification vs implementation
+
+\p{In this case, the \em{specification} we have in mind is the mathematical definition of #{gcd}; the implementation we have in mind is the #{\mathsf{GCDRec}} function.  We are starting with #{\mathsf{GCDRec}} because it's usually much easier to prove things about recursive algorithms than about iterative ones!}

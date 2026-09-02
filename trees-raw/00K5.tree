@@ -1,0 +1,19 @@
+\title{Iterative Euclidean Algorithm}
+\date{2026-09-02T13:44:13Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The second implementation of the Euclidean Algorithm is iterative:}
+
+\acode{\startverb
+\> GCDIter($m$,$n$) = \\
+\> \tb \> $a \gets m$ \\
+\>     \> $b \gets n$ \\
+\>     \> !while $(a \neq 0)$ !and $(b \neq 0)$ \\
+\>     \> \tb \> !if $a \leq b$ \\
+\>     \>     \> \tb \> !then \> $b \gets b \bmod a$ \\
+\>     \>     \>     \> !else \> $a \gets a \bmod b$ \\
+\>     \> !if $a = 0$ !then !return $b$ !else !return $a$
+\stopverb
+}

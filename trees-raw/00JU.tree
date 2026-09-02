@@ -9,6 +9,6 @@
 
 \transclude{00JV}   % Review: mod, GCD
 \transclude{00K2}   % GCDRec and GCDIter
+\transclude{00K3}   % Correctness of GCDRec
 
-
-\transclude{00JX}   % Exercises  XXX link to more exercises
+\transclude{00JX}   % Exercises

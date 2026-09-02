@@ -1,0 +1,15 @@
+\title{Recursive Euclidean Algorithm}
+\date{2026-09-02T13:43:35Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The first implementation of the Euclidean Algorithm is recursive:}
+
+\acode{\startverb
+\> GCDRec($a$,$b$) = \\
+\> \tb \> !if $b = 0$ \\
+\>     \> \tb \> !then \> $a$ \\
+\>     \>     \> !else \> GCDRec($b$, $a \bmod b$)
+\stopverb
+}

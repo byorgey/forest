@@ -1,0 +1,7 @@
+\title{Specification vs implementation}
+\date{2026-09-02T13:51:14Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Whenever we implement an algorithm, we have in mind a \em{specification} of what we would like the algorithm to achieve.  This specification could be in the form of a mathematical definition (as in this case), or it could be a brute-force algorithm which "obviously" does what we want, or a table of inputs and outputs, or any other way of precisely defining a relationship between inputs and outputs.  Our algorithm is then an \em{implementation} of this specification, and our job is to show that the specification and implementation match: that is, they produce identical outputs for all possible inputs.}
