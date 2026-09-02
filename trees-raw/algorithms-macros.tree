@@ -10,3 +10,9 @@
     \p{\body}
   }
 }
+
+\def\acode[body]{
+  \p{
+    \tex{\usepackage{../../tex/acode}}{\begin{acode}\body\end{acode}}
+  }
+}

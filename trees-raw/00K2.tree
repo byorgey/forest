@@ -1,0 +1,36 @@
+\title{The Euclidean Algorithm, recusively and iteratively}
+\date{2026-09-02T13:09:56Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The material in this section is also presented via a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/GCD-analysis.pdf).}
+
+\p{We will consider two different implementations of the Euclidean
+Algorithm.  The first is recursive:
+
+\acode{\startverb
+\> GCDRec($a$,$b$) = \\
+\> \tb \> !if $b = 0$ \\
+\>     \> \tb \> !then \> $a$ \\
+\>     \>     \> !else \> GCDRec($b$, $a \bmod b$)
+\stopverb
+}
+
+\p{The second is iterative:}
+
+\acode{\startverb
+\> GCDIter($m$,$n$) = \\
+\> \tb \> $a \gets m$ \\
+\>     \> $b \gets n$ \\
+\>     \> !while $(a \neq 0)$ !and $(b \neq 0)$ \\
+\>     \> \tb \> !if $a \leq b$ \\
+\>     \>     \> \tb \> !then \> $b \gets b \bmod a$ \\
+\>     \>     \>     \> !else \> $a \gets a \bmod b$ \\
+\>     \> !if $a = 0$ !then !return $b$ !else !return $a$
+\stopverb
+}
+
+\p{By trying examples, it seems like both these algorithms produce correct results.  But how can we be sure?  This is an important question, because it's easy to write versions of these algorithms which look very similar, and even work some of the time, but which sometimes crash, loop forever, or return an incorrect result!}
+
+}
