@@ -7,9 +7,9 @@
 \p{The first implementation of the Euclidean Algorithm is recursive:}
 
 \acode{\startverb
-\> GCDRec($a$,$b$) = \\
+\> GCDR($a$,$b$) = \\
 \> \tb \> !if $b = 0$ \\
 \>     \> \tb \> !then \> $a$ \\
-\>     \>     \> !else \> GCDRec($b$, $a \bmod b$)
+\>     \>     \> !else \> GCDR($b$, $a \bmod b$)
 \stopverb
 }

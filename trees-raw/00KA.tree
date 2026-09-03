@@ -1,0 +1,8 @@
+\title{Algorithms material in need of polishing}
+
+\put\transclude/expanded{false}
+
+\query\datalog{
+  ?X -: {\rel/has-tag ?X '{algorithms}} {\rel/has-tag ?X '{draft}}
+}
+

@@ -1,0 +1,10 @@
+\import{algorithms-macros}
+\title{Proving \GCDI correct}
+\date{2026-09-03T19:56:21Z}
+\tag{algorithms}
+\tag{draft}
+
+\p{Now let's prove that [the iterative version of the Euclidean
+Algorithm](00K5) is correct as well.}
+
+\transclude{00KB}

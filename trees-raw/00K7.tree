@@ -1,0 +1,7 @@
+\title{Asymptotic Analysis}
+\date{2026-09-03T15:13:18Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The basic concepts of asymptotic analysis are introduced in a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/AA-intro.pdf).}

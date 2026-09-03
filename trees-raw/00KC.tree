@@ -1,0 +1,10 @@
+\date{2026-09-03T22:19:22Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Remark}
+\title{\advanced Pedantic comment about well-founded induction, for those who like that sort of thing}
+
+\p{Technically, this argument that \GCDI always stops is a proof by \em{well-founded induction} on pairs #{\mathbb{N}^2} under the [well-founded relation](https://en.wikipedia.org/wiki/Well-founded_relation) ##{\{((a,b), (x,y)) \mid (a < x \land b = y) \lor (a = x \land b < y)\}.}
+}

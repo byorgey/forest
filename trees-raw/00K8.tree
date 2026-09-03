@@ -1,0 +1,17 @@
+\import{algorithms-macros}
+\title{\GCDR is correct}
+\date{2026-09-03T19:49:44Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\p{For all #{a,b, \geq 0}, #{\GCDR(a,b) = \gcd(a,b)}.}
+
+\proof{
+\p{By [(strong) induction](00CM) on #{b}.}
+
+\ul{
+  \li{In the base case, when #{b = 0}, #{\GCDR(a,0) = a}, which is indeed the definition of #{\gcd(a,0)}.}
+
+  \li{Now suppose #{b > 0} and that for all #{a}, #{\GCDR(a,b') = \gcd(a,b')} whenever #{b' < b}. In this case #{\GCDR(a,b) = \GCDR(b, a \bmod b)}. We know #{a \bmod b < b}, so the induction hypothesis applies (note in particular that the induction hypothesis holds for \em{any} #{a}, and in particular we can pick #{b} as our “#{a}”). We concude that #{\GCDR(a,b) = \GCDR(b, a \bmod b) = \gcd(b, a \bmod b) = \gcd(a \bmod b, b) = \gcd(a,b)}, where the last two steps follow from the fact that [#{\gcd} is commutative](00F3) and the [previous lemma](00F8).}
+}
+}

@@ -1,0 +1,30 @@
+\import{algorithms-macros}
+\title{\GCDI is correct}
+\date{2026-09-03T22:07:52Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\p{#{\GCDI(a,b) = \gcd(a,b)}.}
+
+\proof{
+\p{Suppose we initially call #{\GCDI(m,n)}. Then we claim the following \em{loop invariant}: each time right before doing the loop check again, #{\gcd(a,b) = \gcd(m,n)}. That is, the #{\gcd} of the \em{current} values of #{a} and #{b} is always equal to the #{\gcd} of the \em{original} arguments to #{\GCDI}.}
+
+\p{We prove this by induction on the number of loop executions.}
+
+\ul{
+  \li{In the base case, before the loop has executed at all, #{a} and #{b} are equal to the original arguments to #{\GCDI}, hence the invariant holds trivially.}
+  \li{Otherwise, suppose the invariant held after #{n} loop iterations; we must show it will still hold after one more loop iteration. But this follows from the theorem [[00F8]].}
+}
+
+\p{Finally, after the loop ends, we will have either #{a = 0} or #{b = 0}, and we can see that we will return wichever one is nonzero. This correctly returns the #{\gcd} of #{a} and #{b} since #{\gcd(a,0) = a}. But because of the loop invariant we know that #{\gcd(a,b) = \gcd(m,n)}, hence #{\GCDI(m,n) = \gcd(m,n)}.}
+
+\p{It might seem like we are done, but actually we are not—we do not know that the loop will ever stop!  All we have proved so far is that \em{if} it ever stops, it will deliver the correct value, but that is a big \em{if}.  It's worth remarking that our [proof of correctness for \GCDR](00K8) neatly sidestepped this issue because it was by induction on the size of the arguments to \GCDR: the proof that the function returns the correct value, and the proof that the function always stops after a finite amount of time, were both wrapped up into a single argument.  With \GCDI, we must argue these two things separately.}
+
+\p{So, why does \GCDI always stop?  Each time through the loop, either #{a} gets smaller and #{b} stays the same, or #{b} gets smaller and #{a} stays the same: if the loop starts out with #{a \leq b}, then #{b} gets smaller, since #{b \bmod a < a \leq b}. Otherwise #{a} gets smaller, since #{a \bmod b < b < a}. Since neither ever gets bigger and one gets strictly smaller every loop iteration, one of them must eventually hit #{0}, which will stop the loop.
+
+\put\transclude/expanded{false}
+\transclude{00KC}\put\transclude/expanded{true}
+
+}
+
+}

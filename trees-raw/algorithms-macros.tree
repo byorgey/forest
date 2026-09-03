@@ -16,3 +16,7 @@
     \tex{\usepackage{../../tex/acode}}{\begin{acode}\body\end{acode}}
   }
 }
+
+\def\sf[body]{#{\mathsf{\body}}}
+\def\GCDR{\sf{GCDR}}
+\def\GCDI{\sf{GCDI}}
