@@ -1,0 +1,53 @@
+\import{swarm-macros}
+
+\title{Weeknotes for 4 September 2026 (week 35)}
+\date{2026-09-04}
+\tag{weeknote}
+
+\p{Missed last week's weeknotes since there is a whole lot going on at
+the start of the semester!}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Haskell Interlude}
+
+  \p{I was on the [Haskell Interlude podcast](https://haskell.foundation/podcast/)!  I recorded the actual interview last spring, with [[farhad-mehta]] and [[sam-frohlich]]; the whole process was a lot of fun.  I listened to the episode before it was released and I am not too embarrassed about anything I said, so [give it a listen](https://haskell.foundation/podcast/85/)!}
+}
+
+\subtree{
+  \title{Semester start}
+
+  \p{Because of all administrative responsibilities, I had very little time to prepare for my actual classes, and the first few days of classes hit like a ton of bricks—I did not get very much sleep as I prepared syllabi and assignments at the very last minute.  I do feel I'm in a better place now, though.  Much of it was one-time overhead that need not be repeated.}
+
+  \p{Getting to know my students has been fun.  I am teaching one upper-level course ([[00JE]]) in which I already knew most of the students; one introductory computing course ([CSCI 150, Foundations of Computer Science](https://hendrix-cs.github.io/csci150/)); and one general education first-year seminar.  For the most part, the students seem thoughtful and engaged.}
+
+  \p{I am trying something a bit different with [[00JE]] this semester (besides [typing up my lecture notes in Forester](00JF)). I used to assign weekly problem sets, consisting of a bunch of problems in a PDF that they would have one week to solve and submit.  But scheduling the problem sets around exams and breaks, and making sure they contained appropriate material, was always tricky.  They also didn't adapt well to students who were either very advanced or struggling.  This semester, I am simply publishing a [collection of problems](00JL), and the students are responsible for selecting which problems they want to solve.  To help ensure they are making consistent progress, they still have weekly "problem sets" due, but the problem sets do not specify which problems they must solve, but only a required number of problems instead.  This allows me to publish a wider variety of problems, as well as helping students who fall a bit behind continue to make consistent progress without penalizing them for being behind.}
+
+  \p{We'll see how it goes!  I am cautiously optimistic, though of course I'm sure there are things I will learn and change about the system next time.}
+}
+
+\subtree{
+  \title{Missing ICFP}
+
+  \p{ICFP was relatively close to me this year (Indianapolis would be about a 9 hour drive, or a short plane flight or two, away), but unfortunately, it happened during the first week of classes.  Since I am the department chair and an advisor for first-year students, that sadly made ICFP a no-go.  I am already plotting how I can make it to Nijmegen next year...}
+}
+
+\subtree{
+  \title{Admin corner}
+
+  \p{A bunch of my extra time is taken up right now with two major administrative tasks: completing a self-evaluation, and putting together a hiring request for next year.  Both are due early next week.  I will be very glad when they are both done!
+  }
+}
+
+\subtree{
+  \title{Swarm}
+
+  \p{Only a tiny bit of incremental progress on the integrated help system this week; looking forward to having the above admin stuff done so I can get back to working on this more regularly!}
+}
+
+\subtree{
+  \title{Piano corner}
+
+  \p{I've continued to work on my Chopin waltz project.  I'm also slowly [adding repertoire to my forest](00H7).}
+}
