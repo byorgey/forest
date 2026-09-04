@@ -19,8 +19,12 @@ Algorithm needs #{n} steps.}
 \ol{
   \li{Prove #{\forall n : \mathbb{N}. S(n)} by induction on #{n}:
   \ol{
-    \li{What does the base case #{S(0)} say? Prove it.}
-    \li{Let #{k} be an arbitrary natural number, and prove #{S(k) \to S(k+1)} by supposing #{S(k)} to be true and proving #{S(k+1)}. You may want to write out #{S(k)} and #{S(k+1)} in full to help you [keep track of what you know and what you are trying to prove](0057).}
+    \li{What does the base case #{S(0)} say? Prove it.
+    \hint{Look at the code for \GCDR.  What can you conclude about #{a} and #{b} if it makes zero recursive calls?}
+    }
+    \li{Let #{k} be an arbitrary natural number, and prove #{S(k) \to S(k+1)} by supposing #{S(k)} to be true and proving #{S(k+1)}. You may want to write out #{S(k)} and #{S(k+1)} in full to help you [keep track of what you know and what you are trying to prove](0057).
+    \hint{Show that #{a \geq b + a \mod b}.}
+    }
   }
   }
 

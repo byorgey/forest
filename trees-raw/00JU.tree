@@ -1,7 +1,6 @@
 \title{The Euclidean Algorithm}
 \date{2026-08-31T13:35:35Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
@@ -12,4 +11,4 @@
 \transclude{00K3}   % Correctness of GCDR
 \transclude{00K9}   % Correctness of GCDI
 
-\transclude{00JX}   % Exercises
+\transclude{00KF}   % Exercises

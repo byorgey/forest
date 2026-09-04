@@ -3,7 +3,7 @@
 
 \p{These are my lecture notes for [[00JE]] for the Fall 2026 semester.}
 
-% \p{See here for a [hyperlinked list of learning goals](007H).}
+\p{Problems to be solved [can be found here](00JL).}
 
 \transclude{advanced}
 

@@ -1,0 +1,18 @@
+\date{2026-09-04T13:13:18Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\title{Runtime analysis of the Euclidean Algorithm}
+
+\p{In [[00JW]], you learned that the Euclidean Algorithm seems much more efficient than factoring; but how efficient is it, exactly? The problems in this section will walk you through a classic analysis of how long the Euclidean Algorithm takes to run on given inputs.  However, the problems are independent; it is possible to do each problem without having done the previous ones.}
+
+\p{Throughout this section, when referring to the Euclidean
+Algorithm, we will specifically work with the [recursive
+implementation](00F9) (\tt{GCDRecA} from the POGIL activity).
+}
+
+\transclude{00JZ}   % gcd of consecutive Fibonacci
+\transclude{00K0}   % worst-case GCD input
+\transclude{00K1}   % Fibonacci number size
+\transclude{00KD}   % GCD is O(log n)

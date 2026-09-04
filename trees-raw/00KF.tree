@@ -1,0 +1,13 @@
+\date{2026-09-04T13:20:30Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\title{Euclidean Algorithm problems}
+
+\p{Problems related to [[00JU]], [induction](00CA), and [proving algorithm correctness](00K3).}
+
+\transclude{00JW}  % factoring vs Euclid
+\transclude{00JY}  % GCD
+\transclude{00KE}  % EA runtime analysis problem collection
+\transclude{00KG}  % Prove correctness of exponentiation

@@ -1,0 +1,10 @@
+\title{[GCD5] Time complexity of the Euclidean Algorithm (logarithm review) (2 pts)}
+\date{2026-09-04T11:52:34Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Suppose we want to run the Euclidean Algorithm to compute #{\gcd(a,b)}, assuming #{a > b}. Let #{F_{n+1}} be the smallest Fibonacci number which is greater than or equal to #{a}. Then we know from [the previous problem](00K1) that the Euclidean Algorithm takes at most #{n} steps to run, with the worst case being when #{a = F_{n+1}}. We want to figure out how #{n} relates to #{a}.}
+
+\p{Starting from #{a = F_{n+1}} (since this is the \em{worst} case), and using the result from [the previous problem](00K1), namely, that #{F_n \approx \varphi^n/\sqrt 5}, solve (approximately) for #{n} in terms of #{a}. Your final answer should be of the form ##{n \approx k_1 \log_{10} a + k_2} for suitable constants #{k_1} and #{k_2}; you should give #{k_1} and #{k_2} in approximate, decimal form. Conclude that the Euclidean Algorithm requires, \em{in the worst case}, a number of steps proportional to the number of digits in the base-ten representation of #{a}.}

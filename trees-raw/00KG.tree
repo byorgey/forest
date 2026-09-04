@@ -1,0 +1,10 @@
+\title{[I2] Exponentiation (3 pts)}
+\date{2026-09-04T13:23:47Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Write a recursive algorithm which, given a real number #{b} and a natural number #{e}, computes the power #{b^e}.  Prove that your algorithm is correct.}
+
+\p{You may express your algorithm using appropriate [pseudocode](00KH), or you may implement it in a real programming language; either one is fine.  You may use addition, subtraction, multiplication, and division, but you may not use any kind of built-in exponentiation operation.}

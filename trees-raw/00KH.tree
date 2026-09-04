@@ -1,0 +1,31 @@
+\title{Pseudocode}
+\date{2026-09-04T13:29:10Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{In class, we will often use \em{pseudocode}, which is like real
+code except that it can include English phrases to avoid specifying
+too much detail.  The rule of thumb is that a competent Data
+Structures student should be able to translate the English phrases
+into real, working code without difficulty or ambiguity.  For example,
+this pseudocode is perfectly fine:}
+
+\p{\acode{\startverb
+\> foo($l$) = \\
+\> \tb \> !for each item $x$ in the list $l$: \\
+\>     \> \tb \> Add $1$ to $d[x]$
+\stopverb
+}}
+
+\p{since we assume everyone knows how to do things like loop over every element in a list, increment a value in a dictionary, and so on.  On the other hand, here is an example of pseudocode that leaves out too much detail:}
+
+\p{\acode{\startverb
+\> bar($t$) = \\
+\> \tb \> !for each node $x$ in the binary tree $t$: \\
+\>     \> \tb \> Find the node $y$ such that the lowest common ancestor of $x$ and $y$ is as close as possible to $3$ \\
+\>     \>     \> Increment the value stored at $y$
+\stopverb
+}}
+
+\p{It is not obvious how to iterate over every node in a binary tree, and it is even less obvious how to carry out the selection of #{y} in the second line.}
