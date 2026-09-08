@@ -1,0 +1,22 @@
+\title{[O2] Algorithm input sizes by runtime}
+\date{2026-09-08T17:50:43Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Suppose you have algorithms with the six running times listed below. (Assume these are the \em{exact} number of operations performed as a function of the input size #{n}.) Suppose you have a computer that can perform #{10^{10}} operations per second, and you need to compute a result in at most an hour of computation. For each of the algorithms, what is the largest input size #{n} for which you would be able to get the result within an hour? For answers smaller than #{10^{10}}, give your answer as an exact integer; for larger answers you may provide an approximation.}
+
+\hint{Most of these can be solved algebraically, but for at least one
+  you may need to resort to numeric methods (\eg use Wolfram Alpha
+  or write a bit of code yourself).}
+
+\ol{
+  \li{#{n^2}}
+  \li{#{n^3}}
+  \li{#{100n^2}}
+  \li{#{n \log_2 n}}
+  \li{#{2^n}}
+  \li{#{2^{2^n}}}
+  \li{#{n!}}
+}

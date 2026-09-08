@@ -1,0 +1,26 @@
+\title{[I3] The Jellybean Game (3 pts)}
+\date{2026-09-08T17:39:56Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{The jellybean game is a game for two players. There is a row of #{n} jars, numbered #{1} to #{n} from left to right, each of which starts out containing some number of jellybeans (possibly zero). We assume that these are magical jars which can hold an \em{unlimited number} of jellybeans, so we don’t have to worry about the jars getting too full. (Note, however, that the jars cannot hold \em{infinitely} many beans—each jar must always have some finite number of jellybeans in it, but that number can be as big as we want.) We also assume that there is an unlimited supply of extra jellybeans (such as a jellybean factory or a magical jellybean-pooping unicorn).}
+
+\p{The players alternate turns. On a player’s turn, she must:
+\ol{
+  \li{Pick a nonempty jar, call it jar #{k}.}
+  \li{\em{Remove} one jellybean from jar #{k}.}
+  \li{\em{Add} as many jellybeans as she wants (possibly zero) to each of the jars #{1 \dots (k-1)} to the left of her chosen jar.}
+}
+}
+
+\p{For example, suppose there are five jars which currently hold ##{1 \quad 3 \quad 0 \quad 2 \quad 6.} One possible valid turn is to pick jar 4 and remove one jellybean from it, then add 6, 29, and one billion jellybeans to jars #{1}, #{2}, and #{3} respectively, resulting in ##{7 \quad 32 \quad 10^9 \quad 1 \quad 6.}}
+
+\p{The winner is the player who removes the last jellybean. Put another way, the loser is the first player who is unable to move because all the jars are empty.}
+
+\ol{
+  \li{Prove that the jellybean game always ends eventually. That is, even if the players conspire to try to make the game last forever, they cannot, as long as they follow the rules. (Of course, they certainly can make the game take a very, \em{very} long time...)}
+  \li{Describe a winning strategy for the jellybean game.  From which positions is the first player guaranteed to win, as long as they play perfectly?  What strategy should the first player follow in order to guarantee a win, if a win is possible?}
+}
+

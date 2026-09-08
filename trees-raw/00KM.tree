@@ -1,0 +1,9 @@
+\title{Little-o notation}
+\date{2026-09-08T17:58:13Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{In addition to #{O}, #{\Theta}, and #{\Omega}, we will also sometimes use the notation #{o(g(n))} (little-o) to mean that a function is #{O(g(n))} but \em{not} #{\Theta(g(n))}. So, if #{\lim_{n \to \infty} T(n)/g(n)
+= 0}, then #{T(n)} is #{o(g(n))}. Intuitively, if big-O is like “less than or equal to”, little-o is like “less than”; if #{f(n)} is #{o(g(n))} then #{f} “grows strictly more slowly than” #{g}.}
+

@@ -19,4 +19,6 @@
   \transclude{00JR}  % Kattis: Forests
 }
 
-\transclude{00KF}   % Euclidean algorithm
+\transclude{00KF}   % Euclidean algorithm problems
+
+\transclude{00KJ}

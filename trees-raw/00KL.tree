@@ -1,0 +1,23 @@
+\title{[O3] Some asymptotic properties (2 pts)}
+\date{2026-09-08T17:55:35Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\transclude{00KM}   % Little-o
+
+\ol{
+  \li{Show that #{n^j} is #{o(n^k)} whenever #{j < k}.}
+
+  \li{Prove that #{\log_a n} is #{\Theta(\log_b n)} for any positive
+  integer bases #{a,b > 1}. Conclude that we are justified in writing
+  simply #{\Theta(\log n)} without caring about the base of the
+  logarithm.}
+
+  \li{Prove that #{n^k} is #{o(b^n)} for any positive integer #{k} and
+  any real number #{b > 1}. For example, #{n^{295}} is
+  #{o(1.0001^n)}. \em{In the long run}, any polynomial function grows
+  more slowly than any exponential function!}
+}
+

@@ -1,0 +1,10 @@
+\title{Asymptotic analysis problems}
+\date{2026-09-08T17:49:05Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Problems related to asymptotic analysis.}
+
+\transclude{00KK}   % Input size by runtime (inverse)
+\transclude{00KL}   % Asymptotic properties

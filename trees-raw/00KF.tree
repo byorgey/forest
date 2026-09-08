@@ -11,3 +11,4 @@
 \transclude{00JY}  % GCD
 \transclude{00KE}  % EA runtime analysis problem collection
 \transclude{00KG}  % Prove correctness of exponentiation
+\transclude{00KI}  % Jellybean game
