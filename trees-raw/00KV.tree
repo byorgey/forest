@@ -1,0 +1,17 @@
+\title{Limit theorems}
+\author{brentyorgey}
+\date{2026-09-09T21:50:07Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{It is usually really annoying to use these definitions directly.
+Instead we can often compare rates of growth using limits.  Note in the below that #{L < \infty} is used as a shorthand to mean "the limit #{L} exists and does not diverge to #{\infty}", and #{L = \infty} is used as a shorthand to mean "the limit #{L} diverges to #{\infty}".}
+
+\transclude{00KW}   % Limit theorem
+
+
+% \proof{If #{\lim_{n \to \infty} T(n)/g(n) = k \geq 0} then there must exist some #{c > k} and #{n_0} (draw a picture!) such that #{T(n)/g(n) \leq c} for all #{n \geq n_0}, \em{i.e.} #{T(n) \leq cg(n)}.}
+
+\transclude{00KZ}

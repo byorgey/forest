@@ -1,0 +1,16 @@
+\title{Asymptotic bounds via limits}
+\date{2026-09-09T21:51:22Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Theorem}
+
+\p{
+\ul{
+  \li{If #{0 \leq \lim_{n \to \infty} T(n)/g(n) < \infty} then #{T(n)} is #{O(g(n))}.}
+  \li{If #{0 < \lim_{n \to \infty} T(n)/g(n) \leq \infty} then #{T(n)} is #{\Omega(g(n))}.}
+  \li{If #{0 < \lim_{n \to \infty} T(n)/g(n) < \infty} then #{T(n)} is #{\Theta(g(n))}.}
+  \li{If #{\lim_{n \to \infty} T(n)/g(n) = 0} then #{T(n)} is #{\Theta(g(n))}.}
+}
+}

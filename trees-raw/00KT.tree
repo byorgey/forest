@@ -1,0 +1,15 @@
+\date{2026-09-09T21:46:11Z}
+\tag{algorithms}
+\taxon{Example}
+
+\import{algorithms-macros}
+
+\p{Consider #{T(n) = 3n^2 + 17n + 8}.  To show that this is #{O(n^2)} according to the definition, we can reason as follows:
+
+  ##{\begin{align*}
+    T(n) &= 3n^2 + 17n + 8 \\
+         &\leq 3n^2 + 17n^2 + 8n^2 \quad (n \geq 1) \\
+         &= 28n^2
+  \end{align*}}
+
+  So we can choose #{c = 28} and #{n_0 = 1}, which satisfies the definition, so #{T(n)} is #{O(n^2)}. (In fact we could also pick #{c = 4} along with a bigger #{n_0}.)}

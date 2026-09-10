@@ -1,0 +1,10 @@
+\title{Big-Theta}
+\date{2026-09-09T11:31:39Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{#{T(n)} is #{\Theta(g(n))} iff #{T(n)} is both #{O(g(n))} and #{\Omega(g(n))}.}
+
+\transclude{00KS}

@@ -1,0 +1,9 @@
+\title{Intuition and motivation for big-O}
+\date{2026-09-09T21:37:25Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{From now on, we’ll assume that #{n \geq 0}, #{T(n) \geq 0}, and that #{T} represents a generic function #{\N \to \R} representing, say, the amount of time an algorithm takes to run on an input of size #{n}. Recall that big-O is “like #{\leq}”, big-Omega is “like #{\geq}”, and big-Theta is “like #{=}”. However, if we were to define, say, big-O as “#{T(n)} is #{O(n^2)} if #{T(n) \leq n^2}”, that would be too restrictive for us. For one thing, we don’t want it to matter what computer we run things on. What if it takes #{2n^2}, or #{3n^2}? Those are not actually #{\leq
+n^2}, but we want them to be considered “the same as” #{n^2}. Also, we don’t really care what happens for small values of #{n} (after all, for small values we could just run the algorithm ourselves, by hand), so it’s not necessary that #{T(n) \leq n^2} (or some multiple) for \em{all} values of #{n}, only that it be so \em{eventually}. These considerations lead to the following formal definition.}
+

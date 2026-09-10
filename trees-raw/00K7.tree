@@ -5,3 +5,20 @@
 \import{algorithms-macros}
 
 \p{The basic concepts of asymptotic analysis are introduced in a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/AA-intro.pdf).}
+
+\transclude{00KN}   % Why asymptotic analysis?
+\transclude{00KR}   % Intuition/motivation
+\transclude{00KO}   % Big-O definition
+\transclude{00KP}   % Big-Omega definition
+\transclude{00KQ}   % Big-Theta definition
+\transclude{00KX}   % little-o definition
+
+\transclude{00KT}   % Example
+
+\transclude{00KU}   % Big-O in the real world
+
+\transclude{00KV}   % Limit theorems
+
+\transclude{00L0}
+
+% Example: 3n^2 + 5n - 7.  Applying definitions is tedious.  Limit theorems.

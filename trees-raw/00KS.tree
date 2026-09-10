@@ -1,0 +1,7 @@
+\date{2026-09-09T21:43:14Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{Note this is \em{not} the same as replacing the #{\leq} in the [definition of big-O](00KR) with an #{=} sign!  In that case, #{T(n)} would have to be \em{exactly equal to} some constant multiple of #{g(n)}, which would be much too restrictive. In the actual definition, #{T(n)} must merely fall \em{in between} two \em{different} constant multiples of #{g(n)}.}

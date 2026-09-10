@@ -1,0 +1,7 @@
+\date{2026-09-09T21:56:54Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{In other words, intuitively, #{T(n)} is #{o(g(n))} if it grows strictly more slowly than #{g(n)}.  For example, #{n+2} is #{o(n^2)}.}

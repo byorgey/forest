@@ -1,0 +1,14 @@
+\title{Why asymptotic analysis?}
+\date{2026-09-09T11:21:01Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Why should we examine problems analytically at all? For example, why not just run programs and use a stopwatch to compare them?}
+
+\ul{
+\li{Actually running programs might take too long!}
+\li{The analysis lets us analyze problems for all input sizes at once, rather than having to gather data points.}
+\li{The analysis is independent of the algorithm implementation, the language in which the program is implemented, and the architecture in which the program is run. We insulate ourselves to all these variables.}
+\li{Theoretically efficient almost always implies practical efficiency.}
+}

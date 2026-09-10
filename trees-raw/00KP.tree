@@ -1,0 +1,10 @@
+\title{Big-Omega}
+\date{2026-09-09T11:27:45Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{The definition of big-Omega is identical, except that we use #{\geq} in place of #{\leq}:}
+
+\p{#{T(n)} is #{\Omega(g(n))} iff there exists a real constant #{c > 0} and a natural number #{n_0 \geq 0} such that for all #{n \geq n_0}, ##{T(n) \geq c \cdot g(n).}}

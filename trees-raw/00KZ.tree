@@ -1,0 +1,9 @@
+\date{2026-09-09T21:59:43Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Remark}
+\p{Note that the converse is not true, since, for example, #{T(n)} might be #{O(g(n))} even if the limit does not exist. As a counterexample, let #{T(n) = 0} when #{n} is even, and #{1} when #{n} is odd. Then #{T(n)} is #{O(1)} but #{\lim T(n)/1} does not exist. But typically this won’t be an issue with the functions we will see in this class!}
+
+

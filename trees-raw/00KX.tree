@@ -1,0 +1,10 @@
+\title{Little-o}
+\date{2026-09-09T21:54:37Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{#{T(n)} is #{o(g(n))} iff #{T(n)} is #{O(g(n))} but not #{\Theta(g(n))}.}
+
+\transclude{00KY}

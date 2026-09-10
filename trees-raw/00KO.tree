@@ -1,0 +1,10 @@
+\title{Big-O}
+\date{2026-09-09T11:23:39Z}
+\tag{algorithms}
+\tag{draft}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{#{T(n)} is #{O(g(n))} iff there exists a real constant #{c > 0} and a natural number #{n_0 \geq 0} such that for all #{n \geq n_0}, ##{T(n) \leq c \cdot g(n).}}
+

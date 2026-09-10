@@ -1,0 +1,18 @@
+\title{Arithmetic with big-O}
+\author{brentyorgey}
+\date{2026-09-09T22:02:05Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The following properties hold for #{\Omega} and #{\Theta} as well.}
+
+\ul{
+\li{#{k O(f) = O(f)} when #{k} is a constant, \ie does not depend on #{n}}
+\li{#{O(f) + O(g) = O(\max(f,g))} (running algorithms in \em{sequence})}
+\li{#{O(f) O(g) = O(fg)} (running \em{nested} algorithms)}
+}
+
+\p{For example, #{O(3n^2 + 17n + 8) = O(3n^2) + O(17n) + O(8) = O(n^2) +
+O(n) + O(1) = O(n^2)}.}
+

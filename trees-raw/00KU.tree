@@ -1,0 +1,9 @@
+\title{Big-O in the real world}
+\date{2026-09-09T21:48:38Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{A lot of the time people use big-#{O} when what they really mean is #{\Theta}. In this class we will be very careful to use them properly. It’s useful to have all of them at our disposal. For some problems we know exactly how fast they can be solved, so we use #{\Theta}. For some problems we know some #{O} and some #{\Omega} but they are not the same. For example, matrix multiplication: we know it must take #{\Omega(n^2)} time, and there are algorithms that show it is #{O(n^{2.37\dots})}, but no one knows what the theoretical limit is (we will look at matrix multiplication later in the semester).}
+
