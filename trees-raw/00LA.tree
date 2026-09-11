@@ -1,0 +1,10 @@
+\title{#{\lg n} is much closer to 1 than #{n}}
+\date{2026-09-11T11:20:24Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{This is somewhat surprising! #{\Theta(\lg n)} is actually smaller than #{n} to \em{any} positive power: even #{\Theta(\sqrt[15]{n})} or whatever. #{\Theta(\lg n)} is not “halfway between” #{\Theta(1)} and #{\Theta(n)}; in some sense it is much closer to #{\Theta(1)}.}
+
+\p{For example, the biggest number that fits in a 64-bit integer is about #{10^{19}}. How long would it take to count that high? At #{10^8} per second, it would take #{10^{11}} seconds or about 3000 years. But if we can process it using something that repeatedly halves, #{\lg 10^{19} \approx 63}.}

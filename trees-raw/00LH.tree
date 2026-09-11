@@ -1,0 +1,20 @@
+\date{2026-09-11T11:45:44Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\title{#{\Theta(2^n)}: exponential (up to #{n = 26})}
+
+\p{Examples of things that are #{\Theta(2^n)}:
+
+\ul{
+  \li{Number of subsets of #{n} things}
+  \li{Number of bitstrings of length #{n}}
+  \li{Number of nodes (also number of leaves) in a tree of height #{n}}
+  \li{#{1 + 2 + 4 + 8 + \dots + 2^n = 2^{n+1} - 1}, so it is #{\Theta(2^n)}}
+}
+}
+
+\transclude{00LI}   % thm: poly is o(exp)
+
+\transclude{00LJ}   % poly vs exp

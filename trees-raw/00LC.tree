@@ -1,0 +1,16 @@
+\date{2026-09-11T11:27:45Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\title{#{\Theta(n)}: linear (inputs up to #{100} million)}
+
+\p{Examples of things that are #{\Theta(n)}:
+
+\ul{
+  \li{Linear search}
+  \li{Maximum/minimum/sum of a list}
+  \li{Merge two sorted lists}
+  \li{Insert or removing at the \em{beginning} of an array/list.}
+}
+}

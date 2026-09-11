@@ -1,0 +1,7 @@
+\date{2026-09-11T11:27:08Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\title{#{\Theta(\sqrt n) = \Theta(n^{1/2})} (inputs up to #{10^{16}})}
+\p{This will not come up much in this course, but it is definitely a thing. See “square root decomposition”.}

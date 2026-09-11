@@ -12,13 +12,8 @@
 \transclude{00KP}   % Big-Omega definition
 \transclude{00KQ}   % Big-Theta definition
 \transclude{00KX}   % little-o definition
-
 \transclude{00KT}   % Example
-
 \transclude{00KU}   % Big-O in the real world
-
 \transclude{00KV}   % Limit theorems
-
-\transclude{00L0}
-
-% Example: 3n^2 + 5n - 7.  Applying definitions is tedious.  Limit theorems.
+\transclude{00L0}   % Arithmetic with big-O
+\transclude{00L1}   % Zoo

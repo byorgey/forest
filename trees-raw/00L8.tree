@@ -1,0 +1,10 @@
+\title{Logarithms grow more slowly than any power}
+\date{2026-09-11T10:59:02Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Theorem}
+\p{#{\log_b n} is #{o(n^x)} for all #{x > 0} and any #{b > 1}.}
+
+\proof{[Homework](00KL).}

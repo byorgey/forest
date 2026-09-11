@@ -13,11 +13,18 @@
   \li{Prove that #{\log_a n} is #{\Theta(\log_b n)} for any positive
   integer bases #{a,b > 1}. Conclude that we are justified in writing
   simply #{\Theta(\log n)} without caring about the base of the
-  logarithm.}
+  logarithm.
+  \hint{Recall, or look up, the logarithm change-of-base formula.}}
+
+  \li{Prove that #{\log_b n} is #{o(n^x)} for any #{b > 1} and #{x > 0}.
+  \hint{Use l'Hôpital's rule.}
+  }
 
   \li{Prove that #{n^k} is #{o(b^n)} for any positive integer #{k} and
   any real number #{b > 1}. For example, #{n^{295}} is
   #{o(1.0001^n)}. \em{In the long run}, any polynomial function grows
-  more slowly than any exponential function!}
+  more slowly than any exponential function!
+  \hint{Use induction and l'Hôpital's rule.}
+  }
 }
 

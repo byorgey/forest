@@ -1,0 +1,89 @@
+\title{[O5] Characterizing asymptotic behavior (4 pts)}
+\date{2026-09-11T09:48:12Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Characterize the asymptotic behavior of each of the following in terms of #{n}, using #{\Theta}. \strong{Give a brief justification for each answer.} For items asking for the time needed to perform some operation or solve some problem, you should describe the \em{worst case} running time of the \em{best possible} algorithm.}
+
+\ol{
+  \li{#{1 + 2 + 3 + 4 + \dots + n}}
+  \li{Average number of array lookups needed to find a given element in a sorted array of length #{n}.}
+  \li{Number of two-element subsets of a set of size #{n}.}
+  \li{#{1 + 2 + 4 + 8 + \dots + 2^n}}
+  \li{
+  \p{Total number of nodes in a complete binary tree with #{n} leaves.  A \em{complete} binary tree is one where every node has two children except for the leaves on the last level.  For example, the complete binary tree shown below has #{8} leaves.}
+  \p{
+\diagram{300}{*}{\verb<<<|
+import Diagrams.Prelude hiding (Empty)
+import Diagrams.TwoD.Layout.Tree
+import Data.Maybe
+dia = symmLayoutBin' opts (fullTree 4)
+  # fromJust
+  # renderTree (const (circle 0.1 # fc black)) (~~)
+  # frame 0.5
+  where
+    opts = def
+
+    fullTree 0 = Empty
+    fullTree n = BNode () (fullTree (n-1)) (fullTree (n-1))
+<<<}
+  }}
+
+  \li{
+  \p{Number of edges in a graph with #{n} nodes, where every node is connected to every other node.}
+  \p{
+\diagram{200}{*}{\verb<<<|
+import Diagrams.Prelude hiding (Empty)
+tournament :: Int -> Diagram B
+tournament n = atPoints (trailVertices $ regPoly n 1) (map node [1..n])  -- $
+  # applyAll [connect j k | j <- [1 .. n-1], k <- [j+1 .. n]]
+  # frame 0.5
+  where
+    node n = circle 0.07 # fc black # named n
+
+dia :: Diagram B
+dia = tournament 7
+<<<}
+  }}
+  \li{Number of different ways to arrange #{n} people in a line.}
+  \li{Average number of steps needed to find a given element in a sorted linked list of length #{n}.}
+  \li{Biggest integer that can be represented with #{n} bits.}
+  \li{Worst-case number of swaps needed to sort an array of length #{n} if you are only allowed to swap adjacent elements.}
+
+  \li{Worst-case number of steps needed to check whether two lists, each containing #{n} integers (not necessarily sorted), have any element in common. \hint{#{\Theta(n^2)} is too slow!}}
+
+  \li{Number of array lookups performed by this Python code:
+  \p{\pre\verb<<<|
+  for i in range(0,n):
+    for j in range (0,i):
+      sum += array[i][j]<<<
+  }}
+
+  \li{Number of addition operations performed by this Java code:
+  \p{\pre\verb<<<|
+  for (int i = 0; i < n; i += 3) {
+    sum = sum + i;
+  }<<<
+  }}
+
+  \li{Total number of calls to \code{println} performed by this Java code:
+  \p{\pre\verb<<<|
+  for (int i = 1; i < n; i *= 2) {
+    for (j = 0; j < 20; j++) {
+      System.out.println(i + j);
+    }
+  }<<<
+  }}
+
+  \li{Total number of calls to \code{print} performed by this Python code:
+  \p{\pre\verb<<<|
+  def foo(n):
+    print(n)
+    if n > 0:
+      foo(n-1)
+      foo(n-1)<<<
+  }}
+
+}

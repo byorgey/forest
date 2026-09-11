@@ -1,0 +1,16 @@
+\date{2026-09-11T11:30:30Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\title{#{\Theta(n \lg n)} (inputs up to #{4.5} million)}
+
+\p{Examples of things that are #{\Theta(n \lg n)}:
+
+\ul{
+  \li{Mergesort, quicksort}
+  \li{In general, divide & conquer algorithms with #{\Theta(n)} work at each level. We’ll study this in more detail later in the semester.}
+  \li{If you are only allowed to compare pairs of elements to see which is greater, sorting a list of #{n} elements takes #{\Omega(n \lg n)}.  In other words, it's impossible to sort any faster than #{n \lg n} if you are only allowed to compare elements. (If you are allowed extra operations, sorting faster than #{n \lg n} is possible; for example, a list of integers can be sorted in #{\Theta(n)} time.)}
+}
+}
+

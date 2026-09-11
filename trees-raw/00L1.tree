@@ -1,0 +1,17 @@
+\title{Time Complexity Zoo}
+\date{2026-09-10T18:48:25Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{We now present a “complexity zoo”, with examples of things having each common asymptotic time complexity, with some relevant facts interspersed. Our zoo will be ordered from smallest to biggest; that is, each entry will be [little-o](00KX) of the next thing. For each #{\Theta(f(n))}, we will also record the largest #{n} such that we can process an input of size #{n} using a #{\Theta(f(n))}-time algorithm in approximately 1 second, assuming we can do #{10^8} operations per second.}
+
+\transclude{00L2}   % 1
+\transclude{00L3}   % lg n
+\transclude{00LB}   % sqrt n
+\transclude{00LC}   % n
+\transclude{00LD}   % n lg n
+\transclude{00LE}   % n^2
+\transclude{00LF}   % n^k
+\transclude{00LH}   % 2^n
+\transclude{00LK}   % n!

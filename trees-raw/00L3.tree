@@ -1,0 +1,25 @@
+\date{2026-09-10T19:02:05Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\title{#{\Theta(\lg n)}: logarithmic (unimaginably large inputs)}
+
+\p{We say something is \em{logarithmic} if it is proportional to #{\log n} for inputs of size #{n}.}
+
+\transclude{00L4}  % lg notation
+
+\p{If we have an algorithm that takes #{\Theta(\lg n)} time, we could use it to process inputs of size #{2^{10^8}} in one second, which is unimaginably large.}
+
+\p{Examples of things that are #{\Theta(\lg n)}:
+
+\ul{
+  \li{Binary search}
+  \li{The height of a balanced binary tree with #{n} nodes}
+  \li{The number of bits needed to represent #{n}}
+}
+}
+
+\transclude{00L9}   % base doesn't matter
+\transclude{00L8}   % lg n is o(n^x)
+\transclude{00LA}   % Remark re: 1 vs lg n vs n

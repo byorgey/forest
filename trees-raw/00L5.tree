@@ -1,0 +1,18 @@
+\title{[O4] Function ordering (1 pt)}
+\date{2026-09-11T09:42:19Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Take the following list of functions and arrange them in ascending order of asymptotic growth rate. That is, if function #{g(n)} immediately follows function #{f(n)} in your list, then it should be the case that #{f(n)} is #{O(g(n))}. Please prove/justify your claims by making reference to theorems from class or [the previous problem](00KL).}
+
+\ul{
+\li{#{f_{1}(n) = n^{2.5}}}
+\li{#{f_{2}(n) = \sqrt{2n}}}
+\li{#{f_{3}(n) = n + 10}}
+\li{#{f_{4}(n) = 10^n}}
+\li{#{f_{5}(n) = 100^n}}
+\li{#{f_{6}(n) = n^2 \log n}}
+}
+

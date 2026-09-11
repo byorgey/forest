@@ -1,0 +1,18 @@
+\date{2026-09-11T11:34:18Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\title{#{\Theta(n^2)}: quadratic (inputs up to 10 thousand)}
+
+\p{Examples of things that are #{\Theta(n^2)}:
+
+\ul{
+  \li{Two nested loops (often, but not necessarily)}
+  \li{#{1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2} = \Theta(n^2)}}
+  \li{The number of pairs of items chosen out of #{n}, #{\binom{n}{2} = \frac{n(n-1)}{2}}.}
+  \li{Repeatedly appending #{n} characters to a string one by one}
+  \li{Insertion sort, bubble sort}
+}
+}
+

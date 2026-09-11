@@ -1,0 +1,15 @@
+\date{2026-09-11T11:40:00Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\title{#{\Theta(n^k)} (inputs up to #{\sqrt[k]{10^8}})}
+\p{Things that take #{\Theta(n^k)} in general:
+
+\ul{
+  \li{#{k} nested loops.}
+  \li{The number of subsets of size #{k} out of #{n} things, \ie #{\binom n k} (assuming #{n} is much bigger than #{k}).}
+}
+}
+
+\transclude{00LG}  % n^j is o(n^k)

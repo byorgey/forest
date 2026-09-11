@@ -1,0 +1,10 @@
+\title{Logarithm base doesn't matter to #{\Theta}}
+\date{2026-09-11T11:17:46Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\import{algorithms-macros}
+
+\p{#{\Theta(\log_a n) = \Theta(\log_b n)} for all positive real numbers #{a} and #{b}.  In other words, up to #{\Theta}, the base of a logarithm doesn't matter; #{\Theta(\log n)}, #{\Theta(\lg n)}, #{\Theta(\ln n)}, \etc are all the same.}
+
+\proof{[Homework](00KL).}

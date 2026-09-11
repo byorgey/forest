@@ -1,0 +1,8 @@
+\title{Polynomial vs exponential}
+\date{2026-09-11T11:47:17Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{There is an insurmountable gulf between polynomial and exponential time. For example, even #{n^{295}} is #{o(1.001^n)}! We usually take this to be the dividing line between “efficient/feasible” and “inefficient/infeasible”. (Of course #{n^{295}} is probably not actually feasible but in practice we don’t see that.)}

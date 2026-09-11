@@ -1,0 +1,9 @@
+\date{2026-09-11T11:46:57Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Theorem}
+\p{#{n^k} is #{o(r^n)} for all integers #{k \geq 0} and real numbers #{r > 1}.}
+
+\proof{[Homework](00KL).}

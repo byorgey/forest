@@ -1,0 +1,20 @@
+\title{#{\Theta(1)}: constant (any input)}
+\date{2026-09-10T18:51:08Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{A #{\Theta(1)} or \em{constant time} algorithm is one whose running time \em{does not depend} on the size of its input. If we have an algorithm that takes #{\Theta(1)}, we can obviously process arbitrary-sized inputs in less than one second.}
+
+\p{Examples of #{\Theta(1)} operations include:
+
+\ul{
+\li{Access an arbitrary index in an array}
+\li{Push to or pop from the top of a stack}
+\li{Add to or remove from the \em{end} of an extensible list (\eg \code{ArrayList} in Java; Python lists)}
+\li{Insert, update, or remove from a hash table (\eg \code{set} + dictionaries in Python; \code{HashSet}/\code{HashMap} in Java)}
+\li{Add to or remove from \em{either} end of a \em{deque} (\strong{d}ouble-\strong{e}nded \strong{que}ue)}
+\li{Arithmetic (usually!  sort of!)}
+}
+}
+

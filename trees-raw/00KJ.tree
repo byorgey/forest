@@ -8,3 +8,10 @@
 
 \transclude{00KK}   % Input size by runtime (inverse)
 \transclude{00KL}   % Asymptotic properties
+\transclude{00L5}   % Function ordering
+\transclude{00L6}   % big-O zoo
+\transclude{00L7}   % Glass jars
+
+% Maybe later include
+% \begin{question}[Subinterval sums, K\&T 2.6] \label{q:subinterval}  commented out from hw-02 ?
+

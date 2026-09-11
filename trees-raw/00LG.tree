@@ -1,0 +1,9 @@
+\date{2026-09-11T11:41:33Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\import{algorithms-macros}
+
+\p{Each #{n^j} is #{o(n^k)} for #{j < k}.}
+
+\proof{[Homework](00KL).}

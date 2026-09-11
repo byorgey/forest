@@ -1,0 +1,8 @@
+\title{#{\lg}}
+\date{2026-09-10T20:47:12Z}
+\tag{algorithms}
+\taxon{Notation}
+
+\import{algorithms-macros}
+
+\p{We will use #{\lg n} as an abbreviation for #{\log_2 n}.  Two is by far the most common and useful base for logarithms when talking about computers.}
