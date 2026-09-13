@@ -4,7 +4,7 @@
 
 \import{algorithms-macros}
 
-\p{The material in this section is introduced via [POGIL activity](https://hendrix-cs.github.io/csci382/pub/graphs.pdf).}
+\p{The material in this section is introduced via [POGIL activity](https://hendrix-cs.github.io/csci382/pub/graphs.pdf); see the activity for illustrations and examples.}
 
 \transclude{00LN}   % (Simple) graph definition
 \transclude{00LO}   % Drawings
