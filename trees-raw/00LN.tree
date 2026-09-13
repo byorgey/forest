@@ -1,0 +1,8 @@
+\title{(Simple) graph}
+\date{2026-09-13T03:39:43Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{A (simple) \em{graph} #{G = (V, E)} is a set of \em{vertices} #{V} (singular \em{vertex}) together with a set #{E} of \em{edges}, where each edge consists of a set of two vertices.}

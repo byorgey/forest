@@ -1,0 +1,8 @@
+\title{Connected}
+\date{2026-09-13T04:25:02Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{Two vertices are \em{connected} if there is a [path](00LS) with the two vertices as endpoints.  A \em{connected graph} is one where every pair of vertices are connected.  A \em{connected component} is a maximal subset of connected vertices.}

@@ -1,0 +1,17 @@
+\title{Graph definitions and terminology}
+\date{2026-09-13T03:37:48Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The material in this section is introduced via [POGIL activity](https://hendrix-cs.github.io/csci382/pub/graphs.pdf).}
+
+\transclude{00LN}   % (Simple) graph definition
+\transclude{00LO}   % Drawings
+\transclude{00LP}   % Adjacent
+\transclude{00LQ}   % Degree
+\transclude{00LR}   % Leaf
+\transclude{00LS}   % Path
+\transclude{00LT}   % Connected
+\transclude{00LU}   % Cycle
+\transclude{00LV}   % Tree

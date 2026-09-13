@@ -1,0 +1,8 @@
+\title{Degree}
+\date{2026-09-13T03:44:27Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{The \em{degree} of a vertex is the number of other vertices which are [adjacent](00LP) to it.}

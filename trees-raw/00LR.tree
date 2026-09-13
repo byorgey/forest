@@ -1,0 +1,8 @@
+\title{Leaf}
+\date{2026-09-13T03:45:21Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{A \em{leaf} is a vertex with [degree](00LQ) #{1}.}

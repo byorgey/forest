@@ -1,0 +1,8 @@
+\title{Path}
+\date{2026-09-13T03:46:35Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{A \em{path} is a sequence of one or more vertices such that each consecutive pair of vertices is [adjacent](00LP).}

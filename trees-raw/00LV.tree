@@ -1,0 +1,8 @@
+\title{Tree}
+\date{2026-09-13T04:27:53Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{A \em{tree} is an [acyclic](00LU), [connected](00LT) graph.}

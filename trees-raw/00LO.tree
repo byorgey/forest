@@ -1,0 +1,8 @@
+\title{Graphs and graph drawings}
+\date{2026-09-13T03:41:13Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{We often \em{draw} graphs with a dot for each vertex, and edges represented by (straight or curved) lines drawn between vertices.  Note that the same graph can have many different drawings; the important thing about a graph is which vertices are connected by edges, not the specific way it is drawn.}

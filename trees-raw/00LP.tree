@@ -1,0 +1,8 @@
+\title{Adjacent vertices}
+\date{2026-09-13T03:43:23Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{Vertices are \em{adjacent} (or \em{neighbors}) if they share an edge.}
