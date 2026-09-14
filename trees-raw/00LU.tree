@@ -5,4 +5,4 @@
 
 \import{algorithms-macros}
 
-\p{A \em{cycle} is a path containing at least 3 vertices which starts and ends at the same vertex.  A \em{cyclic} graph is a graph containing at least one cycle.  An \em{acyclic} graph is a graph with no cycles.}
+\p{A \em{cycle} is a path which starts and ends at the same vertex and does not repeat any edges.  A \em{cyclic} graph is a graph containing at least one cycle.  An \em{acyclic} graph is a graph with no cycles.}
