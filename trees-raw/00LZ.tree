@@ -1,0 +1,11 @@
+\title{[G3] Connectivity from degree (2 pts)}
+\date{2026-09-14T11:18:36Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Let #{G=(V,E)} be an undirected graph with #{n} vertices, with no self-loops (that is, no edges of the form #{(v,v)} from a vertex to itself). Show that if every vertex has degree at least #{n/2}, the graph is connected. If it makes your proof easier, you may assume that #{n} is even.}
+
+\hint{Think about cuts in the graph. A cut #{(S,T)} is a partition of the vertices into two sets #{S} and #{T} such that every vertex is in either #{S} or #{T} but not both. Is it possible to have a cut #{(S,T)} with no edges between #{S} and #{T}?}
+

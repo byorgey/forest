@@ -1,0 +1,11 @@
+\title{Graph problems}
+\date{2026-09-14T11:09:40Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Problems related to graphs.}
+
+\transclude{00LX}    % Adjacency matrices
+\transclude{00LY}    % Adjacency lists
+\transclude{00LZ}    % all n/2 degree -> connected

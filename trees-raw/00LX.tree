@@ -1,0 +1,21 @@
+\title{[G1] Adjacency matrices (1 pt)}
+\date{2026-09-14T11:12:59Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Given a simple graph #{G} with vertices numbered from #{1} to #{n}, an \em{adjacency matrix} for #{G} is an #{n \times n} matrix #{A} where #{A[i,j] = 1} if #{i} and #{j} are adjacent, and #{A[i,j] = 0} otherwise. In other words, the entry at row #{i} and column #{j} tells us whether there is an edge between #{i} and #{j}, with #{1} for yes and #{0} for no.}
+
+\ol{
+  \li{Make a drawing of the graph represented by the adjacency matrix ##{\begin{bmatrix} 0 & 0 & 1 & 1 \\ 0 & 0 & 1 & 0 \\ 1 & 1
+                                    & 0 & 1 \\ 1 & 0 & 1 & 0 \end{bmatrix}.}}
+  \li{Given a vertex #{u} and the adjacency matrix #{A}, how long does it take to list all the neighbors of #{u}: #{\Theta(n)}, or #{\Theta(\deg(u))}? Why?}
+
+  \li{A \em{directed} graph is a graph where each edge has a particular \em{direction}, that is, an edge is an \em{ordered pair} of vertices rather than just a set of two vertices. Typically such graphs are drawn with a little arrow on each edge showing which direction it goes. Explain how to generalize adjacency matrices to represent directed graphs.}
+
+  \li{A \em{weighted} graph is a graph where each edge has an associated number, or \em{weight}, representing something like cost, time, or distance. Explain how to generalize adjacency matrices to represent weighted graphs.}
+
+  \li{(Advanced, optional) Let #{A} be the adjacency matrix for a simple (undirected, unweighted) graph #{G}. What information does the matrix #{A^2} represent? What about #{A^3}? In general, what about #{A^n}?}
+}
+
