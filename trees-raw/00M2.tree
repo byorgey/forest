@@ -1,0 +1,28 @@
+\title{Connected, acyclic graphs have #{n-1} edges}
+\date{2026-09-14T19:07:53Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{This is a proof of one part of [the previous theorem](00M1), namely, that (1) and (2) together imply (3).}
+
+\proof{
+\p{Let #{P(n)} denote the statement “Any graph #{G} with #{n} vertices which is connected and acyclic must have #{n-1} edges.” We wish to show that #{P(n)} holds for all #{n \geq 1}.}
+\p{The proof is by induction on #{n}.}
+\ul{
+  \li{The base case is when #{n = 1}. In this case, #{G} is just a single vertex, so it is indeed connected, acyclic, and has #{0} edges.}
+
+  \li{
+  \p{For the induction step, suppose #{P(k)} holds for some #{k \geq
+    1}. That is, suppose that any graph with #{k} vertices which is connected and acyclic must have #{k-1} edges. Then we wish to show #{P(k+1)}, that is, any graph with #{k+1} vertices which is connected and acyclic must have #{k} edges.}
+  \p{So, let #{G} be a graph with #{k+1} vertices which is connected and acyclic. We claim that #{G} must have some vertex which is a leaf, that is, a vertex of degree #{1}, which we can show as follows:
+  \ul{
+    \li{#{G} cannot have any vertices of degree #{0}, because it is connected (and has at least two vertices).}
+    \li{It also cannot be the case that every vertex of #{G} has degree #{\geq 2}. If they did, then we could find a cycle by starting at any vertex and walking along edges randomly until encountering a repeated vertex; we would never get stuck because every vertex has degree #{\geq 2}, that is, if we come in along one edge there must always be a different edge along which we can leave. However, this is impossible because we assumed #{G} is acyclic.}
+  }
+  }
+
+  \p{Hence, #{G} must have some vertex which is a leaf. If we delete this vertex along with the edge adjacent to it, it results in a graph #{G'} with only #{k} vertices; we note that #{G'} is still connected (because #{G} was connected and we deleted a leaf) and also acyclic (because deleting something from an acyclic graph cannot create a cycle). Hence we may apply the inductive hypothesis to conclude that #{G'} has #{k-1} edges. Adding the deleted vertex and edge back to #{G'} shows that #{G} has #{k} edges, which is what we wanted to show.}
+}
+}
+}

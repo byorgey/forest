@@ -1,0 +1,16 @@
+\title{Acyclic graphs with #{n-1} edges are connected}
+\date{2026-09-14T19:13:31Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{This is a proof of another part of [the previous theorem](00M1), namely, that (2) and (3) together imply (1).  It uses a \term{counting argument}: we will show what we
+  wish to show by counting things in multiple ways.}
+
+\proof{
+
+\p{Let #{c} denote the number of connected components of #{G}. We want to show that #{c = 1}.}
+
+\p{Number the components of #{G} from #{1 \dots c}, and say that component #{i} has #{n_i} vertices. Then ##{\sum_{i=1}^c n_i = n,} because adding up the number of vertices in each component gives the total number of vertices. Each connected component is by definition a connected graph; each component must also be acyclic since we assumed that #{G} is acyclic. Hence we may apply [[00M2]] to conclude that component #{i} has #{n_i - 1} edges. Adding these up, the total number of edges in #{G} is ##{|E| = \sum_{i=1}^c (n_i - 1) = \left(\sum_{i=1}^c n_i \right) - \left(\sum_{i=1}^c 1 \right) = n - c.} But we already assumed the number of edges in #{G} is #{n-1}, and hence #{c = 1} as desired.}
+
+}

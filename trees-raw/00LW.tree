@@ -9,3 +9,4 @@
 \transclude{00LX}    % Adjacency matrices
 \transclude{00LY}    % Adjacency lists
 \transclude{00LZ}    % all n/2 degree -> connected
+\transclude{00M4}    % 3rd tree theorem

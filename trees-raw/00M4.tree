@@ -1,0 +1,12 @@
+\title{[G4] Connected graphs with #{n-1} edges must be acyclic (2 pts)}
+\date{2026-09-14T19:16:22Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Prove that for all #{n \geq 1}, if #{G} is a simple [connected](00LT) graph with #{n} vertices and #{n-1} edges, then #{G} has no [cycles](00LU). (This is the third part of the [proof from class](00M1), characterizing trees as having any two out of three properties.)}
+
+\p{You may freely assume [[00M2]] and [[00M3]] if they are helpful; I also recommend studying their proofs as examples.}
+
+\hint{Prove that the sum of all vertex degrees in a graph is equal to twice the number of edges.}
+\hint{Use induction on #{n}. By counting vertex degrees, show that any connected graph with #{k+1} vertices and #{k} edges must have at least one leaf.}

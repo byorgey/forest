@@ -1,0 +1,14 @@
+\title{Some proofs about trees}
+\date{2026-09-14T19:03:51Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{The proofs in this section are also covered in a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/graph-proofs.pdf).}
+
+\transclude{00M1}   % tree characterization
+
+\transclude{00M2}   % (1),(2) -> (3)
+\transclude{00M3}   % (2),(3) -> (1)
+\transclude{00M4}

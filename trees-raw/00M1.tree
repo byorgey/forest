@@ -1,0 +1,15 @@
+\title{Trees}
+\date{2026-09-14T19:07:17Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Theorem}
+\p{Let #{G = (V,E)} be a graph with #{|V| = n \geq 1}. Any two of the following imply the third:}
+
+\ol{
+  \li{#{G} is [connected](00LT).}
+  \li{#{G} is [acyclic](00LU).}
+  \li{#{G} has #{n-1} edges.}
+}
+
