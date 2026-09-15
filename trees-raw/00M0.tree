@@ -7,8 +7,10 @@
 
 \p{The proofs in this section are also covered in a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/graph-proofs.pdf).}
 
+\p{We pause here to prove a fundamental theorem about trees, partly as an example of the types of proofs we often do with graphs, and partly because trees show up all over the place and this theorem is of practical importance when designing algorithms.}
+
 \transclude{00M1}   % tree characterization
 
 \transclude{00M2}   % (1),(2) -> (3)
 \transclude{00M3}   % (2),(3) -> (1)
-\transclude{00M4}
+\transclude{00M4}   % (1),(3) -> (2)  (HW)
