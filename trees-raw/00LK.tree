@@ -5,5 +5,5 @@
 
 \title{#{\Theta(n!)}: factorial (inputs up to #{11})}
 
-\p{#{n!} corresponds to the numbre of distinct orderings of #{n} things. If an algorithm takes #{\Theta(n!)} it is really, really bad. In fact, #{k^n} is #{o(n!)} for all #{k}.}
+\p{#{n!} corresponds to the number of distinct orderings of #{n} things. If an algorithm takes #{\Theta(n!)} it is really, really bad. In fact, #{k^n} is #{o(n!)} for all #{k}.}
 

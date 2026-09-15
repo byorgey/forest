@@ -5,4 +5,4 @@
 
 \import{algorithms-macros}
 
-\p{There is an insurmountable gulf between polynomial and exponential time. For example, even #{n^{295}} is #{o(1.001^n)}! We usually take this to be the dividing line between “efficient/feasible” and “inefficient/infeasible”. (Of course #{n^{295}} is probably not actually feasible but in practice we don’t see that.)}
+\p{There is an insurmountable gulf between polynomial and exponential time. For example, even #{n^{295}} is #{o(1.001^n)}! We usually take this to be the dividing line between “efficient/feasible” and “inefficient/infeasible”. (Of course #{n^{295}} is probably not actually feasible but in practice we don’t see algorithms with running times like that.)}
