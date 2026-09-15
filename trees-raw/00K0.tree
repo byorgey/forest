@@ -12,9 +12,9 @@ Algorithm needs #{n} steps.}
 
 \p{Let #{S(n)} be the following proposition:}
 
-\p{#{S(n) =} \em{For all natural numbers #{a} and #{b}, if #{a > b} and #{\mathsf{GCDRec}(a,b)} makes #{n} recursive calls, then #{a \geq F_{n+1}} and #{b \geq F_n}.}}
+\p{#{S(n) =} \em{For all natural numbers #{a} and #{b}, if #{a > b} and #{\GCDR(a,b)} makes #{n} recursive calls, then #{a \geq F_{n+1}} and #{b \geq F_n}.}}
 
-\p{That is, if #{R(a,b,n)} represents the proposition "#{\mathsf{GCDRec}(a,b)} makes #{n} recursive calls", then ##{S(n) = \forall a,b : \mathbb{N}.\; ((a > b) \land R(a,b,n)) \to ((a \geq F_{n+1}) \land (b \geq F_n))}.}
+\p{That is, if #{R(a,b,n)} represents the proposition "#{\GCDR(a,b)} makes #{n} recursive calls", then ##{S(n) = \forall a,b : \mathbb{N}.\; ((a > b) \land R(a,b,n)) \to ((a \geq F_{n+1}) \land (b \geq F_n))}.}
 
 \ol{
   \li{Prove #{\forall n : \mathbb{N}. S(n)} by induction on #{n}:

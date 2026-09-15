@@ -20,7 +20,5 @@
 }
 
 \transclude{00KF}   % Euclidean algorithm problems
-
 \transclude{00KJ}   % Asymptotic analysis problems
-
 \transclude{00LW}   % Graph problems

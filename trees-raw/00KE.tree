@@ -7,9 +7,11 @@
 
 \p{In [[00JW]], you learned that the Euclidean Algorithm seems much more efficient than factoring; but how efficient is it, exactly? The problems in this section will walk you through a classic analysis of how long the Euclidean Algorithm takes to run on given inputs.  However, the problems are independent; it is possible to do each problem without having done the previous ones.}
 
+\p{Together, the problems in this section walk you through a proof of what is known as \em{Lamé's Theorem},  first proved by Gabriel Lamé in 1844.  It was significant in being one of the first “practical” applications of the Fibonacci numbers, and one of the first results in what we would now call the theory of algorithms.}
+
 \p{Throughout this section, when referring to the Euclidean
 Algorithm, we will specifically work with the [recursive
-implementation](00F9) (\tt{GCDRecA} from the POGIL activity).
+implementation](00K4) \GCDR (\tt{GCDRecA} from the POGIL activity).
 }
 
 \transclude{00JZ}   % gcd of consecutive Fibonacci
