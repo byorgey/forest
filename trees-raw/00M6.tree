@@ -1,0 +1,10 @@
+\title{Depth-first search (DFS)}
+\date{2026-09-17T15:34:59Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\transclude{00M7}   % Intro + intuition
+\transclude{00M8}   % DFS simple version
+\transclude{00M9}

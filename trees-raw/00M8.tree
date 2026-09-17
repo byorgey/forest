@@ -1,0 +1,21 @@
+\title{DFS (version 1)}
+\date{2026-09-17T15:39:49Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{
+\acode{\startverb
+\> Mark all vertices unvisited \\
+\> DFS($G$,$u$) = \\
+\> \tb \> Mark $u$ visited \\
+\>     \> !for each neighbor $v$ of $u$ \\
+\>     \> \tb \> !if $v$ is unvisited \\
+\>     \>     \> \tb \> DFS($G$,$v$)
+\stopverb
+}
+}
+
+\p{Notice that we implement DFS via \em{recursion}.  Perhaps you have also seen a version that uses an explicit \em{stack} data structure.  By using recursion, we essentially get our programming language's runtime system to keep track of the stack for us.  Maintaining a stack ourselves can get annoying and messy, especially if we want to create any extra local variables during the DFS.  However, a word of caution: using recursion in this way does not work so well in certain languages (where by "certain languages" I mean "Python"), especially if the graph is large.}
+
+\p{To see if vertices #{s} and #{t} are connected, we can just run #{\mathsf{DFS}(G, s)} and see if #{t} is marked visited.  Optionally, we can also stop early as soon as we find #{t} during the DFS (left as an exercise).}

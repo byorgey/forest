@@ -1,0 +1,9 @@
+\title{DFS introduction and intuition}
+\date{2026-09-17T15:35:44Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The first graph algorithm we will learn about can answer simple questions of connectivity: given a graph #{G} and particular vertices #{s} and #{t}, are they connected by a path? If so, what is one such path?}
+
+\p{The basic idea is to explore as far as you can in a certain direction before backtracking and continuing to explore further unexplored paths, and so on, just like you might explore a physical maze. The problem is loops: we need some way to mark vertices that we have already visited, so we know if we have been somewhere before and don’t get stuck exploring a loop forever.  Just like we might mark where we have been by placing rocks on the ground in a physical maze, we can mark previously visited vertices with "digital rocks" so we don't get caught in a loop.}

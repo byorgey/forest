@@ -1,0 +1,8 @@
+\title{[G4] Handshake lemma (1 pt)}
+\date{2026-09-16T09:58:49Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Prove/explain why the sum of all vertex degrees in a graph is equal to twice the number of edges.  Your proof need only be a sentence or two.}

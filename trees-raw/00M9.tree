@@ -1,0 +1,24 @@
+\title{DFS (version 2, with parent tree)}
+\date{2026-09-17T15:51:35Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{What if we want to find an explicit \em{path} from #{s} to #{t}? As it stands, we can't: we need more information. In particular, we need to know how we got to each vertex.  We can add a \em{parent dictionary} which stores the \em{parent} of each visited vertex.}
+
+\p{
+\acode{\startverb
+\> Mark all vertices unvisited \\
+\> $\mathit{parent} \leftarrow$ empty dictionary \\
+\> DFS($G$,$u$) = \\
+\> \tb \> Mark $u$ visited \\
+\>     \> !for each neighbor $v$ of $u$ \\
+\>     \> \tb \> !if $v$ is unvisited \\
+\>     \>     \> \tb \> $\mathit{parent}[v] \leftarrow u$ \\
+\>     \>     \>     \> DFS($G$,$v$)
+\stopverb
+}
+}
+
+\p{Now, to find a path from #{s} to #{t} (in reverse order) we can look up #{\mathit{parent}[t]}, #{\mathit{parent}[\mathit{parent}[t]]}, and so on.}
