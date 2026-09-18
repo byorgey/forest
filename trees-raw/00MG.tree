@@ -1,0 +1,12 @@
+\title{[G7] Connected component labelling (3 pts)}
+\date{2026-09-18T22:37:14Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Given a graph #{G} with #{n} vertices labelled #{0} through #{n-1}, design an #{O(V+E)} algorithm to find and label all the connected components of #{G}. That is, your algorithm should output a dictionary or array associating each vertex #{v} with a component label #{c(v)} such that two vertices #{u} and #{v} have the same component label (that is, #{c(u) = c(v)}) if and only if #{u} and #{v} are connected. For example, you might give all the vertices in the first connected component the label #{1}, all the vertices in the second connected component the label #{2}, and so on.}
+
+\p{You may assume that #{G} is represented in whichever way is easiest for you ([adjacency matrix](00LX) or [adjacency list](00LY)).}
+
+\p{Explain how your algorithm works, and analyze its asymptotic running time. Psuedocode is fine, though you may also choose to write real code if you wish.}

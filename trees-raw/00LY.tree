@@ -14,9 +14,9 @@
 
   \li{Given a vertex #{u} and an adjacency list representation of a graph #{G}, how long does it take to list all the neighbors of #{u}: #{\Theta(n)}, or #{\Theta(\deg(u))}? Why?}
 
-  \li{Explain how to generalize adjacency lists to represent directed graphs.}
+  \li{Explain how to generalize adjacency lists to represent [directed graphs](00LX).}
 
-  \li{Explain how to generalize adjacency lists to represent weighted graphs.}
+  \li{Explain how to generalize adjacency lists to represent [weighted graphs](00LX).}
 
 }
 

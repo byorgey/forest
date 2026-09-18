@@ -1,0 +1,12 @@
+\title{[G6] Distances in a tree (3 pts)}
+\date{2026-09-18T22:34:59Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Given a graph #{T} which is guaranteed to be a [tree](00LV), and a particular starting vertex #{s}, design an #{O(V + E)} algorithm to find the distance of every vertex from #{s}. In other words, your algorithm should output some kind of dictionary/map or array associating every vertex #{v} to a natural number #{\ell(v)} which is the length of a path from #{s} to #{v}. Note that the length of a path from #{s} to itself is #{0}, the length of a path from #{s} to any of its neighbors is #{1}, and so on.}
+
+\p{You may assume that #{T} is represented in whichever way is easiest for you ([adjacency matrix](00LX) or [adjacency list](00LY)).}
+
+\p{Explain how your algorithm works, and analyze its asymptotic running time. Psuedocode is fine, though you may also choose to write real code if you wish.}

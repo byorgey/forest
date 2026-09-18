@@ -5,4 +5,4 @@
 
 \import{algorithms-macros}
 
-\p{The \em{degree} of a vertex is the number of other vertices which are [adjacent](00LP) to it.}
+\p{The \em{degree} of a vertex is the number of other vertices which are [adjacent](00LP) to it.  The degree of a vertex #{v} is often abbreviated #{\deg(v)}.}

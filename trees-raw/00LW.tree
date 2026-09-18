@@ -11,3 +11,5 @@
 \transclude{00LZ}    % all n/2 degree -> connected
 \transclude{00M5}    % Handshake lemma
 \transclude{00M4}    % 3rd tree theorem
+\transclude{00MF}    % Distances in a tree
+\transclude{00MG}    % Connected components
