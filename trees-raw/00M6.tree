@@ -7,6 +7,6 @@
 
 \transclude{00M7}   % Intro + intuition
 \transclude{00M8}   % DFS simple version
-\transclude{00MB}
+\transclude{00MB}   % Correctness of DFS
 \transclude{00M9}   % DFS version 2, with parent
 \transclude{00MA}   % DFS time complexity

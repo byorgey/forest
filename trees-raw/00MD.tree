@@ -1,15 +1,19 @@
 \title{DFS solves connectivity}
 \date{2026-09-18T13:12:29Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
 \p{Assuming all vertices start out unvisited, #{\DFS(G,s)} ends up visiting #{t} if and only if #{s} and #{t} are [connected](00LT).}
 
-% \proof{
-% \ul{
-%   \li{By definition, \DFS only explores along edges, \ie paths.  If #{s} and #{t} are not connected, there is no way that \DFS starting from #{s} will be able to reach #{t}.}
-%   \li{If #{s} and #{t} are connected, by definition there must be some path from #{s} to #{t}.  Since we already know [\DFS always terminates](00MC), we can assume}
-% }
-% }
+\proof{
+\ul{
+  \li{By definition, \DFS only explores along edges, \ie paths.  If #{s} and #{t} are not connected, there is no way that \DFS starting from #{s} will be able to reach #{t}.}
+  \li{\p{If #{s} and #{t} are connected, by definition there must be some
+path from #{s} to #{t}.  Since we already know [\DFS always
+terminates](00MC), we can do induction on the number of recursive
+  calls needed for \DFS to complete.}
+
+  \p{Suppose the next vertex on the path from #{s} to #{t} is #{v}, so there is an edge between #{s} and #{v}.  Then either the call to #{\DFS(G,s)} will make a recursive call to #{\DFS(G,v)} (if #{v} is unvisited), or else if #{v} is already visited it means that a call to #{\DFS(G,v)} already happened.  In either case, our induction hypothesis tells us that the recursive call #{\DFS(G,v)} will end up visiting #{t}; hence so will the original call #{\DFS(G,s)}.}}
+}
+}
