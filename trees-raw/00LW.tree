@@ -13,3 +13,5 @@
 \transclude{00M4}    % 3rd tree theorem
 \transclude{00MF}    % Distances in a tree
 \transclude{00MG}    % Connected components
+\transclude{00MH}    % Kattis: sky islands
+\transclude{00MI}    % Kattis: reachable roads
