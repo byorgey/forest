@@ -1,11 +1,10 @@
 \title{DFS (version 2, with parent tree)}
 \date{2026-09-17T15:51:35Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
-\p{What if we want to find an explicit \em{path} from #{s} to #{t}? As it stands, we can't: we need more information. In particular, we need to know how we got to each vertex.  We can add a \em{parent dictionary} which stores the \em{parent} of each visited vertex.}
+\p{What if we want to find an explicit \em{path} from #{s} to #{t}? As it stands, we can't: we need more information. In particular, we need to know how we got to each vertex.  We can add a \em{parent dictionary} which stores the \em{parent} of each visited vertex.  Every time we visit a vertex, we record its parent, \ie the neighbor we "came from".}
 
 \p{
 \acode{\startverb
@@ -21,4 +20,6 @@
 }
 }
 
-\p{Now, to find a path from #{s} to #{t} (in reverse order) we can look up #{\mathit{parent}[t]}, #{\mathit{parent}[\mathit{parent}[t]]}, and so on.}
+\p{Note that the resulting #{\mathit{parent}} dictionary records a \em{tree}, representing the paths we took while exploring the graph.  However, instead of the each node recording its children, each node simply records its parent.  So we can easily move \em{up} the tree, but not down.}
+
+\p{That's OK though—moving up is all we need!  In order to find a path from #{s} to #{t} (in reverse order) we can look up #{\mathit{parent}[t]}, #{\mathit{parent}[\mathit{parent}[t]]}, and so on.}

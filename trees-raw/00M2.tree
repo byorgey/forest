@@ -22,7 +22,7 @@
   }
   }
 
-  \p{Hence, #{G} must have some vertex which is a leaf. If we delete this vertex along with the edge adjacent to it, it results in a graph #{G'} with only #{k} vertices; we note that #{G'} is still connected (because #{G} was connected and we deleted a leaf) and also acyclic (because deleting something from an acyclic graph cannot create a cycle). Hence we may apply the inductive hypothesis to conclude that #{G'} has #{k-1} edges. Adding the deleted vertex and edge back to #{G'} shows that #{G} has #{k} edges, which is what we wanted to show.}
+  \p{Hence, #{G} must have some vertex which is a leaf. If we delete this vertex along with the edge adjacent to it, it results in a graph #{G'} with only #{k} vertices; we note that #{G'} is still connected (because #{G} was connected and we deleted a leaf) and also acyclic (because deleting something from an acyclic graph cannot create a cycle). Hence we may apply the induction hypothesis to conclude that #{G'} has #{k-1} edges. Adding the deleted vertex and edge back to #{G'} shows that #{G} has #{k} edges, which is what we wanted to show.}
 }
 }
 }

@@ -1,0 +1,15 @@
+\title{DFS solves connectivity}
+\date{2026-09-18T13:12:29Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{Assuming all vertices start out unvisited, #{\DFS(G,s)} ends up visiting #{t} if and only if #{s} and #{t} are [connected](00LT).}
+
+% \proof{
+% \ul{
+%   \li{By definition, \DFS only explores along edges, \ie paths.  If #{s} and #{t} are not connected, there is no way that \DFS starting from #{s} will be able to reach #{t}.}
+%   \li{If #{s} and #{t} are connected, by definition there must be some path from #{s} to #{t}.  Since we already know [\DFS always terminates](00MC), we can assume}
+% }
+% }

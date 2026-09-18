@@ -1,0 +1,18 @@
+\title{DFS terminates}
+\date{2026-09-18T13:12:06Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\import{algorithms-macros}
+
+\p{For any finite graph #{G} and any unvisited vertex #{u}, #{\DFS(G,u)}: \ul{\li{terminates in finite time, and} \li{decreases the number of unvisited vertices.}}}
+
+\proof{
+  By strong induction on the number of unvisited vertices.
+  \ul{
+    \li{If #{u} is the only unvisited vertex, then the \sf{if} statement inside the loop will never be true, so \DFS will never call itself recursively and will terminate after iterating through all the neighbors of #{u} (since #{G} is finite, #{u} can only have a finite number of neighbors).  It also marks #{u} visited, thus decreasing the number of unvisited vertices.}
+    \li{Otherwise, the first action of #{\DFS(G,u)} is to mark #{u} visited, thus decreasing the number of unvisited vertices by one.  Each recursive call to an unvisited neighbor #{\DFS(G,v)} will be with fewer unvisited vertices, and therefore by the induction hypothesis will terminate and reduce the number of unvisited vertices further.}
+  }
+}
+
+\transclude{00ME}  % also terminates when called on visited vertex

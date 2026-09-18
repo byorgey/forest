@@ -20,3 +20,5 @@
 \def\sf[body]{#{\mathsf{\body}}}
 \def\GCDR{\sf{GCDR}}
 \def\GCDI{\sf{GCDI}}
+\def\DFS{\sf{DFS}}
+\def\BFS{\sf{BFS}}

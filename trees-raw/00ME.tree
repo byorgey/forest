@@ -1,0 +1,7 @@
+\date{2026-09-18T13:28:51Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{We also note that #{\DFS(G,v)} terminates even if we call it on a visited vertex #{v}, since it will proceed to call itself recursively on only the unvisited neighbors of #{v}, so the above theorem applies to each of the recursive calls.}

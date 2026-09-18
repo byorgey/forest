@@ -1,0 +1,19 @@
+\title{Time complexity of DFS}
+\date{2026-09-18T03:39:33Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{What is the time complexity of this algorithm? First of all, it matters how we represent the visited vertices. We can use a dictionary (with vertices as keys and booleans as values), or an array of booleans (if the vertices are numbered #{0 \dots n-1}), or a set of visited vertices. Assuming some kind of array or hash table-based structure, the operations of marking a vertex as visited or checking to see if a vertex is visited should take #{\Theta(1)}.}
+
+\p{Now, this algorithm is recursive, and we will spend some time later in the semester talking about how to analyze recursive algorithms in general, but thankfully we can do something much simpler in this case:}
+\ul{
+  \li{We call DFS at most \em{once} for each vertex.}
+  \li{We iterate over the edges adjacent to each vertex (assume it takes #{O(\deg(u))} to iterate over the vertices adjacent to #{u}). This means we look at each edge \em{twice} (once from each end).}
+}
+
+\p{Thus the entire algorithm takes something like #{O(V+E)}, where #{V} is the number of vertices and #{E} is the number of edges (formally we should write #{|V|} and #{|E|} but we just abbreviate them as #{V} and #{E}). Note that we don’t use “#{n}”: there is nothing magical about the letter #{n}, and in this case we prefer to use the letters #{V} and #{E} to denote the number of vertices and number of edges, respectively.}
+
+\p{Note also that we can’t necessarily simplify #{O(V+E)}: #{E} might be much less than #{V}, or much greater.  We could argue that this particular version is actually #{O(E)} (assuming it takes #{\Theta(1)} to initialize the data structure used to track visited vertices), but we often use a variant version that loops over all vertices and calls DFS from each unvisited vertex.}
+

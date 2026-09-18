@@ -1,0 +1,13 @@
+\title{Correctness of DFS}
+\date{2026-09-18T13:11:21Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{How do we know that [DFS](00M8) does what we want? First of all, we need to argue that it won't go off into an inifinite loop or infinite recursion.}
+
+\transclude{00MC}   % termination
+
+\p{There are many things we could prove about DFS—indeed, DFS has a lot of nice properties that can be used for all sorts of purposes which we sadly don't have time to talk about—but the most basic one is that DFS discovers which vertices are connected and which are not.}
+
+\transclude{00MD}   % connectivity
