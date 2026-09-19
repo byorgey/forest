@@ -1,0 +1,25 @@
+\import{swarm-macros}
+
+\title{Weeknotes for 18 September 2026 (week 37)}
+\date{2026-09-19}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Advising}
+
+  \p{This week was full of office hour meetings, since I was required to have a check-in meeting with all 14 of my first-year advisees.  I'm also requiring my Algorithms students to have several individual meetings with me throughout the semester, and I ill-advisedly made the first one due at the same time—so I had quite a few Algorithms meetings on top of the first-year advising meetings.  It was exhausting, but I also had some really good meetings.}
+}
+
+\subtree{
+  \title{Swarm}
+
+  \p{I did manage to fit in a [bit of work on the Swarm integrated help system](https://github.com/swarm-game/swarm/pull/2800): you can now hit Tab to cycle among links on a page, and I added a bunch of unit tests for the help parser.  Then I spent some time thinking about how to specify tables of contents; I think I have it planned out now and just need to write the code this coming week.}
+}
+
+\subtree{
+  \title{Family}
+
+  \p{We have celebrated two birthdays in the past few days: my older son turned 15 on the Thursday, and my younger son turned 9 on Friday.  Older son chose to go to [Marble Slab Creamery](https://www.marbleslab.com/) and younger son chose to visit [Las Delicias](https://www.lasdelicias.biz/); much delicious sugar was consumed.  My wife's parents came down for a visit to celebrate their birthdays and attend the community theater musical my younger son is in (opening night is tonight!).}
+}
