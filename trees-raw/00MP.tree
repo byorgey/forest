@@ -1,0 +1,27 @@
+\title{BFS implementation}
+\date{2026-09-21T18:23:54Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{
+\acode{\startverb
+\> Mark all vertices unvisited \\
+\> $Q \gets$ empty queue \\
+\> Mark $s$ visited \\
+\> $Q.\mathit{enqueue}(s)$ \\
+\> $\mathit{parent} \gets$ empty dictionary (parent map) \\
+\> $\mathit{layer} \gets$ empty dictionary (layer map) \\
+\> $\mathit{layer}[s] \gets 0$ \\
+\> !while $Q$ is not empty \\
+\> \tb \> $u \gets Q.\mathit{dequeue}$ \\
+\>     \> !for each neighbor $v$ of $u$ \\
+\>     \> \tb \> !if $v$ is unvisited \\
+\>     \>     \> \tb \> Mark $v$ visited \\
+\>     \>     \>     \> $Q.\mathit{enqueue}(v)$ \\
+\>     \>     \>     \> $\mathit{parent}[v] \leftarrow u$ \\
+\>     \>     \>     \> $\mathit{layer}[v] \leftarrow \mathit{layer}[u] + 1$ \\
+\stopverb
+}}
+
+\p{The \em{parent} and \em{layer} maps are optional, and can be used to find actual shortest paths and the shortest distance from #{s} to each vertex, respectively.}

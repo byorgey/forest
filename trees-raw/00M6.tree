@@ -1,7 +1,6 @@
 \title{Depth-first search (DFS)}
 \date{2026-09-17T15:34:59Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
@@ -10,3 +9,4 @@
 \transclude{00MB}   % Correctness of DFS
 \transclude{00M9}   % DFS version 2, with parent
 \transclude{00MA}   % DFS time complexity
+\transclude{00MJ}   % Other DFS applications

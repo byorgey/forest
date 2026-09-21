@@ -1,0 +1,9 @@
+\title{Motivation for BFS}
+\date{2026-09-21T17:43:04Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{[DFS](00M6) can find a path between given vertices, if one exists; but it is not guaranteed to find the \em{shortest} path.  For example, consider the graph consisting of four vertices connected into a cycle.  The shortest path from any vertex to an adjacent vertex is clearly of length #{1}; but if DFS happens to search in the other direction first, it will find the path of length #{3} instead.}
+
+\p{So, if we want to find not just \em{any} path between vertices in a graph, but the \em{shortest} path, what can we do?  This is a natural question in many contexts, where the shortest path corresponds to a cheapest/quickest/simplest solution.}

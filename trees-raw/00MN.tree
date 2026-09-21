@@ -1,0 +1,22 @@
+\title{BFS layers correspond to shortest paths}
+\date{2026-09-21T17:55:47Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\import{algorithms-macros}
+
+\p{For every #{k \geq 0} and every vertex #{v}, the shortest path from #{s} to #{v} has length #{k} if and only if #{v \in L_k}.}
+
+\proof{
+\p{Intuitively, this says that if #{v} shows up in layer #{k}, then that means the shortest path from #{s} to #{v} has length #{k}, and vice versa.  If #{v} is in layer #{k}, then there is definitely a path of length #{k} from #{s} to #{v}, since we can get from each layer to the next via a single edge; and if there were a shorter path, #{v} would have shown up in an earlier layer.}
+
+\p{Formally, the proof is by induction on #{k}.
+\ul{
+  \li{When #{k = 0}, we must show that for any #{v}, the shortest path from #{s} to #{v} has length #{0} if and only if #{v \in L_0}.  This is true because #{s} is the only vertex in #{L_0}, and if a path from #{s} to #{v} has length #{0} then #{v = s}.}
+  \li{Now let #{k \geq 1} and suppose as our induction hypothesis that for any #{j < k}, the shortest path from #{s} to any #{u} has length #{j} if and only if #{u \in L_{j}}.  Now consider some vertex #{v}.  We must show both directions of the if and only if.
+  \subproof{Suppose the shortest path from #{s} to #{v} has length #{k}, and suppose the next-to-last vertex in the shortest path (that is, the vertex right before #{v}) is #{u}.  The part of the path from #{s} to #{u} must also be a shortest path of length #{k-1} (if there were a shorter path from #{s} to #{u}, then we could just add on the edge from #{u} to #{v} to create a path from #{s} to #{v} of length #{< k}), so by the induction hypothesis #{u \in L_{k-1}}.  Then since #{v} is a neighbor of #{u}, #{v \in L_k} (#{v} can't be in any earlier layers since then the induction hypothesis would imply there is a path to #{v} shorter than #{k}).}
+  \subproof{Now suppose #{v \in L_k}.  By definition, it must have a neighbor #{u \in L_{k-1}}.  By the induction hypothesis, the shortest path to #{u} must have length #{k-1}; adding back the edge between #{u} and #{v} yields a path to #{v} of length #{k}.  This must be a shortest path, since if there were a shorter one, the induction hypothesis again tells us that #{v} would have been in an earlier layer and hence not in #{L_k}.}
+  }
+}}
+
+}

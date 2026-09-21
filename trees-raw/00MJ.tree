@@ -1,0 +1,18 @@
+\title{Other DFS applications}
+\date{2026-09-21T17:31:23Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{There are many other applications of DFS—far too many to cover in this course!  I will just list a few and let you look them up if you are interested.
+
+\ul{
+  \li{DFS can be used to find [articulation points (aka cut vertices)](https://cp-algorithms.com/graph/cutpoints.html) and [bridges](https://cp-algorithms.com/graph/bridge-searching.html), \ie vertices and edges whose removal would disconnect a graph.}
+
+\li{DFS can be used to topologically sort a directed graph.  We will learn a different algorithm for this later.}
+
+\li{DFS can be used to find the strongly connected components of a directed graph; this is known as [Kosaraju's algorithm](https://en.wikipedia.org/wiki/Kosaraju'27s_algorithm).}
+
+\li{Given a rooted tree, we can run DFS with a gobal "time" counter and label each vertex with the time we started processing it and the time we finished processing it.  Then we can answer ancestry queries in #{\Theta(1)}—to check whether vertex #{a} is an ancestor of vertex #{b} in the tree, just check whether #{b}'s start and end times lie within #{a}'s start and end times.}
+
+}}

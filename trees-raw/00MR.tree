@@ -1,0 +1,13 @@
+\title{Practical notes on implementing BFS}
+\date{2026-09-21T18:38:29Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{If you implement BFS in a real programming language (you should try it!), be sure you use a good data structure for your queue!  For example, Python lists make an extremely poor list substitute: it is possible to append or remove items from the end of a list in constant time, but, say, removing an element from the beginning of a list takes linear time!  Using a list instead of a real queue would therefore make BFS take #{O(V^2 + E)} instead of #{O(V+E)}, which could make a huge difference.  For example, processing a graph with one million vertices (as long as it does not have too many edges) would take a fraction of a second using an #{O(V+E)} algorithm, but an #{O(V^2+E)} algorithm could take on the order of #{(10^6)^2 / 10^8 = 10^4} seconds, or almost three hours.  A graph with 10 million vertices would still take less than a second with an efficient BFS, but an #{O(V^2)} algorithm could take more than a week.}
+
+\ul{
+  \li{In Java, you can use the \code{ArrayDeque} class, which implements the \code{Queue} interface.}
+  \li{In Python, you can use the \code{deque} class from the \code{collections} library.}
+  \li{In C++, you can use a \code{std::queue}.}
+}

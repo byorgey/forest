@@ -1,0 +1,9 @@
+\title{BFS running time}
+\date{2026-09-21T18:34:01Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Since the [implementation of BFS](00MP) shown above has two nested loops, it must take #{\Theta(n^2)} time, right?  Not necessarily!  (Also, we don't even have anything here named #{n}.)  However, by a [similar argument as we used to analyze DFS](00MA), this algorithm examines each vertex at most once and each edge at most twice, performing various constant-time operations along the way (in particular we can implement a queue so that enqueue and dequeue both take constant time).  Hence, the entire algorithm is #{O(V+E)}.}
+
+\p{This is about the best we could possibly hope for—any interesting graph algorithm has to at least look at the entire graph, and simply reading every vertex and every edge takes #{\Theta(V+E)} time.}

@@ -1,0 +1,12 @@
+\title{Neighbors are in adjacent layers}
+\date{2026-09-21T18:11:01Z}
+\tag{algorithms}
+\taxon{Lemma}
+
+\import{algorithms-macros}
+
+\p{If #{u} and #{v} are neighbors, then the layers of #{u} and #{v} differ by at most one.}
+
+\proof{
+  #{u} and #{v} could be in the same layer.  If not, let #{L_k} be the earliest layer which contains either #{u} or #{v}.  But then by definition the other vertex will show up in the next layer #{L_{k+1}}.
+}

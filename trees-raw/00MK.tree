@@ -1,0 +1,12 @@
+\title{Breadth-first search (BFS)}
+\date{2026-09-21T17:42:32Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\transclude{00ML}   % Motivation
+\transclude{00MM}   % Specification
+\transclude{00MP}   % Implementation
+\transclude{00MQ}   % Time complexity
+\transclude{00MR}

@@ -1,0 +1,14 @@
+\title{BFS specification}
+\date{2026-09-21T17:48:02Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The shortest path problem can be solved by the \em{breadth-first search} (BFS) algorithm. The basic idea behind BFS is to start at a vertex #{s} and explore outward in all directions, adding vertices one “layer” at a time. That is, layer zero is just #{L_0 = \{s\}}; layer 1 is all neighbors of #{s}; layer 2 is all the neighbors of layer 1 vertices which were not already in layers 0 or 1; and so on.}
+
+\p{Formally, we can define ##{\begin{align*}L_0 &= \{s\} \\ L_{k+1} &= \left( \bigcup_{v \in L_k} N(v) \right) - \left( \bigcup_{i \leq k} L_i \right)\end{align*}} where #{N(v)} denotes the set of all #{v}'s neighbors.}
+
+\p{We claim that the layers defined in this way have the following properties.  In particular, [the first theorem below](00MN) tells us that BFS (if we can implement it somehow) will solve the shortest path problem: to find the shortest path from #{s} to #{t}, just run BFS starting from #{s}, and see what layer #{t} shows up in.  In fact, we don't need a particular target vertex in mind; just running BFS starting from #{s} will tell us about the shortest path from #{s} to every vertex.   The [second lemma](00MO) is something we will use layer.}
+
+\transclude{00MN}    % layers -> shortest paths
+\transclude{00MO}    % neighbors are in adjacent layers
