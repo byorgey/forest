@@ -9,4 +9,4 @@
 \transclude{00MM}   % Specification
 \transclude{00MP}   % Implementation
 \transclude{00MQ}   % Time complexity
-\transclude{00MR}
+\transclude{00MR}   % Practical notes

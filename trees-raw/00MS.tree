@@ -1,0 +1,19 @@
+\title{[K7] Kattis: BFS problem I (2 pts)}
+\date{2026-09-21T20:13:22Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Solve any one of the following Kattis problems:
+
+\ul{
+    \li{[Interplanetary Tunnels](https://open.kattis.com/problems/interplanetarytunnels)}
+    \li{[Alien Attack 2](https://open.kattis.com/problems/alienattack2)}
+    \li{[Amanda Lounges](https://open.kattis.com/problems/amanda)}
+    \li{[Breaking Bad](https://open.kattis.com/problems/breakingbad)}
+    \li{[Erdős Numbers](https://open.kattis.com/problems/erdosnumbers)}
+}
+}
+
+\p{[[00JP]]}

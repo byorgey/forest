@@ -1,0 +1,23 @@
+\title{[G9] Shortest path in a large random graph (3 pts)}
+\date{2026-09-21T20:31:07Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{The file [\code{graph-F26.txt}](https://hendrix-cs.github.io/csci382/pub/graph-F26.txt) describes a large undirected graph. The first line of the file contains a single integer which is the number of edges in the graph. Each subsequent line of the file describes one (undirected) edge, and contains two space-separated strings which are the names of the two vertices at the endpoints of the edge.}
+
+\p{Write a program (in a programming language of your choice) to find a shortest path from the vertex labelled with your first name to the vertex labelled \code{END} (if there are multiple shortest paths you can find any one of them). You should submit a text file containing the list of vertices along this shortest path, starting with your name and ending with \code{END}. Each vertex should be on a separate line. For example, my solution looks like this:}
+\p{\pre\verb<<<|
+Brent
+j2l65t
+dae18w
+kr9stg
+8km7u3
+j14vln
+a0pjwk
+END<<<
+}
+\p{You should also turn in the code you used to find your path.}
+\p{To avoid any ambiguity, the list of names I used was as follows:
+Amiko, Coen, Collin, David, Jack, Jaxon, Jordan, Mark, Natalia, Rayden, Spencer, Tanvi, Vincent.}

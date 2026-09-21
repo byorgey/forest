@@ -1,0 +1,33 @@
+\title{[G10] Strong connectivity (3 pts)}
+\date{2026-09-21T20:34:41Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{In class, we saw the definition of an undirected graph which is : a graph is connected if there is always a path between any two vertices. When we add directions to the edges, the concept of connectedness becomes more interesting.}
+
+\p{A directed graph is if for any two vertices #{x} and #{y}, there is always a \em{directed path} from #{x} to #{y}. Note this must also be true for the vertices #{y} and #{x}, so there must be a directed path from #{y} to #{x} as well. In other words, a strongly connected graph is like a network of one-way streets where it is always possible to drive from any location to any other location while obeying the one-way signs; you can never get stuck.}
+
+\p{This problem will walk you through the process of developing an algorithm for determining whether a directed graph is strongly connected.}
+
+\ol{
+  \li{Give an example of a strongly connected graph with at least #{4} vertices (you may either draw it, or list its vertices and edges).}
+
+  \li{Prove: a directed graph #{G} is strongly connected if and only if there is some vertex #{s} such that #{s} is mutually connected to every other vertex; that is, for every other vertex #{v} there is both a directed path from #{s} to #{v} and also from #{v} back to #{s}.}
+
+  \li{Explain how to use a graph search algorithm like DFS or BFS to determine whether there exist directed paths from a particular starting vertex #{s} to every other vertex.}
+
+  \li{Explain how to determine, in only #{O(V+E)} time, whether there exist directed paths \em{to} a particular vertex #{s} \em{from} every other vertex.}
+
+  \li{Put all these observations together into an algorithm to determine whether a given directed graph is strongly connected. You should:
+  \ol{
+    \li{Describe your algorithm. You may use pseudocode, but your description should be detailed enough that someone could take it and turn it into working code.}
+
+    \li{Prove/justify the correctness of your algorithm. In other words, why does your algorithm correctly determine whether a graph is strongly connected? Of course, you may freely cite the results from the previous parts of this problem.}
+
+    \li{Analyze the asymptotic running time of your algorithm.}
+  }
+  }
+}
+

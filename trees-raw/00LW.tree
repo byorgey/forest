@@ -15,3 +15,8 @@
 \transclude{00MG}    % Connected components
 \transclude{00MH}    % Kattis: sky islands
 \transclude{00MI}    % Kattis: reachable roads
+\transclude{00MS}    % Kattis: BFS I
+\transclude{00MT}    % Kattis: BFS II
+\transclude{00MU}    % hypercube graphs
+\transclude{00MV}    % BFS in large random graph
+\transclude{00MW}    % strong connectivity
