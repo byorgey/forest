@@ -1,0 +1,26 @@
+\title{Bipartite = no odd cycles}
+\date{2026-09-23T03:37:52Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Theorem}
+\p{An undirected graph #{G} is [bipartite](00MY) iff it has no odd-length [cycles](00LU).}
+
+\proof{
+To prove this if and only if, we must prove both directions.
+
+\subproof{
+#{(\Longrightarrow)} Suppose #{G} is bipartite. Then by definition, any path in #{G} must alternate between #{L} and #{R}. Hence any cycle—that is, any path that returns to where it started—must have even length.
+}
+
+\subproof{
+\p{#{(\Longleftarrow)} Suppose #{G = (V,E)} has no odd-length cycles; we must show #{G} is bipartite.  Pick an arbitrary vertex #{s} and run a [BFS](00MK), generating layers #{L_0}, #{L_1}, #{L_2}, …. Then define ##{\begin{gather*}
+    L = L_0 \union L_2 \union L_4 \union \dots \\
+    R = L_1 \union L_3 \union L_5 \union \dots
+\end{gather*}}}
+
+\p{We now claim that #{L} and #{R} are a vertex partition showing that #{G} is bipartite, that is, every edge #{\{x,y\} \in E} has one endpoint in #{L} and one in #{R}. By the [single-layer-difference property of BFS](00MO), there can’t be any edges between different layers within #{L} or #{R}. The only possibility we have to worry about is an edge between two vertices in the \em{same} layer; we must show this can't happen.}
+\p{So, suppose #{\{x,y\} \in E} and #{x,y \in L_j}; we will derive a contradiction. Let #{z} be the least common ancestor of #{x} and #{y} in the BFS tree, and suppose #{z} has height #{h} above #{x} and #{y}. Then #{z \to x \to y \to z} forms a cycle of length #{2h + 1}, which is odd—but we assumed #{G} has no odd cycles.  Therefore such an edge #{\{x,y\}} within a single layer cannot exist, and #{G} is indeed bipartite.}
+}
+}

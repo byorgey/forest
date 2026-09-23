@@ -1,0 +1,8 @@
+\title{Bipartite graph}
+\date{2026-09-22T19:07:30Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+\p{An undirected graph #{G = (V,E)} is \em{bipartite} if #{V} can be partitioned into two sets #{L} and #{R} such that every edge has one endpoint in #{L} and one in #{R}.}

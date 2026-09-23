@@ -11,3 +11,4 @@
 \transclude{00M0}   % Proofs about trees
 \transclude{00M6}   % DFS
 \transclude{00MK}   % BFS
+\transclude{00MX}   % Bipartite

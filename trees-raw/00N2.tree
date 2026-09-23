@@ -1,0 +1,8 @@
+\title{Bipartite = #{2}-colorable}
+\date{2026-09-23T03:24:23Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{Being [bipartite](00MX) is the same as being #{2}-[colorable](00N1)—instead of thinking in terms of putting the vertices on one side or the other, we can think in terms of coloring them, say, red and blue.  But we can also talk about graphs being #{3}-colorable, #{4}-colorable, and so on.  Deciding whether a graph is #{2}-colorable—that is, bipartite—can be done quite efficiently, as we will see in a moment.  Surprisingly, it turns out that deciding whether a graph is #{k}-colorable for #{k \geq 3} is quite difficult!}

@@ -1,0 +1,12 @@
+\title{Bipartite graphs}
+\date{2026-09-22T19:06:17Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\transclude{00MZ}   % example, intuition, why bipartite graphs are interesting + important
+\transclude{00MY}   % bipartite definition
+\transclude{00N0}   % graph coloring
+\transclude{00N3}   % theorem: bipartite <-> no odd cycles
+\transclude{00N4}

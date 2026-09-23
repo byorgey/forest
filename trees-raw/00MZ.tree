@@ -1,0 +1,11 @@
+\title{Bipartite graphs: intuition and motivation}
+\date{2026-09-22T19:08:03Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Suppose we are trying to schedule TA hours. We have a set of available time slots and a set of TAs, and each TA is available during certain time slots.  We can model this situation with a graph: make a vertex for each TA, a vertex for each time slot, and connect each TA to all the time slots for which they are available.}
+
+\p{Notice that in this example, we have two kinds of vertices, and the edges only go from one kind of vertex to the other kind.  This kind of graph is called \em{bipartite}, and they show up a lot—any time we want to model some kind of relationship between two sets.}
+
+\p{Not only can we use bipartite graphs to model lots of things, but many problems which are difficult for graphs in general become easy in the case of bipartite graphs.  For example, the problem of scheduling TAs is a \em{matching} or \em{assignment} problem, which is difficult for graphs in general, but can be solved for bipartite graphs using a \em{maximum flow} (which we will learn about later in the semester).}

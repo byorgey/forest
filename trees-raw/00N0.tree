@@ -1,0 +1,11 @@
+\title{Graph coloring}
+\date{2026-09-23T03:18:26Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{As a generalization of bipartite graphs, we can also think about graph \em{coloring}.  The idea is to give every vertex a "color" in such a way that no edge has the same color on both ends.}
+
+\transclude{00N1}   % k-colorable
+\transclude{00N2}   % bipartite = 2-colorable

@@ -1,0 +1,19 @@
+\title{BFS is a test for bipartiteness}
+\date{2026-09-23T03:48:53Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{The above proof does much more than just establish the truth of the
+theorem. It actually describes a practical algorithmic \em{test} for
+bipartiteness. Run a BFS starting from any vertex; then #{G} is
+bipartite iff there is no edge between two vertices in the same
+layer. If there is a cross-edge within a layer, then we have found an
+odd cycle; otherwise, we have found a 2-coloring of the graph.}
+
+\p{That is, this algorithm tells us not only whether a graph is
+bipartite, but gives us concrete (and easily checkable) \em{evidence}
+to support the conclusion: either an odd cycle, showing the graph is
+not bipartite, or a specific partition of the vertices showing that it is.}
+
