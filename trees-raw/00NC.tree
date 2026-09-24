@@ -1,0 +1,11 @@
+\title{Topological ordering means "edges all point to the right"}
+\date{2026-09-24T15:43:34Z}
+\tag{algorithms}
+\taxon{Remark}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{In other words, a [topological ordering](00NB) is a way to put the vertices of a graph in order so that the edges only point to the right.  This corresponds to a consistent order in which classes can be taken, tasks can be done, \em{etc.} so the prerequisites are always met.}
+
+% picture?

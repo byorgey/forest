@@ -1,0 +1,15 @@
+\title{DAG examples}
+\date{2026-09-24T15:39:24Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{In general, we tend to use DAGs to represent \em{dependency} relationships.  For example:
+\ul{
+  \li{The graph of courses at Hendrix where there is a directed edge #{X \to Y} when class #{Y} has class #{X} as a prerequisite}
+  \li{The graph of modules in a software project where an edge #{X \to Y} means that module #{Y} imports module #{X}}
+  \li{A graph of tasks where an edge #{X \to Y} means that task #{X} must be completed before task #{Y}}
+}
+Obviously we cannot have directed cycles in such graphs because it does not make sense for things to depend on themselves.
+}

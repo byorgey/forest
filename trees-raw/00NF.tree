@@ -1,0 +1,7 @@
+\date{2026-09-24T15:51:32Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{Note that this proof implicitly depends on the fact that the graph is \em{finite} (we only consider finite graphs in this class).  Does the lemma still hold for infinite DAGs?}

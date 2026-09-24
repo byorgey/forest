@@ -1,0 +1,16 @@
+\title{Directed graph}
+\date{2026-09-24T15:22:14Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\taxon{Definition} \p{A \em{directed graph} is just like an
+[undirected graph](00LN), except that the edges are \em{ordered} pairs
+of vertices, #{E \subseteq V \times V}.  This means that each edge has
+a particular \em{direction}: an edge goes \em{from} one vertex \em{to}
+another vertex instead of just connecting two vertices.}
+
+\p{We typically draw directed graphs by putting arrowheads on the
+edges to indicate which direction they go.}
+

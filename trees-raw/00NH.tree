@@ -1,0 +1,23 @@
+\title{Efficient topsort}
+\date{2026-09-24T16:02:17Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Theorem}
+\p{A [topological sorting](00NB) algorithm can be implemented in #{\Theta(V+E)} time.}
+
+\proof{
+\p{We assume an [adjacency list](00LY) representation for the input graph.}
+\p{We need to be able to quickly find the next remaining vertex with indegree #{0} on each iteration (we don’t want to re-run a linear search every time), and also quickly delete a vertex (updating the indegrees of other vertices appropriately).}
+\p{The idea is to maintain two data structures:
+\ul{
+  \li{An array/dictionary #{\mathit{in}} where #{\mathit{in}[v] =} the indegree of #{v}. We can initialize this dictionary in #{\Theta(V + E)} time: just iterate through every vertex #{u} and increment #{\mathit{in}[v]} for each outgoing edge #{u \to v}.}
+
+  \li{A queue/stack/whatever #{Z} of vertices with indegree #{0}. After creating #{\mathit{in}}, we can initialize #{Z} in #{\Theta(V)} time: iterate through the vertices and add each #{v} to #{Z} if #{\mathit{in}[v] = 0}.}
+}}
+  \p{At each iteration, we pop/dequeue a vertex #{u} from #{Z} in #{\Theta(1)}. To "delete" #{u}, we don't actually need to delete it from any graph data structure; it's enough to decrement #{\mathit{in}[v]} for each edge #{u \to v}, and add #{v} to #{Z} if #{\mathit{in}[v]} becomes zero. This is #{\Theta(1)} per edge and only looks at each edge once in total. Hence the entire algorithm is #{\Theta(V+E)} overall.}
+}
+
+
+

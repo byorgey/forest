@@ -1,0 +1,10 @@
+\title{Directed graphs and DAGs}
+\date{2026-09-24T15:21:44Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\transclude{00N6}    % Directed graph (def'n)
+\transclude{00N7}    % Generalizing undirected -> directed
+\transclude{00N8}    % DAGs

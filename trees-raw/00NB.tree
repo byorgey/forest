@@ -1,0 +1,8 @@
+\title{Topological ordering}
+\date{2026-09-24T15:43:16Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+\p{A \em{topological ordering} (\em{topological order}, \em{topological sort}, \em{topsort}) of a directed graph is an ordering of nodes #{v_1, \dots, v_n} such that for every #{(v_i, v_j) \in E}, we have #{i < j}.}

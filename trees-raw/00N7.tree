@@ -1,0 +1,13 @@
+\title{Generalizing from undirected to directed graphs}
+\date{2026-09-24T15:24:07Z}
+\tag{algorithms}
+\taxon{Remark}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{Lots of things generalize naturally to directed graphs: instead of paths we have \em{directed} paths, which follow edges "in the right direction", as if the directions are one-way signs we have to obey. Instead of degree we have \em{indegree} (the number of edges pointing \em{into} a vertex) and \em{outdegree} (the number of edges pointing out). [DFS](00M6) and [BFS](00MK) extend naturally to directed graphs as well.  If we only follow edges in the direction they are supposed to go—\ie if at each vertex we only look at outgoing neighbors—then neither algorithm needs any changes, and they find \em{directed} paths.}
+
+\p{In some ways, directed graphs are actually more "fundamental" than undirected graphs.  The various ways we have to represent graphs ([adjacency matrices](00LX) and [adjacency lists](00LY)) naturally represent directed graphs, and if we want an undirected edge we essentially have to put in two directed edges, one in each direction.}
+
+% TODO: include an example directed graph drawing

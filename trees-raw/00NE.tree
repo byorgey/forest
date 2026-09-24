@@ -1,0 +1,14 @@
+\title{DAG #{\to} indegree 0}
+\date{2026-09-24T15:50:16Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Lemma}
+\p{Any [DAG](00N9) has a vertex with [indegree](00N7) #{0}.}
+
+\proof{
+Pick any starting vertex #{v}, and keep following incoming edges backwards until finding a vertex with no incoming edges. This process must stop: if not, by the pigeonhole principle, since there are only finitely many vertices, we must eventually visit a vertex twice, but this would form a directed cycle, and we assumed the graph is a DAG.
+}
+
+\transclude{00NF}   % infinite DAGs?

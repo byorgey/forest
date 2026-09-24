@@ -11,3 +11,4 @@
 \transclude{00M6}   % DFS
 \transclude{00MK}   % BFS
 \transclude{00MX}   % Bipartite
+\transclude{00N5}   % Directed graphs + DAGs

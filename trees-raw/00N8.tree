@@ -1,0 +1,15 @@
+\title{DAGs and topological ordering}
+\date{2026-09-24T15:37:07Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\transclude{00N9}   % DAG definition
+\transclude{00NA}   % DAG examples
+\transclude{00NB}   % topsort
+\transclude{00NC}   % edges point "to the right"
+\transclude{00ND}   % DAG <-> topsort
+\transclude{00NG}   % Naive time complexity
+\transclude{00NH}   % Efficient topsort
+\transclude{00NI}   % Kahn's Algorithm

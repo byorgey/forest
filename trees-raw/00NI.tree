@@ -1,0 +1,38 @@
+\title{Kahn's Algorithm}
+\date{2026-09-24T16:09:24Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{The resulting algorithm is known as \em{Kahn’s Algorithm}, and was first published by Arthur Kahn in 1962.}
+
+% \tex{\usepackage{algorithmicx} \usepackage{algpseudocode}}{\startverb
+%   \begin{algorithmic}[1]
+%     \Require Directed graph $G = (V,E)$.
+%     \State $T \gets$ empty list
+%     \State $Z \gets$ empty queue/stack/whatever (with $\Theta(1)$ add/remove)
+%     \State $\mathit{in} \gets$ dictionary mapping all vertices to $0$
+%     \For{each $v \in V$}
+%       \For{each $u$ adjacent to $v$}
+%         \State increment $\mathit{in}[v]$
+%       \EndFor
+%     \EndFor
+%     \For{each $v \in V$}
+%       \If{$\mathit{in}[v] = 0$}
+%         \State add $v$ to $Z$
+%       \EndIf
+%     \EndFor
+%     \While{$Z$ is not empty}
+%       \State $v \gets Z.\mathit{dequeue}$
+%       \State append $v$ to $T$
+%       \For{each $u$ adjacent to $v$}
+%         \State decrement $\mathit{in}[u]$
+%         \If{$\mathit{in}[u] = 0$}
+%           \State add $u$ to $Z$
+%         \EndIf
+%       \EndFor
+%     \EndWhile
+%   \end{algorithmic}
+% \stopverb
+% }

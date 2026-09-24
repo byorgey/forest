@@ -1,0 +1,28 @@
+\title{DAG #{\leftrightarrow} topsort}
+\date{2026-09-24T15:46:29Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\taxon{Theorem}
+\p{A [directed graph](00N6) #{G} has a [topological ordering](00NB) iff #{G} is a [DAG](00N9).}
+
+\proof{
+\subproof{
+(#{\Longrightarrow}) Suppose #{G} has a topological ordering #{v_1, \dots, v_n}. We must show that #{G} has no directed cycles. Intuitively, this is because any directed cycle must have at least one edge pointing backwards. More formally, suppose there is a cycle #{C}, whose lowest-numbered vertex is #{v_i}, with the previous vertex in the cycle being #{v_j}. But then there is an edge #{v_j \to v_i} with #{i < j}, a contradiction since #{v_1, \dots, v_n} is a topological ordering. Hence #{G} has no cycles.
+}
+
+\subproof{
+(#{\Longleftarrow}) Suppose #{G} is a DAG; we will show that it has a topological ordering by giving an algorithm to compute one.
+
+\transclude{00NE}   % Lemma: DAG has indegree 0
+
+\p{Now we prove that if #{G} is a DAG, it has a topological ordering. Proof by induction on #{n} / recursive algorithm.
+\ul{
+  \li{Base case: if #{n = 1} there is only one vertex and no edges, so there is a trivial topological ordering.}
+
+  \li{If #{n > 1}, find a vertex #{v} with indegree 0 by the previous lemma/algorithm. Note that #{G - \{v\}} (the graph formed by deleting vertex #{v} and any adjacent edges) is also a DAG, since deleting things cannot create any cycles. Then by the induction hypothesis, #{G - \{v\}} has a topological ordering. Adding #{v} at the beginning then makes a valid topological ordering for #{G} since #{v} has no incoming edges.}
+
+}}}}
+

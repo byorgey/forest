@@ -1,0 +1,9 @@
+\title{DAG}
+\date{2026-09-24T15:37:31Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{A \em{directed acyclic graph} (DAG) is a [directed graph](00N6) with no \em{directed} cycles.}
+

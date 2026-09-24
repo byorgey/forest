@@ -1,0 +1,7 @@
+\title{Time complexity of naive topsort}
+\date{2026-09-24T15:59:26Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The [algorithm described in the above proof](00ND), for computing a topological ordering of a DAG, takes #{\Theta(V^2)} time: searching for an indegree-#{0} vertex takes #{\Theta(V)} time in the worst case (if we have to walk backwards through most of the graph), and we have to do it once for each vertex. But we can do better when the graph is sparse. The idea is to maintain some extra information that allows us to quickly find a vertex with indegree #{0} on each iteration without searching.}
