@@ -1,0 +1,7 @@
+\title{Introduction}
+\date{2026-09-28T13:39:58Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Our next unit covers \em{greedy algorithms}—an important class of algorithms where repeatedly making the \em{locally best} choice (\ie a "greedy" choice) results in a \em{globally} best result.  This does not always work—but when it does, it is very effective.  Typically, to prove that greedy algorithms are correct we can use some kind of \em{exchange argument}, where we imagine exchanging the greedy choice for some other choice, and show that it could only possibly make the result worse.}

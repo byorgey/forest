@@ -1,0 +1,9 @@
+\title{Greedy Algorithms}
+\date{2026-09-28T13:37:07Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\transclude{00NK}   % Intro
+\transclude{00NL}   % Dijkstra
