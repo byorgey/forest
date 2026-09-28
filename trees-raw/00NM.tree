@@ -1,0 +1,28 @@
+\title{[D01] Suite Bergamasque: Clair de Lune}
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+\tag{debussy}
+\author{debussy}
+
+% XXX typeset Clair de Lune?
+% See https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1778
+
+% \lilypond{\verb<<<|
+% \new PianoStaff <<
+%   \new Staff \relative
+%   { \time 9/8 \key df \major \tempo "Andante très expressif"
+%     8 af c df f4~ |
+%   }
+%   \new Staff \relative
+%   { \clef bass \key af \major
+%     af,4 << ef' af c >> << ef, af c >> |
+%     ef,,4 << ef' af c >> << ef, af c >> |
+%   }
+%   \new Dynamics
+%   {
+%     s4 \sustainOn s4 s4 \sustainOff |
+%     s4 \sustainOn s4 s4 \sustainOff
+%   }
+% >>
+% <<<}
