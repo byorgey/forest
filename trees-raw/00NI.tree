@@ -1,11 +1,10 @@
 \title{Kahn's Algorithm}
 \date{2026-09-24T16:09:24Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
-\p{The resulting algorithm is known as \em{Kahn’s Algorithm}, and was first published by Arthur Kahn in 1962.}
+\p{The resulting algorithm is known as \em{Kahn’s Algorithm}, and was first published by Arthur Kahn in 1962.  A careful writeup and analysis of the algorithm, with pseudocode, can be [found in this PDF](https://hendrix-cs.github.io/csci382/pub/topsort.pdf).}
 
 % \tex{\usepackage{algorithmicx} \usepackage{algpseudocode}}{\startverb
 %   \begin{algorithmic}[1]
