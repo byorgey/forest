@@ -5,5 +5,4 @@
 
 \import{algorithms-macros}
 
-\p{The material in this section is introduced via a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/Dijkstra-intro.pdf).}
-
+\p{The basic ideas behind Dijkstra's algorithm are first introduced via a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/Dijkstra-intro.pdf).}

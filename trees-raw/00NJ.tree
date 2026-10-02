@@ -6,4 +6,5 @@
 \import{algorithms-macros}
 
 \transclude{00NK}   % Intro
+\transclude{00NP}   % Weighted graphs
 \transclude{00NL}   % Dijkstra

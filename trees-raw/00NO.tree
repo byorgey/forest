@@ -1,0 +1,13 @@
+\import{algorithms-macros}
+
+\title{\advanced What kind of things can we use for weights?}
+\date{2026-10-02T13:39:30Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\p{For now, we will typically consider the set of [weights](00NN) #{W = \R^+}, that is, nonnegative real numbers; later, we will consider #{W = \R} and include the possibility of negative weights.}
+
+\p{In general, one can use other sets besides real numbers for
+weights.  For example, we could use integers, or natural numbers, or
+rational numbers.  In fact, one can use any [ordered
+semiring](https://en.wikipedia.org/wiki/Semiring): there must be two operations corresponding to combining weights in series and in parallel (typically, for finding shortest paths, we combine weights in series by \em{adding} them, and in parallel by taking the \em{minimum}), these two operations must play nicely together, and there must also be some notion of "less than" which also plays nicely with the operations.}

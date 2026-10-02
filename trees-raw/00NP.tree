@@ -1,0 +1,11 @@
+\title{Weighted graphs}
+\date{2026-10-02T13:51:03Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{So far we have considered undirected and directed graphs, but each edge either exists or not. We will now consider \em{weighted} graphs, where each edge has some sort of cost.}
+
+\transclude{00NN}   % Weighted graph
+\transclude{00NO}   % Weight sets
+\transclude{00NQ}   % Unweighted = all have weight 1

@@ -1,0 +1,9 @@
+\title{Unweighted graphs as weighted graphs}
+\date{2026-10-02T13:54:07Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{Note that we can usually think of an unweighted graph as a weighted graph where all edges have weight #{1}.}
+

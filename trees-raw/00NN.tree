@@ -1,0 +1,11 @@
+\title{Weighted graph}
+\date{2026-10-02T13:36:39Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+
+\p{A \em{weighted} (directed or undirected) graph is a graph where each edge is assigned a \em{weight}. That is, formally, there is a function #{w : E \to W} which assigns to each edge #{e \in E} a weight #{w(e)} taken from a suitable set of weights #{W}.  The weight of an edge #{(u,v)} is also denoted #{w(u,v)} or #{w_{uv}}.}
+\p{The weight or length of a [path](00LS) is just the sum of the weights of its edges.}
+
