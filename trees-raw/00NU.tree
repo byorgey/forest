@@ -1,0 +1,9 @@
+\title{[D2] Dijkstra for longest paths (1pt)}
+\date{2026-10-03T16:16:50Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{What happens if we replace the word “smallest” in [Dijkstra’s algorithm](00NL) with the word “biggest”—that is, we use a max priority queue so we pull out the vertex #{u} with the \em{maximum} distance on each iteration, and for each edge #{(u,v)} we update #{d[v]} to be the \em{maximum} of #{d[v]} and the sum #{d[u] + w_{uv}}. Can we use this modified Dijkstra’s algorithm to find \em{longest} paths bewteen nodes in any graph without directed cycles? Prove that this works, or give a counterexample (with explanation) where it doesn’t.}
+

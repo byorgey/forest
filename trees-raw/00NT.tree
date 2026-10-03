@@ -1,0 +1,15 @@
+\title{[D1] Dijkstra with negative weight (1pt)}
+\date{2026-10-03T16:14:40Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Why doesn't [Dijkstra's algorithm](00NL) work if edges in the graph
+can have negative [weights](00NP) (even if there are no [directed cycles](00N7))?
+Give an example of a directed graph with no directed cycles where
+Dijkstra's algorithm fails to find the minimum-weight path between a
+pair of vertices.  Be sure to demonstrate that you understand
+\em{why} your graph is a counterexample; that is, show what
+Dijkstra's algorithm does on your example graph, and explain why the
+path it finds is not the minimum-weight path.}

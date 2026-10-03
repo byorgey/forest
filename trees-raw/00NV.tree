@@ -1,0 +1,12 @@
+\title{[G11] Kahn's algorithm and directed cycles (2 pts)}
+\date{2026-10-03T16:19:48Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{In class we explored [Kahn's algorithm](00NI), which [can be used](00N8) to find a [topological ordering](00NB) of any [DAG](00N9).  Explain how we could extend Kahn's algorithm to find a directed cycle in directed graphs which are not a DAG.
+
+  \hint{How can we tell when Kahn's Algorithm has failed to find a topological ordering?  What can we say about the [indegree](00N7) of all the vertices that are left?}
+  \hint{What happens if you pick a random starting vertex in the leftover graph and [follow edges backwards](00NE)?}
+}

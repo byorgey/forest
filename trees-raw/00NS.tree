@@ -1,0 +1,8 @@
+\title{Dijkstra's algorithm problems}
+\date{2026-10-03T16:12:00Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\transclude{00NT}   % Dijkstra with negative weights
+\transclude{00NU}   % Max-Dijkstra for longest paths

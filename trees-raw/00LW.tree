@@ -20,3 +20,4 @@
 \transclude{00MU}    % hypercube graphs
 \transclude{00MV}    % BFS in large random graph
 \transclude{00MW}    % strong connectivity
+\transclude{00NV}    % Kahn for finding directed cycles
