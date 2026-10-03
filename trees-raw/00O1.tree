@@ -1,0 +1,31 @@
+\title{[RP01] Prelude in D major}
+\author{rachmaninoff}
+\date{2026-10-03T20:32:30Z}
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+\tag{rachmaninoff}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 3/4 \key d \major
+    R2. | R2. | fs'2 e4
+  }
+  \new Dynamics
+  { R2. \pp | R2. | R2. \mf
+  }
+  \new Staff \relative
+  { \clef bass \key d \major
+    \tuplet 3/2 { d,8 \( a'' d }
+    \tuplet 3/2 { a' d, a }
+    \tuplet 3/2 { fs a, d' \) } |
+    \tuplet 3/2 { d,, \( a'' d }
+    \tuplet 3/2 { a' d, a }
+    \tuplet 3/2 { fs a, d' \) } |
+    \tuplet 3/2 { r d,, \( a'' }
+    \tuplet 3/2 { a' d, a \) }
+    \tuplet 3/2 { r <cs g' a> ( a ) }
+  }
+>>
+<<<}

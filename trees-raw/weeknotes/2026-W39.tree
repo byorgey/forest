@@ -1,0 +1,21 @@
+\import{swarm-macros}
+
+\title{Weeknotes for 2 October 2026 (week 39)}
+\date{2026-10-03}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\p{Not really a whole lot going on this week besides a mountain of course prep and grading.}
+
+\subtree{
+  \title{Piano corner}
+
+  \p{I hadn't played the exquisitely beautiful [Rachmaninoff Prelude in D major](00O1) for a while, so I worked on polishing it up this week.  Again, nothing too technically demanding, but there are a lot of notes with big jumps that must be played quietly, without interrupting the flow of the beautiful melody—so the slightest hesitation will ruin it, and all the notes have to be down cold!  I'm pretty happy with it at this point, but I think it still needs to solidify more before I would be comfortable performing it.}
+}
+
+\subtree{
+  \title{Hanabi corner: learning Turbo 2}
+
+  \p{My 15-year-old son and I have started learning the [Turbo 2 convention system](https://hanabi.wiki/en/conventions/turbo2) for 2-player Hanabi.  I played one game with him this week (we got a perfect score, though it was not a particularly difficult deal) and have played a couple games with others.  I like it a lot so far—it seems to occupy a happy medium between a "natural" convention system like [H-Group](https://hanabi.github.io/) and "pure information-theoretic" convention systems like [Hat Guessing](https://hanabi.wiki/en/conventions/hat-guessing) or [Reactor 0](https://hanabi.wiki/en/conventions/ReactorZero), and works much better for 2 players than H-Group.}
+}
