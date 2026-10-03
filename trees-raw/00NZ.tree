@@ -1,0 +1,18 @@
+\title{Correctness of Dijkstra's Algorithm}
+\date{2026-10-03T19:59:28Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\import{algorithms-macros}
+
+\p{[Dijkstra’s algorithm](00NY) correctly solves the [SSSP problem](00NW) for a weighted graph with nonnegative edge weights.}
+
+\proof{
+  We will prove the loop invariant that for all visited #{v}, #{d[v]} is the length of the shortest path from #{s} to #{v}. The proof is by induction on the number of loop iterations.
+
+  \ul{
+    \li{At the start of the algorithm, #{s} is the only visited vertex, and #{d[s] = 0} is correct since there are no negative-weight edges (and hence no better way to get from #{s} to itself than just staying there).}
+    \li{Now suppose the invariant holds and the loop executes one more time. Let #{u, v} be the vertices picked by the algorithm. We will show that any other path from #{s} to #{v} must be at least as long as the path from #{s} to #{v} via #{u}. Any other path from #{s} to #{v} must cross from a visited vertex to an unvisited vertex at some point, say it does this on the edge #{x \to y}. But by the way #{u} and #{v} were chosen, we know that the shortest path from #{s} to #{y} via #{x} is at least as long as the path from #{s} to #{v} (since by the invariant we know the shortest path from #{s} to #{x}), plus there may be extra distance from #{y} to #{v} as well. (Notice how the assumption of nonnegative edge weights is important here—if the distance from #{y} to #{v} could be negative it invalidates this proof!)}
+    }
+  \p{Hence, the loop updates the set of visited vertices and #{d} appropriately and the invariant still holds.}
+}

@@ -1,0 +1,11 @@
+\title{Single-Source Shortest Paths}
+\date{2026-10-03T19:26:22Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Dijkstra's Algorithm solves the \em{single-source shortest path} (SSSP) problem in a [directed](00N6), [weighted](00NP) graph: given a vertex #{s}, find the shortest paths from #{s} to \em{every other} vertex in the graph.}
+
+\p{Note that this seems like a harder problem than just finding the shortest path from #{s} to some particular target vertex #{t}, but it's really not.  Intuitively, you can’t find the shortest path from #{s} to #{t} without exploring the rest of the graph, thus discovering shortest paths from #{s} to other vertices along the way.}
+
+

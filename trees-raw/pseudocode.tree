@@ -1,0 +1,23 @@
+\title{Pseudocode macros}
+
+\def\indent[body]{
+  \<html:div>[style]{margin-left: 30px}{\body}
+}
+
+\def\pseudo[body]{
+  \p{\indent{\body}}
+}
+
+\def\keyword[w]{#{\mathsf{\w}}}
+
+\def\return{\keyword{return}}
+
+\def\state[body]{
+  \<html:div>{\body}
+}
+
+\def\while[cond][body]{
+  \<html:div>{\keyword{while} \cond:
+    \indent{\body}
+  }
+}

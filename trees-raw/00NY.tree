@@ -1,0 +1,30 @@
+\title{Dijkstra's Algorithm (basic version)}
+\date{2026-10-03T19:32:26Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Here’s the basic algorithm, which we can think of as a generalization of [BFS](00MK) to [weighted graphs](00NP). Recall that BFS keeps track of:
+\ul{
+  \li{which vertices have been visited so far,}
+  \li{a layer map, giving the layer of each visited vertex, and}
+  \li{a parent map recording the parent of each vertex in the BFS tree.}
+}
+The visited vertices and parent map can be kept unchanged.  The list of layers was really telling us the shortest distance to the nodes in each layer, since distance in an unweighted graph is just the number of edges. Therefore instead of recording the "layer" of each vertex we will just record the distance to each vertex from #{s}.
+}
+
+\def\parent{#{\mathit{parent}}}
+
+\pseudo{
+  \state{#{d \gets} empty dictionary}
+  \state{#{\parent \gets} empty dictionary}
+  \state{Mark #{s} visited}
+  \state{#{d[s] \gets 0}}
+  \while{not all vertices are visited}{
+    \state{Pick visited #{u} and unvisited #{v} such that #{d[u] + w_{uv}} is as small as possible}
+    \state{#{d[v] \gets d[u] + w_{uv}}}
+    \state{#{\parent[v] \gets u}}
+    \state{Mark #{v} visited}
+  }
+  \state{\return #{d, \parent}}
+}

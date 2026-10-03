@@ -1,0 +1,8 @@
+\title{Running time of Dijkstra's Algorithm (basic)}
+\date{2026-10-03T20:04:18Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{How long does the [basic version of Dijkstra's Algorithm](00NY) take? It depends a lot on how we choose vertices #{u} and #{v} on each iteration. A brute-force approach is to simply iterate over all edges #{(u,v)}, keep only those where #{u} is visited and #{v} unvisited, and remember the one with the smallest value of #{d[u] + w_{uv}}. Since the while loop marks one vertex visited on each iteration, it executes #{|V|} times, making the whole algorithm #{\Theta(VE)} (which could be #{O(V^3)} if the edges are dense). However, it turns out we can do better than this if we use a more clever scheme for quickly finding the best edge at each iteration. (Note that the best algorithms for solving the SSSP problem where \em{negative} weights are allowed run in #{\Theta(V^3)} or #{\Theta(VE)}; we will learn about one such algorithm later in the semester.)}
+

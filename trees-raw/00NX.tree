@@ -1,0 +1,10 @@
+\title{Dijkstra's Algorithm intuition}
+\date{2026-10-03T19:29:40Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{In an unweighted graph, we can use [BFS](00MK) to find shortest paths, but now we need to take edge weights into account. Intuitively, BFS searches outwards one layer at a time, by increasing distance. We’ll do the same thing: search outward by increasing distance. Imagine turning on a source of water at vertex #{s}, and watching the water flood the whole graph. Each edge is a (directed) pipe, and the weight of an edge says how long the water takes to traverse that pipe.  We can keep track of "where the water has reached" so far, and note at each step the next vertex reached by the water.  Since the water floods in every direction possible, it is guaranteed that the time the water first reaches a vertex corresponds to the shortest path to that vertex from #{s}.}
+
+\p{Note that this only makes sense when the edge weights are \em{positive}—if water can “travel back in time” it invalidates this whole scheme; we can’t necessarily find the next vertex to be reached by the water with a \em{greedy} approach. If we want to find shortest paths when edge weights can be negative, we need a different algorithm (which we will study later).}
+

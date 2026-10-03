@@ -6,3 +6,9 @@
 \import{algorithms-macros}
 
 \p{The basic ideas behind Dijkstra's algorithm are first introduced via a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/Dijkstra-intro.pdf).}
+
+\transclude{00NW}    % SSSP
+\transclude{00NX}    % Dijkstra intuition
+\transclude{00NY}    % Basic Dijkstra
+\transclude{00NZ}    % Correctness
+\transclude{00O0}    % Running time for basic version
