@@ -15,4 +15,4 @@
 \transclude{00JU}   % Euclidean algorithm
 \transclude{00K7}   % Asymptotic analysis
 \transclude{00LL}   % Graphs
-\transclude{00NJ}
+\transclude{00NJ}   % Greedy algorithms

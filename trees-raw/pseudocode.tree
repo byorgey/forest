@@ -16,8 +16,20 @@
   \<html:div>{\body}
 }
 
+\def\if[cond][body]{
+  \<html:div>{\keyword{if} \cond:
+    \indent{\body}
+  }
+}
+
 \def\while[cond][body]{
   \<html:div>{\keyword{while} \cond:
+    \indent{\body}
+  }
+}
+
+\def\for[range][body]{
+  \<html:div>{\keyword{for} \range:
     \indent{\body}
   }
 }

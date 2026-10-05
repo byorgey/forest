@@ -12,3 +12,4 @@
 \transclude{00NY}    % Basic Dijkstra
 \transclude{00NZ}    % Correctness
 \transclude{00O0}    % Running time for basic version
+\transclude{00O2}    % Better version

@@ -1,0 +1,32 @@
+\title{Better Dijkstra pseudocode XXX}
+\date{2026-10-05T13:54:58Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{Here is the updated version of Dijkstra's Algorithm using a priority queue for tracking unvisited vertices.
+
+\pseudo{
+  \state{\sf{Dijkstra}#{(G, s)}:}
+  \indent{
+    \state{#{d \gets} empty dictionary}
+    \state{#{\mathit{parent} \gets} empty dictionary}
+    \state{#{d[s] \gets 0}, all other #{d[v] \gets \infty}}
+    \state{Create priority queue #{Q} containing all vertices, using #{d[v]} as the key for each #{v}.}
+    \while{#{Q} is not empty}{
+      \state{#{u \gets Q.\mathit{removeMin}}}
+      \for{each neighbor #{v} of #{u}}{
+        \if{#{d[u] + w_{uv} < d[v]}}{
+          \state{#{d[v] \gets d[u] + w_{uv}}}
+          \state{#{Q.\mathit{updateKey}(v, d[v])}}
+          \state{#{\mathit{parent}[v] \gets u}}
+        }
+      }
+    }
+
+    \return #{\mathit{parent}, d}
+  }
+}
+
+}

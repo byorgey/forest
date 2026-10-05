@@ -1,0 +1,11 @@
+\title{More efficient Dijkstra's algorithm}
+\date{2026-10-05T13:47:33Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{Can we do better than #{\Theta(VE)}?  The key, as usual, is to use some data structures to keep track of enough information so that we can pick #{u} and #{v} quickly without having to search through the whole graph every time.}
+
+\transclude{00O3}   % Priority queue (idea)
+\transclude{00O4}

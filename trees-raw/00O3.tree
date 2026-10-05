@@ -1,0 +1,23 @@
+\title{Priority queue for Dijkstra}
+\date{2026-10-05T13:48:41Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\ul{
+  \li{We will expand #{d} to keep track of not just the shortest distances to  vertices, but the \em{current shortest known} distances to other vertices as well. So #{d[v]} will always be an \em{upper bound} on the shortest distance from #{s} to #{v}. We may have to update #{d[v]} every time we add a vertex #{u} to #{S} with an edge #{(u,v)}.}
+
+  \li{We will expand the #{\mathit{parent}} map similarly: #{\mathit{parent}[v]} is the predecessor of #{v} along the \em{currently shortest known} path from #{s}.}
+
+}
+
+\p{The idea is that at each iteration we want to pick the unvisited vertex #{v} with the \em{smallest} #{d[v]}. We will store the unvisited vertices in some kind of data structure so that we can quickly remove the one with the smallest #{d[v]}. We then need to be able to update #{d} and #{\mathit{parent}} appropriately.}
+
+\p{So we need a data structure that allows us to:
+\ul{
+  \li{Add new items with a given value}
+  \li{Remove the item with the smallest value}
+  \li{Update the value of an existing item}
+}
+\ie a \em{priority queue}.
+}
