@@ -22,6 +22,12 @@
   }
 }
 
+\def\else[body]{
+  \<html:div>{\keyword{else}:
+    \indent{\body}
+  }
+}
+
 \def\while[cond][body]{
   \<html:div>{\keyword{while} \cond:
     \indent{\body}

@@ -6,14 +6,19 @@
 
 \p{The second implementation of the Euclidean Algorithm is iterative:}
 
-\acode{\startverb
-\> GCDI($m$,$n$) = \\
-\> \tb \> $a \gets m$ \\
-\>     \> $b \gets n$ \\
-\>     \> !while $(a \neq 0)$ !and $(b \neq 0)$ \\
-\>     \> \tb \> !if $a \leq b$ \\
-\>     \>     \> \tb \> !then \> $b \gets b \bmod a$ \\
-\>     \>     \>     \> !else \> $a \gets a \bmod b$ \\
-\>     \> !if $a = 0$ !then !return $b$ !else !return $a$
-\stopverb
+\pseudo{
+\state{\sf{GCDI}#{(m,n) =}}
+\indent{
+  \state{#{a \gets m}}
+  \state{#{b \gets n}}
+  \while{#{(a \neq 0)} \keyword{and} #{(b \neq 0)}}{
+    \if{#{a \leq b}}{
+      \state{#{b \gets b \bmod a}}
+    }
+    \else{
+      \state{#{a \gets a \bmod b}}
+    }
+  }
+  \state{\keyword{if} #{a = 0} \keyword{then} \return #{b} \keyword{else} \return #{a}}
+}
 }

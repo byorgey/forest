@@ -4,15 +4,16 @@
 
 \import{algorithms-macros}
 
-\p{
-\acode{\startverb
-\> Mark all vertices unvisited \\
-\> DFS($G$,$u$) = \\
-\> \tb \> Mark $u$ visited \\
-\>     \> !for each neighbor $v$ of $u$ \\
-\>     \> \tb \> !if $v$ is unvisited \\
-\>     \>     \> \tb \> DFS($G$,$v$)
-\stopverb
+\pseudo{
+\state{Mark all vertices unvisited}
+\state{\sf{DFS}#{(G,u) =}}
+\indent{
+  \state{Mark #{u} visited}
+  \for{each neighbor #{v} of #{u}}{
+    \if{#{v} is unvisited}{
+      \state{\sf{DFS}#{(G,v)}}
+    }
+  }
 }
 }
 

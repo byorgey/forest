@@ -4,24 +4,25 @@
 
 \import{algorithms-macros}
 
-\p{
-\acode{\startverb
-\> Mark all vertices unvisited \\
-\> $Q \gets$ empty queue \\
-\> Mark $s$ visited \\
-\> $Q.\mathit{enqueue}(s)$ \\
-\> $\mathit{parent} \gets$ empty dictionary (parent map) \\
-\> $\mathit{layer} \gets$ empty dictionary (layer map) \\
-\> $\mathit{layer}[s] \gets 0$ \\
-\> !while $Q$ is not empty \\
-\> \tb \> $u \gets Q.\mathit{dequeue}$ \\
-\>     \> !for each neighbor $v$ of $u$ \\
-\>     \> \tb \> !if $v$ is unvisited \\
-\>     \>     \> \tb \> Mark $v$ visited \\
-\>     \>     \>     \> $Q.\mathit{enqueue}(v)$ \\
-\>     \>     \>     \> $\mathit{parent}[v] \leftarrow u$ \\
-\>     \>     \>     \> $\mathit{layer}[v] \leftarrow \mathit{layer}[u] + 1$ \\
-\stopverb
-}}
+\pseudo{
+\state{Mark all vertices unvisited}
+\state{#{Q \gets} empty queue}
+\state{Mark #{s} visited}
+\state{#{Q.\mathit{enqueue}(s)}}
+\state{#{\mathit{parent} \gets} empty dictionary (parent map)}
+\state{#{\mathit{layer} \gets} empty dictionary (layer map)}
+\state{#{\mathit{layer}[s] \gets 0}}
+\while{#{Q} is not empty}{
+  \state{#{u \gets Q.\mathit{dequeue}}}
+  \for{each neighbor #{v} of #{u}}{
+    \if{#{v} is unvisited}{
+      \state{Mark #{v} visited}
+      \state{#{Q.\mathit{enqueue}(v)}}
+      \state{#{\mathit{parent}[v] \gets u}}
+      \state{#{\mathit{layer}[v] \gets \mathit{layer}[u] + 1}}
+    }
+  }
+}
+}
 
 \p{The \em{parent} and \em{layer} maps are optional, and can be used to find actual shortest paths and the shortest distance from #{s} to each vertex, respectively.}
