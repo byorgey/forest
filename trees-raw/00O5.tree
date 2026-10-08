@@ -1,0 +1,21 @@
+\title{Dijkstra in practice}
+\date{2026-10-07T13:58:40Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{Most standard libraries I am aware of do not have a priority queue
+implementation capable of doing a fast #{\mathit{updateKey}}
+operation.  One can simply remove an element and re-insert it, but
+this takes #{\Theta(n)} since there is no way to find an element other
+than scanning over the entire heap. An implementation supporting a
+fast #{\mathit{updateKey}} could, for example, keep a hash table on
+the side which keeps track of the location of each item within the
+heap.  Given a sorted set data structure, it is also possible to keep
+a sorted set of (distance, vertex) pairs. Removing the vertex with the
+minimum distance is easy since it is just the first pair in the set;
+updating the distance of a vertex can be done by first deleting the
+(old distance, vertex) pair from the set (which can be done in #{O(\lg
+n)} since the set is sorted) and then inserting (new distance,
+vertex).}

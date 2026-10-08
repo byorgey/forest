@@ -1,0 +1,34 @@
+\title{Dijkstra runtime analysis}
+\date{2026-10-07T14:02:56Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\def\Trem{#{T_{\mathit{rem}}}}
+\def\Tupd{#{T_{\mathit{upd}}}}
+
+\p{What’s the time complexity of this [better implementation of Dijkstra's Algorithm](00O4)? Again, we can’t just simplistically look at loops and so on. Instead, we count the total time taken by various operations. Let’s say our priority queue takes time #{\Trem(n)} to do a remove-min operation on a priority queue of size #{n}, and #{\Tupd(n)} to do an update-key operation.}
+
+\ul{
+  \li{For any reasonable implementation of #{Q}, creating it in the first place takes #{\Theta(V)} time since we are inserting vertices with known keys all at once.}
+
+  \li{We end up calling #{\mathit{removeMin}} once for each vertex, and #{Q} has size at most #{|V|}, which contributes #{\Theta(V \cdot \Trem(V))} (the priority queue decreases each time, but half the calls are on a priority queue of size at least #{V/2}, so we are still justified in saying it takes #{\Theta(V \cdot \Trem(V))}).}
+
+  \li{We also call #{\mathit{updateKey}} at most once for each edge, which contributes #{O(E \cdot \Tupd(V))}.}
+
+  \li{All other operations (\eg setting values in #{d} and #{\mathit{parent}}) take #{\Theta(1)}, which adds #{\Theta(V + E)} overall.}
+}
+
+\p{So in total, the algorithm takes ##{\Theta(V \cdot \Trem(V) + E \cdot \Tupd(V)).} We’ll generally assume that #{|E| \geq |V|} (otherwise the graph is either a tree, in which case we don’t need this algorithm, or there are degree-zero vertices which we can throw away). The total running time depends on the implementation of #{Q}:}
+
+\ul{
+  \li{We could simply use an array of vertices.  Finding and removing the vertex with the smallest #{d} value thus takes #{\Theta(n)} (via linear search); updating the distance value also takes #{\Theta(n)} since we have to do another linear search to find the required vertex.  Substituting, this yields an overall time of #{\Theta(V \cdot V + E \cdot V) = \Theta(EV)} (since we are assuming #{|E| \geq |V|}).}
+  \li{We could keep the array sorted by #{d} value.  Assuming we keep the vertex with the smallest #{d} value at the end, removing it can be done in #{\Theta(1)}.  To update the distance of a vertex requires a linear search to find the vertex and then linear time to insert it into its new sorted position.  Thus overall this is #{\Theta(V \cdot 1 + E \cdot V) = \Theta(EV)}, no better than an unsorted array.}
+  \li{We could use a dictionary (implemented as an array or hash table) mapping each vertex to its distance value.  Updating is now #{\Theta(1)}, since we can just immediately access the value for a given vertex.  However, finding and removing the vertex with minimum distance is #{\Theta(n)} since we have to just scan through all the vertices to find the minimum.  Overall, this takes #{\Theta(V \cdot V + E \cdot 1) = \Theta(V^2)} (since #{E} is #{O(V^2)}).}
+  \li{If we use a binary min-heap to store vertices by distance, we can remove the smallest-distance vertex in #{\Theta(\lg n)}.  Updating a specific vertex is a bit tricker: we can keep some kind of hash table on the side so we know where to find a given vertex in the heap; then moving it up or down the heap to restore the heap properties after changing the distance value takes #{\Theta(\lg n)}.  Hence, overall, Dijkstra with a binary heap takes #{\Theta(V \lg V + E \lg V) = \Theta(E \lg V)}.}
+  \li{Finally, there is a data structure called a \em{[Fibonacci heap](https://en.wikipedia.org/wiki/Fibonacci_heap)} which allows updating in #{\Theta(1)} and removing the minimum in #{\Theta(\lg n)}, in which case Dijkstra takes #{\Theta(V \lg V + E)} overall.  We won't learn more about Fibonacci heaps but you can read about them if you wish.}
+}
+
+\p{Technically, using a Fibonacci heap yields the fastest known implementation of Dijkstra's Algorithm, but Fibonacci heaps are complex to implement and rarely make a big difference in practice.  #{\Theta(V \lg V + E)} is better than #{\Theta(E \lg V)} only if #{E} is large relative to #{V}, that is, if the graph is fairly dense.  Using a binary heap tends to be the best all-around implementation.}
+
