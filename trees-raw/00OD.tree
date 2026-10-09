@@ -1,0 +1,10 @@
+\title{A graph can have multiple MWSS}
+\date{2026-10-09T02:41:19Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{Note that a graph can have multiple minimum-weight spanning subgraphs.  For example, consider a triangle graph where all the edges have weight #{1}.  Picking any two of the edges results in a minimum-weight spanning subgraph.}
+
+\p{It turns out that if every edge has a unique weight, then the MWSS is unique, although this is not necessarily obvious!}

@@ -8,3 +8,4 @@
 \transclude{00NK}   % Intro
 \transclude{00NP}   % Weighted graphs
 \transclude{00NL}   % Dijkstra
+\transclude{00O7}

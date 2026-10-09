@@ -1,0 +1,15 @@
+\title{Every MWSS is a tree}
+\date{2026-10-09T02:52:22Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\import{algorithms-macros}
+
+\p{In a weighted, undirected graph with positive edge weights, any
+[minimum-weight spanning subgraph](00OC) must be a [tree](00LV).}
+
+\proof{
+  We must show that every MWSS is connected and acyclic.
+  \subproof{Every MWSS must be connected by definition.}
+  \subproof{To show that every MWSS is acyclic, we will show the contrapositive—that is, any spanning subgraph with a cycle is not a MWSS.  So suppose we have an arbitrary spanning subgraph #{S} containing a cycle.  By [a previous observation](00OB), removing any edge #{e} from the cycle results in another spanning subgraph, call it #{S'}.  But since the edges have positive weights, removing #{e} results in a smaller total weight.  So #{S'} is a spanning subgraph with a smaller total weight than #{S}, and hence #{S} was not a minimum-weight spanning subgraph to begin with.}
+}

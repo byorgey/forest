@@ -1,0 +1,12 @@
+\title{Spanning subgraph}
+\date{2026-10-09T02:33:24Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{Let #{G = (V,E)} be an unweighted graph with vertices #{V} and
+edges #{E}.  A \em{spanning subgraph} of #{G} is a [connected](00LT) graph #{V,E'} where #{E' \subseteq E}.}
+
+\p{That is, a spanning subgraph of #{G} is a connected graph with the
+same vertices as #{G} and a subset of the edges; to make a spanning subgraph of #{G} we pick some edges which connect all the vertices.}

@@ -1,0 +1,14 @@
+\title{Observations about spanning subgraphs}
+\date{2026-10-09T02:37:29Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{A few observations about [spanning subgraphs](00OA):
+\ul{
+  \li{If #{G} is connected, then #{G} is a spanning subgraph of itself.}
+  \li{If #{G} is disconnected, it has no spanning subgraph, because deleting edges can't make it connected.}
+  \li{If a spanning subgraph of #{G} contains a cycle, then removing any edge from the cycle results in another spanning subgraph.}
+}
+}

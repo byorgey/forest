@@ -1,0 +1,8 @@
+\title{Minimum-weight spanning subgraph}
+\date{2026-10-09T02:39:44Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{A \em{minimum-weight spanning subgraph} (MWSS) of an undirected, [weighted graph](00NP) #{G} is a [spanning subgraph](00OA) with the smallest possible \em{total} weight.}

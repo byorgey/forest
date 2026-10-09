@@ -1,0 +1,13 @@
+\title{Spanning subgraphs and minimum spanning trees}
+\date{2026-10-09T02:32:26Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\transclude{00OA}  % Spanning subgraph
+\transclude{00OB}  % Observations
+\transclude{00OC}  % Minimum-weight spanning subgraph
+\transclude{00OD}  % Multiple MWSS
+\transclude{00OE}  % MWSS does not have shortest paths
+\transclude{00OF}  % thm: MWSS is a tree
+\transclude{00OG}  % MST

@@ -1,0 +1,11 @@
+\title{Motivation}
+\date{2026-10-09T01:29:09Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Suppose we have a number of vertices (locations, items, people, ...) and potential connections between them, where each connection has a cost (distance, money, ...).  We want to pick some of the potential connections such that all vertices are [connected](00LT), but the \em{total} cost is as small as possible.}
+
+\p{For example, suppose there are a number of cities, and we can build train lines between certain pairs of cities for some particular cost.  Some train lines might be more expensive (because they have to go over mountains, or over a bridge, or because they are very long) and some might be cheaper.  What is the minimum amount of money we can spend building train lines such that it is possible to travel between any pair of cities by train?}
+
+\p{These ideas suggest the following definitions.}

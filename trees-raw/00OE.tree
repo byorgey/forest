@@ -1,0 +1,10 @@
+\title{A MWSS does not contain shortest paths!}
+\date{2026-10-09T02:44:51Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{It is worth emphasizing that although a [MWSS](00OC) contains a path between any two vertices, that path may not be the \em{shortest} path.  The MWSS is guaranteed to have the smallest \em{total} weight, but for individual pairs of vertices the path between them may be longer than necessary, because it allows us to connect all the vertices in the most efficient way overall.}
+
+\p{As an example, consider a triangle graph #{T} with three edges of weights #{2}, #{2}, and #{3}.  To make an MWSS, we obviously want to pick the two edges of weight #{2}.  But notice that the shortest path in #{T} between the two endpoints of the weight-#{3} edge is of length #{3}, whereas the path between them in the MWSS has total length #{4}.}

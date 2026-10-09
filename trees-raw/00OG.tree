@@ -1,0 +1,8 @@
+\title{Minimum spanning tree}
+\date{2026-10-09T03:04:09Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{Because of the [previous theorem](00OF), a [minimum-weight spanning subgraph](00OC) is usually referred to as a \em{minimum spanning tree}, or MST.}

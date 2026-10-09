@@ -1,0 +1,12 @@
+\title{Minimum spanning trees}
+\date{2026-10-09T01:19:14Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The information in this section is presented by a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/MST.pdf).}
+
+\transclude{00O8}  % Intro + motivation
+\transclude{00O9}  % Spanning subgraphs
+\transclude{00OH}  % Algorithms for MST
+% Cut property

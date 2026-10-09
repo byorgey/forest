@@ -1,0 +1,16 @@
+\title{Algorithms for computing MST}
+\date{2026-10-09T03:06:36Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Here are three algorithms to compute a [minimum spanning tree](00OG):
+\ul{
+  \li{Kruskal's Algorithm: repeatedly pick the shortest edge that doesn't complete a cycle with other already-picked edges.}
+  \li{Prim's Algorithm: repeatedly pick the shortest edge that connects a visited vertex to an unvisited vertex and doesn't complete a cycle.}
+  \li{Reverse-delete: repeatedly delete the longest edge that doesn't disconnect the graph.}
+}
+
+\p{It's kind of amazing that all these greedy approaches work.  It's almost like we can't mess it up no matter what we try.  But how do we know that they work?}
+
+}
