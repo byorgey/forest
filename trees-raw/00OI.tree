@@ -1,0 +1,15 @@
+\title{Proving MST algorithms correct}
+\date{2026-10-09T13:44:58Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{Proving the correctness of all the algorithms mentioned above relies on one crucial property.}
+
+\transclude{00OL}   % Cut
+\transclude{00OJ}   % The cut property
+\transclude{00OK}   % Remark: exchange argument
+\transclude{00OM}   % Kruskal is correct
+\transclude{00ON}   % Remark: Kruskal works even with repeated weights
+\transclude{00OP}   % Remark: Prim, reverse-delete similar.

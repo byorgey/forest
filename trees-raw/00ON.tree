@@ -1,0 +1,8 @@
+\title{Kruskal on graphs with repeated weights}
+\date{2026-10-09T16:51:08Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{The [previous theorem](00OM) applies only to graphs where every edge has a distinct weight, but it is [not too much harder to show that Kruskal's Algorithm works even when there are repeated weights](00OO).}

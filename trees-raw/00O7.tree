@@ -4,9 +4,9 @@
 
 \import{algorithms-macros}
 
-\p{The information in this section is presented by a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/MST.pdf).}
+\p{Some of the information in this section is presented via two POGIL activities: [Minimum Spanning Trees](https://hendrix-cs.github.io/csci382/pub/MST.pdf), [Kruskal's Algorithm and the Cut Property](https://hendrix-cs.github.io/csci382/pub/Kruskal.pdf).}
 
 \transclude{00O8}  % Intro + motivation
 \transclude{00O9}  % Spanning subgraphs
 \transclude{00OH}  % Algorithms for MST
-% Cut property
+\transclude{00OI}  % Correctness

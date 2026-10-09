@@ -1,0 +1,8 @@
+\title{Prim and Reverse-Delete are correct}
+\date{2026-10-09T16:59:44Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{[Prim's Algorithm and the Reverse-Delte algorithm](00OH) are correct as well, by [similar arguments](00OQ).}

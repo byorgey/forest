@@ -1,0 +1,19 @@
+\title{Cut property}
+\date{2026-10-09T13:47:00Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\import{algorithms-macros}
+
+\p{Let #{G = (V,E)} be an undirected, weighted graph with positive weights. Suppose #{S} and #{T} partition #{V}, and let #{e = (x,y)} be an edge crossing the #{(S,T)} cut, such that the weight of #{e} is strictly smaller than the weight of any other edge crossing the #{(S,T)} cut.  Then every [minimum spanning tree](00OG) of #{G} must contain #{e}.}
+
+% XXX include picture?
+
+\proof{
+\p{Let #{G} be a weighted, undirected graph #{G = (V,E)}, let #{S} and #{T} be an arbitrary partition of #{V} into two sets, and suppose #{e = (x,y)} is the smallest-weight edge with one endpoint in #{S} and one in #{T}. We wish to show that any MST of #{G} must contain #{e}.}
+\p{We will prove the contrapositive. Suppose #{M} is a spanning tree of #{G} which does \strong{not} contain the edge #{e}; we will show that #{M} is not a minimum spanning tree. Since #{M} is a tree, it contains a unique path between any two vertices. So consider the unique path in #{M} between #{x} and #{y}. It must cross the cut at least once since it starts in #{S} and ends in #{T}; suppose it crosses at #{e' = (x',y')},with #{x' \in S} and #{y' \in T}. We know that the weight of #{e} is smaller than the weight of #{e'}, since #{e} was defined to be the smallest-weight edge crossing the #{(S,T)} cut.  Now take #{M} and replace #{e'} with #{e}; the result is still connected (because any path using #{e'} can be rerouted through #{e}), but it has a smaller total weight because the weight of #{e} is less than #{e'}.}
+
+\p{So, we have shown that any spanning tree #{M} which does not
+contain the edge #{e} can be made into a smaller one, which means that
+#{M} is not a minimum spanning tree.}
+}

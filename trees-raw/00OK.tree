@@ -1,0 +1,14 @@
+\title{Exchange arguments}
+\date{2026-10-09T13:58:22Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{This is an \em{exchange argument}, which is a general technique for proving that something is not minimal (and, more generally, for proving that greedy algorithms are correct)—find appropriate things to exchange so the total becomes smaller (while preserving any relevant properties).}
+
+\p{In this particular example, note that we can’t exchange #{e} with
+\em{any} edge across the cut! We particularly found the edge on the
+path from #{x} to #{y} since that guarantees we can exchange it with
+#{e} while preserving connectivity.}
+

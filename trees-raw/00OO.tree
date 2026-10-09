@@ -1,0 +1,11 @@
+\title{[M1] Kruskal's Algorithm works with repeated weights (3 pts)}
+\date{2026-10-09T16:55:38Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{On an activity, we proved that [Kruskal's Algorithm is correct](00OM) when every edge has a distinct weight. Prove that [Kruskal's Algorithm](00OH) works even when there are edges in the graph with the same weight.}
+
+\hint{Generalize the [Cut Property](00OJ) to the situation when there are multiple edges with the same minimum weight crossing a cut.  What can we say about the relationship of any MST to such edges?}
+

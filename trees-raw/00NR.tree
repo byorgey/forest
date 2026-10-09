@@ -5,3 +5,4 @@
 \import{algorithms-macros}
 
 \transclude{00NS}   % Dijkstra problems
+\transclude{00OR}   % MST problems

@@ -1,0 +1,12 @@
+\title{Kruskal's Algorithm is correct}
+\date{2026-10-09T16:46:36Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\import{algorithms-macros}
+
+\p{Kruskal’s Algorithm is correct (when all edges have distinct weights).}
+
+\proof{
+Suppose at some step the algorithm chooses the edge #{e = (x,y)}. Let #{S} be the set of vertices connected to #{x} by edges which have been chosen so far (not including #{e}), and let #{T} be all other vertices. #{x \in S} by definition. We know that #{y \notin S} since if there were a way to reach #{y} from #{x} using already-chosen edges, then #{e} would make a cycle, but then Kruskal’s Algorithm wouldn’t choose it. The edge #{e} therefore crosses the cut #{(S,T)}. No other edges which have been picked previously cross the cut, since by definition they only connect vertices in #{S}.  Therefore #{e} must be the smallest-wedge edge crossing the cut, because the edges are considered in order from smallest to biggest.  Therefore, by the [Cut Property](00OJ), #{e} must be in any MST, and Kruskal’s Algorithm is correct to pick it.
+}

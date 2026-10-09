@@ -1,0 +1,9 @@
+\title{Cut}
+\date{2026-10-09T16:40:04Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{A \em{cut} in a graph #{G = (V,E)} is a partition of the vertices #{V} into two sets #{S} and #{T}, that is, every vertex is in either #{S} or #{T} but not both. We say that an edge #{e} \em{crosses} the cut #{(S,T)} if one vertex of #{e} is in #{S} and the other is in #{T}.}
+
