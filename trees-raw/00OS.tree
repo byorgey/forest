@@ -1,0 +1,18 @@
+\title{[K9] Kattis: Dijkstra problem (3 pts)}
+\date{2026-10-09T17:28:38Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Solve one of the following Kattis problems requiring [Dijkstra's Algorithm](00NL):
+
+\ul{
+\li{[Single source shortest path, non-negative weights](https://open.kattis.com/problems/shortestpath1)}
+\li{[Get Shorty](https://open.kattis.com/problems/getshorty)}
+\li{[Cross Country](https://open.kattis.com/problems/crosscountry)}
+\li{[Cave Exploration](https://open.kattis.com/problems/caveexploration)}
+\li{[Block Crusher](https://open.kattis.com/problems/blockcrusher)}
+\li{[Arachnophobia](https://open.kattis.com/problems/arachnophobia)}
+}
+}

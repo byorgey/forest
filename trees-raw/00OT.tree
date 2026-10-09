@@ -1,0 +1,39 @@
+\title{[D3] The Roving Photographer (2 pts)}
+\date{2026-10-09T17:31:54Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Phoebe the Photographer is just leaving for work at the small-town
+newspaper where she works as a staff photographer, when she suddenly
+remembers that she was supposed to take a photograph to decorate page
+C17.  She will just have to take a photograph on the way, but she is
+worried about getting to work late!}
+
+\p{Phoebe's town can be represented by a directed, weighted graph with
+#{V} vertices and #{E} edges, where the weight on each edge represents
+the time needed to travel along that street in the given direction.
+(As usual, two-way streets are represented by one edge in each
+direction, possibly with different weights.)  One particular vertex
+represents Pheobe's house, and another vertex represents her work.
+There are various locations (\ie vertices) at which Pheobe could take
+a photograph; each such vertex has a number representing the amount of
+time Pheobe would need to spend taking a photograph there (some
+photographs can be taken quickly, while others need a while to set
+up).}
+
+\p{Pheobe needs to travel to some location where she can take a
+photograph, pause long enough to take the photo, and then travel to
+her workplace.  Explain how Pheobe could compute such a path which is
+as short as possible, and analyze the running time of your algorithm.}
+
+\hint{You may come up with a #{\Theta(VE\lg V)} algorithm, but it is
+possible to do better: it can be done in #{\Theta(E \lg V)} time.}
+
+\hint{How can you transform the graph so that the problem is solved by
+a single call to Dijkstra's Algorithm?}
+
+\hint{Consider duplicating each vertex, one to represent visiting that
+location with no photograph taken, and another to represent visiting
+that location with a photograph already taken.}

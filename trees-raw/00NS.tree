@@ -6,8 +6,5 @@
 
 \transclude{00NT}   % Dijkstra with negative weights
 \transclude{00NU}   % Max-Dijkstra for longest paths
-
-% Problems about Dijkstra applications?  e.g. directed, weighted graph, have to drive around and take a picture.
-%   Taking a picture at each location takes a different amount of time.  How to minimize total time?
-
-% Do a Dijkstra Kattis problem
+\transclude{00OS}   % Kattis Dijkstra
+\transclude{00OT}   % Roving photographer

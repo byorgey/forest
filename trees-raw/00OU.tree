@@ -1,0 +1,13 @@
+\title{[M3] Min-max spanning trees (3 pts)}
+\date{2026-10-09T21:42:08Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Let #{G=(V,E)} be an undirected, connected graph with non-negative edge lengths. We say that #{T} is a \em{min-max spanning tree} on #{G} if #{T} is a spanning tree whose longest edge is as short as possible. That is, if we imagine taking all the possible spanning trees of #{G} and sorting them by the length of their \em{longest} edge, in increasing order, #{T} would be first (or tied for first) on the list. Put yet another way, #{T} is a min-max spanning tree if and only if every other spanning tree #{T'} has some edge which is longer than (or equal to) every edge in #{T}.}
+\p{Prove or disprove each of the following claims. (\em{Hint}: try lots of small examples!)}
+\ol{
+  \li{If #{T} is a minimum spanning tree for #{G}, then #{T} is a min-max spanning tree for #{G}.}
+  \li{If #{T} is a min-max spanning tree for #{G}, then #{T} is a minimum spanning tree for #{G}.}
+}

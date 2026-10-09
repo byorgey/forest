@@ -4,5 +4,6 @@
 
 \import{algorithms-macros}
 
-\transclude{00OO}
-\transclude{00OQ}
+\transclude{00OO}   % Prove Kruskal works with repeated weights
+\transclude{00OQ}   % Prove Prim's is correct
+\transclude{00OU}   % Min-max spanning tree
