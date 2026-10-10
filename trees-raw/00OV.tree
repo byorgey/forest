@@ -1,0 +1,26 @@
+\title{[RP01] Prelude in B♭ major, Op. 23 No. 2}
+\author{rachmaninoff}
+\date{2026-10-10}
+\import{base-macros}
+\tag{repertoire}
+\tag{polished}
+\tag{rachmaninoff}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 4/4 \key bf \major
+    R1
+  }
+  \new Dynamics
+  { R1 \f
+  }
+  \new Staff \relative
+  { \clef bass \key bf \major
+    \tuplet 6/4 { <bf,, bf,>16 \( f' bf d e f  }
+    \tuplet 6/4 { <bf d> g f d bf f \)  }
+    \tuplet 6/4 { bf, \( f' bf d e f  }
+    \tuplet 6/4 { <bf d> g f d bf f \) }
+  }
+>>
+<<<}
