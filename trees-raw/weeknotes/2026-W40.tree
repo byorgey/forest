@@ -1,0 +1,29 @@
+\import{swarm-macros}
+
+\title{Weeknotes for 9 October 2026 (week 40)}
+\date{2026-10-12}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Courses}
+
+  \p{I have finally caught up on grading (\em{aka} marking), and I'm hoping to keep it that way.  I have a system for ensuring that I stay on top of grading as things get turned in throughout the semester; it's too boring to explain here but suffice it to say that it involves a spreadsheet and multiple [Beeminder](beeminder.com) goals.  It's a bit complicated, but the complication has evolved over several years in response to real issues, and it works pretty well, most of the time.  It kind of fell apart earlier in the semester due to some external factors, but now that I'm back on track I'm confident it will continue.}
+
+  \p{[Algorithms](00JF) continues to go well; I am enjoying writing up my lecture notes in Forester.  The students just had their first exam, and overall they did pretty well. I give out the problems a week in advance, they can prepare however they want, and then they have to come in and write out their answers from memory in class, with no notes or technology.}
+}
+
+\subtree{
+  \title{ICPC}
+
+  \p{I've decided to host a competition site for the [International Collegiate Programming Contest](https://icpc.global/) (ICPC) regional contest on October 31.  We've never been able to do this before, because it required having enough computer lab space for all the teams to have their own computer; we had very little computer lab space when I arrived ten years ago, and even less now. In any case, the University of Arkansas Fort Smith always hosted a site, which we would travel to (about a 2.5-hour drive) every fall.  But this year, Fort Smith dropped off the list of sites—the faculty member who used to organize it seems to have moved on. At the same time, our region is moving to having teams bring their own computers, and handing out bootable USB sticks with a standard image that they are required to use for the contest; so computer lab space is no longer a limiting factor.  We'll see how it goes.  In the next few weeks I need to buy some USB sticks and copy a disk image onto them!}
+}
+
+\subtree{
+  \title{Coercive Subtyping for Implicit Functorial Programming}
+
+  \p{I have begun [reading this paper](https://al.radbox.org/doi/10.1145/3830439.3831273) from the most recent Haskell Symposium with great interest, since I have [spent time thinking about the same problem](000P)—that is, the problem of automatically inferring/inserting calls to things like \tt{fmap}.  I really want to do this for \tt{Applicative} (with restrictions), but haven't managed to make the proof go through so far. They only do it for \tt{Functor}, but have what looks like a really nice framework based on ideas from normalization by evaluation.  I'm excited to keep reading and see how the ideas can potentially be extended.}
+}
+
+
