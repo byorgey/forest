@@ -5,6 +5,8 @@
 
 \p{Problems to be solved [can be found here](00JL).}
 
+\p{Here is a [list of the algorithms we have studied](00OY).}
+
 \transclude{advanced}
 
 \put\transclude/expanded{false}

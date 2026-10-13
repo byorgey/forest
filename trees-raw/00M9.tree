@@ -1,6 +1,7 @@
 \title{DFS (version 2, with parent tree)}
 \date{2026-09-17T15:51:35Z}
 \tag{algorithms}
+\taxon{Algorithm}
 
 \import{algorithms-macros}
 
