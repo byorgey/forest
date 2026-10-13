@@ -1,0 +1,10 @@
+\title{Implementing Kruskal's Algorithm with Union-Find}
+\date{2026-10-12T13:39:06Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{Let's consider Kruskal's Algorithm more carefully.  Here it is again, in pseudocode:}
+
+\transclude{00OX}   % Kruskal

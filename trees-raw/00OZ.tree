@@ -1,0 +1,14 @@
+\title{Fibonacci numbers}
+\date{2026-10-13T14:18:29Z}
+\tag{discrete}
+\taxon{Definition}
+
+\import{discrete-macros}
+
+\p{The \em{Fibonacci numbers} are the [sequence](00B2) #{F_n} defined by the [recurrence](00BA)
+##{\begin{align*}
+    F_0 &= 0 \\
+    F_1 &= 1 \\
+    F_n &= F_{n-1} + F_{n-2}.
+\end{align*}}
+}

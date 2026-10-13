@@ -10,3 +10,4 @@
 \transclude{00O9}  % Spanning subgraphs
 \transclude{00OH}  % Algorithms for MST
 \transclude{00OI}  % Correctness
+\transclude{00OW}  % Implementing Kruskal

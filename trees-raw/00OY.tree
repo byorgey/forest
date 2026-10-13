@@ -1,0 +1,12 @@
+\title{Algorithms studied}
+\date{2026-10-12T13:43:20Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\put\transclude/expanded{false}
+
+\query\datalog{
+  ?X -: {\rel/has-tag ?X '{algorithms}} {\rel/has-taxon ?X '{Algorithm}}
+}
+

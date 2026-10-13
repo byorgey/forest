@@ -1,0 +1,8 @@
+\title{Fibonacci closed form}
+\date{2026-10-13T14:22:02Z}
+\tag{discrete}
+\taxon{Remark}
+
+\import{discrete-macros}
+
+\p{There is a closed form for #{F_n} although we won’t derive it in this class. In fact, ##{F_n = \frac 1 {\sqrt 5} \left( \varphi^n - \hat\varphi^n \right)} where #{\varphi} and #{\hat\varphi} are respectively the positive and negative solutions of #{x^2 - x - 1 = 0}, that is, #{(1 \pm \sqrt 5)/2}. If you’re interested in learning where this comes from, [check out this exercise](00K1), or just ask!}
