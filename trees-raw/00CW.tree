@@ -5,7 +5,7 @@
 
 \import{discrete-macros}
 
-\p{Prove: ##{\all{n}{\N}{\sum_{0 \leq j \leq n} F_j = F_{n+2} - 1},} that is, the sum of the first #{n} [Fibonacci numbers](00BL) is #{F_{n+2} - 1}.}
+\p{Prove: ##{\all{n}{\N}{\sum_{0 \leq j \leq n} F_j = F_{n+2} - 1},} that is, the sum of the first #{n} [Fibonacci numbers](00OZ) is #{F_{n+2} - 1}.}
 
 \proof{
   By induction on #{n}.  Let #{P(n)} be the proposition "#{\sum_{0 \leq j \leq n} F_j = F_{n+2} - 1}".

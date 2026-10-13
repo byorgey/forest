@@ -5,7 +5,7 @@
 
 \import{algorithms-macros}
 
-\p{How big are [Fibonacci numbers](00BL)? Let’s find out:
+\p{How big are [Fibonacci numbers](00OZ)? Let’s find out:
 
 \ol{
   \li{Solve #{x^2 = x + 1} for #{x} and call the positive solution #{\varphi} (this is often known as the \em{golden ratio}) and the negative solution #{\hat{\varphi}}.}
@@ -15,7 +15,7 @@
   \li{Show that #{\varphi^{k+2} = \varphi^{k+1}
     + \varphi^k} for all #{k \geq 0} (by starting with #{\varphi^2 =
     \varphi + 1} and multiplying both sides by #{\varphi^k}). Note that the same is also true with #{\hat{\varphi}} in place of #{\varphi}.}
-  \li{Now prove by induction on #{n} that #{F_n = \frac{1}{\sqrt 5}(\varphi^n -
+  \li{Now prove by [strong induction](00CM) on #{n} that #{F_n = \frac{1}{\sqrt 5}(\varphi^n -
   \hat{\varphi}^n)}.
   \hint{Don’t forget that you need two base cases; you will want to show that #{\varphi - \hat{\varphi} = \sqrt 5}.}
   }
