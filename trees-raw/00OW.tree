@@ -8,3 +8,7 @@
 \p{Let's consider Kruskal's Algorithm more carefully.  Here it is again, in pseudocode:}
 
 \transclude{00OX}   % Kruskal
+\transclude{00P1}   % Naive Kruskal analysis
+\transclude{00P2}   % Union-find motivation/intro
+\transclude{00P3}   % Kruskal w/ union-find
+\transclude{00P4}   % Analysis of Kruskal w/ union-find

@@ -1,0 +1,11 @@
+\title{Analysis of naive Kruskal}
+\date{2026-10-14T10:41:33Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{How fast can [Kruskal's Algorithm](00OX) run?  First of all, sorting the edges takes #{\Theta(E \lg E)} time if we use a good sorting algorithm. Note that #{E} is #{O(V^2)} (the maximum number of edges is #{V(V-1)/2}), so #{\lg E} is #{O(\lg V^2) = O(2 \lg V) = O(\lg V)}.  Hence we can simplify #{\Theta(E \lg E)} to #{\Theta(E \lg V)}.}
+
+\p{The rest depends a lot on how we check whether an edge #{e} would complete a cycle.  One obvious method is to do a graph search like [DFS](00M6) or [BFS](00MK) from one endpoint of #{e}, using only edges already in #{T}, and see if we can reach the other endpoint of #{e}.  If there is a path from one end of #{e} to the other using only edges in #{T}, it means that adding #{e} would complete a cycle.  Running a DFS or BFS in #{T} takes #{\Theta(V + E) = \Theta(V)} (since #{T} will never have more edges than vertices), and we do this check once for each edge, giving a total of #{\Theta(VE)}, which dominates the #{\Theta(E \lg V)} time to sort the edges. Of course, #{\Theta(VE)} can be as big as #{\Theta(V^3)} if there are a lot of edges. Can we do better?}
+

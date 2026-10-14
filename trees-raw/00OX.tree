@@ -1,4 +1,4 @@
-\title{Kruskal's Algorithm}
+\title{Kruskal's Algorithm (pseudocode)}
 \date{2026-10-12T13:39:58Z}
 \tag{algorithms}
 \taxon{Algorithm}
@@ -6,11 +6,11 @@
 \import{algorithms-macros}
 
 \pseudo{
-  \state{\sf{Kruskal}#{(G = (V,E)):}}
+  \state{\sf{Kruskal}#{(G):}}
   \indent{
-  \state{#{T \gets} empty set}
-  \state{Sort the edges #{E} from smallest to biggest weight}
-  \for{each edge #{e} from smallest to biggest weight}{
+  \state{#{T \gets} empty set of edges}
+  \state{Sort the edges from smallest to biggest weight}
+  \for{each edge #{e}}{
     \if{#{e} does not complete a cycle with other edges already in #{T}}{
       \state{Add #{e} to #{T}}
     }

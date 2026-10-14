@@ -1,0 +1,28 @@
+\title{Union-find}
+\date{2026-10-14T10:53:54Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{Notice that for each edge #{e = (u,v)}, doing a DFS is sort of overkill, in the sense that it actually tries to \em{find a path} from #{u} to #{v}—but we don’t care about the path, only whether #{u} and #{v} are already connected or not. In this case—when we only care about which vertices are connected and not about the actual paths between them—it turns out that we can test for connectivity much faster.}
+
+\p{The basic idea is to come up with some sort of data structure to maintain a set of connected components. Given such a data structure, the algorithm looks something like this:
+\ul{
+  \li{Start every vertex in its own connected component.}
+  \li{For each edge, test whether its vertices are in the same component (which means it would form a cycle) or in different components.}
+  \li{If the endpoints are in different components, add the edge to #{T}, and merge the two components into one.}
+}
+}
+
+\p{This kind of data structure is called a \em{union-find} structure (or a \em{disjoint-set} data structure), and from the algorithm sketch above we can see what operations it needs to support:
+\ul{
+  \li{#{\sf{MakeSets}(n)}: create a union-find structure containing #{n} singleton sets labelled #{0 \dots n-1}.}
+  \li{#{\sf{Find}(v)}: return the \em{name} of the set containing #{v}. (“Name” could be anything; typically we will use integers.) To check whether two vertices #{u} and #{v} are in the same connected component, we can test if #{\sf{Find}(u) = \sf{Find}(v)}.}
+  \li{#{\sf{Union}(x,y)}: merge the two sets containing #{x} and #{y}.}
+}
+}
+
+\p{This kind of data structure actually has lots of applications besides implementing Kruskal's Algorithm; you can explore a few such applications on homework problems.}
+
+%% XXX link to implementation!

@@ -1,0 +1,16 @@
+\title{Analysis of Kruskal with union-find}
+\date{2026-10-14T11:13:28Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Let's analyze this version of [Kruskal's Algorithm with union-find](00P3), to discover how fast we would like the [union-find operations](00P2) to be!
+
+\ul{
+  \li{Sorting edges by weight takes time #{\Theta(E \log V)}, as before.}
+  \li{We do #{2E} \sf{Find} operations, because we call it twice for each edge to check whether adding that edge would make a cycle.}
+  \li{We only call \sf{Union} when adding an edge, and since we are making a tree, we will do this at most #{V - 1} times.}
+}
+
+Hence, the overall time, in the worst case, is ##{\Theta(E \log V + T_{\sf{MakeSets}} + E T_{\sf{Find}} +
+V T_{\sf{Union}}).} We would really like for #{T_{\sf{Find}}} and #{T_{\sf{Union}}} to be #{O(\log V)} (or better), which would make the whole thing #{\Theta(E \log V)}.}

@@ -1,0 +1,25 @@
+\title{Kruskal's Algorithm (with union-find)}
+\date{2026-10-14T11:00:56Z}
+\tag{algorithms}
+\taxon{Algorithm}
+
+\import{algorithms-macros}
+
+\p{Given a [union-find](00P2) data structure, we can implement [Kruskal's Algorithm](00OX) as follows:
+
+\pseudo{
+  \state{\sf{Kruskal}#{(G):}}
+  \indent{
+  \state{#{T \gets} empty set of edges}
+  \state{#{U \gets \sf{MakeSets}(V)}}
+  \state{Sort the edges from smallest to biggest weight}
+  \for{each edge #{e = (u,v)}}{
+    \if{#{U.\sf{Find}(u) \neq U.\sf{Find}(v)}}{
+      \state{Add #{e} to #{T}}
+      \state{#{U.\sf{Union}(u,v)}}
+    }
+  }
+  }
+}
+
+}
