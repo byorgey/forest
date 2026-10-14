@@ -1,0 +1,24 @@
+\title{Some bad ideas for implementing union-find}
+\date{2026-10-14T13:44:21Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{How can we implement a [union-find data structure](00P2)?  One
+simple idea is to just keep a dictionary that maps each item to an "id" which identifies which set it is in.
+
+\ul{
+  \li{\sf{Find} takes #{\Theta(1)}, assuming we can do #{\Theta(1)} dictionary lookup (\eg using a hash table).}
+  \li{To do \sf{Union}, however, we have to go through every single item to find which ones are in the set we want to change, and change them all to the other set.  This takes #{\Theta(n)} which is not good enough.}
+}
+}
+
+\p{We could also try to flip things around and keep a dictionary mapping each set id to a list of items in that set.
+
+\ul{
+  \li{\sf{Union} is now #{\Theta(1)} (assuming we use something like linked lists), since we can just append one list to the other.}
+  \li{However, \sf{Find} is now #{\Theta(n)}: to find an item we simply have to go through every list looking for it.}
+}
+}
+
+\p{Can we somehow get the best of both worlds?}

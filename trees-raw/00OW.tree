@@ -12,3 +12,5 @@
 \transclude{00P2}   % Union-find motivation/intro
 \transclude{00P3}   % Kruskal w/ union-find
 \transclude{00P4}   % Analysis of Kruskal w/ union-find
+\transclude{00P5}   % Bad ideas for union-find
+\transclude{00P6}   % Idea: union-find via "lazy ids"
