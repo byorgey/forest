@@ -1,0 +1,18 @@
+\title{[K10] Kattis: MST problem (3 pts)}
+\date{2026-10-09T17:28:38Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Solve one of the following Kattis problems requiring the computation of a [minimum spanning tree](00O7):
+
+\ul{
+\li{[Driving Range](https://open.kattis.com/problems/drivingrange)}
+\li{[Freckles](https://open.kattis.com/problems/freckles)}
+\li{[Lost Map](https://open.kattis.com/problems/lostmap)}
+\li{[Treehouses](https://open.kattis.com/problems/treehouses)}
+\li{[Arctic Network](https://open.kattis.com/problems/arcticnetwork)}
+\li{[Edge Removal](https://open.kattis.com/problems/edgeremoval)}
+}
+}

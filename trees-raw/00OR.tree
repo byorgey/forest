@@ -7,3 +7,5 @@
 \transclude{00OO}   % Prove Kruskal works with repeated weights
 \transclude{00OQ}   % Prove Prim's is correct
 \transclude{00OU}   % Min-max spanning tree
+\transclude{00P7}   % Kattis MST
+\transclude{00P8}   % Percolation

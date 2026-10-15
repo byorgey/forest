@@ -1,0 +1,19 @@
+\title{Hints}
+\date{2026-10-14T20:21:16Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\ul{
+  \li{You’ll want to implement your own union-find data structure, as discussed in class. Make a generic union-find data structure which supports the following operations:
+  \ul{
+    \li{\code{new(n: int)}: create a new union-find structure with #{n} nodes, numbered #{0 \dots n-1}, with each node conceptually starting out in its own singleton set.}
+    \li{\code{find(u: int) -> int}: return the “representative” or root node of the set containing node #{u}.}
+    \li{\code{union(u: int, v: int)}: union the sets containing nodes #{u} and #{v}, if they are not already in the same set.}
+    \li{\code{connected(u: int, v: int) -> bool}: test whether two nodes are already in the same set or not. This can be implemented simply in terms of \code{find}.}
+  }}
+  \li{If you want to assign a unique node number to each cell in an #{n \times n} grid, it is easiest to number the first row #{0 \dots n-1}, then the second row #{n \dots 2n-1}, and so on. In general, coordinates #{(r,c)} will be node #{nr + c}. Conversely, node #{k} will correspond to the row and column coordinates #{(k \div n, k \mod n)}, \em{i.e.} the quotient and remainder when dividing #{k} by #{n}.}
+
+  \li{We have discussed in class how to find a shortest path between two specific nodes. Since we want to find a path from \em{any} node in the top row to \em{any} node in the bottom row, try adding a new “virtual” start node connecting to every node in the top row, and a virtual end node connecting to every node in the bottom row. For example, these virtual nodes could be given node numbers #{n^2} and #{n^2 + 1} in a union-find structure of size #{n^2 + 2}. This reduces the problem back to finding a path between two specific nodes (the virtual start and end nodes).}
+}
+

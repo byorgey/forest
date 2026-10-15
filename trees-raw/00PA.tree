@@ -1,0 +1,17 @@
+\title{Requirements}
+\date{2026-10-14T20:18:02Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Write a program (using a language of your choice) which will explore this percolation model, producing output like the above. That is, your program should carry out the above random cell-opening procedure until the grid percolates, and then display the resulting grid along with the shortest percolating path.}
+
+\p{Note that in the given sample output shown above, open cells are displayed as a space, blocked cells as a dot, and open cells through which the shortest percolating path passes as an \code{X}. Alternate columns are left blank just to make the grid look relatively square. Your output does not have to look exactly like this.}
+
+\p{To receive credit for this problem:
+\ul{
+  \li{Your program runs correctly and can produce output like the above.}
+  \li{Your program runs within a few seconds for grids up to #{500 \times 500} in size.}
+  \li{Your implementation of a \em{generic} union-find data structure is in a \em{separate file} from the rest of     your code (or a separate class within the same file).}
+}
+}

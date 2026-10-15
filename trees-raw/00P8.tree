@@ -1,0 +1,12 @@
+\title{[M4] Percolation (6 pts)}
+\date{2026-10-14T20:11:35Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{In this implementation challenge you will explore an interesting application of a [union-find structure](00P2).}
+
+\transclude{00P9}   % Introduction
+\transclude{00PA}   % Requirements
+\transclude{00PB}   % Hints

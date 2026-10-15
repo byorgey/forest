@@ -1,0 +1,40 @@
+\title{Introduction}
+\date{2026-10-14T20:14:08Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\pre{\verb<<<|
+Percolating on 25x25 grid...
+  .     . .       X .   . .   . . .       .      
+  .   . .       . X .           . . . .     .    
+  . .     .   . . X X . . .     . . .         .  
+            .     . X X . .       . .     .      
+.   .     . . .     . X       .     .     . . . .
+    . .     .   .     X . . .       . . . . . . .
+    . .   .   . .   . X .   .     . .   .       .
+.       . .   . .     X .     . .         .     .
+.   . .   .     .   . X X X .   . . X X X   . .  
+. . . . .     .   . . . . X .     X X . X . . .  
+.     .   . . .     . .   X X . . X . . X .   .  
+. . .     . . . . .       . X X X X .   X .   .  
+            . .     .   . . . .   . .   X        
+.   . .   . . .     .   . . .   .     . X X .    
+. . . . . . . .       .     . .       . . X      
+      .     . . .   .           .     .   X      
+.                   . .   .   . .   . . X X .    
+. . . .   . . .             . . . X X X X .      
+        .     .       .     .     X .         . .
+. .     .     . .   . . . .     . X .           .
+    . .         .     .     .   . X .     .   . .
+  .   .   . . . . .   .   .       X .   . . .   .
+  .   .   .   . . .     .     . . X X . .        
+        .   .   .     . .   . . . . X       . .  
+.   .       . .     .   . .         X           .
+Percolation achieved with 352 cells opened (56.32%)
+Shortest path length = 48
+<<<}
+
+\p{Imagine an #{n \times n} square grid, where each cell is connected to its four neighbors to the north, east, south, and west. Each cell can be either “open” or “blocked”. Paths through the grid can only travel through open cells. We say the grid \em{percolates} if there is a path from some open cell in the top row all the way to some open cell in the bottom row.}
+
+\p{Now, carry out the following process: the cells all start out blocked; at each iteration, randomly pick a blocked cell and open it. Keep iterating until the grid percolates.  It is a curious fact that on average, the grid will percolate after 59.2\% of the cells are opened—no matter what size the grid is. (The larger the grid, the more precise the percentage will be.) Moreover, this percentage is a sort of “phase transition”: if you take a large grid and randomly open \em{fewer} than 59.2\% of its cells, then it probably will not percolate; open any \em{more} than 59.2\%, and it probably will.}
