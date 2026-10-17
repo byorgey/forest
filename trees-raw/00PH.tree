@@ -1,0 +1,10 @@
+\import{algorithms-macros}
+
+\title{\sf{Find} and \sf{Union} run in #{\Theta(\lg n)}}
+\date{2026-10-16T21:59:06Z}
+\tag{algorithms}
+\taxon{Corollary}
+
+\p{\sf{Find} (and hence \sf{Union}) takes time #{\Theta(\lg n)} in the worst case.}
+
+\proof{The worst case is when all #{n} items are contained in a single tree; since any tree of height #{h} must contain at least #{2^h} items, a tree containing #{n} items has a height of at most #{\lg n}.  In the worst case, \sf{Find} takes time proportional to the height of the tree on which it is called (if it starts at a leaf and has to make its way all the way up to the root).}

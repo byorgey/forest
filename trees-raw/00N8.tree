@@ -12,3 +12,4 @@
 \transclude{00NG}   % Naive time complexity
 \transclude{00NH}   % Efficient topsort
 \transclude{00NI}   % Kahn's Algorithm
+\transclude{00PF}   % Kahn's Algorithm analysis

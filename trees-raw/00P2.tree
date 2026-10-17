@@ -1,7 +1,6 @@
-\title{Union-find}
+\title{Union-find motivation}
 \date{2026-10-14T10:53:54Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
@@ -23,6 +22,4 @@
 }
 }
 
-\p{This kind of data structure actually has lots of applications besides implementing Kruskal's Algorithm; you can explore a few such applications on homework problems.}
-
-%% XXX link to implementation!
+\p{This kind of data structure actually has lots of applications besides implementing Kruskal's Algorithm; you can explore [one such application on a homework problem](00P8).}

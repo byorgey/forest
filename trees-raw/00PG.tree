@@ -1,0 +1,20 @@
+\title{Union-find trees are balanced}
+\date{2026-10-16T21:51:14Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\import{algorithms-macros}
+
+\p{If we start from a freshly created union-find structure and call \sf{Union} any number of times (with the [implementation outlined above](00PC)), every tree of height #{h} contains at least #{2^h} items.}
+
+\proof{
+  The proof is by induction on #{h}.
+  \subproof{
+    In the base case, any tree with height #{h = 0} consists of just a single item, and indeed, #{1 \geq 2^0}.
+  }
+  \subproof{
+    \p{For the induction case, suppose that any tree of height #{k} contains at least #{2^k} items; we must show this is also true for trees of height #{k+1}.}
+  \p{So suppose there is a tree of height #{k+1}.  The way \sf{Union} works, the height associated with a root only increases (by exactly one) when forming the union of two trees that previously had the same height.  So the tree of height #{k+1} was, at some point, formed from the union of two trees of height #{k}.  By the induction hypothesis, those trees contained at least #{2^k} items each; hence the new, merged tree of height #{k+1} has at least #{2^k + 2^k = 2^{k+1}.}  There could have been additional union operations since that one, but they could only increase the number of items.
+  }
+  }
+}

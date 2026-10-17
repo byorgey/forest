@@ -9,7 +9,7 @@ simple idea is to just keep a dictionary that maps each item to an "id" which id
 
 \ul{
   \li{\sf{Find} takes #{\Theta(1)}, assuming we can do #{\Theta(1)} dictionary lookup (\eg using a hash table).}
-  \li{To do \sf{Union}, however, we have to go through every single item to find which ones are in the set we want to change, and change them all to the other set.  This takes #{\Theta(n)} which is not good enough.}
+  \li{To do \sf{Union}, however, we have to go through every single item to find which ones are in the set we want to change, and change them all to the other set.  This takes #{\Theta(n)}, which is [too slow](00P4).}
 }
 }
 

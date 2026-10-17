@@ -1,0 +1,17 @@
+\title{Kahn's Algorithm analysis}
+\date{2026-10-16T21:46:56Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{How long does [Kahn's Algorithm](00NI) take?
+
+\ul{
+  \li{Creating #{T}, #{Z}, and #{\mathit{in}} each take #{\Theta(1)}.}
+  \li{Initializing #{\mathit{in}} (the first \sf{for} loop) takes #{\Theta(V+E)} since we loop over all vertices and then look at every edge once.}
+  \li{Initializing #{Z} (the second \sf{for} loop) takes #{\Theta(V)}, assuming we can add to #{Z} in #{\Theta(1)} time.}
+  \li{The main \sf{while} loop will execute #{\Theta(V)} times; in each loop we do some #{\Theta(1)} operations (remove from #{Z}, append to #{T}), and do #{\Theta(1)} work for each of several edges. Again, we will look at each edge once in total, so this main loop takes #{\Theta(V+E)} time.}
+}
+
+Overall, then, this algorithm is #{\Theta(1) + \Theta(V+E) + \Theta(V)
++ \Theta(V+E) = \Theta(V+E)}.}

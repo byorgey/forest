@@ -1,0 +1,13 @@
+\title{Union-find design and analysis}
+\date{2026-10-15T16:04:44Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{We [previously introduced the idea of a union-find structure](00P2); we will now see how to actually implement it efficiently.}
+
+\transclude{00P5}   % Bad ideas for union-find
+\transclude{00P6}   % Idea: union-find via "lazy ids"
+\transclude{00PC}   % Union-find implementation
+\transclude{00PE}   % Union-find analysis
+\transclude{00PI}   % Path compression

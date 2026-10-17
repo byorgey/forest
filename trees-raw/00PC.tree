@@ -1,0 +1,33 @@
+\title{Union-find implementation}
+\date{2026-10-15T15:47:42Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Based on the above ideas, we can implement a union-find structure as follows.
+
+\ul{
+  \li{We keep track of an array/dictionary mapping each item to its \em{parent}.  Any item which maps to itself is considered a "root".  This represents a \em{forest}, that is, a collection of trees; each tree consists of items which are all in the same set.}
+  \li{We also keep track of an array/dictionary mapping every root item to the \em{height} of its tree.  Tracking the heights of the trees is important so that we can implement union in a reasonable way.  Non-root items will be ignored, so it does not matter what they map to.  In other words, once an item stops being a root, we will stop worrying about keeping its height updated.}
+}
+}
+
+\p{Given these mappings, we can implement the [union-find operations](00P2) as follows.
+
+\ul{
+  \li{To create a fresh union-find structure, create the \em{parent} dictionary mapping every item to itself (since every item starts in its own singleton set), and the \em{height} dictionary mapping every item to #{0} (every item is the root of its own trivial tree of height #{0}).}
+  \li{To implement \sf{Find}#{(u)}, repeatedly finding the parent, grandparent, \etc of
+  #{u} until finding a root.}
+  \li{To implement \sf{Union}#{(u,v)}:
+  \ul{
+    \li{Use \sf{Find} to get the roots of #{u} and #{v}’s trees.}
+    \li{If the roots are the same, do nothing.}
+    \li{If the roots are different, make the root with the smaller height the child of the root with the bigger height. If the heights are the same, it doesn’t matter which becomes a child of the other, but you must then increment the height of the new parent.}
+  }
+}}}
+
+% If you want to be fancy, implement \texttt{find} so that after
+%     finding the root $r$, it resets all the nodes along the path from
+%     $u$ to $r$ to have $r$ as their direct parent.  This is called
+%     \emph{path compression} and makes subsequent calls to
+%     \texttt{find} even faster.

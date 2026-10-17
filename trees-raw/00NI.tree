@@ -2,38 +2,36 @@
 \date{2026-09-24T16:09:24Z}
 \tag{algorithms}
 \taxon{Algorithm}
-\tag{draft}
 
 \import{algorithms-macros}
 
-\p{The resulting algorithm is known as \em{Kahn’s Algorithm}, and was first published by Arthur Kahn in 1962.  A careful writeup and analysis of the algorithm, with pseudocode, can be [found in this PDF](https://hendrix-cs.github.io/csci382/pub/topsort.pdf).}
+\p{The resulting algorithm is known as \em{Kahn’s Algorithm}, and was first published by Arthur Kahn in 1962.}
 
-% \tex{\usepackage{algorithmicx} \usepackage{algpseudocode}}{\startverb
-%   \begin{algorithmic}[1]
-%     \Require Directed graph $G = (V,E)$.
-%     \State $T \gets$ empty list
-%     \State $Z \gets$ empty queue/stack/whatever (with $\Theta(1)$ add/remove)
-%     \State $\mathit{in} \gets$ dictionary mapping all vertices to $0$
-%     \For{each $v \in V$}
-%       \For{each $u$ adjacent to $v$}
-%         \State increment $\mathit{in}[v]$
-%       \EndFor
-%     \EndFor
-%     \For{each $v \in V$}
-%       \If{$\mathit{in}[v] = 0$}
-%         \State add $v$ to $Z$
-%       \EndIf
-%     \EndFor
-%     \While{$Z$ is not empty}
-%       \State $v \gets Z.\mathit{dequeue}$
-%       \State append $v$ to $T$
-%       \For{each $u$ adjacent to $v$}
-%         \State decrement $\mathit{in}[u]$
-%         \If{$\mathit{in}[u] = 0$}
-%           \State add $u$ to $Z$
-%         \EndIf
-%       \EndFor
-%     \EndWhile
-%   \end{algorithmic}
-% \stopverb
-% }
+\pseudo{
+\state{\sf{Kahn}#{(G):}}
+\indent{
+  \state{#{T \gets} empty list}
+  \state{#{Z \gets} empty queue/stack/whatever (with #{\Theta(1)} add/remove)}
+  \state{#{\mathit{in} \gets} dictionary mapping all vertices to #{0}}
+  \for{each #{v \in V}}{
+    \for{each #{u} adjacent to #{v}}{
+      \state{increment #{\mathit{in}[v]}}
+    }
+  }
+  \for{each #{v \in V}}{
+    \if{#{\mathit{in}[v] = 0}}{
+      \state{add #{v} to #{Z}}
+    }
+  }
+  \while{#{Z} is not empty}{
+    \state{#{v \gets Z.\mathit{dequeue}}}
+    \state{append #{v} to #{T}}
+    \for{each #{u} adjacent to #{v}}{
+      \state{decrement #{\mathit{in}[u]}}
+      \if{#{\mathit{in}[u] = 0}}{
+        \state{add #{u} to #{Z}}
+      }
+    }
+  }
+}}
+

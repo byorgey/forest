@@ -1,0 +1,11 @@
+\title{Path compression}
+\date{2026-10-16T22:03:23Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{One can also implement \em{path compression}: when doing \sf{Find}, update every node along the search path to point directly to the root. This does not make \sf{Find} asymptotically slower, and it speeds up subsequent \sf{Find} calls. One can show (although the proof is somewhat involved—it would probably take two lectures or so) that \sf{Find} then takes essentially #{\Theta(\lg^* n)} on average, where #{\lg^* n} is the \em{iterated logarithm} of #{n}, defined as the number of times the #{\lg} function must be iterated on #{n} before reaching a result of #{1} or less. This means that the largest number for which #{\lg^* n = k} is #{n = 2^{2^{2^{\ldots}}}} with #{k} copies of #{2} stacked up in a tower of exponents! So, for example, #{\lg^* n \leq 5} for all #{n \leq 2^{2^{2^{2^2}}} = 2^{2^{2^4}} = 2^{2^{16}} = 2^{65536}}, a number with #{19729} decimal digits (for comparison, the number of particles in the entire universe is estimated at around #{10^{80}}, a number with a measly 81 decimal digits). So although \em{in theory} #{\lg^* n} is not a constant—it does depend on #{n}, and can get arbitrary large as long as #{n} is big enough—\em{in practice}, in our universe, it is essentially a constant (and a rather small constant at that). This means that both \sf{Find} and \sf{Union} can be implemented to run in (essentially) constant time!}
+
+\p{Note, however, that this does not change the asymptotic running time for Kruskal’s algorithm, which is still dominated by the #{\Theta(E \log V)} time needed to sort the edges.}
+

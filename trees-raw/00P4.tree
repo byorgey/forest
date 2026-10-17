@@ -13,4 +13,4 @@
 }
 
 Hence, the overall time, in the worst case, is ##{\Theta(E \log V + T_{\sf{MakeSets}} + E T_{\sf{Find}} +
-V T_{\sf{Union}}).} We would really like for #{T_{\sf{Find}}} and #{T_{\sf{Union}}} to be #{O(\log V)} (or better), which would make the whole thing #{\Theta(E \log V)}.}
+V T_{\sf{Union}}).} We would really like for #{T_{\sf{Find}}} and #{T_{\sf{Union}}} to be #{O(\log V)}, which would make the whole thing #{\Theta(E \log V)}.}

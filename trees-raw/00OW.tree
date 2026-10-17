@@ -1,7 +1,6 @@
 \title{Implementing Kruskal's Algorithm with Union-Find}
 \date{2026-10-12T13:39:06Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
@@ -12,5 +11,4 @@
 \transclude{00P2}   % Union-find motivation/intro
 \transclude{00P3}   % Kruskal w/ union-find
 \transclude{00P4}   % Analysis of Kruskal w/ union-find
-\transclude{00P5}   % Bad ideas for union-find
-\transclude{00P6}   % Idea: union-find via "lazy ids"
+\transclude{00PD}   % Implementing union-find
