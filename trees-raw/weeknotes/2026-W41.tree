@@ -1,0 +1,21 @@
+\import{swarm-macros}
+
+\title{Weeknotes for 16 October 2026 (week 41)}
+\date{2026-10-17}
+\tag{weeknote}
+
+\put\transclude/numbered{false}
+
+\subtree{
+  \title{Fall break!}
+
+  \p{This Thursday and Friday was fall break, with no classes—but my kids were still in school (they have their fall break next week) so I got a few days of sitting at my favorite coffee shop or at home with no distractions.  I've used the time to get caught up on some additional things and play a bunch of Hanabi.}
+}
+
+\subtree{
+  \title{Swarm in-game help system and tree traversals}
+
+  \p{I've continued [working steadily](https://github.com/swarm-game/swarm/pull/2802) on the [integrated help system](https://github.com/swarm-game/swarm/issues/2504) for Swarm.  Each help document can have a special block specifying a table of contents; these tables collectively determine a tree structure for all the help documents.  I wanted to create "next", "previous", and "parent" links on each page, like one often sees in other help systems; I finally realized that these are determined via a \em{preorder traversal} of the document tree.  In other words, the \em{previous} and \em{next} pages should be the ones that come before and after in a preorder traversal, respectively.  I spent several hours writing just a few lines of code to process the tree and automatically generate such links (after previously writing a DFS to build the tree and flag any issues such as duplicate or broken links, or orphan pages).  I suppose some might find this frustrating, but I greatly enjoy thinking hard for an hour and at the end producing just a single, elegant line of code (and, typically, a paragraph-long comment).}
+
+  \p{The help system is almost finished—another concentrated push or two should be enough to get it there.  Then, of course, I will have the task of actually writing a bunch of help content, but I enjoy that too.}
+}
