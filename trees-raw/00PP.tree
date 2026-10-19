@@ -1,0 +1,17 @@
+\title{Mergesort}
+\date{2026-10-19T16:53:00Z}
+\tag{algorithms}
+\taxon{Algorithm}
+
+\import{algorithms-macros}
+
+\def\xs{\mathit{xs}}
+
+\fn{mergesort}{xs}{
+  \if{#{|\xs| \leq 1}}{\return #{\xs}}
+  \state{split #{\xs} into halves #{(\xs_1, \xs_2)}}
+  \state{#{\xs_1' \gets \sf{mergesort}(\xs_1)}}
+  \state{#{\xs_2' \gets \sf{mergesort}(\xs_2)}}
+  \state{#{\xs' \gets \sf{merge}(\xs_1, \xs_2)}}
+  \return #{\xs'}
+}

@@ -39,3 +39,8 @@
     \indent{\body}
   }
 }
+
+\def\fn[name][inputs][body]{
+  \state{#{\mathsf{\name}(\inputs) =}}
+  \indent{\body}
+}

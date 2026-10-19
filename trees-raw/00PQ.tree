@@ -1,0 +1,51 @@
+\title{Mergesort analysis}
+\date{2026-10-19T17:01:53Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{How long does [mergesort](00PP) take on a list of length #{n}?  Looking at the code above, we can see that
+
+\ul{
+  \li{It takes #{\Theta(1)} in the base case (a list of length #{\leq 1}).}
+  \li{Otherwise, it makes two recursive calls to itself on lists of length approximately #{n/2}.}
+  \li{After the recursive calls complete, it does #{\Theta(n)} additional work to merge the two sorted lists into a single sorted list.}
+}
+
+If we let #{T(n)} denote the amount of time taken by mergesort on an input list of length #{n}, we can thus write the following [recurrence](00BA):  ##{\begin{align*} T(1) &= \Theta(1) \\ T(n) &= 2 T(n/2) + \Theta(n). \end{align*}} Can we find a closed form for this recurrence?}
+
+\p{If we draw out a tree showing all the recursive calls of \sf{mergesort} on an initial input of length #{n}, it looks something like this:
+
+\diagram{500}{*}{\verb<<<|
+import Diagrams.TwoD.Layout.Tree
+import Diagrams.Prelude hiding (Empty)
+
+import Data.Maybe
+
+mergeSortTree :: Int -> BTree String
+mergeSortTree = go 1
+  where
+    go _ 0 = Empty
+    go k n = BNode ("n" ++ if (k > 1) then ("/" ++ show k) else "") s s
+      where s = go (2*k) (n-1)
+
+tree :: Diagram B
+tree = maybe mempty
+        (renderTree (\l -> text l <> square 2 # lw none # fc white ) (~~))
+    . symmLayoutBin' (with & slHSep .~ 4 & slVSep .~ 3)
+    $ mergeSortTree 4   -- $
+
+dia :: Diagram B
+dia = vsep 1 [tree, vsep 0.3 (replicate 3 (circle 0.2 # fc black))]
+
+<<<}
+
+The expression at each node indicates both the size of the input to that recursive call, as well as the amount of work which happens at that node (since the amount of work at each node is linear).  We can see that
+\ul{
+  \li{The tree has height #{\lg n}, since we divide the input in half at each level until reaching a base case of #{1}.}
+  \li{There is #{n} total work happening at each level: #{n = n/2 + n/2 = n/4 + n/4 + n/4 + n/4 = \dots}.}
+}
+Hence, the total amount of work done by mergesort overall is #{\Theta(n \lg n)}.
+
+}

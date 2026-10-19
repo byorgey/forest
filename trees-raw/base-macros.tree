@@ -61,6 +61,8 @@
 
 \def\freshfor[x][y]{\x\;\#\;\y}
 
+\def\sf[body]{#{\mathsf{\body}}}
+
 \def\True{#{\sf{T}}}
 \def\False{#{\sf{F}}}
 
