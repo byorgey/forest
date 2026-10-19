@@ -23,3 +23,4 @@
 \transclude{00KJ}   % Asymptotic analysis problems
 \transclude{00LW}   % Graph problems
 \transclude{00NR}   % Greedy algorithm problems
+\transclude{00PM}   % D&C problems

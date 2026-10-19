@@ -1,0 +1,14 @@
+\title{[DC2] Majority elements (3 pts)}
+\date{2026-10-19T16:47:45Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{An array #{A[1\ldots n]} is said to have a \em{majority element} if \em{more than half} of its entries are the same. Given an array, the task is to design an efficient algorithm to tell whether the array has a majority element, and, if so, to find that element. The \em{only} thing you may assume about the elements of the array is that you can test whether two of them are equal (in constant time). In particular, the elements of the array are \em{not} necessarily from some ordered domain like the integers, and so there can be no comparisons of the form #{A[i] > A[j]}. You also may not assume that there is a hash function for the elements, so they cannot be used as the keys of a dictionary/hash table.
+
+\ol{
+  \li{What is a brute-force algorithm for this problem? How long does it take to run?}
+  \li{Show how to solve this problem in #{O(n \log n)} time. Make sure to prove that your algorithm is correct (via induction) and give a recurrence relation for the running time of your algorithm.}
+}
+}

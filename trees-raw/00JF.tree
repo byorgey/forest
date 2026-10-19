@@ -18,4 +18,4 @@
 \transclude{00K7}   % Asymptotic analysis
 \transclude{00LL}   % Graphs
 \transclude{00NJ}   % Greedy algorithms
-\transclude{00PJ}  % Divide & Conquer
+\transclude{00PJ}   % Divide & Conquer

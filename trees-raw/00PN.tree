@@ -1,0 +1,12 @@
+\title{[DC1] Modular exponentiation (2 pts)}
+\date{2026-10-19T16:44:45Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Describe a \strong{recursive} algorithm which computes the \em{modular exponentiation} ##{b^e \bmod{m},} that is, the remainder when dividing #{b^e} by #{m}, in only #{O(\lg e)} time. You may assume that #{0 \leq b, e, m < 2^{32}}, and that arithmetic operations such as addition and multiplication on #{64}-bit numbers take constant time.}
+
+\p{Be sure to \strong{analyze} the running time of the algorithm, and \strong{prove} it is correct by (strong) induction on #{e}.}
+
+\p{Recall that #{(a \cdot b) \equiv_m (a \bmod m) \cdot (b \bmod m)}, so it does not matter whether you reduce modulo #{m} before or after multiplication. For example, #{b^4 \bmod m \equiv_m (b \bmod m)^4}.}

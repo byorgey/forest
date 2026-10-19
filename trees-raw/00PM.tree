@@ -1,0 +1,9 @@
+\title{Divide & Conquer problems}
+\date{2026-10-19T16:39:38Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\transclude{00PN}   % Modexp
+\transclude{00PO}   % Majority element
