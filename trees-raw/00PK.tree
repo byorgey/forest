@@ -1,0 +1,23 @@
+\title{Divide and conquer introduction}
+\date{2026-10-19T13:35:21Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{\em{Divide and conquer} is a typical problem solving strategy that works as follows:
+
+\ol{
+  \li{Break up the input into (smaller) subproblems.}
+  \li{Solve the subproblems recursively.}
+  \li{Combine the subproblem solutions into an overall solution.}
+}
+
+When it works, this is a beautiful technique and very amenable to analysis:
+
+\ul{
+  \li{To \em{implement} a divide-and-conquer strategy, we can use \em{recursion}.}
+  \li{To \em{prove the correctness} of a divide-and-conquer strategy, we can use \em{proof by induction}.}
+  \li{To \em{analyze the asymptotic runtime} of a divide-and-conquer strategy, we can use \em{recurrence relations} and the \em{Master Theorem}.}   % XXX link to Master Theorem
+}
+}

@@ -1,0 +1,12 @@
+\title{Divide and conquer example: Mergesort}
+\date{2026-10-19T13:36:10Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{The material in this section is presented via a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/divide-and-conquer-intro.pdf).}
+
+\p{A classic example of a divide-and-conquer algorithm is \em{mergesort}, which works by splitting the input list into two halves, recursively sorting each half, and then merging the sorted halves together.}
+
+% XXX algorithm; correctness proof; call tree + analysis.

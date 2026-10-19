@@ -1,0 +1,11 @@
+\title{Divide and Conquer}
+\date{2026-10-19T13:30:55Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{The next common problem-solving strategy we will consider is \em{divide and conquer}.}
+
+\transclude{00PK}   % Intro
+\transclude{00PL}   % Example: mergesort
