@@ -1,0 +1,8 @@
+\title{[DC3] #{n}-bit multiplication (1 pt)}
+\date{2026-10-22T14:03:19Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Explain how to generalize the [divide-and-conquer #{n}-bit multiplication algorithm from class](00PV) to work for any value of #{n}, not just powers of two.}

@@ -1,0 +1,14 @@
+\title{Naïve #{n}-bit multiplication}
+\date{2026-10-22T12:25:25Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{What about multiplication?  Using the standard "grade school"
+algorithm to compute #{p \times q}, we end up with a shifted copy of
+#{p} for every #{1} bit in #{q}, and then we must add then all.  So
+there are up to #{n} shifted copies of #{p} to add, with each being at
+most #{2n} bits, so this particular algorithm will take #{\Theta(n^2)}
+in the worst case.}
+
+\p{However, unlike [addition](00PT) which obviously takes #{\Omega(n)} time, it is not so obvious that multiplication must take #{\Omega(n^2)} time.  In fact, if anything, it is the opposite: it seems like adding up a bunch of shifted copies of the same bitstring might involve some redundant work.  Perhaps there is a way we can multiply two #{n}-bit numbers in faster than quadratic time.}

@@ -1,0 +1,30 @@
+\title{Divide and conquer multiplication}
+\date{2026-10-22T12:40:48Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{Given an #{n}-bit number #{X} (and assuming #{n} is even), we can split #{X} into two halves #{X_1} and #{X_2}, each with #{n/2} bits.  We can express this as ##{X = 2^{n/2} X_1 + X_2} since multiplying by a power of two performs a bit shift, \ie adding zeros to the end of a number in binary (just like multiplying by a power of ten adds zeros to the end of a number in decimal—and for the same reason).}
+
+\subtree{
+  \title{What if #{n} is odd?}
+  \taxon{Remark}
+  \p{Note that we can still do something similar if #{n} is odd—for example we can write #{X = 2^{\lceil n/2 \rceil} X_1 + X_2} where #{X_2} is one digit longer than #{X_1} (or we can imagine "padding" #{X_1} to length #{\lceil n/2 \rceil} by adding a zero digit on the left).}
+}
+
+\p{If we have two #{n}-bit numbers expressed in this form and multiply them, we get ##{AB = (2^{n/2} A_1 + A_2)(2^{n/2} B_1 + B_2) = 2^n A_1 B_1 + 2^{n/2}(A_1 B_2 + A_2 B_1) + A_2 B_2.} On the left-hand side we have a single #{n}-bit multiplication; on the right-hand side we have four #{n/2}-bit multiplications, two shifts, and three #{n}-bit additions.  We can turn this into a recursive algorithm for computing the product #{AB}, something like the following:}
+
+\pseudo{
+\fn{mul}{A,B}{
+  \state{Let #{n} be the number of bits in #{A} and #{B} (assume they are the same)}
+  \if{#{n = 1}}{Directly compute the #{1}-bit product #{AB}}
+  \else{
+    \state{Split #{A} and #{B} into halves #{A_1, A_2} and #{B_1, B_2}}
+    \state{\return #{2^{n} \sf{mul}(A_1, B_1) + 2^{n/2} (\sf{mul}(A_1, B_2) + \sf{mul}(A_2, B_1)) + \sf{mul}(A_2, B_2)}}
+  }
+}
+}
+
+\p{(This works when #{n} is a power of two; it is not hard (though a bit fiddly) to [generalize to any value of #{n}](00PW).) This involves four recursive calls to \sf{mul} on inputs of size #{n/2}, two shifts (which take constant time), and three #{n}-bit additions (which [take #{\Theta(n)}](00PU)).  Hence we can write a recurrence for the time #{M(n)} taken by \sf{mul} on #{n}-bit inputs:
+##{\begin{align*} M(1) &= \Theta(1) \\ M(n) &= 4M(n/2) + \Theta(n) \end{align*}} But what is a closed form for #{M(n)}?  Is it better than #{n^2}?  In order to answer this we will first analyze these sorts of recurrences more generally.}

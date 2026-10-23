@@ -7,8 +7,9 @@
 
 \p{The material in this section is presented via a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/divide-and-conquer-intro.pdf).}
 
-\p{A classic example of a divide-and-conquer algorithm is \em{mergesort}, which works by splitting the input list into two halves, recursively sorting each half, and then merging the sorted halves together.}
+\p{A classic example of a [divide-and-conquer](00PK) algorithm is \em{mergesort}, which works by splitting the input list into two halves, recursively sorting each half, and then merging the sorted halves together.}
 
 \transclude{00PP}   % Mergesort algorithm
-\transclude{00PQ}
-% call tree + analysis.
+\transclude{00PQ}   % call tree + analysis
+
+% Include inductive proof!

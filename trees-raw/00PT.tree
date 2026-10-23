@@ -1,0 +1,7 @@
+\title{#{n}-bit addition}
+\date{2026-10-22T12:22:07Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{\em{Adding} two #{n}-bit numbers is easily analyzed: we iterate through, starting with the ones place, and add the bits in each place (possibly doing another addition for a carry bit), for a total of about #{2n} bit operations in the worst case.  Hence we know it is \em{possible} to add two #{n}-bit numbers in linear time, so the worst-case time to add is #{O(n)}.  However, it is also clearly #{\Omega(n)}, since we have to at least look at every bit in the input.  Hence, adding #{n}-bit numbers takes #{\Theta(n)} time.}

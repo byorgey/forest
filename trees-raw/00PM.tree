@@ -7,3 +7,4 @@
 
 \transclude{00PN}   % Modexp
 \transclude{00PO}   % Majority element
+\transclude{00PW}   % generalized n-bit multiplication (naive)

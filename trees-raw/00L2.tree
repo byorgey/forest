@@ -14,7 +14,7 @@
 \li{Add to or remove from the \em{end} of an extensible list (\eg \code{ArrayList} in Java; Python lists)}
 \li{Insert, update, or remove from a hash table (\eg \code{set} + dictionaries in Python; \code{HashSet}/\code{HashMap} in Java)}
 \li{Add to or remove from \em{either} end of a \em{deque} (\strong{d}ouble-\strong{e}nded \strong{que}ue)}
-\li{Arithmetic (usually!  sort of!)}
+\li{Arithmetic ([usually!  sort of!](00PR))}
 }
 }
 

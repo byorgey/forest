@@ -5,7 +5,8 @@
 
 \import{algorithms-macros}
 
-\p{The next common problem-solving strategy we will consider is \em{divide and conquer}.}
+\p{The next standard problem-solving strategy we will consider is \em{divide and conquer}.}
 
 \transclude{00PK}   % Intro
 \transclude{00PL}   % Example: mergesort
+\transclude{00PR}   % Example: arithmetic

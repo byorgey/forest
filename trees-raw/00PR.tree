@@ -1,0 +1,19 @@
+\title{Divide and conquer example: multiplication}
+\date{2026-10-21T12:30:43Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{The material in this section is presented via a [POGIL activity](https://hendrix-cs.github.io/csci382/pub/DC-arithmetic.pdf).}
+
+\p{Another classic place where [divide-and-conquer](00PK) comes up is in trying to multiply large numbers faster than the naïve algorithm you learned in grade school.}
+
+\transclude{00PS}  % Motivation
+\transclude{00PT}  % Adding
+\transclude{00PU}  % Multiplying: grade school algorithm
+\transclude{00PV}  % Arithmetic by (naive) divide and conquer
+
+% Master Theorem
+% Analysis of naive divide + conquer
+% Karatsuba!

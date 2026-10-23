@@ -29,7 +29,7 @@
 
 \transclude{005S}
 
-(Check: do you see why #{\neg \Odd(n)} and #{\Even(n)} are not literally the same?  We will be able to formally prove this later in the semester.)}
+(Check: do you see why #{\neg \Odd(n)} and #{\Even(n)} are not literally the same?  We will be able to [formally prove this later in the semester](00DN).)}
 
 \proof{
   #{\Odd(k^2) \implies \Odd(k)}.  We will instead prove the contrapositive, that is, #{\neg \Odd(k) \implies \neg \Odd(k^2)}, which is equivalent to #{\Even(k) \implies \Even(k^2)}.  So suppose #{\Even(k)}, then we must show #{\Even(k^2)}.
