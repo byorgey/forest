@@ -11,9 +11,9 @@
 
 \transclude{00PS}  % Motivation
 \transclude{00PT}  % Adding
-\transclude{00PU}  % Multiplying: grade school algorithm
-\transclude{00PV}  % Arithmetic by (naive) divide and conquer
-
+\transclude{00PU}  % Multiplication by grade school algorithm
+\transclude{00PV}  % Multiplication by (naive) divide and conquer
+\transclude{00PX}  % Recursion tree analysis of divide and conquer multiplication
 % Master Theorem
 % Analysis of naive divide + conquer
 % Karatsuba!

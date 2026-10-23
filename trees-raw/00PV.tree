@@ -1,7 +1,6 @@
 \title{Divide and conquer multiplication}
 \date{2026-10-22T12:40:48Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
@@ -26,5 +25,4 @@
 }
 }
 
-\p{(This works when #{n} is a power of two; it is not hard (though a bit fiddly) to [generalize to any value of #{n}](00PW).) This involves four recursive calls to \sf{mul} on inputs of size #{n/2}, two shifts (which take constant time), and three #{n}-bit additions (which [take #{\Theta(n)}](00PU)).  Hence we can write a recurrence for the time #{M(n)} taken by \sf{mul} on #{n}-bit inputs:
-##{\begin{align*} M(1) &= \Theta(1) \\ M(n) &= 4M(n/2) + \Theta(n) \end{align*}} But what is a closed form for #{M(n)}?  Is it better than #{n^2}?  In order to answer this we will first analyze these sorts of recurrences more generally.}
+\p{(This works when #{n} is a power of two; it is not hard (though a bit fiddly) to [generalize to any value of #{n}](00PW).)}

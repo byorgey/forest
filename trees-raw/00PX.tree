@@ -1,0 +1,32 @@
+\title{Analysis of naïve divide-and-conquer multiplication}
+\date{2026-10-23T12:08:01Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{This [divide-and-conquer multiplication algorithm](00PV) involves four recursive calls to \sf{mul} on inputs of size #{n/2}, two shifts (which take constant time), and three #{n}-bit additions (which [take #{\Theta(n)}](00PU)).  Hence we can write a recurrence for the time #{M(n)} taken by \sf{mul} on #{n}-bit inputs:
+##{\begin{align*} M(1) &= \Theta(1) \\ M(n) &= 4M(n/2) + \Theta(n) \end{align*}} But what is a closed form for #{M(n)}?  Is it better than #{n^2}?}
+
+\p{We can unroll this recurrence into a recursion tree to figure out how much total work happens.
+\ul{
+  \li{At the root, an amount of work happens proportional to the input size, #{n}.}
+  \li{At the first level of recursion, there are four recursive calls, each on #{n/2}-bit numbers, giving a total something like #{4 \cdot (n/2) = 2n}.}
+  \li{At the second level, there are sixteen recursive calls on #{n/4}-bit inputs, giving a total of #{4n}.}
+  \li{In general, at depth #{k}, there are #{4^k} recursive calls, each on an input of size #{n/2^k}, for a total of #{4^k \cdot n/2^k = 2^k n}.}
+}
+The tree has height #{\lg n}.  Therefore, the total amount of work in the whole tree (noting that #{2^{\lg n} = n}) is
+##{
+\begin{align*}
+\sum_{k = 0}^{\log_2 n} 2^k n
+&= n + 2n + 4n + \dots + 2^{\lg n} n \\
+&= n + 2n + 4n + \dots + n^2 \\
+&= (1 + 2 + 4 + \dots + n) \cdot n \\
+&= (2n - 1) \cdot n \\
+&= \Theta(n^2)
+\end{align*}
+}
+Drat! This is no better than the [original, naïve algorithm](00PU).  But it is a good exercise, and gives us insight into more
+general situations—not to mention that this approach can be salvaged by
+doing something a bit more clever when we split up the problem into
+subproblems.  But first, let's prove a more general theorem.
+}
