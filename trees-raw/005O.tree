@@ -19,7 +19,7 @@
 
     \p{Suppose #{\Odd(k^2)}, that is, suppose there is an integer #{j} such that #{k^2 = 2j+1}.  Then we must show #{\Odd(k)}, that is, we must pick an integer #{p} such that #{k = 2p + 1}.
     \subproof{
-      Here is where, starting from our assumption that #{k^2 = 2j+1}, we should pick an integer #{p} so that #{k = 2p+1}.  But we are kind of stuck: knowing something about #{k^2} does not really help us conclude anything about #{k}.  
+      Here is where, starting from our assumption that #{k^2 = 2j+1}, we should pick an integer #{p} so that #{k = 2p+1}.  But we are kind of stuck: knowing something about #{k^2} does not really help us conclude anything about #{k}.
     }
     }
   }
