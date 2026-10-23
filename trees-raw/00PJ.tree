@@ -10,3 +10,7 @@
 \transclude{00PK}   % Intro
 \transclude{00PL}   % Example: mergesort
 \transclude{00PR}   % Example: arithmetic
+\transclude{00PY}   % Master Theorem
+\transclude{00Q8}   % Karatsuba
+
+% Example: QuickSelect?

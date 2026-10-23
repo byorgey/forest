@@ -1,0 +1,20 @@
+\title{Karatsuba's Algorithm}
+\date{2026-10-23T19:59:55Z}
+\tag{algorithms}
+\taxon{Algorithm}
+
+\import{algorithms-macros}
+
+\p{Now, back to [#{n}-bit integer multiplication](00PR)! In 1960 it seemed “obvious” that integer multiplication was #{\Omega(n^2)}; [Andrey Kolmogorov](https://en.wikipedia.org/wiki/Andrey_Kolmogorov) (a very prominent mathematician at the time) posed it as a conjecture. At a special seminar organized by Kolmogorov to investigate this conjecture and other related problems, a previously unknown 23-year-old graduate student, [Anatoly Karatsuba](https://en.wikipedia.org/wiki/Anatoly_Karatsuba), disproved the conjecture by coming up with a faster algorithm!}
+
+\p{Break up #{A} and #{B} into two pieces of size #{n/2} as before: #{A = A_1 2^{n/2} + A_2} and #{B = B_1 2^{n/2} + B_2}. Now for Karatsuba’s clever insight. Define ##{\begin{align*}
+  P_1 &= A_1 B_1 \\
+  P_2 &= A_2 B_2 \\
+  P_3 &= (A_1 + A_2)(B_1 + B_2)
+\end{align*}} Note #{P_3 - P_1 - P_2 = A_1B_2 + A_2 B_1}. Hence ##{AB = P_1 2^n +
+(P_3 - P_1 - P_2) 2^{n/2} + P_2.} This requires only \em{three} multiplications of size #{n/2}! (Along with two additions of size #{n/2}, four additions or subtractions of size #{n}, and two shifts—more work than before, but all still #{\Theta(n)} in total.)}
+
+\p{Hence #{T(n) = 3T(n/2) + \Theta(n)}, so we can apply the [Master Theorem](00Q1) with #{a = 3}, #{b = 2}, and #{d = 1}. #{3 > 2^1} so we are in the third case of the theorem (the work is concentrated at the bottom of the call tree), and we conclude that this algorithm is #{O(n^{\log_2 3})
+\approx O(n^{1.59})}.}
+
+\p{This is not even the fastest known algorithm—for example, the [Toom-Cook algorithm](https://en.wikipedia.org/Toom–Cook_multiplication) is a generalization of Karatsuba's algorithm which splits up the numbers into more than two pieces; and the fastest algorithm actually used in practice is the [Schönhage-Strassen algorithm](https://en.wikipedia.org/wiki/Schönhage–Strassen_algorithm), which is based on different ideas (the [Fast Fourier Transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform)) can multiply two #{n}-bit integers in #{O(n \log n \log \log n)}.  In 2019 it was even proved that it is possible to multiply two #{n}-bit integers in #{\Theta(n \lg n)} time, although the algorithm involved would not be faster in practice for any numbers that fit in our universe!}

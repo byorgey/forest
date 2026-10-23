@@ -1,0 +1,14 @@
+% Needs title?
+
+\date{2026-10-23T13:53:05Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\taxon{Lemma}
+\p{For any real numbers #{a,b > 1} and #{x > 1}, ##{a^{\log_x b} = b^{\log_x a}.}}
+
+\proof{
+Taking the #{\log_x} of both sides and simplifying yields ##{\log_x b \log_x a = \log_x a \log_x b} which is clearly true.
+}

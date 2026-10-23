@@ -1,10 +1,12 @@
 \title{Divide & Conquer problems}
 \date{2026-10-19T16:39:38Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
 \transclude{00PN}   % Modexp
 \transclude{00PO}   % Majority element
 \transclude{00PW}   % generalized n-bit multiplication (naive)
+\transclude{00Q2}   % Comparison
+\transclude{00Q3}   % Fibonacci computation
+\transclude{00Q4}   % Fibonacci recurrence

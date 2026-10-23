@@ -1,0 +1,16 @@
+\title{[DC4] Divide & conquer comparison (1 pt)}
+\date{2026-10-23T18:41:48Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Suppose you are choosing between the following three algorithms:
+\ol{
+  \li{Algorithm A solves problems by dividing them into five subproblems of half the size, recursively solving each subproblem, and then combining the solutions in linear time.}
+  \li{Algorithm B solves problems of size #{n} by recursively solving two subproblems of size #{n-1} and then combining the solutions in constant time.}
+  \li{Algorithm C solves problems of size #{n} by dividing them into nine subproblems of size #{n/3}, recursively solving each subproblem, and then combining the solutions in #{O(n^{2})} time.}
+}
+What are the asymptotic running times of each of these algorithms, and which one is asymptotically fastest?}
+
+

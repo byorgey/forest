@@ -1,0 +1,32 @@
+\title{[DC5] Efficient Fibonacci calculation (3 pts)}
+\date{2026-10-23T18:44:50Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Recall the \em{Fibonacci numbers} #{F_n}:
+\transclude{00OZ}
+}
+
+\p{As you may know, directly turning the definition of Fibonacci numbers into a recursive implementation is a terrible idea; the resulting algorithm takes #{\Theta(\varphi^n)} time (where #{\varphi = (1 + \sqrt 5)/2 \approx 1.618\dots}).}
+
+\p{The usual iterative algorithm to repeatedly calculate the next Fibonacci number from the previous two seems like it would take #{\Theta(n)} time to compute #{F_n}: it just loops from #{1} to #{n} and does one addition each loop, right? Well... yes, it does one addition each loop, but we [can’t really assume that these additions take constant time](00PS), because the Fibonacci numbers involved can get quite large! Let’s analyze the situation more carefully.}
+
+\ol{
+  \li{Recall from a [previous homework problem](00K1) that the size of the #{n}th Fibonacci number #{F_n} is #{\Theta(\varphi^n)}.  Given this fact, approximately how many bits (in terms of #{\Theta}) are needed to represent #{F_n}? Simplify your answer as much as possible. (Note, you need note have completed [GCD4](00K1) to do this problem.)}
+
+  \li{Now suppose we implement the usual iterative algorithm as follows: initialize an array #{F} of size #{n}, which can hold arbitrary-size integers. Initialize #{F[0] = 0} and #{F[1] = 1}. Then loop #{i} from #{2} to #{n}, and at each iteration, set #{F[i] \gets F[i-1] + F[i-2]}. Taking into account the [time needed to add integers of a given size](00PT), what is the running time of this algorithm?}
+
+  \li{We can do better! In addition to their definition, Fibonacci numbers satisfy the following recurrences (you can just take my word for it, or see [this exercise](00Q4)):
+  ##{\begin{align*}
+    F_{2n+1} & = F_n^2 + F_{n+1}^2 \\
+    F_{2n} &= 2F_n F_{n+1} - F_n^2
+\end{align*}} For example, #{F_7 = 13 = F_3^2 + F_4^2 = 2^2 + 3^2}, and #{F_8 = 21
+  = 2F_4F_5 - F_4^2 = 2 \cdot 3 \cdot 5 - 3^2}.
+  \p{Explain how to turn these recurrences into a recursive algorithm for computing Fibonacci numbers, and implement this algorithm in a programming language of your choice. Be careful not to make more recursive calls than necessary!}
+  }
+
+  \li{Analyze the running time of this algorithm. Be sure to include the time needed to do any additions or multiplications. Assume we will use [Karatsuba’s algorithm](XXX) for multiplication.}
+}
+

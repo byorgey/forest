@@ -1,0 +1,26 @@
+\title{Asymptotic behavior of geometric series}
+\date{2026-10-23T13:56:44Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Lemma}
+
+\p{For some positive real constant #{r} and any natural number #{n}, let ##{S = 1 +
+    r + r^2 + \dots + r^n.}
+\ul{
+  \li{If #{0 < r < 1}, then #{S} is #{\Theta(1)}.}
+  \li{If #{r = 1}, then #{S} is #{\Theta(n)}.}
+  \li{If #{r > 1}, then #{S} is #{\Theta(r^n)}.}
+}
+}
+
+\proof{
+  We can prove each claim separately.
+\ul{
+  \li{If #{r < 1}, then the \em{infinite} sum #{1 + r + r^2 + \dots} converges to the constant value #{\frac{1}{1-r}}.  The partial sum up to #{k} is less than this, so it cannot depend on #{n} either.}
+  \li{If #{r = 1}, then #{S = 1 + 1 + 1 + \dots + 1 = n+1}, which is #{\Theta(n)}.}
+  \li{If #{r > 1}, then #{S = \frac{1 - r^{n+1}}{1 - r} = r \cdot r^n + \frac{1}{r-1}} which is #{\Theta(r^n)}.}
+}
+}
+

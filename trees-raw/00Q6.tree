@@ -1,0 +1,8 @@
+\title{Master theorem generalizations}
+\date{2026-10-23T19:39:00Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{The [Master Theorem](00Q1) can be generalized in a number of ways (for example, #{T(n)} can be \em{less than or equal to} the right-hand side instead of equal; we can handle more complex expressions for the amount of extra work besides just #{\Theta(n^d)}; #{n} need not be evenly divisible by #{b}; and so on).  I have presented the simple core of the idea here, and if you were to ever need a generalized version for some reason, you could look it up.}

@@ -1,0 +1,15 @@
+\title{Master Theorem}
+\date{2026-10-23T14:00:14Z}
+\tag{algorithms}
+\taxon{Theorem}
+
+\import{algorithms-macros}
+
+\p{If ##{T(n) = a T(n/b) + \Theta(n^d)} for positive constants #{a}, #{b}, and #{d}, then
+##{T(n) = \begin{cases}
+  \Theta(n^d) & \text{if } a < b^d \\
+  \Theta(n^d \log n) & \text{if } a = b^d \\
+\Theta(n^{\log_b a}) & \text{if } a > b^d.
+\end{cases}}}
+
+

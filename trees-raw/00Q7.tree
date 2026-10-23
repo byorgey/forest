@@ -1,0 +1,31 @@
+\title{Proof of the Master Theorem}
+\author{brentyorgey}
+\date{2026-10-23T19:52:00Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{We now have the tools we need to prove the [Master Theorem](00Q1).}
+
+\proof{
+Let's think about the recursion tree corresponding to a divide-and-conquer algorithm that at each stage makes #{a} recursive calls on inputs of size #{n/b}, and does #{\Theta(n^d)} extra work besides the recursive calls.
+
+\ul{
+  \li{The tree has height #{\log_b n}.}
+  \li{A node at level #{k} has size #{n/b^k} and does #{(n/b^k)^d} work.}
+  \li{There are #{a^k} nodes at level #{k}, so the total work at level #{k} is ##{a^k \cdot \left(\frac{n}{b^k}\right)^d = n^d \left(\frac{a}{b^d}\right)^k.}}
+}
+
+\p{Hence the overall total work is ##{\sum_{k=0}^{\log_b n}
+  n^d \left(\frac{a}{b^d}\right)^k = n^d \sum_{k=0}^{\log_b n}
+\left(\frac{a}{b^d}\right)^k.} This is #{n^d} times a [geometric series](00Q0) with ratio #{a/b^d}.}
+
+\ul{
+  \li{If #{a < b^d} then the ratio is #{< 1} and the sum is a constant; hence the total work is #{\Theta(n^d)}.}
+  \li{If #{a = b^d} then the ratio is #{1} and the sum is #{\Theta(\log_b n)}; hence the total work is #{\Theta(n^d \log n)}.}
+  \li{If #{a > b^d} then the ratio is #{> 1} and the sum is proportional to its final term, #{(a/b^d)^{\log_b n}}. In that case the total work is ##{\Theta\left( n^d \cdot \left(\frac{a}{b^d}\right)^{\log_b n} \right) =
+    \Theta \left( n^d \cdot \frac{a^{\log_b n}}{(b^{\log_b n})^d}\right) = \Theta(a^{\log_b
+      n}) = \Theta(n^{\log_b a}).}}
+}
+
+}

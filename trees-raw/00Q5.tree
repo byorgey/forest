@@ -1,0 +1,13 @@
+\title{Master theorem intuition}
+\date{2026-10-23T19:33:57Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{Intuitively, #{a} tells us how fast the number of recursive calls grows; #{b^d} tells us how fast the problems are getting smaller. The ratio of these will end up being the common ratio of a geometric sum.}
+\ul{
+  \li{If #{a < b^d}, then the problems get smaller faster than the number of problems increases, and the total amount of work is dominated by the work done at the very top of the recursion tree.}
+  \li{If #{a > b^d}, then the number of nodes is growing faster than the work decreases, so the amount of work is dominated by the bottom level of the tree (as in our [integer multiplication example](00PR)).}
+  \li{If #{a = b^d}, then the growth of the number of subproblems is exactly balanced by the decrease in the amount of work, so there is exactly the same amount of work done in total at each level of the recursion tree (namely, #{O(n^d)}), and the overall total is hence this amount of work per level times the number of levels (as in [merge sort](00PL)).}
+}

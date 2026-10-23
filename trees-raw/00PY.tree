@@ -1,0 +1,18 @@
+\title{The Master Theorem}
+\date{2026-10-23T13:41:25Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{Adding up the total work in a recursion tree for divide-and-conquer algorithms can be generalized to a powerful theorem known as the \em{Master Theorem}.  (It is not named for someone; it is just a powerful theorem that "masters" a very wide range of divide-and-conquer algorithms. This is especially true when considering its generalizations such as the [Akra-Bazzi method](https://en.wikipedia.org/wiki/Akra-Bazzi_method).)}
+
+\transclude{00Q1}   % Master theorem
+\transclude{00Q5}   % Master theorem intuition
+\transclude{00Q6}   % Generalizations
+
+\p{Before we get to the proof of the theorem itself, we will need a few small lemmas.}
+
+\transclude{00PZ}   % a^log b = b^log a
+\transclude{00Q0}   % geometric series
+\transclude{00Q7}

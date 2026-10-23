@@ -1,0 +1,17 @@
+\title{[DC6] Fibonacci recurrence (1 pt)}
+\date{2026-10-23T19:02:25Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{This problem guides you through a derivation of the Fibonacci recurrences in [the previous problem](00Q3).}
+
+\ol{
+  \li{Consider the #{2\times 2} matrix ##{M =
+      \begin{bmatrix}
+        1 & 1 \\ 1 & 0
+      \end{bmatrix}.} Compute #{M^2}, #{M^3}, and #{M^4}. What do you notice?}
+  \li{State a conjecture about the values of #{M^n} for #{n \geq 1} and prove your conjecture by induction on #{n}.}
+  \li{In practice, of course, we could compute #{M^n} using an algorithm like the one in [DC1](00PN). Expand the equation ##{M^{2n} = (M^n)^2} and use it to derive the Fibonacci recurrences in [DC5](00Q3).}
+}
