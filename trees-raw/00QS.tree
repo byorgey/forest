@@ -1,0 +1,54 @@
+\title{[DP4] Train track (2 pts)}
+\date{2026-10-27T21:44:36Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{You are building a toy train track
+  out of a sequence of straight pieces laid end-to-end.  Some pieces
+  are one unit long, and some are three units long.  How many
+  different ways are there to build a track that is five hundred units
+  long?}
+
+\p{For example, there are #{9} different ways to build a track that is #{7} units long, as illustrated below.}
+
+\diagram{500}{*}{\verb<<<|
+import Data.List.Split (chunksOf)
+
+segGap = 0.2
+railOffset = 0.35
+
+trackSeg n = rails <> ties
+  where
+    rails = mconcat [ rail # translateY railOffset
+                    , rail # translateY (-railOffset)]
+    rail = hrule (n' - segGap) # alignL # lw veryThick # lc silver
+
+    k    = 2
+    ties = hcat' (with & catMethod .~ Distrib
+                       & sep .~ (1/fromIntegral k))
+             (replicate (k * n) tie)
+           # translateX (1/(2*fromIntegral k) - segGap/2)
+    tie  = rect 0.1 1 # lw none # fc (trackColor n)
+
+    n'   = fromIntegral n
+trackColor 1 = black
+trackColor 3 = orange
+
+drawTrack = hsep segGap . map trackSeg
+
+tracks :: Int -> [[Int]]
+tracks n | n < 0 = []
+tracks 0 = [[]]
+tracks 1 = [[1]]
+tracks n = map (1:) (tracks (n-1)) ++ map (3:) (tracks (n-3))
+
+dia :: Diagram B
+dia = hsep 1 . map (vsep 0.8) . chunksOf 5
+    $ map drawTrack (tracks 7) -- $
+<<<}
+
+\hint{Let #{T(n)} denote the number of ways to build a track of length #{n}, and come up with a recurrence for #{T}. What are your choices for the final track segment?}
+
+\hint{To answer this you will need to write a small program. If you use Java, be sure to use \code{BigInteger}.}

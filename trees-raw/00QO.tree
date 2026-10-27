@@ -1,0 +1,14 @@
+\title{Scenario}
+\date{2026-10-27T21:34:51Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{You are running a consulting business, with clients on both east and west coasts. Each month, you can run your business from an office in either New York or San Fransisco. In month #{i}, you will incur an \em{operating cost} of #{N_i} if you run the business out of New York; you will incur an operating cost of #{S_i} if you run the business out of San Fransisco (the costs can change each month depending on the distribution of client demands).}
+
+\p{However, if you run the business out of one city in month #{i}, and then out of the other city in month #{i+1}, then you incur a fixed \em{moving cost} of #{M} to switch cities.}
+
+\p{Given a sequence of #{n} months, a \em{plan} is a sequence of #{n} locations—each one equal to either \sf{NY} or \sf{SF}—such that the #{i}th location indicates the city in which you will be based in the #{i}th month. The \em{cost} of a plan is the sum of the operating costs for each of the #{n} months, plus a moving cost of #{M} for each time you switch cities. The plan can begin in either city.}
+
+\p{Given a value for the moving cost #{M}, and sequences of operating costs #{N_1, \dots, N_n} and #{S_1, \dots, S_n}, the problem is to find a plan with minimum total cost.}
+

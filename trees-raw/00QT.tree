@@ -1,0 +1,39 @@
+\title{[DP5] Longest path in an ordered graph (3 pts)}
+\date{2026-10-27T21:52:27Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Let #{G = (V,E)} be a directed, unweighted graph with nodes #{v_1, \dots, v_n}. We say that #{G} is an \em{ordered graph} if it has the following properties:
+\ol{
+  \li{Each edge goes from a node with a lower index to a node with a higher index. That is, every directed edge has the form #{(v_i, v_j)} with #{i < j}.}
+  \li{Every node other than #{v_n} has at least one outgoing edge.}
+}
+}
+
+\p{Given an ordered graph #{G}, we want to find the \em{longest} path from #{v_1} to #{v_n}.}
+
+\ol{
+  \li{\p{Consider the following greedy algorithm.
+
+  \pseudo{
+      \state{#{w \gets v_1}}
+      \state{#{L \gets 0}}
+      \while{#{w \neq v_n}}{
+        \state{Choose the outgoing edge #{(w, v_j)} with the smallest #{j}}
+        \state{#{w \gets v_j}}
+        \state{Increment #{L}}
+      }
+      \state{\return #{L}}
+  }
+
+  Show that this algorithm does \em{not} correctly solve the problem, by giving an example of an ordered graph for which it does not return the correct answer. Be sure to explain what the correct answer is and what incorrect answer is returned by the algorithm.}
+  }
+
+  \li{Describe an efficient algorithm that takes an ordered graph #{G} and returns the length of the longest path from #{v_1} to #{v_n}. Justify its correctness and analyze its time complexity.
+
+  \hint{If you know the length of the longest path from #{v_j} to #{v_n} for every #{j > i}, can you figure out the length of the longest path from #{v_i} to #{v_n}?}
+  }
+
+}

@@ -1,0 +1,50 @@
+\title{Naïve recursive Fibonacci}
+\date{2026-10-27T13:46:25Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+
+\p{Recall the definition of the \em{Fibonacci numbers}:
+
+\transclude{00OZ}
+
+We can directly turn this definition into a recursive function to compute the #{n}th Fibonacci number, but it is extremely slow (in fact, it is #{\Theta(\varphi^n)}):
+
+\pre\verb<<<|
+# Fibonacci #1: naive recursive algorithm
+def fib1(n):
+    if n <= 1:
+        return n
+    else:
+        return fib1(n-1) + fib1(n-2)
+<<<}
+
+\p{Why is it so slow?  If we draw the recursion call tree for, say, \code{fib1(5)}, we can see the problem:
+
+\diagram{500}{*}{\verb<<<|
+import Diagrams.TwoD.Layout.Tree
+
+fibCalls :: Integer -> BTree Integer
+fibCalls 0 = leaf 0
+fibCalls 1 = leaf 1
+fibCalls n = BNode n (fibCalls (n-1)) (fibCalls (n-2))
+
+Just t = uniqueXLayout 2 2 (fibCalls 5)
+
+dia :: Diagram B
+dia = pad 1.1 . centerXY
+        $ renderTree
+            (\n -> (text (show n)
+                    <> roundedRect 1.3 1.3 0.3 # fc gold)
+            )
+            (~~) t
+        `atop` square 1 # scaleY 12 # translateY (-5)
+                        # scaleX 34
+                        # lw none # fc whitesmoke
+<<<}
+
+\code{fib1(5)} calls \code{fib1(4)} and \code{fib1(3)}; but \code{fib1(4)} again calls \code{fib1(3)}; and so on.  \code{fib1(1)} ends up being called five times!  If we were to start with a bigger number, it would be even worse.
+}
+
+\p{The problem, then, is that \code{fib1} spends a lot of time redundantly recomputing values that have already been computed before.}

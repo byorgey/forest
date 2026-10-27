@@ -19,3 +19,4 @@
 \transclude{00LL}   % Graphs
 \transclude{00NJ}   % Greedy algorithms
 \transclude{00PJ}   % Divide & Conquer
+\transclude{00QG}   % Dynamic Programming

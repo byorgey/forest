@@ -1,0 +1,10 @@
+\title{[DP2] Consulting recurrence (1 pt)}
+\date{2026-10-27T21:38:46Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Let #{C(i,c)} denote the minimum cost possible if you operate your business for only months #{1} through #{i} \strong{and end in city #{c}}.  For example, #{C(3,\sf{NY})} denotes the minimum possible cost for the first three months (disregarding any following months) that end by operating out of New York in month 3.}
+
+\p{Define #{C} via a recurrence.}

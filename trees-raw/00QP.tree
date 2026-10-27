@@ -1,0 +1,23 @@
+\title{[DP1] Greedy failure (1 pt)}
+\date{2026-10-27T21:35:51Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Show that the following greedy algorithm does not correctly
+    solve this problem, by describing inputs for which it does not
+    return the correct answer.}
+
+\pseudo{
+  \for{#{i \gets 1} to #{n}}{
+    \if{#{N_i < S_i}}{
+      \state{Output "NY in month #{i}"}
+    }\else{
+      \state{Output "SF in month #{i}"}
+    }
+  }
+}
+
+\p{In your example, be sure to explain what the correct answer is and
+also what the above algorithm finds.}

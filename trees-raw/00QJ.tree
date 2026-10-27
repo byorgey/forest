@@ -1,0 +1,7 @@
+\title{Memoization}
+\date{2026-10-27T14:03:14Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{This is the core problem of dynamic programming: repeated recursive calls on the same input.  The solution is \em{memoization} (note: not "memorization"!): creating some kind of data structure to remember previously computed outputs corresponding to given inputs, so that if the input is ever seen again the output can just be looked up without having to recompute it.}

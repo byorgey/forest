@@ -1,0 +1,23 @@
+\title{Dynamic programming technique II: filling in memo table directly}
+\date{2026-10-27T14:23:12Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Once we recognize that the [code in the previous section](00QK) is essentially just filling in entries in a table, we can dispense with the recursion and simply use a loop to fill in the table directly.}
+
+\p{\pre\verb<<<|
+# Fibonacci #3: explicitly filling in a table with a loop
+def fib3(n):
+    fibs = [0] * (n+1)   # Create initial array of all 0s
+    fibs[1] = 1
+
+    for i in range(2, n+1):
+        fibs[i] = fibs[i-1] + fibs[i-2]    # Each fibs[i] is the sum of the previous two
+
+    return fibs[n]
+<<<}
+
+\p{\code{fib3(n)} obviously runs in #{\Theta(n)} time: it does #{\Theta(1)} amount of work to fill in each entry in a table of size #{n}.}
+
+\p{This approach can be much more efficient in practice than using recursion; but we have to be careful to fill in the table in the correct order, so that we fill in each value only \em{after} all the values it depends on have been filled in.}

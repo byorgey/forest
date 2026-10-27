@@ -24,3 +24,4 @@
 \transclude{00LW}   % Graph problems
 \transclude{00NR}   % Greedy algorithm problems
 \transclude{00PM}   % D&C problems
+\transclude{00QM}   % DP problems

@@ -1,0 +1,9 @@
+\title{[DP3] Consulting algorithm (1 pt)}
+\date{2026-10-27T21:43:04Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Describe an efficient algorithm that takes values for #{n}, #{M}, and sequences of operating costs #{N_1, \dots, N_n} and #{S_1, \dots, S_n}, and returns the \em{cost} of an optimal plan. Justify the correctness of your algorithm and analyze its asymptotic running time.}
+

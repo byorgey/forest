@@ -1,0 +1,12 @@
+\title{Consulting business}
+\date{2026-10-27T21:34:16Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The problems in this section all refer to the following scenario.}
+
+\transclude{00QO}   % Scenario
+\transclude{00QP}   % Greedy does not work
+\transclude{00QQ}   % Recurrence
+\transclude{00QR}   % Efficient

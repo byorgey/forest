@@ -1,0 +1,27 @@
+\title{Dynamic programming technique 1: recursion with a memo table}
+\date{2026-10-27T14:17:08Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The most direct thing we can do, therefore, is to keep our [recursive function](00QI), but create a table in which we can save previously computed outputs. Every time the recursive function is called, we can check whether the answer for that input has already been computed and saved. If so, return it; if not, compute it recursively, save it, in the table, and return it.}
+
+\p{\pre\verb<<<|
+# Fibonacci #2: recursion with memoization
+
+# Global table of Fibonacci numbers; assume no one will
+# ever call fib2(n) with n >= 1000
+fib_table = [-1] * 1000
+
+def fib2(n):
+    if n <= 1:
+        fib_table[n] = n
+    elif fib_table[n] == -1:
+        fib_table[n] = fib2(n-1) + fib2(n-2)
+
+    return fib_table[n]
+<<<}
+
+\p{Even the first time it is called, \code{fib2(n)} runs in #{\Theta(n)} time: each value in the table is computed at most once, and from then on it is simply looked up as needed without triggering any repeated recursive calls.}
+
+\p{This approach is simple to code, and we don't have to worry about the right order in which to fill in the table; it will simply be filled in as needed.  However, since we are just filling in a table anyway, one might wonder what the point is of using a bunch of recursion...}

@@ -1,0 +1,12 @@
+\title{Dynamic programming example: Fibonacci numbers}
+\date{2026-10-27T13:35:34Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{We return to the Fibonacci numbers as a simple first example.  Although dynamic programming is hardly necessary to compute Fibonacci numbers in reality, they still make for a nice illustrative example.}
+
+\transclude{00QI}  % Naive recursion
+\transclude{00QJ}  % Memoization
+\transclude{00QK}  % Recursion w/ memo table
+\transclude{00QL}  % Directly filling in table
