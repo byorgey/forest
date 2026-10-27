@@ -1,0 +1,9 @@
+\title{Motivation}
+\date{2026-10-26T14:08:13Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Consider the following problem: given a (not necessarily sorted!) array of #{n} integers, find the median element (that is, the element which would be in the middle if the array were sorted).}
+
+\p{One obvious solution is to first sort the array in #{\Theta(n \log n)} time, and then simply access the array in the middle. However, intuitively it feels like this is doing too much work: we don’t actually care about the order of any of the other elements, so sorting them is a waste of time. Can we do better than #{\Theta(n \log n)}?}

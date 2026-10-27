@@ -44,3 +44,7 @@
   \state{#{\mathsf{\name}(\inputs) =}}
   \indent{\body}
 }
+
+\def\require[body]{
+  \state{\keyword{require} \body}
+}

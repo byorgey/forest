@@ -27,6 +27,6 @@
   \p{Explain how to turn these recurrences into a recursive algorithm for computing Fibonacci numbers, and implement this algorithm in a programming language of your choice. Be careful not to make more recursive calls than necessary!}
   }
 
-  \li{Analyze the running time of this algorithm. Be sure to include the time needed to do any additions or multiplications. Assume we will use [Karatsuba’s algorithm](XXX) for multiplication.}
+  \li{Analyze the running time of this algorithm. Be sure to include the time needed to do any additions or multiplications. Assume we will use [Karatsuba’s algorithm](00Q8) for multiplication.}
 }
 

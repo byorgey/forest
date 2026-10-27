@@ -12,5 +12,4 @@
 \transclude{00PR}   % Example: arithmetic
 \transclude{00PY}   % Master Theorem
 \transclude{00Q8}   % Karatsuba
-
-% Example: QuickSelect?
+\transclude{00Q9}   % Example: Quickselect

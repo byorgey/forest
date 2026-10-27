@@ -1,0 +1,9 @@
+\title{Attempting divide & conquer}
+\date{2026-10-26T14:09:13Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{We consider a divide-and-conquer approach. First, if we simply split the list in half, it doesn’t seem to help much. We could find the median of both sides but there’s no way to compute the median of the whole list from the two medians. But simply splitting the list in half is not the only way to divide up a list. Since we were already thinking about sorting, what if we \em{partition} the list so that all the smaller elements are on one side and all the larger elements are on the other side? If we pick a random element as the \em{pivot}, we can partition the list into the elements less than the pivot on the left and greater than or equal to the pivot on the right, as in quicksort, in #{\Theta(n)} time.}
+
+\p{Now what? Simply finding the median of both sides still does not help. We can definitely say that the true median lies somewhere in between the left and right medians but that does not really help.}

@@ -1,0 +1,29 @@
+\title{Quickselect}
+\date{2026-10-27T12:09:53Z}
+\tag{algorithms}
+\taxon{Algorithm}
+
+\import{algorithms-macros}
+
+\pseudo{
+  \require{#{0 \leq k < |A|}}
+  \fn{Quickselect}{A,k}{
+    \if{#{|A| = 1}}{
+      \return #{A[0]}
+    }
+    \else{
+      \state{#{A_1, A_2 \gets \sf{Partition}(A)}}
+      \if{#{k < |A_1|}}{
+        \state{\return #{\sf{Quickselect}(A_1, k)}}
+      }
+      \else{
+        \state{\return #{\sf{Quickselect}(A_2, k - |A_1|)}}
+      }
+    }
+  }
+}
+
+\p{#{\sf{Partition}(A)} picks a random pivot value in #{A}, and returns two lists: one containing all the values in #{A} which are less than the pivot, and one containing all values greater than or equal to the pivot.}
+
+\p{Note that in practice, one would implement this so it all works in-place on the array #{A}, instead of generating new arrays #{A_1} and #{A_2}, \em{e.g.} by passing along extra #{\mathit{hi}} and #{\mathit{lo}} parameters to specify which part of the array to focus on.}
+

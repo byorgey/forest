@@ -1,0 +1,14 @@
+\import{algorithms-macros}
+
+\title{\sf{Quickselect} runtime analysis}
+\date{2026-10-27T12:20:41Z}
+\tag{algorithms}
+
+\taxon{Theorem}
+\p{\sf{Quickselect} runs in expected #{\Theta(n)} time.}
+
+\proof{
+\p{\sf{Quickselect} is a randomized algorithm, since the pivot value is chosen randomly; in theory we could make very bad pivot choices that would lead to bad performance. If the pivot is chosen randomly, however, we can expect that on average it will split the array into pieces which are #{1/4} and #{3/4} the size of the original array, respectively (or vice versa).}
+
+\p{We can therefore analyze \sf{Quickselect} using the [Master Theorem](00Q1). We make one recursive call each time, so #{a = 1}; in the worst case #{b = 4/3}; and #{d = 1}, since we spend #{\Theta(n)} time partitioning #{A}. Therefore #{a < b^d} since #{1 < 4/3}, so this is the first case of the Master Theorem, and we conclude that \sf{Quickselect} takes #{\Theta(n^d) = \Theta(n)} time.}
+}

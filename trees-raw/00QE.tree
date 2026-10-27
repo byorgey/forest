@@ -1,0 +1,19 @@
+\import{algorithms-macros}
+
+\title{\sf{Quickselect} is correct}
+\date{2026-10-27T12:17:44Z}
+\tag{algorithms}
+
+\taxon{Theorem}
+\p{For any array #{A} and any #{0 \leq k < |A|}, \sf{Quickselect}(#{A,k}) correctly returns the element with order index #{k}, that is, the element which would be at index #{k} in a sorted version of #{A}.}
+
+\proof{
+\p{By strong induction on the size of #{A}.}
+\ul{
+  \li{When #{|A|=1}, since #{0 \leq k < |A| = 1}, we must have #{k = 0}. The algorithm returns #{A[0]}, which is indeed the item with index #{0} in a sorted version of #{A}, since a #{1}-element array is already sorted.}
+  \li{
+  \p{Otherwise, let #{|A| = n} and assume as our induction hypothesis that (#{A',k'}) works correctly on any #{A'} which is smaller than #{n}.}
+  \p{Note that after the call to , all the elements in #{A_1} are smaller than all the elements in #{A_2}. Put another way, if we sorted #{A}, all the elements in #{A_1} would come first, followed by all the elements in #{A_2}. Thus, if #{k < |A_1|}, then the element of #{A} with order index #{k} falls somewhere within #{A_1}, and in fact is the element of #{A_1} with the same order index. On the other hand, if #{k \geq |A_1|}, then the order-index #{k} element of #{A} falls somewhere inside #{A_2}. If #{k = |A_1|} then we want the smallest element of #{A_2}; if #{k = |A_1| + 1} then we want the second-smallest, and so on; in general, the #{k}th smallest element of #{A} will be the #{k - |A_1|} smallest element of #{A_2}. Since the IH tells us that the recursive calls to \sf{Quickselect} will correctly select these elements from #{A_1} or #{A_2}, we conclude that \sf{Quickselect} is correct.}
+  }
+}
+}

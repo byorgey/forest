@@ -1,7 +1,6 @@
 \title{The Master Theorem}
 \date{2026-10-23T13:41:25Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
@@ -15,4 +14,4 @@
 
 \transclude{00PZ}   % a^log b = b^log a
 \transclude{00Q0}   % geometric series
-\transclude{00Q7}
+\transclude{00Q7}   % proof

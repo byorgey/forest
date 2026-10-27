@@ -1,0 +1,14 @@
+\title{Median/Quickselect}
+\date{2026-10-26T13:52:38Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{We will consider the \sf{Quickselect} algorithm as one final example of a divide & conquer approach.}
+
+\transclude{00QA}  % Introduction/motivation
+\transclude{00QB}  % Divide & conquer?
+\transclude{00QC}  % Generalizing
+\transclude{00QD}  % QuickSelect
+\transclude{00QE}  % Correctness proof
+\transclude{00QF}  % Runtime analysis

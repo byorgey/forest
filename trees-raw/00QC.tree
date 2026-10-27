@@ -1,0 +1,7 @@
+\title{Generalize the induction hypothesis}
+\date{2026-10-27T12:09:18Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The solution—as often with recursive algorithms—is to \em{generalize} to compute something more than what is required. In particular, instead of just finding the \em{median} element, let’s write an algorithm to select the element which would be at index #{k} if the list were sorted. If we can do this, we can get the median by selecting the element at index #{\lfloor n/2 \rfloor}. But this ability to select \em{any} element gives us the extra flexibility we need to use recursion to find the median, since the median of the entire list will not be the median of one of the two partitions, but some other index.}
