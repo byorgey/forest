@@ -10,3 +10,5 @@
 \p{Previously we studied the [divide and conquer](00PJ) technique, where a problem gets broken down recursively into subproblems. We’re still considering the same phenomenon—dynamic programming is about what to do when the recursive subproblems \em{overlap}. A naïve recursive implementation will thus end up being called on the same inputs multiple times, which is wasteful (sometimes dramatically so!).  The basic idea is to \em{save} answers to recursive subproblems (\em{memoization}) so we don’t have to compute them more than once. Dynamic programming has a reputation for being difficult and confusing, but at heart it’s just this simple idea.}
 
 \transclude{00QH}  % Example: Fibonacci
+\transclude{00QU}  % Steps for solving with DP
+\transclude{00QV}  % Example: hi+lo stress jobs

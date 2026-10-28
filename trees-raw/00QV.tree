@@ -1,0 +1,11 @@
+\title{Dynamic programming example: high+low stress jobs}
+\date{2026-10-28T13:25:54Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\transclude{00QW}  % Introduction
+\transclude{00QX}  % Greedy attempt
+\transclude{00QY}  % Recurrence
+\transclude{00QZ}  % Memoization + analysis

@@ -1,0 +1,35 @@
+\title{Greedy attempt}
+\author{brentyorgey}
+\date{2026-10-28T13:34:03Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{We've previously studied [greedy algorithms](00NJ), which is definitely the thing to try first.  For example, one possible greedy algorithm is shown below.
+
+\pseudo{
+\state{#{i \gets 1}}
+\while{#{i \leq n}}{
+  \if{#{i < n} and #{H_{i+1} > L_i + L_{i+1}}}{
+    \state{Take week #{i} off, choose #{H_{i+1}} and continue with #{i \gets i + 2}}
+  }\else{
+    \state{Choose #{L_{i}} and continue with #{i \gets i + 1}}
+  }
+}
+
+}
+}
+
+\p{This algorithm basically looks ahead one week and decides if it’s worth taking a week off in order to land a higher-paying job. However, this strategy fails, because taking a high stress job at week #{h_{i}} means that you cannot take week #{h_{i}} off to take a job at week #{h_{i+1}}. Thus, any strategy employing look-ahead by a constant factor will fail. Here is a counter-example to the greedy algorithm.}
+
+\table{
+\tr{\th{WEEK} \th{#{1}} \th{#{2}} \th{#{3}}}
+\tr{\td{low stress} \td{#{2}} \td{#{2}} \td{#{1}}}
+\tr{\td{high stress} \td{#{1}} \td{#{5}} \td{#{10}}}
+}
+
+\ul{
+  \li{The greedy algorithm chooses: 5 (week 2) + 1 (week 3) = 6}
+  \li{However, the optimal solution is to choose: 2 (week 1) + 10 (week 3) = 12}
+}

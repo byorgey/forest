@@ -1,0 +1,19 @@
+\title{High+low-stress job recurrence}
+\date{2026-10-28T13:40:32Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\def\OPT{#{\mathit{OPT}}}
+
+\p{The key to solving this problem is to come up with a recursive solution, and then use dynamic programming. The key idea (common to many similar problems) is to consider the most we could make if we worked \em{only} through week #{i} and then stopped. That is, define #{\OPT(i)} = maximum revenue for working weeks #{1 \ldots i}. Now, we can come up with a recurrence for #{\OPT}:
+\ol{
+  \li{Base cases:
+  \ul{
+    \li{#{\OPT(0) = 0}. We don’t make any money for working #{0} weeks.}
+    \li{#{\OPT(1) = L_1}. We can’t take the high-stress job the first week. (Or maybe we can, in which case #{\OPT(1) = \max(L_1, H_1)}—we need to clarify the problem parameters!)}
+  }
+  }
+  \li{As our inductive/recursive case, ##{\OPT(i) = \max \begin{cases} L_{i} + \OPT(i-1) \\ H_{i} + \OPT(i-2)\end{cases}} First, note that if we are going to maximize the profit for the first #{i} weeks, we should always work the final week. Thus, our decision is between working a high-stress or low-stress job. Choosing a low-stress job at week #{i} means we should add #{L_{i}} to the optimal profit for the previous #{i-1} weeks and choosing a high-stress job at week #{i} means we had to take week #{i-1} off so we should add #{H_{i}} to #{\OPT(i-2)}. The optimal choice is to choose the max of these two options.}
+}
+}

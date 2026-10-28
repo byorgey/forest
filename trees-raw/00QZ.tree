@@ -1,0 +1,8 @@
+\title{Memoization and analysis}
+\date{2026-10-28T13:44:32Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Notice that #{\OPT} naturally forms a #{1 \times (n+1)} table where each entry requires #{\Theta(1)} operations to fill in. We can use a recursive function that fills in the table as it goes, or we can just fill in the table using a loop from 0 up to #{n}. Either way, the whole algorithm is obviously #{\Theta(n)}. This is one nice benefit of dynamic programming—analyzing their runtime is usually dead easy!}
+

@@ -1,0 +1,26 @@
+\title{Solving problems with dynamic programming}
+\date{2026-10-28T13:13:46Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{In general, here are the steps you should follow to solve a problem with dynamic programming:
+
+\ol{
+  \li{Try something else first! (Greedy, reduce to standard graph algorithm, ...)}
+  \li{Come up with a recurrence.  This is the hardest part!  It does get easier with experience.
+  \ul{
+    \li{Optional: prove the recurrence correct via induction.}
+  }
+  }
+  \li{Check: do the recursive subproblems overlap?
+  \ul{
+    \li{No: rejoice!  You have a [divide & conquer](00PJ) algorithm.}
+    \li{Yes: proceed with the rest of the steps!}
+  }
+  }
+  \li{[Memoize](00QJ) the recurrence, either by [adding a table to the recursive algorithm](00QK), or by [directly filling in a table with some loop(s)](00QL).  Note that it is also possible to memoize with more exotic data structures (dictionaries, lazy infinite trees, ...) but in this class we will only see examples using arrays!}
+  \li{Optional: to reconstruct an optimal solution, remember the choices made along the way, then reconstruct the solution in reverse.  (We'll see examples of this later.)}
+}
+
+}

@@ -1,10 +1,9 @@
 \title{Dynamic programming problems}
 \date{2026-10-27T21:32:30Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
 \transclude{00QN}  % Consulting business
 \transclude{00QS}  % Train track
-\transclude{00QT}
+\transclude{00QT}  % Longest path in ordered graph

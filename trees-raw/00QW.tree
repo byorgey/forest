@@ -1,0 +1,19 @@
+\title{Introduction}
+\date{2026-10-28T13:32:47Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Consider the following table composed of #{n} weeks where each week #{i} has low stress job that pays #{L_{i}} and a high stress job that pays #{H_{i}}.}
+
+\table{
+\tr{\th{WEEK} \th{#{1}} \th{#{2}} \th{#{3}} \th{#{\dots}} \th{#{n}}}
+\tr{
+\td{low stress} \td{#{L_{1}}} \td{#{L_{2}}} \td{#{L_{3}}} \td{#{\dots}} \td{#{L_{n}}}
+}
+\tr{
+\td{high stress} \td{#{H_{1}}} \td{#{H_{2}}} \td{#{H_{3}}} \td{#{\dots}} \td{#{H_{n}}}
+}
+}
+
+\p{Each week you are allowed to pick either a low stress job or a high stress job; however, picking a high stress job at week #{i} means that you must first take the week before (\ie week #{i-1}) off. Your goal is to maximize your total income.}
