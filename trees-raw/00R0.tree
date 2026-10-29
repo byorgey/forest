@@ -1,0 +1,50 @@
+\title{Sample Python code for high+low-stress jobs}
+\date{2026-10-29T14:31:14Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Here is how we might implement [this algorithm](00QZ) in Python:
+
+\pre{\verb<<<|
+# low, high are lists of weekly salaries for low- and
+# high-stress job, respectively.
+
+def best_income(low, high):
+
+    n = len(low)
+
+    # Make low and high 1-indexed by adding dummy values to the
+    # beginning.  This works much more nicely since we want M[i] =
+    # maximum for working i weeks, and M[0] = 0 is a natural base
+    # case, so we want to have the weeks be 1-indexed.  (Adding extra
+    # "padding" elements to arrays to make room for base cases is a
+    # common technique with DP problems.)
+
+    low  = [0] + low
+    high = [0] + high
+
+    # Initialize OPT[0..n] with all zeros.
+    OPT = [0] * (n+1)
+
+    # The first base case, OPT[0] = 0, is already taken care of.
+    # For OPT[1], just take the higher of the two jobs.
+    OPT[1] = max(low[1], high[1])
+
+    # Now loop through remaining weeks.
+    for i in range(2, n+1):
+
+        # How much could we make taking the low or high stress job?
+        low_total  = low[i]  + OPT[i-1]
+        high_total = high[i] + OPT[i-2]
+
+        # The optimal for weeks 1..i is the higher of the two
+        OPT[i] = max(low_total, high_total)
+
+    return OPT[n]
+
+# Example:
+# >>> best_income([2,2,1,7,5,20,3,19,10,13], [1,5,10,100,23,20,5,21,30,30])
+# 182
+<<<}
+}

@@ -8,7 +8,9 @@
 
 \ol{
   \li{Try something else first! (Greedy, reduce to standard graph algorithm, ...)}
-  \li{Come up with a recurrence.  This is the hardest part!  It does get easier with experience.
+  \li{Consider different ways of splitting up or
+restricting the overall problem into subproblems or subcases, and come
+up with a recurrence.  This is the hardest part!  It does get easier with experience.
   \ul{
     \li{Optional: prove the recurrence correct via induction.}
   }

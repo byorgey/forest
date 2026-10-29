@@ -4,5 +4,8 @@
 
 \import{algorithms-macros}
 
-\p{Notice that #{\OPT} naturally forms a #{1 \times (n+1)} table where each entry requires #{\Theta(1)} operations to fill in. We can use a recursive function that fills in the table as it goes, or we can just fill in the table using a loop from 0 up to #{n}. Either way, the whole algorithm is obviously #{\Theta(n)}. This is one nice benefit of dynamic programming—analyzing their runtime is usually dead easy!}
+\def\OPT{#{\mathit{OPT}}}
 
+\p{We can see that naively computing #{\OPT(n)} using recursion would lead to many values of #{\OPT} being redundantly computed over and over—in fact, it has the same [recursion pattern as the Fibonacci numbers](00QI).  Thus, we must [memoize](00QJ).}
+
+\p{Notice that #{\OPT} naturally forms a #{1 \times (n+1)} table where each entry requires #{\Theta(1)} operations to fill in. We can use a recursive function that fills in the table as it goes, or we can just fill in the table using a loop from 0 up to #{n}. Either way, the whole algorithm is obviously #{\Theta(n)}. This is one nice benefit of dynamic programming—analyzing the runtime of an algorithm using dynamic programming is usually dead easy!}

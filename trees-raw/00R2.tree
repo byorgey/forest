@@ -1,0 +1,62 @@
+\title{Sample Python code for high+low-stress jobs with optimal schedule reconstruction}
+\date{2026-10-29T14:37:13Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Here is an enhanced version of the Python solution which [computes the optimal schedule](00R1g) along with the optimal income:
+
+\pre{\verb<<<|
+def best_income(low, high):
+
+    n = len(low)
+
+    low  = [0] + low
+    high = [0] + high
+
+    # Initialize an array of booleans to keep track of whether the
+    # optimal choice is to take the high-stress job at week i (if we
+    # only work weeks 1..i).
+    take_high_job = [False] * (n+1)
+    OPT = [0] * (n+1)
+
+    OPT[1] = max(low[1], high[1])
+
+    # We should take the high-stress job at week 1 iff it pays more.
+    take_high_job[1] = (high[1] > low[1])
+
+    for i in range(2, n+1):
+
+        low_total  = low[i]  + OPT[i-1]
+        high_total = high[i] + OPT[i-2]
+        OPT[i] = max(low_total, high_total)
+
+        # Record which choice produced the higher total
+        take_high_job[i] = high_total > low_total
+
+    # Now, to produce a work schedule, work backwards from the end
+    # Start at week n
+    w = n
+    schedule = []
+    while w > 0:
+
+        # If we should take the high-stress job at week w, schedule it
+        # and a week off, and proceed to look at week w-2 next
+        if take_high_job[w]:
+            schedule = ['off', 'HI'] + schedule
+            w -= 2
+
+        # Otherwise schedule the low-stress job and look at week w-1 next
+        else:
+            schedule = ['LO'] + schedule
+            w -= 1
+
+    return (OPT[n], schedule)
+
+# Example:
+# >>> best_income([2,2,1,7,5,20,3,19,10,13], [1,5,10,100,23,20,5,21,30,30])
+# (182, ['off', 'HI', 'off', 'HI', 'LO', 'LO', 'LO', 'LO', 'off', 'HI'])
+<<<}
+}
+
+

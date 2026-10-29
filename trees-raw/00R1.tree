@@ -1,0 +1,23 @@
+\title{Remembering choices to reconstruct optimal job schedule}
+\date{2026-10-29T14:33:31Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\def\JOBS{#{\mathit{JOBS}}}
+\def\OPT{#{\mathit{OPT}}}
+
+\p{This solution tells us \em{how much} money we can make, but it doesn’t actually tell us which job we should take each week. However, it is not too hard to modify our solution to do this as well. The key observation is that during the algorithm, for each #{i}, taking the max of two values corresponds to deciding which option would be better—to take the low- or high-stress job at week #{i}. So we can just add another array, #{\JOBS}, to keep track of which decision leads to the best outcome at each week—that is, #{\JOBS[i]} records whether we should pick the low- or high-stress job at week #{i} in order to maximize our income if we only work weeks #{1 \dots i}.}
+
+\p{Note that #{\JOBS} does \em{not} directly tell us which jobs we should actually take to get the most money overall. For example, suppose #{\JOBS[3]} contains #{H}. This means that \em{if we only worked the first three weeks}, then we should take the high-stress job in week 3. However, it may turn out that the best schedule \em{overall} has us working the low-stress job or taking week 3 off.}
+
+\p{So, how do we actually reconstruct the optimal schedule for weeks #{1 \dots n} from #{\JOBS}? We just start at week #{n} and work backwards, mirroring the recursive structure of #{\OPT}:
+
+\ul{
+  \li{If #{\JOBS[n] = L}, then we take the low-stress job in week #{n}, and continue by looking at #{\JOBS[n-1]} to see what we should do the week before.}
+  \li{If #{\JOBS[n] = H}, then we take the high-stress job in week #{n}, take week #{n-1} off, and continue by looking at #{\JOBS[n-2]}.}
+}
+
+We continue this process until reaching week #{0}.
+}
+

@@ -5,7 +5,12 @@
 
 \import{algorithms-macros}
 
+\p{Let's see how to apply this [dynamic programming framework](00QU) to a simple yet nontrivial problem. (The [Fibonacci number example we started with](00QH) was simple, yet also trivial, in the sense that we don't really need dynamic programming to compute Fibonacci numbers.)}
+
 \transclude{00QW}  % Introduction
 \transclude{00QX}  % Greedy attempt
-\transclude{00QY}  % Recurrence
+\transclude{00QY}  % Recurrence + proof
 \transclude{00QZ}  % Memoization + analysis
+\transclude{00R0}  % Sample Python code
+\transclude{00R1}  % Reconstructing schedule
+\transclude{00R2}

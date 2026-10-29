@@ -16,4 +16,5 @@
 }
 }
 
-\p{Each week you are allowed to pick either a low stress job or a high stress job; however, picking a high stress job at week #{i} means that you must first take the week before (\ie week #{i-1}) off. Your goal is to maximize your total income.}
+\p{Each week you are allowed to pick either a low stress job or a high stress job; however, picking a high stress job at week #{i} means that you must first take the week before (\ie week #{i-1}) off. Your goal is to maximize your total income. Let’s suppose that you \em{are} allowed to take the high-stress job in week 1 (it doesn’t change the overall solution much either way, only the base case).}
+
