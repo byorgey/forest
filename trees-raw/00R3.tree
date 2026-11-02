@@ -1,0 +1,16 @@
+\title{[DP6] Closest subset without going over (3 pts)}
+\date{2026-11-02T20:21:15Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{This problem is similar to one we did in class, but slightly more general. Suppose we have a set #{\{x_1, x_2, \dots, x_n\}} of #{n} positive integers, and a target sum #{S}, which is a positive integer. In class, we considered finding a subset of #{\{x_1, \dots, x_n\}} whose sum is \em{exactly equal to} #{S}. Instead, let’s now consider finding a subset whose sum is \em{as close to #{S} as possible without going over}; that is, the subset with the largest possible sum #{\leq S}. For example, given the set #{\{1,2,7,12\}} and the target sum #{18}, there is no subset which sums exactly to #{18}, but the one which comes closest without going over is #{\{12,2,1\}} which sums to #{15}. Note that #{\{12,7\}}, with a sum of #{19}, is closer to the target in an absolute sense, but it is greater than the target; we are interested in the biggest sum which is #{\leq} the target.}
+
+\ol{
+  \li{Describe a simple brute-force algorithm for solving this problem. What is the running time of the
+algorithm?}
+  \li{Using dynamic programming, describe an algorithm with running time #{\Theta(nS)}. Be sure that you explain how to find not only the maximum possible sum, but also the actual subset which has that sum. Justify the correctness of your algorithm.}
+  \li{This is known as a \em{psuedopolynomial-time} algorithm: the running time is a polynomial in the \em{value} of #{S}, but actually exponential in terms of the \em{size} of the input (\em{i.e.} the number of bits needed to represent #{S}). Give one example of a set of inputs for which your dynamic programming solution would be faster, and one example of a set of inputs for which the brute force algorithm would be faster.}
+}
+

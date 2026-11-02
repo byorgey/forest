@@ -7,3 +7,5 @@
 \transclude{00QN}  % Consulting business
 \transclude{00QS}  % Train track
 \transclude{00QT}  % Longest path in ordered graph
+\transclude{00R3}  % Subset sum without going over
+\transclude{00R4}  % Making change

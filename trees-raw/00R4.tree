@@ -1,0 +1,22 @@
+\title{[DP 7] Making change (3 pts)}
+\date{2026-11-02T20:24:48Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Consider the problem of making change for #{C} cents using the fewest possible number of coins. Assume that each coin’s value is an integer.}
+
+\ol{
+  \li{Describe a greedy algorithm to make change for #{C} cents using US quarters, dimes, nickels, and pennies. (It turns out that the greedy algorithm is actually optimal for US coins (and most real-world coin systems), though coming up with a proof of this fact is nontrivial.)}
+  \li{Give a set of coin denominations for which the greedy algorithm does not yield an optimal solution. Your set should include a penny so that there is a solution for every value of #{C}.}
+  \li{Design and analyze an algorithm to make change using the fewest number of coins that works for any set of coins. That is, as input your algorithm should take:
+  \ul{
+    \li{#{n}, the number of different coin types;}
+    \li{a list #{c_1}, #{c_2}, …, #{c_n} giving the values of the different coins (you may assume they are already sorted from smallest to largest); and}
+    \li{the number of cents #{C} we would like to make change for.}
+  }
+
+  \p{As output your algorithm should either report that it is not possible to make the required amount #{C} using the given coins, or give a multiset (\ie a set that allows duplicate elements) of coins which add up to #{C} such that the number of coins in the multiset is as small as possible. For example, if given as input #{c_1 = 1}, #{c_2 = 5}, #{c_3 = 20} and the target value #{C = 47}, your algorithm should output #{\{20, 20, 5, 1, 1\}}. Note that we assume there is an unlimited supply of coins of each type. Be sure to justify your algorithm’s correctness and analyze its time complexity.}
+  }
+}
