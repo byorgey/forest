@@ -1,0 +1,6 @@
+\import{swarm-macros}
+
+\date{2026-11-03T03:23:09Z}
+  \title{Coercive Subtyping for Implicit Functorial Programming}
+
+  \p{I have begun [reading this paper](https://al.radbox.org/doi/10.1145/3830439.3831273) from the most recent Haskell Symposium with great interest, since I have [spent time thinking about the same problem](000P)—that is, the problem of automatically inferring/inserting calls to things like \tt{fmap}.  I really want to do this for \tt{Applicative} (with restrictions), but haven't managed to make the proof go through so far. They only do it for \tt{Functor}, but have what looks like a really nice framework based on ideas from normalization by evaluation.  I'm excited to keep reading and see how the ideas can potentially be extended.}

@@ -1,0 +1,53 @@
+\title{[BS06] French Suite No. 6 in E major, BVW 817}
+\author{bach}
+\import{base-macros}
+\tag{repertoire}
+\tag{tolearn}
+
+\subtree{
+  \title{Allemande}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 4/4 \key e \major
+    \partial 16 b'16 |
+    gs a b e e, e' fs, e' gs, a b e e, e' fs, e'
+  }
+  \new Staff \relative
+  { \clef bass \key e \major
+    \partial 16 r16 |
+    r8 e gs b e e, gs b
+  }
+>>
+<<<}
+}
+
+\subtree{
+  \title{Courante}
+
+\lilypond{\verb<<<|
+\new PianoStaff <<
+  \new Staff \relative
+  { \time 3/4 \key e \major
+    <<
+    \new Voice \relative
+    { \voiceOne \partial 16 e''16 |
+      e8 r8 r16 b cs ds e fs gs e |
+      b'8 a16 gs fs e ds cs b r16 r8
+    }
+    \new Voice \relative
+    { \voiceTwo \partial 16 r16 |
+      r16 e' fs gs a r16 r8 r4 |
+      ds,8  r8 r4 r16 a'16 gs fs
+    }
+    >>
+  }
+  \new Staff \relative
+  { \clef bass \key e \major
+    \partial 16 s16 |
+    s2. | s2.
+  }
+>>
+<<<}
+}

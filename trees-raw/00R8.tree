@@ -1,0 +1,5 @@
+\date{2026-11-03T03:34:59Z}
+  \title{Applicative functor inference collaboration}
+
+  \p{A [few weeks ago I reported](00R7) that I had begun reading \em{Coercive Subtyping for Implicit Functorial Programming} by [[ryan-doenges]], [[aaron-stump]], \em{et al.}  I contacted them after finishing the paper, and it turns out that our approaches to the problem, though different, are extremely synergistic, with the result that we are going to try collaborating.  I had a really fun video chat with Aaron this week, and we're setting up a meeting with all three of us for this coming week.  I'm really excited!  It's been somewhat difficult for me to build and maintain good collaborations, and this just kind of fell in my lap.  I'm also simply excited to see [this project](000P) make forward progress—lately I had felt pretty stuck.
+  }

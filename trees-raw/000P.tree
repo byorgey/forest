@@ -5,6 +5,8 @@
 
 \p{While working on a mini-DSL as part of the [[000O]] project, I got an intuitive sense that  the types of DSLs involving an applicative functor can be fully inferred from (suitably restricted) programs that just use regular applicative notation, whereas for monads this would be ambiguous. I have been working, intermittently, on a [research project](https://github.com/byorgey/infer-applicative) to formalize and prove this idea.}
 
+\p{Recently, I have [teamed up](00R8) with [[ryan-doenges]] and [[aaron-stump]] to collaborate on this problem and related things.}
+
 \subtree{
   \title{Related talks and papers}
   \query\datalog{
