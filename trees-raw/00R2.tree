@@ -4,7 +4,7 @@
 
 \import{algorithms-macros}
 
-\p{Here is an enhanced version of the Python solution which [computes the optimal schedule](00R1g) along with the optimal income:
+\p{Here is an enhanced version of the Python solution which [computes the optimal schedule](00R1) along with the optimal income:
 
 \pre{\verb<<<|
 def best_income(low, high):

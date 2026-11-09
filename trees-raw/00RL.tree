@@ -1,0 +1,7 @@
+\title{Runtime analysis for matrix chain multiplication}
+\date{2026-11-07T01:31:27Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The matrix #{m} has size #{n \times n}, and we need to fill in half its entries, giving a total of #{\Theta(n^2)} entries to fill in. Each entry is computed as a minimum over at most #{n} costs, each of which takes #{O(1)} to compute (just a few lookups, additions, and multiplications). Thus the whole algorithm is #{O(n^3)}.}

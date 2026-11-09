@@ -1,7 +1,6 @@
 \title{Dynamic programming example: high+low stress jobs}
 \date{2026-10-28T13:25:54Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
@@ -13,4 +12,4 @@
 \transclude{00QZ}  % Memoization + analysis
 \transclude{00R0}  % Sample Python code
 \transclude{00R1}  % Reconstructing schedule
-\transclude{00R2}
+\transclude{00R2}  % Sample Python code

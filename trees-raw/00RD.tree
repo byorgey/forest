@@ -1,0 +1,27 @@
+\title{Memoization for subset sum}
+\date{2026-11-06T23:37:34Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\def\cAT{#{\mathit{canAddTo}}}
+
+\p{This most definitely has overlapping subproblems. One simple approach is to use a \strong{2D array} #{c} of size #{(n+1) \times (S + 1)}, so #{c[k][s]} will store the output of #{\cAT(k,s)}.  It is also possible to use a dictionary with #{(k,s)} pairs as keys; however, since #{0 \leq k \leq n} and #{0 \leq s \leq S}, using a 2D array is simpler and accomplishes exactly the same thing. (An array can be thought of as a special-purpose dictionary where the keys are consecutive integers starting from #{0}.)}
+
+\p{Each entry depends only on entries either above it ( #{k} is smaller), or above it and to the left ( #{k} and #{s} are both smaller), so we can fill it in row order or column order. In pseudocode:}
+
+\pseudo{
+\for{#{k \gets 0 \dots n}}{
+  \for{#{s \gets 0 \dots S}}{
+    \if{#{s = 0}}{\state{#{c[k][s] \gets \True}}}
+    \elif{#{k = 0}}{\state{#{c[k][s] \gets \False}}}
+    \elif{#{x_k > s}}{\state{#{c[k][s] \gets c[k-1][s]}}}
+    \else{\state{#{c[k][s] = c[k-1][s] \lor c[k-1][s-x_k]}}}
+  }
+}
+}
+
+\p{Alternatively, we could use the technique of having a recursive function which checks first to see whether the required output is already in the array.}
+
+\p{Since we fill in an #{(n+1) \times (S + 1)} array, with #{\Theta(1)} work required to fill in each cell, the algorithm takes #{\Theta(nS)} time overall.}
+

@@ -1,0 +1,8 @@
+\title{Reconstructing optimal matrix parenthesization}
+\date{2026-11-07T01:32:43Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{As usual, this recurrence gives us the optimal cost but doesn’t tell us what the actual best parenthesization is. This is a common issue with dynamic programming; the problem is that when we take the minimum over all #{k} for each entry in the matrix #{m}, we forget which #{k} was best, recording only the best cost itself. The solution, therefore, is to maintain another #{n \times n} matrix #{b} which records the information that is otherwise being forgotten: #{b[i,j]} records the “best split”, that is, the value of #{k} (where #{i \leq k < j}) which results in the minimum cost for the product #{A_i \dots A_j}. After filling in the matrices #{m} and #{b}, we can reconstruct the best parenthesization (which is really just a binary tree) by recursively splitting starting from the top: we start by looking up #{b[1,n] = k} which tells us where to do the top-level split #{(A_1 \dots
+A_k)(A_{k+1} \dots A_n)}. We then recursively look up #{b[1,k]} and #{b[k+1,n]} to find out where to make the next splits, and so on, until there are just single matrices left at the leaves of the tree.}

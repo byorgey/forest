@@ -1,0 +1,34 @@
+\title{Recurrence for subset sum}
+\date{2026-11-06T22:43:36Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\def\cAT{#{\mathit{canAddTo}}}
+
+\p{The key to solving this problem is to generalize it along \em{two} dimensions: we consider both summing to any #{s \leq S}, and we also consider trying to use only the #{x_i} up to #{x_k}, that is, #{\{x_1, \dots, x_k\}}, instead of the full set #{X}. That is, #{\cAT(k,s)} will be \True if there is a subset of #{\{x_1, \dots, x_k\}} which adds to exactly #{s}, and \False otherwise. We have the following recurrence:
+##{\begin{align*}
+  \cAT(k, 0) &= \True \qquad (\text{for all } k \geq 0) \\
+  \cAT(0, s) &= \False \qquad (\text{for all } s > 0) \\
+  \cAT(k,s) &=
+    \begin{cases}
+      \cAT(k-1, s) & \text{if } x_k > s \\
+      \cAT(k-1, s) \lor \cAT(k-1, s - x_k) & \text{otherwise}
+    \end{cases}
+\end{align*}}
+}
+
+\p{That is,
+\ul{
+  \li{We can always add to the sum #{0} by picking the empty subset.}
+  \li{We can never add up to a nonzero sum if we aren’t allowed to use any of the #{x_i}.}
+  \li{If #{x_k > s}, then it can’t be used in a subset that sums to #{s}, so whether we can make the sum #{s} using a subset of #{x_1 \dots x_k} has the same answer as whether we can make #{s} using a subset of #{x_1 \dots x_{k-1}}.}
+  \li{Otherwise, we can try both omitting #{x_k} (in which case we have to make #{s} using elements up to #{x_{k-1}}, as before), or using it (in which case we have to make the remaining #{s - x_k} using the elements up to #{x_{k-1}}).}
+}
+}
+
+\p{Note that the above is essentially a proof by induction of the
+recurrence relation's correctness.  We explained why the base cases
+are correct, and then explained why the recursive cases will compute
+the right thing, given the assumption that the recursive calls will
+return the correct answer when given smaller inputs.}

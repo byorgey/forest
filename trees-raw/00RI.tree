@@ -1,0 +1,7 @@
+\title{Matrix chain multiplication problem}
+\date{2026-11-07T01:27:27Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Formally, we have a sequence of #{n} matrices #{A_1}, #{A_2}, …, #{A_n}, and a sequence of #{n+1} positive integers #{p_1}, …, #{p_{n+1}} such that matrix #{A_i} has size #{p_i \times p_{i+1}}. We want to compute the parenthesization of the #{A_i} which minimizes the number of operations needed to compute the product #{A_1 \dots A_n}. (Note that this generalizes readily to any situation where we have a sequence of #{n} things and an associative binary operation where the cost of the operation varies depending on the arguments it is applied to.)}

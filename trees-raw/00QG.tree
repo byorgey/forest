@@ -12,3 +12,5 @@
 \transclude{00QH}  % Example: Fibonacci
 \transclude{00QU}  % Steps for solving with DP
 \transclude{00QV}  % Example: hi+lo stress jobs
+\transclude{00R9}  % Example: subset sum
+\transclude{00RF}  % Example: matrix chain mult

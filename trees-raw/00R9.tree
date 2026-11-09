@@ -1,0 +1,13 @@
+\title{Dynamic programming example: subset sum}
+\date{2026-11-06T14:50:23Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{As a slightly more involved example of dynamic programming, consider the following problem.}
+
+\transclude{00RA}   % Subset sum problem
+\transclude{00RB}   % Brute force
+\transclude{00RC}   % Recurrence
+\transclude{00RD}   % Memoization
+\transclude{00RE}   % Reconstruction

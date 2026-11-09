@@ -1,0 +1,7 @@
+\title{Brute force subset sum solution}
+\date{2026-11-06T14:52:54Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{A brute force solution to the [subset sum problem](00RA) is to list every possible subset of #{X}, sum each, and check whether any of them add to #{S}.  Naïvely, this takes #{\Theta(2^n)} time to list every subset, and #{\Theta{n}} time to sum each one, for a total of #{\Theta(n 2^n)}.  (If we list the subsets in a [clever order](https://en.wikipedia.org/wiki/Gray_code), we can arrange things so that only a single element is added or removed at each step, allowing us to update a running sum in only #{\Theta(1)} per subset, for a total time of #{\Theta(2^n)}, but that's not all that much better.)}

@@ -1,0 +1,13 @@
+\import{algorithms-macros}
+
+\title{\advanced Matrix chain multiplication}
+\date{2026-11-07T00:14:20Z}
+\tag{algorithms}
+
+\transclude{00RG}   % Mat mult cost
+\transclude{00RH}   % Motivation
+\transclude{00RI}   % Problem
+\transclude{00RJ}   % Recurrence
+\transclude{00RK}   % Memoization
+\transclude{00RL}   % Runtime
+\transclude{00RM}   % Reconstruction

@@ -1,0 +1,12 @@
+\title{Matrix multiplication cost}
+\date{2026-11-07T00:15:14Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Suppose we have matrices #{A} and #{B}, where #{A} is #{p \times q} and #{B} is #{q \times r}. (To be able to multiply them, the #{q} has to match.) How many operations are needed to compute the matrix product #{AB}?}
+\ul{
+  \li{The result #{AB} will be a #{p \times r} matrix, so it has #{pr} entries.}
+  \li{To compute each entry of #{AB}, we take a row of #{q} entries from #{A} and a column of #{q} entries from #{B} and multiply them, then add the results. So we do about #{q} multiplications and #{q} additions to compute each element of #{AB}.}
+}
+\p{Thus, the total time to compute #{AB} is #{O(pqr)}. Note that we can assume #{p}, #{q}, and #{r} are small enough that fancy matrix multiplication algorithms like Strassen’s algorithm don’t really help.}

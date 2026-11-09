@@ -1,0 +1,17 @@
+\title{Motivation}
+\date{2026-11-07T00:16:51Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Matrix multiplication is associative, #{(AB)C = A(BC)}, but these may not take the same time to compute! Let’s try an example. Say}
+\ul{
+  \li{#{A} is #{2 \times 10},}
+  \li{#{B} is #{10 \times 3},}
+  \li{and #{C} is #{3 \times 20}.}
+}
+
+\p{It takes #{10 \times 3 \times 20 = 600} operations to compute #{BC}, resulting in a #{10 \times 20} matrix. It would then take another #{2 \times 10 \times 20 = 400} to compute #{A(BC)}, for a total of #{1000}. On the other hand, if we associate the product as #{(AB)C}, it takes #{2 \times 10 \times 3 = 60} operations to compute the #{2 \times 3} matrix #{AB}, and then only another #{2 \times 3 \times 20 = 120} operations to compute #{(AB)C}, for a total of #{180}—a big difference!}
+
+\p{With just three matrices the situation is simple: we can easily just do these computations, compare, and choose the cheaper order. However, if we have a sequence of #{n} matrices we wish to multiply, the situation is more difficult. For example, suppose we have six matrices #{A_1 \dots A_6} and want to compute their product. We could associate them, for example, as #{(A_1((A_2(A_3A_4))A_5))A_6}, or as #{A_1(A_2(A_3(A_4(A_5A_6))))}, or in fact in any of #{42} distinct parenthesizations. We really don’t want to check all of them to see which would be the cheapest. In general, the number of parenthesizations for #{n} matrices is the #{(n-1)}st \em{[Catalan number](https://en.wikipedia.org/wiki/Catalan_number)} ##{C_n = \frac{1}{n+1}\binom{2n}{n}} which for large #{n} is approximately equal to ##{C_n \sim \frac{4^n}{n^{3/2} \sqrt{\pi}},} so the number of possibilities becomes very large, very fast. The brute force algorithm—\ie checking all parenthesizations to see which is best—is completely out of the question!}
+

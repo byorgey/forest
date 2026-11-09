@@ -1,0 +1,46 @@
+\title{Remembering choices to reconstruct subset sum solutions}
+\date{2026-11-06T23:45:32Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\def\cAT{#{\mathit{canAddTo}}}
+
+\p{The above algorithm tells us whether it is possible to add to #{S}
+  via some subset, but it does not tell us what the actual subset is.
+  To compute the actual optimal solution instead of just the optimal
+  value, we can save the choices made at each step.}
+
+\p{What information does #{\cAT} discard? It is precisely the choice of whether to use #{x_k} or not. The Boolean “or” operation will be \True if either one of its inputs is; it does not care which. Therefore we will make another #{(n+1)\times(S+1)} array of booleans called #{\mathit{use}}, where #{\mathit{use}[k][s]} is \True if and only if we should use #{x_k} in a subset to make #{s}.  We initialize it to all #{\False} values, and fill it in as shown in the pseudocode below.}
+
+\pseudo{
+\for{#{k \gets 0 \dots n}}{
+  \for{#{s \gets 0 \dots S}}{
+    \if{#{s = 0}}{\state{#{c[k][s] \gets \True}}}
+    \elif{#{k = 0}}{\state{#{c[k][s] \gets \False}}}
+    \elif{#{x_k > s}}{\state{#{c[k][s] \gets c[k-1][s]}}}
+    \else{
+      \state{#{c[k][s] = c[k-1][s] \lor c[k-1][s-x_k]}}
+      \state{#{\mathit{use}[k][s] = c[k-1][s-x_k]}}
+    }
+  }
+}
+}
+
+\p{If #{c[n][S]} is , then there is some subset of #{X} which adds to #{S}. To reconstruct such an actual subset we can work our way backwards as follows:
+
+\pseudo{
+  \state{#{k \gets n}}
+  \state{#{s \gets S}}
+  \state{#{T \gets \varnothing}}
+  \while{#{k > 0} and #{s > 0}}{
+    \if{#{\mathit{use}[k][s]}}{
+      \state{Add #{x_k} to #{T}}
+      \state{#{s \gets s - x_k}}
+    }
+    \state{#{k \gets k-1}}
+  }
+}
+
+}
+

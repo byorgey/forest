@@ -1,0 +1,8 @@
+\title{Memoization for matrix chain multiplication}
+\date{2026-11-07T01:30:37Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{We can store the #{m[i,j]} values in an #{n \times n} matrix (actually, we just need the part above the main diagonal since we assume #{i \leq j}). Note that each #{m[i,j]} depends on values to its left (#{m[i,k]} where #{k < j}) and below it (#{m[k+1,j]} where #{k \geq i}). So we can fill in the matrix by diagonals, beginning by filling in zeros along the entire main diagonal, then filling in values just above the main diagonal, then the second diagonal above the main diagonal, and so on. Note that the #{d}th diagonal above the main diagonal consists of values of the form #{m[i,i+d]}, which corresponds to subproducts #{A_i \dots A_{i+d}} of exactly #{d+1} matrices. So this seems intuitively sensible: first we compute the optimal way to multiply any two adjacent matrices; then we compute the optimal way to multiply any three adjacent matrices; then any four, and so on.}
+\p{(Alternatively, we could arrange the matrix a bit differently, so that #{m[i,d]} would denote the optimal cost for multiplying #{A_i \dots A_{i+d}}. Then we would simply fill in the matrix by columns.)}

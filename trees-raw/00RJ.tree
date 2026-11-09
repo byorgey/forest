@@ -1,0 +1,10 @@
+\title{Recurrence for matrix chain multiplication}
+\date{2026-11-07T01:28:58Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The key observation is that ultimately, there will be some final two matrices that get multiplied to produce the final answer. These have to come from some splitting of the sequence of matrices into two subproducts ##{(A_1 \dots A_k)(A_{k+1} \dots A_n).} The total cost to compute the product if we split at index #{k} is then given by the sum of the optimal cost to compute #{A_1 \dots A_k}, the optimal cost to compute #{A_{k+1} \dots A_n}, and the cost to do the final matrix multiplication, which will take #{p_1 p_{k+1} p_{n+1}} operations (because #{(A_1 \dots A_k)} is a #{p_1 \times p_{k+1}} matrix, and #{(A_{k+1} \dots A_n)} is a #{p_{k+1} \times p_{n+1}} matrix). The best possible cost for the product #{A_1 \dots A_n} will then be the minimum cost over all such splitting points #{k}. In general, if we use #{m[i,j]} to denote the minimum cost for computing the product #{A_i \dots A_j}, with #{i \leq j}, then we have the recurrence ##{\begin{align*}
+  m[i,i] &= 0 \\
+  m[i,j] &= \min_{i \leq k < j} (m[i,k] + m[k+1,j] + p_i p_{k+1} p_{j+1})
+\end{align*}} Note that #{m[i,i] = 0} since this corresponds to the base case of already having a single matrix #{A_i}, so we do not need to do any work.}
