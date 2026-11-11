@@ -1,0 +1,26 @@
+\title{Floyd-Warshall}
+\date{2026-11-09T23:40:51Z}
+\tag{algorithms}
+\taxon{Algorithm}
+
+\import{algorithms-macros}
+
+\def\nxt{#{\mathit{next}}}
+
+\pseudo{
+  \state{Initialize #{s[u,v]} according to the [base cases](00RR)}
+  \state{#{\nxt[u,u] \gets u} for #{u \in V}}
+  \for{#{k \gets 1 \dots n}}{
+  \for{#{u \gets 1 \dots n}}{
+  \for{#{v \gets 1 \dots n}}{
+    \if{#{s[u,k] < \infty \land s[k,v] < \infty \land s[u,k] + s[k,v] < s[u,v]}}{
+      \state{#{s[u,v] \gets s[u,k] + s[k,v]}}
+      \state{#{\nxt[u,v] \gets \nxt[u,k]}}
+    }
+  }
+  }
+  }
+}
+
+\p{After the algorithm is finished, to reconstruct the shortest path from #{u} to #{v}, we simply look up each step along the path using the #{\nxt} matrix. First we look up #{\nxt[u,v] = u_2}, then we look up #{\nxt[u_2,v] = u_3}, and so on, until reaching #{v}.}
+

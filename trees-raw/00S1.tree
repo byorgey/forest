@@ -1,0 +1,16 @@
+\title{Flow value preservation}
+\date{2026-11-11T11:50:18Z}
+\tag{algorithms}
+\taxon{Lemma}
+
+\import{flow-macros}
+\import{algorithms-macros}
+
+\p{#{\fout(s) = \fin(t)}, that is, “what leaves #{s} must eventually arrive at #{t}”.}
+
+\proof{
+\p{Note first that ##{\sum_{v \in V} \fout(v) = \sum_{e \in E} f(e) = \sum_{v \in V}
+    \fin(v).} The middle sum is just the sum of the flows along every edge. But since every edge has exactly one start vertex, the flow along any given edge gets included exactly once in the left-hand sum (as part of #{\fout(v)} for its start vertex). Likewise, each edge is included exactly once in the right-hand sum, with its end vertex.}
+\p{Since the left- and right-hand sums are equal, we have ##{0 = \left(\sum_{v \in V} \fout(v)\right) - \left(\sum_{v \in V}
+      \fin(v)\right) = \sum_{v \in V} (\fout(v) - \fin(v)).} But by [definition of a flow](00RZ) (property 2), #{\fout(v) - \fin(v) = 0} for every vertex #{v} other than #{s} or #{t}. Note also that #{\fin(s) = 0} and #{\fout(t) = 0}. Hence everything in this sum cancels except ##{\fout(s) - \fin(t).} Thus we have shown #{\fout(s) - \fin(t) = 0}, that is, #{\fout(s) = \fin(t)}.}
+}

@@ -1,0 +1,10 @@
+\title{Introduction: all-pairs shortest paths and negative cycles}
+\date{2026-11-09T23:23:12Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Recall that [Dijkstra’s algorithm](00NL) solves the \em{single-source} shortest path problem (\ie it finds the shortest path from a single start vertex to every other vertex) for weighted, directed graphs, as long as all edge weights are positive. Today we will consider an algorithm to solve the \em{all-pairs} shortest path problem (that is, to find shortest paths between \em{all possible pairs} of vertices) on directed graphs with arbitrary (possibly negative) weights.}
+
+\p{Of course, negative cycles can pose a problem: if there is a directed cycle whose total weight is negative, then we can keep decreasing the path weight forever by just going around the cycle. In that case “shortest” paths may not be well-defined. The algorithm we consider will also be able to detect this situation.}
+

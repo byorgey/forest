@@ -1,0 +1,16 @@
+\title{Flow}
+\date{2026-11-11T11:44:47Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+
+\import{flow-macros}
+
+\p{A \em{flow} on a [flow network](00RX) #{G} is a function #{f: E \rightarrow \N} assigning a natural number \em{flow value} to each edge, such that}
+\ol{
+  \li{#{0 \leq f(e) \leq c(e)} for each edge #{e \in E} (that is, the flow along an edge is limited by the edge’s capacity).}
+  \li{What flows in must flow out: for each vertex (besides #{s} and #{t}), ##{\sum_{e \text{ entering } v} f(e) = \sum_{e \text{ leaving } v} f(e).}}
+}
+\p{We will abbreviate the above as ##{\fin(v) = \fout(v).}}

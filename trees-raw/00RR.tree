@@ -1,0 +1,30 @@
+\title{Recurrence for all-pairs shortest paths}
+\date{2026-11-09T23:29:02Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{We want to come up with a recurrence. As is typical, we add another parameter which we use to restrict the problem. In this case, we'll add a parameter #{k} that means \em{we are only allowed to use vertices #{1 \dots k} as intermediate notes}. That is, we will let #{s[u,v,k]} denote the length of the shortest path from #{u} to #{v} \em{using only vertices #{1 \dots k} as intermediate nodes on the path}.}
+
+\p{As base cases, we consider #{k = 0}, that is, we are not allowed to use \em{any} intermediate vertices.  We have ##{s[u,v,0] = \begin{cases} 0 & u = v \\ w_{uv} & (u,v) \in E \\
+\infty & \text{otherwise} \end{cases}} That is, if we are not allowed to use any intermediate vertices, the shortest path from a vertex to itself is #{0}, the shortest path from #{u} to #{v} along an edge is the weight of the edge, and the shortest path between vertices with no edge is #{\infty}.}
+
+\p{(Note that we can't say #{s[u,u,k] = 0} for #{k > 0}, because there might be negative edges giving a "shorter" path from #{u} back to itself!)}
+
+\p{Now, what about the recursive case? Suppose for some #{k \geq 1} we already know #{s[u,v,k-1]} for all #{u,v}. Then how can we compute #{s[u,v,k]}? There are two possibilities: either the best path from #{u} to #{v} goes through #{k}, or it doesn’t.}
+
+\ul{
+  \li{It could be that allowing vertex #{k} does not help, in which case ##{s[u,v,k] = s[u,v,k-1].}}
+  \li{If it does help, the best path from #{u} to #{v} will consist of first taking the best path from #{u} to #{k} (using only vertices #{1 \dots k-1}), followed by the best path from #{k} to #{v}: ##{s[u,v,k] = s[u,k,k-1] + s[k,v,k-1].} (Note: the best path from #{u} to #{v} won’t go through vertex #{k} twice, unless there is a negative cycle!)}
+}
+
+\p{The optimal cost will simply be the minimum of these two.  That is, all together, we have
+
+##{\begin{align*}
+  s[u,v,0] &= \begin{cases} 0 & u = v \\ w_{uv} & (u,v) \in E \\
+  \infty & \text{otherwise} \end{cases} \\
+  s[u,v,k] &= \min \begin{cases} s[u,v,k-1] \\ s[u,k,k-1] + s[k,v,k-1] \end{cases}
+  \end{align*}
+}
+
+}

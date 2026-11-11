@@ -1,0 +1,16 @@
+\title{Reconstructing all-pairs shortest paths}
+\date{2026-11-09T23:35:46Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\def\nxt{#{\mathit{next}}}
+
+\p{To be able to reconstruct paths after the fact, we could do something similar to what we usually do: at each step we take a minimum over two choices, so we could keep a parallel 3D table #{\mathit{use}[u,v,k]} that records whether we should use vertex #{k} when trying to go from #{u} to #{v} using only vertices #{1 \dots k}. We could then use this to reconstruct the optimal path from #{u} to #{v} as follows: ##{\mathit{bestpath}(u,v,k) = \begin{cases}
+    \mathit{bestpath}(u,k,k-1) + [k] + \mathit{bestpath}(k,v,k-1) \\
+    \mathit{bestpath}(u,v,k-1)
+    \end{cases}} depending on whether #{\mathit{use}[u,v,k]} is true (with some appropriate base cases as well).}
+\p{However, for this problem it turns out we can do something a bit more clever using only a 2D array. In particular, let #{\nxt[u,v]} denote the \em{next} vertex after #{u} in the shortest path from #{u} to #{v} that we have found so far. Then in the first case, when we set #{s[u,v,k]} to #{s[u,v,k-1]}, we do not change #{\nxt[u,v]}; in the other case, we can update it as ##{\nxt[u,v] = \nxt[u,k].}}
+
+\p{However, for this problem it turns out we can do something a bit more clever using only a 2D array. In particular, let #{\nxt[u,v]} denote the \em{next} vertex after #{u} in the shortest path from #{u} to #{v} that we have found so far. Then in the first case, when we set #{s[u,v,k]} to #{s[u,v,k-1]}, we do not change #{\nxt[u,v]}; in the other case, we can update it as ##{\nxt[u,v] = \nxt[u,k].} Also, we don’t actually need to keep a 3D array for #{s}. We can simply keep overwriting the same 2D array on each iteration of the loop. If we do that, it is no longer true that #{s[u,v]} is exactly the shortest distance using only vertices #{1 \dots k} on the #{k}th iteration—but if not it can only be \em{shorter} (if there are negative edges).}
+

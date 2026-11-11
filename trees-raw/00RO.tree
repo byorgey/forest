@@ -1,0 +1,14 @@
+\title{The Floyd-Warshall algorithm}
+\date{2026-11-09T23:21:35Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\transclude{00RP}   % Intro: apsp + negative cycles
+\transclude{00RQ}   % APSP
+\transclude{00RR}   % Recurrence
+\transclude{00RS}   % Reconstructing
+\transclude{00RT}   % F-W
+\transclude{00RU}   % Runtime
+\transclude{00RV}   % Negative cycles
+\transclude{00RW}   % Generalizing

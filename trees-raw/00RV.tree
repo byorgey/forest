@@ -1,0 +1,8 @@
+\title{Floyd-Warshall and negative cycles }
+\date{2026-11-09T23:45:30Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{What about negative cycles? Well, just look at #{s[u,u]}: #{u} is part of a negative cycle if and only if #{s[u,u]} (the length of the shortest path from #{u} back to itself) is negative. Hence we can check whether there are \em{any} negative cycles in the graph in #{\Theta(n)} time, by scanning along the diagonal of the matrix and looking for any negative numbers. It turns out with some extra work this can be extended to compute exactly which paths have some negative cycle along the way (and hence can be made as small as we want by going around the negative cycle) and which do not.}
+

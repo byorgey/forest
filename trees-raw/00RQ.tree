@@ -1,0 +1,10 @@
+\title{The All-Pairs Shortest Paths problem}
+\date{2026-11-09T23:27:41Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Input: a directed, weighted graph #{G = (V,E)} with vertices numbered #{1 \dots n}. Output: an #{n \times n} matrix #{s} where #{s[u,v]} records the length of the shortest path from #{u} to #{v}, \em{or} an indication that the graph has negative cycles.}
+
+\p{Ideally we also want to be able to recover the actual shortest path between any two vertices #{u} and #{v}.}
+

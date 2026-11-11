@@ -1,0 +1,9 @@
+\title{XXX}
+\author{brentyorgey}
+\date{2026-11-11T11:41:58Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+% XXX write about how weights combine in series and parallel, how "cost" is different than "capacity", how we can use Dijkstra, F-W with other notions of combining, etc.

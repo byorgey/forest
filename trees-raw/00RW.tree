@@ -1,0 +1,8 @@
+\title{Generalizing Floyd-Warshall}
+\date{2026-11-09T23:46:03Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{As a fun aside, this algorithm is really cool because it can actually be [generalized to work over any semiring](https://r6.ca/blog/20110808T035622Z.html) instead of just #{(\min, +)} (technically, any [star-semiring](https://en.wikipedia.org/wiki/Semiring#Star_semirings)), and it turns out that by appropriate choice of semiring, (a slight generalization of) the same algorithm can be used to do a great many things, such as find most reliable paths or largest capacity paths, count the number of shortest paths or total number of paths or even compute regular expressions for all possible shortest paths, compute transitive closures, invert matrices, solve linear systems of equations, or convert a DFA into a regular expression.}
+

@@ -1,0 +1,11 @@
+\title{Value}
+\date{2026-11-11T11:48:36Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+\import{flow-macros}
+
+\taxon{Definition}
+\p{The \em{value} of a [flow](00RZ) #{f} is defined as the amount of flow leaving the source: ##{v(f) = \fout(s).}}
+
+\p{Note that because the total flow must be preserved at each vertex, it should be intuitively clear that ##{\fout(s) = \fin(t)} so we could equally well define the value of a flow #{v(f)} as the amount of flow arriving at the target. In fact, proving this formally is a good exercise.}

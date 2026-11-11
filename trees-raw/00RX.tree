@@ -1,0 +1,15 @@
+\title{Flow network}
+\date{2026-11-11T11:38:21Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+
+\p{A \em{flow network} is a directed graph #{G = (V,E)} with}
+\ul{
+  \li{a distinguished \em{source} vertex #{s \in V}, with indegree #{0};}
+  \li{a distinguished \em{target} (or \em{sink}) vertex #{t \in V}, with outdegree #{0};}
+  \li{a \em{capacity function} #{c : E \to \N} assigning a non-negative integer \em{capacity} #{c(e)} to each edge #{e \in E}.}
+}
+\p{Capacities can easily be generalized to non-negative rational or even real numbers, but we will stick with integers.}
