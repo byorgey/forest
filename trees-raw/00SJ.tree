@@ -1,0 +1,24 @@
+\title{Maximum bipartite matching}
+\date{2026-11-12T18:26:51Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\transclude{00SK}  % Matching, max matching
+
+\p{Finding maximum matchings for graphs in general is difficult, but it's much easier for [bipartite](00MY) graphs:
+
+\ul{
+  \li{Add a new source vertex #{s} with an edge to each vertex in #{L}.}
+  \li{Add a new target vertex #{t} with an edge from each vertex in #{R}.}
+  \li{Give every edge a capacity of #{1}.}
+}
+
+Claim: flows of value #{k} on this new extended graph are in 1-1 correspondence with valid matchings of size #{k} in the original graph.
+\ul{
+  \li{A valid flow of value #{k} must have #{k} units of flow going from #{L} to #{R}; since the edges all have capacity #{1} there must therefore be #{k} edges with flow on them.  Moreover, none of them can share an endpoint since then two units of flow would have to enter or exit the same vertex, but this is impossible since the edges from #{s} and the edges to #{t} all have capacity #{1} as well.}
+  \li{Conversely, given any #{k} edges which share no endpoints, simply put one unit of flow along each edge, and continue the flow to #{s} and #{t}.  This will be a valid flow for the same reasons.}
+}
+
+\p{Hence, a \em{maximum} flow must correspond to a maximum matching, and vice versa.}
+}

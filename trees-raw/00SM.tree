@@ -1,0 +1,15 @@
+\title{Runtime analysis}
+\date{2026-11-12T18:44:43Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The [Ford-Fulkerson algorithm](00SE) can be implemented to run in #{O(CE)} time, where #{C} is the total capacity of outgoing edges from the source.
+
+\ul{
+  \li{At every iteration, the [flow value must increase](00SG) by at least #{1}.  Hence #{C} is an upper bound on the number of iterations of the while loop.}
+  \li{Finding an augmenting path can be done in #{\Theta(V+E)} using something like DFS.  In fact, there's not much point running this algorithm on a disconnected graph, so we can assume #{E} is #{\Omega(V)}.  Hence this is just #{\Theta(E)}.}
+  \li{Augmenting along the path #{P} and updating the residual network appropriately can be carried out in #{\Theta(E)} worst-case time (constant time per edge of #{P}) with careful choices of data structures. (In practice we store the information about flow and about #{G_f} in the same data structure; we also need to keep pointers from each "backwards" edge to the corresponding forwards edge in order to augment efficiently.)}
+}
+Hence at most #{C} iterations, with #{\Theta(E)} iterations, gives an upper bound of #{O(CE)} (though in practice it is often much faster than this).
+}

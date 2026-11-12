@@ -1,10 +1,10 @@
-\title{Flow value preservation}
+\import{flow-macros}
+\import{algorithms-macros}
+
+\title{\advanced Flow value preservation}
 \date{2026-11-11T11:50:18Z}
 \tag{algorithms}
 \taxon{Lemma}
-
-\import{flow-macros}
-\import{algorithms-macros}
 
 \p{#{\fout(s) = \fin(t)}, that is, “what leaves #{s} must eventually arrive at #{t}”.}
 

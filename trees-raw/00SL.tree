@@ -1,0 +1,25 @@
+\import{algorithms-macros}
+
+\title{\advanced Maximum flow algorithms in practice}
+\date{2026-11-12T18:41:26Z}
+\tag{algorithms}
+\tag{draft}
+
+% XXX Add a bunch of links!
+
+\p{Ford-Fulkerson is actually a kind of \em{meta-algorithm}: it specifies the method of repeatedly augmenting along #{s}-#{t} paths in the residual network (\em{augmenting paths}) but it doesn’t actually specify \em{how} to find augmenting paths. Without specifying how to find augmenting paths at all, we proved that Ford-Fulkerson will run in #{O(EC)} time, where #{E} is the number of edges and #{C} is the total capacity leaving the source (or the total capacity entering the sink, whichever is smaller). But if we are more careful about how we find augmenting paths we can do better.}
+
+\ul{
+  \li{The most straightforward way is to simply use a DFS from #{s} to #{t} in the residual network. This works fine but not particularly well; depending on the graph it can exhibit the worst case #{O(EC)} behavior.}
+  \li{We can use BFS in the residual network to find the \em{shortest} augmenting path on each iteration. This is called the \em{Edmonds-Karp} algorithm, and it can be shown (though the proof is outside the scope of this course) that it runs in #{O(VE^2)}—in particular, the running time does \em{not} depend on the capacities. This algorithm works very well in practice, and often runs much faster than the worst case, behaving more like #{\Theta(E^{3/2})}.}
+  \li{We could use a variant of Dijkstra’s algorithm to find the \em{maximum capacity} augmenting path on each iteration. This seems like it would be a good idea, but in practice it is usually slower than Edmonds-Karp.}
+  \li{Finally, there is a clever method, \em{Dinitz’ Algorithm}, which instead of finding just a single augmenting path each iteration, sends flow along multiple augmenting paths at once. (Note: it is often known as \em{Dinic’s Algorithm}, but this is due to a misspelling of the name of its inventor, Yefim Dinitz.) It works as follows:
+  \ol{
+    \li{Do a BFS from #{s} in the residual network and label every vertex with its level in the BFS tree.}
+    \li{Now do a DFS from #{s} in the residual network, only taking edges which go from level #{i} to #{i+1}; as we recurse through the graph, keep track of the available flow and the minimum residual capacity along the path to each point. Once we reach #{s} we can unroll the recursion and update flow values with the minimum capacity seen along the path, and subtract the augmenting flow from the available flow. Instead of stopping, however, we keep going to try to augment along as many paths as we can. If we encounter a vertex from which it’s impossible to reach #{t}, we mark it so we know not to visit it if we ever encounter it again.}
+  }
+  It can be shown that this takes #{O(V^2 E)}, an improvement over Edmonds-Karp for dense graphs; Dinitz also works very well in practice and typically runs much faster than #{O(V^2 E)}. Also, when using max flow to compute a maximum matching in a bipartite graph, it can be shown that Dinitz runs in #{O(E \sqrt{V})} (this special case of Dinitz for maximum bipartite matching was invented independently and is known as Hopcroft-Karp).}
+}
+
+\p{There are many other approaches to finding maximum flows as well (preflow-push, push-relabel, simplex…), which can have even better asymptotic running times, work better on certain types of graph, or solve more complex max flow variants (max circulation, min-cost max flow, …), but for most practical max flow problems you will encounter, Edmonds-Karp or Dinitz should work just fine!}
+

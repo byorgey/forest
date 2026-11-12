@@ -1,0 +1,13 @@
+\title{Applications of maximum flow}
+\date{2026-11-12T18:25:56Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\transclude{00SJ}  % Max bipartite matching
+
+% XXX assigning people to teams/committees
+% XXX escape route planning
+% XXX Baseball playoffs / chess tournament elimination
+% XXX image segmentation

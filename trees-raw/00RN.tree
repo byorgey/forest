@@ -19,6 +19,11 @@
 \p{Playing around with a few examples leads us to an obvious question.}
 
 \transclude{00S2}   % Max flow problem
+
+\p{Before presenting a solution to this problem, we will first explore some applications.}
+
+\transclude{00SI}   % Max flow applications
 \transclude{00S3}   % Greedy flow
 \transclude{00SB}   % Residual network
 \transclude{00SD}   % Ford-Fulkerson
+\transclude{00SL}   % Max flow algorithms in practice

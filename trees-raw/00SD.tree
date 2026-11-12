@@ -13,5 +13,4 @@
 \transclude{00SF}   % Augmenting preserves flow validity
 \transclude{00SG}   % Augmenting increases flow value
 \transclude{00SH}   % F-F terminates
-
-\p{It's nice to know that Ford-Fulkerson [terminates](00SH); but we still don't know if it will terminate with the [max flow](00S2)! For all we know, it could still get stuck in some local maximum, which can’t be augmented even though there is some other flow with a bigger value.}
+\transclude{00SM}   % Runtime analysis

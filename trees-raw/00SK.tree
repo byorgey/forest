@@ -1,0 +1,10 @@
+\title{Matching}
+\date{2026-11-12T18:28:06Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{Given an undirected graph #{G}, a \em{matching} on #{G} is a subset of edges such that no two edges share an endpoint. In other words, a matching on #{G} is a way to match or "pair up" some of vertices.}
+
+\p{A \em{maximum matching} is a matching which contains as many edges as possible.}
