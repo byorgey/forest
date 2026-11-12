@@ -1,0 +1,12 @@
+\title{[F1] Mobile connections (2 pts)}
+\date{2026-11-11T17:39:53Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Consider a set of mobile computing clients in a certain town who each need to be connected to one of several possible \em{base stations}. We’ll suppose there are #{n} clients, with the position of each client specified by its #{(x,y)} coordinates in the plane. There are also #{k} base stations; the position of each of these is specified by #{(x,y)} coordinates as well.}
+\p{We wish to connect each client to exactly one of the base stations, but our choice of connections is constrained in the following ways. First, there is a \em{range parameter}, denoted by #{r}: a client can only be connected to a base station that is within distance #{r}. There is also a \em{load parameter} #{L}: no more than #{L} clients can be connected to any single base station.}
+\p{Your goal is to design a polynomial-time algorithm for the following problem. Given the positions of a set of clients and a set of base stations, as well as the range and load parameters #{r} and #{L}, decide whether every client can be connected simultaneously to a base station, subject to the constraints #{r} and #{L}.}
+\p{Be sure to justify the correctness of your algorithm and analyze its asymptotic running time. Also, be sure to express the running time in terms of #{n}, #{k}, #{L}, and #{r} as appropriate; do not just say it takes #{O(V^2 E)}.}
+

@@ -1,0 +1,14 @@
+\title{Ford-Fulkerson}
+\date{2026-11-12T18:04:48Z}
+\tag{algorithms}
+\taxon{Algorithm}
+
+\import{algorithms-macros}
+
+\pseudo{
+\state{#{f(e) \gets 0} for all #{e \in E}}
+\while{there exists any path #{P} from #{s} to #{t} in #{G_{f}}}{
+  \state{#{\alpha \gets \min\{ w(e) \mid e \in P \}}}
+  \state{#{f(e) \gets f(e) + \alpha} for each #{e \in P} such that #{e \in  E}}
+  \state{#{f(e) \gets f(e) - \alpha} for each #{e \in P} such that #{e^{R}  \in E}}
+}}

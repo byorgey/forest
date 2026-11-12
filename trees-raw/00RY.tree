@@ -1,9 +1,32 @@
-\title{XXX}
-\author{brentyorgey}
-\date{2026-11-11T11:41:58Z}
-\tag{algorithms}
-\tag{draft}
-
 \import{algorithms-macros}
 
-% XXX write about how weights combine in series and parallel, how "cost" is different than "capacity", how we can use Dijkstra, F-W with other notions of combining, etc.
+\title{\advanced Generalized weights}
+\date{2026-11-11T11:41:58Z}
+\tag{algorithms}
+
+\p{The weights in a [weighted graph](00NN) can be used to model various concepts.  How we combine the weights—or even what type of values are used for the weights—depends on what we have in mind.  In general, the important questions to ask about weights are:
+\ol{
+  \li{How do we combine the weights of two paths \em{in series} (\ie when the two paths are sequenced end-to-end into a longer path)?}
+  \li{How do we combine the weights of two paths \em{in parallel} (\ie when we have two different paths between the same two start and end vertices)?}
+  \li{How do we decide which of two weights is "better"?}
+}
+}
+
+\p{For example, when weights represent a \em{cost}:
+\ol{
+  \li{We \em{add} the weights of two paths in series.}
+  \li{We take the \em{minimum} of the weights of parallel paths.}
+  \li{\em{Smaller} weights are better.}
+}
+}
+
+\p{However, if weights represent a \em{capacity}, we might answer these questions differently:
+\ol{
+  \li{When paths are in series, we take the \em{minimum} weight: the smallest-capacity path is the bottleneck and determines the capacity of the whole composed path.}
+  \li{When paths are in parallel, we either take the \em{maximum} (if we want to pick the higher-capacity path) or we \em{add} (if we are allowed to use both paths at once and we know the paths don't overlap at all).}
+  \li{\em{Bigger} weights are better.}
+}}
+
+\p{As another example, if weights represent some kind of probability, then we might multiply weights in series and take the maximum in parallel.  Weights don't even have to be numbers!  If weights are, say, strings, we might concatenate them in series and take the shorter of two strings in parallel (what would a "best path" mean in this context?).}
+
+\p{We introcued algorithms like [Dijkstra](00NL) and [Floyd-Warshall](00RO) as algorithms to find \em{shortest} paths, but really they are algorithms for finding "best" paths: we can plug in any operations for combining weights we like (as long as they [satisfy some nice algebraic properties like distributivity](00RW)).  For example, if we substitute the operations #{(\min, \max)} in place of #{(+, \min)}, then Dijkstra and Floyd-Warshall find \em{maximum-bottleneck} paths: \ie paths such that the minimum capacity along the path is as large as possible.}

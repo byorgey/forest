@@ -1,0 +1,10 @@
+\title{Ford-Fulkerson terminates}
+\date{2026-11-12T18:13:55Z}
+\tag{algorithms}
+\taxon{Lemma}
+
+\import{algorithms-macros}
+
+\p{The [Ford-Fulkerson algorithm](00SE) terminates (the flow can’t keep getting bigger forever).}
+
+\proof{[Augmenting always increases the flow value](00SG); eventually, if all edges out of #{s} are at capacity, there will be no more forwards edges out of #{s} in #{G_f}, and hence no more paths from #{s} to #{t}.}

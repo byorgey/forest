@@ -1,0 +1,9 @@
+\title{Max flow}
+\date{2026-11-11T14:49:11Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+
+\p{The \em{max flow problem} asks, given a [flow network](00RX) #{G}, what is the maximum possible [value](00S0) of a [flow](00RZ) (and what is an example of such a maximum flow)?}

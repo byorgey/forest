@@ -1,0 +1,19 @@
+\title{Greedy flow counterexample}
+\date{2026-11-11T14:56:28Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Unfortunately, this [greedy flow algorithm](00S4) does not work. We may get stuck in a “local optimum” where there are no more unsaturated paths, but we have not found the globally [maximum flow](00S2). Here is a counterexample.
+
+\figure{\tex{\usepackage[all]{xy}}{\xymatrix{ & a \ar[dr]^1 \ar[dd]^1 & \\ s \ar[ur]^1 \ar[dr]_1 & & t
+\\ & b \ar[ur]_1 & }}}
+
+Clearly, the value of a maximum flow in this network is #{2} (send one unit of flow along the top and another unit along the bottom). However, if the algorithm happens to pick the path #{s \to a \to b \to t} the first time through the loop, we end up with this:
+
+\figure{\tex{\usepackage[all]{xy}}{\xymatrix{ & a \ar[dr]^{0/1} \ar[dd]^{1/1} & \\ s \ar[ur]^{1/1} \ar[dr]_{0/1} & & t
+\\ & b \ar[ur]_{1/1} & }}}
+
+and there are no longer any unsaturated paths from #{s \to t}. The problem is that we shouldn’t have picked the middle edge, but there’s no way to know that ahead of time.}
+
+\p{However, all is not lost! We can actually keep the basic outline of the greedy algorithm. We really just need to allow ourselves to \em{undo} or “push back” flow if we find somewhere better for it to go.}

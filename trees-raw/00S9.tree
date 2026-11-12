@@ -1,0 +1,9 @@
+\title{[F3] Vertex capacities (2 pts)}
+\date{2026-11-11T17:47:19Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Suppose that, in addition to edge capacities, a flow network has \em{vertex capacities}. That is, each vertex #{v} has a limit #{c(v)} on how much flow can pass through #{v}. Show how to transform a flow network #{G = (V,E)} with vertex capacities into an equivalent flow network #{G' = (V', E')} without vertex capacities, such that a maximum flow in #{G'} has the same value as a maximum flow in #{G}. How many vertices and edges does #{G'} have?}
+

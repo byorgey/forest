@@ -1,0 +1,19 @@
+\title{Augmenting preserves flow validity}
+\date{2026-11-12T18:06:03Z}
+\tag{algorithms}
+\taxon{Lemma}
+
+\import{algorithms-macros}
+
+\p{Augmenting along an #{s}-#{t} path in the residual network always preserves the [flow properties](00RZ).}
+
+\proof{
+ This is because the changes to the flow values adjacent to a given vertex always cancel out.
+\ul{
+  \li{If we augment along two consecutive "forwards" edges in #{G_f}, we add the same amount of flow to both incoming and outgoing edges of their common vertex in #{G}.}
+  \li{If we augment along two consecutive "backwards" edges, we \em{subtract} the same amount of flow to both an incoming and outgoing edge in #{G}.}
+  \li{If we augment along a forwards edge followed by a backwards edge, we add flow to one incoming edge and subtract flow from another incoming edge.  Likewise, if we augment along a backwards edge followed by a forwards edge, we add and subtract the same amount of flow from two outgoing edges.}
+}
+
+\p{In addition, because of the way weights are defined on edges in the residual network, we can never add flow beyond capacity, or reduce a flow below zero.}
+}

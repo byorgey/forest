@@ -1,0 +1,15 @@
+\title{Augmenting increases flow value}
+\date{2026-11-12T18:11:52Z}
+\tag{algorithms}
+\taxon{Lemma}
+
+\import{algorithms-macros}
+
+\p{Augmenting along an #{s}-#{t} path in the residual network always \em{increases} the [value](00S0) of the flow in #{G}.}
+
+\proof{Any #{s}-#{t} path in #{G_f} has to start along some outgoing
+  edge from #{s}, which must be a "forwards" edge corresponding to an
+  outgoing edge from #{s} in #{G}. So when we augment along the path
+  we increase the flow along that edge, which [by definition](00S0) increases
+  the value of the flow.}
+

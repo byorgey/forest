@@ -1,6 +1,7 @@
 \title{Network Flow}
 \date{2026-11-09T23:20:44Z}
 \tag{algorithms}
+\tag{draft}
 
 \import{algorithms-macros}
 \import{flow-macros}
@@ -8,8 +9,16 @@
 \p{We now turn to study another important classical model with many (surprising!) applications, \em{network flow}.}
 
 \transclude{00RX}   % Flow network
-% \transclude{00RY}   % Capacities, how weights combine, Dijkstra + F-W etc.
-
+\transclude{00RY}   % Capacities, how weights combine, Dijkstra + F-W etc.
 \transclude{00RZ}   % Flow
 \transclude{00S0}   % Value
+\put\transclude/expanded{false}
 \transclude{00S1}   % Value preservation
+\put\transclude/expanded{true}
+
+\p{Playing around with a few examples leads us to an obvious question.}
+
+\transclude{00S2}   % Max flow problem
+\transclude{00S3}   % Greedy flow
+\transclude{00SB}   % Residual network
+\transclude{00SD}   % Ford-Fulkerson

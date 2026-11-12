@@ -1,0 +1,10 @@
+\title{Attempt: greedy max flow}
+\date{2026-11-11T14:50:07Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{How should we design an algorithm for the [maximum flow problem](00S2)? Well, let’s try a [greedy](00NJ) strategy, which looks for an \em{unsaturated} path from #{s} to #{t} (that is, a path for which the flow along every edge is \em{less} than the edge’s capacity), increases (\em{augments}) the flow along that path as much as possible, and then repeats until no unsaturated path is left.}
+
+\transclude{00S4}  % Greedy flow algorithm
+\transclude{00S5}  % Greedy flow doesn't work (counterexample)

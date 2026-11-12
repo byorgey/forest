@@ -1,0 +1,17 @@
+\title{The Ford-Fulkerson algorithm}
+\date{2026-11-12T17:58:18Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{We can now define the \em{Ford-Fulkerson algorithm}, which is similar to the [greedy flow algorithm](00S3) but uses the [residual network](00SB) instead of the original network to find augmenting paths.  Every time an augmenting path traverses a "forwards" edge in the residual network, we add flow to the corresponding edge in #{G}; when an augmenting path traverses a "backwards" edge, we \em{subtract} flow from the corresponding edge in #{G}.}
+
+\transclude{00SE}   % Ford-Fulkerson
+
+\p{We take a moment to record a few observations/lemmas about this algorithm.}
+
+\transclude{00SF}   % Augmenting preserves flow validity
+\transclude{00SG}   % Augmenting increases flow value
+\transclude{00SH}   % F-F terminates
+
+\p{It's nice to know that Ford-Fulkerson [terminates](00SH); but we still don't know if it will terminate with the [max flow](00S2)! For all we know, it could still get stuck in some local maximum, which can’t be augmented even though there is some other flow with a bigger value.}

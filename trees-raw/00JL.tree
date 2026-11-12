@@ -25,3 +25,4 @@
 \transclude{00NR}   % Greedy algorithm problems
 \transclude{00PM}   % D&C problems
 \transclude{00QM}   % DP problems
+\transclude{00S6}   % Max flow problems

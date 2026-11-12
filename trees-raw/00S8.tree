@@ -1,0 +1,20 @@
+\title{[F2] Exam scheduling (2 pts)}
+\date{2026-11-11T17:43:18Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Given a list of #{n} classes, a list of #{r} rooms, a list of #{t} time slots, and a list of #{a} therapy animals, our goal is to assign the final exam for each class to a particular room at a particular time, with a visit from one of a list of therapy animals.}
+
+\ul{
+  \li{Each class #{i} has a size #{S_i}.}
+  \li{Each room #{j} has a capacity #{C_j}; classes may only be assigned to rooms that are large enough to fit them, that is, if #{S_i \leq C_j}.}
+
+  \li{Each room is only available during some of the time slots, and may have at most one class assigned to it per time slot.}
+  \li{Each therapy animal is only available during certain time slots, and an animal may only visit one exam per time slot.}
+  \li{To avoid overwhelming the therapy animals, each animal may be assigned to visit a maximum of three exams.}
+}
+
+\p{Design an algorithm to find a valid way to assign each class to a room, time, and therapy animal that satisfies all the constraints (or report that no such assignment is possible). Be sure to justify the correctness of your algorithm and analyze its asymptotic running time.}
+

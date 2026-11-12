@@ -1,0 +1,12 @@
+\title{Max flow problems}
+\date{2026-11-11T17:37:18Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{In class, we saw that the Ford-Fulkerson algorithm can be implemented to run in #{O(CE)} time, where #{C} is the total capacity coming out of the source vertex.  There is also a particular instantiation of the Ford-Fulkerson framework, known as \em{[Dinitz’ Algorithm](https://en.wikipedia.org/wiki/Dinic's_algorithm)}, which can be implemented to find maximum flows in a network in #{O(V^2 E)} time. For these problems, you may assume #{O(CE)} or #{O(V^2 E)} as the time needed to solve a max flow problem, whichever is better.}
+
+\transclude{00S7}  % Mobile connections
+\transclude{00S8}  % Exam scheduling
+\transclude{00S9}  % Vertex capacities
+\transclude{00SA}  % Escape problem

@@ -1,0 +1,16 @@
+\title{Residual network}
+\date{2026-11-12T17:54:52Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+
+\p{Given a [flow network](00RX) #{G=(V,E)} and a [flow](00RZ) #{f} on #{G}, we define the \em{residual network} #{G_{f}} as a directed, weighted graph #{G_{f}=(V,E_f)}, with ##{E_f = \{ e \in E \mid c(e) - f(e) > 0 \} \union \{ e^R \mid e \in
+    E, f(e) > 0 \}} (where #{e^R} denotes the reverse of edge #{e}) and we define the weights of edges in #{E_f} by
+\ul{
+  \li{#{w(e)=c(e)-f(e)}, and}
+  \li{#{w(e^{R}) = f(e)}.}
+}
+}
+

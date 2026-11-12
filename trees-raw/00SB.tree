@@ -1,0 +1,9 @@
+\title{Residual networks}
+\date{2026-11-12T17:54:05Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{For a given network #{G} and flow #{f}, we define the \em{residual network} #{G_f}. The residual network has the same vertices as #{G} and essentially has two edges for each edge #{e = (u,v)} in #{G}: one from #{u} to #{v} with weight equal to the \em{remaining} capacity #{c(e) - f(e)}, and one “backwards” edge from #{v} to #{u} with weight equal to the flow flow #{f(e)} along #{e}. The backwards edge allows us to “retract” some of the flow along #{e}. The only wrinkle is that we don’t include edges with zero capacity, so some edges of #{G} only have one corresponding edge in #{G_f}: those with zero flow (which have only a corresponding forward edge) or those at maximum capacity (which have only a corresponding backward edge).  Formally:}
+
+\transclude{00SC}  % Residual network definition
