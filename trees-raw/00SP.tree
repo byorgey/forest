@@ -1,0 +1,8 @@
+\title{Cut capacity}
+\date{2026-11-16T18:41:20Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+\p{The \em{capacity} of an #{s}-#{t} cut, denoted #{c(A,B)}, is the total capacity of all edges crossing the cut. That is, ##{c(A,B) = \sum_{e : A \to B} c(e).} (The notation #{e : A \to B} denotes any edge which goes from some vertex in #{A} to some vertex in #{B}.)}

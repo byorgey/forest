@@ -1,0 +1,26 @@
+\title{Max flow/min cut theorem}
+\date{2026-11-12T22:13:48Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{We now present one of the great duality results in computer science—that the [maximum flow](00S2) of a network is equivalent to the minimum cut of a network. Along the way, we will also show that #{f} is a max flow if and only there are no augmenting paths in the [residual network](00SC) #{G_{f}}, which proves the correctness of [Ford-Fulkerson](00SE).}
+
+\transclude{00SO}   % s-t cut
+\transclude{00SP}   % cut capacity
+\transclude{00SQ}   % min cut
+\transclude{00SR}   % net flow
+\transclude{00SS}   % net flow in general??
+\transclude{00ST}   % flow value lemma
+
+
+
+% Bottleneck lemma.  v(f) <= c(A,B).
+% Corollary: if v(f) = c(A,B), then f is max, A,B is min.
+% Define net flow.
+% Lemma: net flow on any s,t cut = value of flow.
+% Lemma: v(A,B) <= c(A,B)
+% Note this proves bottleneck lemma!
+% Theorem: max flow / min cut.
+% Cor: F-F finds max flow / min cut.

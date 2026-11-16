@@ -1,0 +1,8 @@
+\title{Minimum cut}
+\date{2026-11-16T18:43:50Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+\p{The \em{minimum cut} in a flow network #{G} is the [#{s}-#{t} cut](00SO) with minimum [capacity](00SP).}

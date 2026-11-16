@@ -1,0 +1,8 @@
+\title{#{s}-#{t} cut}
+\date{2026-11-16T18:39:14Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+\p{An \em{#{s}-#{t} cut} in a [flow network](00RX) #{G = (V,E)} is a partition of #{V} into two sets #{(A,B)} where #{s \in A} and #{t \in B}.}

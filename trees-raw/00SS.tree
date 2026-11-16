@@ -1,0 +1,7 @@
+\date{2026-11-16T18:48:16Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{If we imagine the vertices of #{A} being “clumped together” around the source vertex, then it’s clear what should happen: there will be no flow coming in to #{A}, and the flow going out will just be equal to the value of the flow. But #{A} could be crazier—it could consist of a bunch of vertices scattered all through the graph. They don’t even have to be connected. So what can we say about the net flow in general?}

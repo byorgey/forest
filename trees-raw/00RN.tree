@@ -27,3 +27,4 @@
 \transclude{00SB}   % Residual network
 \transclude{00SD}   % Ford-Fulkerson
 \transclude{00SL}   % Max flow algorithms in practice
+\transclude{00SN}   % Max flow/min cut theorem

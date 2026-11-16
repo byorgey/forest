@@ -1,0 +1,10 @@
+\title{Net flow}
+\date{2026-11-16T18:46:24Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+\p{The \em{net flow} of a [cut](00SO) #{(A,B)} with respect to a [flow](00RZ) #{f}, written #{v(A,B)}, is ##{\sum_{e : A \to B} f(e) - \sum_{e : B \to A}
+  f(e),} the difference between the flow leaving #{A} and the flow entering #{A}. (We could thus call it #{A}’s “net exports”.)}
+
