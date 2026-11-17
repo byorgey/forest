@@ -1,0 +1,14 @@
+\title{Approaching increment cost via a table}
+\date{2026-11-17T16:49:11Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{The first step is almost always to just try small examples, play around, make a table, and notice patterns to come up with a guess. Let’s try it for incrementing a binary counter. We’ll make a table with the counter value #{n} and the cumulative number of bit flips on the right-hand side. Remember we don’t need a \em{formula} for the number of bit flips (though it turns out in this case it is possible to come up with one!); we are just trying to figure out how fast it grows in relation to #{n}.}
+
+\table{
+    \tr{\th{#{n}} \td{#{0}} \td{#{1}} \td{#{2}} \td{#{3}} \td{#{4}} \td{#{5}} \td{#{6}} \td{#{7}} \td{#{8}} \td{#{9}} \td{#{10}} \td{#{11}} \td{#{12}} \td{#{13}} \td{#{14}} \td{#{15}} \td{#{16}}}
+    \tr{\th{bit flips} \td{}  \td{#{1}} \td{#{2}} \td{#{1}} \td{#{3}} \td{#{1}} \td{#{2}} \td{#{1}} \td{#{4}} \td{#{1}} \td{#{2}}
+    \td{#{1}} \td{#{3}} \td{#{1}} \td{#{2}} \td{#{1}} \td{#{5}}}
+    \tr{\th{cumulative cost} \td{#{0}} \td{#{1}} \td{#{3}} \td{#{4}} \td{#{7}} \td{#{8}} \td{#{10}} \td{#{11}} \td{#{15}} \td{#{16}} \td{#{18}} \td{#{19}} \td{#{22}} \td{#{23}} \td{#{25}} \td{#{26}} \td{#{31}}}
+}

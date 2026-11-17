@@ -1,0 +1,11 @@
+\title{Ford-Fulkerson is correct}
+\date{2026-11-17T22:28:23Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Corollary}
+\p{The [Ford-Fulkerson algorithm](00SE) is correct.}
+
+\proof{
+We already know [Ford-Fulkerson terminates](00SH), and the \sf{while} loop condition means that it ends when there are no #{s}-#{t} paths in #{G_f}. By [the max flow/min cut theorem](00T3), this means it has found a [max flow](00S2) #{f}—and moreover, that it has also found a [minimum cut](00SQ).}

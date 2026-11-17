@@ -1,0 +1,18 @@
+\title{Incrementing a binary counter}
+\date{2026-11-17T16:41:03Z}
+\tag{algorithms}
+\taxon{Algorithm}
+
+\import{algorithms-macros}
+
+\p{Here is an algorithm to solve the [binary counter problem](00SX).
+
+\pseudo{
+\state{#{i \gets 0}}
+\while{#{B[i] = 1}}{
+  \state{#{B[i] \gets 0}}
+  \state{#{i \gets i+1}}
+}
+\state{#{B[i] \gets 1}}
+}
+}

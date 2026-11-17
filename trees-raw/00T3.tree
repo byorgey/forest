@@ -1,0 +1,59 @@
+\title{Max flow/min cut}
+\date{2026-11-17T18:55:41Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Theorem}
+\p{Let #{f} be any [flow](00RZ) on a [flow network](00RX) #{G}. The following are equivalent:
+\ol{
+  \li{#{v(f) = c(A,B)} for some cut #{(A,B)}.}
+  \li{#{f} is a [max flow](00S2).}
+  \li{There are no #{s}-#{t} paths in the [residual network](00SC) #{G_{f}}.}
+}
+}
+
+\subtree{
+  \taxon{Remark}
+
+  \p{As an aside, theorems of this form ("the following are equivalent") do not come up as often in computer science, but they are a lot of fun.  (We already [saw one other similar example](00M1) earlier.)  How do we prove theorems of this form?  If we think of each proposition as a vertex, and proving that #{P} implies #{Q} corresponds to adding a directed edge from #{P} to #{Q}, then our goal is to ensure that the resulting graph is [strongly connected](00MW), so there is a path from any proposition to any other.  Since [implication is transitive](008P), this shows that all the propositions are logically equivalent.}
+}
+
+\proof{
+  We will prove that #{1 \Rightarrow 2 \Rightarrow 3 \Rightarrow 1}.
+
+\ul{
+  \li{#{1 \Rightarrow 2} is just [[00T2]].}
+  \li{#{2 \Rightarrow 3} because [[00SG]]: if there were an #{s}-#{t} path in #{G_{f}}, then we could increase the flow along that path, so #{f} would not be a max flow. (This is the [contrapositive](003X) of #{2 \Rightarrow 3}.)}
+}
+
+\p{#{(3 \Rightarrow 1)} is more interesting.  Suppose there are no #{s}-#{t} paths in #{G_f}; then we must somehow come up with a cut #{(A,B)} whose capacity is equal to that of the flow!  To this end, define an #{s}-#{t} cut #{(A,B)} as follows:
+\ul{
+  \li{#{A =} all nodes reachable from #{s} in #{G_{f}}.}
+  \li{#{B =} everything else.}
+}
+}
+
+\p{Notice that
+\ul{
+  \li{#{s \in A} (#{s} is trivially reachable from itself).}
+  \li{#{t \in B} (#{t} can’t be in #{A}, since we assumed there are no #{s}-#{t} paths in #{G_{f}}).}
+}
+and hence this is a [valid #{s}-#{t} cut](00SO).}
+
+\p{The [[00ST]] tells us that the value of the flow is equal to the net flow across the cut #{(A,B)}, that is, ##{v(f) = v(A,B) = \sum_{e : A \to B} f(e) \;\; - \sum_{e : B \to A} f(e)}.}
+
+\p{Note that each edge #{(u,v)} leaving #{A} must be filled to capacity, since otherwise there would be a [forwards edge](00SB) from #{u} to #{v} with the remaining capacity in #{G_f}, but then by definition we would have #{v \in A} since #{v} would be reachable in #{G_f}. Similarly, each edge entering #{A} must have 0 flow since if it didn’t, there would be a [backwards edge](00SB) from #{v} to #{u} in #{G_f}, and then #{u} would be in #{A} as well.}
+
+\p{Hence, we have
+\stmt{#{v(f)}}
+\reason{=}{[[00ST]]}
+\stmt{#{\sum_{e : A \to B} f(e) \;\; - \sum_{e : B \to A} f(e)}}
+\reason{=}{All edges leaving #{a} are full, and all edges into #{A} are empty}
+\stmt{#{\sum_{e : A \to B} c(e) \;\; - 0}}
+\reason{=}{Definition of [cut capacity](00SP)}
+\stmt{#{c(A,B)}.}
+}
+
+
+}

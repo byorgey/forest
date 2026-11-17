@@ -1,0 +1,7 @@
+\title{Amortized analysis in general}
+\date{2026-11-17T16:48:14Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{This is a common situation: we have some operation that we want to do repeatedly, and the operation does not always take the same amount of time. We can easily give an upper bound and a lower bound, but we want to be able to say something more precise about how long the entire sequence of operations will take. For this we turn to \em{amortized analysis}. The idea of “amortization” is to spread out big one-time costs more evenly (\em{e.g.} repaying a car loan or a mortgage in monthly installments).}

@@ -1,0 +1,12 @@
+\title{Amortized analysis introduction and motivation}
+\date{2026-11-17T16:37:54Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\transclude{00SX}  % Binary counter problem
+\transclude{00SY}  % Algorithm
+\transclude{00SZ}  % Analysis
+\transclude{00T0}  % Idea of amortized analysis
+\transclude{00T1}  % Table for binary increment

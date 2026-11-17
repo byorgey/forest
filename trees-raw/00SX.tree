@@ -1,0 +1,10 @@
+\title{Binary counter incrementing}
+\date{2026-11-17T16:38:36Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Consider the following problem.}
+\p{\strong{Input}: an array #{B[0\dots]} representing a binary number #{n}. (Each #{B[i]} is a single bit representing the coefficient of #{2^i}. Assume #{B} is sufficiently large so we don’t have to worry about problems with overflow.)}
+\p{\strong{Output}: \em{Increment} the binary number, that is, modify #{B} so that it represents the number #{n+1}.}
+

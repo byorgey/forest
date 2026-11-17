@@ -21,3 +21,4 @@
 \transclude{00PJ}   % Divide & Conquer
 \transclude{00QG}   % Dynamic Programming
 \transclude{00RN}   % Network Flow
+\transclude{00SV}   % Amortized analysis

@@ -1,7 +1,6 @@
 \title{Max flow/min cut theorem}
 \date{2026-11-12T22:13:48Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
@@ -13,14 +12,7 @@
 \transclude{00SR}   % net flow
 \transclude{00SS}   % net flow in general??
 \transclude{00ST}   % flow value lemma
-
-
-
-% Bottleneck lemma.  v(f) <= c(A,B).
-% Corollary: if v(f) = c(A,B), then f is max, A,B is min.
-% Define net flow.
-% Lemma: net flow on any s,t cut = value of flow.
-% Lemma: v(A,B) <= c(A,B)
-% Note this proves bottleneck lemma!
-% Theorem: max flow / min cut.
-% Cor: F-F finds max flow / min cut.
+\transclude{00SU}   % Bottleneck lemma
+\transclude{00T2}   % Saturated cut = max flow / min cut
+\transclude{00T3}   % Max flow/min cut
+\transclude{00T4}   % F-F is correct

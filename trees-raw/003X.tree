@@ -5,6 +5,6 @@
 
 \import{discrete-macros}
 
-\p{An implication and its contrapositive always have the same
+\p{An implication and its [contrapositive](003W) always have the same
   truth value.  On the other hand, an implication does \em{not}
   always have the same truth value as its inverse or converse.}

@@ -17,9 +17,17 @@
 \reason{=}{By definition of a [flow](00RZ), #{\fout(v) - \fin(v) = 0} for every #{v \in A} except for #{s}}
 \stmt{#{\sum_{v \in A} (\fout(v) - \fin(v))}}
 \reason{=}{See explanation below}
-\stmt{#{\sum_{e : A \to B} f(e)} - \sum_{e : B \to A} f(e)}
+\stmt{#{\sum_{e : A \to B} f(e) - \sum_{e : B \to A} f(e)}}
 \reason{=}{definition of [net flow](00SR)}
 \stmt{#{v(A,B)}}
 
-\p{The central step involves rearranging the sum by edge instead of by vertex.  If an edge lies completely within #{A}, then its flow will get added once (for its source vertex) and subtracted once (for its target vertex), and hence the flow will cancel out.  If an edge lies completely within #{B}, its flow will not contribute to the sum at all.  On the other hand, if an edge goes from #{A} to #{B}, then its flow is added once; if from #{B} to #{A}, then its flow is only subtracted once.  This results in the expression on the following line.}
+\p{The remaining step that needs explanation is the central one that goes from #{\sum_{v \in A} (\fout(v) - \fin(v))}
+to #{\sum_{e : A \to B} f(e) - \sum_{e : B \to A} f(e)}. To see why this is true, consider all the edges with at least one endpoint in #{A}.
+\ul{
+  \li{If an edge has both endpoints in #{A}, its flow contributes twice to the first sum, once positively and once negatively, and the two cancel out. (Intuitively: moving stuff around within #{A} does not affect its net exports.)}
+  \li{Edges leaving #{A} contribute positively to the sum.}
+  \li{Edges entering #{A} contribute negatively to the sum.}
 }
+}
+}
+

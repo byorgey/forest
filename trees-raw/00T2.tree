@@ -1,0 +1,13 @@
+\title{Saturated cut = max flow + min cut}
+\date{2026-11-17T18:23:59Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Corollary}
+
+\p{Given some [flow](00RZ) #{f} and #{s}-#{t} cut #{(A,B)}, if #{v(f) = c(A,B)} then #{f} is a [max flow](00S2) and #{(A,B)} is a [min cut](00SQ).}
+
+\proof{
+  No other flow #{f'} could be bigger than #{f} since #{v(f') \leq c(A,B) = v(f)}. Likewise, no other cut could have smaller capacity than #{(A,B)}, since it has to be at least as big as the value of #{f}.
+}

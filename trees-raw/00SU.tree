@@ -1,0 +1,26 @@
+\title{Bottleneck lemma}
+\date{2026-11-16T21:03:39Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Lemma}
+\p{Let #{f} be any [flow](00RZ) and #{(A,B)} be any [#{s}-#{t} cut](00SO). Then the [capacity of the cut](00SP) is at least the [value](00S0) of the flow, that is, ##{v(f) \leq c(A,B).}}
+
+\proof{
+\stmt{#{v(f)}}
+\reason{=}{Definition of flow [value](00S0)}
+\stmt{#{\sum_{e : A \to B} f(e) - \sum_{e : B \to A} f(e)}}
+\reason{#{\leq}}{Omitting subtraction makes the value larger}
+\stmt{#{\sum_{e : A \to B} f(e)}}
+\reason{#{\leq}}{In a valid [flow](00RZ), #{f(e) \leq c(e)} for every edge}
+\stmt{#{\sum_{e : A \to B} c(e)}}
+\reason{=}{Definition of [cut capacity](00SP)}
+\stmt{#{c(A,B)}}
+}
+
+\subtree{
+  \taxon{Remark}
+
+\p{From the proof we can see that #{v(f) = c(A,B)} exactly when (1) there is no flow entering #{A} and (2) every edge leaving #{A} is saturated (that is, #{f(e) = c(e)}).}
+}
