@@ -8,7 +8,13 @@
 
 \table{
     \tr{\th{#{n}} \td{#{0}} \td{#{1}} \td{#{2}} \td{#{3}} \td{#{4}} \td{#{5}} \td{#{6}} \td{#{7}} \td{#{8}} \td{#{9}} \td{#{10}} \td{#{11}} \td{#{12}} \td{#{13}} \td{#{14}} \td{#{15}} \td{#{16}}}
-    \tr{\th{bit flips} \td{}  \td{#{1}} \td{#{2}} \td{#{1}} \td{#{3}} \td{#{1}} \td{#{2}} \td{#{1}} \td{#{4}} \td{#{1}} \td{#{2}}
+    \tr{\th{flips} \td{}  \td{#{1}} \td{#{2}} \td{#{1}} \td{#{3}} \td{#{1}} \td{#{2}} \td{#{1}} \td{#{4}} \td{#{1}} \td{#{2}}
     \td{#{1}} \td{#{3}} \td{#{1}} \td{#{2}} \td{#{1}} \td{#{5}}}
-    \tr{\th{cumulative cost} \td{#{0}} \td{#{1}} \td{#{3}} \td{#{4}} \td{#{7}} \td{#{8}} \td{#{10}} \td{#{11}} \td{#{15}} \td{#{16}} \td{#{18}} \td{#{19}} \td{#{22}} \td{#{23}} \td{#{25}} \td{#{26}} \td{#{31}}}
+    \tr{\th{total} \td{#{0}} \td{#{1}} \td{#{3}} \td{#{4}} \td{#{7}} \td{#{8}} \td{#{10}} \td{#{11}} \td{#{15}} \td{#{16}} \td{#{18}} \td{#{19}} \td{#{22}} \td{#{23}} \td{#{25}} \td{#{26}} \td{#{31}}}
 }
+
+\p{We notice some patterns: whenever #{n} is a power of two, the total number of bit flips seems to be one less than the next power of two. In fact, in general it seems that the cumulative number of bit flips is never more than #{2n}. That is, we conjecture that ##{T(n) < 2n} for all #{n > 0}. Based on this evidence, we conjecture that a sequence of #{n} increment operations starting from #{0} actually takes #{\Theta(n)}, the lower bound we derived from the best case, rather than the worst-case upper bound of #{\Theta(n \lg n)}. Intuitively, it seems like the “expensive” increment operations happen infrequently enough that they don’t add too much to the total—we can “average out” their cost over the whole sequence.}
+
+\p{The \em{average} cost of a single increment operation is just the total cost, #{T(n)}, divided by the number of operations (#{n}).  If it's true that #{T(n) < 2n}, then the average is ##{T(n)/n < 2n/n = 2 = \Theta(1).}  In this case we say that a single increment operation takes \Theta(1) \em{amortized time}: each increment takes #{\Theta(1)} “on average”, even though an individual increment operation could take longer.}
+
+\p{So how can we actually prove this? There are (at least) three methods; we will cover two of them.}

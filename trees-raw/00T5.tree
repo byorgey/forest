@@ -1,0 +1,63 @@
+\title{Direct calculation}
+\date{2026-11-18T12:36:39Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Sometimes, we can actually compute a formula for the total #{T(n)} of a sequence of #{n} operations—or at least show that the total #{T(n)} is bounded by some simple formula.  Then we can calculate the amortized time for a single operation as #{T(n)/n}.}
+
+\p{As an example, let's try coming up with a formula for the total number of bit flips needed to [increment a binary counter](00SW) from #{0} to #{n}.  We have ##{T(n) = 1 + 2 + 1 + 3 + 1 + 2 + 1 + 4 + 1 + 2 + 1 + 3 + 1 + 2 + 1 + 5 + \dots} Incidentally, this pattern is sometimes called the \em{[ruler function](https://en.wikipedia.org/wiki/Ruler_function)} since it looks like a traditional ruler showing inches, half inches, quarter inches... with each subsequent marking being shorter:
+
+\diagram{300}{*}{\verb<<<|
+ruler :: Int -> Int
+ruler n
+  | odd n = 1
+  | otherwise = 1 + ruler (n `div` 2)
+
+mark :: Int -> Diagram B
+mark n = vrule (fromIntegral n * 0.1) # alignB
+
+dia :: Diagram B
+dia = hsep 0.1 (map (mark . ruler) [1 .. 31]) # frame 0.1
+<<<}
+}
+
+\p{It's not obvious how to come up with a formula for #{T(n)}, but a change of perspective is often helpful, such as rearranging the terms being added or slicing them a different way.  In this case, if we draw the terms being added with dots, it looks like this:
+
+\diagram{300}{*}{\verb<<<|
+ruler :: Int -> Int
+ruler n
+  | odd n = 1
+  | otherwise = 1 + ruler (n `div` 2)
+
+dots :: Int -> Diagram B
+dots n = vsep 0.25 (replicate n (circle 0.1 # fc black)) # alignB
+
+dia :: Diagram B
+dia = hsep 0.25 (map (dots . ruler) [1 .. 15]) # frame 0.1
+<<<}
+
+Instead of adding up each column, we can think about adding by rows.
+The bottom row contains #{n} dots, because the last bit flips with every single increment. The second-to-last row contains #{\lfloor n/2 \rfloor} dots, because the second-to-last bit flips every other increment.  The third-to-last row contains #{\lfloor n/4 \rfloor} dots, and so on.  Hence ##{T(n) = n + \lfloor n/2 \rfloor + \lfloor n/4 \rfloor + \lfloor n/8 \rfloor + \dots} This formula is exact, since at some point #{\lfloor n/2^k \rfloor} becomes zero, for #{k > \lg n}.
+}
+
+\p{We still don't know how to simplify this exactly, but we don't need to: remember that we are just trying to show that #{T(n) < 2n}.  So we can compute as follows:
+
+\stmt{T(n)}
+\reason{=}{Adding up bit flips by bit position}
+\stmt{n + \lfloor n/2 \rfloor + \lfloor n/4 \rfloor + \lfloor n/8 \rfloor + \dots}
+\reason{\leq}{If we don't round down, the values will get bigger or stay the same}
+\stmt{n + n/2 + n/4 + n/8 + \dots}
+\reason{=}{Factor out #{n}}
+\stmt{n(1 + 1/2 + 1/4 + 1/8 + \dots)}
+\reason{=}{Geometric series}
+\stmt{2n}
+
+thus showing that #{T(n) \leq 2n} and hence each increment takes #{\Theta(1)} on average.
+
+\subtree{
+  \taxon{Remark}
+  \p{Note that we only claim #{T(n) \leq 2n} in the above proof, not #{T(n) < 2n} as conjectured, since this is still good enough to give us the result about increment taking #{\Theta(1)} on average.  In fact, we can replace the #{\leq} in the proof with #{<}, but it would require a slightly more nuanced argument about why removing the rounding makes the sum strictly larger.}
+}
+
+}

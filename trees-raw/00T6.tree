@@ -1,0 +1,18 @@
+\title{Accounting Method}
+\date{2026-11-18T20:19:35Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+
+\def\dollar{#{\text{\textdollar}}}
+
+\def\one{#{\underset{\dollar}{1}}}
+\def\pay{#{\overset{\dollar 2}{\longrightarrow}}}
+
+\p{Imagine that each constant-time operation “costs” $1. The idea is to \em{overcharge} for some operations and “save up” the extra money, so that we have enough saved up to pay for expensive operations. In general, if we charge #{c \cdot f(n)} for some operations and always have enough left over to pay for the other operations, then we can say that each operation takes #{O(f(n))} \em{amortized} time.}
+
+\p{In this example, we imagine that flipping a bit costs $1. Let’s charge $2 every time we flip a bit from #{0} to #{1}. $1 will pay for the flip itself, and the other $1 we imagine being saved next to the #{1} bit. Later, when we need to flip the bit back to #{0}, we will have $1 sitting there which we can use to pay for the flip. ##{000 \pay 00\one \pay 0\one 0 \pay 0\one\one \pay \one 00} Notice how every increment operation does exactly one #{0 \to 1} flip, for which we pay $2. And it might do a bunch of #{1 \to 0} flips, but we get to do those “for free” using the money we saved up from previous increments. All in all, if we pay $2 for each increment we always have enough money to pay for all the bit flips (without ever going negative). Therefore, we conclude that the \em{amortized} cost of a single increment operation is $2, that is, #{\Theta(1)}.}
+
+\p{As a fun aside, this analysis actually shows us how to come up with a precise formula for the total number of bit flips needed to increment from #{0} to #{n}: after doing #{n} increment operations, we have paid #{\text{\textdollar}2n}, but not all of that #{\dollar 2n} has actually been used. There is $1 sitting next to each 1 bit, and the rest of the #{\dollar 2n} has been used to pay for bit flips. So the total number of bit flips needed to increment from #{0} to #{n} is exactly ##{2n - \#n} where #{\#n} is the number of #{1} bits in the binary representation of #{n}.}
+
