@@ -4,9 +4,6 @@
 
 \import{algorithms-macros}
 
-
-\def\dollar{#{\text{\textdollar}}}
-
 \def\one{#{\underset{\dollar}{1}}}
 \def\pay{#{\overset{\dollar 2}{\longrightarrow}}}
 

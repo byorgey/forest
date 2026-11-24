@@ -17,3 +17,5 @@
 \def\GCDI{\sf{GCDI}}
 \def\DFS{\sf{DFS}}
 \def\BFS{\sf{BFS}}
+
+\def\dollar{#{\text{\textdollar}}}

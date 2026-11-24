@@ -1,0 +1,10 @@
+\title{Gluing binomial trees}
+\date{2026-11-21T19:32:28Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Lemma}
+\p{We can make a [binomial tree](00TG) of order #{n} out of two binomial trees of order #{n-1}, by attaching one of the trees as the rightmost child of the other tree’s root node.  This is apparent from the pictures above and from the [definition](00TG).}
+
+

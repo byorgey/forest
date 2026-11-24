@@ -1,0 +1,7 @@
+\title{Binomial heaps and binary numbers}
+\date{2026-11-21T20:39:16Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{We usually keep the list of binomial trees sorted from smallest to biggest order, stored using a linked list. (I will draw them sorted from right to left.) Notice that a binomial heap acts a lot like a binary number: since binomial trees have sizes that are powers of two, and a binomial heap has at most one tree of any given order, it is not hard to see that a binomial heap with #{n} total elements has a binomial tree of order #{k} if and only if the #{2^k} bit of the binary representation of #{n} is a #{1}. For example, the heap illustrated above has #{13} nodes, #{13_2 = 1101}, and indeed the heap has one tree of order #{0} (size 1), one of order #{2} (size #{4}), and one of order #{3} (size #{8}). This also means a binomial heap of size #{n} contains #{O(\lg n)} trees, from order #{0} up through order #{\lfloor \lg n \rfloor}.}

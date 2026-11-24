@@ -1,0 +1,27 @@
+\import{algorithms-macros}
+
+\title{\advanced Amortized analysis example: another binary counter}
+\date{2026-11-21T18:58:17Z}
+\tag{algorithms}
+
+\p{Take the same [binary counter incrementing example](00SW), but now suppose it costs #{2^i} to flip bit #{i}. The worst case for a single increment operation is now #{\Theta(n)}, since if we have to flip all the bits it will cost #{2^0 + 2^1 + 2^2 + \dots} which is approximately equal to #{n}. But once again, the total time to do #{n} successive increment operations is actually less than #{\Theta(n^2)}. Let’s again make a table and look for patterns.}
+
+\table{
+    \tr{\th{#{n}} \td{#{0}} \td{#{1}} \td{#{2}} \td{#{3}} \td{#{4}} \td{#{5}} \td{#{6}} \td{#{7}} \td{#{8}} \td{#{9}} \td{#{10}} \td{#{11}} \td{#{12}} \td{#{13}} \td{#{14}} \td{#{15}} \td{#{16}}}
+    \tr{\th{incr} \td{}  \td{#{1}} \td{#{3}} \td{#{1}} \td{#{7}} \td{#{1}} \td{#{3}} \td{#{1}} \td{#{15}} \td{#{1}} \td{#{3}}
+    \td{#{1}} \td{#{7}} \td{#{1}} \td{#{3}} \td{#{1}} \td{#{31}}}
+    \tr{\th{total} \td{#{0}} \td{#{1}} \td{#{4}} \td{#{5}} \td{#{12}} \td{#{13}} \td{#{16}} \td{#{17}} \td{#{32}} \td{#{33}} \td{#{36}} \td{#{37}} \td{#{44}} \td{#{45}} \td{#{48}} \td{#{49}} \td{#{80}}}
+}
+
+\p{Looking at just the powers of #{2} might reveal a useful pattern: #{2
+\to 4}, #{4 \to 12}, #{8 \to 32}, #{16 \to 80}. It looks like each power of #{2} is being multiplied by successive integers (#{2 \times 2}, #{4 \times 3}, #{8 \times 4}, #{16 \times 5}…)in particular #{2^k} is being multiplied by #{k+1}. So we conjecture that the total cost to increment from #{0} to #{n} is no greater than #{n \times (\lg n + 1)}, which would mean that the amortized cost of each increment operation is #{\Theta(\lg n)}.}
+
+\p{To show this, we can use the [accounting method](00T6): every time we do an
+increment, just put $1 on \em{every} bit, whether we flip it or
+not. (We have to decide up front how many bits we are going to use.)
+Since bit #{i} is flipped every #{2^i} increment operations, by the time
+we flip it we will have accumulated exactly enough money to pay for
+its cost of #{2^i}.  Therefore, the amortized cost of a single
+increment is the amount we actually pay: we pay $1 for each bit and there are #{\Theta(\lg n)} bits.}
+
+\p{We could also use the [direct calculation method](00T5). Note that bit #{i} is flipped only once every #{2^i} increments, and flipping it costs #{2^i}. So each bit contributes a total cost that is at most the total number of increment operations. There are #{\lg n + 1} bits, and each contributes a cost of at most #{n}, for a total of at most #{n (\lg n + 1)}.}

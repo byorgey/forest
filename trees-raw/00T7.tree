@@ -1,0 +1,10 @@
+\title{Amortized Analysis problems}
+\date{2026-11-18T20:23:47Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\transclude{00T8}   % Amortization practice
+\transclude{00T9}   % doubly-extensible array
+\transclude{00TA}   % queue from two stacks
+\transclude{00TB}   % fits

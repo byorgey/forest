@@ -1,0 +1,16 @@
+\title{Merging binomial heaps}
+\date{2026-11-21T20:41:14Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{To merge two [binomial heaps](00TK) #{A} and #{B}, we can do what amounts to addition of binary numbers. Iterate through them in parallel, from order #{0} up. For each order #{k} we have possibly a binomial tree of order #{k} from #{A}, possibly a tree of order #{k} from #{B}, and we also may possibly have a \em{carry} tree of order #{k}, just like we can carry a #{1} bit when adding binary numbers. (When we start out at #{k = 0} we have no carry tree.)}
+
+\ul{
+  \li{If there are no trees of order #{k}, the output has no trees of order #{k}. (#{0 + 0 = 0}.)}
+  \li{If there is only one tree of order #{k}, just copy it to the output. (#{0 + 1 = 1}.)}
+  \li{If there are two trees of order #{k}, merge them into a single tree of order #{k+1} and make it the carry tree for the next iteration; the output has no trees of order #{k}. (#{1 + 1 = 10}, so output #{0} and carry the #{1}.)}
+  \li{If there are three trees of order #{k}, copy one of them to the output, and merge the other two into an order-#{(k+1)} carry tree. (#{1 + 1 + 1 = 11}: output #{1} and carry #{1}.)}
+}
+
+\p{Each iteration of the above algorithm takes constant time: we may have to merge two trees but [that takes constant time](00TM). So merging two binomial heaps of size #{n} can be done in #{\Theta(\lg n)} time, since we do #{\Theta(1)} work for each order from #{0} up to #{\lfloor \lg n \rfloor}.}

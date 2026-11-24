@@ -1,10 +1,12 @@
 \title{Amortized analysis}
 \date{2026-11-17T16:36:52Z}
 \tag{algorithms}
-\tag{draft}
 
 \import{algorithms-macros}
 
 \transclude{00SW}   % intro/motivation (incrementing binary counter)
 \transclude{00T5}   % Direct calculation
 \transclude{00T6}   % Accounting method
+\transclude{00TC}   % Example: another binary counter
+\transclude{00TD}   % Example: extensible arrays
+\transclude{00TE}   % Binomial heaps

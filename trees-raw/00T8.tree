@@ -1,0 +1,39 @@
+\title{Amortization practice}
+\date{2026-11-18T20:29:18Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{These questions are courtesy of [Jeff Erickson](http://www.cs.illinois.edu/~jeffe/teaching/algorithms).}
+
+\p{Suppose we are maintaining a data structure under a series of #{n} operations. Let #{f(k)} denote the actual running time of the #{k}th operation. For each of the following functions #{f}, determine the resulting amortized cost of a single operation. For amortized costs other than #{\Theta(1)}, be sure to argue why your cost is also a \em{lower} bound, \em{i.e.} why it is not possible to do any better. \em{Hints}:
+\ul{
+  \li{Start by either making tables of values and looking for patterns, and/or trying to write down a mathematical expression for the total cost #{f(1) + f(2) + \dots + f(n)}.}
+  \li{If you notice a pattern, you could try proving it using the accounting method.}
+  \li{Alternatively, if you are able to write down a mathematical expression for an upper bound on the total cost and simplify it, divide by #{n} to get the amortized cost of a single operation.}
+}}
+
+\subtree{
+  \title{[A1] Ruler function (1 pt)}
+
+  \p{#{f(k)} is the largest integer #{i} such that #{k} is evenly divisible by #{2^i}.}
+}
+
+\subtree{
+  \title{[A2] Powers of two (1 pt)}
+
+  \p{#{f(k) = k} if #{k} is a power of #{2}, and #{f(k) = 1} otherwise.}
+}
+
+\subtree{
+  \title{[A3] Fibonacci numbers (1 pt)}
+
+  \p{#{f(k) = k} if #{k} is a Fibonacci number, and #{f(k) = 1} otherwise.}
+}
+
+\subtree{
+  \title{[A4] Squares (1 pt)}
+
+ \p{#{f(k) = k} if #{k} is a perfect square, and #{f(k) = 1} otherwise.}
+}

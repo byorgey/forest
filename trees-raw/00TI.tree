@@ -1,0 +1,8 @@
+\title{Binomial trees and binomial coefficients}
+\date{2026-11-21T19:28:23Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Remark}
+\p{Binomial trees are called \em{binomial} since a binomial tree of order #{n} has #{\binom n k} nodes at depth #{k}. This can also be proved by induction, using some facts about [binomial coefficients](00GH) (just think about adding a row of [Pascal’s triangle](00GL) shifted against itself to get the next row).}

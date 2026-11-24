@@ -1,0 +1,41 @@
+\title{Amortized analysis example: extensible arrays}
+\date{2026-11-21T19:05:39Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Another example that should be familiar from Data Structures: extensible arrays (\eg \code{ArrayList} in Java). As our cost model, suppose accessing or modifying an array entry costs #{1}, and allocating a new array and copying the contents of an old array into it costs #{n} (the length of the old array). Every time we do an \sf{append} operation, it might cost #{\Theta(1)} (if there is still enough space in the underlying array) or it might cost #{\Theta(n)} if we have to allocate a bigger array, copy all the elements over from the old array, and then insert the new element. So we can definitely say that a sequence of #{n} \sf{append} operations is #{\Omega(n)} and #{O(n^2)}.}
+
+\p{The question is, what strategy should we use for allocating a new array when we run out of space? This turns out to have a big impact on the amortized time of \sf{append}.
+\ul{
+  \li{Strategy 1: increase the size by some constant #{c}. That is, when our array of size #{n} becomes full, allocate a new array of size #{n + c} and copy the contents of the old array into it.}
+  \li{Strategy 2: double the size. That is, when our array of size #{n} becomes full, allocate a new array of size #{2n}.}
+}
+}
+
+\p{Let’s consider the amortized time for a single \sf{append} operation using these strategies.}
+
+\ul{
+  \li{
+  \p{Strategy 1: suppose we start with an array of size #{c}. (The starting size of the array does not really change the analysis at all.) The first #{c} \sf{append} operations will cost #{1} each, and then the next will cost #{c + 1} (#{c} to copy the now-full array of size #{c}, and #{1} more to insert the new element). Then there will be another #{c-1} operations that cost #{1} each until the new array is full. The next will cost #{2c + 1} (copy the full array of size #{2c} plus #{1} to insert). And so on.}
+  \p{In general, if we do #{n} successive \sf{append} operations, we will end up paying #{n} for the actual inserts, plus ##{c + 2c + 3c + 4c + \dots + \lfloor n/c \rfloor c} for array allocations. This is ##{c (1 + 2 + 3 + \dots + \lfloor n/c \rfloor) = c \cdot \Theta((n/c)^2) = \Theta(n^2).} So the total cost for #{n} successive \sf{append} operations is #{\Theta(n) + \Theta(n^2) = \Theta(n^2)}, and a single \sf{append} has an amortized cost of #{\Theta(n)}. In this case, the cost of the expensive operations ends up dominating, even though most of the calls to \sf{append} are just #{\Theta(1)}.}
+  \p{Intuitively, since #{c} is fixed, as our array becomes large, we spend an increasingly large fraction of the time allocating and copying arrays, relatively speaking.}
+  }
+
+  \li{
+  \p{Strategy 2: suppose we start with an array of size #{1}. If we do a sequence of #{n} \sf{append} operations, of course we will still pay #{n} for the actual insertions; the question is how much we pay for array allocations. After the initial array becomes full (immediately), we pay #{1} to allocate a new array of size #{2} and copy the element over. When that becomes full, we pay #{2} to allocate an array of size #{4} and copy over the old elements. And so on. In total, we will pay ##{1 + 2 + 4 + 8 + \dots + 2^k,} where #{2^k} is the biggest power of #{2} which is less than #{n}. But this sum is #{2^{k+1} - 1} which is approximately #{2n}, that is, #{\Theta(n)}. So the total cost of #{n} calls to \sf{append} is #{\Theta(n) + \Theta(n) = \Theta(n)}, and the amortized cost of a single \sf{append} is only #{\Theta(1)}.}
+  \p{We can also prove this using the [accounting method](00T6). Charge $3 for each \sf{append}. $1 goes to paying for the actual array insertion; the other $2 is saved along with the inserted element. Each time the array becomes full, it will look something like this:}
+
+  \table{
+  \tr{
+  \td{#{1}} \td{#{3}} \td{#{19}} \td{#{-5}}
+  \td{#{\underset{\dollar\dollar}{6}}} \td{#{\underset{\dollar\dollar}{8}}}
+  \td{#{\underset{\dollar\dollar}{21}}} \td{#{\underset{\dollar\dollar}{0}}}
+  }
+  }
+
+  \p{Since the array capacity was doubled the last time it was resized, for each element already in the array there will be a newly inserted element with $2 stored next to it. Therefore the total amount of money available is equal to the number of elements in the array, and we can pay to allocate a new array and copy all the elements over.}
+
+  \p{Thus, the amortized cost of a single \sf{append} operation is $3, that is, #{\Theta(1)}.}
+  }
+}

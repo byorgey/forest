@@ -22,6 +22,8 @@
 
 \def\mark[body]{\<html:mark>{\body}}
 
+\def\sc[body]{\<html:span>[style]{font-variant: small-caps;}{\body}}
+
 \def\img[url]{
   \<html:img>[src]{\url}{}
 }

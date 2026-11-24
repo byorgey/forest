@@ -1,0 +1,12 @@
+\title{Binomial tree size}
+\date{2026-11-21T19:27:43Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Lemma}
+\p{A binomial tree of order #{n} has #{2^n} nodes.}
+
+\proof{By induction on #{n}. An order-#{0} binomial tree has #{2^0 = 1} node. An order-#{k} binomial tree has a single root node and one child of each order from #{0} to #{k-1}.  If we assume as our induction hypothesis that binomial trees of order #{j < k} have #{2^j} nodes, then a tree of order #{k} has ##{1 + 2^0 + 2^1 + 2^2 + \dots + 2^{k-1} = 1 + (2^k - 1) = 2^k} nodes.}
+
+

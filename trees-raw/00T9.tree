@@ -1,0 +1,20 @@
+\title{[A5] Doubly-extensible array (2 pts)}
+\date{2026-11-18T20:36:17Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{This question is also courtesy of [Jeff Erickson](http://www.cs.illinois.edu/~jeffe/teaching/algorithms).}
+
+\p{A \em{doubly extensible array} is a data structure that stores a sequence of items and supports the following operations:
+\ul{
+  \li{\sf{AddToFront}#{(x)} adds #{x} to the \em{beginning} of the sequence.}
+  \li{\sf{AddToEnd}#{(x)} adds #{x} to the \em{end} of the sequence.}
+  \li{\sf{Lookup}#{(k)} returns the #{k}th item in the sequence (#{0}-indexed), or \sf{Null} if the current length of the sequence is less than or equal to #{k}.}
+}
+}
+
+\p{Describe and analyze a \em{simple} data structure that implements a doubly extensible array. Your \sf{AddToFront} and \sf{AddToBack} algorithms should take #{O(1)} \em{amortized} time, and your \sf{Lookup} algorithm should take #{O(1)} \em{worst-case} time. The data structure should use #{O(n)} space, where #{n} is the current length of the sequence.}
+
+\hint{Use two arrays.}

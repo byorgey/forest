@@ -1,0 +1,9 @@
+\title{[A6] Queue from Two Stacks (2 pts)}
+\date{2026-11-19T03:03:48Z}
+\tag{algorithms}
+\tag{problem}
+
+\import{algorithms-macros}
+
+\p{Describe how to implement a queue using two stacks and #{O(1)} additional memory, so that the amortized time for any enqueue or dequeue operation is #{O(1)}. The \em{only} access you have to the stacks is through the standard methods \sf{Push}, \sf{Pop}, and \sf{IsEmpty}; in particular you should not assume anything about how the stacks are implemented. You may assume that \sf{Push}, \sf{Pop}, and \sf{IsEmpty} take #{O(1)} time in the worst case.}
+

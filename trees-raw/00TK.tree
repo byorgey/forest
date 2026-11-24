@@ -1,0 +1,21 @@
+\title{Binomial heap}
+\date{2026-11-21T19:34:16Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+\p{A \em{binomial heap} is a list of [binomial trees](00TG) such that:
+\ul{
+  \li{Each binomial tree satisfies the heap property (the value stored at each node is smaller than all its children)}
+  \li{There is at most one binomial tree of any given order.}
+}
+}
+
+\p{Below is an example of a valid binomial heap.}
+
+\diagram{500}{*}{\verb<<<|
+import BinomialHeaps
+
+dia = drawBinomialHeap drawNode goodBinomialHeap # frame 1
+<<<}

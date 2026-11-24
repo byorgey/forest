@@ -1,0 +1,20 @@
+\title{Binomial tree}
+\date{2026-11-21T19:19:52Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+\p{\em{Binomial trees} are defined as follows:
+\ul{
+  \li{A binomial tree of order #{0} is a single node.}
+  \li{A binomial tree of order #{n} consists of a root node with #{n} subtrees, which are binomial trees of order #{n-1}, #{n-2}, …, #{0}.}
+}
+}
+\p{Illustrated below are binomial trees of orders #{0} through #{4}.}
+
+\diagram{500}{*}{\verb<<<|
+import BinomialHeaps
+
+dia = frame 0.1 binomialTrees
+<<<}

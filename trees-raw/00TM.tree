@@ -1,0 +1,7 @@
+\title{Merging binomial trees}
+\date{2026-11-21T20:40:24Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{To merge two [binomial trees](00TG) of order #{k} with the heap property into a single binomial tree of order #{k+1} that also has the heap property, just see which one has the bigger root, and make it the leftmost child of the smaller root. This takes #{\Theta(1)} time.}

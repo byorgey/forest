@@ -1,0 +1,16 @@
+\title{Binomial heaps}
+\date{2026-11-21T19:17:19Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\transclude{00TF}  % Motivation
+\transclude{00TG}  % Binomial tree
+\transclude{00TH}  % Binomial tree size
+\transclude{00TI}  % Binomial coefficients
+\transclude{00TJ}  % Gluing BTs
+\transclude{00TK}  % Binomial heap
+\transclude{00TL}  % Binomial heaps and binary numbers
+\transclude{00TM}  % Merging binomial trees
+\transclude{00TN}  % Merging binomial heaps
+\transclude{00TO}  % Other operations

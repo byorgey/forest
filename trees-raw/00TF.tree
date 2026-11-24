@@ -1,0 +1,10 @@
+\title{Binomial heap motivation}
+\date{2026-11-21T19:17:47Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Recall the \em{binary heap} data structure—a complete binary tree where the value at each node is less than the values at both its children. This lets us implement priority queues with #{\Theta(\lg n)}-time insert, remove-minimum, and change-key operations.}
+
+\p{Consider the \em{merge} operation: given two priority queues, merge them into a single combined priority queue. This is a natural and useful operation in many applications. Unfortunately, binary heaps do not support this operation at all. The best one can do is to just list all the elements in the two heaps and then build a new heap out of the elements; this takes linear time. Can we do better?}
+

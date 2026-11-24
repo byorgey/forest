@@ -1,0 +1,14 @@
+\title{Other operations on binomial heaps}
+\date{2026-11-21T20:44:08Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Now, let’s see how we can implement the other priority queue methods as well:
+
+\ul{
+  \li{\sf{Insert}: to insert a new element #{x} into a binomial heap #{H}, make #{x} into a size-#{1} binomial heap (containing a single order-#{0} binomial tree) and then merge it with #{H}. This is just like [incrementing a binary counter](00SW)! So although it is #{O(\lg n)} in the worst case, it takes #{\Theta(1)} amortized time. (This is even better than a standard binary-tree based heap, which always takes #{\Theta(\lg n)} to insert!)}
+  \li{\sf{Delete}-\sf{min}: iterate through the roots of all the trees to find the smallest in #{\Theta(\lg n)} time (the smallest element in the entire heap is guaranteed to be one of the roots). Removing it leaves its children, which are binomial trees of order #{k-1}, #{k-2}, …, #{0}: a binomial heap! Just merge this remaining binomial heap with the rest of the heap in #{\Theta(\lg n)} time. So overall delete-min takes #{\Theta(\lg n)}. (Note we can also keep track of the minimum root so that \em{finding} the minimum can be #{\Theta(1)}, even though removing it still takes #{\Theta(\lg n)}.)}
+  \li{\sf{Change}-\sf{key}: just bubble the key up or down within its binomial tree until it is at the right spot. This takes #{O(\lg n)}.}
+}
+}
