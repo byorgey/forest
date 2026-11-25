@@ -1,0 +1,25 @@
+\title{Amortized cost of ZIG-ZIG}
+\date{2026-11-25T22:44:00Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Lemma}
+\p{The amortized cost of a [\strong{ZIG-ZIG} operation](00UI) is #{\leq 3(R'(x) -
+  R(x))}.}
+
+\proof{
+The actual cost of \strong{ZIG-ZIG} is #{2} rotations; the only nodes whose ranks change are #{x}, #{p}, and #{g}. So the amortized cost is
+
+    \stmt{#{2 + R'(g) - R(g) + R'(p) - R(p) + R'(x) - R(x)}}
+    \reason{=}{#{R(g) = R'(x)}}
+    \stmt{#{2 + R'(g) + R'(p) - R(p) - R(x)}}
+    \reason{#{<}}{#{R(x) < R(p)}, so #{-R(p) < -R(x)}}
+    \stmt{#{2 + R'(g) + R'(p) - 2R(x)}}
+    \reason{#{<}}{#{R'(p) < R'(x)}}
+    \stmt{#{2 + R'(g) + R'(x) - 2R(x)}}
+    \reason{#{\leq}}{[[00UK]]}
+    \stmt{#{(2R'(x) -  R(x) - R'(g)) + R'(g) + R'(x) - 2R(x)}}
+    \reason{=}{algebra}
+    \stmt{#{3(R'(x) - R(x))}.}
+}

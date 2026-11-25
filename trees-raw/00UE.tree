@@ -1,0 +1,8 @@
+\date{2026-11-25T22:27:50Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Remark}
+\p{To get a more intuitive idea of why this is true, recall what the graph of #{\lg x} looks like on the interval #{0 < x < 1}: it lies below the #{x}-axis, passing through the points #{(1/2, -1)} and #{(1,0)}, with a vertical asymptote as it diverges to #{-\infty} as #{x
+  \to 0}. We are adding up the #{\lg} of two values which are symmetric about the point #{x = 1/2}. If we pick #{x = 1-x = 1/2} then the sum is #{-2}. As we move the two points farther away from each other, the one moving left moves much faster in the negative #{y} direction than the one moving to the right moves in the positive #{y} direction, so the sum gets more negative.}

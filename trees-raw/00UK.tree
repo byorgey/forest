@@ -1,0 +1,22 @@
+\title{ZIG-ZIG bound}
+\date{2026-11-25T22:39:43Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Lemma}
+\p{In the context of the [\strong{ZIG-ZIG} operation](00UI), #{2 \leq 2R'(x) -
+  R(x) - R'(g)}.}
+
+\proof{
+    \stmt{#{R(x) + R'(g) - 2R'(x)}}
+    \reason{=}{definition of #{R}}
+    \stmt{#{\lg(S(x)) + \log_2(S'(g)) - 2\log_2(S'(x))}}
+    \reason{=}{properties of #{\lg}}
+    \stmt{#{\lg(S(x)/S'(x)) + \lg(S'(g)/S'(x))}}
+    \reason{#{\leq}}{see below}
+    \stmt{#{-2}}
+\p{For the final step, note that #{S(x) + S'(g) \leq S'(x)} (since the original tree rooted at #{x} and the new tree rooted at #{g} are completely disjoint, and all the elements of both have #{x} as an ancestor in the new tree), so ##{\frac{S(x)}{S'(x)} + \frac{S'(g)}{S'(x)} = \frac{S(x) +
+      S'(g)}{S'(x)} \leq 1.} Therefore, the bound of #{-2} follows from the [previous lemma](00UD).}
+\p{The lemma as stated now follows by negating both sides of the inequality (and flipping the inequality appropriately).}
+}

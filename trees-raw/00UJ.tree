@@ -1,0 +1,23 @@
+\title{\strong{ZIG-ZAG}}
+\date{2026-11-25T22:36:46Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+  \p{If #{p} is a left child and #{x} a right child, or vice versa, first rotate around #{p \to x} and then around #{g \to x}.
+
+\diagram{600}{*}{\verb<<<|
+import Diagrams.Prelude hiding (Empty)
+import SplayDia
+import Diagrams.TwoD.Layout.Tree
+
+dia = frame 0.1 . hsep 1 . map centerXY $    -- $
+  [ drawSplay (nd 'g' (nd 'p' (sub 'A') (nd 'x' (sub 'B') (sub 'C'))) (sub 'D'))
+  , arrowV unitX
+  , drawSplay (nd 'g' (nd 'x' (nd 'p' (sub 'A') (sub 'B')) (sub 'C')) (sub 'D'))
+  , arrowV unitX
+  , drawSplay (nd 'x' (nd 'p' (sub 'A') (sub 'B')) (nd 'g' (sub 'C') (sub 'D')))
+  ]
+<<<}
+
+  }

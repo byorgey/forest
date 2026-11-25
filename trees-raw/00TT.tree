@@ -1,0 +1,9 @@
+\import{algorithms-macros}
+
+\title{\advanced The Potential Method}
+\date{2026-11-25T21:38:04Z}
+\tag{algorithms}
+
+\transclude{00TU}   % Potential method motivation
+\transclude{00TV}   % Potential method, formally
+\transclude{00TX}   % Generalizes accounting method

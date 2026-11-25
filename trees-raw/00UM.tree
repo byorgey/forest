@@ -1,0 +1,13 @@
+\title{Amortized cost of ZIG-ZAG}
+\date{2026-11-25T22:46:28Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Lemma}
+\p{The amortized cost of a [\strong{ZIG-ZAG} operation](00UJ) is #{\leq 3(R'(x) -
+  R(x))}.}
+
+\proof{
+  The proof is omitted; it is very similar to the [proof for \strong{ZIG-ZIG}](00UL).
+}

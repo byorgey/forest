@@ -1,0 +1,30 @@
+\title{\strong{ZIG-ZIG}}
+\date{2026-11-25T22:36:19Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{If #{x} and #{p} are either both left children or both right children, then do two successive rotations: first rotate around #{g \to p} then around #{p \to x}.
+
+\diagram{600}{*}{\verb<<<|
+import Diagrams.Prelude hiding (Empty)
+import SplayDia
+import Diagrams.TwoD.Layout.Tree
+
+dia = frame 0.1 . hsep 1 . map centerXY $    -- $
+  [ drawSplay (nd 'g' (nd 'p' (nd 'x' (sub 'A') (sub 'B')) (sub 'C')) (sub 'D'))
+  , arrowV unitX
+  , drawSplay (nd 'p' (nd 'x' (sub 'A') (sub 'B')) (nd 'g' (sub 'C') (sub 'D')))
+  , arrowV unitX
+  , drawSplay (nd 'x' (sub 'A') (nd 'p' (sub 'B') (nd 'g' (sub 'C') (sub 'D'))))
+  ]
+<<<}
+
+  \p{Some things to note:}
+  \ul{
+    \li{This rule applies \em{anywhere} in the tree, unlike \strong{ZIG} which only applies when #{x} is at a depth of #{1}. After applying \strong{ZIG-ZIG}, #{x} has moved two levels closer to the root.}
+    \li{Like \strong{ZIG}, this takes constant time, since we just do two rotations.}
+    \li{Again, in the picture #{x} and #{p} are illustrated as both being left children, but there is an analogous symmetric case when #{x} and #{p} are both \em{right} children.}
+  }
+
+  }

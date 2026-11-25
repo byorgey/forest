@@ -1,0 +1,28 @@
+\title{Splay runtime proof}
+\date{2026-11-25T22:09:46Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\p{To prove that [\sf{Splay} takes #{\Theta(\lg n)} amortized time](00U4), we will use the [potential method](00TT).}
+
+\transclude{00U7}   % Subtree size
+\transclude{00U8}   % Rank
+\transclude{00U9}   % Rank sum
+\transclude{00UA}   % Rank sum examples
+\transclude{00UB}   % Rank sum is valid
+
+\p{Before starting in on the proof proper, we will need a couple observations and lemmas about properties of the #{\lg} (log base #{2}) function.}
+
+\transclude{00UC}  % lg is increasing
+\transclude{00UD}  % lg x + lg (1 - x)
+\transclude{00UF}  % Notation for rank
+
+\p{\strong{Important note}: to understand the following proofs you really have to be looking at the pictures for the [different splay rules](00U1)!}
+
+\transclude{00UG}  % Amortized ZIG cost
+\transclude{00UK}  % ZIG-ZIG bound
+\transclude{00UL}  % Amortized ZIG-ZIG cost
+\transclude{00UM}  % Amortized ZIG-ZAG cost
+\transclude{00UN}

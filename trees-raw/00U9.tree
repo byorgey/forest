@@ -1,0 +1,9 @@
+\title{Potential function = rank sum}
+\date{2026-11-25T22:11:44Z}
+\tag{algorithms}
+\taxon{Definition}
+
+\import{algorithms-macros}
+
+\p{Finally, let #{\Phi(T)} be the sum of the ranks of all the nodes in the tree, that is, ##{\Phi = \sum_{r \in T} R(r).}}
+

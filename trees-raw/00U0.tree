@@ -1,0 +1,17 @@
+\title{Splay trees, intuitively}
+\date{2026-11-25T21:45:58Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Splay trees are an intriguing alternative: a splay tree is just a normal binary search tree, with no extra information stored anywhere. The twist is that we implement an extra \em{splay} operation which works to make the tree a little more balanced, and we use this operation in conjunction with other operations such as lookup and insert, in such a way that the tree tends to stay balanced.}
+
+\p{In particular, the \sf{Splay} operation works by bringing a particular element to the root of the BST (while keeping all the same elements in the tree and preserving the BST properties). It uses a particular algorithm that we will explore shortly. However, given such an operation that brings a chosen node to the root of a BST, let’s see how we update the other BST operations to use it:
+\ul{
+  \li{\sf{Insert}: Whenever we insert a new value into the splay tree (which works just like normal BST insertion), we then splay the newly inserted element to the root.}
+  \li{\sf{Lookup}: Similarly, lookup works just like in a normal BST; but after doing a lookup we splay the looked up element (or the closest element, in the case that the element being searched for is not in the tree).}
+  \li{\sf{Join}: If all the elements in #{T_1} are less than all the elements in #{T_2}, we can join them into a single BST by first splaying the largest element in #{T_1} to the root, then adding #{T_2} as its right child (if the largest element is at the root of a BST, by definition it has no right child, so there is a clear space to add #{T_2}).}
+  \li{\sf{Split}: To split a BST into two BSTs which contain all the elements less and greater than a particular target element, respectively, splay the target element to the root and then return its two children.}
+  \li{\sf{Delete}: Splay the item to be deleted to the root, then \sf{join} the two subtrees. (This is only a minor point, but notice how much nicer this is than the usual BST delete implementation!)}
+}
+}

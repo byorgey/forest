@@ -1,0 +1,9 @@
+\title{Potential method generalizes accounting method}
+\date{2026-11-25T21:42:12Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{Note that this can be seen as a generalization of the [accounting method](00T6): the amount of “extra money” stored in a data structure can be thought of as “potential energy”. But the potential method makes it more clear that the energy does not have to be an integer, nor does it have to be “stored” anywhere in particular. In some cases this leads to an easier analysis even though in theory we \em{could} do the analysis using the accounting method (with weird fractional amounts of money stored in a “bank account”).}
+

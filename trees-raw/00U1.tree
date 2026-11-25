@@ -1,0 +1,11 @@
+\title{The splay operation}
+\date{2026-11-25T21:49:19Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Let’s see how \sf{Splay} actually works. We find the element #{x} in the tree and then keep moving it up the tree until it reaches the root, according to the following three rules. In general we will use #{p} to denote the parent of #{x} and #{g} to denote its grandparent.  There are three general rules we apply depending on where #{x} is in the tree.}
+
+\transclude{00UH}   % ZIG
+\transclude{00UI}   % ZIG-ZIG
+\transclude{00UJ}   % ZIG-ZAG

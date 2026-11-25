@@ -1,0 +1,9 @@
+\title{Splay bounds other BST operations}
+\date{2026-11-25T22:09:13Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{We note first that this implies all the other methods (in particular \sf{Insert}, \sf{Lookup}, \sf{Delete}) will take amortized #{\Theta(\lg n)} time as well. For \sf{Insert} and \sf{Lookup}, this is because they have exactly the same cost as splaying: when we lookup or insert, we travel down the tree, paying a cost proportional to the depth of the node we find or insert; then splaying that node to the root has exactly the same cost, since we travel back up exactly the same path, doing one rotation per level of depth. For \sf{Delete}, this is simply because it works by doing two \sf{Splay} operations.}
+

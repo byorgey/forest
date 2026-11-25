@@ -1,0 +1,12 @@
+\title{Maximum of #{\lg x + \lg (1 - x)}}
+\date{2026-11-25T22:26:14Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Lemma}
+\p{On the interval #{0 < x < 1}, the function #{\lg x + \lg (1-x)} attains a maximum value of #{-2} (namely, when #{x = 1/2}).}
+
+\proof{Straightforward application of standard calculus techniques.}
+
+\transclude{00UE}  % Intuitive idea

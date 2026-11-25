@@ -1,0 +1,8 @@
+\title{Subtree size}
+\date{2026-11-25T22:10:30Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+\p{If #{r} is some node in a binary search tree, let #{S(r)} be the \em{size} of the subtree rooted at #{r}, that is, the number of nodes which have #{r} as their ancestor (including #{r} itself).}

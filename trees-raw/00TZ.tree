@@ -1,0 +1,8 @@
+\title{Splay tree motivation}
+\date{2026-11-25T21:45:23Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{As a fascinating application of the [potential method](00TT) we will study \em{splay trees}, a sort of “self-balancing” variant of binary search trees. Recall that binary search trees give us #{\Theta(\lg n)} insert, lookup, and delete for ordered data, \em{as long as} the trees remain balanced. But if the tree becomes unbalanced these turn into #{O(n)} instead. In some applications it does not matter; if a binary search tree is built randomly it is very likely to be balanced. However, in many applications the data may have characteristics that lead to an unbalanced tree (for example, the data may be already sorted or close to sorted, in which case inserting it sequentially into a naive BST creates an unbalanced tree). There are various ways to solve this problem. What most people think of are sophisticated BST variants, such as red-black trees and AVL trees, which work by storing extra information in the trees and then using this extra information to make sure the trees remain balanced. Practically speaking, these are some of the best BST implementations, but they are complex, and require reimplementing all the BST methods to ensure that the extra information is kept up-to-date and that the tree is rebalanced as necessary.}
+

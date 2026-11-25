@@ -1,0 +1,14 @@
+\title{Main proof for splay runtime}
+\date{2026-11-25T22:48:30Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Now we have finally built the tools we need to prove the original theorem:}
+
+\transclude{00U4}
+
+\proof{
+\p{The amortized cost of a \sf{Splay} operation is the sum of the amortized costs of each of the rule applications as #{x} makes its way up the tree; we have shown that each of these costs at most #{3(R'(x) - R(x))}, except possibly one final \strong{ZIG} application which takes at most #{1 + 3(R'(x) - R(x))}. Note that in each case, the #{R'(x)} from one step becomes the #{R(x)} for the next step, and so the sum telescopes, with all of the intermediate #{R} values cancelling, leaving at most ##{3(R(t) - R(x_0)) + 1,} where #{t} denotes the root of the entire tree (where #{x} ultimately ends up) and #{x_0} denotes the starting location for #{x}. The size of the tree #{t} is of course #{n}, so #{R(t) = \lg n}. Also, in the worst case, #{x} had to start all the way down at a leaf, which has #{R(x_0) = \lg 1 = 0}. Therefore the amortized cost is bounded by #{3\log_2 n + 1}, which is #{O(\log n)}. Of course, it is clear that the cost has to be at least #{\Omega(\log n)} as well, since the height of a tree of size #{n} is at least #{\lg n}. Therefore \sf{Splay} takes amortized #{\Theta(\lg n)} time.}
+
+}

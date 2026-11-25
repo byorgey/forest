@@ -1,0 +1,10 @@
+\title{The Potential Method, formally}
+\date{2026-11-25T21:40:34Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Consider a sequence of operations on a data structure, and let #{D_i} denote the state of the data structure after the #{i}th operation, and #{\Phi_i} the potential energy of #{D_i}. Then the amortized cost of the #{i}th operation (which turned #{D_{i-1}} into #{D_i}) is defined as ##{a_i = c_i + \Phi_i - \Phi_{i-1}} where #{c_i} is the actual cost of the operation. Therefore the amortized cost of the sequence of operations is ##{\sum_{i=1}^n a_i = \sum_{i=1}^n (c_i + \Phi_i - \Phi_{i-1}) =
+  \left( \sum_{i=1}^n c_i \right) + \Phi_n - \Phi_0.} We need the total amortized cost to be an upper bound on the actual cost, and we can see this will happen as long as #{\Phi_n - \Phi_0 \geq 0}, which motivates the following definition:
+\transclude{00TW}
+If a potential energy function #{\Phi} is valid, it means that the total amortized cost will always be at least the total actual costs, that is, ##{\sum_{i=1}^n a_i \geq \sum_{i=1}^n c_i.} So the general technique is to define a potential energy function #{\Phi} which starts out as #{0} on the initial data structure, and always remains nonnegative. Given such a valid potential function, the amortized cost of an operation (defined as the actual cost plus the change in potential energy) gives a valid bound on the average cost of a single operation.}

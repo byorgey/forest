@@ -1,0 +1,8 @@
+\title{Amortized time for splay}
+\date{2026-11-25T22:08:34Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Theorem}
+\p{The \sf{Splay} operation takes amortized #{\Theta(\lg n)} time.}

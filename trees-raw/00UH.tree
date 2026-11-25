@@ -1,0 +1,22 @@
+\title{\strong{ZIG}}
+\date{2026-11-25T22:35:56Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{If #{x} is the child of the root of the whole tree, then just do one rotation to move it to the root.}
+
+\diagram{500}{*}{\verb<<<|
+import Diagrams.Prelude hiding (Empty)
+import SplayDia
+import Diagrams.TwoD.Layout.Tree
+
+dia = frame 0.1 . hsep 1 . map centerXY $    -- $
+  [ drawSplay (nd 'p' (nd 'x' (sub 'A') (sub 'B')) (sub 'C'))
+  , arrowV unitX
+  , drawSplay (nd 'x' (sub 'A') (nd 'p' (sub 'B') (sub 'C')))
+  ]
+<<<}
+
+  \p{#{A}, #{B}, and #{C} denote arbitrary subtrees. We don’t do anything to them at all, so the rotation takes constant time; we just need to update a few references. In the diagram, #{x} is the left child of the root, so we rotate right, but there is also a second entirely symmetric case when #{x} is the right child of the root and we rotate left.}
+  \p{Note how doing a rotation moves #{x} up while preserving the binary search tree properties: all the elements in the subtree #{A} are still to the left of #{x}; all the ements in #{B} remain in between #{x} and #{p}; and #{C} remains to the right of #{p}.}

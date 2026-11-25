@@ -1,0 +1,8 @@
+\title{Valid potential function}
+\date{2026-11-25T21:41:13Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+\p{#{\Phi} is \em{valid} if #{\Phi_i - \Phi_0 \geq 0} for all #{i}.}

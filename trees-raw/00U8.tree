@@ -1,0 +1,8 @@
+\title{Rank}
+\date{2026-11-25T22:10:52Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Definition}
+\p{The \em{rank} of a node #{r} is defined by #{R(r) = \log_2(S(r))}.}

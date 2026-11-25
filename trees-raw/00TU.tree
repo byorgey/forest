@@ -1,0 +1,8 @@
+\title{Motivation}
+\date{2026-11-25T21:38:59Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{There is one more method we can use to prove amortized time bounds, called the \em{potential method}, which comes from an analogy with physics. The idea is to think of a data structure as having some “potential energy”. Operations on the data structure will sometimes increase the potential energy (storing up some extra energy that can be used later) and sometimes decrease it (releasing some of the stored energy). The amortized cost of an operation is the actual cost of the operation \em{plus} the change in energy. The change in energy can be positive (in which case the amortized cost is more than the actual cost, and some energy is stored for later) or negative (in which case the amortized cost is less than the actual cost, using up some of the stored energy to pay for the difference).}
+

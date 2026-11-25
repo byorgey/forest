@@ -1,0 +1,20 @@
+\title{Amortized cost of \strong{ZIG}}
+\date{2026-11-25T22:31:00Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Lemma}
+\p{The amortized cost of a [\strong{ZIG} operation](00UH) is #{\leq 3(R'(x) - R(x)) + 1}.}
+
+\p{The amortized cost is defined as the actual cost plus the change in potential. In this case the actual cost of \strong{ZIG} is #{1} rotation. As for the change in potential, the ranks of #{x} and #{p} may change, but note that the ranks of all nodes in the subtrees #{A}, #{B}, and #{C} do not change. Note also that the old rank of #{p} is the same as the new rank of #{x} (since #{p} used to be the root of the whole tree, but afterwards #{x} is, so the new #{x} has the same number of nodes under it as the old #{p} did). So the amortized cost is
+
+\stmt{#{1 + R'(p) - R(p) + R'(x) - R(x)}}
+\reason{=}{#{R'(x) = R(p)}}
+\stmt{#{1 + R'(p) - R(x)}}
+\reason{#{<}}{#{R'(p) < R'(x)}, since #{p} is now a child of #{x}}
+\stmt{#{1 + R'(x) - R(x)}}
+\reason{#{<}}{#{R'(x) > R(x)}, hence #{R'(x) - R(x)} is positive}
+\stmt{#{1 + 3(R'(x) - R(x))}}
+
+}

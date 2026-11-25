@@ -1,0 +1,45 @@
+\title{Splay tree examples}
+\date{2026-11-25T22:01:32Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Let’s start with some interactive examples to see how splay trees work in practice, and to gain some intuition for what we are trying to prove. For example, if we start with the tree on the left below, the next tree shows what we get if we splay #{5} to the root; the tree after that shows what we would get if instead splay #{4} to the root (starting from the tree on the left again); and so on. You can see that as we splay an element from deep in the tree, the other elements tend to “clump up” in twos due to the way we iterate the [\strong{ZIG-ZIG} rule](00UI).
+
+\diagram{600}{*}{\verb<<<|
+import Splay
+
+dia = frame 0.3 . hsep 1 . map (flip drawSplayResult (leftTree 6))
+    $ [[], [5], [4], [3], [2], [1], [0]] -- $
+<<<}
+}
+
+\p{And here is what happens when we iterate the [\strong{ZIG-ZAG} rule](00UJ): starting from the tree on the left, splaying different elements results in the trees on the right:
+
+\diagram{600}{*}{\verb<<<|
+import Splay
+
+dia = frame 0.3 . hsep 1 . map (flip drawSplayResult (zigZagTree 6))
+    $ [[], [6], [1], [5], [2], [4], [3]] -- $
+<<<}
+
+In this case you can see that zigzags tend to get “unzipped” into two subtrees, one with the small nodes and one with the large nodes.
+}
+
+\p{We think of unbalanced trees as being “tense”/having a high potential energy; the splay operation tends to “relax” them, \em{i.e.} use some of the stored potential energy to do its work and then leave the tree in a lower-energy state. Doing lots of random splay operations tends to result in a balanced-ish tree. For example, if we start with a (very unbalanced) linear chain of #{100} nodes numbered #{0} to #{99}, and do #{500} random splay operations, here is (one possible) result:
+
+\diagram{600}{*}{\verb<<<|
+import Splay
+import System.Random
+
+dia = do
+  g <- getStdGen
+  let accesses :: [Int]
+      accesses = take 100 $ randomRs (0,99) g
+  return . frame 0.3 $ drawSplayResult accesses (leftTree 99)
+<<<}
+
+}
+
+\p{In fact, it turns out this still works even if the splay operations aren’t random: even if we have an evil adversary who is trying to choose splay operations which are as bad as possible for us, the tree will still tend towards balance! Intuitively, splaying an item that is already near the top of the tree doesn’t take very long; on the other hand, splaying an item that is deep in the tree takes a while but tends to make the rest of the tree more balanced. So the evil adversary can’t win.}
+

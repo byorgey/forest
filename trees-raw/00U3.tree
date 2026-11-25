@@ -1,0 +1,10 @@
+\title{Splay tree analysis}
+\date{2026-11-25T22:07:55Z}
+\tag{algorithms}
+\tag{draft}
+
+\import{algorithms-macros}
+
+\transclude{00U4}   % Theorem
+\transclude{00U5}   % Other operations
+\transclude{00U6}

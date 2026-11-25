@@ -10,3 +10,5 @@
 \transclude{00TC}   % Example: another binary counter
 \transclude{00TD}   % Example: extensible arrays
 \transclude{00TE}   % Binomial heaps
+\transclude{00TT}   % Potential method
+\transclude{00TY}   % Splay trees

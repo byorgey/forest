@@ -1,0 +1,8 @@
+\title{Rank sum is a valid potential function}
+\date{2026-11-25T22:17:20Z}
+\tag{algorithms}
+\taxon{Remark}
+
+\import{algorithms-macros}
+
+\p{We note that #{\Phi} is a [\em{valid} potential function](00TW): #{\Phi} for an empty tree is #{0}, and by definition it is clearly always positive. So the amortized time for an operation, that is, the sum of the actual cost and the change in potential, ##{a = c + \Delta \Phi,} will be a valid upper bound on the average cost of a single operation.}

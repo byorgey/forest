@@ -1,0 +1,8 @@
+\title{#{\lg} is increasing}
+\date{2026-11-25T22:24:26Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\taxon{Observation}
+\p{#{\lg} is an increasing function. So, if #{S(x) > S(y)} then #{R(x) > R(y)}. In particular this means that #{R(x) > R(y)} whenever #{x} is an ancestor of #{y}.}

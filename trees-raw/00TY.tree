@@ -1,0 +1,12 @@
+\import{algorithms-macros}
+
+\title{\advanced Splay trees}
+\date{2026-11-25T21:43:34Z}
+\tag{algorithms}
+\tag{draft}
+
+\transclude{00TZ}   % Motivation
+\transclude{00U0}   % Splay trees, intuitively
+\transclude{00U1}   % Splay
+\transclude{00U2}   % Splay examples
+\transclude{00U3}
