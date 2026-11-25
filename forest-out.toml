@@ -1,4 +1,7 @@
 [forest]
+home = "index"
 trees = ["trees" ]  # The directories in which your trees are stored
 assets = ["assets"] # The directories in which your assets are stored
 url = "http://ozark.hendrix.edu/~yorgey/forest/"
+lang = "en"
+theme = "theme"
