@@ -1,0 +1,33 @@
+\title{Committee assignment}
+\date{2026-11-25T15:10:33Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{Consider the following scenario:
+
+\ul{
+  \li{There are a number of committees; each committee has a desired number of people.}
+  \li{There is a set of people; each person has (1) a list of committees they are willing to be on, and (2) a maximum total number of committees they are willing to be on.}
+}
+
+Given these constraints, the goal is to assign people to committees so
+that (1) everyone's preferences are respected, and (2) each committee
+is full with the required number of people, if possible.
+}
+
+\p{We can solve this by creating a flow network, as follows:
+
+\ul{
+  \li{There is a vertex for each person, a vertex for each committee, and special source and sink vertices #{s} and #{t}.}
+  \li{We add an edge from #{s} each each person, with capacity equal to the total number of committees that person is willing to be on.}
+  \li{From each person, we add edges of capacity #{1} to each committee they are willing to be on.}
+  \li{From each committee, we add an edge to the sink #{t} with capacity equal to the desired size of the committee.}
+}
+
+Any valid flow on this network corresponds to a valid committee assignment that respects everyone's preferences; a unit of flow represents an assignment of one person to one committee.  Each person can only be on committees they prefer, since those are the only edges we added; each person cannot be on more total committees than they want, since the flow through their vertex is limited by the edge from #{s}; and each committee can have at most the required number of people.  (Note it is important that the edges from people to committees have capacity #{1}, since otherwise it would be possible to have one person "serve multiple times" on the same committee, and this is probably not desired.)
+}
+
+\p{Since valid flows correspond to valid assignments, it is possible to fill all the committees if and only if a maximum flow saturates all the edges going into #{t}.
+}
+

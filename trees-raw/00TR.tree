@@ -1,0 +1,18 @@
+\title{Escape route planning}
+\date{2026-11-25T15:22:07Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{As another example application for finding max flows, imagine
+trying to plan escape routes for evacuating a city.  Formally, we
+model a city as a directed graph.  Each vertex has a weight corresponding to the number of people who start there (for example, we might assign every vertex some number corresponding to population density; or if we are trying to model evacuation from large events we might just assign a few vertices some large number, \em{etc.}).  Certain vertices are designated as "escapes" (which could correspond to shelters, or simply to vertices on the edge of the graph), each having a capacity corresponding to the number of people it can handle.  Each edge also has a capacity corresponding to how many people it can handle.  The goal is to see how many people we can get from their starting locations to an escape, and plan which routes they should use.
+}
+
+\p{Once again, we can make this into a flow network as follows:
+\ul{
+  \li{Create a source vertex #{s}, and add an edge from #{s} to each vertex #{v} with capacity equal to the number of people that start at #{v}.}
+  \li{Create a sink vertex #{t}, and add an edge from each escape vertex to #{t} with capacity equal to the capacity of the escape.}
+}
+A max flow on this network tells us the maximum number of people who can escape, and what routes they should use.  (Note, if the number of people who can escape is not large enough, finding a [minimum cut](00SQ) will also tell us where we should focus our efforts to increase capacity.)
+}

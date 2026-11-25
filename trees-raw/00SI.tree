@@ -6,8 +6,9 @@
 \import{algorithms-macros}
 
 \transclude{00SJ}  % Max bipartite matching
+\transclude{00TQ}  % Committee assignment
+\transclude{00TR}  % Escape routes
+\transclude{00TS}
 
-% XXX assigning people to teams/committees
-% XXX escape route planning
 % XXX Baseball playoffs / chess tournament elimination
 % XXX image segmentation

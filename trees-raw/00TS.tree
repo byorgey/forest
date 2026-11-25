@@ -1,0 +1,14 @@
+\title{Other max flow applications}
+\date{2026-11-25T15:29:41Z}
+\tag{algorithms}
+
+\import{algorithms-macros}
+
+\p{There are many other interesting applications of maximum flows, including:
+
+\ul{
+  \li{[Baseball elimination](https://www.cs.princeton.edu/courses/archive/spr03/cs226/assignments/baseball.html): max flow can be used to compute which baseball teams can still make the playoffs, and which have been definitely eliminated.}
+  \li{[Image segmentation](https://en.wikipedia.org/wiki/Maximum_flow_problem#Image_segmentation): max flow can be used to separate images into background and foreground.}
+  \li{[Airline scheduling](https://en.wikipedia.org/wiki/Maximum_flow_problem#Airline_scheduling): a generalization of max flow which includes \em{lower bounds} on flows can be used to figure out optimal ways to schedule flights and crews for an airline.}
+}
+}
